@@ -1,0 +1,42 @@
+name: Validate PR
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      # Check out the PR branch
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      # Ensure only /input/new.json is modified
+      - name: Validate modified files
+        run: |
+          modified_files=$(git diff --name-only HEAD^1 HEAD)
+          if [[ "$modified_files" != "input/new.json" ]]; then
+            echo "modified_files: $modified_files"
+            echo "Error: Only /input/new.json should be modified."
+            exit 1
+          fi
+
+      # Validate JSON format and fields
+      - name: Validate JSON structure
+        run: |
+          if ! jq -e '.package_name != null and .patch_versions != null' input/new.json; then
+            echo "Error: JSON format or required fields are invalid."
+            exit 1
+          fi
+
+      # Install dependencies (example for Node.js project)
+      - name: Install dependencies
+        run: npm install
+
+      # Run tests
+      - name: Run tests
+        run: npm test

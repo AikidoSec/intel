@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10494",
-  "package_name" : "ruzstd",
-  "patch_versions" : [ "0.7.3" ],
-  "vulnerable_ranges" : [ [ "0.7.0", "0.7.2" ] ],
-  "cwe" : [ "CWE-125" ],
-  "tldr" : "Affected versions of `ruzstd` miscalculate the length of the allocated and initialized section of its internal `RingBuffer`, leading to uninitialized or out-of-bounds reads in the `copy_bytes_overshooting` function. This vulnerability allows up to 15 bytes of uninitialized memory to be read and potentially written into the output when decompressing a specially crafted archive. If exploited, this issue may result in sensitive memory contents being included in the decompressed data. This leakage can occur multiple times during the processing of a single archive, increasing the potential exposure of confidential information.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `ruzstd` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Out-of-bounds Read",
-  "related_cve_id" : "",
-  "language" : "rust",
-  "severity_class" : "HIGH",
-  "aikido_score" : 80,
-  "changelog" : "https://rustsec.org/advisories/RUSTSEC-2024-0400.html",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-29 11:30",
-  "last_modified" : "2024-11-29 11:30"
+  "package_name": "ruzstd",
+  "patch_versions": [
+    "0.7.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.7.0",
+      "0.7.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-125"
+  ],
+  "tldr": "Affected versions of `ruzstd` miscalculate the length of the allocated and initialized section of its internal `RingBuffer`, leading to uninitialized or out-of-bounds reads in the `copy_bytes_overshooting` function. This vulnerability allows up to 15 bytes of uninitialized memory to be read and potentially written into the output when decompressing a specially crafted archive. If exploited, this issue may result in sensitive memory contents being included in the decompressed data. This leakage can occur multiple times during the processing of a single archive, increasing the potential exposure of confidential information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ruzstd` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Out-of-bounds Read",
+  "related_cve_id": "",
+  "language": "rust",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2024-0400.html",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-29 11:30",
+  "last_modified": "2024-11-29 11:30"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10409",
-  "package_name" : "uppy",
-  "patch_versions" : [ "4.6.0" ],
-  "vulnerable_ranges" : [ [ "3.5.0", "4.5.0" ] ],
-  "cwe" : [ "CWE-942" ],
-  "tldr" : "Affected versions of the package are vulnerable to overly permissive cross-domain whitelisting. When the `corsOrigins` environment variable is set to `*`, it allows requests from any origin, bypassing intended security restrictions and exposing the application to potential Cross-site Request Forgery (CSRF) or data theft attacks.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `uppy` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Overly Permissive Cross-domain Whitelist",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "LOW",
-  "aikido_score" : 30,
-  "changelog" : "https://github.com/transloadit/uppy/releases/tag/uppy%404.6.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-04",
-  "last_modified" : "2024-11-04"
+  "package_name": "uppy",
+  "patch_versions": [
+    "4.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.5.0",
+      "4.5.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-942"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to overly permissive cross-domain whitelisting. When the `corsOrigins` environment variable is set to `*`, it allows requests from any origin, bypassing intended security restrictions and exposing the application to potential Cross-site Request Forgery (CSRF) or data theft attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `uppy` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Overly Permissive Cross-domain Whitelist",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/transloadit/uppy/releases/tag/uppy%404.6.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-04",
+  "last_modified": "2024-11-04"
 }

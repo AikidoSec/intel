@@ -1,25 +1,34 @@
 {
-  "id" : "AIKIDO-2024-10252",
-  "package_name" : "go.opentelemetry.io/collector/component",
-  "patch_versions" : [ "0.109.0" ],
-  "vulnerable_ranges" : [ [ "0.100.0", "0.108.1" ] ],
-  "cwe" : [ "CWE-833", "CWE-362" ],
-  "tldr" : "Affected versions of the package are vulnerable to a potential deadlock in the persistent queue due to a race condition, where the `used` value in `sizedChannel` becomes out of sync with the channel length.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `go.opentelemetry.io/collector/component` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Deadlock",
-  "related_cve_id" : "",
-  "language" : "go",
-  "severity_class" : "LOW",
-  "aikido_score" : 20,
-  "changelog" : "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.109.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-09-11",
-  "last_modified" : "2024-09-11"
+  "package_name": "go.opentelemetry.io/collector/component",
+  "patch_versions": [
+    "0.109.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.100.0",
+      "0.108.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-833",
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to a potential deadlock in the persistent queue due to a race condition, where the `used` value in `sizedChannel` becomes out of sync with the channel length.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `go.opentelemetry.io/collector/component` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Deadlock",
+  "related_cve_id": "",
+  "language": "go",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.109.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-09-11",
+  "last_modified": "2024-09-11"
 }

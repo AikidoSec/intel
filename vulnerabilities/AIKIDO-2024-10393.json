@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10393",
-  "package_name" : "mageplaza/magento-2-blog-extension",
-  "patch_versions" : [ "4.2.0" ],
-  "vulnerable_ranges" : [ [ "2.6.0", "4.1.7" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) in the comment section. Malicious users can inject harmful scripts into their comments, which are then executed in the context of other users' browsers, potentially leading to unauthorized actions or data theft.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `mageplaza/magento-2-blog-extension` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting (XSS)",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 49,
-  "changelog" : "https://github.com/mageplaza/magento-2-blog/releases/tag/v4.2.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-30",
-  "last_modified" : "2024-10-30"
+  "package_name": "mageplaza/magento-2-blog-extension",
+  "patch_versions": [
+    "4.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.6.0",
+      "4.1.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) in the comment section. Malicious users can inject harmful scripts into their comments, which are then executed in the context of other users' browsers, potentially leading to unauthorized actions or data theft.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mageplaza/magento-2-blog-extension` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "MEDIUM",
+  "aikido_score": 49,
+  "changelog": "https://github.com/mageplaza/magento-2-blog/releases/tag/v4.2.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-30",
+  "last_modified": "2024-10-30"
 }

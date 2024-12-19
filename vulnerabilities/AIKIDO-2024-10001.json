@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10001",
-  "package_name" : "lilconfig",
-  "patch_versions" : [ "3.1.1" ],
-  "vulnerable_ranges" : [ [ "3.1.0", "3.1.0" ] ],
-  "cwe" : [ "CWE-94" ],
-  "tldr" : "A code injection vulnerability was silently addressed in version 3.1.1 of `lilconfig`, impacting all uses of the package in earlier versions.",
-  "doest_this_affect_me" : "You are affected by this flaw if you use the 3.1.0 version of this package.",
-  "how_to_fix" : "To fix, upgrade to `lilconfig` 3.1.1 or above.",
-  "reporter" : null,
-  "vulnerable_to" : "Code Injection",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/antonk52/lilconfig/releases/tag/v3.1.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-02-23",
-  "last_modified" : "2024-02-23"
+  "package_name": "lilconfig",
+  "patch_versions": [
+    "3.1.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.1.0",
+      "3.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "A code injection vulnerability was silently addressed in version 3.1.1 of `lilconfig`, impacting all uses of the package in earlier versions.",
+  "doest_this_affect_me": "You are affected by this flaw if you use the 3.1.0 version of this package.",
+  "how_to_fix": "To fix, upgrade to `lilconfig` 3.1.1 or above.",
+  "reporter": null,
+  "vulnerable_to": "Code Injection",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/antonk52/lilconfig/releases/tag/v3.1.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-02-23",
+  "last_modified": "2024-02-23"
 }

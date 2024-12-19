@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10011",
-  "package_name" : "xz-utils",
-  "patch_versions" : [ "5.4.1" ],
-  "vulnerable_ranges" : [ [ "5.6.0", "5.6.1" ] ],
-  "cwe" : [ "CWE-410" ],
-  "tldr" : "These versions include a backdoor that gives unauthorized access to your servers.",
-  "doest_this_affect_me" : "You are affected only if you use versions 5.6.0 or 5.6.1 of `xz-utils`.",
-  "how_to_fix" : "Downgrade and wipe or reinstall your server.",
-  "reporter" : "",
-  "vulnerable_to" : "Remote Code Execution (RCE)",
-  "related_cve_id" : "CVE-2024-3094",
-  "language" : "OS",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 100,
-  "changelog" : "https://tukaani.org/xz-backdoor/",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-03-29",
-  "last_modified" : "2024-03-29"
+  "package_name": "xz-utils",
+  "patch_versions": [
+    "5.4.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.6.0",
+      "5.6.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-410"
+  ],
+  "tldr": "These versions include a backdoor that gives unauthorized access to your servers.",
+  "doest_this_affect_me": "You are affected only if you use versions 5.6.0 or 5.6.1 of `xz-utils`.",
+  "how_to_fix": "Downgrade and wipe or reinstall your server.",
+  "reporter": "",
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "CVE-2024-3094",
+  "language": "OS",
+  "severity_class": "CRITICAL",
+  "aikido_score": 100,
+  "changelog": "https://tukaani.org/xz-backdoor/",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-03-29",
+  "last_modified": "2024-03-29"
 }

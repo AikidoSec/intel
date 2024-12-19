@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10045",
-  "package_name" : "@quasar/app-webpack",
-  "patch_versions" : [ "3.12.6" ],
-  "vulnerable_ranges" : [ [ "3.4.1", "3.12.5" ] ],
-  "cwe" : [ "CWE-1333" ],
-  "tldr" : "A regular expression Denial of Service (ReDoS) vulnerability was found in `kangax html-minifier` 4.0.0 through the `candidate` variable in `htmlminifier.js`. Since this issue does not receive a fix, the package switches to a different implementation for the HTML minifier.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@quasar/app-webpack` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Regular Expression Denial of Service (ReDoS)",
-  "related_cve_id" : "CVE-2022-37620",
-  "language" : "JS",
-  "severity_class" : "HIGH",
-  "aikido_score" : 75,
-  "changelog" : "https://github.com/quasarframework/quasar/releases/tag/%40quasar%2Fapp-webpack-v3.12.6",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-24",
-  "last_modified" : "2024-04-24"
+  "package_name": "@quasar/app-webpack",
+  "patch_versions": [
+    "3.12.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.4.1",
+      "3.12.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "A regular expression Denial of Service (ReDoS) vulnerability was found in `kangax html-minifier` 4.0.0 through the `candidate` variable in `htmlminifier.js`. Since this issue does not receive a fix, the package switches to a different implementation for the HTML minifier.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@quasar/app-webpack` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "CVE-2022-37620",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/quasarframework/quasar/releases/tag/%40quasar%2Fapp-webpack-v3.12.6",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-24",
+  "last_modified": "2024-04-24"
 }

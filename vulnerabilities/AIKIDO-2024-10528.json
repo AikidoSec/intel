@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10528",
-  "package_name" : "chainlit",
-  "patch_versions" : [ "1.3.1" ],
-  "vulnerable_ranges" : [ [ "0.1.1", "1.3.0" ] ],
-  "cwe" : [ "CWE-862" ],
-  "tldr" : "Affected versions of this package are vulnerable to missing authorization in the `get_file` endpoint due to improper user verification. This flaw allows attackers to access and retrieve session files by guessing or obtaining valid `session_id` values. Exploiting this vulnerability can result in unauthorized data exposure, potentially leading to data breaches or compromise of sensitive information.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `chainlit` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Missing Authorization",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 53,
-  "changelog" : "https://github.com/Chainlit/chainlit/releases/tag/1.3.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-12-10 14:30",
-  "last_modified" : "2024-12-10 14:30"
+  "package_name": "chainlit",
+  "patch_versions": [
+    "1.3.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.1",
+      "1.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-862"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to missing authorization in the `get_file` endpoint due to improper user verification. This flaw allows attackers to access and retrieve session files by guessing or obtaining valid `session_id` values. Exploiting this vulnerability can result in unauthorized data exposure, potentially leading to data breaches or compromise of sensitive information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `chainlit` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Missing Authorization",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
+  "changelog": "https://github.com/Chainlit/chainlit/releases/tag/1.3.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-10 14:30",
+  "last_modified": "2024-12-10 14:30"
 }

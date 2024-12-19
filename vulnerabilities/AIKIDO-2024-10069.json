@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10069",
-  "package_name" : "mappersmith",
-  "patch_versions" : [ "2.43.0" ],
-  "vulnerable_ranges" : [ [ "2.28.0", "2.42.0" ] ],
-  "cwe" : [ "CWE-772" ],
-  "tldr" : "Affected versions of the `mappersmith` library are vulnerable to memory leaks when using an HTTP(s) agent with `keep-alive=true`. The TCP socket events are registered once per API call, which can lead to excessive memory usage.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `mappersmith` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Memory Leak",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 54,
-  "changelog" : "https://github.com/tulios/mappersmith/compare/tulios:eaddb99...tulios:d4debf8",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-30",
-  "last_modified" : "2024-04-30"
+  "package_name": "mappersmith",
+  "patch_versions": [
+    "2.43.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.28.0",
+      "2.42.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-772"
+  ],
+  "tldr": "Affected versions of the `mappersmith` library are vulnerable to memory leaks when using an HTTP(s) agent with `keep-alive=true`. The TCP socket events are registered once per API call, which can lead to excessive memory usage.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mappersmith` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Memory Leak",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 54,
+  "changelog": "https://github.com/tulios/mappersmith/compare/tulios:eaddb99...tulios:d4debf8",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-30",
+  "last_modified": "2024-04-30"
 }

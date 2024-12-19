@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10123",
-  "package_name" : "craftcms/cms",
-  "patch_versions" : [ "5.1.2" ],
-  "vulnerable_ranges" : [ [ "3.0.0", "5.1.1" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of `craftcms/cms` are vulnerable to Cross-site Scripting (XSS) via UI labels of elements.",
-  "doest_this_affect_me" : "You are affected if you use a vulnerable version of `craftcms/cms`. The patch of the vulnerability can be reviewed at: <a href=\"https://github.com/craftcms/cms/commit/b7348942f8131b3868ec6f46d615baae50151bb8\">https://github.com/craftcms/cms/commit/b7348942f8131b3868ec6f46d615baae50151bb8</a>.",
-  "how_to_fix" : "Upgrade `craftcms/cms` to the patch version (5.1.2).",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-Site Scripting",
-  "related_cve_id" : "CVE-2024-45406",
-  "language" : "php",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/craftcms/cms/releases/tag/5.1.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-07",
-  "last_modified" : "2024-09-24"
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "5.1.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "5.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of `craftcms/cms` are vulnerable to Cross-site Scripting (XSS) via UI labels of elements.",
+  "doest_this_affect_me": "You are affected if you use a vulnerable version of `craftcms/cms`. The patch of the vulnerability can be reviewed at: <a href=\"https://github.com/craftcms/cms/commit/b7348942f8131b3868ec6f46d615baae50151bb8\">https://github.com/craftcms/cms/commit/b7348942f8131b3868ec6f46d615baae50151bb8</a>.",
+  "how_to_fix": "Upgrade `craftcms/cms` to the patch version (5.1.2).",
+  "reporter": "",
+  "vulnerable_to": "Cross-Site Scripting",
+  "related_cve_id": "CVE-2024-45406",
+  "language": "php",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.1.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-07",
+  "last_modified": "2024-09-24"
 }

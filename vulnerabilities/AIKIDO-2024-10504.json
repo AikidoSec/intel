@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10504",
-  "package_name" : "github.com/quic-go/quic-go",
-  "patch_versions" : [ "0.48.2" ],
-  "vulnerable_ranges" : [ [ "0.5.0", "0.48.1" ] ],
-  "cwe" : [ "CWE-345" ],
-  "tldr" : "Affected versions of `quic-go` are vulnerable to a disruption attack where an off-path attacker can inject a forged ICMP \"Packet Too Large\" message. Because `quic-go` uses `IP_PMTUDISC_DO`, the kernel returns a \"message too large\" error when attempting to send packets exceeding the spoofed MTU. By setting the MTU below the QUIC minimum of 1200 bytes, the attacker can disrupt the connection even after the handshake, bypassing fallback mechanisms like HTTP over TCP. The attack requires the attacker to know both the client’s and server’s IP and port information.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `github.com/quic-go/quic-go` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Insufficient Verification of Data Authenticity",
-  "related_cve_id" : "CVE-2024-53259",
-  "language" : "go",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 65,
-  "changelog" : "https://github.com/quic-go/quic-go/releases/tag/v0.48.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-12-02 16:15",
-  "last_modified" : "2024-12-02 16:15"
+  "package_name": "github.com/quic-go/quic-go",
+  "patch_versions": [
+    "0.48.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.5.0",
+      "0.48.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-345"
+  ],
+  "tldr": "Affected versions of `quic-go` are vulnerable to a disruption attack where an off-path attacker can inject a forged ICMP \"Packet Too Large\" message. Because `quic-go` uses `IP_PMTUDISC_DO`, the kernel returns a \"message too large\" error when attempting to send packets exceeding the spoofed MTU. By setting the MTU below the QUIC minimum of 1200 bytes, the attacker can disrupt the connection even after the handshake, bypassing fallback mechanisms like HTTP over TCP. The attack requires the attacker to know both the client’s and server’s IP and port information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/quic-go/quic-go` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insufficient Verification of Data Authenticity",
+  "related_cve_id": "CVE-2024-53259",
+  "language": "go",
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
+  "changelog": "https://github.com/quic-go/quic-go/releases/tag/v0.48.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-02 16:15",
+  "last_modified": "2024-12-02 16:15"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10075",
-  "package_name" : "@tiptap/extension-youtube",
-  "patch_versions" : [ "2.1.13" ],
-  "vulnerable_ranges" : [ [ "2.0.0", "2.1.12" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of the `@tiptap/extension-youtube` library are vulnerable to Cross-site Scripting (XSS) due to a flaw in the `getEmbedUrlFromYoutubeUrl` function. An attacker can craft a response that stores a YouTube video with a URL containing `/embed/`, such as `javascript:alert(1)//embed/`, allowing arbitrary code execution in the site's origin. This vulnerability is considered low severity, as exploiting it would require the attacker to manipulate the TipTap payload in a way that bypasses the YouTube extension's `setYoutubeVideo` command, which already validates URLs.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@tiptap/extension-youtube` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting (XSS)",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "LOW",
-  "aikido_score" : 15,
-  "changelog" : "https://github.com/ueberdosis/tiptap/releases/tag/v2.1.13",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-05-02",
-  "last_modified" : "2024-05-02"
+  "package_name": "@tiptap/extension-youtube",
+  "patch_versions": [
+    "2.1.13"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.1.12"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of the `@tiptap/extension-youtube` library are vulnerable to Cross-site Scripting (XSS) due to a flaw in the `getEmbedUrlFromYoutubeUrl` function. An attacker can craft a response that stores a YouTube video with a URL containing `/embed/`, such as `javascript:alert(1)//embed/`, allowing arbitrary code execution in the site's origin. This vulnerability is considered low severity, as exploiting it would require the attacker to manipulate the TipTap payload in a way that bypasses the YouTube extension's `setYoutubeVideo` command, which already validates URLs.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@tiptap/extension-youtube` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/ueberdosis/tiptap/releases/tag/v2.1.13",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-05-02",
+  "last_modified": "2024-05-02"
 }

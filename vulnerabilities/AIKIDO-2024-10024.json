@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10024",
-  "package_name" : "django-json-widget",
-  "patch_versions" : [ "2.0.0" ],
-  "vulnerable_ranges" : [ [ "0.1.0", "1.1.1" ] ],
-  "cwe" : [ "CWE-20" ],
-  "tldr" : "Affected versions of this package are vulnerable to improper input validation due to failure in preventing HTML injection during JSON handling.",
-  "doest_this_affect_me" : "You are affected if you are using a version of this package <= 1.1.1.",
-  "how_to_fix" : "Upgrade the `django-json-widget` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Input Validation",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "HIGH",
-  "aikido_score" : 83,
-  "changelog" : "https://github.com/jmrivas86/django-json-widget/commit/bbe84655c3df2b32aade1997953dd06bffcb489e",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-11",
-  "last_modified" : "2024-04-11"
+  "package_name": "django-json-widget",
+  "patch_versions": [
+    "2.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper input validation due to failure in preventing HTML injection during JSON handling.",
+  "doest_this_affect_me": "You are affected if you are using a version of this package <= 1.1.1.",
+  "how_to_fix": "Upgrade the `django-json-widget` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 83,
+  "changelog": "https://github.com/jmrivas86/django-json-widget/commit/bbe84655c3df2b32aade1997953dd06bffcb489e",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-11",
+  "last_modified": "2024-04-11"
 }

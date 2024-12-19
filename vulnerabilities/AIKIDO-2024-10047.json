@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10047",
-  "package_name" : "parse-server",
-  "patch_versions" : [ "6.5.0" ],
-  "vulnerable_ranges" : [ [ "2.2.14", "6.4.0" ] ],
-  "cwe" : [ "CWE-89" ],
-  "tldr" : "Versions of this package impacted by this issue are vulnerable to SQL Injection through a malicious PostgreSQL statement containing multiple quoted strings. This vulnerability occurs only when using the PostgreSQL engine.",
-  "doest_this_affect_me" : "You are affected if you are using a version which is within vulnerability ranges and if you are using the PostgreSQL engine.",
-  "how_to_fix" : "Upgrade the `parse-server` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "SQL Injection",
-  "related_cve_id" : "CVE-2024-27298",
-  "language" : "JS",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 99,
-  "changelog" : "https://github.com/parse-community/parse-server/releases/tag/6.5.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-24",
-  "last_modified" : "2024-04-24"
+  "package_name": "parse-server",
+  "patch_versions": [
+    "6.5.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.2.14",
+      "6.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-89"
+  ],
+  "tldr": "Versions of this package impacted by this issue are vulnerable to SQL Injection through a malicious PostgreSQL statement containing multiple quoted strings. This vulnerability occurs only when using the PostgreSQL engine.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges and if you are using the PostgreSQL engine.",
+  "how_to_fix": "Upgrade the `parse-server` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "SQL Injection",
+  "related_cve_id": "CVE-2024-27298",
+  "language": "JS",
+  "severity_class": "CRITICAL",
+  "aikido_score": 99,
+  "changelog": "https://github.com/parse-community/parse-server/releases/tag/6.5.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-24",
+  "last_modified": "2024-04-24"
 }

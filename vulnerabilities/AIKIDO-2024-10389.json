@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10389",
-  "package_name" : "@kinde-oss/kinde-auth-nextjs",
-  "patch_versions" : [ "2.3.12" ],
-  "vulnerable_ranges" : [ [ "1.8.1", "2.3.11" ] ],
-  "cwe" : [ "CWE-295" ],
-  "tldr" : "Affected versions of this package fail to properly validate security certificates. If the security tokens exist in the cookie storage, the `isAuthenticatedFactory()` function incorrectly returns `true` without verifying the expiration or issuer of the token. This flaw allows unauthorized access, as it bypasses essential security checks that should validate the integrity and validity of the token.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@kinde-oss/kinde-auth-nextjs` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Certificate Validation",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 65,
-  "changelog" : "https://github.com/kinde-oss/kinde-auth-nextjs/blob/main/CHANGELOG.md",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-29",
-  "last_modified" : "2024-10-29"
+  "package_name": "@kinde-oss/kinde-auth-nextjs",
+  "patch_versions": [
+    "2.3.12"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.8.1",
+      "2.3.11"
+    ]
+  ],
+  "cwe": [
+    "CWE-295"
+  ],
+  "tldr": "Affected versions of this package fail to properly validate security certificates. If the security tokens exist in the cookie storage, the `isAuthenticatedFactory()` function incorrectly returns `true` without verifying the expiration or issuer of the token. This flaw allows unauthorized access, as it bypasses essential security checks that should validate the integrity and validity of the token.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@kinde-oss/kinde-auth-nextjs` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Certificate Validation",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
+  "changelog": "https://github.com/kinde-oss/kinde-auth-nextjs/blob/main/CHANGELOG.md",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-29",
+  "last_modified": "2024-10-29"
 }

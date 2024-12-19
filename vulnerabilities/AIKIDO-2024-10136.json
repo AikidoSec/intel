@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10136",
-  "package_name" : "postman-sandbox",
-  "patch_versions" : [ "5.0.0" ],
-  "vulnerable_ranges" : [ [ "0.0.0", "4.1.5" ] ],
-  "cwe" : [ "CWE-693" ],
-  "tldr" : "Affected versions of `postman-sandbox` are vulnerable to a sandbox escape, as access to the `Module` object is not adequately protected.",
-  "doest_this_affect_me" : "You are affected if you use a vulnerable version of `postman-sandbox` and (directly or indirectly) run untrusted scripts within the sandbox.",
-  "how_to_fix" : "Upgrade `postman-sandbox` to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Sandbox Escape",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/postmanlabs/postman-sandbox/compare/postmanlabs:476ccbe...postmanlabs:1054908",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-21",
-  "last_modified" : "2024-06-21"
+  "package_name": "postman-sandbox",
+  "patch_versions": [
+    "5.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.0",
+      "4.1.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-693"
+  ],
+  "tldr": "Affected versions of `postman-sandbox` are vulnerable to a sandbox escape, as access to the `Module` object is not adequately protected.",
+  "doest_this_affect_me": "You are affected if you use a vulnerable version of `postman-sandbox` and (directly or indirectly) run untrusted scripts within the sandbox.",
+  "how_to_fix": "Upgrade `postman-sandbox` to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Sandbox Escape",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/postmanlabs/postman-sandbox/compare/postmanlabs:476ccbe...postmanlabs:1054908",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-21",
+  "last_modified": "2024-06-21"
 }

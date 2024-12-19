@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10077",
-  "package_name" : "@strapi/strapi",
-  "patch_versions" : [ "4.19.1" ],
-  "vulnerable_ranges" : [ [ "4.4.5", "4.19.0" ] ],
-  "cwe" : [ "CWE-266" ],
-  "tldr" : "Affected versions of the `@strapi/strapi` library are vulnerable to incorrect privilege assignment. Despite users having the correct roles and permissions configured, in some cases, they can access content belonging to other users that they should not be able to see.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@strapi/strapi` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Incorrect Privilege Assignment",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "HIGH",
-  "aikido_score" : 89,
-  "changelog" : "https://github.com/strapi/strapi/releases/tag/v4.19.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-05-02",
-  "last_modified" : "2024-05-02"
+  "package_name": "@strapi/strapi",
+  "patch_versions": [
+    "4.19.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.4.5",
+      "4.19.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-266"
+  ],
+  "tldr": "Affected versions of the `@strapi/strapi` library are vulnerable to incorrect privilege assignment. Despite users having the correct roles and permissions configured, in some cases, they can access content belonging to other users that they should not be able to see.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@strapi/strapi` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Incorrect Privilege Assignment",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 89,
+  "changelog": "https://github.com/strapi/strapi/releases/tag/v4.19.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-05-02",
+  "last_modified": "2024-05-02"
 }

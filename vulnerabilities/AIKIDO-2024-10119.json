@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10119",
-  "package_name" : "torchserve",
-  "patch_versions" : [ "0.11.0" ],
-  "vulnerable_ranges" : [ [ "0.1.1", "0.10.0" ] ],
-  "cwe" : [ "CWE-284" ],
-  "tldr" : "Affected versions of `torchserve` are vulnerable to an overpermissive model server configuration. The model server listens on all interfaces (0.0.0.0), allowing anyone on the local network (such as other containers) to access the Model Server. The patched version ensures that the Model Server listens on localhost only.",
-  "doest_this_affect_me" : "You are affected if you are use a vulnerable version of `torchserve`.",
-  "how_to_fix" : "Upgrade `torchserve` to the patch version (version 0.11.0).",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Access Control",
-  "related_cve_id" : "CVE-2024-35199",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/pytorch/serve/releases/tag/v0.11.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-04",
-  "last_modified" : "2024-09-24"
+  "package_name": "torchserve",
+  "patch_versions": [
+    "0.11.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.1",
+      "0.10.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "Affected versions of `torchserve` are vulnerable to an overpermissive model server configuration. The model server listens on all interfaces (0.0.0.0), allowing anyone on the local network (such as other containers) to access the Model Server. The patched version ensures that the Model Server listens on localhost only.",
+  "doest_this_affect_me": "You are affected if you are use a vulnerable version of `torchserve`.",
+  "how_to_fix": "Upgrade `torchserve` to the patch version (version 0.11.0).",
+  "reporter": "",
+  "vulnerable_to": "Improper Access Control",
+  "related_cve_id": "CVE-2024-35199",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/pytorch/serve/releases/tag/v0.11.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-04",
+  "last_modified": "2024-09-24"
 }

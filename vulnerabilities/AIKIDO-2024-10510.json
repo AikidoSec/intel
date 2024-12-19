@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10510",
-  "package_name" : "GDAL",
-  "patch_versions" : [ "3.9.3" ],
-  "vulnerable_ranges" : [ [ "2.2.0", "3.9.2" ] ],
-  "cwe" : [ "CWE-400" ],
-  "tldr" : "Affected versions of this package are vulnerable to Denial of Service (DoS) in the `GMLASReader` class due to insufficient restrictions on XML entity expansion. An attacker can exploit this by providing specially crafted XML files with recursive entity definitions, leading to excessive memory and CPU consumption, ultimately causing the application to become unresponsive.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `GDAL` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Denial of Service (DoS)",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "HIGH",
-  "aikido_score" : 85,
-  "changelog" : "https://github.com/OSGeo/gdal/blob/v3.9.3/NEWS.md",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-12-03 15:00",
-  "last_modified" : "2024-12-03 15:00"
+  "package_name": "GDAL",
+  "patch_versions": [
+    "3.9.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.2.0",
+      "3.9.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Denial of Service (DoS) in the `GMLASReader` class due to insufficient restrictions on XML entity expansion. An attacker can exploit this by providing specially crafted XML files with recursive entity definitions, leading to excessive memory and CPU consumption, ultimately causing the application to become unresponsive.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `GDAL` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/OSGeo/gdal/blob/v3.9.3/NEWS.md",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-03 15:00",
+  "last_modified": "2024-12-03 15:00"
 }

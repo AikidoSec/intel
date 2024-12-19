@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10120",
-  "package_name" : "helix.fhir.client.sdk",
-  "patch_versions" : [ "2.0.8" ],
-  "vulnerable_ranges" : [ [ "0.1.24", "2.0.7" ] ],
-  "cwe" : [ "CWE-532" ],
-  "tldr" : "Affected versions of `helix.fhir.client.sdk` could expose HTTP headers in the logs. Since HTTP headers may contain authentication details, this could lead to sensitive information being logged in your logging system.",
-  "doest_this_affect_me" : "You are affected if you are use a vulnerable version of `helix.fhir.client.sdk`.",
-  "how_to_fix" : "Upgrade `helix.fhir.client.sdk` to the patch version (version 2.0.8).",
-  "reporter" : "",
-  "vulnerable_to" : "Insertion of Sensitive Information into Log File",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/icanbwell/helix.fhir.client.sdk/releases/tag/2.0.8",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-04",
-  "last_modified" : "2024-06-04"
+  "package_name": "helix.fhir.client.sdk",
+  "patch_versions": [
+    "2.0.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.24",
+      "2.0.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of `helix.fhir.client.sdk` could expose HTTP headers in the logs. Since HTTP headers may contain authentication details, this could lead to sensitive information being logged in your logging system.",
+  "doest_this_affect_me": "You are affected if you are use a vulnerable version of `helix.fhir.client.sdk`.",
+  "how_to_fix": "Upgrade `helix.fhir.client.sdk` to the patch version (version 2.0.8).",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/icanbwell/helix.fhir.client.sdk/releases/tag/2.0.8",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-04",
+  "last_modified": "2024-06-04"
 }

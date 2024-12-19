@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10029",
-  "package_name" : "electron",
-  "patch_versions" : [ "27.3.11" ],
-  "vulnerable_ranges" : [ [ "27.0.0", "27.3.10" ] ],
-  "cwe" : [ "CWE-125" ],
-  "tldr" : "Out of bounds memory access in Compositing in Google Chrome prior to 123.0.6312.122 allowed a remote attacker who had compromised the GPU process to potentially perform a sandbox escape via specific UI gestures. (Chromium security severity: High)",
-  "doest_this_affect_me" : "You're affected if you are using a version which is within vulnerability ranges.",
-  "how_to_fix" : "Upgrade electron library to patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Out-of-bounds Read",
-  "related_cve_id" : "CVE-2024-3157",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 60,
-  "changelog" : "https://github.com/electron/electron/releases/tag/v27.3.11",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-16",
-  "last_modified" : "2024-04-16"
+  "package_name": "electron",
+  "patch_versions": [
+    "27.3.11"
+  ],
+  "vulnerable_ranges": [
+    [
+      "27.0.0",
+      "27.3.10"
+    ]
+  ],
+  "cwe": [
+    "CWE-125"
+  ],
+  "tldr": "Out of bounds memory access in Compositing in Google Chrome prior to 123.0.6312.122 allowed a remote attacker who had compromised the GPU process to potentially perform a sandbox escape via specific UI gestures. (Chromium security severity: High)",
+  "doest_this_affect_me": "You're affected if you are using a version which is within vulnerability ranges.",
+  "how_to_fix": "Upgrade electron library to patch version.",
+  "reporter": "",
+  "vulnerable_to": "Out-of-bounds Read",
+  "related_cve_id": "CVE-2024-3157",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/electron/electron/releases/tag/v27.3.11",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-16",
+  "last_modified": "2024-04-16"
 }

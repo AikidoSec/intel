@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10210",
-  "package_name" : "statsig/statsigsdk",
-  "patch_versions" : [ "3.3.1" ],
-  "vulnerable_ranges" : [ [ "3.2.0", "3.3.0" ] ],
-  "cwe" : [ "CWE-359" ],
-  "tldr" : "Affected versions of the package may expose private personal information to unauthorized actors by including private user properties in the `ClientInitializeResponse`.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `statsig/statsigsdk` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Exposure of Private Personal Information to an Unauthorized Actor",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 45,
-  "changelog" : "https://github.com/statsig-io/php-sdk/releases/tag/3.3.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-08-07",
-  "last_modified" : "2024-08-07"
+  "package_name": "statsig/statsigsdk",
+  "patch_versions": [
+    "3.3.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.2.0",
+      "3.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-359"
+  ],
+  "tldr": "Affected versions of the package may expose private personal information to unauthorized actors by including private user properties in the `ClientInitializeResponse`.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `statsig/statsigsdk` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Private Personal Information to an Unauthorized Actor",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/statsig-io/php-sdk/releases/tag/3.3.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-08-07",
+  "last_modified": "2024-08-07"
 }

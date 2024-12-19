@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10179",
-  "package_name" : "@nangohq/frontend",
-  "patch_versions" : [ "0.41.1" ],
-  "vulnerable_ranges" : [ [ "0.6.0", "0.41.0" ] ],
-  "cwe" : [ "CWE-532" ],
-  "tldr" : "Affected versions of this package may expose sensitive information in the log files. They leak credentials and return stack traces in API responses, which are then exposed in the logs in case of an error.",
-  "doest_this_affect_me" : "You are affected if you are using a vulnerable version of the package.",
-  "how_to_fix" : "Upgrade `@nangohq/frontend-node` to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Insertion of Sensitive Information into Log File",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "LOW",
-  "aikido_score" : 30,
-  "changelog" : "https://github.com/NangoHQ/nango/releases/tag/v0.41.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-07-15",
-  "last_modified" : "2024-07-15"
+  "package_name": "@nangohq/frontend",
+  "patch_versions": [
+    "0.41.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.6.0",
+      "0.41.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package may expose sensitive information in the log files. They leak credentials and return stack traces in API responses, which are then exposed in the logs in case of an error.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade `@nangohq/frontend-node` to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/NangoHQ/nango/releases/tag/v0.41.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-07-15",
+  "last_modified": "2024-07-15"
 }

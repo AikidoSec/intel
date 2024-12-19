@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10490",
-  "package_name" : "akka-http_2.13",
-  "patch_versions" : [ "10.5.2" ],
-  "vulnerable_ranges" : [ [ "3.0.0", "10.5.1" ] ],
-  "cwe" : [ "CWE-284" ],
-  "tldr" : "In affected versions of Akka HTTP, the `FileUploadDirectives.fileUploadAll` directive creates temporary files with overly permissive access rights on Unix-like systems. These temporary files are readable by other users, which can lead to unauthorized access to sensitive data uploaded through the directive.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range and you are using the `FileUploadDirectives.fileUploadAll` function.",
-  "how_to_fix" : "Upgrade the `akka-http` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Access Control",
-  "related_cve_id" : "CVE-2023-33251",
-  "language" : "JAVA",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 55,
-  "changelog" : "https://doc.akka.io/reference/security-announcements/akka-http-cve-2023-05-15.html",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : "akka-http_",
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-28 17:20",
-  "last_modified" : "2024-11-28 17:20"
+  "package_name": "akka-http_2.13",
+  "patch_versions": [
+    "10.5.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "10.5.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "In affected versions of Akka HTTP, the `FileUploadDirectives.fileUploadAll` directive creates temporary files with overly permissive access rights on Unix-like systems. These temporary files are readable by other users, which can lead to unauthorized access to sensitive data uploaded through the directive.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and you are using the `FileUploadDirectives.fileUploadAll` function.",
+  "how_to_fix": "Upgrade the `akka-http` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Access Control",
+  "related_cve_id": "CVE-2023-33251",
+  "language": "JAVA",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://doc.akka.io/reference/security-announcements/akka-http-cve-2023-05-15.html",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": "akka-http_",
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-28 17:20",
+  "last_modified": "2024-11-28 17:20"
 }

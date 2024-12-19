@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10116",
-  "package_name" : "@cyclonedx/cyclonedx-npm",
-  "patch_versions" : [ "1.19.0" ],
-  "vulnerable_ranges" : [ [ "1.0.0", "1.18.0" ] ],
-  "cwe" : [ "CWE-200" ],
-  "tldr" : "Affected versions of `@cyclonedx/cyclonedx-npm` may expose distribution URL credentials in the generated SBOM if they are defined in your package definitions.",
-  "doest_this_affect_me" : "You are affected if you are using a vulnerable version of the package and use URL embedded credentials inside your package definitions.",
-  "how_to_fix" : "Upgrade `@cyclonedx/cyclonedx-npm` to the patch version (version 1.19.0).",
-  "reporter" : "",
-  "vulnerable_to" : "Information Disclosure",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "LOW",
-  "aikido_score" : 10,
-  "changelog" : "https://github.com/CycloneDX/cyclonedx-node-npm/releases/tag/v1.19.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-04",
-  "last_modified" : "2024-06-04"
+  "package_name": "@cyclonedx/cyclonedx-npm",
+  "patch_versions": [
+    "1.19.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.18.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of `@cyclonedx/cyclonedx-npm` may expose distribution URL credentials in the generated SBOM if they are defined in your package definitions.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package and use URL embedded credentials inside your package definitions.",
+  "how_to_fix": "Upgrade `@cyclonedx/cyclonedx-npm` to the patch version (version 1.19.0).",
+  "reporter": "",
+  "vulnerable_to": "Information Disclosure",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/CycloneDX/cyclonedx-node-npm/releases/tag/v1.19.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-04",
+  "last_modified": "2024-06-04"
 }

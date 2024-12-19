@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10099",
-  "package_name" : "opencv-python",
-  "patch_versions" : [ "4.8.1.78" ],
-  "vulnerable_ranges" : [ [ "3.1.0.0", "4.8.1.76" ] ],
-  "cwe" : [ "CWE-122" ],
-  "tldr" : "Affected versions of the `opencv-python-headless` library are vulnerable to heap-based buffer overflow. It allows a remote attacker to perform an out-of-bounds memory write via a crafted WebP file.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range. This is only exploitable if 'the color_cache_bits' value defines which size of the HuffmanCode buffer to use.",
-  "how_to_fix" : "Upgrade the `opencv-python-headless` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Heap-based Buffer Overflow",
-  "related_cve_id" : "CVE-2023-4863",
-  "language" : "python",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 95,
-  "changelog" : "https://github.com/opencv/opencv-python/releases/tag/78",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-05-22",
-  "last_modified" : "2024-05-22"
+  "package_name": "opencv-python",
+  "patch_versions": [
+    "4.8.1.78"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.1.0.0",
+      "4.8.1.76"
+    ]
+  ],
+  "cwe": [
+    "CWE-122"
+  ],
+  "tldr": "Affected versions of the `opencv-python-headless` library are vulnerable to heap-based buffer overflow. It allows a remote attacker to perform an out-of-bounds memory write via a crafted WebP file.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range. This is only exploitable if 'the color_cache_bits' value defines which size of the HuffmanCode buffer to use.",
+  "how_to_fix": "Upgrade the `opencv-python-headless` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Heap-based Buffer Overflow",
+  "related_cve_id": "CVE-2023-4863",
+  "language": "python",
+  "severity_class": "CRITICAL",
+  "aikido_score": 95,
+  "changelog": "https://github.com/opencv/opencv-python/releases/tag/78",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-05-22",
+  "last_modified": "2024-05-22"
 }

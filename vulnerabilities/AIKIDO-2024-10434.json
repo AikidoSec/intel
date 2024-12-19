@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10434",
-  "package_name" : "github.com/cosnicolaou/pbzip2",
-  "patch_versions" : [ "1.0.4" ],
-  "vulnerable_ranges" : [ [ "1.0.0", "1.0.3" ] ],
-  "cwe" : [ "CWE-190" ],
-  "tldr" : "Affected versions of the package are vulnerable to several integer overflows, as identified by GOSEC's G115 rule. This rule specifically detects potential vulnerabilities arising from improper handling of integer operations, where the value of an integer may exceed the allowed range for the type, causing unexpected behavior or security flaws.",
-  "doest_this_affect_me" : "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix" : "Upgrade the `github.com/cosnicolaou/pbzip2` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Integer Overflow",
-  "related_cve_id" : "",
-  "language" : "go",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 49,
-  "changelog" : "https://github.com/cosnicolaou/pbzip2/releases/tag/v1.0.4",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-08",
-  "last_modified" : "2024-11-08"
+  "package_name": "github.com/cosnicolaou/pbzip2",
+  "patch_versions": [
+    "1.0.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.0.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to several integer overflows, as identified by GOSEC's G115 rule. This rule specifically detects potential vulnerabilities arising from improper handling of integer operations, where the value of an integer may exceed the allowed range for the type, causing unexpected behavior or security flaws.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `github.com/cosnicolaou/pbzip2` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Integer Overflow",
+  "related_cve_id": "",
+  "language": "go",
+  "severity_class": "MEDIUM",
+  "aikido_score": 49,
+  "changelog": "https://github.com/cosnicolaou/pbzip2/releases/tag/v1.0.4",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-08",
+  "last_modified": "2024-11-08"
 }

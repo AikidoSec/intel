@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10396",
-  "package_name" : "encore.dev",
-  "patch_versions" : [ "1.43.3" ],
-  "vulnerable_ranges" : [ [ "1.33.0", "1.43.2" ] ],
-  "cwe" : [ "CWE-209" ],
-  "tldr" : "Affected versions of this package are vulnerable to leaking sensitive information through the `internal_message` field in error responses. This can expose details that may assist an attacker in gaining unauthorized access or performing malicious actions.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `encore.dev` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Generation of Error Message Containing Sensitive Information",
-  "related_cve_id" : "",
-  "language" : "go",
-  "severity_class" : "LOW",
-  "aikido_score" : 25,
-  "changelog" : "https://github.com/encoredev/encore/releases/tag/v1.43.3",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-31",
-  "last_modified" : "2024-10-31"
+  "package_name": "encore.dev",
+  "patch_versions": [
+    "1.43.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.33.0",
+      "1.43.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to leaking sensitive information through the `internal_message` field in error responses. This can expose details that may assist an attacker in gaining unauthorized access or performing malicious actions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `encore.dev` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
+  "related_cve_id": "",
+  "language": "go",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/encoredev/encore/releases/tag/v1.43.3",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-31",
+  "last_modified": "2024-10-31"
 }

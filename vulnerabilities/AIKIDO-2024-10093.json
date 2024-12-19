@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10093",
-  "package_name" : "picocolors",
-  "patch_versions" : [ "1.0.1" ],
-  "vulnerable_ranges" : [ [ "0.1.0", "1.0.0" ] ],
-  "cwe" : [ "CWE-674" ],
-  "tldr" : "Affected versions of the `picocolors` library are vulnerable to uncontrolled recursion. When very long inputs are passed into the `replaceClose` function, the library fails to properly control the amount of recursion, eventually causing a `RangeError: Maximum call stack size exceeded` stack overflow error.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `picocolors` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Uncontrolled Recursion",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "LOW",
-  "aikido_score" : 15,
-  "changelog" : "https://github.com/alexeyraspopov/picocolors/releases/tag/v1.0.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-05-14",
-  "last_modified" : "2024-05-14"
+  "package_name": "picocolors",
+  "patch_versions": [
+    "1.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-674"
+  ],
+  "tldr": "Affected versions of the `picocolors` library are vulnerable to uncontrolled recursion. When very long inputs are passed into the `replaceClose` function, the library fails to properly control the amount of recursion, eventually causing a `RangeError: Maximum call stack size exceeded` stack overflow error.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `picocolors` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Uncontrolled Recursion",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/alexeyraspopov/picocolors/releases/tag/v1.0.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-05-14",
+  "last_modified": "2024-05-14"
 }

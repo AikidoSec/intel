@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10511",
-  "package_name" : "astro",
-  "patch_versions" : [ "4.16.17" ],
-  "vulnerable_ranges" : [ [ "0.0.1", "4.16.16" ] ],
-  "cwe" : [ "CWE-352" ],
-  "tldr" : "Affected versions of this package lack default protection against cross-site request forgery (CSRF). To mitigate this vulnerability, users of versions starting from `4.9.0` can explicitly enable protection by setting `security.checkOrigin` to `true` in the configuration, lower versions are not protected. The patched version addresses this issue by enabling CSRF protection by default. Updating to the latest version or adjusting the configuration is recommended to prevent unauthorized actions on behalf of authenticated users.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `astro` library to the patch version or set `security.checkOrigin` to `true` if you have a version higher than `4.9.0`.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-Site Request Forgery (CSRF)",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "LOW",
-  "aikido_score" : 10,
-  "changelog" : "https://github.com/withastro/astro/releases/tag/astro%405.0.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-12-04 11:00",
-  "last_modified" : "2024-12-06 17:00"
+  "package_name": "astro",
+  "patch_versions": [
+    "4.16.17"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "4.16.16"
+    ]
+  ],
+  "cwe": [
+    "CWE-352"
+  ],
+  "tldr": "Affected versions of this package lack default protection against cross-site request forgery (CSRF). To mitigate this vulnerability, users of versions starting from `4.9.0` can explicitly enable protection by setting `security.checkOrigin` to `true` in the configuration, lower versions are not protected. The patched version addresses this issue by enabling CSRF protection by default. Updating to the latest version or adjusting the configuration is recommended to prevent unauthorized actions on behalf of authenticated users.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `astro` library to the patch version or set `security.checkOrigin` to `true` if you have a version higher than `4.9.0`.",
+  "reporter": "",
+  "vulnerable_to": "Cross-Site Request Forgery (CSRF)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/withastro/astro/releases/tag/astro%405.0.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-04 11:00",
+  "last_modified": "2024-12-06 17:00"
 }

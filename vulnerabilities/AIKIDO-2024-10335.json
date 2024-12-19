@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10335",
-  "package_name" : "@clerk/clerk-js",
-  "patch_versions" : [ "5.26.4" ],
-  "vulnerable_ranges" : [ [ "2.13.1", "5.26.3" ] ],
-  "cwe" : [ "CWE-601" ],
-  "tldr" : "Affected versions of the package are vulnerable to an Open Redirect due to insufficient checks. This flaw allows attackers to manipulate URLs, redirecting users to unauthorized or malicious websites, potentially leading to phishing attacks or other security breaches.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@clerk/clerk-js` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "URL Redirection to Untrusted Site ('Open Redirect')",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 45,
-  "changelog" : "https://github.com/clerk/javascript/releases/tag/%40clerk/clerk-js%405.26.4",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-14",
-  "last_modified" : "2024-10-14"
+  "package_name": "@clerk/clerk-js",
+  "patch_versions": [
+    "5.26.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.13.1",
+      "5.26.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-601"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to an Open Redirect due to insufficient checks. This flaw allows attackers to manipulate URLs, redirecting users to unauthorized or malicious websites, potentially leading to phishing attacks or other security breaches.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@clerk/clerk-js` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "URL Redirection to Untrusted Site ('Open Redirect')",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/clerk/javascript/releases/tag/%40clerk/clerk-js%405.26.4",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-14",
+  "last_modified": "2024-10-14"
 }

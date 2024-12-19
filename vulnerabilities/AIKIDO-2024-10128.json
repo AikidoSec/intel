@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10128",
-  "package_name" : "litellm",
-  "patch_versions" : [ "1.40.6" ],
-  "vulnerable_ranges" : [ [ "0.1.0", "1.40.5" ] ],
-  "cwe" : [ "CWE-209" ],
-  "tldr" : "Affected versions of `litellm` include the raw request in the metadata of `spend logs`, which may include `authorization` and other sensitive headers.",
-  "doest_this_affect_me" : "You are affected if you use a vulnerable version of `litellm`.",
-  "how_to_fix" : "Upgrade `litellm` to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Information Disclosure",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 40,
-  "changelog" : "https://github.com/BerriAI/litellm/releases/tag/v1.40.64",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-13",
-  "last_modified" : "2024-06-13"
+  "package_name": "litellm",
+  "patch_versions": [
+    "1.40.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.40.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of `litellm` include the raw request in the metadata of `spend logs`, which may include `authorization` and other sensitive headers.",
+  "doest_this_affect_me": "You are affected if you use a vulnerable version of `litellm`.",
+  "how_to_fix": "Upgrade `litellm` to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Information Disclosure",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/BerriAI/litellm/releases/tag/v1.40.64",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-13",
+  "last_modified": "2024-06-13"
 }

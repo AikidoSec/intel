@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10134",
-  "package_name" : "@backstage/plugin-catalog-backend",
-  "patch_versions" : [ "1.23.0" ],
-  "vulnerable_ranges" : [ [ "0.1.1", "1.22.0" ] ],
-  "cwe" : [ "CWE-209" ],
-  "tldr" : "Affected versions of `@backstage/plugin-catalog-backend` expose sensitive information through verbose error messages.",
-  "doest_this_affect_me" : "You are affected if you use a vulnerable version of `@backstage/plugin-catalog-backend`.",
-  "how_to_fix" : "Upgrade `@backstage/plugin-catalog-backend` to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Information Disclosure",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "LOW",
-  "aikido_score" : 20,
-  "changelog" : "https://github.com/backstage/backstage/releases/tag/v1.23.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-21",
-  "last_modified" : "2024-06-21"
+  "package_name": "@backstage/plugin-catalog-backend",
+  "patch_versions": [
+    "1.23.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.1",
+      "1.22.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of `@backstage/plugin-catalog-backend` expose sensitive information through verbose error messages.",
+  "doest_this_affect_me": "You are affected if you use a vulnerable version of `@backstage/plugin-catalog-backend`.",
+  "how_to_fix": "Upgrade `@backstage/plugin-catalog-backend` to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Information Disclosure",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/backstage/backstage/releases/tag/v1.23.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-21",
+  "last_modified": "2024-06-21"
 }

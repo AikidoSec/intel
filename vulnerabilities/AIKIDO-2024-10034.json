@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10034",
-  "package_name" : "markdown-it",
-  "patch_versions" : [ "13.0.2" ],
-  "vulnerable_ranges" : [ [ "13.0.0", "13.0.1" ] ],
-  "cwe" : [ "CWE-835" ],
-  "tldr" : "Affected versions of this package are vulnerable to an infinite loop in the linkify inline rule when processing malformed input.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `markdown-it` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Infinite Loop",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "HIGH",
-  "aikido_score" : 74,
-  "changelog" : "https://github.com/markdown-it/markdown-it/compare/markdown-it:markdown-it:13.0.1...markdown-it:markdown-it:13.0.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-19",
-  "last_modified" : "2024-04-19"
+  "package_name": "markdown-it",
+  "patch_versions": [
+    "13.0.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "13.0.0",
+      "13.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-835"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an infinite loop in the linkify inline rule when processing malformed input.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `markdown-it` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Infinite Loop",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 74,
+  "changelog": "https://github.com/markdown-it/markdown-it/compare/markdown-it:markdown-it:13.0.1...markdown-it:markdown-it:13.0.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-19",
+  "last_modified": "2024-04-19"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10162",
-  "package_name" : "botocore",
-  "patch_versions" : [ "1.34.137" ],
-  "vulnerable_ranges" : [ [ "1.29.150", "1.34.136" ] ],
-  "cwe" : [ "CWE-532" ],
-  "tldr" : "Affected versions of this package may expose sensitive information in the log files when importing or exporting a `TR31KeyBlock`.",
-  "doest_this_affect_me" : "You are affected if you are using a vulnerable version of the package.",
-  "how_to_fix" : "Upgrade `botocore` to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Insertion of Sensitive Information into Log File",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "LOW",
-  "aikido_score" : 5,
-  "changelog" : "https://github.com/boto/botocore/compare/boto:446acfb...boto:9e27562",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-07-02",
-  "last_modified" : "2024-07-02"
+  "package_name": "botocore",
+  "patch_versions": [
+    "1.34.137"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.29.150",
+      "1.34.136"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package may expose sensitive information in the log files when importing or exporting a `TR31KeyBlock`.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade `botocore` to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "LOW",
+  "aikido_score": 5,
+  "changelog": "https://github.com/boto/botocore/compare/boto:446acfb...boto:9e27562",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-07-02",
+  "last_modified": "2024-07-02"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10241",
-  "package_name" : "webdav-servlet",
-  "patch_versions" : [ "1.2.70" ],
-  "vulnerable_ranges" : [ [ "1.0.0", "1.2.69" ] ],
-  "cwe" : [ "CWE-328" ],
-  "tldr" : "Affected versions of the package use the MD5 algorithm, which generates digests that fail to meet security standards for a hash function. This weakness allows adversaries to feasibly determine the original input.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `webdav-servlet` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Use of Weak Hash",
-  "related_cve_id" : "",
-  "language" : "java",
-  "severity_class" : "LOW",
-  "aikido_score" : 23,
-  "changelog" : "https://github.com/infonl/webdav-servlet/releases/tag/v1.2.70",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-09-03",
-  "last_modified" : "2024-09-03"
+  "package_name": "webdav-servlet",
+  "patch_versions": [
+    "1.2.70"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.2.69"
+    ]
+  ],
+  "cwe": [
+    "CWE-328"
+  ],
+  "tldr": "Affected versions of the package use the MD5 algorithm, which generates digests that fail to meet security standards for a hash function. This weakness allows adversaries to feasibly determine the original input.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `webdav-servlet` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Use of Weak Hash",
+  "related_cve_id": "",
+  "language": "java",
+  "severity_class": "LOW",
+  "aikido_score": 23,
+  "changelog": "https://github.com/infonl/webdav-servlet/releases/tag/v1.2.70",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-09-03",
+  "last_modified": "2024-09-03"
 }

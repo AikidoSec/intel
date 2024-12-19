@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10190",
-  "package_name" : "prosemirror-view",
-  "patch_versions" : [ "1.33.9" ],
-  "vulnerable_ranges" : [ [ "0.14.0", "1.33.8" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of the package allow Cross-site Scripting (XSS) when rendering nodes and marks inside the editor.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `prosemirror-view` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting (XSS)",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "LOW",
-  "aikido_score" : 30,
-  "changelog" : "https://github.com/ProseMirror/prosemirror-view/compare/ProseMirror:0f877c4...ProseMirror:ab06658",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-07-19",
-  "last_modified" : "2024-07-19"
+  "package_name": "prosemirror-view",
+  "patch_versions": [
+    "1.33.9"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.14.0",
+      "1.33.8"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of the package allow Cross-site Scripting (XSS) when rendering nodes and marks inside the editor.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `prosemirror-view` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/ProseMirror/prosemirror-view/compare/ProseMirror:0f877c4...ProseMirror:ab06658",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-07-19",
+  "last_modified": "2024-07-19"
 }

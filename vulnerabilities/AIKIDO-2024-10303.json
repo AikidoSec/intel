@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10303",
-  "package_name" : "@scalar/api-client",
-  "patch_versions" : [ "2.1.10" ],
-  "vulnerable_ranges" : [ [ "0.1.1", "2.1.9" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of the package allow Cross-site Scripting (XSS). Blob URLs in object or iframe tags are executed in the same origin context as the host page without proper Content Security Policy (CSP) configuration.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@scalar/api-client` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting (XSS)",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 45,
-  "changelog" : "https://github.com/scalar/scalar/blob/main/packages/api-client/CHANGELOG.md",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-09-30",
-  "last_modified" : "2024-09-30"
+  "package_name": "@scalar/api-client",
+  "patch_versions": [
+    "2.1.10"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.1",
+      "2.1.9"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of the package allow Cross-site Scripting (XSS). Blob URLs in object or iframe tags are executed in the same origin context as the host page without proper Content Security Policy (CSP) configuration.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@scalar/api-client` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/scalar/scalar/blob/main/packages/api-client/CHANGELOG.md",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-09-30",
+  "last_modified": "2024-09-30"
 }

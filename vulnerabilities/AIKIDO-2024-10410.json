@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10410",
-  "package_name" : "Werkzeug",
-  "patch_versions" : [ "3.1.0" ],
-  "vulnerable_ranges" : [ [ "0.13", "3.0.6" ] ],
-  "cwe" : [ "CWE-326" ],
-  "tldr" : "Affected versions of the package use an inadequate encryption strength. The default number of PBKDF2 iterations is too low, making the encryption vulnerable to faster brute force or dictionary attacks on modern hardware. Attackers can more easily crack encrypted data, highlighting the need to increase the number of iterations for stronger protection.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `Werkzeug` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Inadequate Encryption Strength",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "LOW",
-  "aikido_score" : 25,
-  "changelog" : "https://github.com/pallets/werkzeug/releases/tag/3.1.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-05",
-  "last_modified" : "2024-11-05"
+  "package_name": "Werkzeug",
+  "patch_versions": [
+    "3.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.13",
+      "3.0.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-326"
+  ],
+  "tldr": "Affected versions of the package use an inadequate encryption strength. The default number of PBKDF2 iterations is too low, making the encryption vulnerable to faster brute force or dictionary attacks on modern hardware. Attackers can more easily crack encrypted data, highlighting the need to increase the number of iterations for stronger protection.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Werkzeug` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Inadequate Encryption Strength",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/pallets/werkzeug/releases/tag/3.1.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-05",
+  "last_modified": "2024-11-05"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10250",
-  "package_name" : "s2n-tls",
-  "patch_versions" : [ "1.5.2" ],
-  "vulnerable_ranges" : [ [ "1.0.0", "1.5.1" ] ],
-  "cwe" : [ "CWE-208" ],
-  "tldr" : "Affected versions of the package are vulnerable to observable timing discrepancies. The use of the `memcmp` function increases the risk of side-channel attacks. While there is no evidence suggesting the risk is exploitable, given the security sensitivity of this library, it is safer to address it.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `s2n-tls` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Observable Timing Discrepancy",
-  "related_cve_id" : "",
-  "language" : "os",
-  "severity_class" : "LOW",
-  "aikido_score" : 25,
-  "changelog" : "https://github.com/aws/s2n-tls/releases/tag/v1.5.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-09-11",
-  "last_modified" : "2024-09-11"
+  "package_name": "s2n-tls",
+  "patch_versions": [
+    "1.5.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.5.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-208"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to observable timing discrepancies. The use of the `memcmp` function increases the risk of side-channel attacks. While there is no evidence suggesting the risk is exploitable, given the security sensitivity of this library, it is safer to address it.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `s2n-tls` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Observable Timing Discrepancy",
+  "related_cve_id": "",
+  "language": "os",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/aws/s2n-tls/releases/tag/v1.5.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-09-11",
+  "last_modified": "2024-09-11"
 }

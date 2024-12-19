@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10202",
-  "package_name" : "onnx",
-  "patch_versions" : [ "1.16.2" ],
-  "vulnerable_ranges" : [ [ "1.14.0", "1.16.1" ] ],
-  "cwe" : [ "CWE-22" ],
-  "tldr" : "Affected versions of the package allow path traversal attacks when a user tries to download test data from a malicious repository. A tarball in a third-party repository can be downloaded and extracted without proper sanitization, potentially leading to arbitrary file overwriting.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `onnx` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Path Traversal",
-  "related_cve_id" : "CVE-2024-5187",
-  "language" : "python",
-  "severity_class" : "HIGH",
-  "aikido_score" : 85,
-  "changelog" : "https://github.com/onnx/onnx/releases/tag/v1.16.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-08-01",
-  "last_modified" : "2024-09-24"
+  "package_name": "onnx",
+  "patch_versions": [
+    "1.16.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.14.0",
+      "1.16.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of the package allow path traversal attacks when a user tries to download test data from a malicious repository. A tarball in a third-party repository can be downloaded and extracted without proper sanitization, potentially leading to arbitrary file overwriting.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `onnx` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "CVE-2024-5187",
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/onnx/onnx/releases/tag/v1.16.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-08-01",
+  "last_modified": "2024-09-24"
 }

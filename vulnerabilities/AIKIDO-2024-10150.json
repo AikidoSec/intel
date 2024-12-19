@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10150",
-  "package_name" : "unstructured",
-  "patch_versions" : [ "0.14.8" ],
-  "vulnerable_ranges" : [ [ "0.6.7", "0.14.7" ] ],
-  "cwe" : [ "CWE-209" ],
-  "tldr" : "Affected versions of `unstructured` do not mark some sensitive fields, which means they may end up in logging systems.",
-  "doest_this_affect_me" : "You are affected if you use a vulnerable version of `unstructured`.",
-  "how_to_fix" : "Upgrade `unstructured` to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Information Disclosure",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 40,
-  "changelog" : "https://github.com/Unstructured-IO/unstructured/releases/tag/0.14.8",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-28",
-  "last_modified" : "2024-06-28"
+  "package_name": "unstructured",
+  "patch_versions": [
+    "0.14.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.6.7",
+      "0.14.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of `unstructured` do not mark some sensitive fields, which means they may end up in logging systems.",
+  "doest_this_affect_me": "You are affected if you use a vulnerable version of `unstructured`.",
+  "how_to_fix": "Upgrade `unstructured` to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Information Disclosure",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/Unstructured-IO/unstructured/releases/tag/0.14.8",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-28",
+  "last_modified": "2024-06-28"
 }

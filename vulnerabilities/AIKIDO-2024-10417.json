@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10417",
-  "package_name" : "urllib3-future",
-  "patch_versions" : [ "2.11.908" ],
-  "vulnerable_ranges" : [ [ "2.0.931", "2.11.907" ] ],
-  "cwe" : [ "CWE-326" ],
-  "tldr" : "Affected versions of this package allow the use of insecure TLS 1.0 and TLS 1.1 protocols, exposing communications to man-in-the-middle attacks. This vulnerability compromises the confidentiality and integrity of data by enabling attackers to intercept and manipulate the data being transmitted.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `urllib3-future` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Inadequate Encryption Strength",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/jawah/urllib3.future/releases/tag/2.11.908",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-05",
-  "last_modified" : "2024-11-05"
+  "package_name": "urllib3-future",
+  "patch_versions": [
+    "2.11.908"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.931",
+      "2.11.907"
+    ]
+  ],
+  "cwe": [
+    "CWE-326"
+  ],
+  "tldr": "Affected versions of this package allow the use of insecure TLS 1.0 and TLS 1.1 protocols, exposing communications to man-in-the-middle attacks. This vulnerability compromises the confidentiality and integrity of data by enabling attackers to intercept and manipulate the data being transmitted.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `urllib3-future` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Inadequate Encryption Strength",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/jawah/urllib3.future/releases/tag/2.11.908",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-05",
+  "last_modified": "2024-11-05"
 }

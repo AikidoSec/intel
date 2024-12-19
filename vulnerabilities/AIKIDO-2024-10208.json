@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10208",
-  "package_name" : "laravel/framework",
-  "patch_versions" : [ "11.19.0" ],
-  "vulnerable_ranges" : [ [ "5.7.0", "11.18.1" ] ],
-  "cwe" : [ "CWE-393" ],
-  "tldr" : "Affected versions of the package are vulnerable to returning the wrong status code when using `Bcrypt/Argon/Argon2I` hashers. Nullish or empty values are not checked before verifying if a given `$hashedValue` is compatible with the app's algorithm. A runtime exception is thrown, causing the end user to receive a 500 server error instead of the expected 401/422 or similar authentication failure, which may reveal that the user has not set a password yet.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `laravel/framework` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Return of Wrong Status Code",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "LOW",
-  "aikido_score" : 10,
-  "changelog" : "https://github.com/laravel/framework/releases/tag/v11.19.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-08-06",
-  "last_modified" : "2024-08-06"
+  "package_name": "laravel/framework",
+  "patch_versions": [
+    "11.19.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.7.0",
+      "11.18.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-393"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to returning the wrong status code when using `Bcrypt/Argon/Argon2I` hashers. Nullish or empty values are not checked before verifying if a given `$hashedValue` is compatible with the app's algorithm. A runtime exception is thrown, causing the end user to receive a 500 server error instead of the expected 401/422 or similar authentication failure, which may reveal that the user has not set a password yet.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `laravel/framework` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Return of Wrong Status Code",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/laravel/framework/releases/tag/v11.19.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-08-06",
+  "last_modified": "2024-08-06"
 }

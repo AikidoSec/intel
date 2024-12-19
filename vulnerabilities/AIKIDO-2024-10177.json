@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10177",
-  "package_name" : "@rive-app/canvas",
-  "patch_versions" : [ "2.19.3" ],
-  "vulnerable_ranges" : [ [ "2.1.1", "2.19.2" ] ],
-  "cwe" : [ "CWE-122" ],
-  "tldr" : "Affected versions of the `@rive-app/canvas` library are vulnerable to a heap-based buffer overflow in the `DecodeJpeg` function of its C++ core. This vulnerability allows a remote attacker to perform an out-of-bounds memory write via a crafted JPEG or PNG file.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@rive-app/canvas` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Heap-based Buffer Overflow",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "HIGH",
-  "aikido_score" : 89,
-  "changelog" : "https://github.com/rive-app/rive-wasm/compare/rive-app:7df7c79...rive-app:60ffb77",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-07-12",
-  "last_modified" : "2024-07-12"
+  "package_name": "@rive-app/canvas",
+  "patch_versions": [
+    "2.19.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.1.1",
+      "2.19.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-122"
+  ],
+  "tldr": "Affected versions of the `@rive-app/canvas` library are vulnerable to a heap-based buffer overflow in the `DecodeJpeg` function of its C++ core. This vulnerability allows a remote attacker to perform an out-of-bounds memory write via a crafted JPEG or PNG file.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@rive-app/canvas` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Heap-based Buffer Overflow",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 89,
+  "changelog": "https://github.com/rive-app/rive-wasm/compare/rive-app:7df7c79...rive-app:60ffb77",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-07-12",
+  "last_modified": "2024-07-12"
 }

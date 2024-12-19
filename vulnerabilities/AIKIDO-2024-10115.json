@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10115",
-  "package_name" : "django-allauth",
-  "patch_versions" : [ "0.63.3" ],
-  "vulnerable_ranges" : [ [ "0.1.0", "0.63.2" ] ],
-  "cwe" : [ "CWE-352" ],
-  "tldr" : "Affected versions of `django-allauth` are vulnerable to cross-site request forgery (CSRF) and open redirect. Both IdP-initiated and SP-initiated SSO flows were susceptible to this attack. The IdP-initiated SSO flow is now disabled by default in the patched version.",
-  "doest_this_affect_me" : "You are affected if you are using a vulnerable version of the package.",
-  "how_to_fix" : "Upgrade `django-allauth` to the patch version (0.63.3).",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-Site Request Forgery and Open Redirect",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 60,
-  "changelog" : "https://github.com/pennersr/django-allauth/compare/pennersr:5d21115...pennersr:f6577fa",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-04",
-  "last_modified" : "2024-06-04"
+  "package_name": "django-allauth",
+  "patch_versions": [
+    "0.63.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.63.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-352"
+  ],
+  "tldr": "Affected versions of `django-allauth` are vulnerable to cross-site request forgery (CSRF) and open redirect. Both IdP-initiated and SP-initiated SSO flows were susceptible to this attack. The IdP-initiated SSO flow is now disabled by default in the patched version.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade `django-allauth` to the patch version (0.63.3).",
+  "reporter": "",
+  "vulnerable_to": "Cross-Site Request Forgery and Open Redirect",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/pennersr/django-allauth/compare/pennersr:5d21115...pennersr:f6577fa",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-04",
+  "last_modified": "2024-06-04"
 }

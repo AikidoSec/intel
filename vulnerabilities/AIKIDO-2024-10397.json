@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10397",
-  "package_name" : "appsero/client",
-  "patch_versions" : [ "2.0.1" ],
-  "vulnerable_ranges" : [ [ "1.0", "2.0.0" ] ],
-  "cwe" : [ "CWE-284" ],
-  "tldr" : "Affected versions of this package are vulnerable to improper access control, which allows lower-privileged users to execute plugin settings without the required permissions. This can lead to unauthorized configuration changes or actions being performed by users with insufficient privileges.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `appsero/client` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Access Control",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "HIGH",
-  "aikido_score" : 80,
-  "changelog" : "https://github.com/Appsero/client/releases/tag/v2.0.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-31",
-  "last_modified" : "2024-10-31"
+  "package_name": "appsero/client",
+  "patch_versions": [
+    "2.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0",
+      "2.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper access control, which allows lower-privileged users to execute plugin settings without the required permissions. This can lead to unauthorized configuration changes or actions being performed by users with insufficient privileges.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `appsero/client` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Access Control",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/Appsero/client/releases/tag/v2.0.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-31",
+  "last_modified": "2024-10-31"
 }

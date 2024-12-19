@@ -1,25 +1,38 @@
 {
-  "id" : "AIKIDO-2024-10463",
-  "package_name" : "craftcms/cms",
-  "patch_versions" : [ "4.13.2", "5.5.2" ],
-  "vulnerable_ranges" : [ [ "4.0.0", "4.13.1" ], [ "5.0.0", "5.5.1" ] ],
-  "cwe" : [ "CWE-94" ],
-  "tldr" : "Affected versions of this package are vulnerable to Remote Code Execution (RCE) if a malicious configuration is introduced into the `bootstrap.php` file. This could allow an attacker to execute arbitrary code on the server, posing a significant security risk.",
-  "doest_this_affect_me" : "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix" : "Upgrade the `craftcms/cms` library to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Remote Code Execution (RCE)",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "HIGH",
-  "aikido_score" : 86,
-  "changelog" : "https://github.com/craftcms/cms/releases/tag/5.5.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-20",
-  "last_modified" : "2024-11-20"
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.13.2",
+    "5.5.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "4.13.1"
+    ],
+    [
+      "5.0.0",
+      "5.5.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Remote Code Execution (RCE) if a malicious configuration is introduced into the `bootstrap.php` file. This could allow an attacker to execute arbitrary code on the server, posing a significant security risk.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "HIGH",
+  "aikido_score": 86,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.5.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-20",
+  "last_modified": "2024-11-20"
 }

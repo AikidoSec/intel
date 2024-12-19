@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10175",
-  "package_name" : "@cloudflare/next-on-pages",
-  "patch_versions" : [ "1.12.1" ],
-  "vulnerable_ranges" : [ [ "1.4.0", "1.12.0" ] ],
-  "cwe" : [ "CWE-918" ],
-  "tldr" : "Due to a vulnerability in the image optimization functionality of `next`, the package is vulnerable to server-side request forgery (SSRF). Protocol-relative URLs are not treated as actual relative URLs.",
-  "doest_this_affect_me" : "You are affected if you are using a `@cloudflare/next-on-pages` version which is within vulnerability ranges.",
-  "how_to_fix" : "Upgrade the `@cloudflare/next-on-pages` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Server-Side Request Forgery (SSRF)",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 60,
-  "changelog" : "https://github.com/cloudflare/next-on-pages/releases/tag/%40cloudflare%2Fnext-on-pages%401.12.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-07-11",
-  "last_modified" : "2024-07-11"
+  "package_name": "@cloudflare/next-on-pages",
+  "patch_versions": [
+    "1.12.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.4.0",
+      "1.12.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Due to a vulnerability in the image optimization functionality of `next`, the package is vulnerable to server-side request forgery (SSRF). Protocol-relative URLs are not treated as actual relative URLs.",
+  "doest_this_affect_me": "You are affected if you are using a `@cloudflare/next-on-pages` version which is within vulnerability ranges.",
+  "how_to_fix": "Upgrade the `@cloudflare/next-on-pages` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Server-Side Request Forgery (SSRF)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/cloudflare/next-on-pages/releases/tag/%40cloudflare%2Fnext-on-pages%401.12.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-07-11",
+  "last_modified": "2024-07-11"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10505",
-  "package_name" : "@fluentui/react-charting",
-  "patch_versions" : [ "5.23.18" ],
-  "vulnerable_ranges" : [ [ "5.0.0", "5.23.17" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) in V8 charts due to improper sanitization of user input. This allows attackers to inject malicious scripts that can execute in the context of the user's browser, potentially leading to data theft, session hijacking, or other malicious actions.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@fluentui/react-charting` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting (XSS)",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 45,
-  "changelog" : "https://github.com/microsoft/fluentui/releases/tag/%40fluentui/react-charting_v5.23.18",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-12-02 16:30",
-  "last_modified" : "2024-12-02 16:30"
+  "package_name": "@fluentui/react-charting",
+  "patch_versions": [
+    "5.23.18"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "5.23.17"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) in V8 charts due to improper sanitization of user input. This allows attackers to inject malicious scripts that can execute in the context of the user's browser, potentially leading to data theft, session hijacking, or other malicious actions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@fluentui/react-charting` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/microsoft/fluentui/releases/tag/%40fluentui/react-charting_v5.23.18",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-02 16:30",
+  "last_modified": "2024-12-02 16:30"
 }

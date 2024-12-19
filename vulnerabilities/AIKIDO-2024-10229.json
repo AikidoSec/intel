@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10229",
-  "package_name" : "express-openapi-validator",
-  "patch_versions" : [ "5.3.3" ],
-  "vulnerable_ranges" : [ [ "3.0.0", "5.3.2" ] ],
-  "cwe" : [ "CWE-287" ],
-  "tldr" : "Affected versions of the package are vulnerable to improper authentication. If an endpoint specification contains multiple security handlers with both AND and OR conditions, as described in the \"Using Multiple Authentication Types\" section of the documentation, the API's behavior does not align with expectations.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `express-openapi-validator` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Authentication",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "HIGH",
-  "aikido_score" : 75,
-  "changelog" : "https://github.com/cdimascio/express-openapi-validator/releases/tag/v5.3.3",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-08-27",
-  "last_modified" : "2024-08-27"
+  "package_name": "express-openapi-validator",
+  "patch_versions": [
+    "5.3.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "5.3.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-287"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to improper authentication. If an endpoint specification contains multiple security handlers with both AND and OR conditions, as described in the \"Using Multiple Authentication Types\" section of the documentation, the API's behavior does not align with expectations.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `express-openapi-validator` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Authentication",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/cdimascio/express-openapi-validator/releases/tag/v5.3.3",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-08-27",
+  "last_modified": "2024-08-27"
 }

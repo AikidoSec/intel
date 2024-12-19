@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10457",
-  "package_name" : "django-filer",
-  "patch_versions" : [ "3.3.0" ],
-  "vulnerable_ranges" : [ [ "0.5.2a1", "3.2.3" ] ],
-  "cwe" : [ "CWE-434" ],
-  "tldr" : "Affected versions of this package allow users to upload binary files by default, which can potentially include malicious code. This vulnerability may lead to remote code execution (RCE) or other serious security threats.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `django-filer` library to the patch version or make sure `application/octet-stream` is blocked from uploading.",
-  "reporter" : "",
-  "vulnerable_to" : "Unrestricted Upload of File with Dangerous Type",
-  "related_cve_id" : "CVE-2024-11404",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 43,
-  "changelog" : "https://github.com/django-cms/django-filer/releases/tag/3.3.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-20",
-  "last_modified" : "2024-12-10"
+  "package_name": "django-filer",
+  "patch_versions": [
+    "3.3.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.5.2a1",
+      "3.2.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-434"
+  ],
+  "tldr": "Affected versions of this package allow users to upload binary files by default, which can potentially include malicious code. This vulnerability may lead to remote code execution (RCE) or other serious security threats.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `django-filer` library to the patch version or make sure `application/octet-stream` is blocked from uploading.",
+  "reporter": "",
+  "vulnerable_to": "Unrestricted Upload of File with Dangerous Type",
+  "related_cve_id": "CVE-2024-11404",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 43,
+  "changelog": "https://github.com/django-cms/django-filer/releases/tag/3.3.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-20",
+  "last_modified": "2024-12-10"
 }

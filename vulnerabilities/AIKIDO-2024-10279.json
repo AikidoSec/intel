@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10279",
-  "package_name" : "zapier-platform-schema",
-  "patch_versions" : [ "15.14.2" ],
-  "vulnerable_ranges" : [ [ "8.3.0", "15.14.1" ] ],
-  "cwe" : [ "CWE-200" ],
-  "tldr" : "Affected versions of the package may expose sensitive information. When invoking methods such as `authentication.oauth1Config.getAccessToken` or `authentication.oauth2Config.refreshAccessToken`, some logger servers return querystring-formatted data that contains sensitive information, such as secrets, which could be exposed and accessed by unauthorized parties.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `zapier-platform-schema` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Exposure of Sensitive Information",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "LOW",
-  "aikido_score" : 24,
-  "changelog" : "https://github.com/zapier/zapier-platform/blob/main/CHANGELOG.md",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-09-18",
-  "last_modified" : "2024-09-18"
+  "package_name": "zapier-platform-schema",
+  "patch_versions": [
+    "15.14.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "8.3.0",
+      "15.14.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of the package may expose sensitive information. When invoking methods such as `authentication.oauth1Config.getAccessToken` or `authentication.oauth2Config.refreshAccessToken`, some logger servers return querystring-formatted data that contains sensitive information, such as secrets, which could be exposed and accessed by unauthorized parties.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `zapier-platform-schema` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 24,
+  "changelog": "https://github.com/zapier/zapier-platform/blob/main/CHANGELOG.md",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-09-18",
+  "last_modified": "2024-09-18"
 }

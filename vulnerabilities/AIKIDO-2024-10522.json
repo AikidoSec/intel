@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10522",
-  "package_name" : "canvas",
-  "patch_versions" : [ "3.0.0-rc3" ],
-  "vulnerable_ranges" : [ [ "2.0.0", "3.0.0-rc2" ] ],
-  "cwe" : [ "CWE-416" ],
-  "tldr" : "Affected versions of this package are vulnerable to a use-after-free issue when initializing canvases with an invalid surface. Additionally, a potential memory leak exists while loading SVGs. These vulnerabilities can lead to crashes and system outages, making the package susceptible to Denial of Service (DoS) attacks by malicious actors.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `canvas` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Use-After-Free",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "LOW",
-  "aikido_score" : 19,
-  "changelog" : "https://github.com/Automattic/node-canvas/releases/tag/v3.0.0-rc3",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-12-09 13:00",
-  "last_modified" : "2024-12-09 13:00"
+  "package_name": "canvas",
+  "patch_versions": [
+    "3.0.0-rc3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "3.0.0-rc2"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a use-after-free issue when initializing canvases with an invalid surface. Additionally, a potential memory leak exists while loading SVGs. These vulnerabilities can lead to crashes and system outages, making the package susceptible to Denial of Service (DoS) attacks by malicious actors.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `canvas` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Use-After-Free",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 19,
+  "changelog": "https://github.com/Automattic/node-canvas/releases/tag/v3.0.0-rc3",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-09 13:00",
+  "last_modified": "2024-12-09 13:00"
 }

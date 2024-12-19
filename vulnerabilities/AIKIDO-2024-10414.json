@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10414",
-  "package_name" : "h2o",
-  "patch_versions" : [ "3.46.0.6" ],
-  "vulnerable_ranges" : [ [ "3.10.0.3", "3.46.0.5" ] ],
-  "cwe" : [ "CWE-502" ],
-  "tldr" : "Affected versions of this package are vulnerable to unauthenticated Remote Code Execution (RCE) via an unrestricted JDBC connection. Despite the intention to use the `getConnectionSafe` method for secure connections, no restrictions are imposed on the JDBC connection settings. This allows attackers to arbitrarily set the JDBC URL, potentially leading to deserialization attacks, file reading, command execution, and other severe security risks on the victim's server.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `h2o` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Deserialization of Untrusted Data",
-  "related_cve_id" : "CVE-2020-45758",
-  "language" : "python",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 92,
-  "changelog" : "https://github.com/h2oai/h2o-3/blob/master/Changes.md",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-05",
-  "last_modified" : "2024-11-05"
+  "package_name": "h2o",
+  "patch_versions": [
+    "3.46.0.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.10.0.3",
+      "3.46.0.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to unauthenticated Remote Code Execution (RCE) via an unrestricted JDBC connection. Despite the intention to use the `getConnectionSafe` method for secure connections, no restrictions are imposed on the JDBC connection settings. This allows attackers to arbitrarily set the JDBC URL, potentially leading to deserialization attacks, file reading, command execution, and other severe security risks on the victim's server.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `h2o` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Deserialization of Untrusted Data",
+  "related_cve_id": "CVE-2020-45758",
+  "language": "python",
+  "severity_class": "CRITICAL",
+  "aikido_score": 92,
+  "changelog": "https://github.com/h2oai/h2o-3/blob/master/Changes.md",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-05",
+  "last_modified": "2024-11-05"
 }

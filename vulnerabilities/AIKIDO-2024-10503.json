@@ -1,25 +1,35 @@
 {
-  "id" : "AIKIDO-2024-10503",
-  "package_name" : "pocoproject.poco",
-  "patch_versions" : [ "1.14.0" ],
-  "vulnerable_ranges" : [ [ "1.9.0", "1.13.3" ] ],
-  "cwe" : [ "CWE-400", "CWE-121", "CWE-415" ],
-  "tldr" : "Affected versions of this package are vulnerable to multiple security issues, including a stack-based buffer overflow in HTTP requests, a double free vulnerability in `Net::MailMessage`, XML fuzzing, and a Denial of Service (DoS) in XML parsing. These vulnerabilities can lead to memory corruption, application crashes, or service disruption, posing significant risks to system stability and security. Updating to a patched version is recommended to mitigate these threats.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `pocoproject.poco` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Denial of Service and Stack Overflow",
-  "related_cve_id" : "",
-  "language" : "c++",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 61,
-  "changelog" : "https://github.com/pocoproject/poco/releases/tag/poco-1.14.0-release",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-12-02 16:00",
-  "last_modified" : "2024-12-02 16:00"
+  "package_name": "pocoproject.poco",
+  "patch_versions": [
+    "1.14.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.9.0",
+      "1.13.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-400",
+    "CWE-121",
+    "CWE-415"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to multiple security issues, including a stack-based buffer overflow in HTTP requests, a double free vulnerability in `Net::MailMessage`, XML fuzzing, and a Denial of Service (DoS) in XML parsing. These vulnerabilities can lead to memory corruption, application crashes, or service disruption, posing significant risks to system stability and security. Updating to a patched version is recommended to mitigate these threats.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `pocoproject.poco` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service and Stack Overflow",
+  "related_cve_id": "",
+  "language": "c++",
+  "severity_class": "MEDIUM",
+  "aikido_score": 61,
+  "changelog": "https://github.com/pocoproject/poco/releases/tag/poco-1.14.0-release",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-02 16:00",
+  "last_modified": "2024-12-02 16:00"
 }

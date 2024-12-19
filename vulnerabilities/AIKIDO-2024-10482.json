@@ -1,25 +1,53 @@
 {
-  "id" : "AIKIDO-2024-10482",
-  "package_name" : "supertokens-node",
-  "patch_versions" : [ "17.1.5", "18.0.3", "19.0.2", "20.1.6", "21.1.0" ],
-  "vulnerable_ranges" : [ [ "17.0.0", "17.1.4" ], [ "18.0.0", "18.0.2" ], [ "19.0.0", "19.0.1" ], [ "20.0.0", "20.1.5" ], [ "21.0.0", "21.0.0" ] ],
-  "cwe" : [ "CWE-308" ],
-  "tldr" : "Affected versions of this package fail to validate the MFA (Multi-Factor Authentication) claim before allowing the removal of a TOTP (Time-Based One-Time Password) device. This vulnerability can allow attackers to bypass multi-factor authentication protections and disable a user's TOTP device without proper verification.",
-  "doest_this_affect_me" : "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix" : "Upgrade the `supertokens-node` library to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Use of Single-factor Authentication",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "LOW",
-  "aikido_score" : 10,
-  "changelog" : "https://github.com/supertokens/supertokens-node/releases/tag/v21.1.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-27 10:30",
-  "last_modified" : "2024-12-02 10:00"
+  "package_name": "supertokens-node",
+  "patch_versions": [
+    "17.1.5",
+    "18.0.3",
+    "19.0.2",
+    "20.1.6",
+    "21.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "17.0.0",
+      "17.1.4"
+    ],
+    [
+      "18.0.0",
+      "18.0.2"
+    ],
+    [
+      "19.0.0",
+      "19.0.1"
+    ],
+    [
+      "20.0.0",
+      "20.1.5"
+    ],
+    [
+      "21.0.0",
+      "21.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-308"
+  ],
+  "tldr": "Affected versions of this package fail to validate the MFA (Multi-Factor Authentication) claim before allowing the removal of a TOTP (Time-Based One-Time Password) device. This vulnerability can allow attackers to bypass multi-factor authentication protections and disable a user's TOTP device without proper verification.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `supertokens-node` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Use of Single-factor Authentication",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/supertokens/supertokens-node/releases/tag/v21.1.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-27 10:30",
+  "last_modified": "2024-12-02 10:00"
 }

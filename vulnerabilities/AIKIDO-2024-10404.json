@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10404",
-  "package_name" : "riverline/multipart-parser",
-  "patch_versions" : [ "2.1.2" ],
-  "vulnerable_ranges" : [ [ "2.0.0", "2.1.1" ] ],
-  "cwe" : [ "CWE-400" ],
-  "tldr" : "Affected versions of this package are vulnerable to Denial of Service (DoS) attacks due to the lack of header length validation. Without enforcing a maximum header length, attackers can exploit this vulnerability by sending excessively large headers, causing the system to slow down or become unresponsive during parsing.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `riverline/multipart-parser` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Denial of Service (DoS)",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "LOW",
-  "aikido_score" : 21,
-  "changelog" : "https://github.com/Riverline/multipart-parser/releases/tag/2.1.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-04",
-  "last_modified" : "2024-11-04"
+  "package_name": "riverline/multipart-parser",
+  "patch_versions": [
+    "2.1.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Denial of Service (DoS) attacks due to the lack of header length validation. Without enforcing a maximum header length, attackers can exploit this vulnerability by sending excessively large headers, causing the system to slow down or become unresponsive during parsing.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `riverline/multipart-parser` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "LOW",
+  "aikido_score": 21,
+  "changelog": "https://github.com/Riverline/multipart-parser/releases/tag/2.1.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-04",
+  "last_modified": "2024-11-04"
 }

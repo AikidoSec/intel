@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10388",
-  "package_name" : "league/oauth2-server",
-  "patch_versions" : [ "9.0.0" ],
-  "vulnerable_ranges" : [ [ "6.0.2", "8.5.4" ] ],
-  "cwe" : [ "CWE-393" ],
-  "tldr" : "Affected versions of this package return an incorrect status code. When a refresh token has expired, been revoked, cannot be decrypted, or does not belong to the correct client. In the patch version, the server correctly issues an `invalid_grant` error with a HTTP 400 response but in previous versions, the server incorrectly issued an `invalid_request` error and a HTTP 401 response. This issue has been resolved to ensure the correct handling of token-related errors and improve error reporting consistency.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `league/oauth2-server` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Return of Wrong Status Code",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "LOW",
-  "aikido_score" : 15,
-  "changelog" : "https://github.com/thephpleague/oauth2-server/releases/tag/9.0.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-29",
-  "last_modified" : "2024-10-29"
+  "package_name": "league/oauth2-server",
+  "patch_versions": [
+    "9.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.0.2",
+      "8.5.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-393"
+  ],
+  "tldr": "Affected versions of this package return an incorrect status code. When a refresh token has expired, been revoked, cannot be decrypted, or does not belong to the correct client. In the patch version, the server correctly issues an `invalid_grant` error with a HTTP 400 response but in previous versions, the server incorrectly issued an `invalid_request` error and a HTTP 401 response. This issue has been resolved to ensure the correct handling of token-related errors and improve error reporting consistency.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `league/oauth2-server` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Return of Wrong Status Code",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/thephpleague/oauth2-server/releases/tag/9.0.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-29",
+  "last_modified": "2024-10-29"
 }

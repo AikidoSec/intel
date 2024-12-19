@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10163",
-  "package_name" : "aws/aws-sdk-php",
-  "patch_versions" : [ "3.315.6" ],
-  "vulnerable_ranges" : [ [ "3.272.0", "3.315.5" ] ],
-  "cwe" : [ "CWE-532" ],
-  "tldr" : "Affected versions of this package may expose sensitive information in the log files when using `Aws\\PaymentCryptographyData` and `Aws\\PaymentCryptography`.",
-  "doest_this_affect_me" : "You are affected if you are using a vulnerable version of the package.",
-  "how_to_fix" : "Upgrade `aws/aws-sdk-php` to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Insertion of Sensitive Information into Log File",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "LOW",
-  "aikido_score" : 5,
-  "changelog" : "https://github.com/aws/aws-sdk-php/releases/tag/3.315.6",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-07-03",
-  "last_modified" : "2024-07-09"
+  "package_name": "aws/aws-sdk-php",
+  "patch_versions": [
+    "3.315.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.272.0",
+      "3.315.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package may expose sensitive information in the log files when using `Aws\\PaymentCryptographyData` and `Aws\\PaymentCryptography`.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade `aws/aws-sdk-php` to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "LOW",
+  "aikido_score": 5,
+  "changelog": "https://github.com/aws/aws-sdk-php/releases/tag/3.315.6",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-07-03",
+  "last_modified": "2024-07-09"
 }

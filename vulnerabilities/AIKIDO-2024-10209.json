@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10209",
-  "package_name" : "statsig-node",
-  "patch_versions" : [ "5.25.1" ],
-  "vulnerable_ranges" : [ [ "5.20.0", "5.25.0" ] ],
-  "cwe" : [ "CWE-359" ],
-  "tldr" : "Affected versions of the package may expose private personal information to unauthorized actors by revealing private user properties in the `ClientInitializeResponse`.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `statsig-node` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Exposure of Private Personal Information to an Unauthorized Actor",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 45,
-  "changelog" : "https://github.com/statsig-io/node-js-server-sdk/releases/tag/5.25.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-08-07",
-  "last_modified" : "2024-08-07"
+  "package_name": "statsig-node",
+  "patch_versions": [
+    "5.25.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.20.0",
+      "5.25.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-359"
+  ],
+  "tldr": "Affected versions of the package may expose private personal information to unauthorized actors by revealing private user properties in the `ClientInitializeResponse`.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `statsig-node` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Private Personal Information to an Unauthorized Actor",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/statsig-io/node-js-server-sdk/releases/tag/5.25.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-08-07",
+  "last_modified": "2024-08-07"
 }

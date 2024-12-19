@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10235",
-  "package_name" : "django-allauth",
-  "patch_versions" : [ "64.2.0" ],
-  "vulnerable_ranges" : [ [ "0.61.1", "64.1.0" ] ],
-  "cwe" : [ "CWE-294" ],
-  "tldr" : "Affected versions of the package are vulnerable to authentication bypass by capture-replay. When an ID token is used for authentication, the JTI (JWT ID) is now respected to prevent the possibility of replays, instead of solely relying on the expiration time.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `django-allauth` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Authentication Bypass by Capture-replay",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/pennersr/django-allauth/blob/main/ChangeLog.rst",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-08-30",
-  "last_modified" : "2024-08-30"
+  "package_name": "django-allauth",
+  "patch_versions": [
+    "64.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.61.1",
+      "64.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-294"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to authentication bypass by capture-replay. When an ID token is used for authentication, the JTI (JWT ID) is now respected to prevent the possibility of replays, instead of solely relying on the expiration time.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `django-allauth` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Authentication Bypass by Capture-replay",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/pennersr/django-allauth/blob/main/ChangeLog.rst",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-08-30",
+  "last_modified": "2024-08-30"
 }

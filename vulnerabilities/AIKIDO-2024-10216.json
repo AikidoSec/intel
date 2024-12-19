@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10216",
-  "package_name" : "gunicorn",
-  "patch_versions" : [ "23.0.0" ],
-  "vulnerable_ranges" : [ [ "2.0.1", "22.0.0" ] ],
-  "cwe" : [ "CWE-113" ],
-  "tldr" : "Affected versions of the package are vulnerable to HTTP request splitting. Gunicorn accepts invalid and dangerous characters, such as CR, LF, and NUL, in header fields. RFC9110 permits rejecting or replacing these characters with spaces. The patched version introduces a config option `--tolerate-dangerous-framing`. When set, Gunicorn passes the field value unchanged. When unset (default), Gunicorn rejects the request.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `gunicorn` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Request/Response Splitting')",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/benoitc/gunicorn/releases/tag/23.0.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-08-12",
-  "last_modified" : "2024-08-12"
+  "package_name": "gunicorn",
+  "patch_versions": [
+    "23.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.1",
+      "22.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-113"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to HTTP request splitting. Gunicorn accepts invalid and dangerous characters, such as CR, LF, and NUL, in header fields. RFC9110 permits rejecting or replacing these characters with spaces. The patched version introduces a config option `--tolerate-dangerous-framing`. When set, Gunicorn passes the field value unchanged. When unset (default), Gunicorn rejects the request.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `gunicorn` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Request/Response Splitting')",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/benoitc/gunicorn/releases/tag/23.0.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-08-12",
+  "last_modified": "2024-08-12"
 }

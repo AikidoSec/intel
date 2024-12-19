@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10378",
-  "package_name" : "easycorp/easyadmin-bundle",
-  "patch_versions" : [ "4.10.0" ],
-  "vulnerable_ranges" : [ [ "3.5.0", "4.9.5" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of this package are vulnerable to Cross-site Scripting (XSS). The default title of the detail page uses the `%entity_as_string%` placeholder, which references the value returned by the `__toString()` method of the entity. This can lead to an XSS vulnerability as page titles and other elements are rendered with the raw Twig filter, allowing an attacker to inject malicious HTML or JavaScript content, potentially compromising the security of the page.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `easycorp/easyadmin-bundle` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting (XSS)",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "LOW",
-  "aikido_score" : 25,
-  "changelog" : "https://github.com/EasyCorp/EasyAdminBundle/releases/tag/v4.10.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-28",
-  "last_modified" : "2024-10-28"
+  "package_name": "easycorp/easyadmin-bundle",
+  "patch_versions": [
+    "4.10.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.5.0",
+      "4.9.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS). The default title of the detail page uses the `%entity_as_string%` placeholder, which references the value returned by the `__toString()` method of the entity. This can lead to an XSS vulnerability as page titles and other elements are rendered with the raw Twig filter, allowing an attacker to inject malicious HTML or JavaScript content, potentially compromising the security of the page.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `easycorp/easyadmin-bundle` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/EasyCorp/EasyAdminBundle/releases/tag/v4.10.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-28",
+  "last_modified": "2024-10-28"
 }

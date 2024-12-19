@@ -1,25 +1,38 @@
 {
-  "id" : "AIKIDO-2024-10009",
-  "package_name" : "github.com/containerd/containerd",
-  "patch_versions" : [ "1.6.28", "1.7.13" ],
-  "vulnerable_ranges" : [ [ "1.0.0", "1.6.27" ], [ "1.7.0", "1.7.12" ] ],
-  "cwe" : [ "CWE-270" ],
-  "tldr" : "Affected versions of this library are vulnerable to container breakout, allowing attackers to escape the container's isolation.",
-  "doest_this_affect_me" : "You use containerd to run untrusted images.",
-  "how_to_fix" : "Upgrade `containerd` to any of the patched versions",
-  "reporter" : null,
-  "vulnerable_to" : "Remote Code Execution (RCE)",
-  "related_cve_id" : "CVE-2024-21626",
-  "language" : "Go",
-  "severity_class" : "HIGH",
-  "aikido_score" : 86,
-  "changelog" : "https://aws.amazon.com/security/security-bulletins/AWS-2024-001/",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-01-31",
-  "last_modified" : "2024-01-31"
+  "package_name": "github.com/containerd/containerd",
+  "patch_versions": [
+    "1.6.28",
+    "1.7.13"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.6.27"
+    ],
+    [
+      "1.7.0",
+      "1.7.12"
+    ]
+  ],
+  "cwe": [
+    "CWE-270"
+  ],
+  "tldr": "Affected versions of this library are vulnerable to container breakout, allowing attackers to escape the container's isolation.",
+  "doest_this_affect_me": "You use containerd to run untrusted images.",
+  "how_to_fix": "Upgrade `containerd` to any of the patched versions",
+  "reporter": null,
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "CVE-2024-21626",
+  "language": "Go",
+  "severity_class": "HIGH",
+  "aikido_score": 86,
+  "changelog": "https://aws.amazon.com/security/security-bulletins/AWS-2024-001/",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-01-31",
+  "last_modified": "2024-01-31"
 }

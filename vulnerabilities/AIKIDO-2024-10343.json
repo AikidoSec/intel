@@ -1,25 +1,38 @@
 {
-  "id" : "AIKIDO-2024-10343",
-  "package_name" : "craftcms/cms",
-  "patch_versions" : [ "4.12.7", "5.4.8" ],
-  "vulnerable_ranges" : [ [ "4.0.0", "4.12.6" ], [ "5.0.0", "5.4.7.1" ] ],
-  "cwe" : [ "CWE-269" ],
-  "tldr" : "Affected versions of the package allow privilege escalation. Malicious users can exploit this vulnerability to gain higher-level permissions than intended.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `craftcms/cms` library to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Privilege Management",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 94,
-  "changelog" : "https://github.com/craftcms/cms/releases/tag/5.4.8",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-16",
-  "last_modified" : "2024-10-16"
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.12.7",
+    "5.4.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "4.12.6"
+    ],
+    [
+      "5.0.0",
+      "5.4.7.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-269"
+  ],
+  "tldr": "Affected versions of the package allow privilege escalation. Malicious users can exploit this vulnerability to gain higher-level permissions than intended.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Privilege Management",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "CRITICAL",
+  "aikido_score": 94,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.4.8",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-16",
+  "last_modified": "2024-10-16"
 }

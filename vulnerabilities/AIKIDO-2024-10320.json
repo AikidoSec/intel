@@ -1,25 +1,39 @@
 {
-  "id" : "AIKIDO-2024-10320",
-  "package_name" : "go.opentelemetry.io/collector/config/confignet",
-  "patch_versions" : [ "0.111.0", "1.17.0" ],
-  "vulnerable_ranges" : [ [ "0.2.0", "0.110.0" ], [ "1.0.0", "1.16.0" ] ],
-  "cwe" : [ "CWE-758", "CWE-362" ],
-  "tldr" : "Affected versions of the package are vulnerable to undefined behavior. An error variable is shared between requests because it uses the same address as the error defined outside the function. This causes an UB because memory is overwritten and this will cause crashes.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `go.opentelemetry.io/collector/config/confignet` library to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Undefined Behavior",
-  "related_cve_id" : "",
-  "language" : "go",
-  "severity_class" : "LOW",
-  "aikido_score" : 40,
-  "changelog" : "https://github.com/open-telemetry/opentelemetry-collector/blob/main/CHANGELOG.md",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-04",
-  "last_modified" : "2024-10-04"
+  "package_name": "go.opentelemetry.io/collector/config/confignet",
+  "patch_versions": [
+    "0.111.0",
+    "1.17.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.2.0",
+      "0.110.0"
+    ],
+    [
+      "1.0.0",
+      "1.16.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-758",
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to undefined behavior. An error variable is shared between requests because it uses the same address as the error defined outside the function. This causes an UB because memory is overwritten and this will cause crashes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `go.opentelemetry.io/collector/config/confignet` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Undefined Behavior",
+  "related_cve_id": "",
+  "language": "go",
+  "severity_class": "LOW",
+  "aikido_score": 40,
+  "changelog": "https://github.com/open-telemetry/opentelemetry-collector/blob/main/CHANGELOG.md",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-04",
+  "last_modified": "2024-10-04"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10091",
-  "package_name" : "jsonata",
-  "patch_versions" : [ "2.0.5" ],
-  "vulnerable_ranges" : [ [ "1.0.9", "2.0.4" ] ],
-  "cwe" : [ "CWE-200" ],
-  "tldr" : "Affected versions of the jsonata package are vulnerable to exposure of sensitive information to an unauthorized actor. Currently, lambdas can be used to grab references to JSONata internals. For example: $leak_env_refs := function() {1}; $leak_env_refs.environment.bind('whatever_you_want', false); This allows unauthorized access to internal data, posing a potential security risk.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `jsonata` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Exposure of Sensitive Information to an Unauthorized Actor",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "HIGH",
-  "aikido_score" : 81,
-  "changelog" : "https://github.com/jsonata-js/jsonata/releases/tag/v2.0.5",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-05-09",
-  "last_modified" : "2024-05-09"
+  "package_name": "jsonata",
+  "patch_versions": [
+    "2.0.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.9",
+      "2.0.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of the jsonata package are vulnerable to exposure of sensitive information to an unauthorized actor. Currently, lambdas can be used to grab references to JSONata internals. For example: $leak_env_refs := function() {1}; $leak_env_refs.environment.bind('whatever_you_want', false); This allows unauthorized access to internal data, posing a potential security risk.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `jsonata` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 81,
+  "changelog": "https://github.com/jsonata-js/jsonata/releases/tag/v2.0.5",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-05-09",
+  "last_modified": "2024-05-09"
 }

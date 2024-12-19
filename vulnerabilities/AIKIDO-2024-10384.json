@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10384",
-  "package_name" : "laravel/reverb",
-  "patch_versions" : [ "1.1.0" ],
-  "vulnerable_ranges" : [ [ "1.0.0", "1.0.0" ] ],
-  "cwe" : [ "CWE-400" ],
-  "tldr" : "Affected versions of this package are vulnerable to Denial of Service (DoS) when pushing a message with `data: \"\"`. This causes the server to crash or become unresponsive due to improper handling of empty data payloads. Attackers can exploit this vulnerability by sending crafted requests with empty data, leading to a server outage or degradation of service.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `laravel/reverb` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Denial of Service (DoS)",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 60,
-  "changelog" : "https://github.com/laravel/reverb/releases/tag/v1.1.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-29",
-  "last_modified" : "2024-10-29"
+  "package_name": "laravel/reverb",
+  "patch_versions": [
+    "1.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Denial of Service (DoS) when pushing a message with `data: \"\"`. This causes the server to crash or become unresponsive due to improper handling of empty data payloads. Attackers can exploit this vulnerability by sending crafted requests with empty data, leading to a server outage or degradation of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `laravel/reverb` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/laravel/reverb/releases/tag/v1.1.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-29",
+  "last_modified": "2024-10-29"
 }

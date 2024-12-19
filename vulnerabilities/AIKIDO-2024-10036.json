@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10036",
-  "package_name" : "markdown-it",
-  "patch_versions" : [ "4.3.1" ],
-  "vulnerable_ranges" : [ [ "4.0.0", "4.3.0" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of the package are vulnerable to Cross-site Scripting (XSS) through class injection. The markdown-it renderer (lib/renderer.js:36) appends the character class to the `language-` part of the tag without proper validation, allowing an attacker to inject any class into the code tag.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `markdown-it` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting (XSS)",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 45,
-  "changelog" : "https://github.com/markdown-it/markdown-it/compare/4.3.0...4.3.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-22",
-  "last_modified" : "2024-04-22"
+  "package_name": "markdown-it",
+  "patch_versions": [
+    "4.3.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "4.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to Cross-site Scripting (XSS) through class injection. The markdown-it renderer (lib/renderer.js:36) appends the character class to the `language-` part of the tag without proper validation, allowing an attacker to inject any class into the code tag.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `markdown-it` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/markdown-it/markdown-it/compare/4.3.0...4.3.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-22",
+  "last_modified": "2024-04-22"
 }

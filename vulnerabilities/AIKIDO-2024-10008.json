@@ -1,25 +1,43 @@
 {
-  "id" : "AIKIDO-2024-10008",
-  "package_name" : "tomcat-embed-core",
-  "patch_versions" : [ "10.1.19", "9.0.86", "8.5.99" ],
-  "vulnerable_ranges" : [ [ "10.0.0", "10.1.18" ], [ "9.0.0", "9.0.85" ], [ "8.5.0", "8.5.98" ] ],
-  "cwe" : [ "CWE-400" ],
-  "tldr" : "Affected versions of this package are vulnerable to a Denial of Service (DoS) attack if the Tomcat server is configured to allow HTTP/2 requests.",
-  "doest_this_affect_me" : "You are affected if you use Tomcat (within the affected versions) to process HTTP/2 requests without a load balancer in front of it.",
-  "how_to_fix" : "Upgrade `Tomcat` to any of the patched versions.",
-  "reporter" : null,
-  "vulnerable_to" : "DOS",
-  "related_cve_id" : "CVE-2024-24549",
-  "language" : "Java",
-  "severity_class" : "HIGH",
-  "aikido_score" : 75,
-  "changelog" : "https://www.cve.org/CVERecord?id=CVE-2024-24549",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : "tomcat-catalina",
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-03-13",
-  "last_modified" : "2024-03-13"
+  "package_name": "tomcat-embed-core",
+  "patch_versions": [
+    "10.1.19",
+    "9.0.86",
+    "8.5.99"
+  ],
+  "vulnerable_ranges": [
+    [
+      "10.0.0",
+      "10.1.18"
+    ],
+    [
+      "9.0.0",
+      "9.0.85"
+    ],
+    [
+      "8.5.0",
+      "8.5.98"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Denial of Service (DoS) attack if the Tomcat server is configured to allow HTTP/2 requests.",
+  "doest_this_affect_me": "You are affected if you use Tomcat (within the affected versions) to process HTTP/2 requests without a load balancer in front of it.",
+  "how_to_fix": "Upgrade `Tomcat` to any of the patched versions.",
+  "reporter": null,
+  "vulnerable_to": "DOS",
+  "related_cve_id": "CVE-2024-24549",
+  "language": "Java",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://www.cve.org/CVERecord?id=CVE-2024-24549",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": "tomcat-catalina",
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-03-13",
+  "last_modified": "2024-03-13"
 }

@@ -1,25 +1,38 @@
 {
-  "id" : "AIKIDO-2024-10300",
-  "package_name" : "craftcms/cms",
-  "patch_versions" : [ "4.12.5", "5.4.6" ],
-  "vulnerable_ranges" : [ [ "3.0.0", "4.12.4" ], [ "5.0.0", "5.4.5.1" ] ],
-  "cwe" : [ "CWE-200" ],
-  "tldr" : "Affected versions of the package are vulnerable to information disclosure. The `FileHelper::normalizePath(...)` function is not properly sanitized, which can be exploited to expose sensitive information.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `craftcms/cms` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Information Disclosure",
-  "related_cve_id" : "CVE-2024-52291",
-  "language" : "php",
-  "severity_class" : "HIGH",
-  "aikido_score" : 87,
-  "changelog" : "https://github.com/craftcms/cms/releases/tag/5.4.6",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-09-30",
-  "last_modified" : "2024-12-10"
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.12.5",
+    "5.4.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "4.12.4"
+    ],
+    [
+      "5.0.0",
+      "5.4.5.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to information disclosure. The `FileHelper::normalizePath(...)` function is not properly sanitized, which can be exploited to expose sensitive information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Information Disclosure",
+  "related_cve_id": "CVE-2024-52291",
+  "language": "php",
+  "severity_class": "HIGH",
+  "aikido_score": 87,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.4.6",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-09-30",
+  "last_modified": "2024-12-10"
 }

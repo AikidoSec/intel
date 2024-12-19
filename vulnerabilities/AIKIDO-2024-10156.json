@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10156",
-  "package_name" : "pybind11",
-  "patch_versions" : [ "2.13.0" ],
-  "vulnerable_ranges" : [ [ "0.1.0", "2.12.0" ] ],
-  "cwe" : [ "CWE-416" ],
-  "tldr" : "Affected versions of this package are vulnerable to a use-after-free vulnerability due to a reference count bug.",
-  "doest_this_affect_me" : "You are affected if you are using a vulnerable version of the package.",
-  "how_to_fix" : "Upgrade `pybind11` to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Use-After-Free",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "LOW",
-  "aikido_score" : 30,
-  "changelog" : "https://github.com/pybind/pybind11/pull/5156",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-28",
-  "last_modified" : "2024-06-28"
+  "package_name": "pybind11",
+  "patch_versions": [
+    "2.13.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "2.12.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a use-after-free vulnerability due to a reference count bug.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade `pybind11` to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Use-After-Free",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/pybind/pybind11/pull/5156",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-28",
+  "last_modified": "2024-06-28"
 }

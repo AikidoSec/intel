@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10308",
-  "package_name" : "dart_jsonwebtoken",
-  "patch_versions" : [ "2.14.1" ],
-  "vulnerable_ranges" : [ [ "0.1.0", "2.14.0" ] ],
-  "cwe" : [ "CWE-345" ],
-  "tldr" : "Affected versions of the package verify expired JWT tokens, allowing unauthorized access.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `dart_jsonwebtoken` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Insufficient Verification of Data Authenticity",
-  "related_cve_id" : "",
-  "language" : "dart",
-  "severity_class" : "HIGH",
-  "aikido_score" : 76,
-  "changelog" : "https://github.com/jonasroussel/dart_jsonwebtoken/releases/tag/v2.14.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-01",
-  "last_modified" : "2024-10-01"
+  "package_name": "dart_jsonwebtoken",
+  "patch_versions": [
+    "2.14.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "2.14.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-345"
+  ],
+  "tldr": "Affected versions of the package verify expired JWT tokens, allowing unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `dart_jsonwebtoken` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insufficient Verification of Data Authenticity",
+  "related_cve_id": "",
+  "language": "dart",
+  "severity_class": "HIGH",
+  "aikido_score": 76,
+  "changelog": "https://github.com/jonasroussel/dart_jsonwebtoken/releases/tag/v2.14.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-01",
+  "last_modified": "2024-10-01"
 }

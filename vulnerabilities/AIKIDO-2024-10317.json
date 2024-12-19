@@ -1,25 +1,38 @@
 {
-  "id" : "AIKIDO-2024-10317",
-  "package_name" : "@kinde-oss/kinde-auth-nextjs",
-  "patch_versions" : [ "1.10.2", "2.3.9" ],
-  "vulnerable_ranges" : [ [ "1.8.19", "1.10.1" ], [ "2.0.0", "2.3.8" ] ],
-  "cwe" : [ "CWE-315" ],
-  "tldr" : "Affected versions of the package are vulnerable to storage of sensitive information in a cookie. The API access token is stored in the cookie under the name `kinde_api_access_token`, potentially exposing it to unauthorized access.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@kinde-oss/kinde-auth-nextjs` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Storage of Sensitive Information in a Cookie",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "LOW",
-  "aikido_score" : 40,
-  "changelog" : "https://github.com/kinde-oss/kinde-auth-nextjs/releases/tag/v2.3.9",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-03",
-  "last_modified" : "2024-10-03"
+  "package_name": "@kinde-oss/kinde-auth-nextjs",
+  "patch_versions": [
+    "1.10.2",
+    "2.3.9"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.8.19",
+      "1.10.1"
+    ],
+    [
+      "2.0.0",
+      "2.3.8"
+    ]
+  ],
+  "cwe": [
+    "CWE-315"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to storage of sensitive information in a cookie. The API access token is stored in the cookie under the name `kinde_api_access_token`, potentially exposing it to unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@kinde-oss/kinde-auth-nextjs` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Storage of Sensitive Information in a Cookie",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 40,
+  "changelog": "https://github.com/kinde-oss/kinde-auth-nextjs/releases/tag/v2.3.9",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-03",
+  "last_modified": "2024-10-03"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10037",
-  "package_name" : "mysql2",
-  "patch_versions" : [ "3.9.7" ],
-  "vulnerable_ranges" : [ [ "2.0.0", "3.9.6" ] ],
-  "cwe" : [ "CWE-94" ],
-  "tldr" : "Affected versions of this package are vulnerable to Remote Code Execution (RCE) via the `readCodeFor` function (lib/parsers/text_parser.js and lib/parsers/binary_parser.js) due to improper validation of the 'timezone' value.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `mysql2` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Remote Code Execution (RCE)",
-  "related_cve_id" : "CVE-2024-21511",
-  "language" : "JS",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 90,
-  "changelog" : "https://github.com/sidorares/node-mysql2/releases/tag/v3.9.7",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-22",
-  "last_modified" : "2024-04-22"
+  "package_name": "mysql2",
+  "patch_versions": [
+    "3.9.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "3.9.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Remote Code Execution (RCE) via the `readCodeFor` function (lib/parsers/text_parser.js and lib/parsers/binary_parser.js) due to improper validation of the 'timezone' value.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mysql2` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "CVE-2024-21511",
+  "language": "JS",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://github.com/sidorares/node-mysql2/releases/tag/v3.9.7",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-22",
+  "last_modified": "2024-04-22"
 }

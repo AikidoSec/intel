@@ -1,25 +1,38 @@
 {
-  "id" : "AIKIDO-2024-10302",
-  "package_name" : "github.com/hashicorp/vault",
-  "patch_versions" : [ "1.17.6", "1.17.6" ],
-  "vulnerable_ranges" : [ [ "1.16.0", "1.16.3" ], [ "1.17.0", "1.17.5" ] ],
-  "cwe" : [ "CWE-362" ],
-  "tldr" : "Affected versions of the package are vulnerable to a race condition while storing static secret response into the cache. This is very unwanted given the security sensitivity of this package.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `github.com/hashicorp/vault` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')",
-  "related_cve_id" : "",
-  "language" : "go",
-  "severity_class" : "HIGH",
-  "aikido_score" : 85,
-  "changelog" : "https://github.com/hashicorp/vault/releases/tag/v1.17.6",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-09-30",
-  "last_modified" : "2024-09-30"
+  "package_name": "github.com/hashicorp/vault",
+  "patch_versions": [
+    "1.17.6",
+    "1.17.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.16.0",
+      "1.16.3"
+    ],
+    [
+      "1.17.0",
+      "1.17.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to a race condition while storing static secret response into the cache. This is very unwanted given the security sensitivity of this package.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/hashicorp/vault` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')",
+  "related_cve_id": "",
+  "language": "go",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/hashicorp/vault/releases/tag/v1.17.6",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-09-30",
+  "last_modified": "2024-09-30"
 }

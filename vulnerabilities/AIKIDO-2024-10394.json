@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10394",
-  "package_name" : "vich/uploader-bundle",
-  "patch_versions" : [ "2.4.2" ],
-  "vulnerable_ranges" : [ [ "1.0.0", "2.4.1" ] ],
-  "cwe" : [ "CWE-434" ],
-  "tldr" : "Affected versions of this package are vulnerable to uploading files with a dangerous type. A user can bypass the MIME type check and upload a polyglot file (a combination of PHP and PNG file types). This vulnerability can lead to Remote Code Execution (RCE) on the server, enabling malicious users to execute arbitrary code on the server.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `vich/uploader-bundle` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Unrestricted Upload of File with Dangerous Type",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 92,
-  "changelog" : "https://github.com/dustin10/VichUploaderBundle/releases/tag/v2.4.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-30",
-  "last_modified" : "2024-10-30"
+  "package_name": "vich/uploader-bundle",
+  "patch_versions": [
+    "2.4.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.4.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-434"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to uploading files with a dangerous type. A user can bypass the MIME type check and upload a polyglot file (a combination of PHP and PNG file types). This vulnerability can lead to Remote Code Execution (RCE) on the server, enabling malicious users to execute arbitrary code on the server.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `vich/uploader-bundle` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Unrestricted Upload of File with Dangerous Type",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "CRITICAL",
+  "aikido_score": 92,
+  "changelog": "https://github.com/dustin10/VichUploaderBundle/releases/tag/v2.4.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-30",
+  "last_modified": "2024-10-30"
 }

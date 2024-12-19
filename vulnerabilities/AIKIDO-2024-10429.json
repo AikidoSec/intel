@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10429",
-  "package_name" : "github.com/elastic/go-libaudit/v2",
-  "patch_versions" : [ "2.6.0" ],
-  "vulnerable_ranges" : [ [ "0.0.1", "2.5.0" ] ],
-  "cwe" : [ "CWE-775" ],
-  "tldr" : "Affected versions of the package could potentially suffer from a Denial of Service (DoS) attack due to improper handling of file descriptors during the creation of the netlink socket. Specifically, the package fails to prevent the leakage of file descriptors, which could lead to resource exhaustion, causing the system to become unresponsive or crash.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `github.com/elastic/go-libaudit/v2` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Missing Release of File Descriptor or Handle after Effective Lifetime",
-  "related_cve_id" : "",
-  "language" : "go",
-  "severity_class" : "LOW",
-  "aikido_score" : 30,
-  "changelog" : "https://github.com/gohugoio/hugo/releases/tag/v0.138.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-07",
-  "last_modified" : "2024-11-07"
+  "package_name": "github.com/elastic/go-libaudit/v2",
+  "patch_versions": [
+    "2.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.5.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-775"
+  ],
+  "tldr": "Affected versions of the package could potentially suffer from a Denial of Service (DoS) attack due to improper handling of file descriptors during the creation of the netlink socket. Specifically, the package fails to prevent the leakage of file descriptors, which could lead to resource exhaustion, causing the system to become unresponsive or crash.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/elastic/go-libaudit/v2` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Missing Release of File Descriptor or Handle after Effective Lifetime",
+  "related_cve_id": "",
+  "language": "go",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/gohugoio/hugo/releases/tag/v0.138.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-07",
+  "last_modified": "2024-11-07"
 }

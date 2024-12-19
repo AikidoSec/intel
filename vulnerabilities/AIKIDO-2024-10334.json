@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10334",
-  "package_name" : "astro",
-  "patch_versions" : [ "4.16.1" ],
-  "vulnerable_ranges" : [ [ "3.2.0", "4.16.0" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "AAffected versions of the package are vulnerable to Cross-site Scripting (XSS). If the application uses `name=\"scripts\"`, it will shadow the built-in `document.scripts`, potentially allowing an attacker to inject malicious scripts into the application.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `astro` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting (XSS)",
-  "related_cve_id" : "CVE-2024-47885",
-  "language" : "js",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 59,
-  "changelog" : "https://github.com/withastro/astro/releases/tag/astro%404.16.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-14",
-  "last_modified" : "2024-12-10"
+  "package_name": "astro",
+  "patch_versions": [
+    "4.16.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.2.0",
+      "4.16.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "AAffected versions of the package are vulnerable to Cross-site Scripting (XSS). If the application uses `name=\"scripts\"`, it will shadow the built-in `document.scripts`, potentially allowing an attacker to inject malicious scripts into the application.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `astro` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "CVE-2024-47885",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 59,
+  "changelog": "https://github.com/withastro/astro/releases/tag/astro%404.16.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-14",
+  "last_modified": "2024-12-10"
 }

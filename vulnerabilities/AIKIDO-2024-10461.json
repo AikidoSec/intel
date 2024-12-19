@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10461",
-  "package_name" : "bblanchon.PDFium.macOS",
-  "patch_versions" : [ "133.0.6844" ],
-  "vulnerable_ranges" : [ [ "97.0.4667", "130.0.6721" ] ],
-  "cwe" : [ "CWE-758" ],
-  "tldr" : "Affected versions of this package have multiple weaknesses that can cause application crashes, resulting in undefined, unintended, and potentially dangerous behavior.",
-  "doest_this_affect_me" : "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix" : "Upgrade the `bblanchon.PDFium.macOS` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Undefined Behavior",
-  "related_cve_id" : "",
-  "language" : "dotnet",
-  "severity_class" : "LOW",
-  "aikido_score" : 20,
-  "changelog" : "https://github.com/bblanchon/pdfium-binaries/releases/tag/chromium/6844",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-20",
-  "last_modified" : "2024-11-20"
+  "package_name": "bblanchon.PDFium.macOS",
+  "patch_versions": [
+    "133.0.6844"
+  ],
+  "vulnerable_ranges": [
+    [
+      "97.0.4667",
+      "130.0.6721"
+    ]
+  ],
+  "cwe": [
+    "CWE-758"
+  ],
+  "tldr": "Affected versions of this package have multiple weaknesses that can cause application crashes, resulting in undefined, unintended, and potentially dangerous behavior.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `bblanchon.PDFium.macOS` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Undefined Behavior",
+  "related_cve_id": "",
+  "language": "dotnet",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/bblanchon/pdfium-binaries/releases/tag/chromium/6844",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-20",
+  "last_modified": "2024-11-20"
 }

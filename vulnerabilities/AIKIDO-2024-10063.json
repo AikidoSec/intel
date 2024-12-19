@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10063",
-  "package_name" : "@fastify/swagger",
-  "patch_versions" : [ "8.12.1" ],
-  "vulnerable_ranges" : [ [ "8.1.0", "8.12.0" ] ],
-  "cwe" : [ "CWE-1333" ],
-  "tldr" : "The affected versions use a regular expression with potentially polynomial worst-case computational complexity, leading to excessive CPU consumption and possibly causing a Denial of Service (DoS). This vulnerability is located in the `resolveServerUrls` function.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@fastify/swagger` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Regular Expression Denial of Service (ReDoS)",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "LOW",
-  "aikido_score" : 25,
-  "changelog" : "https://github.com/fastify/fastify-swagger/releases/tag/v8.12.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-29",
-  "last_modified" : "2024-04-29"
+  "package_name": "@fastify/swagger",
+  "patch_versions": [
+    "8.12.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "8.1.0",
+      "8.12.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "The affected versions use a regular expression with potentially polynomial worst-case computational complexity, leading to excessive CPU consumption and possibly causing a Denial of Service (DoS). This vulnerability is located in the `resolveServerUrls` function.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@fastify/swagger` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/fastify/fastify-swagger/releases/tag/v8.12.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-29",
+  "last_modified": "2024-04-29"
 }

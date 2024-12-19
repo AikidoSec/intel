@@ -1,25 +1,38 @@
 {
-  "id" : "AIKIDO-2024-10407",
-  "package_name" : "prefect",
-  "patch_versions" : [ "2.20.11", "3.0.2" ],
-  "vulnerable_ranges" : [ [ "2.8.0", "2.20.10" ], [ "3.0.0", "3.0.1" ] ],
-  "cwe" : [ "CWE-918" ],
-  "tldr" : "Affected versions of the package are vulnerable to Server-side Request Forgery (SSRF). If a user self-hosts a Prefect API exposed to `external` users, a malicious user can configure a notification URL that points to an internal API, such as an internal cloud provider API. This could lead to unauthorized access and exposure of sensitive information.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `prefect` library to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Server-side Request Forgery (SSRF)",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "HIGH",
-  "aikido_score" : 80,
-  "changelog" : "https://github.com/PrefectHQ/prefect/releases/tag/3.0.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-04",
-  "last_modified" : "2024-11-04"
+  "package_name": "prefect",
+  "patch_versions": [
+    "2.20.11",
+    "3.0.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.8.0",
+      "2.20.10"
+    ],
+    [
+      "3.0.0",
+      "3.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to Server-side Request Forgery (SSRF). If a user self-hosts a Prefect API exposed to `external` users, a malicious user can configure a notification URL that points to an internal API, such as an internal cloud provider API. This could lead to unauthorized access and exposure of sensitive information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `prefect` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Server-side Request Forgery (SSRF)",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/PrefectHQ/prefect/releases/tag/3.0.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-04",
+  "last_modified": "2024-11-04"
 }

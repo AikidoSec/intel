@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10131",
-  "package_name" : "langchain-nvidia-ai-endpoints",
-  "patch_versions" : [ "0.1.2" ],
-  "vulnerable_ranges" : [ [ "0.0.1", "0.1.1" ] ],
-  "cwe" : [ "CWE-209" ],
-  "tldr" : "Affected versions of the `langchain-nvidia-ai-endpoints` library expose an unredacted API key in the `NVIDIAClient` output, which is used by wrappers such as `ChatNVIDIA`. This key could end up in logs or other sources depending on how the library is used.",
-  "doest_this_affect_me" : "You are affected if you use a vulnerable version of `langchain-nvidia-ai-endpoints`.",
-  "how_to_fix" : "Upgrade `langchain-nvidia-ai-endpoints` to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Information Disclosure",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 40,
-  "changelog" : "https://github.com/langchain-ai/langchain-nvidia/releases/tag/libs/ai-endpoints/v0.1.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-13",
-  "last_modified" : "2024-06-13"
+  "package_name": "langchain-nvidia-ai-endpoints",
+  "patch_versions": [
+    "0.1.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of the `langchain-nvidia-ai-endpoints` library expose an unredacted API key in the `NVIDIAClient` output, which is used by wrappers such as `ChatNVIDIA`. This key could end up in logs or other sources depending on how the library is used.",
+  "doest_this_affect_me": "You are affected if you use a vulnerable version of `langchain-nvidia-ai-endpoints`.",
+  "how_to_fix": "Upgrade `langchain-nvidia-ai-endpoints` to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Information Disclosure",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/langchain-ai/langchain-nvidia/releases/tag/libs/ai-endpoints/v0.1.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-13",
+  "last_modified": "2024-06-13"
 }

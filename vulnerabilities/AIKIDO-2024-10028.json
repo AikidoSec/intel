@@ -1,25 +1,43 @@
 {
-  "id" : "AIKIDO-2024-10028",
-  "package_name" : "electron",
-  "patch_versions" : [ "29.3.0", "28.3.0", "27.3.10" ],
-  "vulnerable_ranges" : [ [ "29.0.0", "29.2.0" ], [ "28.0.0", "28.2.10" ], [ "27.0.0", "27.3.9" ] ],
-  "cwe" : [ "CWE-125" ],
-  "tldr" : "A flaw in the implementation of V8 in Google Chrome versions prior to 123.0.6312.105 allowed a remote attacker to potentially exploit out-of-bounds memory access through a specially crafted HTML page. (Chromium security severity: High)",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `electron` library to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Out-of-bounds Read",
-  "related_cve_id" : "CVE-2024-3156",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 60,
-  "changelog" : "https://github.com/electron/electron/releases/tag/v29.3.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-15",
-  "last_modified" : "2024-04-15"
+  "package_name": "electron",
+  "patch_versions": [
+    "29.3.0",
+    "28.3.0",
+    "27.3.10"
+  ],
+  "vulnerable_ranges": [
+    [
+      "29.0.0",
+      "29.2.0"
+    ],
+    [
+      "28.0.0",
+      "28.2.10"
+    ],
+    [
+      "27.0.0",
+      "27.3.9"
+    ]
+  ],
+  "cwe": [
+    "CWE-125"
+  ],
+  "tldr": "A flaw in the implementation of V8 in Google Chrome versions prior to 123.0.6312.105 allowed a remote attacker to potentially exploit out-of-bounds memory access through a specially crafted HTML page. (Chromium security severity: High)",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `electron` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Out-of-bounds Read",
+  "related_cve_id": "CVE-2024-3156",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/electron/electron/releases/tag/v29.3.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-15",
+  "last_modified": "2024-04-15"
 }

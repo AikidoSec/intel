@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10095",
-  "package_name" : "razorpay",
-  "patch_versions" : [ "2.9.4" ],
-  "vulnerable_ranges" : [ [ "0.0.0", "2.9.3" ] ],
-  "cwe" : [ "CWE-918" ],
-  "tldr" : "Due to a vulnerability in the `request` package (CVE-2023-28155), `razorpay` is vulnerable to server-side request forgery (SSRF). This vulnerability has been fixed in the patch version by replacing the `request` library with the `axios` library.",
-  "doest_this_affect_me" : "You are affected if you are using a razorpay version which is within vulnerability ranges.",
-  "how_to_fix" : "Upgrade the `razorpay` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Server-Side Request Forgery (SSRF)",
-  "related_cve_id" : "CVE-2023-28155",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 60,
-  "changelog" : "https://github.com/razorpay/razorpay-node/releases/tag/v2.9.4",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-05-20",
-  "last_modified" : "2024-05-20"
+  "package_name": "razorpay",
+  "patch_versions": [
+    "2.9.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.0",
+      "2.9.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Due to a vulnerability in the `request` package (CVE-2023-28155), `razorpay` is vulnerable to server-side request forgery (SSRF). This vulnerability has been fixed in the patch version by replacing the `request` library with the `axios` library.",
+  "doest_this_affect_me": "You are affected if you are using a razorpay version which is within vulnerability ranges.",
+  "how_to_fix": "Upgrade the `razorpay` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Server-Side Request Forgery (SSRF)",
+  "related_cve_id": "CVE-2023-28155",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/razorpay/razorpay-node/releases/tag/v2.9.4",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-05-20",
+  "last_modified": "2024-05-20"
 }

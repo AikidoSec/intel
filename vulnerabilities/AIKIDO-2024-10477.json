@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10477",
-  "package_name" : "cosmossdk.io/math",
-  "patch_versions" : [ "1.4.0" ],
-  "vulnerable_ranges" : [ [ "1.0.0", "1.3.0" ] ],
-  "cwe" : [ "CWE-190" ],
-  "tldr" : "Affected versions of this package are vulnerable to integer overflow or wraparound caused by inconsistent bit-length validation between `sdk.Int` and `sdk.Dec`. This misalignment can lead to unexpected behavior and potential security risks.",
-  "doest_this_affect_me" : "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix" : "Upgrade the `cosmossdk.io/math` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Integer Overflow or Wraparound",
-  "related_cve_id" : "GHSA-7225-m954-23v7",
-  "language" : "go",
-  "severity_class" : "HIGH",
-  "aikido_score" : 87,
-  "changelog" : "https://github.com/cosmos/cosmos-sdk/commit/c6522a72a45c34897f9fc85d438c0b74d52f8862",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-25 10:30",
-  "last_modified" : "2024-11-25 10:30"
+  "package_name": "cosmossdk.io/math",
+  "patch_versions": [
+    "1.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to integer overflow or wraparound caused by inconsistent bit-length validation between `sdk.Int` and `sdk.Dec`. This misalignment can lead to unexpected behavior and potential security risks.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `cosmossdk.io/math` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Integer Overflow or Wraparound",
+  "related_cve_id": "GHSA-7225-m954-23v7",
+  "language": "go",
+  "severity_class": "HIGH",
+  "aikido_score": 87,
+  "changelog": "https://github.com/cosmos/cosmos-sdk/commit/c6522a72a45c34897f9fc85d438c0b74d52f8862",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-25 10:30",
+  "last_modified": "2024-11-25 10:30"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10282",
-  "package_name" : "logos",
-  "patch_versions" : [ "0.14.2" ],
-  "vulnerable_ranges" : [ [ "0.9.0", "0.14.1" ] ],
-  "cwe" : [ "CWE-664" ],
-  "tldr" : "Affected versions of the package are vulnerable to memory leaks due to the use of unsafe code. The new version introduces an option to forbid the use of unsafe code, mitigating the risk of memory leaks caused by unsafe operations.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade logos library to patch version and set the forbid_unsafe flag to true.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Control of a Resource",
-  "related_cve_id" : "",
-  "language" : "rust",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/maciejhirsz/logos/releases/tag/v0.14.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-09-18",
-  "last_modified" : "2024-09-18"
+  "package_name": "logos",
+  "patch_versions": [
+    "0.14.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.9.0",
+      "0.14.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-664"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to memory leaks due to the use of unsafe code. The new version introduces an option to forbid the use of unsafe code, mitigating the risk of memory leaks caused by unsafe operations.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade logos library to patch version and set the forbid_unsafe flag to true.",
+  "reporter": "",
+  "vulnerable_to": "Improper Control of a Resource",
+  "related_cve_id": "",
+  "language": "rust",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/maciejhirsz/logos/releases/tag/v0.14.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-09-18",
+  "last_modified": "2024-09-18"
 }

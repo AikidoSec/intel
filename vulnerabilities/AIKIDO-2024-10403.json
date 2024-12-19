@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10403",
-  "package_name" : "prestashop/classic",
-  "patch_versions" : [ "2.1.3" ],
-  "vulnerable_ranges" : [ [ "2.0.0", "2.1.2" ] ],
-  "cwe" : [ "CWE-521" ],
-  "tldr" : "Affected versions of this package have weak password requirements during the password reset process. `prestashop/classic` does not enforce strong password policies, allowing users to set easily guessable or insecure passwords. This weakness increases the risk of unauthorized access and account compromise.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `prestashop/classic` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Weak Password Requirements",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "LOW",
-  "aikido_score" : 30,
-  "changelog" : "https://github.com/PrestaShop/classic-theme/releases/tag/2.1.3",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-04",
-  "last_modified" : "2024-11-04"
+  "package_name": "prestashop/classic",
+  "patch_versions": [
+    "2.1.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.1.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-521"
+  ],
+  "tldr": "Affected versions of this package have weak password requirements during the password reset process. `prestashop/classic` does not enforce strong password policies, allowing users to set easily guessable or insecure passwords. This weakness increases the risk of unauthorized access and account compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `prestashop/classic` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Weak Password Requirements",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/PrestaShop/classic-theme/releases/tag/2.1.3",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-04",
+  "last_modified": "2024-11-04"
 }

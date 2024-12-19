@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10492",
-  "package_name" : "akka-actor_2.13",
-  "patch_versions" : [ "2.4.17" ],
-  "vulnerable_ranges" : [ [ "2.0", "2.4.16" ] ],
-  "cwe" : [ "CWE-502" ],
-  "tldr" : "Akka versions <=2.4.16 and 2.5-M1 are vulnerable to a Java deserialization attack in the `Remoting` component. This vulnerability allows an attacker to send specially crafted serialized objects to the `ActorSystem`, which can trigger deserialization and execute arbitrary code in the context of the application. Exploiting this flaw results in Remote Code Execution (RCE).",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `akka-actor` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Deserialization of Untrusted Data",
-  "related_cve_id" : "CVE-2017-1000034",
-  "language" : "JAVA",
-  "severity_class" : "HIGH",
-  "aikido_score" : 82,
-  "changelog" : "https://github.com/advisories/GHSA-mm57-9j6q-rxm2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : "akka-actor_",
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-28 20:00",
-  "last_modified" : "2024-11-28 20:00"
+  "package_name": "akka-actor_2.13",
+  "patch_versions": [
+    "2.4.17"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0",
+      "2.4.16"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Akka versions <=2.4.16 and 2.5-M1 are vulnerable to a Java deserialization attack in the `Remoting` component. This vulnerability allows an attacker to send specially crafted serialized objects to the `ActorSystem`, which can trigger deserialization and execute arbitrary code in the context of the application. Exploiting this flaw results in Remote Code Execution (RCE).",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `akka-actor` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Deserialization of Untrusted Data",
+  "related_cve_id": "CVE-2017-1000034",
+  "language": "JAVA",
+  "severity_class": "HIGH",
+  "aikido_score": 82,
+  "changelog": "https://github.com/advisories/GHSA-mm57-9j6q-rxm2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": "akka-actor_",
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-28 20:00",
+  "last_modified": "2024-11-28 20:00"
 }

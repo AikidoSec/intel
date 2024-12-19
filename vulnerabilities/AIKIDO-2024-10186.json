@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10186",
-  "package_name" : "verbb/formie",
-  "patch_versions" : [ "2.1.21" ],
-  "vulnerable_ranges" : [ [ "1.2.0", "2.1.20" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of the package are vulnerable to a Cross-site Scripting (XSS) vulnerability in sub-fields and sent email notifications.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `verbb/formie` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting (XSS)",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "LOW",
-  "aikido_score" : 15,
-  "changelog" : "https://github.com/verbb/formie/releases/tag/2.1.21",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-07-17",
-  "last_modified" : "2024-07-17"
+  "package_name": "verbb/formie",
+  "patch_versions": [
+    "2.1.21"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.2.0",
+      "2.1.20"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to a Cross-site Scripting (XSS) vulnerability in sub-fields and sent email notifications.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `verbb/formie` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/verbb/formie/releases/tag/2.1.21",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-07-17",
+  "last_modified": "2024-07-17"
 }

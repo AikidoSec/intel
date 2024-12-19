@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10478",
-  "package_name" : "@cloudflare/workers-shared",
-  "patch_versions" : [ "0.8.0" ],
-  "vulnerable_ranges" : [ [ "0.1.0", "0.7.1" ] ],
-  "cwe" : [ "CWE-601" ],
-  "tldr" : "Affected versions of this package are vulnerable to an open redirect by using trailing double slashes in the URL (such as https://example.com//attacker.example/) when accessing the worker asset path. This can allow attackers to redirect users to malicious websites.",
-  "doest_this_affect_me" : "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix" : "Upgrade the `@cloudflare/workers-shared` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "URL Redirection to Untrusted Site ('Open Redirect')",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 48,
-  "changelog" : "https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-shared%400.8.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-25 13:30",
-  "last_modified" : "2024-11-25 13:30"
+  "package_name": "@cloudflare/workers-shared",
+  "patch_versions": [
+    "0.8.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.7.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-601"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an open redirect by using trailing double slashes in the URL (such as https://example.com//attacker.example/) when accessing the worker asset path. This can allow attackers to redirect users to malicious websites.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `@cloudflare/workers-shared` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "URL Redirection to Untrusted Site ('Open Redirect')",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 48,
+  "changelog": "https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-shared%400.8.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-25 13:30",
+  "last_modified": "2024-11-25 13:30"
 }

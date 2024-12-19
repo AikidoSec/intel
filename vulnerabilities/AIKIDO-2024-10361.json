@@ -1,25 +1,43 @@
 {
-  "id" : "AIKIDO-2024-10361",
-  "package_name" : "spring-web",
-  "patch_versions" : [ "5.3.41", "6.0.25", "6.1.14" ],
-  "vulnerable_ranges" : [ [ "0.0.1", "5.3.40" ], [ "6.0.0", "6.0.24" ], [ "6.1.0", "6.1.13" ] ],
-  "cwe" : [ "CWE-178" ],
-  "tldr" : "Affected versions of the package are vulnerable to improper handling of case sensitivity. The use of `String.toLowerCase()` introduces locale-dependent exceptions that can cause fields to be improperly protected, potentially allowing attackers to bypass security checks based on case variations that are not handled consistently across different locales.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `spring-web` library to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Handling of Case Sensitivity",
-  "related_cve_id" : "CVE-2024-38820",
-  "language" : "java",
-  "severity_class" : "LOW",
-  "aikido_score" : 23,
-  "changelog" : "https://github.com/spring-projects/spring-framework/commit/23656aebc6c7d0f9faff1080981eb4d55eff296c",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-24",
-  "last_modified" : "2024-10-24"
+  "package_name": "spring-web",
+  "patch_versions": [
+    "5.3.41",
+    "6.0.25",
+    "6.1.14"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "5.3.40"
+    ],
+    [
+      "6.0.0",
+      "6.0.24"
+    ],
+    [
+      "6.1.0",
+      "6.1.13"
+    ]
+  ],
+  "cwe": [
+    "CWE-178"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to improper handling of case sensitivity. The use of `String.toLowerCase()` introduces locale-dependent exceptions that can cause fields to be improperly protected, potentially allowing attackers to bypass security checks based on case variations that are not handled consistently across different locales.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `spring-web` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Handling of Case Sensitivity",
+  "related_cve_id": "CVE-2024-38820",
+  "language": "java",
+  "severity_class": "LOW",
+  "aikido_score": 23,
+  "changelog": "https://github.com/spring-projects/spring-framework/commit/23656aebc6c7d0f9faff1080981eb4d55eff296c",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-24",
+  "last_modified": "2024-10-24"
 }

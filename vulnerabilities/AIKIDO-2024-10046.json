@@ -1,25 +1,38 @@
 {
-  "id" : "AIKIDO-2024-10046",
-  "package_name" : "astro",
-  "patch_versions" : [ "3.6.5", "4.4.7" ],
-  "vulnerable_ranges" : [ [ "3.3.0", "3.6.4" ], [ "4.0.0", "4.4.6" ] ],
-  "cwe" : [ "CWE-209" ],
-  "tldr" : "In certain situations, the Node endpoint for assets could return unintended responses. The patched versions ensure that, in production, only opaque messages (Internal Server Error) are returned to users in the event of malformed requests. Internal logs remain unaffected and will continue to provide useful information for debugging purposes.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `astro` library to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Generation of Error Message Containing Sensitive Information",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "LOW",
-  "aikido_score" : 30,
-  "changelog" : "https://github.com/withastro/astro/releases/tag/astro%403.6.5",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-24",
-  "last_modified" : "2024-04-24"
+  "package_name": "astro",
+  "patch_versions": [
+    "3.6.5",
+    "4.4.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.3.0",
+      "3.6.4"
+    ],
+    [
+      "4.0.0",
+      "4.4.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "In certain situations, the Node endpoint for assets could return unintended responses. The patched versions ensure that, in production, only opaque messages (Internal Server Error) are returned to users in the event of malformed requests. Internal logs remain unaffected and will continue to provide useful information for debugging purposes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `astro` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/withastro/astro/releases/tag/astro%403.6.5",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-24",
+  "last_modified": "2024-04-24"
 }

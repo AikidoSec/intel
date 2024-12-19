@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10456",
-  "package_name" : "radareorg.radare2",
-  "patch_versions" : [ "5.9.8" ],
-  "vulnerable_ranges" : [ [ "2.1.0", "5.9.7" ] ],
-  "cwe" : [ "CWE-94" ],
-  "tldr" : "Affected versions of this package are vulnerable to code injection, allowing arbitrary shell commands to be embedded in a Pebble Application file. When such a file is opened, the commands execute before reaching the r2 shell prompt. This critical vulnerability can lead to Remote Code Execution (RCE) or Denial of Service (DoS).",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `radareorg.radare2` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Code Injection",
-  "related_cve_id" : "",
-  "language" : "c++",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 90,
-  "changelog" : "https://github.com/radareorg/radare2/issues/23657",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-20",
-  "last_modified" : "2024-11-20"
+  "package_name": "radareorg.radare2",
+  "patch_versions": [
+    "5.9.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.1.0",
+      "5.9.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to code injection, allowing arbitrary shell commands to be embedded in a Pebble Application file. When such a file is opened, the commands execute before reaching the r2 shell prompt. This critical vulnerability can lead to Remote Code Execution (RCE) or Denial of Service (DoS).",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `radareorg.radare2` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Code Injection",
+  "related_cve_id": "",
+  "language": "c++",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://github.com/radareorg/radare2/issues/23657",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-20",
+  "last_modified": "2024-11-20"
 }

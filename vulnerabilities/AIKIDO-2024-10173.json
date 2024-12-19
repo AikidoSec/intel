@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10173",
-  "package_name" : "next",
-  "patch_versions" : [ "14.2.5" ],
-  "vulnerable_ranges" : [ [ "12.1.0", "14.2.4" ] ],
-  "cwe" : [ "CWE-918" ],
-  "tldr" : "Affected versions of the `next` package are vulnerable to server-side request forgery (SSRF) due to a flaw in the image optimization functionality. The Image Optimization API checks if the given image URL is relative by verifying if `url.startsWith('/')`. This allows protocol-relative URLs (e.g., `//example.com`) to bypass the check and be treated as relative. As a result, these URLs skip validation against remote patterns and are processed as relative URLs, potentially exposing the system to SSRF attacks.",
-  "doest_this_affect_me" : "You are affected if you are using a vulnerable version of `next` and if you are using it in combination with https://github.com/cloudflare/next-on-pages.",
-  "how_to_fix" : "Upgrade the `next` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Server-Side Request Forgery (SSRF)",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 60,
-  "changelog" : "https://github.com/vercel/next.js/releases/tag/v14.2.5",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-07-11",
-  "last_modified" : "2024-07-11"
+  "package_name": "next",
+  "patch_versions": [
+    "14.2.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "12.1.0",
+      "14.2.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Affected versions of the `next` package are vulnerable to server-side request forgery (SSRF) due to a flaw in the image optimization functionality. The Image Optimization API checks if the given image URL is relative by verifying if `url.startsWith('/')`. This allows protocol-relative URLs (e.g., `//example.com`) to bypass the check and be treated as relative. As a result, these URLs skip validation against remote patterns and are processed as relative URLs, potentially exposing the system to SSRF attacks.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of `next` and if you are using it in combination with https://github.com/cloudflare/next-on-pages.",
+  "how_to_fix": "Upgrade the `next` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Server-Side Request Forgery (SSRF)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/vercel/next.js/releases/tag/v14.2.5",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-07-11",
+  "last_modified": "2024-07-11"
 }

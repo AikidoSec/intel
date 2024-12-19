@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10518",
-  "package_name" : "MessagePack",
-  "patch_versions" : [ "3.0.300" ],
-  "vulnerable_ranges" : [ [ "1.0.0", "3.0.238-rc.1" ] ],
-  "cwe" : [ "CWE-328" ],
-  "tldr" : "Affected versions of this package do not use a hashing function resistant to hash collision attacks. When deserializing data from untrusted sources, this can introduce security vulnerabilities, including arbitrary code execution or denial of service (DoS) attacks. Untrusted data may originate from external networks, be tampered with during transmission over unauthenticated connections, or come from compromised local storage. While `MessagePack` does not claim to authenticate or make data tamper-resistant, making this a low-severity vulnerability, updating to a more secure algorithm is recommended.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `MessagePack` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Use of Weak Hash",
-  "related_cve_id" : "",
-  "language" : "dotnet",
-  "severity_class" : "LOW",
-  "aikido_score" : 30,
-  "changelog" : "https://github.com/MessagePack-CSharp/MessagePack-CSharp/releases/tag/v3.0.3",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-12-06 18:00",
-  "last_modified" : "2024-12-06 18:00"
+  "package_name": "MessagePack",
+  "patch_versions": [
+    "3.0.300"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "3.0.238-rc.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-328"
+  ],
+  "tldr": "Affected versions of this package do not use a hashing function resistant to hash collision attacks. When deserializing data from untrusted sources, this can introduce security vulnerabilities, including arbitrary code execution or denial of service (DoS) attacks. Untrusted data may originate from external networks, be tampered with during transmission over unauthenticated connections, or come from compromised local storage. While `MessagePack` does not claim to authenticate or make data tamper-resistant, making this a low-severity vulnerability, updating to a more secure algorithm is recommended.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `MessagePack` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Use of Weak Hash",
+  "related_cve_id": "",
+  "language": "dotnet",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/MessagePack-CSharp/MessagePack-CSharp/releases/tag/v3.0.3",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-06 18:00",
+  "last_modified": "2024-12-06 18:00"
 }

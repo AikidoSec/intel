@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10066",
-  "package_name" : "serialize-javascript",
-  "patch_versions" : [ "6.0.2" ],
-  "vulnerable_ranges" : [ [ "6.0.0", "6.0.1" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of the `serialize-javascript library` are vulnerable to Cross-site Scripting (XSS) due to unsanitized URLs. Attackers can inject unsafe HTML characters through non-HTTP URLs in the `serialize` function.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `serialize-javascript` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting (XSS)",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 64,
-  "changelog" : "https://github.com/yahoo/serialize-javascript/releases/tag/v6.0.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-30",
-  "last_modified" : "2024-04-30"
+  "package_name": "serialize-javascript",
+  "patch_versions": [
+    "6.0.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.0.0",
+      "6.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of the `serialize-javascript library` are vulnerable to Cross-site Scripting (XSS) due to unsanitized URLs. Attackers can inject unsafe HTML characters through non-HTTP URLs in the `serialize` function.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `serialize-javascript` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 64,
+  "changelog": "https://github.com/yahoo/serialize-javascript/releases/tag/v6.0.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-30",
+  "last_modified": "2024-04-30"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10451",
-  "package_name" : "github.com/F1bonacc1/process-compose",
-  "patch_versions" : [ "1.40.0" ],
-  "vulnerable_ranges" : [ [ "0.15.0", "1.34.0" ] ],
-  "cwe" : [ "CWE-400" ],
-  "tldr" : "Affected versions of this package are vulnerable to Denial of Service (DoS) due to an issue with the `down` function, where daemons may fail to shut down properly and hang indefinitely, causing excessive CPU usage and impacting other processes.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `github.com/F1bonacc1/process-compose` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Denial of Service (DoS)",
-  "related_cve_id" : "",
-  "language" : "go",
-  "severity_class" : "LOW",
-  "aikido_score" : 20,
-  "changelog" : "https://github.com/F1bonacc1/process-compose/releases/tag/v1.40.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-19",
-  "last_modified" : "2024-11-19"
+  "package_name": "github.com/F1bonacc1/process-compose",
+  "patch_versions": [
+    "1.40.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.15.0",
+      "1.34.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Denial of Service (DoS) due to an issue with the `down` function, where daemons may fail to shut down properly and hang indefinitely, causing excessive CPU usage and impacting other processes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/F1bonacc1/process-compose` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "go",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/F1bonacc1/process-compose/releases/tag/v1.40.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-19",
+  "last_modified": "2024-11-19"
 }

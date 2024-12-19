@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10078",
-  "package_name" : "@rjsf/core",
-  "patch_versions" : [ "5.17.0" ],
-  "vulnerable_ranges" : [ [ "2.0.0", "5.16.1" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of the `@rjsf/core` library are vulnerable to Cross-site Scripting (XSS) in the `FileWidget` component. The `value` property in `FileWidget` improperly parses data URLs, allowing the use of `javascript:` schemas, which can enable malicious script execution.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@rjsf/core` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting (XSS)",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 49,
-  "changelog" : "https://github.com/rjsf-team/react-jsonschema-form/releases/tag/v5.17.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-05-02",
-  "last_modified" : "2024-05-02"
+  "package_name": "@rjsf/core",
+  "patch_versions": [
+    "5.17.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "5.16.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of the `@rjsf/core` library are vulnerable to Cross-site Scripting (XSS) in the `FileWidget` component. The `value` property in `FileWidget` improperly parses data URLs, allowing the use of `javascript:` schemas, which can enable malicious script execution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@rjsf/core` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 49,
+  "changelog": "https://github.com/rjsf-team/react-jsonschema-form/releases/tag/v5.17.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-05-02",
+  "last_modified": "2024-05-02"
 }

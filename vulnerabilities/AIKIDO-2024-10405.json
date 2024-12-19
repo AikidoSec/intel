@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10405",
-  "package_name" : "moesifpythonrequest",
-  "patch_versions" : [ "0.3.4" ],
-  "vulnerable_ranges" : [ [ "0.1.4", "0.3.3" ] ],
-  "cwe" : [ "CWE-20" ],
-  "tldr" : "Affected versions of this package improperly validate URLs, failing to sanitize them properly. This vulnerability allows attackers to submit malicious URLs, which can lead to security risks.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `moesifpythonrequest` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Input Validation",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "LOW",
-  "aikido_score" : 19,
-  "changelog" : "https://github.com/Moesif/moesifpythonrequest/releases/tag/v0.3.4",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-04",
-  "last_modified" : "2024-11-04"
+  "package_name": "moesifpythonrequest",
+  "patch_versions": [
+    "0.3.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.4",
+      "0.3.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package improperly validate URLs, failing to sanitize them properly. This vulnerability allows attackers to submit malicious URLs, which can lead to security risks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `moesifpythonrequest` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "LOW",
+  "aikido_score": 19,
+  "changelog": "https://github.com/Moesif/moesifpythonrequest/releases/tag/v0.3.4",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-04",
+  "last_modified": "2024-11-04"
 }

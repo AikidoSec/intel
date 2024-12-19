@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10430",
-  "package_name" : "twig/twig",
-  "patch_versions" : [ "3.14.1" ],
-  "vulnerable_ranges" : [ [ "1.38.0", "3.14.0" ] ],
-  "cwe" : [ "CWE-749" ],
-  "tldr" : "Affected versions of the package may expose restricted functions due to improper sandboxing. In sandbox mode, an attacker could exploit a vulnerability that allows calling the `toString()` method on an object, even if the `__toString()` method is restricted by the security policy. This issue could potentially lead to unauthorized access to sensitive data or allow the execution of malicious code, depending on what the `toString()` method reveals about the object or its internal state.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `twig/twig` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Exposed Dangerous Method or Function",
-  "related_cve_id" : "CVE-2024-51754",
-  "language" : "php",
-  "severity_class" : "LOW",
-  "aikido_score" : 21,
-  "changelog" : "https://github.com/twigphp/Twig/blob/3.x/CHANGELOG",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-08",
-  "last_modified" : "2024-12-10"
+  "package_name": "twig/twig",
+  "patch_versions": [
+    "3.14.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.38.0",
+      "3.14.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-749"
+  ],
+  "tldr": "Affected versions of the package may expose restricted functions due to improper sandboxing. In sandbox mode, an attacker could exploit a vulnerability that allows calling the `toString()` method on an object, even if the `__toString()` method is restricted by the security policy. This issue could potentially lead to unauthorized access to sensitive data or allow the execution of malicious code, depending on what the `toString()` method reveals about the object or its internal state.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `twig/twig` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposed Dangerous Method or Function",
+  "related_cve_id": "CVE-2024-51754",
+  "language": "php",
+  "severity_class": "LOW",
+  "aikido_score": 21,
+  "changelog": "https://github.com/twigphp/Twig/blob/3.x/CHANGELOG",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-08",
+  "last_modified": "2024-12-10"
 }

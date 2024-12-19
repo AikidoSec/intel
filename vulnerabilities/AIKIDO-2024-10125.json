@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10125",
-  "package_name" : "@cap-js-community/odata-v2-adapter",
-  "patch_versions" : [ "1.12.10" ],
-  "vulnerable_ranges" : [ [ "1.10.0", "1.12.9" ] ],
-  "cwe" : [ "CWE-209" ],
-  "tldr" : "Affected versions of `@cap-js-community/odata-v2-adapter` may expose authorization headers in debug traces, which could potentially be sent to monitoring tools like Sentry.",
-  "doest_this_affect_me" : "You are affected if you use a vulnerable version of `@cap-js-community/odata-v2-adapter`.",
-  "how_to_fix" : "Upgrade `@cap-js-community/odata-v2-adapter` to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Information Disclosure",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "LOW",
-  "aikido_score" : 20,
-  "changelog" : "https://www.npmjs.com/package/@cap-js-community/odata-v2-adapter/v/1.12.10",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-13",
-  "last_modified" : "2024-06-13"
+  "package_name": "@cap-js-community/odata-v2-adapter",
+  "patch_versions": [
+    "1.12.10"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.10.0",
+      "1.12.9"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of `@cap-js-community/odata-v2-adapter` may expose authorization headers in debug traces, which could potentially be sent to monitoring tools like Sentry.",
+  "doest_this_affect_me": "You are affected if you use a vulnerable version of `@cap-js-community/odata-v2-adapter`.",
+  "how_to_fix": "Upgrade `@cap-js-community/odata-v2-adapter` to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Information Disclosure",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://www.npmjs.com/package/@cap-js-community/odata-v2-adapter/v/1.12.10",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-13",
+  "last_modified": "2024-06-13"
 }

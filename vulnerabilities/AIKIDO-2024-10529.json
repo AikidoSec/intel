@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10529",
-  "package_name" : "python-semantic-release",
-  "patch_versions" : [ "9.8.8" ],
-  "vulnerable_ranges" : [ [ "8.0.0", "9.8.7" ] ],
-  "cwe" : [ "CWE-22" ],
-  "tldr" : "Affected versions of this package are vulnerable to path traversal due to improper handling of paths in the `RuntimeContext` class within the `semantic_release/cli/config.py` file. The vulnerability arises from using `Path.resolve()` without `Path.absolute()`, which may return relative paths on Windows for non-existent directories. Exploiting this flaw could allow attackers to access or modify files outside the intended repository directory, potentially compromising the system's integrity or exposing sensitive data.",
-  "doest_this_affect_me" : "You are affected if you are using a vulnerable version of the package and you are on Windows.",
-  "how_to_fix" : "Upgrade the `python-semantic-release` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Path Traversal",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "HIGH",
-  "aikido_score" : 85,
-  "changelog" : "https://github.com/python-semantic-release/python-semantic-release/releases/tag/v9.8.8",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-12-10 15:30",
-  "last_modified" : "2024-12-10 15:30"
+  "package_name": "python-semantic-release",
+  "patch_versions": [
+    "9.8.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "8.0.0",
+      "9.8.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to path traversal due to improper handling of paths in the `RuntimeContext` class within the `semantic_release/cli/config.py` file. The vulnerability arises from using `Path.resolve()` without `Path.absolute()`, which may return relative paths on Windows for non-existent directories. Exploiting this flaw could allow attackers to access or modify files outside the intended repository directory, potentially compromising the system's integrity or exposing sensitive data.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package and you are on Windows.",
+  "how_to_fix": "Upgrade the `python-semantic-release` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/python-semantic-release/python-semantic-release/releases/tag/v9.8.8",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-10 15:30",
+  "last_modified": "2024-12-10 15:30"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10464",
-  "package_name" : "node-opcua-address-space",
-  "patch_versions" : [ "2.137.0" ],
-  "vulnerable_ranges" : [ [ "0.0.1", "2.136.0" ] ],
-  "cwe" : [ "CWE-1321" ],
-  "tldr" : "Affected versions of this package are vulnerable to several minor security issues, including potential prototype pollution, which could allow attackers to manipulate object properties and impact application behavior.",
-  "doest_this_affect_me" : "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix" : "Upgrade the `node-opcua-address-space` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Prototype Pollution",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "LOW",
-  "aikido_score" : 32,
-  "changelog" : "https://github.com/node-opcua/node-opcua/releases/tag/v2.137.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-21",
-  "last_modified" : "2024-11-21"
+  "package_name": "node-opcua-address-space",
+  "patch_versions": [
+    "2.137.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.136.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to several minor security issues, including potential prototype pollution, which could allow attackers to manipulate object properties and impact application behavior.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `node-opcua-address-space` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 32,
+  "changelog": "https://github.com/node-opcua/node-opcua/releases/tag/v2.137.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-21",
+  "last_modified": "2024-11-21"
 }

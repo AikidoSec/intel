@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10443",
-  "package_name" : "uppy",
-  "patch_versions" : [ "4.7.0" ],
-  "vulnerable_ranges" : [ [ "0.27.0", "4.6.0" ] ],
-  "cwe" : [ "CWE-352" ],
-  "tldr" : "Affected versions of the package do not provide explicit protection against Cross-site Request Forgery (CSRF) attacks in the OAuth2 grant configuration. This vulnerability allows an attacker to potentially manipulate the authorization process by tricking a user into making unintended requests, compromising the security of the application.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `uppy` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-Site Request Forgery (CSRF)",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "LOW",
-  "aikido_score" : 30,
-  "changelog" : "https://github.com/transloadit/uppy/releases/tag/uppy%404.6.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-13",
-  "last_modified" : "2024-11-13"
+  "package_name": "uppy",
+  "patch_versions": [
+    "4.7.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.27.0",
+      "4.6.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-352"
+  ],
+  "tldr": "Affected versions of the package do not provide explicit protection against Cross-site Request Forgery (CSRF) attacks in the OAuth2 grant configuration. This vulnerability allows an attacker to potentially manipulate the authorization process by tricking a user into making unintended requests, compromising the security of the application.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `uppy` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-Site Request Forgery (CSRF)",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/transloadit/uppy/releases/tag/uppy%404.6.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-13",
+  "last_modified": "2024-11-13"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10444",
-  "package_name" : "rustybuzz",
-  "patch_versions" : [ "0.20.1" ],
-  "vulnerable_ranges" : [ [ "0.7.0", "0.20.0" ] ],
-  "cwe" : [ "CWE-190" ],
-  "tldr" : "Affected versions of the package are vulnerable to an integer overflow, which could result in crashes or a Denial of Service (DoS). This flaw occurs when an integer value exceeds its maximum limit, potentially causing unexpected behavior or application instability.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `rustybuzz` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Integer Overflow",
-  "related_cve_id" : "",
-  "language" : "rust",
-  "severity_class" : "LOW",
-  "aikido_score" : 15,
-  "changelog" : "https://github.com/harfbuzz/rustybuzz/releases/tag/v0.20.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-13",
-  "last_modified" : "2024-11-13"
+  "package_name": "rustybuzz",
+  "patch_versions": [
+    "0.20.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.7.0",
+      "0.20.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to an integer overflow, which could result in crashes or a Denial of Service (DoS). This flaw occurs when an integer value exceeds its maximum limit, potentially causing unexpected behavior or application instability.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `rustybuzz` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Integer Overflow",
+  "related_cve_id": "",
+  "language": "rust",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/harfbuzz/rustybuzz/releases/tag/v0.20.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-13",
+  "last_modified": "2024-11-13"
 }

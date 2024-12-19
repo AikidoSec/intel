@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10331",
-  "package_name" : "torchgeo",
-  "patch_versions" : [ "0.6.1" ],
-  "vulnerable_ranges" : [ [ "0.4.0", "0.6.0" ] ],
-  "cwe" : [ "CWE-78" ],
-  "tldr" : "Affected versions of the package are vulnerable to command injection through the use of `eval` in the `get_weight` function, where user input is not properly sanitized. This allows attackers to execute arbitrary code by injecting malicious input.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `torchgeo` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Command Injection",
-  "related_cve_id" : "CVE-2024-49048",
-  "language" : "python",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 92,
-  "changelog" : "https://github.com/microsoft/torchgeo/releases/tag/v0.6.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-11",
-  "last_modified" : "2024-10-10"
+  "package_name": "torchgeo",
+  "patch_versions": [
+    "0.6.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.4.0",
+      "0.6.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-78"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to command injection through the use of `eval` in the `get_weight` function, where user input is not properly sanitized. This allows attackers to execute arbitrary code by injecting malicious input.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `torchgeo` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Command Injection",
+  "related_cve_id": "CVE-2024-49048",
+  "language": "python",
+  "severity_class": "CRITICAL",
+  "aikido_score": 92,
+  "changelog": "https://github.com/microsoft/torchgeo/releases/tag/v0.6.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-11",
+  "last_modified": "2024-10-10"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10315",
-  "package_name" : "chainlit",
-  "patch_versions" : [ "1.3.0rc0" ],
-  "vulnerable_ranges" : [ [ "0.7.0", "1.2.0" ] ],
-  "cwe" : [ "CWE-287" ],
-  "tldr" : "Affected versions of the package have an improper authentication vulnerability. When using an OAuth provider to log in, users cannot log out of Chainlit unless they also log out from the OAuth provider, potentially leaving sessions active unintentionally.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `chainlit` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Authentication",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 55,
-  "changelog" : "https://github.com/Chainlit/chainlit/releases/tag/1.3.0rc0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-03",
-  "last_modified" : "2024-10-03"
+  "package_name": "chainlit",
+  "patch_versions": [
+    "1.3.0rc0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.7.0",
+      "1.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-287"
+  ],
+  "tldr": "Affected versions of the package have an improper authentication vulnerability. When using an OAuth provider to log in, users cannot log out of Chainlit unless they also log out from the OAuth provider, potentially leaving sessions active unintentionally.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `chainlit` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Authentication",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/Chainlit/chainlit/releases/tag/1.3.0rc0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-03",
+  "last_modified": "2024-10-03"
 }

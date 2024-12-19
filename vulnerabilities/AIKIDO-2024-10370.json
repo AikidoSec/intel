@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10370",
-  "package_name" : "sentence-transformers",
-  "patch_versions" : [ "3.1.0" ],
-  "vulnerable_ranges" : [ [ "0.0.1", "3.0.1" ] ],
-  "cwe" : [ "CWE-94" ],
-  "tldr" : "Affected versions of the package are vulnerable to Remote Code Execution (RCE) when loading PyTorch model files. The `torch.load()` function, when used without the `weights_only=True` parameter, can deserialize malicious Python objects from manipulated model files, potentially allowing an attacker to execute arbitrary code.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `sentence-transformers` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Remote Code Execution (RCE)",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "HIGH",
-  "aikido_score" : 83,
-  "changelog" : "https://github.com/UKPLab/sentence-transformers/pull/2927",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-25",
-  "last_modified" : "2024-10-25"
+  "package_name": "sentence-transformers",
+  "patch_versions": [
+    "3.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "3.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to Remote Code Execution (RCE) when loading PyTorch model files. The `torch.load()` function, when used without the `weights_only=True` parameter, can deserialize malicious Python objects from manipulated model files, potentially allowing an attacker to execute arbitrary code.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `sentence-transformers` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 83,
+  "changelog": "https://github.com/UKPLab/sentence-transformers/pull/2927",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-25",
+  "last_modified": "2024-10-25"
 }

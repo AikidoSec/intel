@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10203",
-  "package_name" : "kedro-datasets",
-  "patch_versions" : [ "4.1.0" ],
-  "vulnerable_ranges" : [ [ "3.0.0", "4.0.0" ] ],
-  "cwe" : [ "CWE-200" ],
-  "tldr" : "Affected versions of the package expose sensitive information by not masking credentials in the `ibis` dataset when printed.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `kedro-datasets` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Exposure of Sensitive Information",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "LOW",
-  "aikido_score" : 30,
-  "changelog" : "https://github.com/kedro-org/kedro-plugins/releases/tag/kedro-datasets-4.1.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-08-02",
-  "last_modified" : "2024-08-02"
+  "package_name": "kedro-datasets",
+  "patch_versions": [
+    "4.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "4.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of the package expose sensitive information by not masking credentials in the `ibis` dataset when printed.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `kedro-datasets` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/kedro-org/kedro-plugins/releases/tag/kedro-datasets-4.1.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-08-02",
+  "last_modified": "2024-08-02"
 }

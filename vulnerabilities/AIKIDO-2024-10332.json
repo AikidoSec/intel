@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10332",
-  "package_name" : "kedro",
-  "patch_versions" : [ "0.19.9" ],
-  "vulnerable_ranges" : [ [ "0.18.4", "0.19.8" ] ],
-  "cwe" : [ "CWE-94" ],
-  "tldr" : "Affected versions of the package are vulnerable to Remote Code Execution (RCE) through malicious shelve file uploads in `Kedro's ShelveStore`. Attackers can exploit this vulnerability by uploading a specially crafted file, which may execute arbitrary code on the server when processed.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `kedro` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Remote Code Execution (RCE)",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 91,
-  "changelog" : "https://github.com/kedro-org/kedro/releases/tag/0.19.9",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-11",
-  "last_modified" : "2024-12-10"
+  "package_name": "kedro",
+  "patch_versions": [
+    "0.19.9"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.18.4",
+      "0.19.8"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to Remote Code Execution (RCE) through malicious shelve file uploads in `Kedro's ShelveStore`. Attackers can exploit this vulnerability by uploading a specially crafted file, which may execute arbitrary code on the server when processed.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `kedro` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "CRITICAL",
+  "aikido_score": 91,
+  "changelog": "https://github.com/kedro-org/kedro/releases/tag/0.19.9",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-11",
+  "last_modified": "2024-12-10"
 }

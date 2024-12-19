@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10076",
-  "package_name" : "@unocss/extractor-arbitrary-variants",
-  "patch_versions" : [ "0.58.4" ],
-  "vulnerable_ranges" : [ [ "0.51.0", "0.58.3" ] ],
-  "cwe" : [ "CWE-1333" ],
-  "tldr" : "The affected versions use a regular expression with inefficient, possibly exponential worst-case computational complexity, leading to excessive CPU consumption. This issue occurs at lines 5–7 in `packages/extractor-arbitrary-variants/src/index.ts`.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@unocss/extractor-arbitrary-variants` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Regular Expression Denial of Service (ReDoS)",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/unocss/unocss/releases/tag/v0.58.4",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-05-02",
-  "last_modified" : "2024-05-02"
+  "package_name": "@unocss/extractor-arbitrary-variants",
+  "patch_versions": [
+    "0.58.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.51.0",
+      "0.58.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "The affected versions use a regular expression with inefficient, possibly exponential worst-case computational complexity, leading to excessive CPU consumption. This issue occurs at lines 5–7 in `packages/extractor-arbitrary-variants/src/index.ts`.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@unocss/extractor-arbitrary-variants` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/unocss/unocss/releases/tag/v0.58.4",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-05-02",
+  "last_modified": "2024-05-02"
 }

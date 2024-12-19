@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10440",
-  "package_name" : "@powersync/web",
-  "patch_versions" : [ "1.10.2" ],
-  "vulnerable_ranges" : [ [ "0.5.1", "1.10.1" ] ],
-  "cwe" : [ "CWE-319" ],
-  "tldr" : "Affected versions of this package fail to protect against the use of insecure connections when logging in with the token connector. This vulnerability exposes sensitive data to interception, as attackers could potentially exploit.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@powersync/web` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cleartext Transmission of Sensitive Information",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "LOW",
-  "aikido_score" : 30,
-  "changelog" : "https://github.com/powersync-ja/powersync-js/compare/%40powersync/web%401.10.0...%40powersync/web%401.10.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-13",
-  "last_modified" : "2024-11-13"
+  "package_name": "@powersync/web",
+  "patch_versions": [
+    "1.10.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.5.1",
+      "1.10.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-319"
+  ],
+  "tldr": "Affected versions of this package fail to protect against the use of insecure connections when logging in with the token connector. This vulnerability exposes sensitive data to interception, as attackers could potentially exploit.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@powersync/web` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cleartext Transmission of Sensitive Information",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/powersync-ja/powersync-js/compare/%40powersync/web%401.10.0...%40powersync/web%401.10.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-13",
+  "last_modified": "2024-11-13"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10090",
-  "package_name" : "electron",
-  "patch_versions" : [ "29.3.3" ],
-  "vulnerable_ranges" : [ [ "29.0.0", "29.3.2" ] ],
-  "cwe" : [ "CWE-416" ],
-  "tldr" : "A use-after-free vulnerability in V8 in Google Chrome prior to 124.0.6367.60 allows a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `electron` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Use-After-Free",
-  "related_cve_id" : "CVE-2024-3914",
-  "language" : "JS",
-  "severity_class" : "HIGH",
-  "aikido_score" : 80,
-  "changelog" : "https://github.com/electron/electron/releases/tag/v29.3.3",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-05-09",
-  "last_modified" : "2024-05-09"
+  "package_name": "electron",
+  "patch_versions": [
+    "29.3.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "29.0.0",
+      "29.3.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "A use-after-free vulnerability in V8 in Google Chrome prior to 124.0.6367.60 allows a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `electron` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Use-After-Free",
+  "related_cve_id": "CVE-2024-3914",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/electron/electron/releases/tag/v29.3.3",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-05-09",
+  "last_modified": "2024-05-09"
 }

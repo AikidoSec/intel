@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10178",
-  "package_name" : "llama-index",
-  "patch_versions" : [ "0.10.55" ],
-  "vulnerable_ranges" : [ [ "0.10.0", "0.10.54" ] ],
-  "cwe" : [ "CWE-362" ],
-  "tldr" : "Affected versions of the `llama-index` library are vulnerable to a race condition, where a race occurs between concurrent PPTX readers over a single temporary filename.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `llama-index` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Race Condition",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/run-llama/llama_index/releases/tag/v0.10.55",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-07-12",
-  "last_modified" : "2024-07-12"
+  "package_name": "llama-index",
+  "patch_versions": [
+    "0.10.55"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.10.0",
+      "0.10.54"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of the `llama-index` library are vulnerable to a race condition, where a race occurs between concurrent PPTX readers over a single temporary filename.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `llama-index` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Race Condition",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/run-llama/llama_index/releases/tag/v0.10.55",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-07-12",
+  "last_modified": "2024-07-12"
 }

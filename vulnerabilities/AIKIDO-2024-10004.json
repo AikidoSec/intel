@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10004",
-  "package_name" : "aws-cdk",
-  "patch_versions" : [ "2.130.0" ],
-  "vulnerable_ranges" : [ [ "2.109.0", "2.129.0" ] ],
-  "cwe" : [ "CWE-117" ],
-  "tldr" : "Affected versions of this package allow attackers to forge log entries or inject malicious content into log files.",
-  "doest_this_affect_me" : "You are affected by this flaw if you use a version >= 2.109.0 and <= 2.129.0 of this package.",
-  "how_to_fix" : "To fix, upgrade to `aws-cdk` 2.130.0 or above.",
-  "reporter" : null,
-  "vulnerable_to" : "Log injection",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "LOW",
-  "aikido_score" : 20,
-  "changelog" : "https://github.com/aws/aws-cdk/releases/tag/v2.130.0",
-  "package_name_alias" : "aws-cdk-lib",
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-02-26",
-  "last_modified" : "2024-02-26"
+  "package_name": "aws-cdk",
+  "patch_versions": [
+    "2.130.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.109.0",
+      "2.129.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-117"
+  ],
+  "tldr": "Affected versions of this package allow attackers to forge log entries or inject malicious content into log files.",
+  "doest_this_affect_me": "You are affected by this flaw if you use a version >= 2.109.0 and <= 2.129.0 of this package.",
+  "how_to_fix": "To fix, upgrade to `aws-cdk` 2.130.0 or above.",
+  "reporter": null,
+  "vulnerable_to": "Log injection",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/aws/aws-cdk/releases/tag/v2.130.0",
+  "package_name_alias": "aws-cdk-lib",
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-02-26",
+  "last_modified": "2024-02-26"
 }

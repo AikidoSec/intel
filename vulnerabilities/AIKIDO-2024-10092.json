@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10092",
-  "package_name" : "@strapi/strapi",
-  "patch_versions" : [ "4.24.2" ],
-  "vulnerable_ranges" : [ [ "4.0.0", "4.24.1" ] ],
-  "cwe" : [ "CWE-601" ],
-  "tldr" : "Affected versions of the `@strapi/strapi` library are vulnerable to open redirect. `@strapi/strapi` accepts user-controlled input that specifies a link to an external site and uses that link in a redirect. This vulnerability simplifies phishing attacks. The plugin configuration can be customized by the user and is not properly validated.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@strapi/strapi` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "URL Redirection to Untrusted Site ('Open Redirect')",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "HIGH",
-  "aikido_score" : 80,
-  "changelog" : "https://github.com/strapi/strapi/releases/tag/v4.24.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-05-10",
-  "last_modified" : "2024-05-10"
+  "package_name": "@strapi/strapi",
+  "patch_versions": [
+    "4.24.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "4.24.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-601"
+  ],
+  "tldr": "Affected versions of the `@strapi/strapi` library are vulnerable to open redirect. `@strapi/strapi` accepts user-controlled input that specifies a link to an external site and uses that link in a redirect. This vulnerability simplifies phishing attacks. The plugin configuration can be customized by the user and is not properly validated.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@strapi/strapi` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "URL Redirection to Untrusted Site ('Open Redirect')",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/strapi/strapi/releases/tag/v4.24.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-05-10",
+  "last_modified": "2024-05-10"
 }

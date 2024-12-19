@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10031",
-  "package_name" : "n8n",
-  "patch_versions" : [ "1.36.0" ],
-  "vulnerable_ranges" : [ [ "0.2.0", "1.35.0" ] ],
-  "cwe" : [ "CWE-307" ],
-  "tldr" : "Vulnerable versions lack adequate protections to prevent multiple failed authentication attempts within a short time frame, making them more vulnerable to brute force attacks. The updated version introduces an optional rate-limiting login endpoint to help mitigate brute force password guessing attacks.",
-  "doest_this_affect_me" : "You are affected if you are using a version which is within vulnerability ranges and if your workflow tool is accessible from outside your network or if you are not using 2FA.",
-  "how_to_fix" : "Upgrade the `n8n` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Restriction of Excessive Authentication Attempts",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "LOW",
-  "aikido_score" : 10,
-  "changelog" : "https://github.com/n8n-io/n8n/releases/tag/n8n%401.36.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-18",
-  "last_modified" : "2024-04-18"
+  "package_name": "n8n",
+  "patch_versions": [
+    "1.36.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.2.0",
+      "1.35.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-307"
+  ],
+  "tldr": "Vulnerable versions lack adequate protections to prevent multiple failed authentication attempts within a short time frame, making them more vulnerable to brute force attacks. The updated version introduces an optional rate-limiting login endpoint to help mitigate brute force password guessing attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges and if your workflow tool is accessible from outside your network or if you are not using 2FA.",
+  "how_to_fix": "Upgrade the `n8n` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Restriction of Excessive Authentication Attempts",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.36.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-18",
+  "last_modified": "2024-04-18"
 }

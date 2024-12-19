@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10002",
-  "package_name" : "rpyc",
-  "patch_versions" : [ "6.0.0" ],
-  "vulnerable_ranges" : [ [ "4.0.0", "5.3.1" ] ],
-  "cwe" : [ "CWE-94" ],
-  "tldr" : "A Remote Code Execution (RCE) vulnerability was discreetly patched in version 6.0.0 of rpyc. This exploit is only possible when the server-side accesses the `__array__` attribute and invokes it, such as through `np.array(x)`.",
-  "doest_this_affect_me" : "You are affected by this flaw if you use a version >= 4.0.0 and <= 5.3.1 of this package.",
-  "how_to_fix" : "To fix, upgrade to `rpyc` 6.0.0 or above.",
-  "reporter" : null,
-  "vulnerable_to" : "Remote Code Execution (RCE)",
-  "related_cve_id" : "CVE-2024-27758",
-  "language" : "python",
-  "severity_class" : "HIGH",
-  "aikido_score" : 80,
-  "changelog" : "https://github.com/tomerfiliba-org/rpyc/releases/tag/6.0.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-02-26",
-  "last_modified" : "2024-02-26"
+  "package_name": "rpyc",
+  "patch_versions": [
+    "6.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "5.3.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "A Remote Code Execution (RCE) vulnerability was discreetly patched in version 6.0.0 of rpyc. This exploit is only possible when the server-side accesses the `__array__` attribute and invokes it, such as through `np.array(x)`.",
+  "doest_this_affect_me": "You are affected by this flaw if you use a version >= 4.0.0 and <= 5.3.1 of this package.",
+  "how_to_fix": "To fix, upgrade to `rpyc` 6.0.0 or above.",
+  "reporter": null,
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "CVE-2024-27758",
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/tomerfiliba-org/rpyc/releases/tag/6.0.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-02-26",
+  "last_modified": "2024-02-26"
 }

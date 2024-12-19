@@ -1,25 +1,38 @@
 {
-  "id" : "AIKIDO-2024-10365",
-  "package_name" : "@vendure/asset-server-plugin",
-  "patch_versions" : [ "2.3.3", "3.0.5" ],
-  "vulnerable_ranges" : [ [ "0.0.1", "2.3.2" ], [ "3.0.0", "3.0.4" ] ],
-  "cwe" : [ "CWE-22" ],
-  "tldr" : "Affected versions of the package are vulnerable to directory traversal through crafted requests that traverse the server's file system. An attacker can read arbitrary files, including sensitive configuration data, by manipulating the request URI to include directory traversal sequences. Furthermore, the server can be crashed by sending a malformed URI.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@vendure/asset-server-plugin` library to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Directory Traversal",
-  "related_cve_id" : "CVE-2024-48914",
-  "language" : "js",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 91,
-  "changelog" : "https://github.com/vendure-ecommerce/vendure/security/advisories/GHSA-r9mq-3c9r-fmjq",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-24",
-  "last_modified" : "2024-10-24"
+  "package_name": "@vendure/asset-server-plugin",
+  "patch_versions": [
+    "2.3.3",
+    "3.0.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.3.2"
+    ],
+    [
+      "3.0.0",
+      "3.0.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to directory traversal through crafted requests that traverse the server's file system. An attacker can read arbitrary files, including sensitive configuration data, by manipulating the request URI to include directory traversal sequences. Furthermore, the server can be crashed by sending a malformed URI.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@vendure/asset-server-plugin` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Directory Traversal",
+  "related_cve_id": "CVE-2024-48914",
+  "language": "js",
+  "severity_class": "CRITICAL",
+  "aikido_score": 91,
+  "changelog": "https://github.com/vendure-ecommerce/vendure/security/advisories/GHSA-r9mq-3c9r-fmjq",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-24",
+  "last_modified": "2024-10-24"
 }

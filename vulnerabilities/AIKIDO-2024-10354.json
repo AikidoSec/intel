@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10354",
-  "package_name" : "usemods",
-  "patch_versions" : [ "1.8.0" ],
-  "vulnerable_ranges" : [ [ "0.0.4", "1.7.1" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of the package are vulnerable to Cross-site Scripting (XSS) due to flaws in the `stripHtml` function. This function fails to sanitize certain dangerous HTML tags, allowing an attacker to inject malicious scripts and potentially execute them in a user's browser.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `usemods` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting (XSS)",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "LOW",
-  "aikido_score" : 35,
-  "changelog" : "https://github.com/littlefoxcompany/usemods/releases/tag/v1.8.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-22",
-  "last_modified" : "2024-10-22"
+  "package_name": "usemods",
+  "patch_versions": [
+    "1.8.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.4",
+      "1.7.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to Cross-site Scripting (XSS) due to flaws in the `stripHtml` function. This function fails to sanitize certain dangerous HTML tags, allowing an attacker to inject malicious scripts and potentially execute them in a user's browser.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `usemods` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 35,
+  "changelog": "https://github.com/littlefoxcompany/usemods/releases/tag/v1.8.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-22",
+  "last_modified": "2024-10-22"
 }

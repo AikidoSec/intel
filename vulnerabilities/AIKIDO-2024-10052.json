@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10052",
-  "package_name" : "tuf",
-  "patch_versions" : [ "3.1.1" ],
-  "vulnerable_ranges" : [ [ "2.0.0", "3.1.0" ] ],
-  "cwe" : [ "CWE-347" ],
-  "tldr" : "Vulnerable versions of this package lack proper verification of cryptographic signatures in the `Targets.get_delegated_role` process when using `tuf.api.metadata`. An attacker can manipulate the verification outcome by convincing a Metadata API user to invoke this process with a `delegated_role` argument that was not legitimately delegated by the Targets, while using succinct delegation. However, users following the typical client workflow are not affected, as the delegated role name comes from the trusted delegating Targets themselves. Additionally, the actual signature verification remains secure, as the verified metadata still requires correct signing by the keys specified in the delegating role.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `tuf` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Verification of Cryptographic Signature",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "LOW",
-  "aikido_score" : 10,
-  "changelog" : "https://github.com/theupdateframework/python-tuf/releases/tag/v3.1.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-24",
-  "last_modified" : "2024-04-24"
+  "package_name": "tuf",
+  "patch_versions": [
+    "3.1.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "3.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-347"
+  ],
+  "tldr": "Vulnerable versions of this package lack proper verification of cryptographic signatures in the `Targets.get_delegated_role` process when using `tuf.api.metadata`. An attacker can manipulate the verification outcome by convincing a Metadata API user to invoke this process with a `delegated_role` argument that was not legitimately delegated by the Targets, while using succinct delegation. However, users following the typical client workflow are not affected, as the delegated role name comes from the trusted delegating Targets themselves. Additionally, the actual signature verification remains secure, as the verified metadata still requires correct signing by the keys specified in the delegating role.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `tuf` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Verification of Cryptographic Signature",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/theupdateframework/python-tuf/releases/tag/v3.1.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-24",
+  "last_modified": "2024-04-24"
 }

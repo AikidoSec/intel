@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10051",
-  "package_name" : "kedro",
-  "patch_versions" : [ "0.19.3" ],
-  "vulnerable_ranges" : [ [ "0.18.5", "0.19.2" ] ],
-  "cwe" : [ "CWE-29" ],
-  "tldr" : "Affected versions of this package are vulnerable to arbitrary file write via archive extraction (zip slip) due to insufficient checks within the `safe_extract` function.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `kedro` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Path Traversal",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/kedro-org/kedro/releases/tag/0.19.3",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-24",
-  "last_modified" : "2024-04-24"
+  "package_name": "kedro",
+  "patch_versions": [
+    "0.19.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.18.5",
+      "0.19.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-29"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to arbitrary file write via archive extraction (zip slip) due to insufficient checks within the `safe_extract` function.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `kedro` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/kedro-org/kedro/releases/tag/0.19.3",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-24",
+  "last_modified": "2024-04-24"
 }

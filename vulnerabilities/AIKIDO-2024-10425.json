@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10425",
-  "package_name" : "fluent.fluent-bit",
-  "patch_versions" : [ "3.1.10" ],
-  "vulnerable_ranges" : [ [ "3.0.0", "3.1.9" ] ],
-  "cwe" : [ "CWE-287" ],
-  "tldr" : "Affected versions of the package are vulnerable to improper authentication in the `Forward` plugin. The issue arises because the check that is in place for `shared_key_digest_len` does not adequately prevent an attacker from tampering with the `shared_key_digest`. This vulnerability could allow unauthorized users to bypass authentication mechanisms and gain access to protected resources.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `fluent.fluent-bit` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Authentication",
-  "related_cve_id" : "",
-  "language" : "c++",
-  "severity_class" : "HIGH",
-  "aikido_score" : 88,
-  "changelog" : "https://github.com/fluent/fluent-bit/releases/tag/v3.1.10",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-06",
-  "last_modified" : "2024-11-06"
+  "package_name": "fluent.fluent-bit",
+  "patch_versions": [
+    "3.1.10"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.1.9"
+    ]
+  ],
+  "cwe": [
+    "CWE-287"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to improper authentication in the `Forward` plugin. The issue arises because the check that is in place for `shared_key_digest_len` does not adequately prevent an attacker from tampering with the `shared_key_digest`. This vulnerability could allow unauthorized users to bypass authentication mechanisms and gain access to protected resources.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `fluent.fluent-bit` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Authentication",
+  "related_cve_id": "",
+  "language": "c++",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://github.com/fluent/fluent-bit/releases/tag/v3.1.10",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-06",
+  "last_modified": "2024-11-06"
 }

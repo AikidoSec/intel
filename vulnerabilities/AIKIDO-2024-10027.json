@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10027",
-  "package_name" : "sqlparse",
-  "patch_versions" : [ "0.5.0" ],
-  "vulnerable_ranges" : [ [ "0.1.0", "0.4.4" ] ],
-  "cwe" : [ "CWE-674" ],
-  "tldr" : "Affected versions of this package are vulnerable to Denial of Service (DoS) caused by a RecursionError when parsing deeply nested lists with the sqlparse.parse() function.",
-  "doest_this_affect_me" : "You are affected if you are using a version of this package <= 0.4.4.",
-  "how_to_fix" : "Upgrade the `sqlparse` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Uncontrolled Recursion",
-  "related_cve_id" : "CVE-2024-4340",
-  "language" : "python",
-  "severity_class" : "HIGH",
-  "aikido_score" : 75,
-  "changelog" : "https://github.com/andialbrecht/sqlparse/compare/andialbrecht:sqlparse:0.4.4...andialbrecht:sqlparse:0.5.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-15",
-  "last_modified" : "2024-04-15"
+  "package_name": "sqlparse",
+  "patch_versions": [
+    "0.5.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.4.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-674"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Denial of Service (DoS) caused by a RecursionError when parsing deeply nested lists with the sqlparse.parse() function.",
+  "doest_this_affect_me": "You are affected if you are using a version of this package <= 0.4.4.",
+  "how_to_fix": "Upgrade the `sqlparse` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Uncontrolled Recursion",
+  "related_cve_id": "CVE-2024-4340",
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/andialbrecht/sqlparse/compare/andialbrecht:sqlparse:0.4.4...andialbrecht:sqlparse:0.5.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-15",
+  "last_modified": "2024-04-15"
 }

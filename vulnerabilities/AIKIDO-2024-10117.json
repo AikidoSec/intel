@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10117",
-  "package_name" : "ether/logs",
-  "patch_versions" : [ "4.0.1" ],
-  "vulnerable_ranges" : [ [ "3.0.0", "4.0.0" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of `ether/logs` are vulnerable to Cross-site Scripting (XSS) when viewing logs. Since user input often ends up in logs, the XSS vulnerability may be triggered in an administrative context when logs are viewed.",
-  "doest_this_affect_me" : "You are affected if you are use a vulnerable version of `ether/logs`.",
-  "how_to_fix" : "Upgrade `ether/logs` to the patch version (version 4.0.1).",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-Site Scripting (XSS)",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "HIGH",
-  "aikido_score" : 70,
-  "changelog" : "https://github.com/ethercreative/logs/releases/tag/4.0.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-04",
-  "last_modified" : "2024-06-04"
+  "package_name": "ether/logs",
+  "patch_versions": [
+    "4.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "4.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of `ether/logs` are vulnerable to Cross-site Scripting (XSS) when viewing logs. Since user input often ends up in logs, the XSS vulnerability may be triggered in an administrative context when logs are viewed.",
+  "doest_this_affect_me": "You are affected if you are use a vulnerable version of `ether/logs`.",
+  "how_to_fix": "Upgrade `ether/logs` to the patch version (version 4.0.1).",
+  "reporter": "",
+  "vulnerable_to": "Cross-Site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/ethercreative/logs/releases/tag/4.0.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-04",
+  "last_modified": "2024-06-04"
 }

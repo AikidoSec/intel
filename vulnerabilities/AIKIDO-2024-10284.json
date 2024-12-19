@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10284",
-  "package_name" : "ArtifexSoftware.ghostpdl",
-  "patch_versions" : [ "10.04.0" ],
-  "vulnerable_ranges" : [ [ "9.00", "10.03.0" ] ],
-  "cwe" : [ "CWE-787" ],
-  "tldr" : "Affected versions of the package are vulnerable to multiple cves (CVE-2024-46951, CVE-2024-46952, CVE-2024-46953, CVE-2024-46954, CVE-2024-46955 and CVE-2024-46956), all regarding buffer overflows.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `ArtifexSoftware.ghostpdl` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Out-of-bounds Write",
-  "related_cve_id" : "CVE-2024-46951",
-  "language" : "c++",
-  "severity_class" : "HIGH",
-  "aikido_score" : 80,
-  "changelog" : "https://git.ghostscript.com/?p=ghostpdl.git;a=log;h=refs/tags/ghostpdl-10.04.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-09-19",
-  "last_modified" : "2024-09-19"
+  "package_name": "ArtifexSoftware.ghostpdl",
+  "patch_versions": [
+    "10.04.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "9.00",
+      "10.03.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-787"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to multiple cves (CVE-2024-46951, CVE-2024-46952, CVE-2024-46953, CVE-2024-46954, CVE-2024-46955 and CVE-2024-46956), all regarding buffer overflows.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ArtifexSoftware.ghostpdl` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Out-of-bounds Write",
+  "related_cve_id": "CVE-2024-46951",
+  "language": "c++",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://git.ghostscript.com/?p=ghostpdl.git;a=log;h=refs/tags/ghostpdl-10.04.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-09-19",
+  "last_modified": "2024-09-19"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10058",
-  "package_name" : "aiobotocore",
-  "patch_versions" : [ "2.9.1" ],
-  "vulnerable_ranges" : [ [ "2.9.0", "2.9.0" ] ],
-  "cwe" : [ "CWE-362" ],
-  "tldr" : "Affected versions of this package are vulnerable to a race condition within the S3 Express identity cache. This occurs when multiple threads attempt concurrent reads from or writes to the cache, potentially leading to unpredictable behavior when exploited.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `aiobotocore` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Race Condition",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 55,
-  "changelog" : "https://github.com/aio-libs/aiobotocore/releases/tag/2.9.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-26",
-  "last_modified" : "2024-04-26"
+  "package_name": "aiobotocore",
+  "patch_versions": [
+    "2.9.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.9.0",
+      "2.9.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a race condition within the S3 Express identity cache. This occurs when multiple threads attempt concurrent reads from or writes to the cache, potentially leading to unpredictable behavior when exploited.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `aiobotocore` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Race Condition",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/aio-libs/aiobotocore/releases/tag/2.9.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-26",
+  "last_modified": "2024-04-26"
 }

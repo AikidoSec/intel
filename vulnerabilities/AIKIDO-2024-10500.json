@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10500",
-  "package_name" : "check-jsonschema",
-  "patch_versions" : [ "0.30.0" ],
-  "vulnerable_ranges" : [ [ "0.1.0", "0.29.4" ] ],
-  "cwe" : [ "CWE-349" ],
-  "tldr" : "Affected versions of `check-jsonschema` are vulnerable to a cache confusion attack due to the default cache strategy, which stores remote schemas using their basename (e.g., `https://example.org/schema.json` as `schema.json`). This can lead to conflicts if an attacker tricks a user into validating against a malicious schema with the same name (e.g., `https://example.evil.org/schema.json`). As a result, the attacker’s schema may be used instead, allowing invalid data to pass validation. This issue is patched in version 0.30.0. You should update to the latest version or apply workarounds such as disabling caching with `--no-cache`, specifying cache filenames with `--cache-filename` (deprecated), or downloading schemas locally before validation.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `check-jsonschema` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Acceptance of Extraneous Untrusted Data With Trusted Data",
-  "related_cve_id" : "CVE-2024-53848",
-  "language" : "python",
-  "severity_class" : "HIGH",
-  "aikido_score" : 71,
-  "changelog" : "https://github.com/python-jsonschema/check-jsonschema/releases/tag/0.30.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-12-02 09:30",
-  "last_modified" : "2024-12-02 09:30"
+  "package_name": "check-jsonschema",
+  "patch_versions": [
+    "0.30.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.29.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-349"
+  ],
+  "tldr": "Affected versions of `check-jsonschema` are vulnerable to a cache confusion attack due to the default cache strategy, which stores remote schemas using their basename (e.g., `https://example.org/schema.json` as `schema.json`). This can lead to conflicts if an attacker tricks a user into validating against a malicious schema with the same name (e.g., `https://example.evil.org/schema.json`). As a result, the attacker’s schema may be used instead, allowing invalid data to pass validation. This issue is patched in version 0.30.0. You should update to the latest version or apply workarounds such as disabling caching with `--no-cache`, specifying cache filenames with `--cache-filename` (deprecated), or downloading schemas locally before validation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `check-jsonschema` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Acceptance of Extraneous Untrusted Data With Trusted Data",
+  "related_cve_id": "CVE-2024-53848",
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/python-jsonschema/check-jsonschema/releases/tag/0.30.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-02 09:30",
+  "last_modified": "2024-12-02 09:30"
 }

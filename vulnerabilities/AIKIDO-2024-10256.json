@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10256",
-  "package_name" : "github.com/jackc/pgx/v5",
-  "patch_versions" : [ "5.7.1" ],
-  "vulnerable_ranges" : [ [ "5.7.0", "5.7.0" ] ],
-  "cwe" : [ "CWE-400" ],
-  "tldr" : "Affected versions of the package are vulnerable to Denial of Service (DoS) caused by a potential data race with `TraceLog.Config` initialization.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `github.com/jackc/pgx/v5` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Denial of Service (DoS)",
-  "related_cve_id" : "",
-  "language" : "go",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 69,
-  "changelog" : "https://github.com/jackc/pgx/blob/master/CHANGELOG.md",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-09-12",
-  "last_modified" : "2024-09-12"
+  "package_name": "github.com/jackc/pgx/v5",
+  "patch_versions": [
+    "5.7.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.7.0",
+      "5.7.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to Denial of Service (DoS) caused by a potential data race with `TraceLog.Config` initialization.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/jackc/pgx/v5` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "go",
+  "severity_class": "MEDIUM",
+  "aikido_score": 69,
+  "changelog": "https://github.com/jackc/pgx/blob/master/CHANGELOG.md",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-09-12",
+  "last_modified": "2024-09-12"
 }

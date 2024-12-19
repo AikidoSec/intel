@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10112",
-  "package_name" : "pynetdicom",
-  "patch_versions" : [ "2.1.0" ],
-  "vulnerable_ranges" : [ [ "0.8.0", "2.0.2" ] ],
-  "cwe" : [ "CWE-22" ],
-  "tldr" : "Affected versions of the package are vulnerable to a path traversal vulnerability, allowing an attacker to overwrite any files on the filesystem through a malformed `SOPInstanceUID` value in a C-STORE request.",
-  "doest_this_affect_me" : "You are affected if you use the handle_store function directly, or if you indirectly use the Store SCP functionality via pynetidcom's apps (https://github.com/pydicom/pynetdicom/blob/main/pynetdicom/apps/) or otherwise.",
-  "how_to_fix" : "Upgrade `pynetdicom` to the patch version (version 2.1.0).",
-  "reporter" : "",
-  "vulnerable_to" : "Path Traversal",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "HIGH",
-  "aikido_score" : 75,
-  "changelog" : "https://github.com/pydicom/pynetdicom/releases/tag/v2.1.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-05-31",
-  "last_modified" : "2024-05-31"
+  "package_name": "pynetdicom",
+  "patch_versions": [
+    "2.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.8.0",
+      "2.0.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to a path traversal vulnerability, allowing an attacker to overwrite any files on the filesystem through a malformed `SOPInstanceUID` value in a C-STORE request.",
+  "doest_this_affect_me": "You are affected if you use the handle_store function directly, or if you indirectly use the Store SCP functionality via pynetidcom's apps (https://github.com/pydicom/pynetdicom/blob/main/pynetdicom/apps/) or otherwise.",
+  "how_to_fix": "Upgrade `pynetdicom` to the patch version (version 2.1.0).",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/pydicom/pynetdicom/releases/tag/v2.1.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-05-31",
+  "last_modified": "2024-05-31"
 }

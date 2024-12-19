@@ -1,25 +1,38 @@
 {
-  "id" : "AIKIDO-2024-10435",
-  "package_name" : "electron",
-  "patch_versions" : [ "31.7.4", "32.2.3" ],
-  "vulnerable_ranges" : [ [ "31.0.0", "31.7.3" ], [ "32.0.0", "32.2.2" ] ],
-  "cwe" : [ "CWE-787" ],
-  "tldr" : "Out-of-bounds write in `Dawn` in Google Chrome prior to 130.0.6723.92 allows a remote attacker to perform out-of-bounds memory access via a crafted HTML page. (Chromium security severity: Critical)",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `electron` library to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Out-of-bounds Write",
-  "related_cve_id" : "CVE-2024-10487",
-  "language" : "JS",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 98,
-  "changelog" : "https://github.com/electron/electron/releases/tag/v32.2.3",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-08",
-  "last_modified" : "2024-11-13"
+  "package_name": "electron",
+  "patch_versions": [
+    "31.7.4",
+    "32.2.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "31.0.0",
+      "31.7.3"
+    ],
+    [
+      "32.0.0",
+      "32.2.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-787"
+  ],
+  "tldr": "Out-of-bounds write in `Dawn` in Google Chrome prior to 130.0.6723.92 allows a remote attacker to perform out-of-bounds memory access via a crafted HTML page. (Chromium security severity: Critical)",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `electron` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Out-of-bounds Write",
+  "related_cve_id": "CVE-2024-10487",
+  "language": "JS",
+  "severity_class": "CRITICAL",
+  "aikido_score": 98,
+  "changelog": "https://github.com/electron/electron/releases/tag/v32.2.3",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-08",
+  "last_modified": "2024-11-13"
 }

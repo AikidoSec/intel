@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10517",
-  "package_name" : "luigi",
-  "patch_versions" : [ "3.6.0" ],
-  "vulnerable_ranges" : [ [ "2.7.7", "3.5.1" ] ],
-  "cwe" : [ "CWE-78" ],
-  "tldr" : "Affected versions of the `luigi` library are vulnerable to command injection in the `track_job` function when handling LSF batch system tasks. This vulnerability arises from the use of `subprocess.Popen` with the `shell=True` parameter, which could allow attackers to execute arbitrary code.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `luigi` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Command Injection",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 49,
-  "changelog" : "https://github.com/spotify/luigi/releases/tag/v3.6.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-12-06 14:00",
-  "last_modified" : "2024-12-06 14:00"
+  "package_name": "luigi",
+  "patch_versions": [
+    "3.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.7.7",
+      "3.5.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-78"
+  ],
+  "tldr": "Affected versions of the `luigi` library are vulnerable to command injection in the `track_job` function when handling LSF batch system tasks. This vulnerability arises from the use of `subprocess.Popen` with the `shell=True` parameter, which could allow attackers to execute arbitrary code.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `luigi` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Command Injection",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 49,
+  "changelog": "https://github.com/spotify/luigi/releases/tag/v3.6.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-06 14:00",
+  "last_modified": "2024-12-06 14:00"
 }

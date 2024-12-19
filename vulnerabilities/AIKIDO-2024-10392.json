@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10392",
-  "package_name" : "webonyx/graphql-php",
-  "patch_versions" : [ "15.12.5" ],
-  "vulnerable_ranges" : [ [ "0.6.0", "15.12.4" ] ],
-  "cwe" : [ "CWE-674" ],
-  "tldr" : "Affected versions of this package are vulnerable to uncontrolled recursion in the query depth calculator. This vulnerability occurs when a certain input triggers excessive recursion, leading to potential stack overflows or denial of service due to resource exhaustion.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `webonyx/graphql-php` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Uncontrolled Recursion",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 45,
-  "changelog" : "https://github.com/webonyx/graphql-php/releases/tag/v15.12.5",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-30",
-  "last_modified" : "2024-10-30"
+  "package_name": "webonyx/graphql-php",
+  "patch_versions": [
+    "15.12.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.6.0",
+      "15.12.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-674"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to uncontrolled recursion in the query depth calculator. This vulnerability occurs when a certain input triggers excessive recursion, leading to potential stack overflows or denial of service due to resource exhaustion.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `webonyx/graphql-php` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Uncontrolled Recursion",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/webonyx/graphql-php/releases/tag/v15.12.5",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-30",
+  "last_modified": "2024-10-30"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10285",
-  "package_name" : "n8n",
-  "patch_versions" : [ "1.59.4" ],
-  "vulnerable_ranges" : [ [ "1.23.0", "1.59.3" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of the package n8n are vulnerable to Cross-site Scripting (XSS) when pasting from clipboard.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `n8n` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting (XSS)",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "LOW",
-  "aikido_score" : 10,
-  "changelog" : "https://github.com/n8n-io/n8n/releases/tag/n8n%401.60.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-09-19",
-  "last_modified" : "2024-09-19"
+  "package_name": "n8n",
+  "patch_versions": [
+    "1.59.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.23.0",
+      "1.59.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of the package n8n are vulnerable to Cross-site Scripting (XSS) when pasting from clipboard.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `n8n` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.60.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-09-19",
+  "last_modified": "2024-09-19"
 }

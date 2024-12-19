@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10377",
-  "package_name" : "craftcms/feed-me",
-  "patch_versions" : [ "6.2.2" ],
-  "vulnerable_ranges" : [ [ "6.2.0", "6.2.1" ] ],
-  "cwe" : [ "CWE-532" ],
-  "tldr" : "Affected versions of this package actively expose sensitive information in log files by improperly logging variables that should remain confidential. This vulnerability allows for the unintentional disclosure of sensitive data, potentially leading to security risks such as unauthorized access or leakage of private information.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `craftcms/feed-me` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Insertion of Sensitive Information into Log File",
-  "related_cve_id" : "",
-  "language" : "php",
-  "severity_class" : "LOW",
-  "aikido_score" : 15,
-  "changelog" : "https://github.com/craftcms/feed-me/releases/tag/6.2.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-28",
-  "last_modified" : "2024-10-28"
+  "package_name": "craftcms/feed-me",
+  "patch_versions": [
+    "6.2.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.2.0",
+      "6.2.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package actively expose sensitive information in log files by improperly logging variables that should remain confidential. This vulnerability allows for the unintentional disclosure of sensitive data, potentially leading to security risks such as unauthorized access or leakage of private information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/feed-me` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/craftcms/feed-me/releases/tag/6.2.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-28",
+  "last_modified": "2024-10-28"
 }

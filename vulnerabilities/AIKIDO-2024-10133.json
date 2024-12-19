@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10133",
-  "package_name" : "librechat-data-provider",
-  "patch_versions" : [ "0.6.9" ],
-  "vulnerable_ranges" : [ [ "0.1.0", "0.6.8" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of the `librechat-data-provider` package are vulnerable to multiple Cross-site Scripting (XSS) vulnerabilities.",
-  "doest_this_affect_me" : "You are affected if you use a vulnerable version of `librechat-data-provider`.",
-  "how_to_fix" : "Upgrade `librechat-data-provider` to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/danny-avila/LibreChat/releases/tag/v0.6.9",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-21",
-  "last_modified" : "2024-06-21"
+  "package_name": "librechat-data-provider",
+  "patch_versions": [
+    "0.6.9"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.6.8"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of the `librechat-data-provider` package are vulnerable to multiple Cross-site Scripting (XSS) vulnerabilities.",
+  "doest_this_affect_me": "You are affected if you use a vulnerable version of `librechat-data-provider`.",
+  "how_to_fix": "Upgrade `librechat-data-provider` to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/danny-avila/LibreChat/releases/tag/v0.6.9",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-21",
+  "last_modified": "2024-06-21"
 }

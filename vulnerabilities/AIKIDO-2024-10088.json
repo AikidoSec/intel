@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10088",
-  "package_name" : "n8n-core",
-  "patch_versions" : [ "1.41.0" ],
-  "vulnerable_ranges" : [ [ "1.37.2", "1.40.0" ] ],
-  "cwe" : [ "CWE-94" ],
-  "tldr" : "Affected versions of the `n8n-core` package are vulnerable to code injection due to a bug in the `pdfjs-dist` dependency. If PDF.js is used to load a malicious PDF and is configured with `isEvalSupported` set to true (the default), unrestricted attacker-controlled JavaScript will be executed in the context of the hosting domain. In the fixed version, `n8n-core` mitigates this by setting `isEvalSupported` to `false`.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `n8n-core` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Code Injection",
-  "related_cve_id" : "CVE-2024-4367",
-  "language" : "JS",
-  "severity_class" : "HIGH",
-  "aikido_score" : 80,
-  "changelog" : "https://github.com/n8n-io/n8n/releases/tag/n8n%401.41.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-05-09",
-  "last_modified" : "2024-05-09"
+  "package_name": "n8n-core",
+  "patch_versions": [
+    "1.41.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.37.2",
+      "1.40.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of the `n8n-core` package are vulnerable to code injection due to a bug in the `pdfjs-dist` dependency. If PDF.js is used to load a malicious PDF and is configured with `isEvalSupported` set to true (the default), unrestricted attacker-controlled JavaScript will be executed in the context of the hosting domain. In the fixed version, `n8n-core` mitigates this by setting `isEvalSupported` to `false`.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `n8n-core` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Code Injection",
+  "related_cve_id": "CVE-2024-4367",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.41.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-05-09",
+  "last_modified": "2024-05-09"
 }

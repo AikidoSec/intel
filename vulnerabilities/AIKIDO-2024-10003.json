@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10003",
-  "package_name" : "smart-open",
-  "patch_versions" : [ "7.0.0" ],
-  "vulnerable_ranges" : [ [ "6.3.0", "6.4.0" ] ],
-  "cwe" : [ "CWE-300" ],
-  "tldr" : "The connection to the FTPS server was insufficiently secured because the FTP library, by default, does not utilize SSL certificates.",
-  "doest_this_affect_me" : "You are affected by this flaw if you use the FTP secure connection functionality and version 6.3.0 or 6.4.0 of this package.",
-  "how_to_fix" : "To fix, upgrade to `smart-open` 7.0.0 or above.",
-  "reporter" : null,
-  "vulnerable_to" : "Man-in-the-middle attack",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 45,
-  "changelog" : "https://github.com/piskvorky/smart_open/releases/tag/v7.0.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-02-26",
-  "last_modified" : "2024-02-26"
+  "package_name": "smart-open",
+  "patch_versions": [
+    "7.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.3.0",
+      "6.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-300"
+  ],
+  "tldr": "The connection to the FTPS server was insufficiently secured because the FTP library, by default, does not utilize SSL certificates.",
+  "doest_this_affect_me": "You are affected by this flaw if you use the FTP secure connection functionality and version 6.3.0 or 6.4.0 of this package.",
+  "how_to_fix": "To fix, upgrade to `smart-open` 7.0.0 or above.",
+  "reporter": null,
+  "vulnerable_to": "Man-in-the-middle attack",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/piskvorky/smart_open/releases/tag/v7.0.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-02-26",
+  "last_modified": "2024-02-26"
 }

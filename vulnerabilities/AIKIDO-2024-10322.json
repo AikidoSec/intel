@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10322",
-  "package_name" : "@vendure/core",
-  "patch_versions" : [ "3.0.4" ],
-  "vulnerable_ranges" : [ [ "2.1.3", "3.0.3" ] ],
-  "cwe" : [ "CWE-1333" ],
-  "tldr" : "Affected versions of the package are vulnerable to inefficient regular expression complexity. The email validation process uses a regex with exponential complexity, making it susceptible to ReDoS (Regular Expression Denial of Service) attacks when handling maliciously crafted inputs.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@vendure/core` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Inefficient Regular Expression Complexity",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 48,
-  "changelog" : "https://github.com/vendure-ecommerce/vendure/blob/master/CHANGELOG.md",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-07",
-  "last_modified" : "2024-10-07"
+  "package_name": "@vendure/core",
+  "patch_versions": [
+    "3.0.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.1.3",
+      "3.0.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to inefficient regular expression complexity. The email validation process uses a regex with exponential complexity, making it susceptible to ReDoS (Regular Expression Denial of Service) attacks when handling maliciously crafted inputs.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@vendure/core` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Inefficient Regular Expression Complexity",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 48,
+  "changelog": "https://github.com/vendure-ecommerce/vendure/blob/master/CHANGELOG.md",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-07",
+  "last_modified": "2024-10-07"
 }

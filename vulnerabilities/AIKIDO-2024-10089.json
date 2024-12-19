@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10089",
-  "package_name" : "lightweight-charts",
-  "patch_versions" : [ "4.1.4" ],
-  "vulnerable_ranges" : [ [ "1.0.0", "4.1.3" ] ],
-  "cwe" : [ "CWE-1333" ],
-  "tldr" : "Affected versions of the `lightweight-charts` package are vulnerable to Regular Expression Denial of Service (ReDoS). The color regex `const rgbaRe = /^rgba\\(\\s*(-?\\d{1,10})\\s*,\\s*(-?\\d{1,10})\\s*,\\s*(-?\\d{1,10})\\s*,\\s*(-?[\\d]{0,10}(?:\\.\\d+)?)\\s*\\)$/` contains a possible weakness. This vulnerability can be exploited with inputs like `'rgba(0,0,0,' + '\\t'.repeat(54773) + '\\x00'`, leading to excessive CPU usage and Denial of Service.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `lightweight-charts` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Regular Expression Denial of Service (ReDoS)",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/tradingview/lightweight-charts/releases/tag/v4.1.4",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-05-09",
-  "last_modified" : "2024-05-09"
+  "package_name": "lightweight-charts",
+  "patch_versions": [
+    "4.1.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "4.1.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of the `lightweight-charts` package are vulnerable to Regular Expression Denial of Service (ReDoS). The color regex `const rgbaRe = /^rgba\\(\\s*(-?\\d{1,10})\\s*,\\s*(-?\\d{1,10})\\s*,\\s*(-?\\d{1,10})\\s*,\\s*(-?[\\d]{0,10}(?:\\.\\d+)?)\\s*\\)$/` contains a possible weakness. This vulnerability can be exploited with inputs like `'rgba(0,0,0,' + '\\t'.repeat(54773) + '\\x00'`, leading to excessive CPU usage and Denial of Service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `lightweight-charts` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/tradingview/lightweight-charts/releases/tag/v4.1.4",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-05-09",
+  "last_modified": "2024-05-09"
 }

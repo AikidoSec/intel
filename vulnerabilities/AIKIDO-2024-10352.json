@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10352",
-  "package_name" : "@effect/platform",
-  "patch_versions" : [ "0.69.6" ],
-  "vulnerable_ranges" : [ [ "0.0.0", "0.69.5" ] ],
-  "cwe" : [ "CWE-532" ],
-  "tldr" : "Affected versions of the package may expose sensitive information in log files by inadvertently logging it during normal operation, potentially allowing unauthorized individuals to gain access to the information.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@effect/platform` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Insertion of Sensitive Information into Log File",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "LOW",
-  "aikido_score" : 25,
-  "changelog" : "https://github.com/Effect-TS/effect/releases/tag/%40effect/platform%400.69.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-22",
-  "last_modified" : "2024-10-24"
+  "package_name": "@effect/platform",
+  "patch_versions": [
+    "0.69.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.0",
+      "0.69.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of the package may expose sensitive information in log files by inadvertently logging it during normal operation, potentially allowing unauthorized individuals to gain access to the information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@effect/platform` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/Effect-TS/effect/releases/tag/%40effect/platform%400.69.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-22",
+  "last_modified": "2024-10-24"
 }

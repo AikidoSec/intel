@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10238",
-  "package_name" : "github.com/Clickhouse/Clickhouse-go/v2",
-  "patch_versions" : [ "2.28.2" ],
-  "vulnerable_ranges" : [ [ "2.0.0", "2.28.1" ] ],
-  "cwe" : [ "CWE-248" ],
-  "tldr" : "Affected versions of the package throw uncaught exceptions. The stdlib driver attempts to use a database connection without verifying its condition, leading to unexpected errors. Attackers can exploit this by inserting illegal statements, causing the connection to close and potentially crashing the program.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `github.com/Clickhouse/Clickhouse-go/v2` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Uncaught Exception",
-  "related_cve_id" : "",
-  "language" : "go",
-  "severity_class" : "LOW",
-  "aikido_score" : 25,
-  "changelog" : "https://github.com/ClickHouse/clickhouse-go/releases/tag/v2.28.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-09-02",
-  "last_modified" : "2024-09-02"
+  "package_name": "github.com/Clickhouse/Clickhouse-go/v2",
+  "patch_versions": [
+    "2.28.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.28.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-248"
+  ],
+  "tldr": "Affected versions of the package throw uncaught exceptions. The stdlib driver attempts to use a database connection without verifying its condition, leading to unexpected errors. Attackers can exploit this by inserting illegal statements, causing the connection to close and potentially crashing the program.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/Clickhouse/Clickhouse-go/v2` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Uncaught Exception",
+  "related_cve_id": "",
+  "language": "go",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/ClickHouse/clickhouse-go/releases/tag/v2.28.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-09-02",
+  "last_modified": "2024-09-02"
 }

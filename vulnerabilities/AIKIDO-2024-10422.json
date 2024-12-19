@@ -1,25 +1,34 @@
 {
-  "id" : "AIKIDO-2024-10422",
-  "package_name" : "fastapi-sso",
-  "patch_versions" : [ "0.16.0" ],
-  "vulnerable_ranges" : [ [ "0.2.3", "0.15.0" ] ],
-  "cwe" : [ "CWE-287", "CWE-362" ],
-  "tldr" : "A race condition bug exists in the login flow that, in rare cases, could allow one user to assume the identity of another due to concurrent login attempts. This vulnerability arises when multiple users try to log in at the same time, leading to incorrect session handling and potential session fixation, allowing an attacker to hijack another user's session.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `fastapi-sso` library to the patch version. To fully support this fix, users must now use the SSO instance within an async context manager. This adjustment is necessary for proper handling of asynchronous operations.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Authentication",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 91,
-  "changelog" : "https://github.com/tomasvotava/fastapi-sso?tab=readme-ov-file#security-notice",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-05",
-  "last_modified" : "2024-11-05"
+  "package_name": "fastapi-sso",
+  "patch_versions": [
+    "0.16.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.2.3",
+      "0.15.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-287",
+    "CWE-362"
+  ],
+  "tldr": "A race condition bug exists in the login flow that, in rare cases, could allow one user to assume the identity of another due to concurrent login attempts. This vulnerability arises when multiple users try to log in at the same time, leading to incorrect session handling and potential session fixation, allowing an attacker to hijack another user's session.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `fastapi-sso` library to the patch version. To fully support this fix, users must now use the SSO instance within an async context manager. This adjustment is necessary for proper handling of asynchronous operations.",
+  "reporter": "",
+  "vulnerable_to": "Improper Authentication",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "CRITICAL",
+  "aikido_score": 91,
+  "changelog": "https://github.com/tomasvotava/fastapi-sso?tab=readme-ov-file#security-notice",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-05",
+  "last_modified": "2024-11-05"
 }

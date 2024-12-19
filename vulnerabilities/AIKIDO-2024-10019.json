@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10019",
-  "package_name" : "mysql2",
-  "patch_versions" : [ "3.9.4" ],
-  "vulnerable_ranges" : [ [ "0.0.1", "3.9.3" ] ],
-  "cwe" : [ "CWE-1321" ],
-  "tldr" : "Versions of the `mysql2` package prior to 3.9.4 are vulnerable to prototype poisoning due to insecure creation of the results object and improper sanitization of user input passed through the `parserFn` in `text_parser.js` and `binary_parser.js`.",
-  "doest_this_affect_me" : "You are affected if you are using a version of this package <= 3.9.3.",
-  "how_to_fix" : "Upgrade the `mysql2` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Prototype Poisoning",
-  "related_cve_id" : "CVE-2024-21509",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 65,
-  "changelog" : "https://github.com/sidorares/node-mysql2/releases/tag/v3.9.4",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-10",
-  "last_modified" : "2024-04-10"
+  "package_name": "mysql2",
+  "patch_versions": [
+    "3.9.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "3.9.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Versions of the `mysql2` package prior to 3.9.4 are vulnerable to prototype poisoning due to insecure creation of the results object and improper sanitization of user input passed through the `parserFn` in `text_parser.js` and `binary_parser.js`.",
+  "doest_this_affect_me": "You are affected if you are using a version of this package <= 3.9.3.",
+  "how_to_fix": "Upgrade the `mysql2` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Prototype Poisoning",
+  "related_cve_id": "CVE-2024-21509",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
+  "changelog": "https://github.com/sidorares/node-mysql2/releases/tag/v3.9.4",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-10",
+  "last_modified": "2024-04-10"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10205",
-  "package_name" : "zenstack",
-  "patch_versions" : [ "2.4.0" ],
-  "vulnerable_ranges" : [ [ "0.1.0", "2.3.3" ] ],
-  "cwe" : [ "CWE-284" ],
-  "tldr" : "Affected versions of the package are vulnerable to improper access control. ZenStack internally uses `{ AND: [] }` to represent constant true and `{ OR: [] }` for constant false. However, Prisma provides inconsistent query results in certain nesting combinations, which can allow unauthenticated users to read from tables.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `zenstack` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Access Control",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 91,
-  "changelog" : "https://github.com/zenstackhq/zenstack/releases/tag/v2.4.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-08-06",
-  "last_modified" : "2024-08-06"
+  "package_name": "zenstack",
+  "patch_versions": [
+    "2.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "2.3.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to improper access control. ZenStack internally uses `{ AND: [] }` to represent constant true and `{ OR: [] }` for constant false. However, Prisma provides inconsistent query results in certain nesting combinations, which can allow unauthenticated users to read from tables.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `zenstack` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Access Control",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "CRITICAL",
+  "aikido_score": 91,
+  "changelog": "https://github.com/zenstackhq/zenstack/releases/tag/v2.4.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-08-06",
+  "last_modified": "2024-08-06"
 }

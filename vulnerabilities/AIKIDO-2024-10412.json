@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10412",
-  "package_name" : "express",
-  "patch_versions" : [ "4.0.0" ],
-  "vulnerable_ranges" : [ [ "3.0.0-alpha1", "3.21.2" ] ],
-  "cwe" : [ "CWE-74" ],
-  "tldr" : "A vulnerability has been identified in the Express `response.links` function, allowing arbitrary resource injection into the `Link` header when unsanitized data is used. The issue arises from improper sanitization of `Link` header values, which allows characters like `,`, `;`, and `<>` to preload malicious resources. This vulnerability is particularly concerning when dynamic parameters are involved.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `express` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')",
-  "related_cve_id" : "CVE-2024-10491",
-  "language" : "js",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 60,
-  "changelog" : "https://www.herodevs.com/vulnerability-directory/cve-2024-10491",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-05",
-  "last_modified" : "2024-11-05"
+  "package_name": "express",
+  "patch_versions": [
+    "4.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0-alpha1",
+      "3.21.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-74"
+  ],
+  "tldr": "A vulnerability has been identified in the Express `response.links` function, allowing arbitrary resource injection into the `Link` header when unsanitized data is used. The issue arises from improper sanitization of `Link` header values, which allows characters like `,`, `;`, and `<>` to preload malicious resources. This vulnerability is particularly concerning when dynamic parameters are involved.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `express` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')",
+  "related_cve_id": "CVE-2024-10491",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://www.herodevs.com/vulnerability-directory/cve-2024-10491",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-05",
+  "last_modified": "2024-11-05"
 }

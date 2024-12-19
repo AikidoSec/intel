@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10214",
-  "package_name" : "hutool-core",
-  "patch_versions" : [ "5.8.30" ],
-  "vulnerable_ranges" : [ [ "4.6.5", "5.8.29" ] ],
-  "cwe" : [ "CWE-400" ],
-  "tldr" : "Affected versions of the package are vulnerable to uncontrolled resource consumption. When multiple concurrent calls are made to `ZipUtil.zip(fileb, filea.listFiles())` and `fileb` is also in the `filea` directory, the zip function will traverse the file and add its own file to it, resulting in a self-loop. This causes the `fileb` file to continue growing.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `hutool-core` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Uncontrolled Resource Consumption",
-  "related_cve_id" : "",
-  "language" : "JAVA",
-  "severity_class" : "HIGH",
-  "aikido_score" : 80,
-  "changelog" : "https://github.com/dromara/hutool/releases/tag/5.8.30",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-08-12",
-  "last_modified" : "2024-08-12"
+  "package_name": "hutool-core",
+  "patch_versions": [
+    "5.8.30"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.6.5",
+      "5.8.29"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to uncontrolled resource consumption. When multiple concurrent calls are made to `ZipUtil.zip(fileb, filea.listFiles())` and `fileb` is also in the `filea` directory, the zip function will traverse the file and add its own file to it, resulting in a self-loop. This causes the `fileb` file to continue growing.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `hutool-core` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
+  "related_cve_id": "",
+  "language": "JAVA",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/dromara/hutool/releases/tag/5.8.30",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-08-12",
+  "last_modified": "2024-08-12"
 }

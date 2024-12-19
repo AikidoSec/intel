@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10022",
-  "package_name" : "livewire/livewire",
-  "patch_versions" : [ "3.4.9" ],
-  "vulnerable_ranges" : [ [ "3.3.5", "3.4.8" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) when a page uses `#[Url]` for a property. An attacker can inject HTML code into the user's browser session by crafting a malicious link and convincing the user to click on it.",
-  "doest_this_affect_me" : "You are affected if you are using a version of this package >= 3.3.5 and <= 4.2.0.",
-  "how_to_fix" : "Upgrade the `livewire/livewire` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting (XSS)",
-  "related_cve_id" : "CVE-2024-21504",
-  "language" : "php",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 60,
-  "changelog" : "https://github.com/livewire/livewire/releases/tag/v3.4.9",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-10",
-  "last_modified" : "2024-04-10"
+  "package_name": "livewire/livewire",
+  "patch_versions": [
+    "3.4.9"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.3.5",
+      "3.4.8"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) when a page uses `#[Url]` for a property. An attacker can inject HTML code into the user's browser session by crafting a malicious link and convincing the user to click on it.",
+  "doest_this_affect_me": "You are affected if you are using a version of this package >= 3.3.5 and <= 4.2.0.",
+  "how_to_fix": "Upgrade the `livewire/livewire` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "CVE-2024-21504",
+  "language": "php",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/livewire/livewire/releases/tag/v3.4.9",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-10",
+  "last_modified": "2024-04-10"
 }

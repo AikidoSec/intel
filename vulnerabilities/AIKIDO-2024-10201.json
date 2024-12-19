@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10201",
-  "package_name" : "trix",
-  "patch_versions" : [ "2.1.4" ],
-  "vulnerable_ranges" : [ [ "2.0.0", "2.1.3" ] ],
-  "cwe" : [ "CWE-79" ],
-  "tldr" : "Affected versions of the package allow attackers to execute Cross-site Scripting (XSS) attacks by pasting malicious code into a Trix editor.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `trix` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Cross-site Scripting (XSS)",
-  "related_cve_id" : "CVE-2024-43368",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 45,
-  "changelog" : "https://github.com/basecamp/trix/releases/tag/v2.1.4",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-08-01",
-  "last_modified" : "2024-09-24"
+  "package_name": "trix",
+  "patch_versions": [
+    "2.1.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.1.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of the package allow attackers to execute Cross-site Scripting (XSS) attacks by pasting malicious code into a Trix editor.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `trix` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "CVE-2024-43368",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/basecamp/trix/releases/tag/v2.1.4",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-08-01",
+  "last_modified": "2024-09-24"
 }

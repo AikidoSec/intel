@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10079",
-  "package_name" : "nodemailer",
-  "patch_versions" : [ "6.9.9" ],
-  "vulnerable_ranges" : [ [ "3.0.0", "6.9.8" ] ],
-  "cwe" : [ "CWE-1333" ],
-  "tldr" : "The affected versions are vulnerable to regular expression Denial of Service (ReDoS), causing the event loop to become stuck. This occurs when `nodemailer` attempts to parse image files with the `attachDataUrls` parameter set or when parsing attachments with embedded files. A specially crafted malicious email can exploit this vulnerability, leading to performance degradation or Denial of Service.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `nodemailer` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Regular Expression Denial of Service (ReDoS)",
-  "related_cve_id" : "",
-  "language" : "JS",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/nodemailer/nodemailer/releases/tag/v6.9.9",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-05-02",
-  "last_modified" : "2024-05-02"
+  "package_name": "nodemailer",
+  "patch_versions": [
+    "6.9.9"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "6.9.8"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "The affected versions are vulnerable to regular expression Denial of Service (ReDoS), causing the event loop to become stuck. This occurs when `nodemailer` attempts to parse image files with the `attachDataUrls` parameter set or when parsing attachments with embedded files. A specially crafted malicious email can exploit this vulnerability, leading to performance degradation or Denial of Service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `nodemailer` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/nodemailer/nodemailer/releases/tag/v6.9.9",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-05-02",
+  "last_modified": "2024-05-02"
 }

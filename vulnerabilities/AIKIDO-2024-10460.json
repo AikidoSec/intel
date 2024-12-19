@@ -1,25 +1,38 @@
 {
-  "id" : "AIKIDO-2024-10460",
-  "package_name" : "grafana-enterprise",
-  "patch_versions" : [ "11.2.4", "11.3.1" ],
-  "vulnerable_ranges" : [ [ "11.2.0", "11.2.3" ], [ "11.3.0", "11.3.0" ] ],
-  "cwe" : [ "CWE-266" ],
-  "tldr" : "Affected versions of this package are vulnerable to improper privilege assignment, leading to potential privilege escalation. In self-managed Grafana OSS v11.2 and Grafana Enterprise v11.2, a vulnerability was identified during routine internal testing. This flaw allows users to access resources belonging to other organizations within the same Grafana instance by exploiting the Grafana Cloud Migration Assistant, undermining organizational boundaries and security controls.",
-  "doest_this_affect_me" : "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix" : "Upgrade the `grafana-enterprise` library to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Incorrect Privilege Assignment",
-  "related_cve_id" : "CVE-2024-9476",
-  "language" : "os",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 53,
-  "changelog" : "https://grafana.com/blog/2024/11/12/grafana-security-release-medium-severity-security-fix-for-cve-2024-9476/",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-20",
-  "last_modified" : "2024-11-20"
+  "package_name": "grafana-enterprise",
+  "patch_versions": [
+    "11.2.4",
+    "11.3.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "11.2.0",
+      "11.2.3"
+    ],
+    [
+      "11.3.0",
+      "11.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-266"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper privilege assignment, leading to potential privilege escalation. In self-managed Grafana OSS v11.2 and Grafana Enterprise v11.2, a vulnerability was identified during routine internal testing. This flaw allows users to access resources belonging to other organizations within the same Grafana instance by exploiting the Grafana Cloud Migration Assistant, undermining organizational boundaries and security controls.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `grafana-enterprise` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Incorrect Privilege Assignment",
+  "related_cve_id": "CVE-2024-9476",
+  "language": "os",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
+  "changelog": "https://grafana.com/blog/2024/11/12/grafana-security-release-medium-severity-security-fix-for-cve-2024-9476/",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-20",
+  "last_modified": "2024-11-20"
 }

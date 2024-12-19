@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10324",
-  "package_name" : "kafka-connect-client",
-  "patch_versions" : [ "4.0.5" ],
-  "vulnerable_ranges" : [ [ "1.0.0", "4.0.4" ] ],
-  "cwe" : [ "CWE-326" ],
-  "tldr" : "Affected versions of the package are vulnerable to inadequate encryption strength. They support the insecure TLS 1.0 and TLS 1.1 protocols, which are susceptible to man-in-the-middle attacks, compromising the confidentiality and integrity of data.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `kafka-connect-client` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Inadequate Encryption Strength",
-  "related_cve_id" : "",
-  "language" : "java",
-  "severity_class" : "HIGH",
-  "aikido_score" : 76,
-  "changelog" : "https://github.com/SourceLabOrg/kafka-connect-client/releases/tag/v4.0.5",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-07",
-  "last_modified" : "2024-10-07"
+  "package_name": "kafka-connect-client",
+  "patch_versions": [
+    "4.0.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "4.0.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-326"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to inadequate encryption strength. They support the insecure TLS 1.0 and TLS 1.1 protocols, which are susceptible to man-in-the-middle attacks, compromising the confidentiality and integrity of data.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `kafka-connect-client` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Inadequate Encryption Strength",
+  "related_cve_id": "",
+  "language": "java",
+  "severity_class": "HIGH",
+  "aikido_score": 76,
+  "changelog": "https://github.com/SourceLabOrg/kafka-connect-client/releases/tag/v4.0.5",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-07",
+  "last_modified": "2024-10-07"
 }

@@ -1,25 +1,48 @@
 {
-  "id" : "AIKIDO-2024-10506",
-  "package_name" : "simplesamlphp/simplesamlphp",
-  "patch_versions" : [ "2.0.15", "2.1.7", "2.2.4", "2.3.4" ],
-  "vulnerable_ranges" : [ [ "2.0.0", "2.0.14" ], [ "2.1.0", "2.1.6" ], [ "2.2.0", "2.2.3" ], [ "2.3.0", "2.3.3" ] ],
-  "cwe" : [ "CWE-611" ],
-  "tldr" : "Affected versions of this package are vulnerable to an XML External Entity (XXE) attack when loading untrusted XML documents, such as a `SAMLResponse`. An attacker can exploit this vulnerability to inject malicious external entities.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `simplesamlphp/simplesamlphp` library to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "XML External Entity (XXE) Attack",
-  "related_cve_id" : "CVE-2024-52806",
-  "language" : "PHP",
-  "severity_class" : "HIGH",
-  "aikido_score" : 83,
-  "changelog" : "https://github.com/simplesamlphp/simplesamlphp/releases/tag/v2.2.4",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-12-02 17:00",
-  "last_modified" : "2024-12-10 12:00"
+  "package_name": "simplesamlphp/simplesamlphp",
+  "patch_versions": [
+    "2.0.15",
+    "2.1.7",
+    "2.2.4",
+    "2.3.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.0.14"
+    ],
+    [
+      "2.1.0",
+      "2.1.6"
+    ],
+    [
+      "2.2.0",
+      "2.2.3"
+    ],
+    [
+      "2.3.0",
+      "2.3.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-611"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an XML External Entity (XXE) attack when loading untrusted XML documents, such as a `SAMLResponse`. An attacker can exploit this vulnerability to inject malicious external entities.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `simplesamlphp/simplesamlphp` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "XML External Entity (XXE) Attack",
+  "related_cve_id": "CVE-2024-52806",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 83,
+  "changelog": "https://github.com/simplesamlphp/simplesamlphp/releases/tag/v2.2.4",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-02 17:00",
+  "last_modified": "2024-12-10 12:00"
 }

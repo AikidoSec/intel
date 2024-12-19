@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10491",
-  "package_name" : "akka-actor_2.13",
-  "patch_versions" : [ "2.8.1" ],
-  "vulnerable_ranges" : [ [ "2.0", "2.8.0" ] ],
-  "cwe" : [ "CWE-400" ],
-  "tldr" : "In Lightbend Akka versions prior to 2.8.1, the `async-dns` resolver (used by Akka Discovery in DNS mode and transitively by Akka Cluster Bootstrap) generates predictable DNS transaction IDs, making DNS resolution vulnerable to poisoning attacks. An attacker can forge DNS responses with matching transaction IDs, redirecting traffic to malicious endpoints. If the application does not validate the authenticity of discovered services (e.g., via TLS), this can lead to data exfiltration, such as persistence events being published to an unintended Kafka broker. If validation is in place, the attack results in a denial of access to the intended service.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `akka-actor` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Denial of Service (DoS)",
-  "related_cve_id" : "CVE-2023-31442",
-  "language" : "JAVA",
-  "severity_class" : "HIGH",
-  "aikido_score" : 75,
-  "changelog" : "https://doc.akka.io/reference/security-announcements/akka-async-dns-2023-31442.html",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : "akka-actor_",
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-28 18:00",
-  "last_modified" : "2024-11-28 18:00"
+  "package_name": "akka-actor_2.13",
+  "patch_versions": [
+    "2.8.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0",
+      "2.8.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "In Lightbend Akka versions prior to 2.8.1, the `async-dns` resolver (used by Akka Discovery in DNS mode and transitively by Akka Cluster Bootstrap) generates predictable DNS transaction IDs, making DNS resolution vulnerable to poisoning attacks. An attacker can forge DNS responses with matching transaction IDs, redirecting traffic to malicious endpoints. If the application does not validate the authenticity of discovered services (e.g., via TLS), this can lead to data exfiltration, such as persistence events being published to an unintended Kafka broker. If validation is in place, the attack results in a denial of access to the intended service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `akka-actor` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "CVE-2023-31442",
+  "language": "JAVA",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://doc.akka.io/reference/security-announcements/akka-async-dns-2023-31442.html",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": "akka-actor_",
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-28 18:00",
+  "last_modified": "2024-11-28 18:00"
 }

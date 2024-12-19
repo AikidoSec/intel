@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10228",
-  "package_name" : "github.com/bogdanfinn/tls-client",
-  "patch_versions" : [ "1.7.8" ],
-  "vulnerable_ranges" : [ [ "1.7.7", "1.7.7" ] ],
-  "cwe" : [ "CWE-362" ],
-  "tldr" : "Affected versions of the package are vulnerable to a race condition caused by concurrent execution using a shared resource with improper synchronization. The issue arises when setting a proxy to the client instance quickly after implementing the ability to define CONNECT headers. When a new proxy is set, the `connectDialer` writes proxy authentication credentials to the `DefaultHeader` map. This causes issues because, unlike previous versions that spawned a new header map each time, the same `connectHeaders` map is used in the latest update. Since concurrent map writes are not supported in Go, rapid proxy changes can eventually cause a panic due to multiple threads attempting to write to the same map simultaneously.",
-  "doest_this_affect_me" : "You are affected if you are using the vulnerable version and you have defined CONNECT headers.",
-  "how_to_fix" : "Upgrade the `github.com/bogdanfinn/tls-client` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Race Condition",
-  "related_cve_id" : "",
-  "language" : "GO",
-  "severity_class" : "LOW",
-  "aikido_score" : 34,
-  "changelog" : "https://github.com/bogdanfinn/tls-client/releases/tag/v1.7.8",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-08-22",
-  "last_modified" : "2024-08-22"
+  "package_name": "github.com/bogdanfinn/tls-client",
+  "patch_versions": [
+    "1.7.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.7.7",
+      "1.7.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to a race condition caused by concurrent execution using a shared resource with improper synchronization. The issue arises when setting a proxy to the client instance quickly after implementing the ability to define CONNECT headers. When a new proxy is set, the `connectDialer` writes proxy authentication credentials to the `DefaultHeader` map. This causes issues because, unlike previous versions that spawned a new header map each time, the same `connectHeaders` map is used in the latest update. Since concurrent map writes are not supported in Go, rapid proxy changes can eventually cause a panic due to multiple threads attempting to write to the same map simultaneously.",
+  "doest_this_affect_me": "You are affected if you are using the vulnerable version and you have defined CONNECT headers.",
+  "how_to_fix": "Upgrade the `github.com/bogdanfinn/tls-client` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Race Condition",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 34,
+  "changelog": "https://github.com/bogdanfinn/tls-client/releases/tag/v1.7.8",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-08-22",
+  "last_modified": "2024-08-22"
 }

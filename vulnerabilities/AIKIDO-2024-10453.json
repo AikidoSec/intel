@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10453",
-  "package_name" : "youtube-transcript-api",
-  "patch_versions" : [ "0.6.3" ],
-  "vulnerable_ranges" : [ [ "0.2.0", "0.6.2" ] ],
-  "cwe" : [ "CWE-611" ],
-  "tldr" : "Affected versions of this package are using xml.etree.fromstring to parse untrusted XML data. This function is known to be vulnerable to XML attacks, such as XML External Entity (XXE) or Billion Laughs, which can lead to data exposure or Denial of Service (DoS).",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `youtube-transcript-api` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "XML External Entity (XXE) Attack",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "HIGH",
-  "aikido_score" : 85,
-  "changelog" : "https://github.com/jdepoix/youtube-transcript-api/releases/tag/v0.6.3",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-19",
-  "last_modified" : "2024-11-19"
+  "package_name": "youtube-transcript-api",
+  "patch_versions": [
+    "0.6.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.2.0",
+      "0.6.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-611"
+  ],
+  "tldr": "Affected versions of this package are using xml.etree.fromstring to parse untrusted XML data. This function is known to be vulnerable to XML attacks, such as XML External Entity (XXE) or Billion Laughs, which can lead to data exposure or Denial of Service (DoS).",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `youtube-transcript-api` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "XML External Entity (XXE) Attack",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/jdepoix/youtube-transcript-api/releases/tag/v0.6.3",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-19",
+  "last_modified": "2024-11-19"
 }

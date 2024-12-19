@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10102",
-  "package_name" : "github.com/traefik/traefik/v3",
-  "patch_versions" : [ "3.0.1" ],
-  "vulnerable_ranges" : [ [ "3.0.0", "3.0.0" ] ],
-  "cwe" : [ "CWE-400" ],
-  "tldr" : "Affected versions of the package are vulnerable to Denial of Service (DoS). There is a vulnerability in GOLANG managing malformed DNS messages, which impacts Traefik.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `github.com/traefik/traefik/v3` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Denial of Service (DoS)",
-  "related_cve_id" : "CVE-2024-24787",
-  "language" : "Go",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 40,
-  "changelog" : "https://github.com/traefik/traefik/releases/tag/v3.0.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-05-24",
-  "last_modified" : "2024-05-24"
+  "package_name": "github.com/traefik/traefik/v3",
+  "patch_versions": [
+    "3.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to Denial of Service (DoS). There is a vulnerability in GOLANG managing malformed DNS messages, which impacts Traefik.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/traefik/traefik/v3` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "CVE-2024-24787",
+  "language": "Go",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/traefik/traefik/releases/tag/v3.0.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-05-24",
+  "last_modified": "2024-05-24"
 }

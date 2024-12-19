@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10114",
-  "package_name" : "github.com/beevik/ntp",
-  "patch_versions" : [ "1.4.3" ],
-  "vulnerable_ranges" : [ [ "0.1.0", "1.4.2" ] ],
-  "cwe" : [ "CWE-190" ],
-  "tldr" : "Affected versions of the `ntp` package are vulnerable to an integer overflow in the calculation of the offset between client and server time.",
-  "doest_this_affect_me" : "You are affected if you are using a vulnerable version of the package, directly or indirecly in your application.",
-  "how_to_fix" : "Upgrade `github.com/beevik/ntp` to the patch version (version 1.4.3).",
-  "reporter" : "",
-  "vulnerable_to" : "Integer Overflow",
-  "related_cve_id" : "",
-  "language" : "go",
-  "severity_class" : "LOW",
-  "aikido_score" : 20,
-  "changelog" : "https://github.com/beevik/ntp/releases/tag/v1.4.3",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-04",
-  "last_modified" : "2024-06-04"
+  "package_name": "github.com/beevik/ntp",
+  "patch_versions": [
+    "1.4.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.4.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of the `ntp` package are vulnerable to an integer overflow in the calculation of the offset between client and server time.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package, directly or indirecly in your application.",
+  "how_to_fix": "Upgrade `github.com/beevik/ntp` to the patch version (version 1.4.3).",
+  "reporter": "",
+  "vulnerable_to": "Integer Overflow",
+  "related_cve_id": "",
+  "language": "go",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/beevik/ntp/releases/tag/v1.4.3",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-04",
+  "last_modified": "2024-06-04"
 }

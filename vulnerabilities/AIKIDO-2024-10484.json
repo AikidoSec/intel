@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10484",
-  "package_name" : "@strapi/plugin-graphql",
-  "patch_versions" : [ "5.4.2" ],
-  "vulnerable_ranges" : [ [ "4.0.0", "5.4.1" ] ],
-  "cwe" : [ "CWE-495" ],
-  "tldr" : "Affected versions of this package expose attributes tagged as private within the `GraphQL` input and filter schema definitions. This vulnerability can lead to unintended data exposure, allowing clients to query or filter sensitive fields that should remain hidden. As a result, attackers or unauthorized users may gain access to confidential information, potentially compromising the security and privacy of the application’s data.",
-  "doest_this_affect_me" : "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix" : "Upgrade the `@strapi/plugin-graphql` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Private Data Structure Returned From A Public Method",
-  "related_cve_id" : "",
-  "language" : "js",
-  "severity_class" : "LOW",
-  "aikido_score" : 32,
-  "changelog" : "https://github.com/strapi/strapi/releases/tag/v5.4.2",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-28 11:30",
-  "last_modified" : "2024-11-28 11:30"
+  "package_name": "@strapi/plugin-graphql",
+  "patch_versions": [
+    "5.4.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "5.4.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-495"
+  ],
+  "tldr": "Affected versions of this package expose attributes tagged as private within the `GraphQL` input and filter schema definitions. This vulnerability can lead to unintended data exposure, allowing clients to query or filter sensitive fields that should remain hidden. As a result, attackers or unauthorized users may gain access to confidential information, potentially compromising the security and privacy of the application’s data.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `@strapi/plugin-graphql` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Private Data Structure Returned From A Public Method",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 32,
+  "changelog": "https://github.com/strapi/strapi/releases/tag/v5.4.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-28 11:30",
+  "last_modified": "2024-11-28 11:30"
 }

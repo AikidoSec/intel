@@ -1,25 +1,38 @@
 {
-  "id" : "AIKIDO-2024-10498",
-  "package_name" : "@intlify/shared",
-  "patch_versions" : [ "9.14.2", "10.0.5" ],
-  "vulnerable_ranges" : [ [ "9.3.0", "9.14.1" ], [ "10.0.0", "10.0.4" ] ],
-  "cwe" : [ "CWE-1321" ],
-  "tldr" : "The latest version of `@intlify/shared` is vulnerable to Prototype Pollution through the `lib.deepCopy` function. An attacker can craft a payload that modifies the global prototype chain by adding or altering properties, leading to a Denial of Service (DoS) as a minimum impact. If the polluted properties affect sensitive areas of the application, such as Node.js APIs (`exec`, `eval`), the vulnerability can escalate to arbitrary command execution, posing a severe security risk.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@intlify/shared` library to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Prototype Pollution",
-  "related_cve_id" : "CVE-2024-52810",
-  "language" : "js",
-  "severity_class" : "HIGH",
-  "aikido_score" : 80,
-  "changelog" : "https://github.com/intlify/vue-i18n/security/advisories/GHSA-hjwq-mjwj-4x6c",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-12-02 09:00",
-  "last_modified" : "2024-12-02 09:00"
+  "package_name": "@intlify/shared",
+  "patch_versions": [
+    "9.14.2",
+    "10.0.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "9.3.0",
+      "9.14.1"
+    ],
+    [
+      "10.0.0",
+      "10.0.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "The latest version of `@intlify/shared` is vulnerable to Prototype Pollution through the `lib.deepCopy` function. An attacker can craft a payload that modifies the global prototype chain by adding or altering properties, leading to a Denial of Service (DoS) as a minimum impact. If the polluted properties affect sensitive areas of the application, such as Node.js APIs (`exec`, `eval`), the vulnerability can escalate to arbitrary command execution, posing a severe security risk.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@intlify/shared` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "CVE-2024-52810",
+  "language": "js",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/intlify/vue-i18n/security/advisories/GHSA-hjwq-mjwj-4x6c",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-02 09:00",
+  "last_modified": "2024-12-02 09:00"
 }

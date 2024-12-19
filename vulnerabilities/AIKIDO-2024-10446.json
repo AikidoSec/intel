@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10446",
-  "package_name" : "quartz",
-  "patch_versions" : [ "2.4.0" ],
-  "vulnerable_ranges" : [ [ "2.1.4", "2.3.2" ] ],
-  "cwe" : [ "CWE-94" ],
-  "tldr" : "Affected versions of the package are vulnerable to Remote Code Execution (RCE) when using the `NativeJob` class from the `quartz-jobs` artifact. Although it is possible to use this Job class securely, it poses a risk for users who do not take proper precautions, potentially allowing attackers to execute arbitrary code remotely.",
-  "doest_this_affect_me" : "You are affected if you are using a version which is within vulnerability ranges and if you are using the `NativeJob` class.",
-  "how_to_fix" : "Upgrade the `quartz` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Remote Code Execution (RCE)",
-  "related_cve_id" : "",
-  "language" : "java",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 55,
-  "changelog" : "https://github.com/quartz-scheduler/quartz/releases/tag/v2.4.0",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-11-14",
-  "last_modified" : "2024-11-14"
+  "package_name": "quartz",
+  "patch_versions": [
+    "2.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.1.4",
+      "2.3.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to Remote Code Execution (RCE) when using the `NativeJob` class from the `quartz-jobs` artifact. Although it is possible to use this Job class securely, it poses a risk for users who do not take proper precautions, potentially allowing attackers to execute arbitrary code remotely.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges and if you are using the `NativeJob` class.",
+  "how_to_fix": "Upgrade the `quartz` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "",
+  "language": "java",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/quartz-scheduler/quartz/releases/tag/v2.4.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-11-14",
+  "last_modified": "2024-11-14"
 }

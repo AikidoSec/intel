@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10521",
-  "package_name" : "@gouvfr/dsfr",
-  "patch_versions" : [ "1.13.0" ],
-  "vulnerable_ranges" : [ [ "0.1.0", "1.12.1" ] ],
-  "cwe" : [ "CWE-506" ],
-  "tldr" : "Affected versions of `@gouvfr/dsfr` use `polyfill[.]io`, which is taken over by attackers and serves malicious code.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `@gouvfr/dsfr` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Malicious Code",
-  "related_cve_id" : "CVE-2024-38526",
-  "language" : "JS",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 100,
-  "changelog" : "https://github.com/GouvernementFR/dsfr/blob/main/CHANGELOG.md",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-12-09 12:00",
-  "last_modified" : "2024-12-09 12:00"
+  "package_name": "@gouvfr/dsfr",
+  "patch_versions": [
+    "1.13.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.12.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-506"
+  ],
+  "tldr": "Affected versions of `@gouvfr/dsfr` use `polyfill[.]io`, which is taken over by attackers and serves malicious code.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@gouvfr/dsfr` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Malicious Code",
+  "related_cve_id": "CVE-2024-38526",
+  "language": "JS",
+  "severity_class": "CRITICAL",
+  "aikido_score": 100,
+  "changelog": "https://github.com/GouvernementFR/dsfr/blob/main/CHANGELOG.md",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-09 12:00",
+  "last_modified": "2024-12-09 12:00"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10041",
-  "package_name" : "cheroot",
-  "patch_versions" : [ "10.0.1" ],
-  "vulnerable_ranges" : [ [ "5.0.0", "10.0.0" ] ],
-  "cwe" : [ "CWE-400" ],
-  "tldr" : "The affected versions may cause a Denial of Service (DoS) due to unhandled SSL exceptions, which can lead to worker thread crashes and, eventually, render the server unresponsive.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `cheroot` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Denial of Service (DoS)",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/cherrypy/cheroot/releases/tag/v10.0.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-23",
-  "last_modified" : "2024-04-23"
+  "package_name": "cheroot",
+  "patch_versions": [
+    "10.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "10.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "The affected versions may cause a Denial of Service (DoS) due to unhandled SSL exceptions, which can lead to worker thread crashes and, eventually, render the server unresponsive.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `cheroot` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/cherrypy/cheroot/releases/tag/v10.0.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-23",
+  "last_modified": "2024-04-23"
 }

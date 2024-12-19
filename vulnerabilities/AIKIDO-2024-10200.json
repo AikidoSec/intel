@@ -1,25 +1,38 @@
 {
-  "id" : "AIKIDO-2024-10200",
-  "package_name" : "jupyterhub",
-  "patch_versions" : [ "4.1.6", "5.1.0" ],
-  "vulnerable_ranges" : [ [ "0.1.0", "4.1.5" ], [ "5.0.0", "5.0.0" ] ],
-  "cwe" : [ "CWE-732" ],
-  "tldr" : "Affected versions of the package allow attackers to modify and create admin users without admin privileges, exposing critical resources to unauthorized access.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `jupyterhub` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Incorrect Permission Assignment for Critical Resource",
-  "related_cve_id" : "CVE-2024-41942",
-  "language" : "python",
-  "severity_class" : "CRITICAL",
-  "aikido_score" : 95,
-  "changelog" : "https://github.com/jupyterhub/jupyterhub/compare/jupyterhub:c616ab2...jupyterhub:a1824a4",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-07-31",
-  "last_modified" : "2024-07-31"
+  "package_name": "jupyterhub",
+  "patch_versions": [
+    "4.1.6",
+    "5.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "4.1.5"
+    ],
+    [
+      "5.0.0",
+      "5.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-732"
+  ],
+  "tldr": "Affected versions of the package allow attackers to modify and create admin users without admin privileges, exposing critical resources to unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `jupyterhub` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Incorrect Permission Assignment for Critical Resource",
+  "related_cve_id": "CVE-2024-41942",
+  "language": "python",
+  "severity_class": "CRITICAL",
+  "aikido_score": 95,
+  "changelog": "https://github.com/jupyterhub/jupyterhub/compare/jupyterhub:c616ab2...jupyterhub:a1824a4",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-07-31",
+  "last_modified": "2024-07-31"
 }

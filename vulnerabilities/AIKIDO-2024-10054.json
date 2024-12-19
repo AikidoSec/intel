@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10054",
-  "package_name" : "social-auth-app-django",
-  "patch_versions" : [ "5.4.1" ],
-  "vulnerable_ranges" : [ [ "0.0.1", "5.4.0" ] ],
-  "cwe" : [ "CWE-303" ],
-  "tldr" : "Affected versions of the package are vulnerable to improper handling of case sensitivity. Due to the default case-insensitive collation in MySQL or MariaDB databases, user IDs are not case-sensitive, which could lead to different IDs being mistakenly treated as a match.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `social-auth-app-django` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Incorrect Implementation of Authentication Algorithm",
-  "related_cve_id" : "CVE-2024-32879",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 50,
-  "changelog" : "https://github.com/python-social-auth/social-app-django/releases/tag/5.4.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-04-25",
-  "last_modified" : "2024-04-25"
+  "package_name": "social-auth-app-django",
+  "patch_versions": [
+    "5.4.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "5.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-303"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to improper handling of case sensitivity. Due to the default case-insensitive collation in MySQL or MariaDB databases, user IDs are not case-sensitive, which could lead to different IDs being mistakenly treated as a match.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `social-auth-app-django` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Incorrect Implementation of Authentication Algorithm",
+  "related_cve_id": "CVE-2024-32879",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/python-social-auth/social-app-django/releases/tag/5.4.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-04-25",
+  "last_modified": "2024-04-25"
 }

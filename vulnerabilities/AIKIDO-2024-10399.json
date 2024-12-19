@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10399",
-  "package_name" : "tecnickcom/tcpdf",
-  "patch_versions" : [ "6.7.6" ],
-  "vulnerable_ranges" : [ [ "2.0.000", "6.7.5" ] ],
-  "cwe" : [ "CWE-22" ],
-  "tldr" : "Affected versions of this package are vulnerable to path traversal when handling image tags in the `openHTMLTagHandler` function. An attacker can craft malicious image tags with directory traversal sequences, allowing them to access files outside the intended directory, potentially leading to unauthorized access to sensitive files on the server.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `tecnickcom/tcpdf` library to the patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Path Traversal",
-  "related_cve_id" : "CVE-2024-51058",
-  "language" : "php",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 60,
-  "changelog" : "https://github.com/tecnickcom/TCPDF/blob/main/CHANGELOG.TXT",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-10-31",
-  "last_modified" : "2024-12-10"
+  "package_name": "tecnickcom/tcpdf",
+  "patch_versions": [
+    "6.7.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.000",
+      "6.7.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to path traversal when handling image tags in the `openHTMLTagHandler` function. An attacker can craft malicious image tags with directory traversal sequences, allowing them to access files outside the intended directory, potentially leading to unauthorized access to sensitive files on the server.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `tecnickcom/tcpdf` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "CVE-2024-51058",
+  "language": "php",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/tecnickcom/TCPDF/blob/main/CHANGELOG.TXT",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-10-31",
+  "last_modified": "2024-12-10"
 }

@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10526",
-  "package_name" : "linkme",
-  "patch_versions" : [ "0.3.24" ],
-  "vulnerable_ranges" : [ [ "0.0.1", "0.3.23" ] ],
-  "cwe" : [ "CWE-843" ],
-  "tldr" : "Affected versions of this package allow populating a `DistributedSlice` of type `T` with elements of any other type that can coerce to `T`. For instance, elements of type `&&str` could be included in a slice of type `[&str]` due to deref coercion, where `&&str` coerces to `&str`.",
-  "doest_this_affect_me" : "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix" : "Upgrade the `linkme` library to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Type Confusion",
-  "related_cve_id" : "GHSA-f95p-4cv5-8w8x",
-  "language" : "rust",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 63,
-  "changelog" : "https://rustsec.org/advisories/RUSTSEC-2024-0407.html",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-12-09 18:30",
-  "last_modified" : "2024-12-09 18:30"
+  "package_name": "linkme",
+  "patch_versions": [
+    "0.3.24"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.3.23"
+    ]
+  ],
+  "cwe": [
+    "CWE-843"
+  ],
+  "tldr": "Affected versions of this package allow populating a `DistributedSlice` of type `T` with elements of any other type that can coerce to `T`. For instance, elements of type `&&str` could be included in a slice of type `[&str]` due to deref coercion, where `&&str` coerces to `&str`.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `linkme` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Type Confusion",
+  "related_cve_id": "GHSA-f95p-4cv5-8w8x",
+  "language": "rust",
+  "severity_class": "MEDIUM",
+  "aikido_score": 63,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2024-0407.html",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-09 18:30",
+  "last_modified": "2024-12-09 18:30"
 }

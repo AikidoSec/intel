@@ -1,25 +1,33 @@
 {
-  "id" : "AIKIDO-2024-10129",
-  "package_name" : "wandb",
-  "patch_versions" : [ "0.17.1" ],
-  "vulnerable_ranges" : [ [ "0.1.0", "0.17.0" ] ],
-  "cwe" : [ "CWE-502" ],
-  "tldr" : "Affected versions of `wandb` deserialize unsafe serialized models without warning. The updated version now requires the `unsafe=True` parameter to load unsafe `pickle` models or files.",
-  "doest_this_affect_me" : "You are affected if you use a vulnerable version of `wandb`.",
-  "how_to_fix" : "Upgrade `wandb` to a patch version.",
-  "reporter" : "",
-  "vulnerable_to" : "Unsafe Deserialization",
-  "related_cve_id" : "",
-  "language" : "python",
-  "severity_class" : "MEDIUM",
-  "aikido_score" : 70,
-  "changelog" : "https://github.com/wandb/wandb/releases/tag/v0.17.1",
-  "package_name_alias" : null,
-  "package_wildcard_ends_in" : null,
-  "package_wildcard_contains" : null,
-  "extra_specific_non_vulnerable_versions" : null,
-  "unaffected_distros" : null,
-  "simplify_version_if_has_patch_part" : false,
-  "published" : "2024-06-13",
-  "last_modified" : "2024-06-13"
+  "package_name": "wandb",
+  "patch_versions": [
+    "0.17.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.17.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Affected versions of `wandb` deserialize unsafe serialized models without warning. The updated version now requires the `unsafe=True` parameter to load unsafe `pickle` models or files.",
+  "doest_this_affect_me": "You are affected if you use a vulnerable version of `wandb`.",
+  "how_to_fix": "Upgrade `wandb` to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Unsafe Deserialization",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 70,
+  "changelog": "https://github.com/wandb/wandb/releases/tag/v0.17.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-06-13",
+  "last_modified": "2024-06-13"
 }

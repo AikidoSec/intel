@@ -21,6 +21,6 @@
   "extra_specific_non_vulnerable_versions": null,
   "unaffected_distros": null,
   "simplify_version_if_has_patch_part": false,
-  "published": "2024-12-11 10:30",
-  "last_modified": "2024-12-11 10:30"
+  "published": "2024-12-11",
+  "last_modified": "2024-12-11"
 }

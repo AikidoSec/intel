@@ -1,22 +1,35 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "reporter": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": "",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false
-}
+    "package_name": "axios",
+    "patch_versions": [
+      "0.29.0",
+      "1.6.4"
+    ],
+    "vulnerable_ranges": [
+      [
+        "0.1.0","0.28.1"
+      ],
+      [
+  "1.0.0",
+        "1.6.3"
+      ]
+    ],
+    "cwe": [
+      "CWE-1321"
+    ],
+    "tldr": "Several security vulnerabilities were quietly patched in `axios` version 1.6.4 and version 0.29.0. Notably, a prototype pollution flaw impacted the `formDataToJSON` function, posing a significant risk. Additionally, a Regular Expression Denial of Service (ReDoS) vulnerability was identified and fixed in the `combineURLs` function.",
+    "doest_this_affect_me": "You are affected by this flaw if you use the formDataToJSON function. This is more likely to happen in a front-end than in a backend.",
+    "how_to_fix": "To fix, either freeze the prototype or upgrade to axios 1.6.4 or above.",
+    "reporter": null,
+    "vulnerable_to": "Prototype Pollution",
+    "related_cve_id": "",
+    "language": "JS",
+    "severity_class": "HIGH",
+    "aikido_score": 77,
+    "changelog": "https://github.com/axios/axios/releases/tag/v1.6.4",
+    "package_name_alias": null,
+    "package_wildcard_ends_in": null,
+    "package_wildcard_contains": null,
+    "extra_specific_non_vulnerable_versions": null,
+    "unaffected_distros": null,
+    "simplify_version_if_has_patch_part": false
+  }

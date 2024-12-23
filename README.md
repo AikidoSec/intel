@@ -100,4 +100,4 @@ Refer to existing files in the repository for examples.
 
 ---
 
-Thank you for contributing to the AIKIDO Knowledge Base! Your input helps keep the ecosystem secure.
+Thank you for contributing to the AIKIDO Vulnerability Database! Your input helps keep the ecosystem secure.

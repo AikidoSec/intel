@@ -1,33 +1,33 @@
 {
-  "package_name": "lilconfig",
+  "package_name": "@tiptap/extension-link",
   "patch_versions": [
-    "3.1.1"
+    "2.10.4"
   ],
   "vulnerable_ranges": [
     [
-      "3.1.0",
-      "3.1.0"
+      "2.0.0",
+      "2.10.3"
     ]
   ],
   "cwe": [
-    "CWE-94"
+    "CWE-79"
   ],
-  "tldr": "A code injection vulnerability was silently addressed in version 3.1.1 of `lilconfig`, impacting all uses of the package in earlier versions.",
-  "doest_this_affect_me": "You are affected by this flaw if you use the 3.1.0 version of this package.",
-  "how_to_fix": "To fix, upgrade to `lilconfig` 3.1.1 or above.",
-  "reporter": null,
-  "vulnerable_to": "Code Injection",
+  "tldr": "Affected versions of this package do not validate link protocols before setting or toggling links, making them vulnerable to Cross-site Scripting (XSS). Attackers can exploit this flaw to inject malicious scripts, potentially compromising user data or executing unauthorized actions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@tiptap/extension-link` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
   "language": "JS",
   "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://github.com/antonk52/lilconfig/releases/tag/v3.1.1",
+  "aikido_score": 46,
+  "changelog": "https://github.com/ueberdosis/tiptap/releases/tag/v2.10.4",
   "package_name_alias": null,
   "package_wildcard_ends_in": null,
   "package_wildcard_contains": null,
   "extra_specific_non_vulnerable_versions": null,
   "unaffected_distros": null,
   "simplify_version_if_has_patch_part": false,
-  "published": "2024-02-23",
-  "last_modified": "2024-02-23"
+  "last_modified": "2024-12-24",
+  "published": "2024-12-24"
 }

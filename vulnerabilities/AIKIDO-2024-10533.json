@@ -1,0 +1,33 @@
+{
+  "package_name": "github.com/cosmwasm/wasmvm",
+  "patch_versions": [
+    "1.5.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.12.0",
+      "1.5.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-682"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to incorrect calculation due to flaws in the metering logic. These flaws allow attackers to manipulate the execution of smart contracts by exploiting the inaccurate resource metering mechanism. As a result, the package fails to properly account for resource consumption, enabling attackers to bypass limits or other security issues within the smart contract ecosystem.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade the `github.com/cosmwasm/wasmvm` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Incorrect Calculation",
+  "related_cve_id": "",
+  "language": "go",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/CosmWasm/cosmwasm/releases/tag/v1.5.5",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-13",
+  "last_modified": "2024-12-13"
+}

@@ -1,0 +1,34 @@
+{
+  "package_name": "ghost",
+  "patch_versions": [
+    "5.105.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "5.104.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-277",
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Remote Code Execution (RCE) due to improper handling of file permissions for uploaded files. Previously, uploaded files retained their original permissions, potentially leaving them executable and creating a security risk. The issue has been addressed by enforcing `0644` permissions on all files uploaded via the Ghost importer, ensuring they are non-executable and significantly reducing the risk of exploitation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ghost` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insecure Inherited Permissions",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/TryGhost/Ghost/releases/tag/v5.105.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-16",
+  "last_modified": "2024-12-16"
+}

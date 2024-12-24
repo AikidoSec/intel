@@ -1,0 +1,34 @@
+{
+  "package_name": "github.com/libp2p/go-libp2p",
+  "patch_versions": [
+    "0.38.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.37.0",
+      "0.38.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-362",
+    "CWE-285"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a race condition, causing concurrent requests to reuse the same HMAC information. This flaw can compromise the integrity of the HMAC mechanism, potentially exposing sensitive data or allowing unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/libp2p/go-libp2p` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Race Condition",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/libp2p/go-libp2p/releases/tag/v0.38.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-19",
+  "last_modified": "2024-12-19"
+}

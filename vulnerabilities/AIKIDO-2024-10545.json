@@ -1,0 +1,33 @@
+{
+  "package_name": "@strapi/core",
+  "patch_versions": [
+    "5.5.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "5.5.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-497"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Information Disclosure. An attacker can exploit this vulnerability by sending specially crafted requests that leverage unintentionally exposed parameters, causing the application to disclose critical information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@strapi/core` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Information Disclosure",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 43,
+  "changelog": "https://github.com/strapi/strapi/releases/tag/v5.5.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-19",
+  "last_modified": "2024-12-19"
+}

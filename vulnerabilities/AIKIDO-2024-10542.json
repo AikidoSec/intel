@@ -1,0 +1,33 @@
+{
+  "package_name": "bundler",
+  "patch_versions": [
+    "2.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.5.23"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package log credentials, creating a risk of exposure and potential leaks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `bundler` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "ruby",
+  "severity_class": "LOW",
+  "aikido_score": 19,
+  "changelog": "https://github.com/rubygems/rubygems/releases/tag/bundler-v2.6.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-17",
+  "last_modified": "2024-12-17"
+}

@@ -1,0 +1,33 @@
+{
+  "package_name": "node-zendesk",
+  "patch_versions": [
+    "6.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "5.0.15"
+    ]
+  ],
+  "cwe": [
+    "CWE-1295"
+  ],
+  "tldr": "Affected versions of this package log sensitive tokens in debug logs without obfuscation, potentially exposing sensitive information. This flaw increases the risk of unauthorized access if log files are accessed or leaked.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `node-zendesk` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Debug Messages Revealing Unnecessary Information",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 21,
+  "changelog": "https://github.com/blakmatrix/node-zendesk/releases/tag/v6.0.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-20",
+  "last_modified": "2024-12-20"
+}

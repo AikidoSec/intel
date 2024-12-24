@@ -1,0 +1,33 @@
+{
+  "package_name": "docusaurus-theme-openapi-docs",
+  "patch_versions": [
+    "4.3.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.13",
+      "4.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-497"
+  ],
+  "tldr": "Affected versions of this package expose credentials in generated code snippets, potentially leading to unauthorized access or data breaches if the snippets are shared or accessed by unauthorized parties.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `docusaurus-theme-openapi-docs` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Information Disclosure",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 48,
+  "changelog": "https://github.com/PaloAltoNetworks/docusaurus-openapi-docs/releases/tag/v4.3.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-19",
+  "last_modified": "2024-12-19"
+}

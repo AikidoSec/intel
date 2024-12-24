@@ -1,0 +1,43 @@
+{
+  "package_name": "vant",
+  "patch_versions": [
+    "2.13.6",
+    "3.6.16",
+    "4.9.15"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.13.3",
+      "2.13.5"
+    ],
+    [
+      "3.6.13",
+      "3.6.15"
+    ],
+    [
+      "4.9.11",
+      "4.9.14"
+    ]
+  ],
+  "cwe": [
+    "CWE-506"
+  ],
+  "tldr": "Affected versions of this package were published using a compromised npm token and contain multiple security vulnerabilities. Users are strongly advised to avoid these versions and update to a secure release immediately.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `vant` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Malicious Code",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "CRITICAL",
+  "aikido_score": 100,
+  "changelog": "https://github.com/youzan/vant/releases/tag/v4.9.15",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-19",
+  "last_modified": "2024-12-19"
+}

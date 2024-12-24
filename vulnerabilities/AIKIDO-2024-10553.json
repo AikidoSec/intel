@@ -1,0 +1,33 @@
+{
+  "package_name": "html-sanitizer",
+  "patch_versions": [
+    "2.4.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.4.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package use sanitization methods that delay `Unicode normalization`, which allows specially crafted HTML to bypass the validation for disallowed tags. An attacker could exploit this design flaw to carry out attacks such as Cross-Site Scripting (XSS) or other injection-based vulnerabilities.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `html-sanitizer` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 46,
+  "changelog": "https://github.com/matthiask/html-sanitizer/blob/main/CHANGELOG.rst#25-2024-12-19",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-19",
+  "last_modified": "2024-12-19"
+}

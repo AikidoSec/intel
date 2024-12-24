@@ -1,0 +1,33 @@
+{
+  "package_name": "mui-markdown",
+  "patch_versions": [
+    "6.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.14.1",
+      "6.1.10"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS). An attacker can exploit this vulnerability by providing specially crafted input strings, causing excessive CPU usage, application hangs, and potential denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mui-markdown` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 24,
+  "changelog": "https://github.com/mui/material-ui/releases/tag/v6.2.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-18",
+  "last_modified": "2024-12-18"
+}

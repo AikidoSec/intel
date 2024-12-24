@@ -1,0 +1,33 @@
+{
+  "package_name": "simplexlsx",
+  "patch_versions": [
+    "1.1.13"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.3",
+      "1.1.12"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are affected by CSS injection in methods that handle color and theme rendering. Affected versions of this package are affected by CSS injection in methods that handle color and theme rendering. An attacker might take advantage of this vulnerability to create misbehaviors in the application like rendering unallowed ads.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `simplexlsx` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "CSS injection",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/shuchkin/simplexlsx/blob/master/CHANGELOG.md",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-24",
+  "last_modified": "2024-12-24"
+}

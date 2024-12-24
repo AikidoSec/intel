@@ -1,0 +1,33 @@
+{
+  "package_name": "EVerest.everest-core",
+  "patch_versions": [
+    "2024.11.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2022-11.0",
+      "2024.10.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1295"
+  ],
+  "tldr": "Affected versions of this package expose sensitive tokens by logging them to the console. This can lead to security risks, including unauthorized access or token leakage, especially in environments where console logs are accessible or retained.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `EVerest.everest-core` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Debug Messages Revealing Unnecessary Information",
+  "related_cve_id": "",
+  "language": "c++",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/EVerest/everest-core/releases/tag/2024.11.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-16",
+  "last_modified": "2024-12-16"
+}

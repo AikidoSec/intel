@@ -1,0 +1,33 @@
+{
+  "package_name": "cakephp/cakephp",
+  "patch_versions": [
+    "5.1.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "5.1.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-116"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper output encoding or escaping. The issue stems from using `PATH_INFO` instead of `REQUEST_URI`. Since `PATH_INFO` includes URL-decoded values, encoded URLs may improperly match routes they should not, leading to security risks. This flaw allows characters like `%2f` to bypass routing restrictions, potentially exposing unintended resources. Switching to `REQUEST_URI` ensures proper handling of encoded URLs and mitigates this vulnerability.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade the `cakephp/cakephp` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Encoding or Escaping of Output",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "LOW",
+  "aikido_score": 19,
+  "changelog": "https://github.com/cakephp/cakephp/releases/tag/5.1.4",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-16",
+  "last_modified": "2024-12-16"
+}

@@ -1,0 +1,33 @@
+{
+  "package_name": "github.com/pocketbase/pocketbase",
+  "patch_versions": [
+    "0.23.9"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.23.0",
+      "0.23.8"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an integer overflow due to improper handling of large integers. Specifically, the use of `strconv.Itoa` leads to an int64 to int conversion overflow on 32-bit platforms. The issue has been addressed in the patched version by replacing `strconv.Itoa` with `strconv.FormatInt`, ensuring safe handling of large integers.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/pocketbase/pocketbase` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Integer Overflow",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/pocketbase/pocketbase/releases/tag/v0.23.9",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-19",
+  "last_modified": "2024-12-19"
+}

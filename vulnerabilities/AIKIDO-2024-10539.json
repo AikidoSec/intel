@@ -1,0 +1,33 @@
+{
+  "package_name": "pyngrok",
+  "patch_versions": [
+    "7.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.2",
+      "7.1.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-1104"
+  ],
+  "tldr": "The `pyngrok` package versions up to `7.1.6` are no longer supported by the maintainer and will not receive further security updates. Users are strongly advised to upgrade to a supported version to ensure continued security and functionality.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `pyngrok` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Use of Unmaintained Third Party Components",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/alexdlaird/pyngrok/security",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-16",
+  "last_modified": "2024-12-16"
+}

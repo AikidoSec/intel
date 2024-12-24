@@ -1,0 +1,33 @@
+{
+  "package_name": "jinja2",
+  "patch_versions": [
+    "3.1.15"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.10.0",
+      "3.1.14"
+    ]
+  ],
+  "cwe": [
+    "CWE-693"
+  ],
+  "tldr": "Affected versions of this package are affected by Code Injection due to a bypass in Jinja's sandbox validation that restricts direct calls to `str.format` possible by storing a reference to the format method of a malicious string and invoking it indirectly through a filter. This flaw allows an attacker to manipulate a template's content to execute arbitrary code.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `jinja2` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Code Injection",
+  "related_cve_id": "CVE-2024-56326",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 54,
+  "changelog": "https://github.com/pallets/jinja/releases/tag/3.1.5",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-24",
+  "last_modified": "2024-12-24"
+}

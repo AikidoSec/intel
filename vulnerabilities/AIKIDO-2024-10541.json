@@ -1,0 +1,33 @@
+{
+  "package_name": "strophe.js",
+  "patch_versions": [
+    "3.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "3.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) due to improper escaping of values passed to the `stx` tagged template literal. This flaw allows attackers to inject malicious scripts, potentially compromising the security of the application and its users.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `strophe.js` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/strophe/strophejs/releases/tag/v3.1.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-17",
+  "last_modified": "2024-12-17"
+}

@@ -1,0 +1,33 @@
+{
+  "package_name": "horstoeko/zugferd",
+  "patch_versions": [
+    "1.0.99"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.11",
+      "1.0.98"
+    ]
+  ],
+  "cwe": [
+    "CWE-497"
+  ],
+  "tldr": "Affected versions of this package improperly expose payment card numbers to users, violating compliance standards and potentially leading to sensitive data breaches.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `horstoeko/zugferd` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Information Disclosure",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/horstoeko/zugferd/releases/tag/v1.0.99",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-19",
+  "last_modified": "2024-12-19"
+}

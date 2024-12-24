@@ -1,0 +1,33 @@
+{
+  "package_name": "tungstenite",
+  "patch_versions": [
+    "0.26.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.26.0",
+      "0.26.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-758"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to undefined behavior when handling unreliable `Read` stream implementations. The issue arises from improper memory handling during stream processing. The updated version resolves this by retaining the `set-len` refactor while employing a safe resize function to prevent such issues.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `tungstenite` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Undefined Behavior",
+  "related_cve_id": "",
+  "language": "rust",
+  "severity_class": "LOW",
+  "aikido_score": 18,
+  "changelog": "https://github.com/snapview/tungstenite-rs/blob/master/CHANGELOG.md",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-20",
+  "last_modified": "2024-12-20"
+}

@@ -1,0 +1,33 @@
+{
+  "package_name": "n8n-core",
+  "patch_versions": [
+    "1.73.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.58.0",
+      "1.72.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of this package's AI tool process multiple tasks concurrently with an asynchronous function handling that could use the same `runIndex` for various items. An attacker might be able to manipulate the timing of concurrent tasks to exploit the race condition, leading to misbehaviors, such as outages or data corruption.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `n8n-core` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Race Condition",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 35,
+  "changelog": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.73.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-19",
+  "last_modified": "2024-12-19"
+}

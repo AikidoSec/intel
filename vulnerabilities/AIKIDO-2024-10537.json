@@ -1,0 +1,33 @@
+{
+  "package_name": "github.com/valyala/fasthttp",
+  "patch_versions": [
+    "1.58.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.57.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-444"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to request smuggling due to improper handling of chunked HTTP requests. Specifically, `fasthttp` allows newline characters (`\\n`) between the chunk size and the CRLF within the chunk extension. This behavior can lead to request smuggling vulnerabilities when used with certain reverse proxies, potentially enabling attackers to bypass security controls or inject malicious requests. The issue has been mitigated in newer versions by disallowing newlines in the chunk extension.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/valyala/fasthttp` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "HTTP Request/Response Smuggling",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/valyala/fasthttp/releases/tag/v1.58.0",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-16",
+  "last_modified": "2024-12-16"
+}

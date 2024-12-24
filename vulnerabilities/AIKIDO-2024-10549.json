@@ -1,0 +1,43 @@
+{
+  "package_name": "openssl",
+  "patch_versions": [
+    "3.0.3",
+    "3.1.1",
+    "3.2.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "3.0.2"
+    ],
+    [
+      "3.1.0",
+      "3.1.0"
+    ],
+    [
+      "3.2.0",
+      "3.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-131"
+  ],
+  "tldr": "Affected versions of this package use methods that currently allocate the output buffer using (input data length) + (cipher block size). This allocation is insufficient for most of the wrap-pad ciphers, potentially leading to crashes and outages.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `openssl` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Buffer Overflow",
+  "related_cve_id": "",
+  "language": "Ruby",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/ruby/openssl/releases/tag/v3.2.1",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-19",
+  "last_modified": "2024-12-19"
+}

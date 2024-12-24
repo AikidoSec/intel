@@ -1,0 +1,33 @@
+{
+  "package_name": "github.com/cosmwasm/wasmvm",
+  "patch_versions": [
+    "1.5.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.12.0",
+      "1.5.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Uncontrolled Resource Consumption due to a flaw in the error-handling mechanism. Attackers can exploit this flaw by intentionally triggering a panic condition, leading to excessive resource utilization or a Denial of Service (DoS). This vulnerability can disrupt system availability and impact application reliability.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade the `github.com/cosmwasm/wasmvm` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
+  "related_cve_id": "",
+  "language": "go",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/CosmWasm/cosmwasm/releases/tag/v1.5.5",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-13",
+  "last_modified": "2024-12-13"
+}

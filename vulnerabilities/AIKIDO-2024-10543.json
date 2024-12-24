@@ -1,0 +1,33 @@
+{
+  "package_name": "i18next",
+  "patch_versions": [
+    "24.1.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "17.0.2",
+      "24.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to code injection due to unsafe behavior in the `i18n.t` function. When requested keys do not exist, the function can return JavaScript objects such as `constructor`, potentially allowing attackers to execute arbitrary code in certain scenarios.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `i18next` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Code Injection",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 84,
+  "changelog": "https://github.com/i18next/i18next/releases/tag/v24.1.2",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "published": "2024-12-17",
+  "last_modified": "2024-12-17"
+}

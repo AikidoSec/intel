@@ -1,6 +1,6 @@
 # Contributing to the AIKIDO Vulnerability Database
 
-This repository serves as a knowledge base for custom AIKIDO vulnerabilities. This vulnerability database is used by [app.aikido.dev](https://app.aikido.dev) and [intel.aikido.dev](https://intel.aikido.dev). To contribute a new vulnerability, follow the steps below.
+This repository serves as a knowledge base for AIKIDO vulnerabilities. This database is used by [app.aikido.dev](https://app.aikido.dev) and [intel.aikido.dev](https://intel.aikido.dev). To contribute a new vulnerability, follow the steps below.
 
 ---
 

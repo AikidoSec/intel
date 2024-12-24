@@ -1,3 +1,5 @@
+[![Intel Github Banner](https://github.com/user-attachments/assets/7a1d7fa4-a861-41fd-8a26-4edfd59da047)](https://intel.aikido.dev/)
+
 # Contributing to the AIKIDO Vulnerability Database
 
 This repository serves as a knowledge base for AIKIDO vulnerabilities. This database is used by [app.aikido.dev](https://app.aikido.dev) and [intel.aikido.dev](https://intel.aikido.dev). To contribute a new vulnerability, follow the steps below.

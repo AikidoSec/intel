@@ -1,0 +1,31 @@
+{
+  "package_name": "redshift_connector",
+  "patch_versions": [
+    "2.1.5"
+  ],
+  "vulnerable_ranges": [
+    "2.1.4",
+    "2.1.4"
+  ],
+  "cwe": [
+    "CWE-89"
+  ],
+  "tldr": "Version `2.1.4` of the Amazon Redshift Python Connector is vulnerable to SQL injection. This vulnerability allows attackers to escalate privileges by injecting malicious SQL into the `getSchemas`, `getTables`, or `getColumns` metadata APIs.  By manipulating schema input, an attacker can bypass access controls, retrieve unauthorized data, or modify database structures. This poses a significant risk to data integrity and confidentiality. Users are advised to upgrade to version `2.1.5`, which contains a fix for this issue. Alternatively, reverting to version `2.1.3` is a temporary mitigation until the latest version can be deployed.",
+  "doest_this_affect_me": "You are affected if you are using version `2.1.4`.",
+  "how_to_fix": "Upgrade the `redshift_connector` library to the patch version or downgrade to version `2.1.3`.",
+  "reporter": "",
+  "vulnerable_to": "SQL Injection",
+  "related_cve_id": "CVE-2024-12745",
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/aws/amazon-redshift-python-driver/releases/tag/v2.1.5",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false,
+  "last_modified": "2024-12-26",
+  "published": "2024-12-26"
+}

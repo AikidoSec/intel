@@ -22,12 +22,6 @@
   "severity_class": "MEDIUM",
   "aikido_score": 48,
   "changelog": "https://github.com/cloudflare/workers-sdk/releases/tag/%40cloudflare/workers-shared%400.8.0",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-11-25",
   "last_modified": "2024-11-25"
 }

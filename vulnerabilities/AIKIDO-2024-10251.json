@@ -25,12 +25,6 @@
   "severity_class": "MEDIUM",
   "aikido_score": 50,
   "changelog": "https://github.com/craftcms/cms/releases/tag/5.4.2",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-09-11",
   "last_modified": "2024-09-11"
 }

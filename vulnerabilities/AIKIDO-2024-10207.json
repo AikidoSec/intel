@@ -22,12 +22,6 @@
   "severity_class": "MEDIUM",
   "aikido_score": 75,
   "changelog": "https://github.com/JibayMcs/filament-tour/releases/tag/v3.1.0.6",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-08-06",
   "last_modified": "2024-08-06"
 }

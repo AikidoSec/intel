@@ -27,12 +27,6 @@
   "severity_class": "LOW",
   "aikido_score": 20,
   "changelog": "https://github.com/expressjs/serve-static/releases/tag/1.16.0",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-09-11",
   "last_modified": "2024-09-24"
 }

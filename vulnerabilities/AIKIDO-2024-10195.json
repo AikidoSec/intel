@@ -22,12 +22,6 @@
   "severity_class": "LOW",
   "aikido_score": 30,
   "changelog": "https://github.com/rjsf-team/react-jsonschema-form/releases/tag/v5.19.4",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-07-29",
   "last_modified": "2024-07-29"
 }

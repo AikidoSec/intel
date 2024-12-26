@@ -27,12 +27,6 @@
   "severity_class": "MEDIUM",
   "aikido_score": 64,
   "changelog": "https://github.com/rollup/rollup/security/advisories/GHSA-gcx4-mw62-g8wm",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-09-23",
   "last_modified": "2024-09-24"
 }

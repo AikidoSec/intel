@@ -22,12 +22,6 @@
   "severity_class": "LOW",
   "aikido_score": 20,
   "changelog": "https://github.com/stephanrauh/ngx-extended-pdf-viewer/compare/stephanrauh:ngx-extended-pdf-viewer:19.4.1...stephanrauh:ngx-extended-pdf-viewer:19.5.0",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-04-12",
   "last_modified": "2024-04-12"
 }

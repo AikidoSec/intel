@@ -32,12 +32,6 @@
   "severity_class": "HIGH",
   "aikido_score": 80,
   "changelog": "https://nvd.nist.gov/vuln/detail/CVE-2024-2885",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-04-04",
   "last_modified": "2024-04-04"
 }

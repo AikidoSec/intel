@@ -22,12 +22,6 @@
   "severity_class": "CRITICAL",
   "aikido_score": 91,
   "changelog": "https://github.com/kedro-org/kedro/releases/tag/0.19.9",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-10-11",
   "last_modified": "2024-12-10"
 }

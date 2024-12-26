@@ -22,12 +22,6 @@
   "severity_class": "MEDIUM",
   "aikido_score": 60,
   "changelog": "https://github.com/vercel/next.js/releases/tag/v14.2.5",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-07-11",
   "last_modified": "2024-07-11"
 }

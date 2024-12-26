@@ -22,12 +22,6 @@
   "severity_class": "CRITICAL",
   "aikido_score": 91,
   "changelog": "https://github.com/statamic/cms/releases/tag/v5.38.1",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-11-26",
   "last_modified": "2024-11-26"
 }

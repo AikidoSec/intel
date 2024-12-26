@@ -66,6 +66,7 @@ git push origin vulnerability-branch-name
 
 ## Guidelines for JSON Fields
 
+Required Fields:
 - `package_name`: Name of the affected package.
 - `patch_versions`: Array of versions that fix the issue.
 - `vulnerable_ranges`: Array of ranges that are vulnerable. If all versions are vulnerable, add string `"*"`.
@@ -73,21 +74,24 @@ git push origin vulnerability-branch-name
 - `tldr`: A short but concise description of the vulnerability.
 - `doest_this_affect_me`: A short explanation in which cases the vulnerability affects the user.
 - `how_to_fix`: A short explanation on how to fix the vulnerability.
-- `reporter`: Feel free to add your name or company name. Otherwise, leave it empty.
 - `vulnerable_to`: The type of attack.
 - `related_cve_id`: If a CVE ID already exists (with incorrect information), add the CVE ID here. Otherwise, leave it empty.
 - `language`: The programming language of the package (e.g., `js`, `python`, `php`).
 - `severity_class`: Severity classification (`LOW`, `MEDIUM`, `HIGH`, `CRITICAL`).
 - `aikido_score`: The vulnerability score on a scale of 0-100 (0 is least severe, 100 is most severe).
 - `changelog`: The url of the changelog where this vulnerability got fixed.
+- `published`: Do not add this field. It will be automatically added by GitHub Actions.
+- `last_modified`: Do not add this field. It will be automatically added by GitHub Actions.
+
+Optional Fields:
+- `reporter`: Feel free to add your name or company name. Otherwise, leave it empty.
 - `package_name_alias`: If the package name is an alias, add the original package name here.
 - `package_wildcard_ends_in`: If you want to match partial package names, add the ending here.
 - `package_wildcard_contains`: If you want to match partial package names, add the containing string here.
 - `extra_specific_non_vulnerable_versions`: If there are specific versions that are not vulnerable, regardles of the version range, add them here.
 - `unaffected_distros`: If there are specific distributions that are not vulnerable, regardles of the version range, add them here.
 - `simplify_version_if_has_patch_part`: If the version has a patch part in format `9.6_p2-r0+deb9u1`, Aikido will only match on the 9.6 part. Set this to `true` if this is the case.
-- `published`: Do not add this field. It will be automatically added by GitHub Actions.
-- `last_modified`: Do not add this field. It will be automatically added by GitHub Actions.
+
 
 Refer to existing files in the repository for examples.
 

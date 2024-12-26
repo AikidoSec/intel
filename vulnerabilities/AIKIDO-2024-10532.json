@@ -1,33 +1,27 @@
 {
-  "package_name": "shuchkin/simplexlsx",
+  "package_name": "shopify_app",
   "patch_versions": [
-    "1.1.12"
+    "22.5.1"
   ],
   "vulnerable_ranges": [
     [
-      "1.0.12",
-      "1.1.11"
+      "21.4.1",
+      "22.5.0"
     ]
   ],
   "cwe": [
-    "CWE-20"
+    "CWE-79"
   ],
-  "tldr": "Affected versions of this package fail to properly validate CSS from external files, creating a potential security risk. Attackers can exploit this vulnerability by crafting malicious files, which could lead to Cross-site Scripting (XSS) attacks, potentially compromising user data or application integrity.",
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) due to improper handling of Content-Security-Policy (CSP) headers. Applications that dynamically generate CSP headers using untrusted user input are at risk, as attackers can craft inputs that inject malicious directives into the CSP. This vulnerability can effectively bypass the CSP, undermining its protections against XSS and other web-based attacks, potentially compromising the security of the application and its users. While a fix for this issue was introduced in Rails core, the affected package implemented its own mitigation measures to address the risk.",
   "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
-  "how_to_fix": "Upgrade the `shuchkin/simplexlsx` library to the patch version.",
+  "how_to_fix": "Upgrade the `shopify_app` library to the patch version.",
   "reporter": "",
-  "vulnerable_to": "Improper Input Validation",
-  "related_cve_id": "",
-  "language": "php",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "CVE-2024-54133",
+  "language": "ruby",
   "severity_class": "LOW",
-  "aikido_score": 35,
-  "changelog": "https://github.com/shuchkin/simplexlsx/blob/master/CHANGELOG.md",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
-  "published": "2024-12-11",
-  "last_modified": "2024-12-11"
+  "aikido_score": 23,
+  "changelog": "https://github.com/Shopify/shopify_app/releases/tag/v22.5.1",
+  "published": "2024-12-13",
+  "last_modified": "2024-12-13"
 }

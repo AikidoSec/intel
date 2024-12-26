@@ -32,12 +32,6 @@
   "severity_class": "HIGH",
   "aikido_score": 80,
   "changelog": "https://github.com/nodejs/node/releases/tag/v21.7.3",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-04-12",
   "last_modified": "2024-04-12"
 }

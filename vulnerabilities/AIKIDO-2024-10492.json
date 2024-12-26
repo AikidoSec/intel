@@ -1,5 +1,6 @@
 {
   "package_name": "akka-actor_2.13",
+  "package_wildcard_contains": "akka-actor_",
   "patch_versions": [
     "2.4.17"
   ],
@@ -22,12 +23,6 @@
   "severity_class": "HIGH",
   "aikido_score": 82,
   "changelog": "https://github.com/advisories/GHSA-mm57-9j6q-rxm2",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": "akka-actor_",
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-11-28",
   "last_modified": "2024-11-28"
 }

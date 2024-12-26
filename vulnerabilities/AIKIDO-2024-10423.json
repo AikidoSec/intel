@@ -22,12 +22,6 @@
   "severity_class": "HIGH",
   "aikido_score": 75,
   "changelog": "https://think-async.com/Asio/asio-1.30.2/doc/asio/history.html#asio.history.asio_1_13_0",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-11-05",
   "last_modified": "2024-11-05"
 }

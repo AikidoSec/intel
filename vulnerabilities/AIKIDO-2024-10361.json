@@ -32,12 +32,6 @@
   "severity_class": "LOW",
   "aikido_score": 23,
   "changelog": "https://github.com/spring-projects/spring-framework/commit/23656aebc6c7d0f9faff1080981eb4d55eff296c",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-10-24",
   "last_modified": "2024-10-24"
 }

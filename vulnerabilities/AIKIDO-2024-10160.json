@@ -13,6 +13,16 @@
       "9.7"
     ]
   ],
+  "extra_specific_non_vulnerable_versions": [
+    "1:9.3p1-1ubuntu3.6",
+    "1:9.6p1-3ubuntu13.3",
+    "1:8.9p1-3ubuntu0.10",
+    "8.7p1-8.amzn2023.0.11",
+    "openssh-server-8.7p1-8.amzn2023.0.11",
+    "1:8.4p1-5+deb11u3",
+    "1:9.2p1-2+deb12u3",
+    "1:9.7p1-7"
+  ],
   "cwe": [
     "CWE-497"
   ],
@@ -26,23 +36,10 @@
   "severity_class": "CRITICAL",
   "aikido_score": 100,
   "changelog": "https://www.openssh.com/txt/release-9.8",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": [
-    "1:9.3p1-1ubuntu3.6",
-    "1:9.6p1-3ubuntu13.3",
-    "1:8.9p1-3ubuntu0.10",
-    "8.7p1-8.amzn2023.0.11",
-    "openssh-server-8.7p1-8.amzn2023.0.11",
-    "1:8.4p1-5+deb11u3",
-    "1:9.2p1-2+deb12u3",
-    "1:9.7p1-7"
-  ],
+  "simplify_version_if_has_patch_part": true,
   "unaffected_distros": [
     "alpine"
   ],
-  "simplify_version_if_has_patch_part": true,
   "published": "2024-07-01",
   "last_modified": "2024-07-01"
 }

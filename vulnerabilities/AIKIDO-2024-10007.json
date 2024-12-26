@@ -1,5 +1,6 @@
 {
   "package_name": "github.com/RobotsAndPencils/go-saml",
+  "package_wildcard_ends_in": "go-saml",
   "patch_versions": [],
   "vulnerable_ranges": [
     [
@@ -13,19 +14,12 @@
   "tldr": "Affected versions of this package are vulnerable to authentication bypass, as SAML signatures can be forged when the library is used.",
   "doest_this_affect_me": "You use this package or any fork to authenticate users.",
   "how_to_fix": "Stop using this library or check the Github advisory for advanced workarounds.",
-  "reporter": null,
   "vulnerable_to": "Authentication bypass",
   "related_cve_id": "CVE-2023-48703",
   "language": "Go",
   "severity_class": "CRITICAL",
   "aikido_score": 100,
   "changelog": "https://securitylab.github.com/advisories/GHSL-2023-121_go-saml__archived_/",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": "go-saml",
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-03-01",
   "last_modified": "2024-03-01"
 }

@@ -22,12 +22,6 @@
   "severity_class": "LOW",
   "aikido_score": 19,
   "changelog": "https://github.com/rubygems/rubygems/releases/tag/bundler-v2.6.0",
-  "package_name_alias": null,
-  "package_wildcard_ends_in": null,
-  "package_wildcard_contains": null,
-  "extra_specific_non_vulnerable_versions": null,
-  "unaffected_distros": null,
-  "simplify_version_if_has_patch_part": false,
   "published": "2024-12-17",
   "last_modified": "2024-12-17"
 }

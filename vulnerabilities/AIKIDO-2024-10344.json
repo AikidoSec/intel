@@ -5,7 +5,7 @@
   ],
   "vulnerable_ranges": [
     [
-      "0.1.0",
+      "0.3.9",
       "0.5.0"
     ]
   ],
@@ -13,7 +13,7 @@
     "CWE-532"
   ],
   "tldr": "Affected versions of the package may expose sensitive information in log files. The debug logger may inadvertently reveal SMTP authentication data, creating a security risk.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and enabled debug logging.",
   "how_to_fix": "Upgrade the `github.com/wneessen/go-mail` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Insertion of Sensitive Information into Log File",
@@ -23,5 +23,5 @@
   "aikido_score": 8,
   "changelog": "https://github.com/wneessen/go-mail/releases/tag/v0.5.1",
   "published": "2024-10-16",
-  "last_modified": "2024-10-16"
+  "last_modified": "2024-12-25"
 }

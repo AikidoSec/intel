@@ -1,17 +1,22 @@
 {
-  "package_name": "adyen-java-api-library",
-  "patch_versions": ["32.1.0"],
-  "vulnerable_ranges": [
-    ["2.2.0", "32.0.0"]
-  ],
-  "cwe": ["CWE-1204"],
-  "tldr": "Affected versions of this package suffer from security misconfigurations, including using a static initialization vector (IV), generated only once during application initialization instead of being dynamically generated for each encryption operation. Additionally, the package includes an unencrypted API test endpoint that can be exposed in production environments. An attacker might leverage these vulnerabilities to gather critical information from the application.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `adyen-java-api-library` library to the patch version.",
-  "vulnerable_to": "Generation of Weak Initialization Vector",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "reporter": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "java",
-  "severity_class": "LOW",
-  "aikido_score": 30,
-  "changelog": "https://github.com/Adyen/adyen-java-api-library/releases/tag/v32.1.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": "",
+  "package_name_alias": null,
+  "package_wildcard_ends_in": null,
+  "package_wildcard_contains": null,
+  "extra_specific_non_vulnerable_versions": null,
+  "unaffected_distros": null,
+  "simplify_version_if_has_patch_part": false
 }

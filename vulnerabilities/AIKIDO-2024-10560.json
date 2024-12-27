@@ -1,12 +1,12 @@
 {
   "package_name": "jinja2",
   "patch_versions": [
-    "3.1.15"
+    "3.1.5"
   ],
   "vulnerable_ranges": [
     [
       "2.10.0",
-      "3.1.14"
+      "3.1.4"
     ]
   ],
   "cwe": [

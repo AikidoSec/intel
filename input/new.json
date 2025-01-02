@@ -1,15 +1,17 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "elastic-agent-libs/transport",
+  "patch_versions": ["0.18.0"],
+  "vulnerable_ranges": [
+    ["0.2.4", "0.17.5"]
+  ],
+  "cwe": ["CWE-326"],
+  "tldr": "Affected versions of this package are affected by weak encryption caused by the absence of a Subject Key Identifier (SKI) in Go. As demonstrated in RFC 5280, when the SKI is missing, its generation depends on SHA-1, a deprecated algorithm due to its susceptibility to collision attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `elastic-agent-libs/transport` library to the patch version.",
+  "vulnerable_to": "Use of Weak Hash",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Golang",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/elastic/elastic-agent-libs/releases/tag/v0.18.0"
 }

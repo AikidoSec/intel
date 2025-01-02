@@ -1,0 +1,26 @@
+{
+  "package_name": "wolfssl",
+  "patch_versions": [
+    "5.7.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.7.0",
+      "5.7.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-294"
+  ],
+  "tldr": "Affected versions of this package are affected by improper handling of Online Certificate Status Protocol (OCSP) requests for intermediate certificates in a TLS 1.3 connection, particularly when OCSP stapling is not enabled. It could lead to a bypass when validating these intermediate certificates. As a result, this oversight may expose the connection to potential security risks, such as replay attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `wolfssl` library to the patch version.",
+  "vulnerable_to": "Replay Attacks",
+  "related_cve_id": "",
+  "language": "C",
+  "severity_class": "MEDIUM",
+  "aikido_score": 56,
+  "changelog": "https://github.com/wolfSSL/wolfssl/blob/master/ChangeLog.md",
+  "last_modified": "2025-01-02",
+  "published": "2025-01-02"
+}

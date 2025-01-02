@@ -10,7 +10,7 @@
   "how_to_fix": "Upgrade the `elastic-agent-libs/transport` library to the patch version.",
   "vulnerable_to": "Use of Weak Hash",
   "related_cve_id": "",
-  "language": "Golang",
+  "language": "go",
   "severity_class": "LOW",
   "aikido_score": 25,
   "changelog": "https://github.com/elastic/elastic-agent-libs/releases/tag/v0.18.0"

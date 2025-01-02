@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `wolfssl` library to the patch version.",
   "vulnerable_to": "Replay Attacks",
   "related_cve_id": "",
-  "language": "C",
+  "language": "c++",
   "severity_class": "MEDIUM",
   "aikido_score": 56,
   "changelog": "https://github.com/wolfSSL/wolfssl/blob/master/ChangeLog.md",

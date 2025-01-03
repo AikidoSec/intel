@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/karmada-io/karmada",
+  "patch_versions": [
+    "1.12.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.11.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-269"
+  ],
+  "tldr": "PULL mode clusters registered with `karmadactl register` have excessive privileges to access control plane resources. An attacker who can authenticate as karmada-agent could obtain administrative privileges over the entire federation system including all registered member clusters.",
+  "doest_this_affect_me": "You are affected if you use Karmada in PULL mode with clusters registered via `karmadactl register` and are using a version prior to 1.12.0.",
+  "how_to_fix": "Upgrade to Karmada version 1.12.0 or later which properly restricts access permissions for pull mode member clusters.",
+  "vulnerable_to": "Privilege Escalation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "go",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/karmada-io/karmada/releases/tag/v1.12.0"
 }

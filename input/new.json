@@ -17,7 +17,7 @@
   "vulnerable_to": "Remote Code Execution (RCE)",
   "related_cve_id": "",
   "language": "php",
-  "severity_class": "HIH",
+  "severity_class": "HIGH",
   "aikido_score": 70,
   "changelog": "https://github.com/craftcms/cms/blob/5.x/CHANGELOG.md"
 }

@@ -3,12 +3,12 @@
   "patch_versions": [
     "5.5.8",
     "4.13.8",
-    "3.9.14",
+    "3.9.14"
   ],
   "vulnerable_ranges": [
     ["5.0.0", "5.5.7"],
     ["4.0.0", "4.13.7"],
-    ["3.0.0", "3.9.13"],
+    ["3.0.0", "3.9.13"]
   ],
   "cwe": ["CWE-74"],
   "tldr": "Affected versions of this package are affected by Remote Code Execution due to a validation bypass in the update workflow via an insecure handle of a user-controlled input when initiating the DB restoring process. An attacker can take advantage of this vulnerability to execute arbitrary code or retrieve critical information.",

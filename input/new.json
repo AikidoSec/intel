@@ -1,15 +1,17 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "tempfile",
+  "patch_versions": ["3.15.0"],
+  "vulnerable_ranges": [
+    ["3.0.0", "3.14.0"]
+  ],
+  "cwe": ["CWE-400"],
+  "tldr": "Affected versions of this package are affected by a potential Denial of Service (DoS) vulnerability that may arise from the use of predictable randomness in the context of repeated failures when creating temporary files. Such a vulnerability could facilitate an attacker’s ability to exploit the system by leveraging the inadequacies of the randomness employed, ultimately leading to disruptions in service availability.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `tempfile` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "rust",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/Stebalien/tempfile/blob/master/CHANGELOG.md"
 }

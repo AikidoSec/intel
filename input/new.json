@@ -1,23 +1,15 @@
 {
-  "package_name": "craftcms/cms",
-  "patch_versions": [
-    "5.5.8",
-    "4.13.8",
-    "3.9.14"
-  ],
-  "vulnerable_ranges": [
-    ["5.0.0", "5.5.7"],
-    ["4.0.0", "4.13.7"],
-    ["3.0.0", "3.9.13"]
-  ],
-  "cwe": ["CWE-74"],
-  "tldr": "Affected versions of this package are affected by Remote Code Execution due to a validation bypass in the update workflow via an insecure handle of a user-controlled input when initiating the DB restoring process. An attacker can take advantage of this vulnerability to execute arbitrary code or retrieve critical information.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
-  "vulnerable_to": "Remote Code Execution (RCE)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "php",
-  "severity_class": "HIGH",
-  "aikido_score": 70,
-  "changelog": "https://github.com/craftcms/cms/blob/5.x/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

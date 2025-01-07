@@ -1,0 +1,26 @@
+{
+  "package_name": "nicegui",
+  "patch_versions": [
+    "2.9.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.3.0",
+      "2.9.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-287"
+  ],
+  "tldr": "Affected versions of this package are affected by a broken access control due to inadequate isolation of session states across different browsers. When a user logs into one browser, they are automatically authenticated in all other browsers on the same device, including incognito mode, without needing to log in again. It may lead to unauthorized access, particularly when using shared or public devices.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `NiceGUI` library to the patch version.",
+  "vulnerable_to": "Improper Authentication",
+  "related_cve_id": "CVE-2025-21618",
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/zauberzeug/nicegui/releases/tag/v2.9.1",
+  "last_modified": "2025-01-07",
+  "published": "2025-01-07"
+}

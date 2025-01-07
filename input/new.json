@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "gradio",
+  "patch_versions": [
+    "5.10.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.19.1",
+      "5.9.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-646"
+  ],
+  "tldr": "Affected versions of this package are affected by unrestricted file uploads due to insecure methods that improperly handle file extensions and MIME types when processing files. This vulnerability could allow an attacker to upload malicious files, such as malware, leading to critical security issues and misbehavior.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `gradio` library to the patch version.",
+  "vulnerable_to": "Unrestricted File Upload",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/gradio-app/gradio/releases/tag/gradio%405.10.0",
 }

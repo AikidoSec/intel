@@ -1,17 +1,15 @@
 {
-  "package_name": "guzzlehttp/oauth-subscriber",
-  "patch_versions": ["0.8.1"],
-  "vulnerable_ranges": [
-    ["0.1.0", "0.8.0"]
-  ],
-  "cwe": ["CWE-338"],
-  "tldr": "Affected versions of this package are affected by an insecure generation of nonces when produced using insufficient entropy or non-cryptographically secure pseudorandom sources, which can lead to vulnerabilities. This inadequate nonce generation may enable replay attacks when TLS is disabled. Attackers could reuse previously intercepted nonces to impersonate legitimate requests, compromising data integrity and security.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `guzzlehttp/oauth-subscriber` library to the patch version.",
-  "vulnerable_to": "Replay Attacks",
-  "related_cve_id": "CVE-2025-21617",
-  "language": "php",
-  "severity_class": "MEDIUM",
-  "aikido_score": 63,
-  "changelog": "https://github.com/guzzle/oauth-subscriber/releases/tag/0.8.1"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

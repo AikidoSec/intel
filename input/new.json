@@ -1,17 +1,15 @@
 {
-  "package_name": "litellm",
-  "patch_versions": ["1.56.9"],
-  "vulnerable_ranges": [
-    ["1.55.3", "1.56.8"]
-  ],
-  "cwe": ["CWE-532"],
-  "tldr": "Affected versions of this package are affected by Information Disclosure due to an insecure log configuration that could expose langfuse keys and other sensitive information in the application logs. An attacker could exploit this misconfiguration to gather critical information from the application.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `litellm` library to the patch version.",
-  "vulnerable_to": "Information Disclosure",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "python",
-  "severity_class": "LOW",
-  "aikido_score": 30,
-  "changelog": "https://github.com/BerriAI/litellm/releases/tag/v1.56.9"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

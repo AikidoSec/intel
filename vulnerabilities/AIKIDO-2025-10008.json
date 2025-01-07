@@ -1,5 +1,5 @@
 {
-  "package_name": "wire",
+  "package_name": "Wire",
   "patch_versions": [
     "5.2.0"
   ],
@@ -14,7 +14,7 @@
   ],
   "tldr": "Affected versions of this package are affected by insufficient bounds checking during serialization or deserialization processes that can lead to a buffer overflow vulnerability when a data type exceeds five layers of nesting. An attacker could exploit this issue to crash the application or cause memory corruption.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `wire` library to the patch version.",
+  "how_to_fix": "Upgrade the `Wire` library to the patch version.",
   "vulnerable_to": "Buffer Overflow",
   "related_cve_id": "",
   "language": "swift",

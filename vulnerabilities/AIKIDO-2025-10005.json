@@ -1,0 +1,31 @@
+{
+  "package_name": "cakephp/cakephp",
+  "patch_versions": [
+    "5.1.4",
+    "4.5.9"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "5.1.2"
+    ],
+    [
+      "3.0.0",
+      "4.5.8"
+    ]
+  ],
+  "cwe": [
+    "CWE-601"
+  ],
+  "tldr": "Affected versions of this package are affected by Open redirect due to improper handling of encoded forward slashes (%2F) when reading request URIs. These paths may be misinterpreted as a single slash (/), resulting in unexpected routing behavior. This problem could potentially be exploited to create open redirect attacks, allowing an attacker to redirect users to malicious sites.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `cakephp/cakephp` library to the patch version.",
+  "vulnerable_to": "Open Redirect",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "MEDIUM",
+  "aikido_score": 63,
+  "changelog": "https://github.com/cakephp/cakephp/releases",
+  "last_modified": "2025-01-07",
+  "published": "2025-01-07"
+}

@@ -20,5 +20,5 @@
   "language": "python",
   "severity_class": "MEDIUM",
   "aikido_score": 55,
-  "changelog": "https://github.com/gradio-app/gradio/releases/tag/gradio%405.10.0",
+  "changelog": "https://github.com/gradio-app/gradio/releases/tag/gradio%405.10.0"
 }

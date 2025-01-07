@@ -1,0 +1,26 @@
+{
+  "package_name": "virtual-select-plugin",
+  "patch_versions": [
+    "1.0.47"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.20",
+      "1.0.46"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are affected by an insecure handle when receiving user-controlled `option` values. JavaScript event handlers embedded within the `label` or `value` fields may be executed, which can result in a Cross-Site Scripting (XSS) vulnerability. This issue persists even when the `enableSecureText` option is activated. An attacker could exploit this vulnerability to inject malicious scripts into the application.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `virtual-select-plugin` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/sa-si-dev/virtual-select/releases/tag/v1.0.47",
+  "last_modified": "2025-01-07",
+  "published": "2025-01-07"
+}

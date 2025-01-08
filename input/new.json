@@ -1,15 +1,15 @@
 {
-  "package_name": "minijinja",
-  "patch_versions": ["2.6.0"],
-  "vulnerable_ranges": [["2.0.0-alpha.0"],["2.5.0"]],
-  "cwe": ["CWE-248"],
-  "tldr": "Affected versions of this package may execute unsafe code when handling `Kwargs` type objects, potentially allowing malicious inputs to trigger unintended behavior.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `minijinja` library to the patch version.",
-  "vulnerable_to": "Uncaught Exception",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "LOW",
-  "aikido_score": 10,
-  "changelog": "https://github.com/mitsuhiko/minijinja/releases/tag/2.6.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

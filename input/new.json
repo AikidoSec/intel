@@ -1,26 +1,15 @@
 {
-  "package_name": "io.kestra:core",
-  "patch_versions": [
-    "0.20.11"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.2.0"
-    ],
-    [
-      "0.20.10"
-    ]
-  ],
-  "cwe": [
-    "CWE-22"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to path traversal, allowing attackers to access arbitrary files and directories outside the intended root directory by submitting specially crafted input. This vulnerability can be exploited by manipulating file paths (e.g., using `..` sequences) to traverse the filesystem, potentially exposing sensitive information, modifying configuration files, or executing unauthorized commands.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `io.kestra:core` library to the patch version.",
-  "vulnerable_to": "Path Traversal",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JAVA",
-  "severity_class": "HIGH",
-  "aikido_score": 85,
-  "changelog": "https://github.com/kestra-io/kestra/releases/tag/v0.20.11"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -11,5 +11,5 @@
   "language": "RUST",
   "severity_class": "LOW",
   "aikido_score": 10,
-  "changelog": "https://github.com/mitsuhiko/minijinja/blob/main/CHANGELOG.md"
+  "changelog": "https://github.com/mitsuhiko/minijinja/releases/tag/2.6.0"
 }

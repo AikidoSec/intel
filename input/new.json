@@ -10,7 +10,7 @@
   "how_to_fix": "Upgrade the `github.com/signalfx/splunk-otel-collector` library to the patch version.",
   "vulnerable_to": "Race Condition",
   "related_cve_id": "",
-  "language": "Golang",
+  "language": "go",
   "severity_class": "MEDIUM",
   "aikido_score": 61,
   "changelog": "https://github.com/signalfx/splunk-otel-collector/releases/tag/v0.116.0"

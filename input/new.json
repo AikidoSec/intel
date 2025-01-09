@@ -1,17 +1,15 @@
 {
-  "package_name": "strawberry-graphql",
-  "patch_versions": ["0.257.0"],
-  "vulnerable_ranges": [
-    ["0.43.0", "0.256.1"]
-  ],
-  "cwe": ["CWE-497"],
-  "tldr": "Affected versions of this package are affected by an insecure validation when handling objects from integrations such as Django, SQLAlchemy, or Pydantic. When these objects are received in a format that closely resembles the expected type, it can result in `is_type_of` checks incorrectly identifying the type. An attacker could exploit this misclassification to force the application to return critical data, resulting in Information Disclosure.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `strawberry-graphql` library to the patch version.",
-  "vulnerable_to": "Information Disclosure",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "python",
-  "severity_class": "MEDIUM",
-  "aikido_score": 58,
-  "changelog": "https://github.com/strawberry-graphql/strawberry/releases/tag/0.257.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,17 +1,15 @@
 {
-  "package_name": "github.com/signalfx/splunk-otel-collector",
-  "patch_versions": ["0.116.0"],
-  "vulnerable_ranges": [
-    ["0.91.3", "0.115.0"]
-  ],
-  "cwe": ["CWE-362"],
-  "tldr": "Affected versions of this package are affected by a race condition in a method that implements non-contiguous locks on shared data. This situation allows other goroutines to modify `h.sources` or `h.previousEvents` between lock and unlock cycles, which can lead to data corruption and system outages. An attacker could exploit this vulnerability to conduct Denial of Service (DoS) attacks.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/signalfx/splunk-otel-collector` library to the patch version.",
-  "vulnerable_to": "Race Condition",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "go",
-  "severity_class": "MEDIUM",
-  "aikido_score": 61,
-  "changelog": "https://github.com/signalfx/splunk-otel-collector/releases/tag/v0.116.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

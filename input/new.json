@@ -1,25 +1,15 @@
 {
-  "package_name": "Streamiz.Kafka.Net",
-  "patch_versions": [
-    "1.7.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "1.6.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-532"
-  ],
-  "tldr": "Affected versions of this package actively expose sensitive information in log files by improperly logging variables (`ssl.key.pem` and `ssl.certificate.pem`) during the application bootstrap. This vulnerability allows for the unintentional disclosure of sensitive data, potentially leading to security risks such as unauthorized access or leakage of private information.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `Streamiz.Kafka.Net` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "dotnet",
-  "severity_class": "LOW",
-  "aikido_score": 15,
-  "changelog": "https://github.com/LGouellec/streamiz/releases/tag/v1.7.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

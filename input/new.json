@@ -28,6 +28,6 @@
   "related_cve_id": "",
   "language": "JS",
   "severity_class": "CRITICAL",
-  "aikido_score": 93,
+  "aikido_score": 100,
   "changelog": "https://github.com/youzan/vant/releases/tag/v4.9.15"
 }

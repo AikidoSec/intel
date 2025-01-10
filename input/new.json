@@ -1,25 +1,15 @@
 {
-  "package_name": "phrity/websocket",
-  "patch_versions": [
-    "3.2.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.7.0",
-      "3.2.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-674"
-  ],
-  "tldr": "New connections to a server managed by the `phrity/websocket` library have a small but intermittent chance of causing the server to enter an infinite loop. This results in 100% CPU usage and blocks all server operations, including handling both new and existing connections. The server remains unresponsive until it is manually restarted or a timeout handler is implemented and triggered. This issue occurs only during the processing of new connections and does not affect connections that are already established.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `phrity/websocket` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Denial of Service (DoS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "LOW",
-  "aikido_score": 25,
-  "changelog": "https://github.com/sirn-se/websocket-php/releases/tag/3.2.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

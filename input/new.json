@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "io.insert-koin:koin-core",
+  "patch_versions": [
+    "4.0.2-RC2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.1.0",
+      "4.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a race condition, in rare cases this causes application crashes, which might be exploited by malicious actors.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `io.insert-koin:koin-core` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Race Condition",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JAVA",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/InsertKoinIO/koin/releases/tag/4.0.2-RC2"
 }

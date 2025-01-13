@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/wneessen/go-mail",
+  "patch_versions": [
+    "0.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.5.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-74"
+  ],
+  "tldr": "Affected versions of this package fail to properly sanitize filenames for attachments and embedded files. This oversight allows control characters (such as newlines) and special characters (e.g., backslashes or quotes) to interfere with MIME headers and file system operations. In particular, the inclusion of newline characters in filenames introduces potential vulnerabilities, such as breaking MIME structure, enabling command injection, or causing unexpected behavior in systems that process filenames.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/wneessen/go-mail` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/wneessen/go-mail/releases/tag/v0.6.0"
 }

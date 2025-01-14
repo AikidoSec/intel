@@ -1,0 +1,28 @@
+{
+  "package_name": "SiliconLabs.simplicity_sdk",
+  "patch_versions": [
+    "2024.12.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2024.6.0",
+      "2024.6.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-120",
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a buffer overflow, which can be triggered by sending a malformed 802.15.4 packet. This vulnerability allows an attacker to cause the system to assert and reset, resulting in a temporary disruption of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `SiliconLabs.simplicity_sdk` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Buffer Overflow",
+  "related_cve_id": "CVE-2024-6350",
+  "language": "c++",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/SiliconLabs/simplicity_sdk/releases",
+  "last_modified": "2025-01-13",
+  "published": "2025-01-13"
+}

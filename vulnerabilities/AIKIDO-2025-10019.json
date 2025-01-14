@@ -1,0 +1,26 @@
+{
+  "package_name": "address-rfc2822",
+  "patch_versions": [
+    "2.2.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.6",
+      "2.2.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-624"
+  ],
+  "tldr": "Affected versions of this package are affected by Regular Expression Denial of Service (ReDoS) due to an insecure regex pattern that uses nested quantifiers, leading to catastrophic backtracking. It may allow an attacker to create inputs that force the regex engine to take excessive time to find a match, resulting in degraded performance or denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `address-rfc2822` library to the patch version.",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 51,
+  "changelog": "https://github.com/haraka/node-address-rfc2822/releases/tag/v2.2.3",
+  "last_modified": "2025-01-14",
+  "published": "2025-01-14"
+}

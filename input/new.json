@@ -1,15 +1,17 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "electron",
+  "patch_versions": ["31.7.7"],
+  "vulnerable_ranges": [
+    ["31.0.0", "31.7.6"]
+  ],
+  "cwe": ["CWE-416"],
+  "tldr": "Affected versions of this package are affected by a use-after-free vulnerability in Chrome's compositing process prior to version 131.0.6778.204, which allows attackers to exploit heap corruption. By crafting a malicious HTML page, attackers can execute arbitrary code or crash the browser, potentially compromising user systems.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `electron` library to the patch version.",
+  "vulnerable_to": "Use-After-Free",
+  "related_cve_id": "CVE-2024-12694",
+  "language": "JS",
+  "severity_class": "High",
+  "aikido_score": 88,
+  "changelog": "https://github.com/electron/electron/releases/tag/v31.7.7"
 }

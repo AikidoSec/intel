@@ -11,7 +11,7 @@
   "vulnerable_to": "Use-After-Free",
   "related_cve_id": "CVE-2024-12694",
   "language": "JS",
-  "severity_class": "High",
+  "severity_class": "HIGH",
   "aikido_score": 88,
   "changelog": "https://github.com/electron/electron/releases/tag/v31.7.7"
 }

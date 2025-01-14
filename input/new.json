@@ -1,15 +1,17 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/cyphar/filepath-securejoin",
+  "patch_versions": ["0.4.0"],
+  "vulnerable_ranges": [
+    ["0.1.0", "0.3.6"]
+  ],
+  "cwe": ["CWE-36"],
+  "tldr": "Affected versions of this package are affected by Path Traversal due to an insecure join method that fails to ensure that the root path is safe using `filepath.Clean`. This vulnerability could allow an attacker to exploit the root path by tricking the function into resolving a path outside the intended directory structure. As a result, this opens the door to directory traversal attacks, enabling the attacker to access or manipulate files in unauthorized locations if the caller does not validate the root path.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/cyphar/filepath-securejoin` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "go",
+  "severity_class": "HIGH",
+  "aikido_score": 72,
+  "changelog": "https://github.com/cyphar/filepath-securejoin/releases/tag/v0.4.0"
 }

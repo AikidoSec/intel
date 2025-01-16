@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/prometheus/alertmanager",
+  "patch_versions": [
+    "0.28.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.5.0",
+      "0.27.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-366"
+  ],
+  "tldr": "Affected versions of this package are affected by a race condition in the `dispatch.go` module that creates a vulnerability that may lead to improper deletion of alerts during notification cleanup. It can allow attackers to suppress critical alerts, compromising timely incident detection and response.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/prometheus/alertmanager` library to the patch version.",
+  "vulnerable_to": "Race Condition",
+  "related_cve_id": "",
+  "language": "go",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/prometheus/alertmanager/blob/main/CHANGELOG.md",
+  "last_modified": "2025-01-16",
+  "published": "2025-01-16"
+}

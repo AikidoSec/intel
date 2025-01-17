@@ -1,0 +1,26 @@
+{
+  "package_name": "@firebase/util",
+  "patch_versions": [
+    "11.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "9.8.4",
+      "11.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1204"
+  ],
+  "tldr": "Affected versions of this package are affected by insecure randomness due to the use of `Math.random()` in a Firebase custom UUID function that could create significant security vulnerabilities. This weak random number generator enables potential attackers to predict UUIDs, which can lead to collisions and unauthorized access to resources.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `firebase` library to the patch version.",
+  "vulnerable_to": "Generation of Weak Initialization Vector",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 18,
+  "changelog": "https://github.com/firebase/firebase-js-sdk/releases/tag/firebase%4011.2.0",
+  "last_modified": "2025-01-17",
+  "published": "2025-01-17"
+}

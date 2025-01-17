@@ -1,5 +1,5 @@
 {
-  "package_name": "firebase",
+  "package_name": "@firebase/util",
   "patch_versions": [
     "11.2.0"
   ],

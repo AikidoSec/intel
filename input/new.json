@@ -1,15 +1,18 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "grpc-okhttp",
+  "patch_versions": ["1.69.1", "1.68.3"],
+  "vulnerable_ranges": [
+    ["1.69.0", "1.69.0"],
+    ["0.7.2", "1.68.2"]
+  ],
+  "cwe": ["CWE-295"],
+  "tldr": "Affected versions of this package are affected by a vulnerability in the `verifyHostName` method of `OkHostnameVerifier.java` that may allow a certificate to be accepted incorrectly for the wrong domain due to improper cryptographic implementation. This flaw could lead to remote information disclosure without the need for additional execution privileges. Exploitation of this vulnerability does not require user interaction. It affects Android versions 8.1, 9, 10, and 11.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `grpc-okhttp` library to the patch version.",
+  "vulnerable_to": "Improper Certificate Validation",
+  "related_cve_id": "CVE-2021-0341",
+  "language": "Java",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/grpc/grpc-java/releases"
 }

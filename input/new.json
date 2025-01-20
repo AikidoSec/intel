@@ -5,7 +5,7 @@
     ["1.17.0", "1.20.10"]
   ],
   "cwe": ["CWE-497"],
-  "tldr": "Affected versions of this package possess insecure handling of JWT tokens when running in server-side rendering (SSR) contexts. Specifically, when a guest user adds a product to their cart and enters shipping details, clicking "Continue to delivery" directly links the cart to the email of the last registered user. An attacker could exploit this vulnerability to gain unauthorized access to the data of registered users.",
+  "tldr": "Affected versions of this package possess insecure handling of JWT tokens when running in server-side rendering (SSR) contexts. Specifically, when a guest user adds a product to their cart and enters shipping details, clicking `Continue to delivery` directly links the cart to the email of the last registered user. An attacker could exploit this vulnerability to gain unauthorized access to the data of registered users.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `@medusajs/medusa` library to the patch version.",
   "vulnerable_to": "Information Disclosure",

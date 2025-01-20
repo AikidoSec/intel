@@ -1,0 +1,26 @@
+{
+  "package_name": "webklex/php-imap",
+  "patch_versions": [
+    "6.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.4.2",
+      "6.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-290"
+  ],
+  "tldr": "Affected versions of this package are affected by an insecure identity validation that may lead to email spoofing when `php-imap` recognizes the legitimate sender but lacks the envelope-from attribute in the headers, making it possible to spoof that attribute. This vulnerability enables attackers to forge sender identities, facilitating phishing and social engineering attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `webklex/php-imap` library to the patch version.",
+  "vulnerable_to": "Authentication Bypass by Spoofing",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "HIGH",
+  "aikido_score": 81,
+  "changelog": "https://github.com/Webklex/php-imap/releases/tag/6.1.0",
+  "last_modified": "2025-01-20",
+  "published": "2025-01-20"
+}

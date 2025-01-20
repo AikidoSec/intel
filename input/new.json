@@ -1,15 +1,30 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "io.grpc:grpc-okhttp",
+  "patch_versions": [
+    "1.68.3",
+    "1.69.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.7.0",
+      "1.68.2"
+    ],
+    [
+      "1.69.0",
+      "1.69.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-295"
+  ],
+  "tldr": "Affected versions of this package fail to properly validate security certificates. In the `verifyHostName` method of `OkHostnameVerifier.java`, a flaw in cryptographic implementation may allow acceptance of certificates for incorrect domains when using non-ASCII subjects. This vulnerability can lead to remote information disclosure without requiring user interaction or additional execution privileges.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `io.grpc:grpc-okhttp` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Certificate Validation",
+  "related_cve_id": "CVE-2021-0341",
+  "language": "JAVA",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/grpc/grpc-java/releases/tag/v1.68.3"
 }

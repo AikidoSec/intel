@@ -1,25 +1,15 @@
 {
-  "package_name": "BrazeUI",
-  "patch_versions": [
-    "11.5.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "5.0.0",
-      "11.4.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-863"
-  ],
-  "tldr": "Affected versions are vulnerable to incorrect authorization, allowing an in-app message in a Braze-provided UI to display for an ineligible user under rare conditions. This issue occurs when an in-app message is in the process of being displayed while the user is switched to a different user within the application.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `BrazeUI` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Incorrect Authorization",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "swift",
-  "severity_class": "LOW",
-  "aikido_score": 20,
-  "changelog": "https://github.com/braze-inc/braze-swift-sdk/releases/tag/11.5.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

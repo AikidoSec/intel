@@ -1,0 +1,26 @@
+{
+  "package_name": "phpmyadmin/sql-parser",
+  "patch_versions": [
+    "5.10.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "5.10.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are affected by improper handling of queries with quadratic complexity that may lead to prolonged execution times, making them susceptible to Denial of Service (DoS) attacks. Attackers could take advantage of this by sending specially crafted queries to exhaust server resources, which could disrupt normal operations.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `phpmyadmin/sql-parser` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "LOW",
+  "aikido_score": 27,
+  "changelog": "https://github.com/phpmyadmin/sql-parser/blob/master/CHANGELOG.md",
+  "last_modified": "2025-01-20",
+  "published": "2025-01-20"
+}

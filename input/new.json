@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "oban_web",
+  "patch_versions": [
+    "2.11.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.10.3",
+      "2.10.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "The newest version of `oban_web` prevents decoding executable functions when displaying recorded output. By default, recorded content uses the :safe flag now, which prevents both atom creation and executable content. This is an extra security precaution to prevent any possible exploits.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `oban_web` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "elixir",
+  "severity_class": "LOW",
+  "aikido_score": 11,
+  "changelog": "https://github.com/oban-bg/oban_web/releases/tag/v2.11.0"
 }

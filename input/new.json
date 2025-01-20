@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/juanfont/headscale",
+  "patch_versions": [
+    "0.24.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.23.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-285"
+  ],
+  "tldr": "In Headscale version `0.23.0` and earlier, OIDC user identification relies on either the \"username\" part of an email address (when `strip_email_domain` is true, the default) or the full email address (when `strip_email_domain` is false). This approach has the following issues:\n\n1. Account Takeover Risk: A malicious user with an Identity Provider (IdP) account can exploit the use of the email claim to take over another user's Headscale account, even if `strip_email_domain` is set to false.\n\n2. Account Access Loss: If a legitimate user changes their email address, they lose access to their Headscale account due to the reliance on the email claim.\n\nThese vulnerabilities are addressed in Headscale version `0.24.0`, which identifies OIDC users by the `iss` and `sub` claims. These claims are stable and unique as per the OIDC specification, ensuring account integrity and persistence even if a user's email address changes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/juanfont/headscale` library to the patch version.",
+  "vulnerable_to": "Authorization Bypass",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "CRITICAL",
+  "aikido_score": 98,
+  "changelog": "https://github.com/juanfont/headscale/blob/main/CHANGELOG.md"
 }

@@ -12,7 +12,7 @@
   "cwe": [
     "CWE-200"
   ],
-  "tldr": "The newest version of `oban_web` prevents decoding executable functions when displaying recorded output. By default, recorded content uses the :safe flag now, which prevents both atom creation and executable content. This is an extra security precaution to prevent any possible exploits.",
+  "tldr": "The latest version of `oban_web` enhances security by preventing the decoding of executable functions when displaying recorded output. By default, recorded content now uses the `:safe` flag, which blocks both atom creation and executable content. This change adds an extra layer of protection against potential exploits.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `oban_web` library to the patch version.",
   "reporter": "",

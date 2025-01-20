@@ -1,5 +1,5 @@
 {
-  "package_name": "io.grpc:grpc-okhttp",
+  "package_name": "grpc-okhttp",
   "patch_versions": [
     "1.68.3",
     "1.69.1"
@@ -19,7 +19,7 @@
   ],
   "tldr": "Affected versions of this package fail to properly validate security certificates. In the `verifyHostName` method of `OkHostnameVerifier.java`, a flaw in cryptographic implementation may allow acceptance of certificates for incorrect domains when using non-ASCII subjects. This vulnerability can lead to remote information disclosure without requiring user interaction or additional execution privileges.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `io.grpc:grpc-okhttp` library to the patch version.",
+  "how_to_fix": "Upgrade the `grpc-okhttp` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Improper Certificate Validation",
   "related_cve_id": "CVE-2021-0341",

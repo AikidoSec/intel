@@ -1,15 +1,17 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@scalar/code-highlight",
+  "patch_versions": ["0.20.0"],
+  "vulnerable_ranges": [
+    ["0.0.6", "0.0.19"]
+  ],
+  "cwe": ["CWE-624"],
+  "tldr": "Affected versions of this package are affected by Regular Expression Denial of Service (ReDoS) due to a dynamic regex creation within the credential wrapper, which can result in catastrophic backtracking if the input array includes complex or overlapping patterns. An attacker could craft a large credentials array or inject special characters to cause excessive processing, leading to ReDoS.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@scalar/code-highlight` library to the patch version.",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 23,
+  "changelog": "https://github.com/scalar/scalar/blob/main/packages/code-highlight/CHANGELOG.md"
 }

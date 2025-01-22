@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "mysql-connector-python",
+  "patch_versions": [
+    "9.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "9.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to remote code execution (RCE) due to improper validation and handling of configuration files. Specifically, an attacker can craft a malicious configuration file containing arbitrary code or commands that the application processes unsafely. When the application reads and executes the contents of this file, the embedded code runs with the same privileges as the application, allowing the attacker to execute arbitrary commands on the host system.",
+  "doest_this_affect_me": "You are affected if you are using a version of this package <= 9.1.0.",
+  "how_to_fix": "Upgrade the `mysql-connector-python` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Remote Code Execution (RCE)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "python",
+  "severity_class": "LOW",
+  "aikido_score": 35,
+  "changelog": "https://github.com/mysql/mysql-connector-python/blob/trunk/CHANGES.txt"
 }

@@ -1,15 +1,30 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "electron",
+  "patch_versions": [
+    "32.3.0",
+    "33.3.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "32.0.0",
+      "32.2.8"
+    ],
+    [
+      "33.0.0",
+      "33.3.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79",
+    "CWE-125"
+  ],
+  "tldr": "Affected versions of this package are affected by a out of bounds memory access vulnerability in Chrome's V8 engine prior to version 132.0.6834.83. This vulnerability allows attackers to exploit heap corruption through a specially crafted HTML page.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `electron` library to a patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "CVE-2025-0434",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://github.com/electron/electron/releases/tag/v33.3.2"
 }

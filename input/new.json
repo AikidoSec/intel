@@ -1,7 +1,7 @@
 {
   "package_name": "io.insert-koin:koin-core",
   "patch_versions": [
-    "4.0.2-RC2"
+    "4.0.2"
   ],
   "vulnerable_ranges": [
     [

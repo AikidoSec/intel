@@ -1,0 +1,27 @@
+{
+  "package_name": "gradio",
+  "patch_versions": [
+    "5.13.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.41.0",
+      "5.12.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Regular Expression Denial of Service (ReDoS) in the `remove_html_tags` util function. A crafted input with patterns designed to trigger excessive backtracking in the regular expression can cause the function to consume excessive CPU resources, potentially leading to a denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `gradio` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/gradio-app/gradio/releases/tag/gradio%405.13.0",
+  "last_modified": "2025-01-23",
+  "published": "2025-01-23"
+}

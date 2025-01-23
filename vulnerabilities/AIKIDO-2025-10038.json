@@ -1,0 +1,27 @@
+{
+  "package_name": "@graphql-mesh/string-interpolation",
+  "patch_versions": [
+    "0.5.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.2",
+      "0.5.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package actively expose sensitive information in log files by improperly logging information in the `applyModifiers` method in case of an error. This vulnerability allows for the unintentional disclosure of sensitive data, potentially leading to security risks such as unauthorized access or leakage of private information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@graphql-mesh/string-interpolation` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/ardatan/graphql-mesh/blob/master/packages/string-interpolation/CHANGELOG.md",
+  "last_modified": "2025-01-23",
+  "published": "2025-01-23"
+}

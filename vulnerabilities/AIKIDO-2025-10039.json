@@ -1,0 +1,42 @@
+{
+  "package_name": "johnpbloch/wordpress-core",
+  "patch_versions": [
+    "5.9.7",
+    "6.0.5",
+    "6.1.3",
+    "6.2.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.9.0",
+      "5.9.6"
+    ],
+    [
+      "6.0.0",
+      "6.0.4"
+    ],
+    [
+      "6.1.0",
+      "6.1.2"
+    ],
+    [
+      "6.2.0",
+      "6.2.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-349"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to the acceptance of extraneous untrusted data alongside trusted data during the processing of shortcodes in user-generated content. This flaw allows an attacker to inject and manipulate content by submitting crafted comments or other forms of input. Exploiting this vulnerability can alter content display or functionality, potentially misleading users, disrupting application behavior, or introducing malicious elements.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `johnpbloch/wordpress-core` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Acceptance of Extraneous Untrusted Data With Trusted Data",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 69,
+  "changelog": "https://wordpress.org/news/2023/05/wordpress-6-2-2-security-release/",
+  "last_modified": "2025-01-24",
+  "published": "2025-01-24"
+}

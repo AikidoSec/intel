@@ -1,24 +1,15 @@
 {
-  "package_name": "@wordpress/url",
-  "patch_versions": [
-    "3.7.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.0.0",
-      "3.7.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-915"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to improperly controlled modification of dynamically determined object attributes via the block editor. This vulnerability allows an attacker to manipulate the object prototype by injecting malicious scripts. As a result, the attacker can potentially gain unauthorized access, modify sensitive data, or disrupt application behavior, compromising the security and integrity of the system.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@wordpress/url` library to the patch version.",
-  "vulnerable_to": "Improperly Controlled Modification of Dynamically-Determined Object Attributes",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://github.com/WordPress/gutenberg/pull/39365"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

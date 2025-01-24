@@ -1,0 +1,26 @@
+{
+  "package_name": "espressif.esp-idf",
+  "patch_versions": [
+    "5.0.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.1-beta1",
+      "5.0.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "A vulnerability exists in the Wifi component in the `hostapd` and `wpa_supplicant` implementations of SAE (Simultaneous Authentication of Equals) with the hash-to-element (H2E) option. This flaw allows an attacker to modify SAE commit messages, bypassing downgrade protection for group negotiation in certain scenarios. \n\nThe issue arises when both the access point (AP) and station (STA) use SAE H2E and support multiple groups. The attacker can exploit this to force the negotiation of a weaker group, compromising the security of the connection. However, the vulnerability does not affect the default configuration since:\n1. The H2E option is not enabled by default.\n2. The default SAE group configuration in `hostapd` typically enables only one group, which prevents this attack.\n\nThis vulnerability is only applicable if the H2E option is enabled and `hostapd` is explicitly configured to support multiple groups.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `espressif.esp-idf` library to the patch version.",
+  "vulnerable_to": "Improper Access Control",
+  "related_cve_id": "",
+  "language": "c++",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/espressif/esp-idf/releases/tag/v5.0.8",
+  "last_modified": "2025-01-24",
+  "published": "2025-01-24"
+}

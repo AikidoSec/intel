@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "requirejs",
+  "patch_versions": [
+    "2.3.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.3.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution through the `config()` function. This occurs because the function fails to properly sanitize the content of its parameters, allowing an attacker to manipulate the prototype of built-in JavaScript objects. Exploiting this vulnerability can lead to unexpected application behavior, data corruption, or security issues, as malicious properties may be injected into objects globally.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `requirejs` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 62,
+  "changelog": "https://github.com/requirejs/requirejs/commit/ebd7a2ff71473542fa132d0d15c10fb4ed1539e1"
 }

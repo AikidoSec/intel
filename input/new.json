@@ -37,5 +37,5 @@
   "language": "PHP",
   "severity_class": "MEDIUM",
   "aikido_score": 69,
-  "changelog": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-core/wordpress-core-603-authenticated-admin-stored-cross-site-scripting-via-customizer"
+  "changelog": "https://wordpress.org/news/2023/05/wordpress-6-2-2-security-release/"
 }

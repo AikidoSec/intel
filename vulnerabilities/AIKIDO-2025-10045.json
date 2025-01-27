@@ -1,0 +1,132 @@
+{
+  "package_name": "johnpbloch/wordpress-core",
+  "patch_versions": [
+    "4.1.38",
+    "4.2.35",
+    "4.3.31",
+    "4.4.30",
+    "4.5.29",
+    "4.6.26",
+    "4.7.26",
+    "4.8.22",
+    "4.9.23",
+    "5.0.19",
+    "5.1.16",
+    "5.2.18",
+    "5.3.15",
+    "5.4.13",
+    "5.5.12",
+    "5.6.11",
+    "5.7.9",
+    "5.8.7",
+    "5.9.6",
+    "6.0.4",
+    "6.1.2",
+    "6.2.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.1.0",
+      "4.1.37"
+    ],
+    [
+      "4.2.0",
+      "4.2.34"
+    ],
+    [
+      "4.3.0",
+      "4.3.30"
+    ],
+    [
+      "4.4.0",
+      "4.4.29"
+    ],
+    [
+      "4.5.0",
+      "4.5.28"
+    ],
+    [
+      "4.6.0",
+      "4.6.25"
+    ],
+    [
+      "4.7.0",
+      "4.7.25"
+    ],
+    [
+      "4.8.0",
+      "4.8.21"
+    ],
+    [
+      "4.9.0",
+      "4.9.22"
+    ],
+    [
+      "5.0.0",
+      "5.0.18"
+    ],
+    [
+      "5.1.0",
+      "5.1.15"
+    ],
+    [
+      "5.2.0",
+      "5.2.17"
+    ],
+    [
+      "5.3.0",
+      "5.3.14"
+    ],
+    [
+      "5.4.0",
+      "5.4.12"
+    ],
+    [
+      "5.5.0",
+      "5.5.11"
+    ],
+    [
+      "5.6.0",
+      "5.6.8"
+    ],
+    [
+      "5.7.0",
+      "5.7.6"
+    ],
+    [
+      "5.8.0",
+      "5.8.5"
+    ],
+    [
+      "5.9.0",
+      "5.9.4"
+    ],
+    [
+      "6.0.0",
+      "6.0.3"
+    ],
+    [
+      "6.1.0",
+      "6.1.1"
+    ],
+    [
+      "6.2.0",
+      "6.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) due to insufficient sanitization of block attributes. An attacker with authenticated access and contributor-level or higher permissions can exploit this by manipulating block attributes to embed arbitrary content within HTML comments on the page. This allows the attacker to inject and execute malicious scripts in the context of the victim's browser, potentially leading to data theft, session hijacking, or other malicious activities.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `johnpbloch/wordpress-core` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 51,
+  "changelog": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-core/wordpress-core-621-insufficient-sanitization-of-block-attributes?asset_slug=wordpress",
+  "last_modified": "2025-01-27",
+  "published": "2025-01-27"
+}

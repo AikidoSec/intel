@@ -1,15 +1,17 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@nuxt/content",
+  "patch_versions": ["3.0.1"],
+  "vulnerable_ranges": [
+    ["3.0.0", "3.0.0"]
+  ],
+  "cwe": ["CWE-1286"],
+  "tldr": "Affected versions of this package are affected by a design flaw when handling SQL queries that involve user inputs before proper validation. While frontend frameworks generally offer robust protection against injection attacks, this vulnerability can lead to unauthorized access to data, data corruption, or even a compromise of the database. This risk arises from the failure to validate the query before execution, which undermines the overall security.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@nuxt/content` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 28,
+  "changelog": "https://github.com/nuxt/content/releases/tag/v3.0.1"
 }

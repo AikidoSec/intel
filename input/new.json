@@ -1,15 +1,135 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "johnpbloch/wordpress-core",
+  "patch_versions": [
+    "3.7.38",
+    "3.8.38",
+    "3.9.36",
+    "4.0.35",
+    "4.1.35",
+    "4.2.32",
+    "4.3.28",
+    "4.4.27",
+    "4.5.26",
+    "4.6.23",
+    "4.7.23",
+    "4.8.19",
+    "4.9.20",
+    "5.0.16",
+    "5.1.13",
+    "5.2.15",
+    "5.3.12",
+    "5.4.10",
+    "5.5.9",
+    "5.6.8",
+    "5.7.6",
+    "5.8.4",
+    "5.9.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "3.7.37"
+    ],
+    [
+      "3.8.0",
+      "3.8.37"
+    ],
+    [
+      "3.9.0",
+      "3.9.35"
+    ],
+    [
+      "4.0.0",
+      "4.0.34"
+    ],
+    [
+      "4.1.0",
+      "4.1.34"
+    ],
+    [
+      "4.2.0",
+      "4.2.31"
+    ],
+    [
+      "4.3.0",
+      "4.3.27"
+    ],
+    [
+      "4.4.0",
+      "4.4.26"
+    ],
+    [
+      "4.5.0",
+      "4.5.25"
+    ],
+    [
+      "4.6.0",
+      "4.6.22"
+    ],
+    [
+      "4.7.0",
+      "4.7.22"
+    ],
+    [
+      "4.8.0",
+      "4.8.18"
+    ],
+    [
+      "4.9.0",
+      "4.9.19"
+    ],
+    [
+      "5.0.0",
+      "5.0.15"
+    ],
+    [
+      "5.1.0",
+      "5.1.12"
+    ],
+    [
+      "5.2.0",
+      "5.2.14"
+    ],
+    [
+      "5.3.0",
+      "5.3.11"
+    ],
+    [
+      "5.4.0",
+      "5.4.9"
+    ],
+    [
+      "5.5.0",
+      "5.5.8"
+    ],
+    [
+      "5.6.0",
+      "5.6.7"
+    ],
+    [
+      "5.7.0",
+      "5.7.5"
+    ],
+    [
+      "5.8.0",
+      "5.8.3"
+    ],
+    [
+      "5.9.0",
+      "5.9.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-915"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improperly controlled modification of dynamically determined object attributes through the block editor. This occurs because the block editor fails to properly restrict or validate dynamically assigned object attributes. An attacker can exploit this vulnerability to manipulate the object prototype, potentially injecting malicious scripts. This can lead to unauthorized access, data modification, or disruption of application behavior, posing significant security risks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `johnpbloch/wordpress-core` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improperly Controlled Modification of Dynamically-Determined Object Attributes",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 51,
+  "changelog": "https://wordpress.org/news/2022/03/wordpress-5-9-2-security-maintenance-release/"
 }

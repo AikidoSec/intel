@@ -1,105 +1,15 @@
 {
-  "package_name": "johnpbloch/wordpress-core",
-  "patch_versions": [
-    "4.7.27",
-    "4.8.23",
-    "4.9.24",
-    "5.0.20",
-    "5.1.17",
-    "5.2.19",
-    "5.3.16",
-    "5.4.14",
-    "5.5.13",
-    "5.6.12",
-    "5.7.10",
-    "5.8.8",
-    "5.9.8",
-    "6.0.6",
-    "6.1.4",
-    "6.2.3",
-    "6.3.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "4.7.0",
-      "4.7.26"
-    ],
-    [
-      "4.8.0",
-      "4.8.22"
-    ],
-    [
-      "4.9.0",
-      "4.9.23"
-    ],
-    [
-      "5.0.0",
-      "5.0.19"
-    ],
-    [
-      "5.1.0",
-      "5.1.16"
-    ],
-    [
-      "5.2.0",
-      "5.2.18"
-    ],
-    [
-      "5.3.0",
-      "5.3.15"
-    ],
-    [
-      "5.4.0",
-      "5.4.13"
-    ],
-    [
-      "5.5.0",
-      "5.5.12"
-    ],
-    [
-      "5.6.0",
-      "5.6.11"
-    ],
-    [
-      "5.7.0",
-      "5.7.9"
-    ],
-    [
-      "5.8.0",
-      "5.8.7"
-    ],
-    [
-      "5.9.0",
-      "5.9.7"
-    ],
-    [
-      "6.0.0",
-      "6.0.5"
-    ],
-    [
-      "6.1.0",
-      "6.1.3"
-    ],
-    [
-      "6.2.0",
-      "6.2.2"
-    ],
-    [
-      "6.3.0",
-      "6.3.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Denial of Service (DoS). This vulnerability occurs due to improper handling of the `X-HTTP-Method-Override` header in REST endpoint requests. If a request results in a `4xx` error, the response can be cached incorrectly. An attacker can exploit this behavior to cause inconsistent states or service disruptions by manipulating cached error responses, potentially impacting the application's reliability and availability.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `johnpbloch/wordpress-core` library to a patch version.",
-  "reporter": "",
-  "vulnerable_to": "Denial of Service (DoS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 53,
-  "changelog": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-core/wordpress-core-470-631-denial-of-service-via-cache-poisoning?asset_slug=wordpress"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

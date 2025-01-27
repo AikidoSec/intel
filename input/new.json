@@ -1,25 +1,15 @@
 {
-  "package_name": "@wordpress/block-library",
-  "patch_versions": [
-    "8.3.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "7.3.2",
-      "8.3.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) due to insufficient output escaping of user-supplied input. An attacker can exploit this vulnerability by crafting malicious inputs that are rendered unescaped in the application's output. This allows the attacker to inject and execute arbitrary scripts in the context of the victim's browser, potentially leading to data theft, session hijacking, or other malicious activities.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@wordpress/block-library` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 61,
-  "changelog": "https://www.wordfence.com/threat-intel/vulnerabilities/detail/wordpress-core-603-gutenberg-1431-authenticated-cross-site-scripting-in-various-blocks"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

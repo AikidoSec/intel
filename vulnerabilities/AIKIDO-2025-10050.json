@@ -1,0 +1,26 @@
+{
+  "package_name": "System.Linq.Dynamic.Core",
+  "patch_versions": [
+    "1.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.7",
+      "1.5.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-497"
+  ],
+  "tldr": "Affected versions of this package are affected by a property validation flaw caused by insufficient restrictions on types and members accessed through user-provided expressions. This vulnerability allows attackers to manipulate properties and static fields remotely using dynamic LINQ queries. By exploiting this flaw, attackers can bypass security measures, gain unauthorized access to sensitive information, and alter system configurations, potentially leading to critical data leakage and privilege escalation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `System.Linq.Dynamic.Core` library to the patch `preview` version and then upgrade it to a stable version when available.",
+  "vulnerable_to": "System Information Disclosure",
+  "related_cve_id": "CVE-2024-51417",
+  "language": "dotnet",
+  "severity_class": "HIGH",
+  "aikido_score": 92,
+  "changelog": "https://github.com/zzzprojects/System.Linq.Dynamic.Core/blob/master/CHANGELOG.md",
+  "last_modified": "2025-01-27",
+  "published": "2025-01-27"
+}

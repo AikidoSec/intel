@@ -18,7 +18,7 @@
   "reporter": "",
   "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "PHP",
+  "language": "JS",
   "severity_class": "MEDIUM",
   "aikido_score": 61,
   "changelog": "https://www.wordfence.com/threat-intel/vulnerabilities/detail/wordpress-core-603-gutenberg-1431-authenticated-cross-site-scripting-in-various-blocks"

@@ -1,140 +1,15 @@
 {
-  "package_name": "johnpbloch/wordpress-core",
-  "patch_versions": [
-    "3.7.40",
-    "3.8.40",
-    "3.9.38",
-    "4.0.37",
-    "4.1.37",
-    "4.2.34",
-    "4.3.30",
-    "4.4.29",
-    "4.5.28",
-    "4.6.25",
-    "4.7.25",
-    "4.8.21",
-    "4.9.22",
-    "5.0.18",
-    "5.1.15",
-    "5.2.17",
-    "5.3.14",
-    "5.4.12",
-    "5.5.11",
-    "5.6.10",
-    "5.7.8",
-    "5.8.6",
-    "5.9.5",
-    "6.0.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "3.7.39"
-    ],
-    [
-      "3.8.0",
-      "3.8.39"
-    ],
-    [
-      "3.9.0",
-      "3.9.37"
-    ],
-    [
-      "4.0.0",
-      "4.0.36"
-    ],
-    [
-      "4.1.0",
-      "4.1.36"
-    ],
-    [
-      "4.2.0",
-      "4.2.33"
-    ],
-    [
-      "4.3.0",
-      "4.3.29"
-    ],
-    [
-      "4.4.0",
-      "4.4.28"
-    ],
-    [
-      "4.5.0",
-      "4.5.27"
-    ],
-    [
-      "4.6.0",
-      "4.6.24"
-    ],
-    [
-      "4.7.0",
-      "4.7.24"
-    ],
-    [
-      "4.8.0",
-      "4.8.20"
-    ],
-    [
-      "4.9.0",
-      "4.9.21"
-    ],
-    [
-      "5.0.0",
-      "5.0.17"
-    ],
-    [
-      "5.1.0",
-      "5.1.14"
-    ],
-    [
-      "5.2.0",
-      "5.2.16"
-    ],
-    [
-      "5.3.0",
-      "5.3.13"
-    ],
-    [
-      "5.4.0",
-      "5.4.11"
-    ],
-    [
-      "5.5.0",
-      "5.5.10"
-    ],
-    [
-      "5.6.0",
-      "5.6.9"
-    ],
-    [
-      "5.7.0",
-      "5.7.7"
-    ],
-    [
-      "5.8.0",
-      "5.8.5"
-    ],
-    [
-      "5.9.0",
-      "5.9.4"
-    ],
-    [
-      "6.0.0",
-      "6.0.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-352"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Cross-site Request Forgery (CSRF) due to improper request handling in `wp-trackback.php`. An attacker can exploit this vulnerability by tricking a user into making a crafted request to this endpoint, allowing the attacker to assume the user's identity and perform actions on their behalf. This can result in unauthorized actions such as data modification or privilege escalation within the application.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `johnpbloch/wordpress-core` library to a patch version.",
-  "reporter": "",
-  "vulnerable_to": "Cross-Site Request Forgery (CSRF)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "HIGH",
-  "aikido_score": 88,
-  "changelog": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-core/wordpress-core-603-cross-site-request-forgery-via-wp-trackbackphp?asset_slug=wordpress"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

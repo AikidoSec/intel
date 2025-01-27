@@ -1,0 +1,27 @@
+{
+  "package_name": "directus",
+  "patch_versions": [
+    "11.3.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "9.17.0",
+      "11.3.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) through the `layout_options` parameter due to improper sanitization of user input in the `setContent` function. An attacker can inject malicious JavaScript into unsanitized DOM elements, which are later rendered by the client, allowing the execution of arbitrary scripts in the context of the user's session. Exploiting this vulnerability requires the attacker to have permissions to modify or create presets for other users or to chain the attack with another vulnerability to escalate privileges.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `directus` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 51,
+  "changelog": "https://github.com/directus/directus/releases/tag/v11.3.3",
+  "last_modified": "2025-01-27",
+  "published": "2025-01-27"
+}

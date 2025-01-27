@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "johnpbloch/wordpress-core",
+  "patch_versions": [
+    "6.3.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.3.0",
+      "6.3.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) due to insufficient input sanitization and output escaping in the footnotes block. An attacker can exploit this by injecting malicious web scripts into the footnotes block. These scripts will execute whenever a user accesses a page containing the injected content, potentially leading to data theft, session hijacking, or other malicious activities.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `johnpbloch/wordpress-core` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
   "changelog": ""
 }

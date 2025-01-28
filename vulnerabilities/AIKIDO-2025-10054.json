@@ -18,8 +18,8 @@
   "vulnerable_to": "Arbitrary Code Execution",
   "related_cve_id": "",
   "language": "Python",
-  "severity_class": "CRITICAL",
-  "aikido_score": 100,
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
   "changelog": "https://github.com/pypa/pip/blob/main/NEWS.rst",
   "last_modified": "2025-01-28",
   "published": "2025-01-28"

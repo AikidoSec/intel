@@ -1,0 +1,26 @@
+{
+  "package_name": "vllm",
+  "patch_versions": [
+    "0.7.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.3.0",
+      "0.6.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Affected versions of this package are affected by unsafe deserialization due to the use of `torch.load` with the `weights_only` parameter set to its default value of False. This function uses pickle for deserialization, which is insecure when handling untrusted data. This vulnerability can lead to arbitrary code execution if a malicious model is loaded. An attacker could exploit this by uploading a harmful model file, affecting unsuspecting users of vLLM.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `vllm` library to the patch version.",
+  "vulnerable_to": "Unsafe Deserialization",
+  "related_cve_id": "CVE-2025-24357",
+  "language": "Python",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/vllm-project/vllm/releases/tag/v0.7.0",
+  "last_modified": "2025-01-28",
+  "published": "2025-01-28"
+}

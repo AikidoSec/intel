@@ -1,17 +1,15 @@
 {
-  "package_name": "pip",
-  "patch_versions": ["25.0.0"],
-  "vulnerable_ranges": [
-    ["24.1.0", "24.3.1"]
-  ],
-  "cwe": ["CWE-78"],
-  "tldr": "Affected versions of this package are affected by a design flaw when handling lazy imports that allow a malicious `.whl` file to overwrite critical modules, such as `pip/_internal/self_outdated_check.py`, during installation. When `pip` dynamically imports the modified module, the rogue code executes, enabling arbitrary code execution. An attacker could exploit this vulnerability to force systems to install untrusted packages or execute malicious code.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `pip` library to the patch version.",
-  "vulnerable_to": "Arbitrary Code Execution",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Python",
-  "severity_class": "CRITICAL",
-  "aikido_score": 100,
-  "changelog": "https://github.com/pypa/pip/blob/main/NEWS.rst"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

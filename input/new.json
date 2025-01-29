@@ -2,7 +2,7 @@
   "package_name": "twig/twig",
   "patch_versions": ["3.19.0"],
   "vulnerable_ranges": [
-    ["3.17.0" "3.18.0"]
+    ["3.17.0", "3.18.0"]
   ],
   "cwe": ["CWE-20"],
   "tldr": "Affected versions of this package are affected by a design flaw that arises from inadequate input validation, specifically relating to the improper handling of escaping and null values when processing dynamic inputs in conjunction with the `??` operator. This vulnerability exposes the system to potential exploitation by malicious actors, who may leverage the weaknesses to execute injection attacks.",

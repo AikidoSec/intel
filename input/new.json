@@ -5,7 +5,7 @@
     ["3.17.0" "3.18.0"]
   ],
   "cwe": ["CWE-20"],
-  "tldr": "Affected versions of this package are affected by a design flaw that arises from inadequate input validation, specifically relating to the improper handling of escaping and null values when processing dynamic inputs in conjunction with the `??` operator. This vulnerability exposes the system to potential exploitation by malicious actors, who may leverage the weaknesses to execute  Cross-site Scripting (XSS) attacks.",
+  "tldr": "Affected versions of this package are affected by a design flaw that arises from inadequate input validation, specifically relating to the improper handling of escaping and null values when processing dynamic inputs in conjunction with the `??` operator. This vulnerability exposes the system to potential exploitation by malicious actors, who may leverage the weaknesses to execute injection attacks.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `twig/twig` library to the patch version.",
   "vulnerable_to": "Improper Input Validation",

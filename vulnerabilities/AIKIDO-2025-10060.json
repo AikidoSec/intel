@@ -1,0 +1,26 @@
+{
+  "package_name": "torch",
+  "patch_versions": [
+    "2.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.5.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "By default, affected versions of this package handle unpickling with `weights_only=False`, which relies on Python's insecure pickle module, allowing the execution of arbitrary code embedded in malicious pickle files. Attackers can exploit this flaw for remote code execution (RCE). The current patched version fixes it by setting `weights_only=True` by default, which mitigates the risk by restricting unpickling to safe tensor classes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `torch` library to the patch version.",
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "",
+  "language": "Python",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/pytorch/pytorch/releases/tag/v2.6.0",
+  "last_modified": "2025-01-29",
+  "published": "2025-01-29"
+}

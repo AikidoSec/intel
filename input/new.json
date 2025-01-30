@@ -11,7 +11,7 @@
     "CWE-123"
   ],
   "tldr": "In this case, the `fast_float::common::AsciiStr::first` method within the `AsciiStr` struct uses the unsafe keyword to reading from memory without performing bounds checking. Specifically, it directly dereferences a pointer offset by `self.ptr`. Because of the above reason, the method accesses invalid memory address when it takes an empty string as its input. This approach violates Rust’s memory safety guarantees, as it can lead to invalid memory access if empty buffer is provided.\nNo patched version for `fast-float` crate has been released, but a patch is available in the `fast-float2` fork.",
-  "doest_this_affect_me": "You are affected if you use `polyfill-io-feature-detection`.",
+  "doest_this_affect_me": "You are affected if you use the `fast-float` package.",
   "how_to_fix": "Remove `fast-float` from your application and replace with the `fast-float2` package version `>=0.2.2`.",
   "reporter": "",
   "vulnerable_to": "Out-of-bounds Read",

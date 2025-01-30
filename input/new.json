@@ -1,25 +1,15 @@
 {
-  "package_name": "fast-float2",
-  "patch_versions": [
-    "0.2.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.2.1",
-      "0.2.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-125"
-  ],
-  "tldr": "In this case, the `fast-float2::common::AsciiStr::first` method within the `AsciiStr` struct uses the unsafe keyword to reading from memory without performing bounds checking. Specifically, it directly dereferences a pointer offset by `self.ptr`. Because of the above reason, the method accesses invalid memory address when it takes an empty string as its input. This approach violates Rust’s memory safety guarantees, as it can lead to invalid memory access if empty buffer is provided.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `fast-float2` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Out-of-bounds Read",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "LOW",
-  "aikido_score": 26,
-  "changelog": "https://github.com/aldanor/fast-float-rust/issues/38"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

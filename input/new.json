@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "laravel/framework",
+  "patch_versions": [
+    "11.41.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "8.16.0",
+      "11.41.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package expose sensitive information in log files by improperly logging confidential variables. When running `php artisan db` in a shell where the `mysql` binary is unavailable, an error occurs and is logged at the error level. Third-party logging services like Sentry may capture this error, resulting in database credentials, including the password, being displayed and stored in plain text.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `laravel/framework` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "php",
+  "severity_class": "LOW",
+  "aikido_score": 7,
+  "changelog": "https://github.com/laravel/framework/releases/tag/v11.41.1"
 }

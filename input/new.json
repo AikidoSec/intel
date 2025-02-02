@@ -12,7 +12,7 @@
   "doest_this_affect_me": "Attacker must have network access via multiple protocols to compromise MySQL Connectors. Successful attacks require human interaction from a person other than the attacker.",
   "how_to_fix": "The namespace of this package has been changed on Maven to https://mvnrepository.com/artifact/com.mysql/mysql-connector-j. Upgrade to at least version 8.2.0 of this new package.",
   "vulnerable_to": "Remote code execution",
-  "related_cve_id": " CVE-2023-22102",
+  "related_cve_id": "CVE-2023-22102",
   "language": "JAVA",
   "severity_class": "HIGH",
   "aikido_score": 75,

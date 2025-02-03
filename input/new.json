@@ -21,5 +21,6 @@
   "related_cve_id": "",
   "language": "RUST",
   "severity_class": "LOW",
+  "aikido_score": 18,
   "changelog": "https://github.com/sfackler/rust-postgres/blob/master/postgres-types/CHANGELOG.md"
 }

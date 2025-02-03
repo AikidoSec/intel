@@ -1,22 +1,17 @@
 {
-  "package_name": "mysql-connector-java",
+  "package_name": "",
   "patch_versions": [],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "8.0.33"
-    ]
-  ],
+  "vulnerable_ranges": [],
   "cwe": [],
-  "tldr": "MySQL Connectors takeover vulnerability",
-  "doest_this_affect_me": "Attacker must have network access via multiple protocols to compromise MySQL Connectors. Successful attacks require human interaction from a person other than the attacker.",
-  "how_to_fix": "The namespace of this package has been changed on Maven to https://mvnrepository.com/artifact/com.mysql/mysql-connector-j. Upgrade to at least version 8.2.0 of this new package.",
-  "vulnerable_to": "Remote code execution",
-  "related_cve_id": "CVE-2023-22102",
-  "language": "JAVA",
-  "severity_class": "HIGH",
-  "aikido_score": 75,
-  "changelog": "https://github.com/mysql/mysql-connector-j/blob/release/9.x/CHANGES",
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": "",
   "last_modified": "2025-02-03",
   "published": "2025-02-03"
 }

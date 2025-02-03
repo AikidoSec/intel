@@ -1,26 +1,15 @@
 {
-  "package_name": "@napi-rs/canvas",
-  "patch_versions": [
-    "0.1.66"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "0.1.65"
-    ]
-  ],
-  "cwe": [
-    "CWE-248",
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to uncaught exceptions. A crash occurs when calling `putImageData()` with resize parameters, leading to an unhandled exception. This issue arises due to improper handling of input parameters during image manipulation, which can cause the application to terminate unexpectedly. If not properly mitigated, this vulnerability may result in service disruptions, potential Denial-of-Service (DoS) scenarios, or unintended application behavior when processing images.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@napi-rs/canvas` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Uncaught Exception",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 18,
-  "changelog": "https://github.com/Brooooooklyn/canvas/releases/tag/v0.1.66"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

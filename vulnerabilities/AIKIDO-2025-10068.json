@@ -18,5 +18,6 @@
   "aikido_score": 75,
   "changelog": "https://github.com/mysql/mysql-connector-j/blob/release/9.x/CHANGES",
   "last_modified": "2025-02-03",
-  "published": "2025-02-03"
+  "published": "2025-02-03",
+  "only_for_path_ends_with": ".jar"
 }

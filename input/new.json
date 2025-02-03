@@ -11,7 +11,7 @@
   "vulnerable_to": "Use after free",
   "related_cve_id": "GHSA-rpmj-rpgj-qmpm",
   "language": "Rust",
-  "severity_class": "Medium",
+  "severity_class": "MEDIUM",
   "aikido_score": 63,
   "changelog": "https://github.com/sfackler/rust-openssl/blob/master/openssl/CHANGELOG.md"
 }

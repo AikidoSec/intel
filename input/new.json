@@ -1,17 +1,15 @@
 {
-  "package_name": "openssl",
-  "patch_versions": ["0.10.70"],
-  "vulnerable_ranges": [
-    ["0.10.0", "0.10.69"]
-  ],
-  "cwe": ["CWE-416"],
-  "tldr": "Affected versions of this package are affected by a design flaw arising from invalid memory access of the server buffer. The `ssl::select_next_proto` function returns a slice referencing the server's buffer but with a lifetime tied to the client's buffer. If the server buffer is deallocated first, an attacker can exploit this use-after-free vulnerability to crash the server or leak arbitrary memory contents.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `openssl` library to the patch version.",
-  "vulnerable_to": "Use after free",
-  "related_cve_id": "GHSA-rpmj-rpgj-qmpm",
-  "language": "Rust",
-  "severity_class": "MEDIUM",
-  "aikido_score": 63,
-  "changelog": "https://github.com/sfackler/rust-openssl/blob/master/openssl/CHANGELOG.md"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

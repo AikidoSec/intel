@@ -1,26 +1,15 @@
 {
-  "package_name": "github.com/ydb-platform/ydb-go-sdk/v3",
-  "patch_versions": [
-    "3.99.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.34.0",
-      "3.99.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-476",
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to an explicit null-dereference in the `internal/credentials/static.go::parseExpiresAt` function. This flaw can lead to crashes, potentially causing a Denial of Service (DoS). Proper handling of null values is necessary to prevent such issues, as it could result in system instability or unresponsiveness when exploited.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/ydb-platform/ydb-go-sdk/v3` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "NULL Pointer Dereference",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "LOW",
-  "aikido_score": 16,
-  "changelog": "https://github.com/ydb-platform/ydb-go-sdk/releases/tag/v3.99.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

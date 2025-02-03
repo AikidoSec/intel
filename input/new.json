@@ -1,23 +1,23 @@
 {
   "package_name": "postgres-types",
   "patch_versions": [
-    "0.2.9"
+    "3.99.2"
   ],
   "vulnerable_ranges": [
     [
-      "0.1.0",
-      "0.2.8"
+      "3.34.0",
+      "3.99.1"
     ]
   ],
   "cwe": [
-    "CWE-248",
+    "CWE-476",
     "CWE-400"
   ],
-  "tldr": "Affected versions of this package are vulnerable to uncaught exceptions. A panic occurs when attempting to retrieve a `PrimitiveDateTime` value in the `from_sql` function, if it is set to infinity. This issue can cause unexpected crashes, potential denial-of-service (DoS) conditions, or instability in applications relying on this functionality.",
+  "tldr": "Affected versions of this package are vulnerable to a explicit null-dereference in the `internal/credentials/static.go::parseExpiresAt` function. This flaw can lead to crashes, potentially causing a Denial of Service (DoS). Proper handling of null values is necessary to prevent such issues, as it could result in system instability or unresponsiveness when exploited.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `postgres-types` library to the patch version.",
   "reporter": "",
-  "vulnerable_to": "Uncaught Exception",
+  "vulnerable_to": "NULL Pointer Dereference",
   "related_cve_id": "",
   "language": "RUST",
   "severity_class": "LOW",

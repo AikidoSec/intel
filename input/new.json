@@ -1,15 +1,30 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "apoc",
+  "patch_versions": [
+    "4.4.0.35",
+    "5.26.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.2.0.4",
+      "4.4.0.34"
+    ],
+    [
+      "5.0.0",
+      "5.25.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package actively expose sensitive information in log files by improperly logging the JDBC password in query.log. This vulnerability allows for the unintentional disclosure of sensitive data, potentially leading to security risks such as unauthorized access or leakage of private information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `org.neo4j.procedure:apoc` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JAVA",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases/tag/4.4.0.35"
 }

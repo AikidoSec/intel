@@ -1,26 +1,15 @@
 {
-  "package_name": "github.com/ydb-platform/ydb-go-sdk/v3",
-  "patch_versions": [
-    "3.99.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.26.0",
-      "3.99.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-835",
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to an infinite loop in the `internal/balancer/local_dc.go::getRandomEndpoints` function. This flaw can cause the system to hang indefinitely, leading to a Denial of Service (DoS) by consuming resources and rendering the application unresponsive.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/ydb-platform/ydb-go-sdk/v3` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Infinite Loop",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 16,
-  "changelog": "https://github.com/ydb-platform/ydb-go-sdk/releases/tag/v3.99.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

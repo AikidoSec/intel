@@ -12,7 +12,7 @@
   "cwe": [
     "CWE-79"
   ],
-  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) in the `DOMPurify.sanitize` function.",
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) due to a flaw in the `DOMPurify.sanitize` function. This vulnerability allows attackers to bypass the sanitization process, potentially injecting and executing malicious scripts even when the function is used as intended.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `dompurify` library to a patch version.",
   "reporter": "",

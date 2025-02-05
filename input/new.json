@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "opentelemetry-instrumentation-redis",
+  "patch_versions": [
+    "0.26.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.24.0",
+      "0.26.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package may inadvertently expose sensitive authentication information. Since Redis 5 is a wrapper around `RedisClient`, the middleware-based instrumentation designed for `RedisClient` also applies to Redis 5. As a result, when using Redis 5, `AUTH` parameters are improperly recorded as span attributes at runtime, potentially leaking credentials and other sensitive data.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `opentelemetry-instrumentation-redis` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUBY",
+  "severity_class": "LOW",
+  "aikido_score": 21,
+  "changelog": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/releases/tag/opentelemetry-instrumentation-redis/v0.26.1"
 }

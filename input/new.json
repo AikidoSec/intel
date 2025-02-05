@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "sdd",
+  "patch_versions": [
+    "3.0.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "3.0.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "Affected versions of this package are affected by a design flaw arising when the last thread-local variable is dropped. An attacker can exploit this use-after-free vulnerability to crash the server or leak arbitrary memory contents.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `sdd` library to the patch version.",
+  "vulnerable_to": "Use after free",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Rust",
+  "severity_class": "MEDIUM",
+  "aikido_score": 47,
+  "changelog": "https://github.com/wvwwvwwv/scalable-delayed-dealloc/blob/main/CHANGELOG.md"
 }

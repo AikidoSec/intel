@@ -19,8 +19,8 @@
   "vulnerable_to": "XML External Entity Injection (XXE)",
   "related_cve_id": "CVE-2024-46455",
   "language": "python",
-  "severity_class": "HIGH",
-  "aikido_score": 75,
+  "severity_class": "CRITICAL",
+  "aikido_score": 87,
   "changelog": "https://github.com/Unstructured-IO/unstructured/releases/tag/0.14.3",
   "published": "2024-05-29",
   "last_modified": "2025-02-06"

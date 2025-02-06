@@ -1,25 +1,15 @@
 {
-  "package_name": "@nuxtjs/mdc",
-  "patch_versions": [
-    "0.13.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "0.13.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) in the `validateProp` function. The sanitization logic fails to detect all variations of malicious input, allowing attackers to inject and execute arbitrary JavaScript. This flaw may enable unauthorized actions, data theft, or session hijacking in applications that rely on the vulnerable function.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@nuxtjs/mdc` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "js",
-  "severity_class": "MEDIUM",
-  "aikido_score": 55,
-  "changelog": "https://github.com/nuxt-modules/mdc/releases/tag/v0.13.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

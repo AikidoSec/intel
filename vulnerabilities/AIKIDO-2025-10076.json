@@ -1,0 +1,26 @@
+{
+  "package_name": "litellm",
+  "patch_versions": [
+    "1.60.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.56.2",
+      "1.60.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-285"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an authorization bypass, allowing a user to modify another user's keys without the necessary privileges. This flaw enables unauthorized access to sensitive data or actions, potentially leading to privilege escalation or data integrity issues.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `litellm` library to the patch version.",
+  "vulnerable_to": "Authorization Bypass",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/BerriAI/litellm/releases/tag/v1.60.4",
+  "last_modified": "2025-02-06",
+  "published": "2025-02-06"
+}

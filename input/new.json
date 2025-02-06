@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "FirebaseFirestoreInternalBinary",
+  "patch_versions": [
+    "11.8.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.14.0",
+      "11.7.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "Affected versions of the `FirebaseFirestoreInternalBinary` package are vulnerable to a **use-after-free** vulnerability in the `FormatArg` class. This occurs due to improper usage of the `absl::AlphaNum` class, which Firestore employs in an unintended manner. As a result, memory that has already been freed may be accessed, potentially leading to undefined behavior, crashes, or security exploits.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `FirebaseFirestoreInternalBinary` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Use-After-Free",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Swift",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/firebase/firebase-ios-sdk/releases/tag/11.8.0"
 }

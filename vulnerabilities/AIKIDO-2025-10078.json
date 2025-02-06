@@ -1,0 +1,27 @@
+{
+  "package_name": "unstructured",
+  "patch_versions": [
+    "0.16.20"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.6.12",
+      "0.16.19"
+    ]
+  ],
+  "cwe": [
+    "CWE-668"
+  ],
+  "tldr": "Affected versions of this package may expose resources to an unintended scope. Specifically, when processing files that support an `include` functionality, such as `rst` and `org` files, an attacker may be able to partition arbitrary local files, incorporating their contents into the processed output. This could lead to unauthorized disclosure of sensitive information or unintended file exposure.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `unstructured` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Resource to Wrong Sphere",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/Unstructured-IO/unstructured/releases/tag/0.16.20",
+  "last_modified": "2025-02-06",
+  "published": "2025-02-06"
+}

@@ -1,15 +1,40 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/cosmwasm/wasmvm",
+  "patch_versions": [
+    "1.5.8",
+    "2.0.6",
+    "2.1.5",
+    "2.2.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.10.0",
+      "1.5.7"
+    ],
+    [
+      "2.0.0",
+      "2.0.5"
+    ],
+    [
+      "2.1.0",
+      "2.1.4"
+    ],
+    [
+      "2.2.0",
+      "2.2.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-476"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a null pointer dereference. This vulnerability can be exploited to crash the chain. While the underlying bug exists in both permissioned and permissionless chains, it can only be reliably triggered by deploying a malicious contract. As a result, permissioned chains —where contract deployment is more tightly controlled— are significantly less likely to be affected.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/cosmwasm/wasmvm` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "NULL Pointer Dereference",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
+  "changelog": "https://github.com/CosmWasm/advisories/blob/main/CWAs/CWA-2025-001.md"
 }

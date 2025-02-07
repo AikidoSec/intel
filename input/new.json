@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "redoc",
+  "patch_versions": [
+    "2.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.1",
+      "2.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of `redoc` are vulnerable to prototype pollution via the `Module.mergeObjects` function located in `redoc/bundles/redoc.lib.js` at line 2. The vulnerability occurs because the `mergeObjects()` method recursively copies properties from a source object to a destination object without implementing necessary security checks. As a result, an attacker can exploit this behavior to inject malicious properties into the built-in `Object.prototype` by leveraging special properties such as `__proto__` or `constructor.prototype`. This prototype pollution can be further exploited to manipulate application logic, potentially leading to Denial of Service, Remote Code Execution, or Cross-site Scripting attacks.",
+  "doest_this_affect_me": "You are affected if you use a vulnerable version of `redoc`.",
+  "how_to_fix": "Upgrade `redoc` to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 77,
+  "changelog": "https://github.com/Redocly/redoc/blob/main/CHANGELOG.md"
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "esbuild",
+  "patch_versions": [
+    "0.25.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.3.0",
+      "0.24.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-346"
+  ],
+  "tldr": "`esbuild` permits any website to send requests to the development server and read responses due to its default CORS settings. It sets the `Access-Control-Allow-Origin: *` header for all requests, including the SSE connection, allowing unrestricted access. As a result, users relying on the serve feature risk having their source code stolen by malicious websites.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `esbuild` library to the patch version.",
+  "vulnerable_to": "Origin Validation Error",
+  "related_cve_id": "GHSA-67mh-4wv8-2f99",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/evanw/esbuild/blob/main/CHANGELOG.md"
 }

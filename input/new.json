@@ -24,7 +24,7 @@
   "vulnerable_to": "Cross-Site WebSocket Hijacking",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
+  "severity_class": "LOW",
+  "aikido_score": 21,
   "changelog": "https://github.com/lydell/elm-watch/releases/tag/v1.2.1"
 }

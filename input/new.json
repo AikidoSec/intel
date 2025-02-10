@@ -1,30 +1,15 @@
 {
-  "package_name": "elm-watch",
-  "patch_versions": [
-    "1.2.2",
-    "1.1.4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.2.0",
-      "1.2.0"
-    ],
-    [
-      "1.0.0",
-      "1.1.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-346",
-    "CWE-94"
-  ],
-  "tldr": "In affected versions, a malicious website could connect to your local `elm-watch` WebSocket and perform various actions, including reading compiled Elm JavaScript and compilation errors, accessing your terminal's background and foreground colors, changing the compilation mode (debug, standard, optimize), repositioning `elm-watch`'s browser UI, toggling the error overlay, and opening files in your editor. The last point is particularly critical because if you misconfigured your shell command for opening the editor, an attacker could execute malicious code on your computer.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `elm-watch` library to the patch version.",
-  "vulnerable_to": "Cross-Site WebSocket Hijacking",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 21,
-  "changelog": "https://github.com/lydell/elm-watch/releases/tag/v1.2.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,25 +1,15 @@
 {
-  "package_name": "markitdown",
-  "patch_versions": [
-    "0.0.1a4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1a2",
-      "0.0.1a3"
-    ]
-  ],
-  "cwe": [
-    "CWE-22"
-  ],
-  "tldr": "Affected versions of the package are vulnerable to path traversal attacks when a user uploads a malicious ZIP file using the `ZipConverter::convert` method. An attacker can craft a ZIP archive containing files with directory traversal sequences (e.g., `../`), potentially allowing them to write files outside the intended extraction directory.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `markitdown` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Path Traversal",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "python",
-  "severity_class": "HIGH",
-  "aikido_score": 85,
-  "changelog": "https://github.com/microsoft/markitdown/releases/tag/v0.0.1a4"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

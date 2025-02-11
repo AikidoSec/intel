@@ -1,0 +1,27 @@
+{
+  "package_name": "github.com/zalando/skipper",
+  "patch_versions": [
+    "0.21.268"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.12.14",
+      "0.21.267"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "The `jwt.Parse` function previously used `strings.Split` to parse its argument, which is untrusted data, by splitting on periods. This allowed a malicious request with an `Authorization` header containing `Bearer` followed by numerous period characters to trigger excessive memory allocations—approximately O(n) bytes, where n is the length of the argument, with a constant factor of around 16. This patch optimizes `jwt.Parse` to allocate O(1) bytes, even when handling such malicious inputs.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/zalando/skipper` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 32,
+  "changelog": "https://github.com/zalando/skipper/releases/tag/v0.21.268",
+  "last_modified": "2025-02-11",
+  "published": "2025-02-11"
+}

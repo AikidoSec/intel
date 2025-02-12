@@ -19,8 +19,8 @@
   "vulnerable_to": "URL Redirection to Untrusted Site ('Open Redirect')",
   "related_cve_id": "",
   "language": "js",
-  "severity_class": "MEDIUM",
-  "aikido_score": 48,
+  "severity_class": "HIGH",
+  "aikido_score": 72,
   "changelog": "https://github.com/auth0/nextjs-auth0/releases/tag/v4.0.1",
   "last_modified": "2025-02-12",
   "published": "2025-02-12"

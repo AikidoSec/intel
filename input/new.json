@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "ssr-window",
+  "patch_versions": [
+    "5.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0-beta.1",
+      "4.0.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution in the `extend` function, allowing an attacker to modify an object's prototype. This can lead to unexpected behavior, including potential security risks such as property injection, denial of service, or privilege escalation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ssr-window` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 72,
+  "changelog": "https://github.com/nolimits4web/ssr-window/releases/tag/v5.0.0"
 }

@@ -1,25 +1,15 @@
 {
-  "package_name": "@auth0/nextjs-auth0",
-  "patch_versions": [
-    "4.0.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "4.0.0",
-      "4.0.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-601"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to an open redirect due to improper sanitization of the `returnTo` parameter in the `handleLogin` function. This allows an attacker to craft malicious URLs that redirect users to arbitrary domains. The issue is a regression introduced in version 4.",
-  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix": "Upgrade the `@auth0/nextjs-auth0` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "URL Redirection to Untrusted Site ('Open Redirect')",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "js",
-  "severity_class": "MEDIUM",
-  "aikido_score": 48,
-  "changelog": "https://github.com/auth0/nextjs-auth0/releases/tag/v4.0.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

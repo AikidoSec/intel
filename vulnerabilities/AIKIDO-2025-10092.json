@@ -1,0 +1,27 @@
+{
+  "package_name": "kafka-python",
+  "patch_versions": [
+    "2.0.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.9.0",
+      "2.0.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to a race condition. The `socket` module provides a pure-Python fallback to the `socket.socketpair()` function for platforms that do not support AF_UNIX, such as Windows. This implementation uses AF_INET or AF_INET6 to create a local connected pair of sockets. However, the connection between the two sockets is not verified before returning them to the user, leaving the server socket vulnerable to a connection race from a malicious local peer.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges and if you are using Windows OS.",
+  "how_to_fix": "Upgrade the `kafka-python` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Race Condition",
+  "related_cve_id": "CVE-2024-3219",
+  "language": "python",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/dpkp/kafka-python/releases/tag/2.0.3",
+  "last_modified": "2025-02-13",
+  "published": "2025-02-13"
+}

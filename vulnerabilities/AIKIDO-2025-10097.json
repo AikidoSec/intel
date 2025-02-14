@@ -1,0 +1,27 @@
+{
+  "package_name": "@coinbase/wallet-sdk",
+  "patch_versions": [
+    "4.3.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "4.2.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-311"
+  ],
+  "tldr": "Affected versions of this package fail to encrypt sensitive data due to request signing occurring in an untrusted context. This can expose confidential information, potentially allowing attackers to intercept or manipulate signed requests.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@coinbase/wallet-sdk` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Missing Encryption of Sensitive Data",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://github.com/coinbase/coinbase-wallet-sdk/releases/tag/v4.3.0",
+  "last_modified": "2025-02-14",
+  "published": "2025-02-14"
+}

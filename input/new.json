@@ -1,19 +1,15 @@
 {
-  "package_name": "@octokit/endpoint",
-  "patch_versions": [
-    "10.1.3"
-  ],
-  "vulnerable_ranges": [
-    ["2.1.0", "10.1.2"]
-  ],
-  "cwe": ["CWE-1333"],
-  "tldr": "Affected versions of this package improperly handle user-controlled input when parsing headers for `/graphql` endpoints or URL objects in general. This can lead to excessive backtracking in regular expressions, making the application vulnerable to Regular expression Denial of Service (ReDoS). Attackers can exploit this by sending specially crafted inputs that trigger high computational overhead, potentially causing severe performance degradation, system outages, or denial of service.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@octokit/endpoint` library to the patch version.",
-  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 71,
-  "changelog": "https://github.com/octokit/endpoint.js/releases/tag/v10.1.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

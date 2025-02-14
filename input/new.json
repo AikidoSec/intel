@@ -1,25 +1,15 @@
 {
-  "package_name": "@contentstack/utils",
-  "patch_versions": [
-    "1.3.18"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.1.0",
-      "1.3.17"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) when converting JSON nodes to HTML, allowing an attacker to inject and execute malicious scripts in a user's browser.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@contentstack/utils` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "js",
-  "severity_class": "MEDIUM",
-  "aikido_score": 55,
-  "changelog": "https://github.com/contentstack/contentstack-utils-javascript/releases/tag/v1.3.18"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

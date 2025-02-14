@@ -1,0 +1,28 @@
+{
+  "package_name": "jsonpath-plus",
+  "patch_versions": [
+    "10.3.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "10.2.0",
+      "10.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-94",
+    "CWE-79"
+  ],
+  "tldr": "Several patches were applied to `jsonpath-plus` to prevent untrusted JavaScript execution when evaluating a path with the default `eval='safe'` mode. While version 10.2.0 was initially considered secure, a newly crafted payload has been discovered that still allows arbitrary JavaScript execution in safe mode by bypassing a forbidden non-string property value implicitly converted via `toString`. This enables remote code execution (RCE) in server-side contexts where `JSONPath()` is called with a user-controlled path. In client-side contexts, this can lead to cross-site scripting (XSS) if user input is used to construct the path.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `jsonpath-plus` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "CVE-2024-21534",
+  "language": "js",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://github.com/JSONPath-Plus/JSONPath/releases/tag/v10.3.0",
+  "last_modified": "2025-02-14",
+  "published": "2025-02-14"
+}

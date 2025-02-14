@@ -1,15 +1,19 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@octokit/endpoint",
+  "patch_versions": [
+    ["10.1.3"]
+  ],
+  "vulnerable_ranges": [
+    ["2.1.0", "10.1.2"]
+  ],
+  "cwe": ["CWE-1333"],
+  "tldr": "Affected versions of this package are affected by improper handling of user-controlled inputs, specifically when parsing headers or URL objects, which can lead to excessive backtracking in regular expressions, potentially resulting in Regular Expression Denial of Service (ReDoS). Attackers may exploit this vulnerability by sending specially crafted inputs that can consume significant computational processing, resulting in severely degraded performance, system outages, or denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@octokit/endpoint` library to the patch version.",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/octokit/endpoint.js/releases/tag/v10.1.3"
 }

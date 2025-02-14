@@ -1,0 +1,28 @@
+{
+  "package_name": "effect",
+  "patch_versions": [
+    "3.12.12"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "3.12.11"
+    ]
+  ],
+  "cwe": [
+    "CWE-248",
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to uncaught exceptions due to `tapOutput` allowing an output type that was not properly inferred, leading to potential runtime errors. In the patched version, TypeScript correctly detects type mismatches at compile time, preventing unexpected crashes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `effect` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Uncaught Exception",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 18,
+  "changelog": "https://github.com/Effect-TS/effect/releases/tag/effect%403.12.12",
+  "last_modified": "2025-02-14",
+  "published": "2025-02-14"
+}

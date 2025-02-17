@@ -1,0 +1,27 @@
+{
+  "package_name": "django-storages",
+  "patch_versions": [
+    "1.14.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.7",
+      "1.14.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to path traversal due to an improper override of `get_available_name`, which Django relies on for security. This issue, originally addressed in CVE-2024-39330, was reintroduced by the overridden implementation in this library. The vulnerability is fixed in version 4.2 and later.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `django-storages` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "CVE-2024-39330",
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 83,
+  "changelog": "https://github.com/jschneier/django-storages/blob/master/CHANGELOG.rst",
+  "last_modified": "2025-02-17",
+  "published": "2025-02-17"
+}

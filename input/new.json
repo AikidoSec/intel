@@ -1,24 +1,15 @@
 {
-  "package_name": "n8n-nodes-base",
-  "patch_versions": [
-    "1.78.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.89.0",
-      "1.77.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-1321"
-  ],
-  "tldr": "Affected versions of this package are affected by a prototype pollution vulnerability that can occur due to improper handling in the jsonToDocument function in the Google Cloud Firestore Node, allowing attackers to modify the prototypes of documents. By injecting specially crafted attributes, an attacker can manipulate the behavior of objects, which may lead to unauthorized access or compromise the application.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `n8n-nodes-base` library to the patch version.",
-  "vulnerable_to": "Prototype Pollution",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 40,
-  "changelog": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.78.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

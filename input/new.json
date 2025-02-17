@@ -1,25 +1,15 @@
 {
-  "package_name": "lightgbm",
-  "patch_versions": [
-    "4.6.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.0.2",
-      "4.5.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-122"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a forced heap-based buffer overflow when establishing a connection during distributed training initialization. An attacker can exploit this by sending a malicious rank through the listener, leading to an out-of-bounds write, which can result in remote code execution.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `lightgbm` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Remote Code Execution (RCE)",
-  "related_cve_id": "CVE-2024-43598",
-  "language": "PYTHON",
-  "severity_class": "HIGH",
-  "aikido_score": 75,
-  "changelog": "https://github.com/microsoft/LightGBM/releases/tag/v4.6.0"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

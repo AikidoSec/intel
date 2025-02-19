@@ -1,25 +1,15 @@
 {
-  "package_name": "primefaces",
-  "patch_versions": [
-    "15.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "7.0.0",
-      "14.0.12"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of the package allow attackers to execute Cross-site Scripting (XSS) attacks by exploiting DOM clobbering in the `PickList` component. DOM clobbering is a code-reuse attack where an attacker injects seemingly benign, non-script HTML markup (e.g., through a post or comment) into a webpage. The attacker then leverages existing JavaScript code (gadgets) to transform the injected content into executable code. This vulnerability can lead to XSS on websites that include Webpack-generated files and allow users to inject certain scriptless HTML tags.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `primefaces` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JAVA",
-  "severity_class": "MEDIUM",
-  "aikido_score": 45,
-  "changelog": "https://github.com/primefaces/primefaces/releases/tag/15.0.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

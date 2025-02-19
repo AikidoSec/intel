@@ -1,17 +1,15 @@
 {
-  "package_name": "efipay/sdk-php-apis-efi",
-  "patch_versions": ["1.12.0"],
-  "vulnerable_ranges": [
-    ["1.0.0", "1.11.3"]
-    ],
-  "cwe": ["CWE-759"],
-  "tldr": "Affected versions of this package are affected by insecure hash generation without a unique salt, making it easier for attackers to crack hashes using precomputed tables. If an attacker gains access to the hashes, the lack of salt allows efficient brute-force attacks, such as rainbow table, that could potentially leak critical information.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `efipay/sdk-php-apis-efi` library to the patch version.",
-  "vulnerable_to": "Use of a One-Way Hash without a Salt",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "php",
-  "severity_class": "LOW",
-  "aikido_score": 28,
-  "changelog": "https://github.com/efipay/sdk-php-apis-efi/releases/tag/1.12.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

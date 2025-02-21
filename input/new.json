@@ -1,15 +1,17 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "handsontable",
+  "patch_versions": ["15.1.0"],
+  "vulnerable_ranges": [
+    ["7.0.0", "15.0.1"]
+  ],
+  "cwe": ["CWE-1321"],
+  "tldr": "Affected versions of this package are affected by improper validation of object prototypes when creating or setting properties that can allow user-controlled inputs to directly impact the `__proto__`, leading to unexpected behaviors. An attacker can pass a crafted payload to modify the global object prototype, enabling potential bypasses in security checks and privilege escalation, depending on the application's logic.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `handsontable` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 58,
+  "changelog": "https://github.com/handsontable/handsontable/releases/tag/15.1.0"
 }

@@ -1,17 +1,15 @@
 {
-  "package_name": "clevertap-web-sdk",
-  "patch_versions": ["1.13.0"],
-  "vulnerable_ranges": [
-    ["1.0.0", "1.12.1"]
-  ],
-  "cwe": ["CWE-79"],
-  "tldr": "Affected versions of this package are affected by security misconfiguration that allows Cross-Site Scripting (XSS) due to a missing restriction on iframe embedding. The affected object validation does not safely enforce the frame-ancestors secure directives, allowing external domains to load the popup within an iframe. If the popup processes user-controlled input without proper sanitization or encoding, an attacker can inject and execute JavaScript, resulting in session hijacking, clickjacking, or other client-side exploits.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `clevertap-web-sdk` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 71,
-  "changelog": "https://github.com/CleverTap/clevertap-web-sdk/releases/tag/v1.13.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

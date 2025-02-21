@@ -1,15 +1,17 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@strapi/core",
+  "patch_versions": ["5.10.3"],
+  "vulnerable_ranges": [
+    ["4.0.0", "5.10.2"]
+  ],
+  "cwe": ["CWE-799"],
+  "tldr": "Affected versions of this package are affected by a broken access control issue in the password reset functionality caused by the lack of rate limiting. This vulnerability enables attackers to submit unrestricted password reset requests, leading to potentially significant security risks, including account takeover and service abuse.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@strapi/core` library to the patch version.",
+  "vulnerable_to": "Improper Control of Interaction Frequency",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/strapi/strapi/releases/tag/v5.10.3"
 }

@@ -1,17 +1,15 @@
 {
-  "package_name": "@ckeditor/ckeditor5-real-time-collaboration",
-  "patch_versions": ["44.2.1"],
-  "vulnerable_ranges": [
-    ["41.3.0", "44.2.0"]
-  ],
-  "cwe": ["CWE-80"],
-  "tldr": "A Cross-Site Scripting (XSS) vulnerability has been disclosed in the `@ckeditor/ckeditor5-real-time-collaboration` package. This vulnerability allows unauthorized execution of JavaScript by manipulating user markers, which track users' positions within a document. It affects environments where Real-Time Collaborative Editing is enabled. If exploited, this issue could lead to malicious script execution within users' sessions.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@ckeditor/ckeditor5-real-time-collaboration` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting",
-  "related_cve_id": "CVE-2025-25299",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 75,
-  "changelog": "https://github.com/ckeditor/ckeditor5/releases/tag/v44.2.1"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

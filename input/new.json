@@ -1,18 +1,15 @@
 {
-  "package_name": "github.com/cosmos/cosmos-sdk",
-  "patch_versions": ["0.47.16", "0.50.12"],
-  "vulnerable_ranges": [
-    ["0.46.0", "0.47.15"],
-    ["0.50.0", "0.50.11"]
-  ],
-  "cwe": ["CWE-369"],
-  "tldr": "Affected versions of this package are affected by a flaw in the group's module that allows a malicious proposal to trigger a division by zero, causing a chain halt. The issue arises from improper input validation and unprotected mathematical operations in proposal processing. An attacker can exploit this by crafting a proposal that results in a zero divisor, disrupting the entire chain and leading to denial of service (DoS).",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/cosmos/cosmos-sdk` library to the patch version.",
-  "vulnerable_to": "Denial of Service (DoS)",
-  "related_cve_id": "GHSA-x5vx-95h7-rv4p",
-  "language": "go",
-  "severity_class": "HIGH",
-  "aikido_score": 75,
-  "changelog": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.50.12"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

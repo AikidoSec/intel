@@ -11,7 +11,7 @@
   "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
   "language": "php",
-  "severity_class": "MEDIUM",
-  "aikido_score": 68,
+  "severity_class": "LOW",
+  "aikido_score": 30,
   "changelog": "https://github.com/magewirephp/magewire/releases/tag/1.12.0"
 }

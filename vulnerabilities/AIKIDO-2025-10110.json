@@ -1,0 +1,26 @@
+{
+  "package_name": "magewirephp/magewire",
+  "patch_versions": [
+    "1.12.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.11.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are affected by improper input validation. It fails to escape data properly and lacks a strict Content Security Policy (CSP). This vulnerability allows attackers to inject malicious payloads, leading to cross-site scripting. As a result, an attacker can steal session cookies, exfiltrate sensitive data, or perform unauthorized actions on behalf of users. The absence of CSP further increases the risk by permitting inline scripts and event handlers to execute freely.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `magewirephp/magewire` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/magewirephp/magewire/releases/tag/1.12.0",
+  "last_modified": "2025-02-24",
+  "published": "2025-02-24"
+}

@@ -1,25 +1,15 @@
 {
-  "package_name": "coolsam/modules",
-  "patch_versions": [
-    "4.1.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "4.0.6"
-    ]
-  ],
-  "cwe": [
-    "CWE-284"
-  ],
-  "tldr": "Affected versions of this package fail to restrict user access when the Module is disabled. As a result, users can still see the Resource and Page in the navigation, even when they should be inaccessible.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `coolsam/modules` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Improper Access Control",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "HIGH",
-  "aikido_score": 80,
-  "changelog": "https://github.com/savannabits/filament-modules/releases/tag/v4.1.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "coolsam/modules",
+  "patch_versions": [
+    "4.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "4.0.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "In affected versions of Akka HTTP, the `FileUploadDirectives.fileUploadAll` directive creates temporary files with overly permissive access rights on Unix-like systems. These temporary files are readable by other users, which can lead to unauthorized access to sensitive data uploaded through the directive.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and you are using the `FileUploadDirectives.fileUploadAll` function.",
+  "how_to_fix": "Upgrade the `coolsam/modules` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Access Control",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/savannabits/filament-modules/releases/tag/v4.1.0"
 }

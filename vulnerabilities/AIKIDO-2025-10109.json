@@ -14,7 +14,7 @@
   ],
   "tldr": "The latest version of `xregexp` (5.1.1) is vulnerable to prototype pollution through the `XRegExp.cache` function. An attacker can supply a crafted payload with a pattern and flag to manipulate properties within the global prototype chain. This vulnerability can lead to more severe injection-based attacks, depending on how the library is used. For instance, if the polluted property propagates to sensitive Node.js APIs (e.g., `exec`, `eval`), an attacker could execute arbitrary commands within the application's context.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `xregexp` library to the patch version. If you are updating from < `5.0.0`, mind the breaking changes in `5.x` (Enable the namespacing feature by default, Handle ES2018 capture names and Remove support for Unicode blocks), check `xregexp`'s change log for more information.",
+  "how_to_fix": "Upgrade the `xregexp` library to the latest patched version. If you're updating from a version older than `5.0.0`, be aware of breaking changes in `5.x`:\n  Namespacing is now enabled by default, Named capture groups are handled differently and Support for Unicode blocks has been removed.  \nCheck the `xregexp` changelog for more details before upgrading.",
   "reporter": "",
   "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "",

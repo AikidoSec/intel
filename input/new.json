@@ -1,26 +1,15 @@
 {
-  "package_name": "@hono/node-ws",
-  "patch_versions": [
-    "1.1.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.2",
-      "1.0.8"
-    ]
-  ],
-  "cwe": [
-    "CWE-772",
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of the package suffer from resource leaks due to a flaw in WebSocket connection handling. WebSocket connections remain open indefinitely, even when the application does not expect them. As a result, these unintended connections can consume system resources, potentially leading to performance degradation and other unintended behavior.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@hono/node-ws` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Resource Leak",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 35,
-  "changelog": "https://github.com/honojs/middleware/releases/tag/%40hono/node-ws%401.1.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

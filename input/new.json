@@ -1,25 +1,15 @@
 {
-  "package_name": "stripeterminal-core",
-  "patch_versions": [
-    "4.2.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.0.0",
-      "4.1.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-1021"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Cloak & Dagger attacks, a class of exploits targeting Android devices. These attacks allow a malicious app to fully control the UI feedback loop, effectively taking over the device without the user noticing any malicious activity. The attack requires only two permissions that, when the app is installed from the Play Store, do not require explicit user approval or notification. These vulnerabilities affect Android versions up to Android 12. From Android 12 onward, the `HIDE_OVERLAY_WINDOWS` permission allows apps to prevent overlay attacks by opting out of application overlays. The patched version implements this protection to mitigate the issue.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `stripeterminal-core` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Improper Restriction of Rendered UI Layers or Frames",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JAVA",
-  "severity_class": "LOW",
-  "aikido_score": 32,
-  "changelog": "https://github.com/stripe/stripe-terminal-android/releases/tag/v4.2.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

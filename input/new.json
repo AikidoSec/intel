@@ -1,25 +1,15 @@
 {
-  "package_name": "spotipy",
-  "patch_versions": [
-    "2.25.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1",
-      "2.25.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-276"
-  ],
-  "tldr": "Affected versions of this package set incorrect default permissions for the cache file created by the `CacheHandler` class to store the Spotify auth token. The file is created with `rw-r--r--` (`644`) permissions instead of the more secure `rw-------` (`600`). This misconfiguration allows other users or processes on the machine to read the token, potentially exposing it to unauthorized access. If an attacker gains access to the token, they could use it to perform administrative actions on the associated Spotify account, depending on the granted scopes.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `spotipy` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Incorrect Default Permissions",
-  "related_cve_id": "CVE-2025-27154",
-  "language": "python",
-  "severity_class": "HIGH",
-  "aikido_score": 84,
-  "changelog": "https://github.com/spotipy-dev/spotipy/blob/master/CHANGELOG.md"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

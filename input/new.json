@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "better-auth",
+  "patch_versions": [
+    "1.1.21"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.6.2",
+      "1.1.20"
+    ]
+  ],
+  "cwe": [
+    "CWE-601"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an open redirect due to insufficient validation of the `callbackURL` parameter in the `trustedOrigins` configuration. Attackers can exploit this by crafting specially formatted URLs that bypass `trustedOrigins` protection, potentially redirecting users to malicious sites.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `better-auth` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Open Redirect",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://github.com/better-auth/better-auth/releases/tag/v1.1.21"
 }

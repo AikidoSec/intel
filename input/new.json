@@ -1,25 +1,15 @@
 {
-  "package_name": "@fastify/cors",
-  "patch_versions": [
-    "11.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "7.0.0",
-      "10.1.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-453"
-  ],
-  "tldr": "Affected versions of this package do not enforce the most secure default CORS safelist methods, potentially allowing unintended HTTP methods in cross-origin requests.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@fastify/cors` library to the latest patched version or ensure that the `methods` parameter in `fastify.register(...)` is configured securely. Note that this patch may introduce breaking changes.",
-  "reporter": "",
-  "vulnerable_to": "Insecure Default Variable Initialization",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "js",
-  "severity_class": "LOW",
-  "aikido_score": 15,
-  "changelog": "https://github.com/fastify/fastify-cors/releases/tag/v11.0.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

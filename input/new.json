@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@quasar/quasar-ui-qmarkdown",
+  "patch_versions": [
+    "2.0.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.4.0",
+      "2.0.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) in the `extendHeading` function, when the `no-html` option is enabled.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@quasar/quasar-ui-qmarkdown` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/quasarframework/quasar-ui-qmarkdown/releases/tag/v2.0.5"
 }

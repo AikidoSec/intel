@@ -1,25 +1,15 @@
 {
-  "package_name": "livekit-client",
-  "patch_versions": [
-    "2.9.5"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "2.9.4"
-    ]
-  ],
-  "cwe": [
-    "CWE-280"
-  ],
-  "tldr": "Affected versions of the `livekit-client` library permit users without the necessary permissions to publish tracks, potentially leading to unauthorized audio or video streaming.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `livekit-client` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Improper Handling of Insufficient Permissions or Privileges",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 64,
-  "changelog": "https://github.com/livekit/client-sdk-js/releases/tag/v2.9.5"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

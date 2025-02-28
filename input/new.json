@@ -19,7 +19,7 @@
   "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
   "language": "js",
-  "severity_class": "LOW",
-  "aikido_score": 30,
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
   "changelog": "https://github.com/quasarframework/quasar-ui-qmarkdown/releases/tag/v2.0.5"
 }

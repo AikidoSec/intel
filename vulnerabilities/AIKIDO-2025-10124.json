@@ -1,0 +1,27 @@
+{
+  "package_name": "captcha",
+  "patch_versions": [
+    "0.7.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1",
+      "0.7.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-330"
+  ],
+  "tldr": "Affected versions of the `captcha` library may be vulnerable due to the use of insufficiently random values when adding noise to audio and image captchas. If these values are predictable or lack proper randomness, attackers could exploit this weakness to generate captchas that are easier to solve, potentially bypassing security mechanisms.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `captcha` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Use of Insufficiently Random Values",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 42,
+  "changelog": "https://github.com/lepture/captcha/releases/tag/v0.7.1",
+  "last_modified": "2025-03-03",
+  "published": "2025-03-03"
+}

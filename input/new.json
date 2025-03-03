@@ -1,15 +1,26 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@pulumi/pulumi",
+  "patch_versions": [
+    "3.153.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.153.0",
+      "3.153.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-248",
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to uncaught exceptions due to concurrent map write panics in the `cachingMapper` class when performing bulk conversions. This can lead to unexpected crashes and instability in applications relying on concurrent data processing..",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@pulumi/pulumi` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Uncaught Exception",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 18,
+  "changelog": "https://github.com/pulumi/pulumi/releases/tag/v3.153.1"
 }

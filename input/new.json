@@ -1,17 +1,15 @@
 {
-  "package_name": "github.com/mrz1836/go-sanitize",
-  "patch_versions": ["1.3.4"],
-  "vulnerable_ranges": [
-    ["1.0.0", "1.3.3"]
-  ],
-  "cwe": ["CWE-79"],
-  "tldr": "Affected versions of this package are affected by improper input validation when manipulating DOM elements or attributes, such as `document.cookies`, `window.location`, and `onload`. Attackers can inject malicious JavaScript payloads into these DOM properties, which may result in the browser executing arbitrary scripts, leading to session hijacking, data exfiltration, and other client-side attacks.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/mrz1836/go-sanitize` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "go",
-  "severity_class": "MEDIUM",
-  "aikido_score": 58,
-  "changelog": "https://github.com/mrz1836/go-sanitize/releases/tag/v1.3.4"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

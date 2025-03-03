@@ -1,0 +1,27 @@
+{
+  "package_name": "remix-auth-oauth2",
+  "patch_versions": [
+    "3.3.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.2.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-352"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to Cross-site Request Forgery (CSRF) attacks due to improper validation of the `state` URL parameter. Without proper validation, attackers could exploit this flaw for CSRF or impersonation attacks. Similar issues have previously enabled phishing attempts by manipulating error messages. In recent updates, `remix-auth-oauth2` moved state management from session storage to cookies, requiring earlier validation in the handler. This patch ensures that only legitimate OAuth2 requests proceed while unauthorized attempts trigger a generic error page.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `remix-auth-oauth2` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-Site Request Forgery (CSRF)",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/sergiodxa/remix-auth-oauth2/releases/tag/v3.3.0",
+  "last_modified": "2025-03-03",
+  "published": "2025-03-03"
+}

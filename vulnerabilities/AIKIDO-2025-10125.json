@@ -1,0 +1,27 @@
+{
+  "package_name": "lookbook",
+  "patch_versions": [
+    "2.3.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.2.0",
+      "2.3.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) due to improper escaping of parameter values. If an attacker injects a specially crafted value containing quotes and JavaScript code, it could be executed within the application. For example, a value like `\"-alert(window.location.href)-\"` could bypass protections and execute malicious scripts. To mitigate this, the fix ensures that special characters, including quotes, are properly escaped using `html_escape`, converting them to their HTML entity equivalents while preserving the intended functionality.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `lookbook` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "RUBY",
+  "severity_class": "LOW",
+  "aikido_score": 35,
+  "changelog": "https://github.com/lookbook-hq/lookbook/releases/tag/v2.3.5",
+  "last_modified": "2025-03-03",
+  "published": "2025-03-03"
+}

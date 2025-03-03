@@ -1,24 +1,15 @@
 {
-  "package_name": "angular-slickgrid",
-  "patch_versions": [
-    "8.13.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "4.0.0",
-      "8.13.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package do not properly sanitize input when rendering dynamic components in the grid's row detail, making it vulnerable to cross-site scripting (XSS). An attacker could exploit this vulnerability to inject malicious scripts, potentially leading to unauthorized data access or manipulation.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `angular-slickgrid` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 48,
-  "changelog": "https://github.com/ghiscoding/Angular-Slickgrid/releases/tag/v8.13.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

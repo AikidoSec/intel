@@ -1,0 +1,27 @@
+{
+  "package_name": "graphweaver",
+  "patch_versions": [
+    "2.12.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.18",
+      "2.12.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of the package expose sensitive information in log files due to an insufficient mechanism for obfuscating sensitive argument values in authentication-related mutations. This issue affects multiple authentication methods, potentially leading to unauthorized access if log files are compromised.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `graphweaver` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 35,
+  "changelog": "https://github.com/exogee-technology/graphweaver/releases/tag/v2.12.2",
+  "last_modified": "2025-03-04",
+  "published": "2025-03-04"
+}

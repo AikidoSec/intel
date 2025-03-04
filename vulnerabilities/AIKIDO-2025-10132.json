@@ -13,6 +13,7 @@
     "CWE-532"
   ],
   "tldr": "Affected versions of the package may expose sensitive information in log files by passing the provider identity update token as a parameter instead of using a Bearer token in the authorization header. This increases the risk of token leakage. To mitigate this, the update process now requires the token in the authorization header.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `@medusajs/medusa` library to the patch version. This is a breaking change and is not backward compatible.",
   "reporter": "",
   "vulnerable_to": "Insertion of Sensitive Information into Log File",

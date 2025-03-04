@@ -1,24 +1,15 @@
 {
-  "package_name": "electron",
-  "patch_versions": [
-    "32.3.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "32.0.0",
-      "32.3.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-125"
-  ],
-  "tldr": "An out-of-bounds memory access vulnerability in V8 in Google Chrome before version 133.0.6943.98 allows a remote attacker to execute arbitrary code within the browser's sandbox by tricking a user into opening a specially crafted HTML page. (Chromium security severity: High)",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `electron` library to a patch version.",
-  "vulnerable_to": "Out-of-bounds Read",
-  "related_cve_id": "CVE-2025-0998",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 59,
-  "changelog": "https://github.com/electron/electron/releases/tag/v32.3.3"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

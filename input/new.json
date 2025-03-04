@@ -19,7 +19,7 @@
   "vulnerable_to": "Weak Password Recovery Mechanism",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 35,
+  "severity_class": "MEDIUM",
+  "aikido_score": 48,
   "changelog": "https://github.com/parse-community/parse-server/releases/tag/8.0.0"
 }

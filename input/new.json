@@ -1,25 +1,15 @@
 {
-  "package_name": "parse-server",
-  "patch_versions": [
-    "8.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "7.4.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-640"
-  ],
-  "tldr": "Versions of this package impacted by this issue have a weak password recovery mechanism due to the inclusion of the username in password reset and email verification links. This exposes personally identifiable information in logs and allows full account compromise if the link is shared. Since the link already contains a perishable token, the username is unnecessary and should be removed to prevent attackers from identifying the affected account.",
-  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges.",
-  "how_to_fix": "Upgrade the `parse-server` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Weak Password Recovery Mechanism",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 48,
-  "changelog": "https://github.com/parse-community/parse-server/releases/tag/8.0.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

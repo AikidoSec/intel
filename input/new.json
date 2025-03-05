@@ -1,25 +1,15 @@
 {
-  "package_name": "keras",
-  "patch_versions": [
-    "3.9.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.0.0",
-      "3.8.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-502",
-    "CWE-94"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to unsafe deserialization due to the use of `numpy.load` with `allow_pickle=True` when loading NPZ files. Since this function relies on pickle for deserialization, it poses a security risk when handling untrusted data. An attacker could exploit this by crafting a malicious model file, potentially leading to arbitrary code execution when unsuspecting users load the model in `keras`.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `keras` library to the patch version.",
-  "vulnerable_to": "Unsafe Deserialization",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "HIGH",
-  "aikido_score": 75,
-  "changelog": "https://github.com/keras-team/keras/releases/tag/v3.9.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

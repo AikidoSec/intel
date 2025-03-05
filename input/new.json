@@ -1,15 +1,17 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@strapi/strapi",
+  "patch_versions": ["5.11.0"],
+  "vulnerable_ranges": [
+    ["4.6.0", "5.10.4"]
+  ],
+  "cwe": ["CWE-366"],
+  "tldr": "Affected versions of this package are affected by a race condition in data transfer threads that can lead to chunks being written out of order, resulting in corrupted or incomplete files. An attacker could exploit this by manipulating chunk delivery timing or overwhelming the system with concurrent uploads, causing data corruption or service disruptions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@strapi/strapi` library to the patch version.",
+  "vulnerable_to": "Race Condition",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/strapi/strapi/releases/tag/v5.11.0"
 }

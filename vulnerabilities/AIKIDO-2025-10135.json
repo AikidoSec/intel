@@ -1,0 +1,26 @@
+{
+  "package_name": "hammer",
+  "patch_versions": [
+    "7.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "7.0.0",
+      "7.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of this package are affected by a race condition when creating a key in Atomic backends, as it relies on ets.insert instead of ets.insert_new. This flaw allows multiple processes to insert the same key simultaneously, leading to data inconsistencies. An attacker could exploit this by sending concurrent requests to create the same key, resulting in overwritten entries, data corruption, or denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `hammer` library to the patch version.",
+  "vulnerable_to": "Race Condition",
+  "related_cve_id": "",
+  "language": "Elixir",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/ExHammer/hammer/blob/master/CHANGELOG.md",
+  "last_modified": "2025-03-06",
+  "published": "2025-03-06"
+}

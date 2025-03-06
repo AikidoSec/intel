@@ -1,15 +1,17 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "com.contentful.java:java-sdk",
+  "patch_versions": ["10.5.21"],
+  "vulnerable_ranges": [
+    ["7.5.0", "10.5.20"]
+  ],
+  "cwe": ["CWE-497"],
+  "tldr": "Affected versions of this package are affected by a flaw where `setLogSensitiveData(false)` fails to stop logging bearer tokens, risking the exposure of sensitive credentials. If logs are improperly stored or insecure controlled, attackers could access them to extract tokens, impersonate users, and escalate privileges.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `com.contentful.java:java-sdk` library to the patch version.",
+  "vulnerable_to": "Information Disclosure",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "java",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/contentful/contentful.java/releases/tag/v.10.5.21"
 }

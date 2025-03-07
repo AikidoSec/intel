@@ -1,12 +1,17 @@
 {
   "package_name": "electron",
   "patch_versions": [
-    "32.3.3"
+    "32.3.3",
+    "33.4.3"
   ],
   "vulnerable_ranges": [
     [
       "32.0.0",
       "32.3.2"
+    ],
+    [
+      "33.0.0",
+      "33.4.2"
     ]
   ],
   "cwe": [

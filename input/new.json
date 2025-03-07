@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "electron",
+  "patch_versions": [
+    "34.3.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "34.0.0",
+      "34.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-758"
+  ],
+  "tldr": "Affected versions of this package suffer from invalid memory access in the PDF viewer functionality, which can result in random crashes and potential instability.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `electron` library to a patch version.",
+  "vulnerable_to": "Undefined Behavior",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 36,
+  "changelog": "https://github.com/electron/electron/releases/tag/v34.3.1"
 }

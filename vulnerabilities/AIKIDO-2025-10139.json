@@ -1,0 +1,26 @@
+{
+  "package_name": "sqlalchemy-celery-beat",
+  "patch_versions": [
+    "0.8.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.6.1",
+      "0.8.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-497"
+  ],
+  "tldr": "Affected versions of this package are affected by a security misconfiguration in the DatabaseScheduler class that exposes the entire database connection string, including the password, through the info property. It could lead to credential leaks in logs or outputs when Celery Beat starts, allowing an attacker to access sensitive data or compromise the system.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `sqlalchemy-celery-beat` library to the patch version.",
+  "vulnerable_to": "Information Disclosure",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/farahats9/sqlalchemy-celery-beat/releases/tag/v0.8.2",
+  "last_modified": "2025-03-08",
+  "published": "2025-03-08"
+}

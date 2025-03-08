@@ -1,26 +1,15 @@
 {
-  "package_name": "ring",
-  "patch_versions": [
-    "0.17.12"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.17.9",
-      "0.17.11"
-    ]
-  ],
-  "cwe": [
-    "CWE-758",
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of this package may panic due to overflow checking when using `ring::aead::quic::HeaderProtectionKey::new_mask()`. In the QUIC protocol, an attacker can trigger this panic by sending a specially crafted packet. Even without malicious intent, this issue is likely to occur in approximately 1 out of every 2³² packets sent or received. Additionally, on 64-bit targets, operations using `ring::aead::{AES_128_GCM, AES_256_GCM}` may panic when overflow checking is enabled if a single encryption or decryption operation processes around 64GB of data in one chunk. Protocols like TLS and SSH are unaffected since they break large data into smaller chunks. Most applications also do not handle such large amounts of data in a single operation. By default, overflow checking is disabled in release mode but can be enabled using `RUSTFLAGS=\"-C overflow-checks\"` or `overflow-checks = true` in `Cargo.toml`. In debug mode, overflow checking is usually enabled by default.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and overflow checking is enabled.",
-  "how_to_fix": "Upgrade the `ring` library to the patch version or turn off overflow checking.",
-  "reporter": "",
-  "vulnerable_to": "Denial of Service (DoS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "LOW",
-  "aikido_score": 20,
-  "changelog": "https://github.com/briansmith/ring/blob/main/RELEASES.md#version-01712-2025-03-05"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

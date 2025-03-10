@@ -12,7 +12,7 @@
   "cwe": [
     "CWE-89"
   ],
-  "tldr": "Affected versions of the package verify expired JWT tokens, allowing unauthorized access.",
+  "tldr": "Affected versions of the `flutter_downloader` package are vulnerable to SQL injection on iOS through version 1.11.1. This allows remote attackers to steal session tokens and overwrite arbitrary files within the app's container. Additionally, if an app enables `UIFileSharingEnabled` and `LSSupportsOpeningDocumentsInPlace`, the framework's internal database is exposed to local users. This enables local attackers to achieve the same level of access as remote attackers by modifying the internal database directly on the device.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `flutter_downloader` library to the patch version.",
   "reporter": "",

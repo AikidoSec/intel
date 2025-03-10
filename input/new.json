@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "flutter_downloader",
+  "patch_versions": [
+    "1.11.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.11.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-89"
+  ],
+  "tldr": "Affected versions of the package verify expired JWT tokens, allowing unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `flutter_downloader` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "SQL Injection",
+  "related_cve_id": "CVE-2023-41387",
+  "language": "DART",
+  "severity_class": "CRITICAL",
+  "aikido_score": 91,
+  "changelog": "https://pub.dev/packages/flutter_downloader/changelog"
 }

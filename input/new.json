@@ -1,25 +1,15 @@
 {
-  "package_name": "zenml",
-  "patch_versions": [
-    "0.73.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "0.72.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-352"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to cross-site request forgery (CSRF) in the `generate_access_token()` function in `auth.py`. An attacker can exploit this vulnerability to generate access tokens on behalf of a victim, potentially leading to unauthorized access to protected resources.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `zenml` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Cross-Site Request Forgery (CSRF)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://github.com/zenml-io/zenml/releases/tag/0.73.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

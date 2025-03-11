@@ -4,11 +4,11 @@
   "vulnerable_ranges": [
     ["0.0.10", "0.1.15"]
   ],
-  "cwe": ["CWE-20"],
+  "cwe": ["CWE-117"],
   "tldr": "Affected versions of this package are affected by improper input validation in error messages and user-controlled search strings, which can lead to injection attacks. Attackers can exploit this by injecting malicious input, such as special characters, into error logs or search queries. This issue could poison log files or manipulate application behavior, as mishandling backslashes in search queries regex sanitization may allow attackers to inject single quotes, potentially leading to SQL injection.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `@settlemint/asset-tokenization-kit` library to the patch version.",
-  "vulnerable_to": "Improper input validation",
+  "vulnerable_to": "Log Injection",
   "related_cve_id": "",
   "language": "js",
   "severity_class": "LOW",

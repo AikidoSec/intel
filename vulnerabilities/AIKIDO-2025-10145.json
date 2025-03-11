@@ -1,0 +1,26 @@
+{
+  "package_name": "hugerte",
+  "patch_versions": [
+    "1.0.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.0.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package are affected by a ReDoS vulnerability due to the unsafe usage of a polynomial regular expression in a package's native method designed to remove whitespace. Attackers can exploit this vulnerability by crafting malicious input that triggers excessive backtracking in the regular expression, resulting in significant performance degradation or even denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `hugerte` library to the patch version.",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/hugerte/hugerte/blob/main/modules/hugerte/CHANGELOG.md",
+  "last_modified": "2025-03-11",
+  "published": "2025-03-11"
+}

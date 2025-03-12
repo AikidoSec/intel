@@ -1,15 +1,17 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "canvg",
+  "patch_versions": ["4.0.3"],
+  "vulnerable_ranges": [
+    ["3.0.0", "4.0.2"]
+  ],
+  "cwe": ["CWE-1321"],
+  "tldr": "Affected versions of this package are affected by Prototype Pollution in the `StyleElement` constructor that arises from a design flaw when getting or setting object properties. This vulnerability allows attackers to manipulate the global prototype chain. If the library interacts with sensitive Node.js APIs, an attacker could exploit these rogue properties to inject malicious code, potentially leading to arbitrary code execution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `canvg` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "js",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/canvg/canvg/releases/tag/v4.0.3"
 }

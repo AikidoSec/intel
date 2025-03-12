@@ -1,25 +1,15 @@
 {
-  "package_name": "payload",
-  "patch_versions": [
-    "3.28.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.0.0",
-      "3.27.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-284"
-  ],
-  "tldr": "Affected versions of this package improperly enforce access controls, allowing unauthorized users to access the `payload-locked-documents` collection. Only authenticated users should have permission to access this resource.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `payload` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Improper Access Control",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 40,
-  "changelog": "https://github.com/payloadcms/payload/releases/tag/v3.28.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

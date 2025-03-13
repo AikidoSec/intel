@@ -1,17 +1,15 @@
 {
-  "package_name": "github.com/weaviate/weaviate",
-  "patch_versions": ["1.28.9"],
-  "vulnerable_ranges": [
-    ["1.28.3", "1.28.8"]
-  ],
-  "cwe": ["CWE-362"],
-  "tldr": "Affected versions of this package are affected by a race condition when creating roles that can lead to unauthorized role creation or privilege escalation due to the lack of validation checks for existing roles before creating new ones. An attacker can exploit this by rapidly submitting role creation requests, potentially creating duplicate or unauthorized roles, bypassing access controls, and gaining elevated privileges.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/weaviate/weaviate` library to the patch version.",
-  "vulnerable_to": "Race Condition",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "go",
-  "severity_class": "MEDIUM",
-  "aikido_score": 55,
-  "changelog": "https://github.com/weaviate/weaviate/releases/tag/v1.28.9"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

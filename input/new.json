@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/Cosmos/ibc-go/v8",
+  "patch_versions": [
+    "8.7.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "8.0.0",
+      "8.6.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-440"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to non-deterministic JSON unmarshalling in IBC acknowledgements, which can cause a chain halt. This issue affects `IBC-Go` versions `>= v7` and potentially earlier versions. Any user capable of opening an IBC channel can trigger this vulnerability, leading to network disruption. The latest patch extends protections to all applications beyond transfer.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/Cosmos/ibc-go/v8` library to the patch version. To prevent this state from being introduced to a chain, it is possible to permission Channel Opening as a workaround.",
+  "reporter": "",
+  "vulnerable_to": "Expected Behavior Violation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "CRITICAL",
+  "aikido_score": 99,
+  "changelog": "https://github.com/cosmos/ibc-go/security/advisories/GHSA-4wf3-5qj9-368v"
 }

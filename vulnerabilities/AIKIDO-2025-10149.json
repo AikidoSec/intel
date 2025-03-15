@@ -1,12 +1,17 @@
 {
   "package_name": "github.com/weaviate/weaviate",
   "patch_versions": [
-    "1.28.9"
+    "1.28.9",
+    "1.29.1"
   ],
   "vulnerable_ranges": [
     [
       "1.28.3",
       "1.28.8"
+    ],
+    [
+      "1.29.0",
+      "1.29.0"
     ]
   ],
   "cwe": [

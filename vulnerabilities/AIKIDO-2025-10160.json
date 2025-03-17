@@ -1,0 +1,32 @@
+{
+  "package_name": "cosmossdk.io/x/group",
+  "patch_versions": [
+    "0.47.17",
+    "0.50.13"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.6.2",
+      "0.47.16"
+    ],
+    [
+      "0.50.0",
+      "0.50.12"
+    ]
+  ],
+  "cwe": [
+    "CWE-755"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper handling of exceptional conditions in the EndBlocker process. An attacker can exploit this by submitting malicious proposals that trigger errors, potentially causing the blockchain to halt and disrupting network operations.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `cosmossdk.io/x/group` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Handling of Exceptional Conditions",
+  "related_cve_id": "GHSA-47ww-ff84-4jrg",
+  "language": "GO",
+  "severity_class": "HIGH",
+  "aikido_score": 87,
+  "changelog": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.50.13",
+  "last_modified": "2025-03-17",
+  "published": "2025-03-17"
+}

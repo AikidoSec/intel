@@ -11,7 +11,7 @@
   "vulnerable_to": "Inadequate Encryption Strength",
   "related_cve_id": "",
   "language": "java",
-  "severity_class": "Medium",
+  "severity_class": "MEDIUM",
   "aikido_score": 50,
   "changelog": "https://github.com/CleverTap/clevertap-android-sdk/blob/master/docs/CTCORECHANGELOG.md#version-722-january-21-2025"
 }

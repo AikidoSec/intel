@@ -1,0 +1,42 @@
+{
+  "package_name": "Umbraco.Cms.Web.Backoffice",
+  "patch_versions": [
+    "10.8.9",
+    "13.7.1",
+    "14.3.3",
+    "15.2.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "9.0.0",
+      "10.8.8"
+    ],
+    [
+      "11.0.0",
+      "13.7.0"
+    ],
+    [
+      "14.0.0",
+      "14.3.2"
+    ],
+    [
+      "15.0.0",
+      "15.2.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Authenticated backoffice users can exploit manipulated API URLs to bypass access restrictions, allowing them to retrieve or delete content and media stored in folders they are not authorized to access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Umbraco.Cms.Web.Backoffice` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "related_cve_id": "CVE-2025-27602",
+  "language": "DOTNET",
+  "severity_class": "MEDIUM",
+  "aikido_score": 49,
+  "changelog": "https://github.com/umbraco/Umbraco-CMS/releases/tag/release-14.3.3",
+  "last_modified": "2025-03-17",
+  "published": "2025-03-17"
+}

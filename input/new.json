@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "mlrun",
+  "patch_versions": [
+    "1.8.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.7.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to directory traversal in the `_get_log_size_legacy()` function in `api/crud/logs.py`. An attacker can exploit this vulnerability to access arbitrary files outside the project directory, potentially exposing sensitive information or compromising the system.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mlrun` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 69,
+  "changelog": "https://github.com/mlrun/mlrun/releases/tag/v1.8.0"
 }

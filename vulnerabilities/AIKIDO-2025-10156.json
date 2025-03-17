@@ -1,0 +1,37 @@
+{
+  "package_name": "lucee",
+  "patch_versions": [
+    "5.3.7.59",
+    "5.3.12.1",
+    "5.4.3.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "5.3.7.58"
+    ],
+    [
+      "5.3.8.132-RC",
+      "5.3.12.0"
+    ],
+    [
+      "5.4.0.65-RC",
+      "5.4.3.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-611"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to XML External Entity (XXE) injection in its REST endpoint. An attacker can exploit this by submitting malicious XML data, potentially leading to arbitrary code execution, data exfiltration, or denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `org.lucee:lucee` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "XML External Entity (XXE) Attack",
+  "related_cve_id": "CVE-2023-38693",
+  "language": "JAVA",
+  "severity_class": "CRITICAL",
+  "aikido_score": 98,
+  "changelog": "https://github.com/lucee/Lucee/security/advisories/GHSA-vwjx-mmwm-pwrf",
+  "last_modified": "2025-03-17",
+  "published": "2025-03-17"
+}

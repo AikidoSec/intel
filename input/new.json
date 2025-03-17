@@ -1,25 +1,15 @@
 {
-  "package_name": "smolagents",
-  "patch_versions": [
-    "1.11.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "1.10.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-94"
-  ],
-  "tldr": "Affected versions do not adequately validate executable functions or restrict dangerous modules when loading agents, which can lead to remote code execution (RCE). An attacker could exploit this weakness to execute arbitrary code, potentially compromising the system.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `smolagents` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Remote Code Execution (RCE)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 69,
-  "changelog": "https://github.com/huggingface/smolagents/releases/tag/v1.11.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

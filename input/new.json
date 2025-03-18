@@ -1,17 +1,15 @@
 {
-  "package_name": "clevertap-android-sdk",
-  "patch_versions": ["7.2.2"],
-  "vulnerable_ranges": [
-    ["3.2.0", "7.2.1"]
-  ],
-  "cwe": ["CWE-326"],
-  "tldr": "Affected versions of this package are affected by inadequate encryption due to an insecure algorithm that does not meet security best practices. This vulnerability allows attackers to bypass the weak encryption of PII, potentially leading to unauthorized access and data breaches.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `clevertap-android-sdk` library to the patch version",
-  "vulnerable_to": "Inadequate Encryption Strength",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "java",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://github.com/CleverTap/clevertap-android-sdk/blob/master/docs/CTCORECHANGELOG.md#version-722-january-21-2025"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -12,7 +12,7 @@
   "cwe": [
     "CWE-639"
   ],
-  "tldr": "Affected versions of this package are vulnerable to XML External Entity (XXE) injection in its REST endpoint. An attacker can exploit this by submitting malicious XML data, potentially leading to arbitrary code execution, data exfiltration, or denial of service.",
+  "tldr": "Affected versions of this package are vulnerable to authorization bypass through user-controlled keys due to insufficient validation in the `emicklei/go-restful` library before version 3.8.0. An attacker could exploit this weakness to gain unauthorized access to restricted resources.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `sigs.k8s.io/gcp-compute-persistent-disk-csi-driver` library to a patch version.",
   "reporter": "",

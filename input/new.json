@@ -1,24 +1,15 @@
 {
-  "package_name": "n8n-nodes-base",
-  "patch_versions": [
-    "1.84.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.196.0",
-      "1.83.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-89"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to SQL injection when performing table searches in the MySQL Node, due to insufficient input sanitization.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and the MySql Node.",
-  "how_to_fix": "Upgrade the `n8n-nodes-base` library to the patch version.",
-  "vulnerable_to": "SQL injection",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 88,
-  "changelog": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.84.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

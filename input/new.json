@@ -1,25 +1,15 @@
 {
-  "package_name": "langchain",
-  "patch_versions": [
-    "0.3.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.1",
-      "0.3.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-200"
-  ],
-  "tldr": "Affected versions of this package may expose sensitive information. When inspecting certain models that contain API keys, the data may be inadvertently logged, leading to potential exposure of sensitive credentials.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `langchain` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "ELIXIR",
-  "severity_class": "LOW",
-  "aikido_score": 25,
-  "changelog": "https://github.com/brainlid/langchain/releases/tag/v0.3.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

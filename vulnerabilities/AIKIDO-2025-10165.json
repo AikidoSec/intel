@@ -1,0 +1,28 @@
+{
+  "package_name": "Microsoft.VisualStudio.Threading",
+  "patch_versions": [
+    "17.13.61"
+  ],
+  "vulnerable_ranges": [
+    [
+      "17.5.10-alpha",
+      "17.13.60"
+    ]
+  ],
+  "cwe": [
+    "CWE-362",
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of the `Microsoft.VisualStudio.Threading` library are vulnerable to a race condition due to the lack of guaranteed ordering when reading `this.joinableTask` in the lock-free section of the logic. Under certain race conditions, `AsyncLazy` may wait on the inner task instead of the joinable task when two threads access this code simultaneously, potentially causing the program to hang and leading to a denial of service (DoS).",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Microsoft.VisualStudio.Threading` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Race Condition",
+  "related_cve_id": "",
+  "language": "DOTNET",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/microsoft/vs-threading/releases/tag/v17.13.61",
+  "last_modified": "2025-03-18",
+  "published": "2025-03-18"
+}

@@ -1,25 +1,15 @@
 {
-  "package_name": "flutter_callkit_incoming",
-  "patch_versions": [
-    "2.5.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "2.5.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-284"
-  ],
-  "tldr": "Affected versions of the `flutter_callkit_incoming` package are vulnerable to Task Hijacking due to misconfigurations in `AndroidManifest.xml` related to Task Control features. This vulnerability allows unauthorized attackers or malware to take over legitimate apps, potentially leading to the theft of sensitive user information.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `flutter_callkit_incoming` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Improper Access Control",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "DART",
-  "severity_class": "MEDIUM",
-  "aikido_score": 65,
-  "changelog": "https://github.com/hiennguyen92/flutter_callkit_incoming/blob/master/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

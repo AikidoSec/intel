@@ -1,0 +1,57 @@
+{
+  "package_name": "spring-security-crypto",
+  "patch_versions": [
+    "5.7.16",
+    "5.8.18",
+    "6.0.16",
+    "6.1.14",
+    "6.2.10",
+    "6.3.8",
+    "6.4.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.0",
+      "5.7.15"
+    ],
+    [
+      "5.8.0",
+      "5.8.17"
+    ],
+    [
+      "6.0.0",
+      "6.0.15"
+    ],
+    [
+      "6.1.0",
+      "6.1.13"
+    ],
+    [
+      "6.2.0",
+      "6.2.9"
+    ],
+    [
+      "6.3.0",
+      "6.3.7"
+    ],
+    [
+      "6.4.0",
+      "6.4.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-287"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper password verification in `BCryptPasswordEncoder.matches(CharSequence, String)`. When a password exceeds 72 characters, only the first 72 characters are considered for comparison. As a result, passwords that share the same initial 72 characters will incorrectly be treated as identical, potentially allowing authentication bypass.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `spring-security-crypto` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Authentication",
+  "related_cve_id": "CVE-2025-22228",
+  "language": "JAVA",
+  "severity_class": "HIGH",
+  "aikido_score": 74,
+  "changelog": "https://spring.io/security/cve-2025-22228",
+  "last_modified": "2025-03-20",
+  "published": "2025-03-20"
+}

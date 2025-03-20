@@ -1,0 +1,26 @@
+{
+  "package_name": "golang.org/x/oauth2",
+  "patch_versions": [
+    "0.27.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.26.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-770"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Unlimited Resource Consumption where an attacker can pass a malformed token, causing excessive memory consumption during parsing. This can lead to a denial-of-service (DoS) condition by exhausting system resources.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `golang.org/x/oauth2` library to the patch version.",
+  "vulnerable_to": "Unlimited Resource Consumption",
+  "related_cve_id": "CVE-2025-22868",
+  "language": "GO",
+  "severity_class": "HIGH",
+  "aikido_score": 87,
+  "changelog": "https://pkg.go.dev/vuln/GO-2025-3488",
+  "last_modified": "2025-03-20",
+  "published": "2025-03-20"
+}

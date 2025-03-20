@@ -1,5 +1,5 @@
 {
-  "package_name": "golang.org/x/oauth2/jws",
+  "package_name": "golang.org/x/oauth2",
   "patch_versions": [
     "0.27.0"
   ],
@@ -14,7 +14,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to Unlimited Resource Consumption where an attacker can pass a malformed token, causing excessive memory consumption during parsing. This can lead to a denial-of-service (DoS) condition by exhausting system resources.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `golang.org/x/oauth2/jws` library to the patch version.",
+  "how_to_fix": "Upgrade the `golang.org/x/oauth2` library to the patch version.",
   "vulnerable_to": "Unlimited Resource Consumption",
   "related_cve_id": "CVE-2025-22868",
   "language": "GO",

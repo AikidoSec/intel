@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "spring-security-config",
+  "patch_versions": [
+    "6.4.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.4.0",
+      "6.4.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-285"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an authorization bypass due to improper detection of method security annotations on parameterized types or overridden methods. When using `@EnableMethodSecurity`, if security annotations are applied to a parameterized superclass, interface, or overridden method—without being explicitly defined on the target method—Spring Security may fail to enforce access control, allowing unauthorized access.",
+  "doest_this_affect_me": "You are affected if using a vulnerable version, while applications remain unaffected if they do not use `@EnableMethodSecurity`, avoid applying method security annotations to parameterized types or methods, and explicitly attach all security annotations to target methods.",
+  "how_to_fix": "Upgrade the `spring-security-config` library to the patch version. If upgrading is not an option, you can either ensure annotations are placed on the target method instead of its parameterized ancestor or publish an `AuthorizationManagerBeforeMethodInterceptor` to correctly detect annotations on parameterized types.",
+  "reporter": "",
+  "vulnerable_to": "Authorization Bypass",
+  "related_cve_id": "CVE-2025-22223",
+  "language": "JAVA",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://spring.io/security/cve-2025-22223"
 }

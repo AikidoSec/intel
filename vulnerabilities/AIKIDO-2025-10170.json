@@ -1,0 +1,26 @@
+{
+  "package_name": "anyio",
+  "patch_versions": [
+    "4.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "4.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a race condition in `_eventloop.get_asynclib()`, which can cause crashes when multiple event loops of the same backend run in separate threads and simultaneously attempt to use `anyio` for the first time. This issue can lead to unexpected application failures and instability in multi-threaded environments.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `anyio` library to the patch version.",
+  "vulnerable_to": "Race Condition",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 82,
+  "changelog": "https://github.com/agronholm/anyio/releases/tag/4.4.0",
+  "last_modified": "2025-03-20",
+  "published": "2025-03-20"
+}

@@ -12,7 +12,7 @@
   "cwe": [
     "CWE-770"
   ],
-  "tldr": "Affected versions of this package are vulnerable to a Allocation of Resources Without Limits or Throttling where an attacker can pass a malformed token, causing excessive memory consumption during parsing. This can lead to a denial-of-service (DoS) condition by exhausting system resources.",
+  "tldr": "Affected versions of this package are vulnerable to Unlimited Resource Consumption where an attacker can pass a malformed token, causing excessive memory consumption during parsing. This can lead to a denial-of-service (DoS) condition by exhausting system resources.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `golang.org/x/oauth2/jws` library to the patch version.",
   "vulnerable_to": "Unlimited Resource Consumption",

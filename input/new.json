@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `cosmwasm-std` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Authentication Bypass",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-25500",
   "language": "RUST",
   "severity_class": "MEDIUM",
   "aikido_score": 53,

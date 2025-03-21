@@ -1,0 +1,27 @@
+{
+  "package_name": "cosmwasm-std",
+  "patch_versions": [
+    "2.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.1.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-306"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Missing Authentication for a Critical Function due to inadequate runtime capability validation. This allows an attacker to execute unauthorized actions on the blockchain by deploying a contract without proper capability enforcement, potentially leading to unauthorized modifications or security breaches.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `cosmwasm-std` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Authentication Bypass",
+  "related_cve_id": "CVE-2025-25500",
+  "language": "RUST",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
+  "changelog": "https://github.com/CosmWasm/cosmwasm/blob/v2.2.0/CHANGELOG.md",
+  "last_modified": "2025-03-21",
+  "published": "2025-03-21"
+}

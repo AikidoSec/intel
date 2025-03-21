@@ -1,29 +1,15 @@
 {
-  "package_name": "electron",
-  "patch_versions": [
-    "33.4.6",
-    "34.3.4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "33.0.0",
-      "33.4.5"
-    ],
-    [
-      "34.0.0",
-      "34.3.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-843"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a Type Confusion issue in Google Chrome prior to 134.0.6998.88. A remote attacker can exploit this vulnerability by crafting a malicious HTML page, potentially leading to heap corruption and arbitrary code execution. (Chromium security severity: High)",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `electron` library to a patch version.",
-  "vulnerable_to": "Type Confusion",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 88,
-  "changelog": "https://github.com/electron/electron/releases/tag/v33.4.6"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "sigs.k8s.io/azuredisk-csi-driver",
+  "patch_versions": [
+    "1.29.13"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.3.0",
+      "1.29.12"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to uncontrolled resource consumption. A security issue in Kubernetes (as described in CVE-2025-0426) allows an attacker to exploit the unauthenticated kubelet read-only HTTP endpoint by making a large number of container checkpoint requests, which can fill the Node's disk and cause a Denial of Service. To address this vulnerability, the `sigs.k8s.io/azuredisk-csi-driver` package required multiple significant changes to adapt to the Kubernetes upgrade.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade the `sigs.k8s.io/azuredisk-csi-driver` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
+  "related_cve_id": "CVE-2025-0426",
+  "language": "go",
+  "severity_class": "MEDIUM",
+  "aikido_score": 62,
+  "changelog": "https://github.com/kubernetes-sigs/azuredisk-csi-driver/releases/tag/v1.29.13"
 }

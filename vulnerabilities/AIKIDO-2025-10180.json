@@ -1,0 +1,28 @@
+{
+  "package_name": "github.com/quic-go/quic-go",
+  "patch_versions": [
+    "0.50.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.50.0",
+      "0.50.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-248",
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to uncaught exceptions due to a flaw in the probe packet tracking logic. Under specific loss and acknowledgment patterns, this can result in a nil-pointer dereference, potentially causing unexpected crashes and disrupting application stability.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/quic-go/quic-go` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Uncaught Exception",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 18,
+  "changelog": "https://github.com/quic-go/quic-go/releases/tag/v0.50.1",
+  "last_modified": "2025-03-25",
+  "published": "2025-03-25"
+}

@@ -21,7 +21,7 @@
   "language": "GO",
   "severity_class": "LOW",
   "aikido_score": 24,
-  "changelog": "https://github.com/buildkite/agent/releases/tag/v3.95.0",
+  "changelog": "https://github.com/buildkite/agent/releases/tag/v3.95.1",
   "last_modified": "2025-03-25",
   "published": "2025-03-25"
 }

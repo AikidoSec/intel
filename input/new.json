@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "merge-anything",
+  "patch_versions": [
+    "6.0.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.1.0",
+      "6.0.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution, allowing an attacker to inject properties such as `isAdmin` into an object's prototype when merging an object containing a `__proto__` property using the `mergeRecursively` function of the `merge-anything` library. This can lead to unauthorized access, privilege escalation, and unpredictable application behavior due to bypassed permission checks. To mitigate this issue, applications should explicitly filter out keys like `__proto__`, `prototype`, and `constructor`. Given the library's widespread usage, multiple use cases may be affected by this vulnerability.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `merge-anything` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 48,
+  "changelog": "https://github.com/mesqueeb/merge-anything/releases/tag/v6.0.5"
 }

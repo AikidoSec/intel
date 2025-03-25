@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/Clickhouse/Clickhouse-go/v2",
-  "patch_versions": [
-    "2.33.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.0.0",
-      "2.33.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-362"
-  ],
-  "tldr": "Affected versions are affected by a race condition due to concurrent map writes when using `clickhouse.WithSettings()`, leading to unexpected behavior and potential panics. Specifically, per-query settings persist across queries, and an empty `clickhouse.WithSettings(nil)` can cause a nil write panic. This occurs because settings were shared between contexts, leading to unintended overrides, such as `max_execution_time` and `async_insert`. The fix ensures that the settings map is always copied when read, preventing concurrency issues while maintaining performance. Additional tests and documentation updates have been included to clarify behavior and improve maintainability.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/Clickhouse/Clickhouse-go/v2` library to the patch version.",
-  "vulnerable_to": "Race Condition",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 18,
-  "changelog": "https://github.com/ClickHouse/clickhouse-go/releases/tag/v2.33.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

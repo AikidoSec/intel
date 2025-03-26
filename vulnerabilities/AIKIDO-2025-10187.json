@@ -1,5 +1,5 @@
 {
-  "package_name": "alloy-primitives'",
+  "package_name": "alloy-primitives",
   "patch_versions": [
     "0.8.25"
   ],
@@ -14,7 +14,7 @@
   ],
   "tldr": "Affected versions of this package generate random `FixedBytes` primitives incorrectly by calling `assume_init` on an uninitialized array, leading to immediate undefined behavior. Since an uninitialized byte array is always invalid in Rust, this violates safety rules. The fix ensures that every element is properly written to before calling `assume_init`, using `MaybeUninit<u8>; N` and leveraging `getrandom` for safe randomization. For `rand`, a manual implementation of the `Fill` trait via a wrapper is used.",
   "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges and using template::UriTemplateStr.",
-  "how_to_fix": "Upgrade the `alloy-primitives'` library to the patch version.",
+  "how_to_fix": "Upgrade the `alloy-primitives` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Undefined Behavior",
   "related_cve_id": "",

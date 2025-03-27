@@ -1,11 +1,16 @@
 {
   "package_name": "axios",
   "patch_versions": [
+    "0.30.0",
     "1.8.3"
   ],
   "vulnerable_ranges": [
     [
       "0.19.1",
+      "0.29.0"
+    ],
+    [
+      "1.0.0",
       "1.8.2"
     ]
   ],
@@ -22,6 +27,6 @@
   "severity_class": "MEDIUM",
   "aikido_score": 62,
   "changelog": "https://github.com/axios/axios/releases/tag/v1.8.3",
-  "last_modified": "2025-03-26",
+  "last_modified": "2025-03-27",
   "published": "2025-03-26"
 }

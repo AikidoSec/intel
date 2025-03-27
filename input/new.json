@@ -1,25 +1,15 @@
 {
-  "package_name": "xmas-elf",
-  "patch_versions": [
-    "0.10.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1",
-      "0.9.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-125"
-  ],
-  "tldr": "Affected versions of this crate improperly validate the index argument of `HashTable::get_bucket` and `HashTable::get_chain`, checking it only against the input-controlled `bucket_count` and `chain_count` fields but not against the actual size of the ELF section. Consequently, a malformed ELF file can trigger out-of-bounds reads in applications using the `HashTable` API by setting these fields to excessively large values that extend beyond the hash table section and introducing corresponding out-of-bounds indexes elsewhere in the ELF file.",
-  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges and using template::UriTemplateStr.",
-  "how_to_fix": "Upgrade the `xmas-elf` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Out-of-bounds Read",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "rust",
-  "severity_class": "LOW",
-  "aikido_score": 35,
-  "changelog": "https://github.com/nrc/xmas-elf/compare/0.9.1...0.10.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

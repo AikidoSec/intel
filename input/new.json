@@ -1,15 +1,28 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "electron",
+  "patch_versions": [
+    "35.1.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "34.0.0",
+      "34.4.0"
+    ],
+    [
+      "35.0.0",
+      "35.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-693"
+  ],
+  "tldr": "Affected versions of this package are affected by an incorrect handle issue in Mojo in Google Chrome on Windows before 134.0.6998.177, where a remote attacker could exploit this vulnerability by tricking the sandbox validation when opening a malicious file, leading to a sandbox escape and potentially arbitrary code execution in the context of the host system. (Chromium security severity: High)",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `electron` library to a patch version.",
+  "vulnerable_to": "Sandbox Escape",
+  "related_cve_id": "CVE-2025-2783",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 84,
+  "changelog": "https://github.com/electron/electron/releases/tag/v35.1.2"
 }

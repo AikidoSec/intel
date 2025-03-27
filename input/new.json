@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "aws-cdk-lib",
+  "patch_versions": [
+    "2.184.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.183.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-276"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Incorrect Default Permissions in the IAM trust policy. A user with `sts:AssumeRole` permissions can escalate privileges to roles defined by the IAM trust policy, potentially allowing unauthorized actions on CloudFormation, CodeCommit, Lambda, and ECS.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `aws-cdk-lib` library to the patch version. Upgrading to the patched version alone is not sufficient; the feature flag `@aws-cdk/pipelines:reduceStageRoleTrustScope` must be set to `true`, and applications must be redeployed to fully mitigate the issue.",
+  "reporter": "",
+  "vulnerable_to": "Incorrect Default Permissions",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/aws/aws-cdk/releases/tag/v2.184.0"
 }

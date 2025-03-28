@@ -1,15 +1,20 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@auth0/nextjs-auth0",
+  "patch_versions": ["4.3.0"],
+  "vulnerable_ranges": [
+    [
+      "4.0.2",
+      "4.2.1"
+    ]
+  ],
+  "cwe": ["CWE-200"],
+  "tldr": "Affected versions of this package are affected by a design flaw where access tokens could be inadvertently exposed to browser-based applications due to a misconfiguration of the access control in the auth endpoint, violating OAuth best practices. An attacker could take leverage of this flaw to steal tokens via client-side attacks, potentially leading to an account takeover.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@auth0/nextjs-auth0` library to the patch version.",
+  "vulnerable_to": "Access Token Exposure",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
+  "changelog": "https://github.com/auth0/nextjs-auth0/blob/main/CHANGELOG.md"
 }

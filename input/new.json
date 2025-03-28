@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "wp-pay/core",
+  "patch_versions": [
+    "4.25.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.4.0",
+      "4.25.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package insufficiently sanitize fields registered via `register_setting()`, allowing potentially unsafe or untrusted input to be used without proper validation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `wp-pay/core` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Input Validation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 12,
+  "changelog": "https://github.com/pronamic/wp-pay-core/releases/tag/v4.25.4"
 }

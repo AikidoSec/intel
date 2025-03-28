@@ -19,7 +19,7 @@
   "vulnerable_to": "Improper Input Validation",
   "related_cve_id": "",
   "language": "PHP",
-  "severity_class": "LOW",
-  "aikido_score": 12,
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
   "changelog": "https://github.com/pronamic/wp-pay-core/releases/tag/v4.25.4"
 }

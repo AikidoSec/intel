@@ -1,15 +1,17 @@
 {
-  "package_name": "",
+  "package_name": "xlsx",
   "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "vulnerable_ranges": "*",
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS) due to the use of inefficient regular expressions in multiple functions. An attacker can exploit this vulnerability by supplying specially crafted input, potentially causing high CPU usage and application downtime. As this package is no longer maintained, it is recommended to migrate to an actively supported alternative.",
+  "doest_this_affect_me": "You are affected if you are using the package.",
+  "how_to_fix": "Remove this package from your project and migrate to a community-maintained fork like `@e965/xlsx`, using at least version `0.20.2`.",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "CVE-2024-22363",
+  "language": "js",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://cdn.sheetjs.com/advisories/CVE-2024-22363"
 }

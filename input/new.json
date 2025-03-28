@@ -1,15 +1,20 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "synapse",
+  "patch_versions": ["2.204.0"],
+  "vulnerable_ranges": [
+    [
+      "2.177.0",
+      "2.203.0"
+    ]
+  ],
+  "cwe": ["CWE-305"],
+  "tldr": "Affected versions of this package are affected by a vulnerability where locked users could still access authenticated HTTP endpoints using an existing session cookie, bypassing account lock restrictions. User lock status now properly invalidates active sessions across all endpoints. An attacker could exploit this by retaining a valid session cookie after account lockout, leading to unauthorized access to authenticated endpoints.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `synapse` library to the patch version.",
+  "vulnerable_to": "Authentication Bypass",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "LOW",
+  "aikido_score": 22,
+  "changelog": "https://github.com/vertexproject/synapse/releases/tag/v2.204.0"
 }

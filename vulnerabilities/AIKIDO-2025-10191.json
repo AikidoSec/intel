@@ -1,0 +1,27 @@
+{
+  "package_name": "aws-cdk-lib",
+  "patch_versions": [
+    "2.184.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.183.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-276"
+  ],
+  "tldr": "Affected versions of this package create over-permissive roles for AWS CodePipeline, specifically the 'PipelineProdPromoteToProd' and 'PipelineSource' roles. Those role could be assumed by any entity in the account. As those roles are highly privileged, it could allow an attacker to escalate their privileges within your AWS account.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range, and define & deploy AWS CodePipeline instances via CDK.",
+  "how_to_fix": "Upgrade the `aws-cdk-lib` library to the patch version. Upgrading to the patched version alone is not sufficient; the feature flag `@aws-cdk/pipelines:reduceStageRoleTrustScope` must be set to `true`, and the infrastructure must be redeployed to fully mitigate the issue.",
+  "reporter": "",
+  "vulnerable_to": "Incorrect Default Permissions",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/aws/aws-cdk/releases/tag/v2.184.0",
+  "last_modified": "2025-03-28",
+  "published": "2025-03-28"
+}

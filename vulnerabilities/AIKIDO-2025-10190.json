@@ -1,12 +1,12 @@
 {
   "package_name": "shuchkin/simplexlsx",
   "patch_versions": [
-    "1.1.12"
+    "1.1.13"
   ],
   "vulnerable_ranges": [
     [
       "1.0.12",
-      "1.1.11"
+      "1.1.12"
     ]
   ],
   "cwe": [
@@ -17,10 +17,10 @@
   "how_to_fix": "Upgrade the `shuchkin/simplexlsx` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Improper Input Validation",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2024-56364",
   "language": "php",
-  "severity_class": "LOW",
-  "aikido_score": 35,
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
   "changelog": "https://github.com/shuchkin/simplexlsx/blob/master/CHANGELOG.md",
   "last_modified": "2025-03-28",
   "published": "2025-03-28"

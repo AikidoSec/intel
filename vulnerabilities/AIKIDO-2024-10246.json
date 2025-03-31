@@ -10,7 +10,7 @@
     ]
   ],
   "cwe": [
-    "CWE-89"
+    "CWE-79"
   ],
   "tldr": "Affected versions of the package allow Cross-Site Scripting (XSS) attacks. The search box in on the branch selector page uses v-html tags, which are unsafe.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",

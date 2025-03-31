@@ -10,7 +10,7 @@
     ]
   ],
   "cwe": [
-    "CWE-89"
+    "CWE-79"
   ],
   "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) attacks due to improper handling of `MarkupString`s in components. To mitigate this, all `MarkupString`s have been removed.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",

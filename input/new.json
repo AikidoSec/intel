@@ -1,20 +1,15 @@
 {
-  "package_name": "@react-router/express",
-  "patch_versions": ["7.4.1"],
-  "vulnerable_ranges": [
-    [
-      "7.0.0",
-      "7.4.0"
-    ]
-  ],
-  "cwe": ["CWE-352"],
-  "tldr": "Affected versions of this package are affected by a design flaw where it constructs a Request object using the incoming request's properties (method, headers, body) and builds a new URL from `req.protocol` and `req.hostname` (derived from untrusted headers like `X-Forwarded-Host` or `Host`). This request is forwarded to the tainted URL without proper validation, allowing forgery attacks like crafting a malicious site that sends forged state-changing requests, such as POST, using the victim's session cookies.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@react-router/express` library to the patch version.",
-  "vulnerable_to": "Cross-Site Request Forgery (CSRF)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 77,
-  "changelog": "https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v741"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

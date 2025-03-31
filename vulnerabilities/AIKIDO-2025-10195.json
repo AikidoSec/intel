@@ -1,0 +1,27 @@
+{
+  "package_name": "Radzen.Blazor",
+  "patch_versions": [
+    "6.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "6.3.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-89"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) attacks due to improper handling of `MarkupString`s in components. To mitigate this, all `MarkupString`s have been removed.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Radzen.Blazor` library to the patch version. Note: some breaking changes have been introduced (compared to 6.3.x). Unicode symbols for icons must now be used directly as characters rather than HTML entities (e.g., replace `<RadzenIcon Icon=\"&#xf015\"/>` with `<RadzenIcon Icon=\"@(\"\")\"/>`). Additionally, dialog titles no longer support HTML content—developers should use `DialogContent` instead.",
+  "reporter": "",
+  "vulnerable_to": "Cross-Site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "DOTNET",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/radzenhq/radzen-blazor/releases/tag/v6.4.0",
+  "last_modified": "2025-03-31",
+  "published": "2025-03-31"
+}

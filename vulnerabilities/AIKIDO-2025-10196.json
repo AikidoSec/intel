@@ -1,0 +1,27 @@
+{
+  "package_name": "@remix-run/express",
+  "patch_versions": [
+    "2.16.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.2.0",
+      "2.16.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to URL manipulation and cache pollution due to inadequate port sanitization in the handling of the `Host` and `X-Forwarded-Host` headers. An attacker can exploit this weakness to manipulate request routing or poison caches, potentially leading to security issues such as cache poisoning attacks or unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade the `@remix-run/express` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/remix-run/remix/releases/tag/remix%402.16.3",
+  "last_modified": "2025-03-31",
+  "published": "2025-03-31"
+}

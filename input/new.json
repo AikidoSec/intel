@@ -1,25 +1,15 @@
 {
-  "package_name": "pyo3",
-  "patch_versions": [
-    "0.24.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.21.0",
-      "0.24.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-120"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to an out-of-bounds read in `PyString::from_object`, which directly forwards `&str` arguments to the Python C API without ensuring a null-terminated string. This could cause the Python interpreter to read beyond the allocated data, potentially leaking sensitive information in an exception message. In PyO3 0.24.1, this issue is mitigated by allocating a `CString` to ensure proper null termination, and PyO3 0.25 is expected to introduce an alternative API that accepts `&CStr` arguments.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `pyo3` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Buffer Overflow",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "LOW",
-  "aikido_score": 30,
-  "changelog": "https://github.com/PyO3/pyo3/releases/tag/v0.24.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

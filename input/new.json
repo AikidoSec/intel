@@ -8,7 +8,7 @@
     ]
   ],
   "cwe": ["CWE-862"],
-  "tldr": "Affected versions of this package are affected by a security misconfiguration due to the inadequate validation of user permissions when handling company role configurations. This allows for privilege escalation by manipulating the `id-company-role` or `id-permission` parameters. An attacker could exploit this vulnerability by sending maliciously crafted requests to grant themselves elevated permissions, potentially leading to unauthorized access to sensitive functions or data within the system.",
+  "tldr": "Affected versions of this package are vulnerable to a security misconfiguration due to insufficient validation of user permissions in company role configurations. This allows privilege escalation by manipulating the `id-company-role` or `id-permission` parameters. An attacker can exploit this by crafting malicious requests to gain elevated privileges, potentially resulting in unauthorized access to sensitive functions or data.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `spryker-shop/company-page` library to the patch version.",
   "vulnerable_to": "Missing Authorization",

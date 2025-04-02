@@ -12,7 +12,7 @@
   "cwe": [
     "CWE-284"
   ],
-  "tldr": "Affected versions of this package are affected by an broken access control vulnerability in these methods: executeCreateAction and executeUpdateAction. Insufficient validation in these actions allows users to create and update accounts outside of their own company. An attacker could exploit this weakness by forging requests to create or modify users in other companies, thereby bypassing access controls. It could potentially lead to privilege escalation or unauthorized access.",
+  "tldr": "Affected versions of this package are vulnerable to broken access control in the `executeCreateAction` and `executeUpdateAction` methods. Insufficient validation in these actions allows users to create or update accounts outside their own company. An attacker can exploit this by forging requests to manipulate users in other companies, potentially leading to privilege escalation or unauthorized access.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `spryker-shop/company-page` library to the patch version.",
   "vulnerable_to": "Broken Access Control",

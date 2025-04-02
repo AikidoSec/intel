@@ -1,0 +1,27 @@
+{
+  "package_name": "streamlit",
+  "patch_versions": [
+    "1.43.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1",
+      "1.43.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-434"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Arbitrary File Upload in the `file_uploader.py` widget, which fails to enforce file type restrictions on the server side. Although file type limitations can be set on the client side, they are not validated on the server, allowing an attacker to bypass restrictions and upload arbitrary files.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `streamlit` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Unrestricted Upload of File with Dangerous Type",
+  "related_cve_id": "CVE-2025-1684",
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/streamlit/streamlit/releases/tag/1.43.2",
+  "last_modified": "2025-04-02",
+  "published": "2025-04-02"
+}

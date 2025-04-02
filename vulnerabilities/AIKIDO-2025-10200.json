@@ -1,0 +1,26 @@
+{
+  "package_name": "statamic/seo-pro",
+  "patch_versions": [
+    "6.6.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.11",
+      "6.6.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable due to incomplete URL sanitization in meta tags (such as canonical and related URLs), where user input was not correctly escaped or validated. An attacker could craft a malicious payload with a manipulated `canonical` or related URL parameter (e.g., `?redirect=javascript:alert(1)` or `?next=evil.com`), tricking users into visiting phishing sites or executing arbitrary scripts in their browser context, bypassing existing protections.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `statamic/seo-pro` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS) - DOM Based",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/statamic/seo-pro/releases/tag/6.6.3",
+  "last_modified": "2025-04-02",
+  "published": "2025-04-02"
+}

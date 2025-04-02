@@ -8,7 +8,7 @@
     ]
   ],
   "cwe": ["CWE-601"],
-  "tldr": "Affected versions of this package are affected by an open redirect vulnerability in the `getSafeRedirect` method due to improper input validation, where URLs were not properly escaped, normalized, or encoded before handling redirects. An attacker can exploit this by crafting a malicious URL with an embedded redirect to a phishing or malicious site, tricking users into visiting unintended domains when they click on a seemingly legitimate link.",
+  "tldr": "Affected versions of this package are vulnerable to an open redirect in the `getSafeRedirect` method due to improper input validation. The method fails to correctly escape, normalize, or encode URLs before processing redirects, allowing an attacker to craft a malicious URL that redirects users to phishing or malicious sites. This can deceive users into visiting unintended domains under the guise of a legitimate link.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `@payloadcms/next` library to the patch version.",
   "vulnerable_to": "Open Redirect",

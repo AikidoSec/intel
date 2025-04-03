@@ -1,22 +1,15 @@
 {
-  "package_name": "TypeORM",
-  "patch_versions": [
-    "0.3.22"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.3.0",
-      "0.3.21"
-    ]
-  ],
-  "cwe": ["CWE-116"],
-  "tldr": "Affected versions of this package lack sufficient backlash and single quote escaping in the methods used for drives, migrations, and query runners. It unsafely utilizes `String.replace()` for escaping, which fails to handle repeated special characters or escape sequences properly. This vulnerability allows attackers to create malicious input with unescaped special characters, potentially breaking the query syntax and enabling SQL injection attacks if the improperly escaped string is handled in a critical context.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `TypeORM` library to the patch version.",
-  "vulnerable_to": "Improper String Escaping",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 70,
-  "changelog": "https://github.com/typeorm/typeorm/blob/master/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

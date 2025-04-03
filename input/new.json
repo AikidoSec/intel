@@ -8,7 +8,7 @@
     ]
   ],
   "cwe": ["CWE-285"],
-  "tldr": "Affected versions of this package are affected by an Authorization Bypass via internal request spoofing. The middleware bypasses authorization checks for internal requests but fails to adequately validate whether the requests are genuinely internal, enabling attackers to impersonate internal requests and circumvent access controls. An attacker could craft a malicious request with a fake internal flag, gaining unauthorized access to protected routes or critical system functionalities.",
+  "tldr": "Affected versions of this package are vulnerable to an authorization bypass due to improper validation of internal requests. The middleware exempts internal requests from authorization checks but fails to verify their authenticity, allowing attackers to spoof internal requests and bypass access controls. By crafting a request with a forged internal flag, an attacker can gain unauthorized access to protected routes or critical system functionalities.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `@opennextjs/aws` library to the patch version.",
   "vulnerable_to": "Authorization Bypass",

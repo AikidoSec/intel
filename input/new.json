@@ -1,25 +1,15 @@
 {
-  "package_name": "zip-lib",
-  "patch_versions": [
-    "1.1.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "1.0.5"
-    ]
-  ],
-  "cwe": [
-    "CWE-22"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a directory traversal or zip slip issue during ZIP extraction. When extracting multiple ZIP files, an attacker can bypass the `isOutsideTargetFolder` check by first extracting a ZIP file containing a symlink to an arbitrary directory (e.g., `/tmp/`) and then extracting another ZIP file with files or symlinks targeting that location. This allows files to be written outside the intended extraction directory, potentially leading to unauthorized file writes.",
-  "doest_this_affect_me": "You are affected if you are use a vulnerable version of `torchserve`.",
-  "how_to_fix": "Upgrade `zip-lib` to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Zip Slip",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 75,
-  "changelog": "https://github.com/fpsqdb/zip-lib/releases/tag/v1.1.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

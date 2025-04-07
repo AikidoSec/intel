@@ -1,15 +1,35 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "abseil.abseil-cpp",
+  "patch_versions": [
+    "20240722.1",
+    "20240116.3",
+    "20230802.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "20240722.0",
+      "20240722.0"
+    ],
+    [
+      "20240116.0",
+      "20240116.2"
+    ],
+    [
+      "20230802.0",
+      "20230802.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to integer overflow in `absl::{flat,node}_hash_{set,map}` during container creation or resizing via constructors, `reserve()`, or `rehash()`. These methods fail to enforce upper bounds on size arguments, potentially causing overflows when allocating the backing store and leading to out-of-bounds memory access. The fix introduces proper validation of size arguments and updates `max_size()` to reflect safe limits. While exploitation is considered difficult due to limited attacker control over container sizes, applications using untrusted input should upgrade to a patched version.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `abseil.abseil-cpp` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Integer Overflow",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "c++",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/abseil/abseil-cpp/releases/tag/20250127.1"
 }

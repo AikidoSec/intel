@@ -1,0 +1,26 @@
+{
+  "package_name": "tarteaucitronjs",
+  "patch_versions": [
+    "1.20.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.8.1",
+      "1.19.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution due to unsafe property merging in a for...in loop without hasOwnProperty checks, allowing an attacker to inject malicious properties into Object.prototype by crafting an object with keys like `__proto__` or constructor.prototype. It can lead to arbitrary code execution, privilege escalation, or denial of service by polluting the prototype chain.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `tarteaucitronjs` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 73,
+  "changelog": "https://github.com/AmauriC/tarteaucitron.js/releases/tag/v1.20.1",
+  "last_modified": "2025-04-07",
+  "published": "2025-04-07"
+}

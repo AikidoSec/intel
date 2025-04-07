@@ -1,0 +1,27 @@
+{
+  "package_name": "ArtifexSoftware.ghostpdl",
+  "patch_versions": [
+    "10.05.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "9.00",
+      "10.04.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-120"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to multiple cves (CVE-2025-27830 through CVE-2025-27837), all regarding buffer overflows.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ArtifexSoftware.ghostpdl` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Buffer Overflow",
+  "related_cve_id": "CVE-2025-278311",
+  "language": "c++",
+  "severity_class": "CRITICAL",
+  "aikido_score": 98,
+  "changelog": "https://git.ghostscript.com/?p=ghostpdl.git;a=log;h=refs/tags/ghostpdl-10.05.0",
+  "last_modified": "2025-04-07",
+  "published": "2025-04-07"
+}

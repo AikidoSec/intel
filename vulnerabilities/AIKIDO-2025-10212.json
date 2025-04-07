@@ -1,0 +1,32 @@
+{
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.14.13",
+    "5.6.15"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "4.14.12"
+    ],
+    [
+      "5.0.0",
+      "5.6.14"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to remote code execution (RCE) due to insufficient validation of user input, allowing attackers to invoke dangerous functions such as `popen`.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges and if you are using the `NativeJob` class.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.6.15",
+  "last_modified": "2025-04-07",
+  "published": "2025-04-07"
+}

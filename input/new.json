@@ -1,15 +1,30 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "Mbed-TLS.mbedtls",
+  "patch_versions": [
+    "2.28.10",
+    "3.6.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.28.9"
+    ],
+    [
+      "3.0.0",
+      "3.6.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-1188"
+  ],
+  "tldr": "Affected versions of Mbed TLS up to `2.8.9` and `3.x` up to `3.6.2` are vulnerable to a server impersonation issue due to an insecure default configuration. If a TLS client does not explicitly call `mbedtls_ssl_set_hostname()`, the hostname verification step is skipped, allowing any server with a valid certificate from a trusted CA to impersonate any other server. This flaw enables a network-based attacker to perform man-in-the-middle attacks, potentially accessing or modifying sensitive data exchanged over TLS.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "To mitigate the vulnerability, TLS client applications should always call `mbedtls_ssl_set_hostname()` with the expected server name, unless only pre-shared key cipher suites are used. Upgrading to Mbed TLS `2.28.10` or `3.6.3` is strongly recommended, as these versions enforce hostname verification by default. Clients using certificate pinning or operating in a closed, trusted environment may not be affected, but calling `mbedtls_ssl_set_hostname()` is still advised as a defense-in-depth measure.",
+  "reporter": "",
+  "vulnerable_to": "Initialization of a Resource with an Insecure Default",
+  "related_cve_id": "CVE-2025-27809",
+  "language": "c++",
+  "severity_class": "HIGH",
+  "aikido_score": 81,
+  "changelog": "https://github.com/Mbed-TLS/mbedtls/releases/tag/mbedtls-3.6.3"
 }

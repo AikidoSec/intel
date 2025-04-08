@@ -19,7 +19,7 @@
   "vulnerable_to": "Improper Check for Unusual or Exceptional Conditions",
   "related_cve_id": "CVE-2025-2704",
   "language": "c++",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
+  "severity_class": "LOW",
+  "aikido_score": 24,
   "changelog": "https://github.com/OpenVPN/openvpn/releases/tag/v2.6.14"
 }

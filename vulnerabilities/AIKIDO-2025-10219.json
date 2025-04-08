@@ -1,0 +1,27 @@
+{
+  "package_name": "Mbed-TLS.mbedtls",
+  "patch_versions": [
+    "3.6.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.2.0",
+      "3.6.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-295"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper certificate validation during optional TLS 1.3 client authentication. In Mbed TLS 3.6.0, the function `mbedtls_ssl_get_verify_result()` fails to correctly report missing `digitalSignature` or `clientAuth` flags in the client's certificate, returning 0 even when the certificate should be considered invalid. This allows an attacker to use a certificate valid for other purposes (but not for client authentication) to bypass verification checks. This issue does not affect mandatory authentication, TLS 1.2, or TLS 1.3 server authentication.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Affected users should upgrade to Mbed TLS `3.6.1`. As a workaround, servers using optional client authentication should enforce TLS 1.2 by setting the maximum TLS version to `MBEDTLS_SSL_VERSION_TLS1_2`.",
+  "reporter": "",
+  "vulnerable_to": "Improper Certificate Validation",
+  "related_cve_id": "CVE-2024-45159",
+  "language": "c++",
+  "severity_class": "CRITICAL",
+  "aikido_score": 95,
+  "changelog": "https://github.com/Mbed-TLS/mbedtls/releases/tag/mbedtls-3.6.1",
+  "last_modified": "2025-04-08",
+  "published": "2025-04-08"
+}

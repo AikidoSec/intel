@@ -20,7 +20,7 @@
   "how_to_fix": "Upgrade the `pocoproject.poco` library to the patch version.",
   "vulnerable_to": "Integer Overflow",
   "related_cve_id": "",
-  "language": "cpp",
+  "language": "c++",
   "severity_class": "MEDIUM",
   "aikido_score": 61,
   "changelog": "https://github.com/pocoproject/poco/releases/tag/poco-1.12.5p2-release"

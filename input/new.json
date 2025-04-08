@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "label-studio",
+  "patch_versions": [
+    "1.17.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.16.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package may expose sensitive information by displaying full file paths in the UI when an import operation fails. This behavior has been corrected to show only the file name, helping users identify the failed file without revealing potentially sensitive path information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `label-studio` library to the patch version.",
+  "vulnerable_to": "Sensitive Information Exposure",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/HumanSignal/label-studio/releases/tag/1.17.0"
 }

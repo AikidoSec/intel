@@ -1,25 +1,15 @@
 {
-  "package_name": "Mbed-TLS.mbedtls",
-  "patch_versions": [
-    "3.6.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.6.0",
-      "3.6.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-121"
-  ],
-  "tldr": "In Mbed TLS 3.6.0, the functions `mbedtls_ecdsa_der_to_raw()` and `mbedtls_ecdsa_raw_to_der()` are vulnerable to a stack buffer overflow if the `bits` argument exceeds the maximum curve size, due to missing validation. When `MBEDTLS_PSA_CRYPTO_C` is disabled, these functions may use a zero-sized internal buffer, leading to overflows even with valid input. This affects applications that invoke these functions on attacker-controlled input, allowing an attacker to trigger a buffer overflow by manipulating the declared curve bit size.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `Mbed-TLS.mbedtls` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Stack-based Buffer Overflow",
-  "related_cve_id": "CVE-2024-45158",
-  "language": "c++",
-  "severity_class": "HIGH",
-  "aikido_score": 81,
-  "changelog": "https://github.com/Mbed-TLS/mbedtls/releases/tag/mbedtls-3.6.1"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,24 +1,15 @@
 {
-  "package_name": "tendermint-light-client-verifier",
-  "patch_versions": [
-    "0.40.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.23.0",
-      "0.40.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-290"
-  ],
-  "tldr": "Affected versions of the `tendermint-rs` package are vulnerable to a critical flaw in the light client implementation due to improper validation of validator identities. Specifically, the client fails to ensure that a validator’s address is correctly derived from its public key when counting votes. This allows an attacker to spoof validator signatures and forge a malicious block that appears to be signed by a 2/3+ majority, causing the light client to incorrectly trust and accept the block.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `tendermint-light-client-verifier` library to the patch version.",
-  "vulnerable_to": "Authentication Bypass by Spoofing",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "CRITICAL",
-  "aikido_score": 91,
-  "changelog": "https://github.com/informalsystems/tendermint-rs/blob/v0.40.3/CHANGELOG.md#v0403"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

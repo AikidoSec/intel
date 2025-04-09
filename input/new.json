@@ -1,25 +1,15 @@
 {
-  "package_name": "faraday",
-  "patch_versions": [
-    "2.12.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.15.3",
-      "2.12.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-362",
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a thread safety issue in the `proxy` option of Faraday, where the provided hash is mutated by adding keys to it. In multi-threaded environments, this can lead to a `RuntimeError`. The fix avoids modifying the original hash by working with a duplicate instead and includes a test to ensure the original `proxy` option remains unchanged.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `faraday` library to the patch version.",
-  "vulnerable_to": "Race Condition",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUBY",
-  "severity_class": "LOW",
-  "aikido_score": 18,
-  "changelog": "https://github.com/lostisland/faraday/releases/tag/v2.12.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

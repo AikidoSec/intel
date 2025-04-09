@@ -18,7 +18,7 @@
   "vulnerable_to": "Authentication Bypass by Spoofing",
   "related_cve_id": "",
   "language": "RUST",
-  "severity_class": "HIGH",
-  "aikido_score": 81,
+  "severity_class": "CRITICAL",
+  "aikido_score": 91,
   "changelog": "https://github.com/informalsystems/tendermint-rs/blob/v0.40.3/CHANGELOG.md#v0403"
 }

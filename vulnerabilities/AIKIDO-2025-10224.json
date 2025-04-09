@@ -1,0 +1,31 @@
+{
+  "package_name": "github.com/nats-io/nats-server/v2",
+  "patch_versions": [
+    "2.10.27",
+    "2.11.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.2.0",
+      "2.10.26"
+    ],
+    [
+      "2.11.0",
+      "2.11.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-305"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a critical issue tracked as CVE-2025-30215. This patch resolves the vulnerability by correctly validating the calling account on various system API calls and enforcing system and account limits during JetStream stream restore operations.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/nats-io/nats-server/v2` library to the patch version.",
+  "vulnerable_to": "Authentication Bypass",
+  "related_cve_id": "CVE-2025-30215",
+  "language": "GO",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://github.com/nats-io/nats-server/releases/tag/v2.10.27",
+  "last_modified": "2025-04-09",
+  "published": "2025-04-09"
+}

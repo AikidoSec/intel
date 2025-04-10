@@ -1,5 +1,6 @@
 {
   "package_name": "spring-webmvc",
+  "org_name": "org.springframework",
   "patch_versions": [
     "5.3.41",
     "6.0.25",

@@ -1,25 +1,15 @@
 {
-  "package_name": "litellm",
-  "patch_versions": [
-    "1.64.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "1.64.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-732"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Incorrect Permission Assignment for Critical Resource in the Azure OpenAI route. The `get_model_from_request()` function does not reliably enforce access controls when the target model is specified via a URL parameter instead of within the request payload, allowing attackers to potentially bypass authorization checks and access unauthorized models.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `litellm` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Incorrect Permission Assignment for Critical Resource",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "python",
-  "severity_class": "HIGH",
-  "aikido_score": 70,
-  "changelog": "https://github.com/BerriAI/litellm/commit/740bd7e9cef998e4e46f3e37202c59c23c39a8b4"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

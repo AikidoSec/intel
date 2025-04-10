@@ -1,0 +1,27 @@
+{
+  "package_name": "xml-crypto",
+  "patch_versions": [
+    "6.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "6.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-863"
+  ],
+  "tldr": "Affected versions are vulnerable to incorrect authorization due to reliance on deprecated APIs: `.getReferences()` and `.references`. These methods should not be used, as the data they expose is unsigned and unverified. To mitigate the risk of XML signature wrapping attacks, users are strongly advised to migrate to the `.getSignedReferences()` API, which ensures proper signature validation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and you are using the `.getReferences()` or `.references` methods.",
+  "how_to_fix": "Upgrade the `xml-crypto` library to the patch version and/or only use the `.getSignedReferences()` method.",
+  "reporter": "",
+  "vulnerable_to": "Incorrect Authorization",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/node-saml/xml-crypto/releases/tag/v6.1.0",
+  "last_modified": "2025-04-10",
+  "published": "2025-04-10"
+}

@@ -1,5 +1,6 @@
 {
   "package_name": "spring-ldap-core",
+  "org_name": "org.springframework.ldap",
   "patch_versions": [
     "2.4.4",
     "3.0.10",
@@ -29,7 +30,7 @@
   ],
   "tldr": "Affected versions of this package may inadvertently expose sensitive information due to `Locale`-dependent exceptions in the use of `String.toLowerCase()` and `String.toUpperCase()`. These exceptions can cause unintended columns to be queried, potentially leaking data that should remain protected.",
   "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix": "Upgrade the `spring-ldap-core` library to a patch version.",
+  "how_to_fix": "Upgrade the `org.springframework.ldap:spring-ldap-core` library to a patch version.",
   "reporter": "",
   "vulnerable_to": "Exposure of Sensitive Information",
   "related_cve_id": "CVE-2024-38829",

@@ -1,5 +1,6 @@
 {
   "package_name": "spring-security-config",
+  "org_name": "org.springframework.security",
   "patch_versions": [
     "5.7.14",
     "5.8.16",
@@ -39,7 +40,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to an authorization bypass caused by `Locale`-dependent exceptions in the handling of `String.toLowerCase()` and `String.toUpperCase()`. This flaw can lead to unauthorized access by failing to properly normalize strings for comparison.",
   "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix": "Upgrade the `spring-security-config` library to a patch version.",
+  "how_to_fix": "Upgrade the `org.springframework.security:spring-security-config` library to a patch version.",
   "reporter": "",
   "vulnerable_to": "Authorization Bypass",
   "related_cve_id": "CVE-2024-38827",

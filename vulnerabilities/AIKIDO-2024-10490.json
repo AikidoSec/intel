@@ -1,5 +1,6 @@
 {
   "package_name": "akka-http_2.13",
+  "org_name": "com.typesafe.akka",
   "package_wildcard_contains": "akka-http_",
   "patch_versions": [
     "10.5.2"
@@ -15,7 +16,7 @@
   ],
   "tldr": "In affected versions of Akka HTTP, the `FileUploadDirectives.fileUploadAll` directive creates temporary files with overly permissive access rights on Unix-like systems. These temporary files are readable by other users, which can lead to unauthorized access to sensitive data uploaded through the directive.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and you are using the `FileUploadDirectives.fileUploadAll` function.",
-  "how_to_fix": "Upgrade the `akka-http` library to the patch version.",
+  "how_to_fix": "Upgrade the `com.typesafe.akka:akka-http` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Improper Access Control",
   "related_cve_id": "CVE-2023-33251",

@@ -1,5 +1,6 @@
 {
   "package_name": "keycloak-saml-wildfly-elytron-adapter",
+  "org_name": "org.keycloak",
   "patch_versions": [
     "22.0.12",
     "24.0.7",
@@ -24,7 +25,7 @@
   ],
   "tldr": "Affected versions of the package are vulnerable to session fixation due to improper handling of session IDs and JSESSIONID cookies during the login process. An attacker can exploit this vulnerability by providing a pre-set session ID, which the application then uses, allowing the attacker to hijack the session after the user logs in.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `keycloak-saml-wildfly-elytron-adapter` library to a patch version.",
+  "how_to_fix": "Upgrade the `org.keycloak:keycloak-saml-wildfly-elytron-adapter` library to a patch version.",
   "reporter": "",
   "vulnerable_to": "Session Fixation",
   "related_cve_id": "CVE-2024-7341",

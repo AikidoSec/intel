@@ -1,5 +1,6 @@
 {
   "package_name": "axios",
+  "org_name": "org.webjars.npm",
   "patch_versions": [
     "1.8.3"
   ],

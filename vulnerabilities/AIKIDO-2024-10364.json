@@ -1,5 +1,6 @@
 {
   "package_name": "solr-core",
+  "org_name": "org.apache.solr",
   "patch_versions": [
     "8.11.5",
     "9.7.0"
@@ -19,7 +20,7 @@
   ],
   "tldr": "Affected versions of the package are vulnerable to improper authentication due to insecure code in the `PKIAuthenticationPlugin` and `HttpSolrCall` classes. An attacker can bypass the authentication process by appending a fake ending to the URL path. Although the path appears to be an unprotected API endpoint, it is internally stripped off after authentication and before API routing, allowing unauthorized access.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `solr-core` library to a patch version.",
+  "how_to_fix": "Upgrade the `org.apache.solr:solr-core` library to a patch version.",
   "reporter": "",
   "vulnerable_to": "Improper Authentication",
   "related_cve_id": "CVE-2024-45216",

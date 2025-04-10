@@ -1,5 +1,6 @@
 {
   "package_name": "redshift-jdbc42",
+  "org_name": "com.amazon.redshift",
   "patch_versions": [
     "2.1.0.32"
   ],
@@ -14,7 +15,7 @@
   ],
   "tldr": "Version `2.1.0.31` of the Amazon Redshift JDBC Driver is vulnerable to SQL injection. This vulnerability allows attackers to escalate privileges by injecting malicious SQL into the `getSchemas`, `getTables`, or `getColumns` metadata APIs.  By manipulating schema input, an attacker can bypass access controls, retrieve unauthorized data, or modify database structures. This poses a significant risk to data integrity and confidentiality. Users are advised to upgrade to version `2.1.0.32`, which contains a fix for this issue. Alternatively, reverting to version `2.1.0.30` is a temporary mitigation until the latest version can be deployed.",
   "doest_this_affect_me": "You are affected if you are using version `2.1.0.31`.",
-  "how_to_fix": "Upgrade the `redshift-jdbc42` library to the patch version or downgrade to version `2.1.0.30`.",
+  "how_to_fix": "Upgrade the `com.amazon.redshift:redshift-jdbc42` library to the patch version or downgrade to version `2.1.0.30`.",
   "reporter": "",
   "vulnerable_to": "SQL Injection",
   "related_cve_id": "CVE-2024-12744",

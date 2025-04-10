@@ -1,5 +1,6 @@
 {
   "package_name": "webdav-servlet",
+  "org_name": "nl.info.webdav",
   "patch_versions": [
     "1.2.70"
   ],
@@ -14,7 +15,7 @@
   ],
   "tldr": "Affected versions of the package use the MD5 algorithm, which generates digests that fail to meet security standards for a hash function. This weakness allows adversaries to feasibly determine the original input.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `webdav-servlet` library to the patch version.",
+  "how_to_fix": "Upgrade the `nl.info.webdav:webdav-servlet` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Use of Weak Hash",
   "related_cve_id": "",

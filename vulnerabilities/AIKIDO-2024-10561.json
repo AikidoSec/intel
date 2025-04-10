@@ -1,5 +1,6 @@
 {
   "package_name": "opentelemetry-javaagent",
+  "org_name": "io.opentelemetry.javaagent",
   "patch_versions": [
     "2.11.0"
   ],
@@ -14,7 +15,7 @@
   ],
   "tldr": "Affected versions of this package fail to properly release resources in the `getPom` and `includeEmbeddedExtensionsIfFound` methods, resulting in memory leaks. Repeated execution of these methods can cause unbounded memory growth, eventually exhausting available resources and leading to Denial of Service (DoS). This vulnerability may be exploited by attackers to degrade system performance or crash the application by triggering the affected code paths multiple times.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `opentelemetry-javaagent` library to the patch version.",
+  "how_to_fix": "Upgrade the `io.opentelemetry.javaagent:opentelemetry-javaagent` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Improper Resource Shutdown or Release",
   "related_cve_id": "",

@@ -1,5 +1,6 @@
 {
   "package_name": "feign-bom",
+  "org_name": "io.github.openfeign",
   "patch_versions": [
     "13.6"
   ],

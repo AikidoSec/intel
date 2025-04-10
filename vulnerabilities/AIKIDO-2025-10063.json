@@ -1,5 +1,6 @@
 {
   "package_name": "questdb",
+  "org_name": "org.questdb",
   "patch_versions": [
     "8.2.2"
   ],
@@ -14,7 +15,7 @@
   ],
   "tldr": "Affected versions of the package are vulnerable to memory leaks. When a mapping exception occurs during `TableReader` resizing after adding a column, it can cause a leak of file descriptors and memory. Additionally, if an error occurs while opening an index file during a table write, mapped memory may leak due to improper cleanup in the error handling process.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `questdb` library to the patch version.",
+  "how_to_fix": "Upgrade the `org.questdb:questdb` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Memory Leak",
   "related_cve_id": "",

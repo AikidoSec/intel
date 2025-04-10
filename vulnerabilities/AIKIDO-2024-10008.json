@@ -1,5 +1,6 @@
 {
   "package_name": "tomcat-embed-core",
+  "org_name": "org.apache.tomcat.embed",
   "package_wildcard_ends_in": "tomcat-catalina",
   "patch_versions": [
     "10.1.19",

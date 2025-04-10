@@ -1,5 +1,6 @@
 {
   "package_name": "aws-sdk-java",
+  "org_name": "software.amazon.awssdk",
   "patch_versions": [
     "2.30.30"
   ],
@@ -14,7 +15,7 @@
   ],
   "tldr": "Affected versions of this package are affected by improper handling of `SecurityException` when accessing the AWS shared credentials file, potentially allowing privilege escalation. An attacker with restricted permissions can trigger a `SecurityException` to force the application into an insecure state, exposing sensitive data and bypassing intended security restrictions to access profile files, credentials, and secrets.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `aws-sdk-java` library to the patch version.",
+  "how_to_fix": "Upgrade the `software.amazon.awssdk:aws-sdk-java` library to the patch version.",
   "vulnerable_to": "Information Disclosure",
   "related_cve_id": "",
   "language": "java",

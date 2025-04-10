@@ -1,5 +1,6 @@
 {
   "package_name": "cassandra-jdbc-wrapper",
+  "org_name": "com.ing.data",
   "patch_versions": [
     "4.14.0"
   ],
@@ -14,7 +15,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to sensitive data exposure. When the `toString()` method of `CassandraConnection` is invoked, it improperly logs connection details, including plaintext passwords. This can lead to credential leakage in application logs, posing a significant security risk if logs are accessed by unauthorized users.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `cassandra-jdbc-wrapper` library to the patch version.",
+  "how_to_fix": "Upgrade the `com.ing.data:cassandra-jdbc-wrapper` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",

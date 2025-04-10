@@ -1,5 +1,6 @@
 {
   "package_name": "netty-incubator-codec-classes-quic",
+  "org_name": "io.netty.incubator",
   "patch_versions": [
     "0.0.71.Final"
   ],

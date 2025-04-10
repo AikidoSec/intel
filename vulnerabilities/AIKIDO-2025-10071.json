@@ -1,5 +1,6 @@
 {
   "package_name": "apoc",
+  "org_name": "org.neo4j.procedure",
   "patch_versions": [
     "4.4.0.35",
     "5.26.0"

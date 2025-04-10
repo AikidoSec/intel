@@ -1,5 +1,6 @@
 {
   "package_name": "akka-actor_2.13",
+  "org_name": "com.typesafe.akka",
   "package_wildcard_contains": "akka-actor_",
   "patch_versions": [
     "2.9.0"
@@ -15,7 +16,7 @@
   ],
   "tldr": "In Akka, enabling the `log-config-on-start` option causes environment variable values included in the configuration to be logged in plaintext. This can inadvertently expose sensitive information, such as secrets, API keys, or credentials, in log files. Logging these values creates a security risk, as unauthorized access to logs could lead to the disclosure of confidential data. To mitigate this issue, it is recommended to disable `log-config-on-start` or upgrade the library.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and `log-config-on-start` is enabled.",
-  "how_to_fix": "Upgrade the `akka-actor` library to the patch version or disable `log-config-on-start`.",
+  "how_to_fix": "Upgrade the `com.typesafe.akka:akka-actor` library to the patch version or disable `log-config-on-start`.",
   "reporter": "",
   "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "CVE-2023-45865",

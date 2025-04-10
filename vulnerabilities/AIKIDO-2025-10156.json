@@ -1,5 +1,6 @@
 {
   "package_name": "lucee",
+  "org_name": "org.lucee",
   "patch_versions": [
     "5.3.7.59",
     "5.3.12.1",

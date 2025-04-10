@@ -1,5 +1,6 @@
 {
   "package_name": "quartz",
+  "org_name": "org.quartz-scheduler",
   "patch_versions": [
     "2.4.0"
   ],
@@ -14,7 +15,7 @@
   ],
   "tldr": "Affected versions of the package are vulnerable to Remote Code Execution (RCE) when using the `NativeJob` class from the `quartz-jobs` artifact. Although it is possible to use this Job class securely, it poses a risk for users who do not take proper precautions, potentially allowing attackers to execute arbitrary code remotely.",
   "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges and if you are using the `NativeJob` class.",
-  "how_to_fix": "Upgrade the `quartz` library to the patch version.",
+  "how_to_fix": "Upgrade the `org.quartz-scheduler:quartz` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Remote Code Execution (RCE)",
   "related_cve_id": "",

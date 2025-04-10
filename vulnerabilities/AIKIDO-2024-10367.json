@@ -1,5 +1,6 @@
 {
   "package_name": "keycloak-services",
+  "org_name": "org.keycloak",
   "patch_versions": [
     "22.0.13",
     "24.0.8",
@@ -24,7 +25,7 @@
   ],
   "tldr": "Affected versions of the package are vulnerable to open redirect due to a misconfiguration in the validation of redirect URIs. An attacker can exploit this flaw by setting a valid redirect URI to `http://localhost/` or `http://127.0.0.1/`, causing the application to redirect users to a malicious location.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `keycloak-services` library to a patch version.",
+  "how_to_fix": "Upgrade the `org.keycloak:keycloak-services` library to a patch version.",
   "reporter": "",
   "vulnerable_to": "URL Redirection to Untrusted Site ('Open Redirect')",
   "related_cve_id": "CVE-2024-10492",

@@ -1,5 +1,6 @@
 {
   "package_name": "spring-cloud-config-server",
+  "org_name": "org.springframework.cloud",
   "patch_versions": [
     "4.2.1",
     "4.1.6",
@@ -29,7 +30,7 @@
   ],
   "tldr": "Affected versions of Spring Cloud Config Server may fail to use the Vault token provided by clients via the `X-CONFIG-TOKEN` header when interacting with Vault. This occurs if Spring Vault is on the classpath and the application uses a `SessionManager` implementation like `LifecycleAwareSessionManager` or `SimpleSessionManager`, which persist the first retrieved token. As a result, even when clients supply a different token in subsequent requests, the server continues to use the initially cached token, potentially leading to authorization issues or unintended access.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `spring-cloud-config-server` library to a patch version. If you cannot upgrade, either remove Spring Vault from the classpath if unused, or implement a custom `SessionManager` that does not persist the Vault token and register it as a bean in a `@Configuration` class. \nSpring Cloud Config 3.0.x and 2.2.x are no longer under open source or commercial support. Users of these versions are encouraged to upgrade to a supported version. The lowest patched open source supported version is version 4.1.6.",
+  "how_to_fix": "Upgrade the `org.springframework.cloud:spring-cloud-config-server` library to a patch version. If you cannot upgrade, either remove Spring Vault from the classpath if unused, or implement a custom `SessionManager` that does not persist the Vault token and register it as a bean in a `@Configuration` class. \nSpring Cloud Config 3.0.x and 2.2.x are no longer under open source or commercial support. Users of these versions are encouraged to upgrade to a supported version. The lowest patched open source supported version is version 4.1.6.",
   "reporter": "",
   "vulnerable_to": "Authentication bypass",
   "related_cve_id": "CVE-2025-22232",

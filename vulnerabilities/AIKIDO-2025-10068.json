@@ -1,5 +1,6 @@
 {
   "package_name": "mysql-connector-java",
+  "org_name": "mysql",
   "patch_versions": [],
   "vulnerable_ranges": [
     [

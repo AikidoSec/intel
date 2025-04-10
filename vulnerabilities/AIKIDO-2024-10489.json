@@ -1,5 +1,6 @@
 {
   "package_name": "akka-http_2.13",
+  "org_name": "com.typesafe.akka",
   "package_wildcard_contains": "akka-http_",
   "patch_versions": [
     "10.5.3"
@@ -15,7 +16,7 @@
   ],
   "tldr": "CVE-2023-44487, also known as `Rapid Reset`, is a high-severity Denial of Service (DoS) vulnerability affecting the HTTP/2 protocol. This flaw allows attackers to exploit the protocol by rapidly sending streams that are immediately reset, overwhelming server resources and causing service disruption. The impact of this vulnerability is significant due to the widespread adoption of HTTP/2, with W3Techs reporting that approximately 35% of websites worldwide use it. Exploitation can lead to substantial downtime and resource exhaustion on vulnerable servers.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `akka-http` library to the patch version.",
+  "how_to_fix": "Upgrade the `com.typesafe.akka:akka-http` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Denial of Service (DoS)",
   "related_cve_id": "CVE-2023-44487",

@@ -1,5 +1,6 @@
 {
   "package_name": "spring-security-crypto",
+  "org_name": "org.springframework.security",
   "patch_versions": [
     "5.7.16",
     "5.8.18",
@@ -44,7 +45,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to improper password verification in `BCryptPasswordEncoder.matches(CharSequence, String)`. When a password exceeds 72 characters, only the first 72 characters are considered for comparison. As a result, passwords that share the same initial 72 characters will incorrectly be treated as identical, potentially allowing authentication bypass.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `spring-security-crypto` library to the patch version.",
+  "how_to_fix": "Upgrade the `org.springframework.security:spring-security-crypto` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Improper Authentication",
   "related_cve_id": "CVE-2025-22228",

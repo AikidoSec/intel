@@ -1,5 +1,6 @@
 {
   "package_name": "spring-webflux",
+  "org_name": "org.springframework",
   "patch_versions": [
     "5.3.41",
     "6.0.25",
@@ -24,7 +25,7 @@
   ],
   "tldr": "Affected versions of the package are vulnerable to path traversal. Applications that serve static resources through the WebMvc.fn or WebFlux.fn frameworks are susceptible to path traversal attacks. An attacker can craft malicious HTTP requests to access any file on the file system that is accessible to the process running the Spring application, potentially exposing sensitive data or system files.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `spring-webflux` library to a patch version.",
+  "how_to_fix": "Upgrade the `org.springframework:spring-webflux` library to a patch version.",
   "reporter": "",
   "vulnerable_to": "Path Traversal",
   "related_cve_id": "CVE-2024-38819",

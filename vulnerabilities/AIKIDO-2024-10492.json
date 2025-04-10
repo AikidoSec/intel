@@ -1,5 +1,6 @@
 {
   "package_name": "akka-actor_2.13",
+  "org_name": "com.typesafe.akka",
   "package_wildcard_contains": "akka-actor_",
   "patch_versions": [
     "2.4.17"
@@ -15,7 +16,7 @@
   ],
   "tldr": "Akka versions <=2.4.16 and 2.5-M1 are vulnerable to a Java deserialization attack in the `Remoting` component. This vulnerability allows an attacker to send specially crafted serialized objects to the `ActorSystem`, which can trigger deserialization and execute arbitrary code in the context of the application. Exploiting this flaw results in Remote Code Execution (RCE).",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `akka-actor` library to the patch version.",
+  "how_to_fix": "Upgrade the `com.typesafe.akka:akka-actor` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Deserialization of Untrusted Data",
   "related_cve_id": "CVE-2017-1000034",

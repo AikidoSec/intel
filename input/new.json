@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@supabase/postgres-meta",
+  "patch_versions": [
+    "0.88.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.81.2",
+      "0.88.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+    ],
+  "tldr": "Affected versions of this package are vulnerable to denial-of-service (DoS) attacks due to improper query timeout handling. Attackers can exploit this by submitting long-running or complex queries, consuming excessive database resources, and causing service degradation or unavailability. This lack of timeout enforcement allows malicious actors to exhaust CPU, memory, or connection limits, disrupting legitimate users' access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@supabase/postgres-meta` library to the patch version.",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/supabase/postgres-meta/releases/tag/v0.88.5"
 }

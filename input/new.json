@@ -1,25 +1,15 @@
 {
-  "package_name": "espressif.esp-idf",
-  "patch_versions": [
-    "5.3.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.2.1",
-      "5.3.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-125"
-  ],
-  "tldr": "Affected versions of this package include a vulnerable release of Apache NimBLE, which suffers from an out-of-bounds read due to improper validation of the HCI Number Of Completed Packets field. This flaw may lead to invalid memory access when parsing HCI events, potentially reading from unintended areas of HCI transport memory. Exploitation requires a broken or malicious Bluetooth controller, which limits the practical impact, and the severity is therefore considered low.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `espressif.esp-idf` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Out-of-bounds Read",
-  "related_cve_id": "CVE-2024-51569",
-  "language": "C++",
-  "severity_class": "HIGH",
-  "aikido_score": 75,
-  "changelog": "https://github.com/espressif/esp-idf/releases/tag/v5.3.3"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

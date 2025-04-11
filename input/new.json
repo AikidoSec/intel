@@ -1,15 +1,26 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "aws-advanced-jdbc-wrapper",
+  "org_name": "software.amazon.jdbc",
+  "patch_versions": [
+    "2.5.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.3.2",
+      "2.5.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-453"
+  ],
+  "tldr": "Affected versions of this package are vulnerable due to an unsafe default value for the `SSL Insecure` parameter, which disables server certificate verification during SAML assertion workflows. This can expose applications to man-in-the-middle attacks. The parameter should default to false to ensure secure SSL connections.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `software.amazon.jdbc:aws-advanced-jdbc-wrapper` library to the patch version and/or set `sslInsecure` to false.",
+  "reporter": "",
+  "vulnerable_to": "Insecure Default Variable Initialization",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JAVA",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/aws/aws-advanced-jdbc-wrapper/releases/tag/2.5.6"
 }

@@ -1,15 +1,29 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "verbb/formie",
+  "patch_versions": [
+    "2.1.44",
+    "3.0.23"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.1.43"
+    ],
+    [
+      "3.0.0",
+      "3.0.22"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) attacks via email notification content due to improper sanitization of the `getHtmlBody()` method, as well as when importing forms with manipulated field content that renders unsanitized user input. An attacker can exploit these issues by injecting malicious scripts into email notifications or form fields, which are then executed in the victim's browser when the content is rendered, potentially leading to session hijacking, data theft, or arbitrary code execution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `verbb/formie` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://github.com/verbb/formie/blob/craft-5/CHANGELOG.md"
 }

@@ -1,24 +1,15 @@
 {
-  "package_name": "silverstripe/cms",
-  "patch_versions": [
-    "5.3.3"
-  ],
-  "vulnerable_ranges": [
-    [
-    "4.0.0",
-    "5.3.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) due to insufficient output encoding when dynamically generating absolute links in grid fields. The `AbsoluteLinkformatter` injects unescaped URLs into HTML, allowing attackers to craft malicious links containing JavaScript payloads, potentially leading to session hijacking, privilege escalation, or other client-side attacks.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `silverstripe/cms` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 58,
-  "changelog": "https://github.com/silverstripe/silverstripe-cms/releases/tag/5.3.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,15 +1,22 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@aws-amplify/codegen-ui-react",
+  "patch_versions": [
+    "2.20.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.1.0",
+      "2.20.2"
+    ]
+  ],
+  "cwe": ["CWE-79"],
+  "tldr": "Affected versions of this package fail to properly sanitize expression bindings when recursively rendering collection-type components, allowing malicious input to be processed unsafely. An attacker can craft a malicious component with injected expressions or scripts, which Amplify Studio will render without sanitization, potentially leading to cross-site scripting (XSS), data manipulation, or remote code execution, depending on the context.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@aws-amplify/codegen-ui-react` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 81,
+  "changelog": "https://github.com/aws-amplify/amplify-codegen-ui/releases/tag/v2.20.3"
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "aioesphomeapi",
+  "patch_versions": [
+    "29.10.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "15.1.0",
+      "29.9.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-290"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to device impersonation due to inadequate identity verification when it only checks the expected device name at a cached IP address without validating the MAC address. This lack of verification allows unauthorized access, as an attacker could spoof the device name and gain control of the IP address (For example, ARP spoofing), tricking the system into trusting a malicious device and allowing man-in-the-middle (MITM) attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `aioesphomeapi` library to the patch version.",
+  "vulnerable_to": "Authentication Bypass by Spoofing",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/esphome/aioesphomeapi/releases/tag/v29.10.0"
 }

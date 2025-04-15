@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "inference",
+  "patch_versions": [
+    "0.44.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.7.0",
+      "0.43.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-285"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to Next.js's CVE-2025-29927, where the inference server landing page built with Next.js allows bypassing of authorization checks when those checks are implemented in middleware. This issue has been patched to prevent unauthorized access within Next.js applications.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `inference` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Authorization",
+  "related_cve_id": "CVE-2025-29927",
+  "language": "js",
+  "severity_class": "HIGH",
+  "aikido_score": 79,
+  "changelog": "https://github.com/roboflow/inference/releases/tag/v0.44.0"
 }

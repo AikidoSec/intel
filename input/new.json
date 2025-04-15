@@ -18,7 +18,7 @@
   "reporter": "",
   "vulnerable_to": "Improper Authorization",
   "related_cve_id": "CVE-2025-29927",
-  "language": "js",
+  "language": "PYTHON",
   "severity_class": "HIGH",
   "aikido_score": 79,
   "changelog": "https://github.com/roboflow/inference/releases/tag/v0.44.0"

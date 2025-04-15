@@ -1,25 +1,15 @@
 {
-  "package_name": "@webiny/api-file-manager",
-  "patch_versions": [
-    "5.42.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "5.0.0",
-      "5.42.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-20"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to improper input validation, exposing the system to potential threats via uploaded files. To mitigate this, threat detection is introduced for all files uploaded to the File Manager. Uploaded files remain disabled until the threat scan completes; if malicious content is detected, the file is deleted, otherwise it is enabled for user access.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@webiny/api-file-manager` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Improper Input Validation",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 50,
-  "changelog": "https://github.com/webiny/webiny-js/releases/tag/v5.42.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

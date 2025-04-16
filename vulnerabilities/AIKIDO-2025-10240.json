@@ -1,0 +1,27 @@
+{
+  "package_name": "mysql-connector-python",
+  "patch_versions": [
+    "9.3.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.5",
+      "9.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Arbitrary File Read due to insufficient validation when the `local_infile` option is enabled in MySQL. This option determines whether the server permits clients to load data from local files using the `LOAD DATA LOCAL INFILE` SQL statement. In the patched version, the client-side connector enforces stricter validation by ensuring that the filename provided in the server’s response matches the filename specified in the client’s request, mitigating the risk of unauthorized file access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and the local_infile option is enabled.",
+  "how_to_fix": "Upgrade the `mysql-connector-python` library to the patch version or disable the local_infile option.",
+  "reporter": "",
+  "vulnerable_to": "Arbitrary File Read",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 49,
+  "changelog": "https://github.com/mysql/mysql-connector-python/blob/trunk/CHANGES.txt",
+  "last_modified": "2025-04-16",
+  "published": "2025-04-16"
+}

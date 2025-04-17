@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "Azure.azure-c-shared-utility",
+  "patch_versions": [
+    "2024.02.08"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.1.1",
+      "2023.12.01"
+    ]
+  ],
+  "cwe": [
+    "CWE-122"
+  ],
+  "tldr": "Affected versions of the `azure-c-shared-utility` package are vulnerable to integer wraparound, under-allocation, or heap buffer overflow due to insufficient parameter validation. These flaws in buffer length handling can be exploited to achieve remote code execution (RCE) under specific conditions. Successful exploitation requires a compromised Azure account capable of sending malformed payloads via the IoT Hub service, bypassing the 128KB payload limit, and the ability to overwrite executable memory on the target device.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Azure.azure-c-shared-utility` library to a patch version.",
+  "vulnerable_to": "Heap Buffer Overflow",
+  "related_cve_id": "CVE-2024-29195",
+  "language": "c++",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/Azure/azure-c-shared-utility/security/advisories/GHSA-m8wp-hc7w-x4xg"
 }

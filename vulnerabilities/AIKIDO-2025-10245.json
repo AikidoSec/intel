@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/traefik/traefik/v2",
+  "patch_versions": [
+    "2.11.23"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.11.22"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to path traversal due to insufficient request path sanitization, as it fails to remove rouge dots or slashes properly from URLs. This flaw could allow attackers to bypass security controls by crafting malicious URLs with path traversal sequences (e.g., /../), potentially accessing restricted directories or files outside the intended web root, leading to unauthorized data exposure or server compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/traefik/traefik/v2` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "HIGH",
+  "aikido_score": 77,
+  "changelog": "https://github.com/traefik/traefik/releases/tag/v2.11.23",
+  "last_modified": "2025-04-17",
+  "published": "2025-04-17"
+}

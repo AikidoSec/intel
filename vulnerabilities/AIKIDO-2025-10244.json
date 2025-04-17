@@ -1,0 +1,28 @@
+{
+  "package_name": "citeproc-java",
+  "org_name": "de.undercouch",
+  "patch_versions": [
+    "3.2.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of the package allow Cross-site Scripting (XSS) when rendering links in the `HtmlFormat:doFormatLink` function.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `de.undercouch:citeproc-java` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JAVA",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/michel-kraemer/citeproc-java/releases/tag/3.2.1",
+  "last_modified": "2025-04-17",
+  "published": "2025-04-17"
+}

@@ -1,0 +1,27 @@
+{
+  "package_name": "smol-toml",
+  "patch_versions": [
+    "1.3.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.3.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-674"
+  ],
+  "tldr": "Affected versions of the `smol-toml` package are vulnerable to a denial of service due to unbounded recursion when parsing or stringifying deeply nested inline structures. An attacker can craft a malicious TOML input to trigger a stack overflow and crash the application. The library does not impose a maximum depth limit for parsing or stringifying, increasing the risk of availability issues. The patched version introduces a configurable depth cap (default: 1000) to mitigate this, but nevertheless, users are advised to wrap `parse` and `stringify` calls in try/catch blocks when handling untrusted input.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `smol-toml` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Uncontrolled Recursion",
+  "related_cve_id": "GHSA-pqhp-25j4-6hq9",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/squirrelchat/smol-toml/releases/tag/v1.3.2",
+  "last_modified": "2025-04-17",
+  "published": "2025-04-17"
+}

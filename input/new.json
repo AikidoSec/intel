@@ -23,13 +23,13 @@
     "CWE-306"
   ],
   "tldr": "Affected versions of the Erlang/OTP SSH server are vulnerable to unauthenticated remote code execution (RCE) due to a flaw in SSH protocol message handling. An attacker with network access can exploit this vulnerability to execute arbitrary commands without valid credentials. This can result in full system compromise, data manipulation, or denial of service. All versions using the Erlang/OTP SSH library are affected. As a temporary workaround, disable the SSH server or restrict access via firewall rules until a fixed version is applied.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and you are running an SSH server via Erlang/OTP.",
   "how_to_fix": "Upgrade the `erlang` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Authentication Bypass",
   "related_cve_id": "GHSA-37cp-fgq5-7wc2",
   "language": "ELIXIR",
   "severity_class": "CRITICAL",
-  "aikido_score": 100,
+  "aikido_score": 90,
   "changelog": "https://github.com/erlang/otp/security/advisories/GHSA-37cp-fgq5-7wc2"
 }

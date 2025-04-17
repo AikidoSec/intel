@@ -28,7 +28,7 @@
   "reporter": "",
   "vulnerable_to": "Authentication Bypass",
   "related_cve_id": "GHSA-37cp-fgq5-7wc2",
-  "language": "ELIXIR",
+  "language": "OS",
   "severity_class": "CRITICAL",
   "aikido_score": 90,
   "changelog": "https://github.com/erlang/otp/security/advisories/GHSA-37cp-fgq5-7wc2",

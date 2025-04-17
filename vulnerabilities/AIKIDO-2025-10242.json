@@ -23,7 +23,7 @@
   "reporter": "",
   "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "JS",
+  "language": "PHP",
   "severity_class": "LOW",
   "aikido_score": 15,
   "changelog": "https://github.com/putyourlightson/craft-sprig/releases/tag/2.14.0",

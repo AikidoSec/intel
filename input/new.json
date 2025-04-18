@@ -12,7 +12,7 @@
   "cwe": [
     "CWE-279"
   ],
-  "tldr": "Affected versions of this package are vulnerable to incorrect execution-assigned permissions when creating Aspects with the default execution order. An attacker can manipulate a role’s permission boundaries by assigning `DEFAULT` permissions to a custom Aspect, which may be overridden by a built-in CDK method using `MUTATING` permissions. This can result in custom Aspects having fewer permissions than intended. In environments with overly permissive policies, however, this misconfiguration could inadvertently grant higher-than-expected permissions.",
+  "tldr": "Affected versions of this package are vulnerable to incorrect permission assignment when using Aspects with the default execution order. An attacker can assign `DEFAULT` permissions to a custom Aspect, which may be overridden by a built-in CDK method using `MUTATING` permissions. This can cause the custom Aspect to have either fewer or, in permissive environments, more permissions than expected.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `aws-cdk-lib` library to the patch version.",
   "reporter": "",

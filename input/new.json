@@ -18,7 +18,7 @@
   "reporter": "",
   "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "python",
+  "language": "JS",
   "severity_class": "LOW",
   "aikido_score": 20,
   "changelog": "https://github.com/i18next/i18next-http-middleware/blob/master/CHANGELOG.md"

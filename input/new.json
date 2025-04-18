@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "gevent",
+  "patch_versions": [
+    "25.4.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "25.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-444"
+  ],
+  "tldr": "Affected versions are vulnerable to HTTP request smuggling when using the `gevent_wsgi` or `gevent_pywsgi` worker classes. The issue stems from gevent’s `PyWSGIHandler`, where the `EXPECT: 100-continue` header causes the server to retain extra bytes in the socket buffer. These bytes are then interpreted as a new HTTP request, even if forwarded as part of an earlier one. This allows attackers to smuggle unauthorized requests—such as accessing `/admin` while only `/api` is exposed via a reverse proxy. The vulnerability can lead to serious security issues such as cache poisoning, data exposure, session hijacking, SSRF, cross-site scripting, and other impacts typical of HTTP request smuggling attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `gevent` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "HTTP Request/Response Smuggling",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/gevent/gevent/blob/master/CHANGES.rst"
 }

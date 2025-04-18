@@ -1,5 +1,7 @@
 {
   "package_name": "php-fpm",
+  "package_wildcard_ends_in": "fpm",
+  "package_wildcard_contains": "php-",
   "patch_versions": [
     "8.4.5",
     "8.3.19",

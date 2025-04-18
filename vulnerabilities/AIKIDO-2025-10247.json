@@ -1,44 +1,27 @@
 {
-  "package_name": "php-fpm",
-  "package_wildcard_ends_in": "fpm",
-  "package_wildcard_contains": "php-",
+  "package_name": "gevent",
   "patch_versions": [
-    "8.4.5",
-    "8.3.19",
-    "8.2.28",
-    "8.1.32"
+    "25.4.1"
   ],
   "vulnerable_ranges": [
     [
-      "8.4.0",
-      "8.4.4"
-    ],
-    [
-      "8.3.0",
-      "8.3.18"
-    ],
-    [
-      "8.2.0",
-      "8.2.27"
-    ],
-    [
-      "8.0.0",
-      "8.1.31"
+      "1.0.0",
+      "25.4.0"
     ]
   ],
   "cwe": [
-    "CWE-125"
+    "CWE-444"
   ],
-  "tldr": "Affected versions are vulnerable to an out-of-bounds read that can leak heap memory contents. By setting `XML_OPTION_SKIP_TAGSTART` to a sufficiently high value and providing XML with shorter tag names than expected, an attacker can trigger the vulnerability. While the affected option is rarely used, it still poses a security risk.",
-  "doest_this_affect_me": "You're affected if you are using a version which is within vulnerability ranges.",
-  "how_to_fix": "Upgrade `php-fpm` library to patch version or do not use `XML_OPTION_SKIP_TAGSTART`.",
+  "tldr": "Affected versions are vulnerable to HTTP request smuggling when using the `gevent_wsgi` or `gevent_pywsgi` worker classes. The issue stems from gevent’s `PyWSGIHandler`, where the `EXPECT: 100-continue` header causes the server to retain extra bytes in the socket buffer. These bytes are then interpreted as a new HTTP request, even if forwarded as part of an earlier one. This allows attackers to smuggle unauthorized requests—such as accessing `/admin` while only `/api` is exposed via a reverse proxy. The vulnerability can lead to serious security issues such as cache poisoning, data exposure, session hijacking, SSRF, cross-site scripting, and other impacts typical of HTTP request smuggling attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `gevent` library to the patch version.",
   "reporter": "",
-  "vulnerable_to": "Out-of-bounds Read",
-  "related_cve_id": "GHSA-wg4p-4hqh-c3g9",
-  "language": "OS",
-  "severity_class": "LOW",
-  "aikido_score": 20,
-  "changelog": "https://github.com/php/php-src/security/advisories/GHSA-wg4p-4hqh-c3g9",
+  "vulnerable_to": "HTTP Request/Response Smuggling",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/gevent/gevent/blob/master/CHANGES.rst",
   "last_modified": "2025-04-18",
   "published": "2025-04-18"
 }

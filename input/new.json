@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "aws-cdk-lib",
+  "patch_versions": [
+    "2.189.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.189.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-279"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to incorrect execution-assigned permissions when creating Aspects with the default execution order. An attacker can manipulate a role’s permission boundaries by assigning `DEFAULT` permissions to a custom Aspect, which may be overridden by a built-in CDK method using `MUTATING` permissions. This can result in custom Aspects having fewer permissions than intended. In environments with overly permissive policies, however, this misconfiguration could inadvertently grant higher-than-expected permissions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `aws-cdk-lib` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Incorrect Execution-Assigned Permissions",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 21,
+  "changelog": "https://github.com/aws/aws-cdk/releases/tag/v2.189.1"
 }

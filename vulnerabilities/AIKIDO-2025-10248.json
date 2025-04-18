@@ -1,5 +1,5 @@
 {
-  "package_name": "@photo-sphere-viewer/core'",
+  "package_name": "@photo-sphere-viewer/core",
   "patch_versions": [
     "5.13.2"
   ],
@@ -14,7 +14,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to a prototype pollution in the `deepmerge` util function, which could allow attackers to manipulate object properties and impact application behavior.",
   "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix": "Upgrade the `@photo-sphere-viewer/core'` library to the patch version.",
+  "how_to_fix": "Upgrade the `@photo-sphere-viewer/core` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "",

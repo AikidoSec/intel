@@ -1,0 +1,27 @@
+{
+  "package_name": "@milkdown/core",
+  "patch_versions": [
+    "7.9.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "7.3.0",
+      "7.8.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) due to improper sanitization of user input, allowing attackers to inject and execute malicious scripts.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@milkdown/core` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 49,
+  "changelog": "https://github.com/Milkdown/milkdown/releases/tag/v7.9.0",
+  "last_modified": "2025-04-20",
+  "published": "2025-04-20"
+}

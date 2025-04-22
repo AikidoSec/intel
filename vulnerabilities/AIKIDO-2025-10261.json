@@ -20,8 +20,8 @@
   "vulnerable_to": "Path Traversal",
   "related_cve_id": "",
   "language": "python",
-  "severity_class": "HIGH",
-  "aikido_score": 88,
+  "severity_class": "LOW",
+  "aikido_score": 38,
   "changelog": "https://github.com/pypa/setuptools/blob/main/NEWS.rst#v7811",
   "last_modified": "2025-04-22",
   "published": "2025-04-22"

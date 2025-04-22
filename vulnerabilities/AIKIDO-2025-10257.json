@@ -1,0 +1,27 @@
+{
+  "package_name": "php-fpm",
+  "patch_versions": [
+    "8.4.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.4.0",
+      "8.4.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "Affected versions contain a use-after-free vulnerability caused by improper class destruction during module shutdown. Specifically, child classes reference parent class structures that are freed earlier in the `clean_module_classes()` function, leading to heap-use-after-free conditions.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `php-fpm` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Use-After-Free",
+  "related_cve_id": "",
+  "language": "os",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://www.php.net/ChangeLog-8.php",
+  "last_modified": "2025-04-22",
+  "published": "2025-04-22"
+}

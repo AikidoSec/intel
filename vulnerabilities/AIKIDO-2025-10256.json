@@ -1,0 +1,27 @@
+{
+  "package_name": "array-init-cursor",
+  "patch_versions": [
+    "0.2.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-672"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Operation on a Resource after Expiration or Release due to unsound handling of types implementing `Drop`. An attacker can exploit this flaw to trigger undefined behavior, potentially leading to memory corruption through the unintended double execution of a `Drop` implementation.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `array-init-cursor` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Operation on a Resource after Expiration or Release",
+  "related_cve_id": "",
+  "language": "RUST",
+  "severity_class": "MEDIUM",
+  "aikido_score": 48,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0019.html",
+  "last_modified": "2025-04-22",
+  "published": "2025-04-22"
+}

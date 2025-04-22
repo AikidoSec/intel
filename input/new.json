@@ -1,25 +1,15 @@
 {
-  "package_name": "tecnickcom/tcpdf",
-  "patch_versions": [
-    "6.9.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "6.0.013",
-      "6.9.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-502"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to deserialization of untrusted data due to a flaw in the PHAR (PHP Archive) deserialization process via stream wrappers. Version `6.9.2` addresses the issue by disabling PHAR globally, while version `6.9.3` provides a more robust solution by validating allowed protocols, enabling safer use of PHAR without fully disabling it.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `tecnickcom/tcpdf` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Deserialization of Untrusted Data",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 55,
-  "changelog": "https://github.com/tecnickcom/TCPDF/blob/main/CHANGELOG.TXT"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `@backstage/plugin-permission-backend` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Exposure of Sensitive Information Due to Incompatible Policies",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-32791",
   "language": "JS",
   "severity_class": "MEDIUM",
   "aikido_score": 49,

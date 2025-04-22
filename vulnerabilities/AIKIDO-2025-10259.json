@@ -1,0 +1,27 @@
+{
+  "package_name": "@backstage/plugin-permission-backend",
+  "patch_versions": [
+    "0.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.5.55"
+    ]
+  ],
+  "cwe": [
+    "CWE-213"
+  ],
+  "tldr": "Affected versions of the `@backstage/plugin-permission-backend` library are vulnerable to information exposure due to insufficient protection of conditional decision data stored in policies. An unauthorized user can infer or extract sensitive details about conditional logic or access decisions they should not be permitted to view.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@backstage/plugin-permission-backend` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information Due to Incompatible Policies",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 49,
+  "changelog": "https://github.com/backstage/backstage/blob/master/plugins/permission-backend/CHANGELOG.md#060",
+  "last_modified": "2025-04-22",
+  "published": "2025-04-22"
+}

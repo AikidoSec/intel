@@ -1,25 +1,15 @@
 {
-  "package_name": "@pandacss/studio",
-  "patch_versions": [
-    "0.53.4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.30.0",
-      "0.53.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-1321"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to prototype pollution in the `mergeProps` function, which can be exploited to modify object prototypes and potentially lead to a denial of service (DoS) or unexpected application behavior.",
-  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix": "Upgrade the `@pandacss/studio` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Prototype Pollution",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "js",
-  "severity_class": "MEDIUM",
-  "aikido_score": 43,
-  "changelog": "https://github.com/chakra-ui/panda/blob/main/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

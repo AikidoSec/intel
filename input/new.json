@@ -1,11 +1,11 @@
 {
   "package_name": "setuptools",
   "patch_versions": [
-    "0.6"
+    "78.1.1"
   ],
   "vulnerable_ranges": [
     [
-      "0.1.1",
+      "0.6",
       "78.1.0"
     ]
   ],

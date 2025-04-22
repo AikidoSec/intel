@@ -1,0 +1,28 @@
+{
+  "package_name": "setuptools",
+  "patch_versions": [
+    "78.1.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.6",
+      "78.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-22",
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of `setuptools` are vulnerable to arbitrary file write due to insufficient sanitization of filenames derived from URLs in the `_download_url` method. The `name` variable, built from untrusted input, may contain leading slashes or encoded paths that cause `os.path.join(tmpdir, name)` to discard the `tmpdir` component, allowing files to be written outside the intended directory. This enables an attacker to write to sensitive locations like `/home/user/.ssh/authorized_keys`, potentially leading to remote code execution. While `easy_install` and `package_index` are deprecated, the flaw remains exploitable via crafted URLs in malicious package index listings.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `setuptools` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://github.com/pypa/setuptools/blob/main/NEWS.rst#v7811",
+  "last_modified": "2025-04-22",
+  "published": "2025-04-22"
+}

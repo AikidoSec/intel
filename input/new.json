@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "Ocelot",
+  "patch_versions": [
+    "24.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "13.0.0",
+      "23.4.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-601"
+  ],
+  "tldr": "Affected versions of this package rely on IdentityServer4, which is known to be vulnerable to open redirect attacks. Methods such as `GetAuthorizationContextAsync` and `IsValidReturnUrl` may return non-null or true for malicious URLs, enabling redirection to untrusted sites. Less commonly used methods, including `ServerUrlExtensions.GetIdentityServerRelativeUrl`, `ReturnUrlParser.ParseAsync`, and `OidcReturnUrlParser.ParseAsync`, are also affected by similar flaws. The issue is addressed in the fixed version by uninstalling IdentityServer4 packages and disabling related functionality.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Ocelot` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Open Redirect",
+  "related_cve_id": "CVE-2024-39694",
+  "language": "DOTNET",
+  "severity_class": "MEDIUM",
+  "aikido_score": 51,
+  "changelog": "https://github.com/ThreeMammals/Ocelot/releases/tag/24.0.0"
 }

@@ -1,0 +1,27 @@
+{
+  "package_name": "mailauth",
+  "patch_versions": [
+    "4.8.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "4.8.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution when parsing a DKIM header, as untrusted input may be used to manipulate object prototypes, potentially leading to denial of service or other unexpected behavior.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mailauth` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 48,
+  "changelog": "https://github.com/postalsys/mailauth/releases/tag/v4.8.3",
+  "last_modified": "2025-04-22",
+  "published": "2025-04-22"
+}

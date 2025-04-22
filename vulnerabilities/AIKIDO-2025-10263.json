@@ -1,0 +1,27 @@
+{
+  "package_name": "tecnick.com/tcpdf",
+  "patch_versions": [
+    "6.9.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.0.013",
+      "6.9.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to directory traversal due to insufficient sanitization in the `openHTMLTagHandler` function when processing `<img>` tags. An attacker can exploit this by crafting malicious image tag attributes that traverse directories and access unauthorized files.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `tecnick.com/tcpdf` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/tecnickcom/TCPDF/blob/main/CHANGELOG.TXT",
+  "last_modified": "2025-04-22",
+  "published": "2025-04-22"
+}

@@ -15,7 +15,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to directory traversal due to insufficient sanitization in the `openHTMLTagHandler` function when processing `<img>` tags. An attacker can exploit this by crafting malicious image tag attributes that traverse directories and access unauthorized files.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `tecnickcom/tcpdf` library to the patch version.",
+  "how_to_fix": "Upgrade the `tecnick.com/tcpdf` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Path Traversal",
   "related_cve_id": "",

@@ -1,5 +1,6 @@
 {
   "package_name": "tecnickcom/tcpdf",
+  "package_name_alias": "tecnick.com/tcpdf",
   "patch_versions": [
     "6.9.2"
   ],
@@ -19,8 +20,8 @@
   "vulnerable_to": "Deserialization of Untrusted Data",
   "related_cve_id": "",
   "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 55,
+  "severity_class": "CRITICAL",
+  "aikido_score": 91,
   "changelog": "https://github.com/tecnickcom/TCPDF/blob/main/CHANGELOG.TXT",
   "last_modified": "2025-04-22",
   "published": "2025-04-22"

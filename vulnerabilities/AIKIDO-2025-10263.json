@@ -1,5 +1,6 @@
 {
   "package_name": "tecnick.com/tcpdf",
+  "package_name_alias": "tecnickcom/tcpdf",
   "patch_versions": [
     "6.9.1"
   ],

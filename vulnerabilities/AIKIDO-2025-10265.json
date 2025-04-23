@@ -1,0 +1,26 @@
+{
+  "package_name": "billboard.js",
+  "patch_versions": [
+    "3.15.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.9.0",
+      "3.15.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Several security vulnerabilities were quietly patched in `billboard.js` version 3.15.1. A prototype pollution flaw impacted the `generate` and `mergeObj` the function, posing a significant risk.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `billboard.js` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/naver/billboard.js/releases/tag/3.15.1",
+  "last_modified": "2025-04-23",
+  "published": "2025-04-23"
+}

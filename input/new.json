@@ -1,24 +1,15 @@
 {
-  "package_name": "@fuels/vm-asm",
-  "patch_versions": [
-    "0.60.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.49.0",
-      "0.60.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-244"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to heap inspection due to uncleared memory being reused during reallocation after a reset. When expanding a heap vector, uninitialized or sensitive data from the previously used memory may be copied into the new buffer. To prevent leaking dirty memory, the affected code should zero out the memory either before or after copying, which is done in the fixed version.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@fuels/vm-asm` library to the patch version.",
-  "vulnerable_to": "Heap Inspection",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 40,
-  "changelog": "https://github.com/FuelLabs/fuel-vm/releases/tag/v0.60.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

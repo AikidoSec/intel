@@ -1,0 +1,58 @@
+{
+  "package_name": "spring-security-crypto",
+  "org_name": "org.springframework.security",
+  "patch_versions": [
+    "5.7.17",
+    "5.8.19",
+    "6.0.17",
+    "6.1.15",
+    "6.2.11",
+    "6.3.9",
+    "6.4.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.7.16",
+      "5.7.16"
+    ],
+    [
+      "5.8.18",
+      "5.8.18"
+    ],
+    [
+      "6.0.16",
+      "6.0.16"
+    ],
+    [
+      "6.1.14",
+      "6.1.14"
+    ],
+    [
+      "6.2.10",
+      "6.2.10"
+    ],
+    [
+      "6.3.8",
+      "6.3.8"
+    ],
+    [
+      "6.4.4",
+      "6.4.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-208"
+  ],
+  "tldr": "Affected versions are vulnerable to a regression where the fix for CVE-2025-22228 unintentionally disables the timing attack mitigation implemented in `DaoAuthenticationProvider`.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `org.springframework.security:spring-security-crypto` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Observable Timing Discrepancy",
+  "related_cve_id": "CVE-2025-22234",
+  "language": "JAVA",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://spring.io/security/cve-2025-22234",
+  "last_modified": "2025-04-24",
+  "published": "2025-04-24"
+}

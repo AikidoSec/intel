@@ -50,7 +50,7 @@
   "vulnerable_to": "Observable Timing Discrepancy",
   "related_cve_id": "CVE-2025-22234",
   "language": "JAVA",
-  "severity_class": "HIGH",
-  "aikido_score": 70,
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
   "changelog": "https://spring.io/security/cve-2025-22234"
 }

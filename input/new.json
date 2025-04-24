@@ -1,15 +1,22 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "Grafana",
+  "patch_versions": ["10.4.18", "11.2.9", "11.3.6", "11.4.4", "11.5.4", "11.6.1"],
+  "vulnerable_ranges": [
+    ["8.0.0", "10.4.17"],
+    ["11.0.0", "11.2.8"],
+    ["11.3.0", "11.3.5"],
+    ["11.4.0", "11.4.3"],
+    ["11.5.0", "11.5.3"],
+    ["11.6.0", "11.6.0"]
+  ],
+  "cwe": ["CWE-288"],
+  "tldr": "This vulnerability, which was discovered while reviewing a pull request from an external contributor, effects Grafana's data source proxy API and allows authorization checks to be bypassed by adding an extra slash character (/) in the URL path. Among Grafana-maintained data sources, the vulnerability only affects the read paths of Prometheus (all flavors) and Alertmanager when configured with basic authorization.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Grafana` library to the patch version.",
+  "vulnerable_to": "Authorization Bypass",
+  "related_cve_id": "CVE-2025-3454",
+  "language": "os",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/grafana/grafana/blob/main/CHANGELOG.md"
 }

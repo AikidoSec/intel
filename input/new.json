@@ -1,20 +1,15 @@
 {
-  "package_name": "markdown-to-jsx",
-  "patch_versions": ["7.7.6"],
-  "vulnerable_ranges": [
-    [
-      "7.0.0",
-      "7.7.5"
-    ]
-  ],
-  "cwe": ["CWE-79"],
-  "tldr": "Affected versions of this package fail to properly sanitize user-supplied input in multiple HTML attributes, enabling stored or reflected XSS attacks. An attacker could exploit this by injecting malicious scripts into web pages, compromising user sessions, or redirecting to phishing sites.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `markdown-to-jsx` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "js",
-  "severity_class": "MEDIUM",
-  "aikido_score": 61,
-  "changelog": "https://github.com/quantizor/markdown-to-jsx/blob/main/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

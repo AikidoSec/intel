@@ -1,0 +1,26 @@
+{
+  "package_name": "Grafana",
+  "patch_versions": [
+    "11.6.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "11.6.0",
+      "11.6.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "During the development of a new feature in Grafana 11.6.x, a security vulnerability was introduced that allows for Viewers and Editors to bypass dashboard-specific permissions. As a result, users with the Viewer role could view all the dashboards within their org and users with the Editor role could view, edit, and delete all the dashboards in their org.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Grafana` library to the patch version.",
+  "vulnerable_to": "Improper Access Control",
+  "related_cve_id": "CVE-2025-3260",
+  "language": "os",
+  "severity_class": "HIGH",
+  "aikido_score": 83,
+  "changelog": "https://github.com/grafana/grafana/blob/main/CHANGELOG.md",
+  "last_modified": "2025-04-25",
+  "published": "2025-04-25"
+}

@@ -1,15 +1,26 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "jaq-core",
+  "patch_versions": [
+    "2.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.6.0",
+      "2.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-758",
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package may panic when processing input containing invalid UTF-8 characters. If an attacker can supply malformed or non-UTF-8 encoded data, the application may encounter an unexpected runtime panic, potentially leading to a denial of service. This occurs because the package does not properly validate or handle invalid UTF-8 sequences before attempting operations that assume valid encoding.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and overflow checking is enabled.",
+  "how_to_fix": "Upgrade the `jaq-core` library to the patch version or turn off overflow checking.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/01mf02/jaq/releases/tag/v2.2.0"
 }

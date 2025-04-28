@@ -1,6 +1,6 @@
 {
   "package_name": "validator",
-  "org_name": "org.mustangproject"
+  "org_name": "org.mustangproject",
   "patch_versions": [
     "2.16.4"
   ],

@@ -1,25 +1,15 @@
 {
-  "package_name": "validator",
-  "org_name": "org.mustangproject",
-  "patch_versions": [
-    "2.16.4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.14.0",
-      "2.16.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-611"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to XML External Entity (XXE) injection due to missing secure parsing properties in the `DocumentBuilderFactory` configuration. An attacker can exploit this by submitting a malicious XML payload containing external entity references, which the unsecured parser would resolve, potentially allowing unauthorized access to sensitive files, server-side request forgery (SSRF), or other XXE-based attacks.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `org.mustangproject:validator` library to the patch version.",
-  "vulnerable_to": "XML External Entity (XEE)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "java",
-  "severity_class": "MEDIUM",
-  "aikido_score": 45,
-  "changelog": "https://github.com/ZUGFeRD/mustangproject/releases/tag/core-2.16.4"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

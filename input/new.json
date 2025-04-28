@@ -1,15 +1,18 @@
 {
-  "package_name": "",
+  "package_name": "rustc-serialize",
   "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "vulnerable_ranges": "*",
+  "cwe": [
+    "CWE-1104"
+  ],
+  "tldr": "The `rustc-serialize` package will no longer be maintained as declared by the developer. By fuzzing the package, we can identify multiple vulnerabilities. The project has been archived and cannot submit issues. The developer has recommended using the `serde` crate instead.",
+  "doest_this_affect_me": "You are affected if you are using this package.",
+  "how_to_fix": "Remove any `rustc-serialize` package from your application. Please take a look at `serde` instead.",
+  "reporter": "",
+  "vulnerable_to": "Use of Unmaintained Third Party Components",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "rust",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0025.html"
 }

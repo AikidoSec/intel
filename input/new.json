@@ -1,15 +1,46 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "spring-boot-actuator-autoconfigure",
+  "org_name": "org.springframework.boot",
+  "patch_versions": [
+    "2.7.25",
+    "3.1.16",
+    "3.2.14",
+    "3.3.11",
+    "3.4.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.7.0",
+      "2.7.24"
+    ],
+    [
+      "3.1.0",
+      "3.1.15"
+    ],
+    [
+      "3.2.0",
+      "3.2.13"
+    ],
+    [
+      "3.3.0",
+      "3.3.10"
+    ],
+    [
+      "3.4.0",
+      "3.4.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions are vulnerable to improper input validation because `EndpointRequest.to()` can create a matcher for `null/**` when the referenced actuator endpoint is disabled or not exposed. Applications are not affected if they don't use Spring Security, don't use `EndpointRequest.to()`, the referenced endpoint is enabled and exposed, or if they don't handle requests to `/null` or the path doesn't need protection.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range anf if your applications use Spring Security, configure security chains with `EndpointRequest.to()`, the referenced endpoint is disabled or not exposed via web, and the application handles requests to `/null` that require protection.",
+  "how_to_fix": "Upgrade the `org.springframework.boot:spring-boot-actuator-autoconfigure` library to the patch version. Or make sure that the endpoint to which `EndpointRequest.to()` is referring to is enabled and exposed via web or make sure that you don't handle requests to `/null`",
+  "reporter": "",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "CVE-2025-22235",
+  "language": "JAVA",
+  "severity_class": "HIGH",
+  "aikido_score": 73,
+  "changelog": "https://spring.io/security/cve-2025-22235"
 }

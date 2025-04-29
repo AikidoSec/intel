@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "risc0-zkvm",
+  "patch_versions": [
+    "2.0.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.2.0",
+      "2.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-758"
+  ],
+  "tldr": "The vulnerability lies in the `sys_read` syscall implementation in the v2 kernel of ZKVM. When handling reads larger than 1024 bytes, the kernel splits the read into smaller chunks. However, it fails to properly update the `nwords` argument (stored in register `a4`) during this chunking. As a result, the syscall may read beyond the end of the supplied buffer or not read enough data, leading to undefined or unsafe behavior. The fix ensures that the `nwords` argument (`a4`) is correctly updated during large read operations. This prevents incorrect read sizes and avoids reading past buffer boundaries. The patch also enhances test coverage to include reads larger than 1024 bytes, which helps detect this issue during testing.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `risc0-zkvm` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Undefined Behavior",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "rust",
+  "severity_class": "LOW",
+  "aikido_score": 18,
+  "changelog": "https://github.com/risc0/risc0/releases/tag/v2.0.2"
 }

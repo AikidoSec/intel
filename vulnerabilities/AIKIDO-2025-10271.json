@@ -1,0 +1,26 @@
+{
+  "package_name": "@forestadmin/agent",
+  "patch_versions": [
+    "1.63.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.56.0",
+      "1.63.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-285"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper authorization, as the live query feature allows execution of arbitrary SQL queries without validating or restricting the input.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@forestadmin/agent` library to the patch version.",
+  "vulnerable_to": "Improper Authorization",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/ForestAdmin/agent-nodejs/releases/tag/%40forestadmin/agent%401.63.2",
+  "last_modified": "2025-04-29",
+  "published": "2025-04-29"
+}

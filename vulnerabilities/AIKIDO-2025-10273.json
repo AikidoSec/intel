@@ -1,0 +1,26 @@
+{
+  "package_name": "mageplaza/magento-2-social-login",
+  "patch_versions": [
+    "4.1.18"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "4.1.17"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) due to insufficient input sanitization in the `$message` variable, which is rendered within the div element for error messages. An attacker can exploit this flaw by injecting malicious JavaScript code into the `$message` parameter, which will then be executed in the context of a victim's browser when the error message is displayed. It could lead to session hijacking, defacement, or other client-side attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mageplaza/magento-2-social-login` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/mageplaza/magento-2-social-login/releases/tag/v4.1.18",
+  "last_modified": "2025-04-29",
+  "published": "2025-04-29"
+}

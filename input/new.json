@@ -19,7 +19,7 @@
   "vulnerable_to": "Integer Overflow",
   "related_cve_id": "",
   "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 26,
+  "severity_class": "MEDIUM",
+  "aikido_score": 44,
   "changelog": "https://github.com/pulumi/esc/releases/tag/v0.13.1"
 }

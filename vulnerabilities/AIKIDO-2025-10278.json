@@ -1,0 +1,27 @@
+{
+  "package_name": "django-debug-toolbar",
+  "patch_versions": [
+    "5.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.3.0",
+      "5.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "This update adds sanitization to the `debug_toolbar`'s Request Panel, ensuring sensitive data such as GET, POST, cookies, and session values are redacted in debug output. The `RequestPanel.generate_stats` method now uses a new `sanitize_and_sort_request_vars` utility to replace the earlier unsanitized approach. Supporting helper functions (`_get_sorted_keys`, `_process_query_dict`, `_process_dict`) were introduced to clean and organize request data securely.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `django-debug-toolbar` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/django-commons/django-debug-toolbar/releases/tag/5.2.0",
+  "last_modified": "2025-04-30",
+  "published": "2025-04-30"
+}

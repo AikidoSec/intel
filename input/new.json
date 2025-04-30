@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/openziti/sdk-golang",
-  "patch_versions": [
-    "1.0.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.11.6",
-      "1.0.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-362"
-  ],
-  "tldr": "Affected versions of this package have a vulnerability that can lead to a runtime panic due to unsafe concurrent access to the `SupportedProtocols` map in the Ziti Go SDK. When multiple goroutines call `getEdgeRouterConn()` simultaneously, it may cause a fatal runtime error. An attacker could exploit this by sending numerous concurrent requests, resulting in a denial of service (DoS) by crashing the application.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/openziti/sdk-golang` library to the patch version.",
-  "vulnerable_to": "Race Condition",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 20,
-  "changelog": "https://github.com/openziti/sdk-golang/blob/main/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,0 +1,27 @@
+{
+  "package_name": "github.com/pulumi/esc",
+  "patch_versions": [
+    "0.13.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.13.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to integer overflow in the `writeYAMLEnvironmentDiagnostics` function in `cmd/esc/cli/env.go`. The vulnerability arises from unsafe instantiation of `hcl.NewDiagnosticTextWriter` using potentially unbounded width values. The issue is addressed by first initializing the writer with a width of 0 and conditionally reinstantiating it only if the specified width is greater than 0, mitigating the risk flagged by gosec G115.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/pulumi/esc` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Integer Overflow",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 44,
+  "changelog": "https://github.com/pulumi/esc/releases/tag/v0.13.1",
+  "last_modified": "2025-04-30",
+  "published": "2025-04-30"
+}

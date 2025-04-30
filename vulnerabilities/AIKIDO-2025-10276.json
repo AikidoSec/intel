@@ -1,0 +1,26 @@
+{
+  "package_name": "@auth0/nextjs-auth0",
+  "patch_versions": [
+    "4.5.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.2",
+      "4.5.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-613"
+  ],
+  "tldr": "Affected versions of this package did not enforce an expiration for the JSON Web Encryption (JWE) token within the cookie, relying solely on the cookie's expiry setting, which means that the JWE token remains valid even after the cookie expiration. An attacker can take leverage of this misconfiguration by extracting the JWE token from an expired cookie and reusing it in malicious requests, bypassing session termination. Since the server only checked the cookie's expiration and not the embedded expiration of the JWE token, this flaw could lead to unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@auth0/nextjs-auth0` library to the patch version.",
+  "vulnerable_to": "Insufficient Session Expiration",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 66,
+  "changelog": "https://github.com/auth0/nextjs-auth0/releases/tag/v4.5.1",
+  "last_modified": "2025-04-30",
+  "published": "2025-04-30"
+}

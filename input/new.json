@@ -1,18 +1,15 @@
 {
-  "package_name": "atomic-polyfill",
+  "package_name": "",
   "patch_versions": [],
-  "vulnerable_ranges": "*",
-  "cwe": [
-    "CWE-1104"
-  ],
-  "tldr": "The `atomic-polyfill` package will no longer be maintained. The author has archived the GitHub repository and mentions deprecation in project's README.",
-  "doest_this_affect_me": "You are affected if you are using this package.",
-  "how_to_fix": "Remove any `atomic-polyfill` package from your application. Please take a look at `portable-atomic` instead.",
-  "reporter": "",
-  "vulnerable_to": "Use of Unmaintained Third Party Components",
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "rust",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://rustsec.org/advisories/RUSTSEC-2023-0089.html"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

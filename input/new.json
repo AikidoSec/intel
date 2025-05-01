@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "Umbraco.Cms",
+  "patch_versions": [
+    "15.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "9.3.0",
+      "15.3.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to information disclosure due to improper access controls that allow back-office users without proper webhook permissions to access webhook logs due to insufficient access controls. Additionally, the application fails to properly validate file system paths, exposing resolved paths and potentially allowing directory traversal attacks. An attacker with back-office access, even without webhook privileges, can read sensitive webhook logs or access arbitrary files on the system. It leads to information disclosure or server compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Umbraco.Cms` library to the patch version.",
+  "vulnerable_to": "Information Disclosure",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "dotnet",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/umbraco/Umbraco-CMS/releases/tag/release-15.4.0"
 }

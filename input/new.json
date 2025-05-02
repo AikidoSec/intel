@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@stripe/connect-js",
+  "patch_versions": [
+    "3.3.23"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.3.22"
+    ]
+  ],
+  "cwe": [
+    "CWE-472"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to HTML clobbering, where malicious HTML elements can interfere with the initialization of connect.js. If the host page's `<head>` contains nested `<a>` tags with `id= StripeConnect` and `name= init`, it may falsely assume connect.js is initialized. An attacker can inject HTML like `<a id='StripeConnect'><a id='StripeConnect' name='init' href='stripe'></a></a>`, leading to improper script execution, security bypasses, or other unintended behaviors.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@stripe/connect-js` library to the patch version.",
+  "vulnerable_to": "HTML Clobbering",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/stripe/connect-js/releases/tag/v3.3.23"
 }

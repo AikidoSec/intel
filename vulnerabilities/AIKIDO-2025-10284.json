@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `code-server` library to the patch version.",
   "vulnerable_to": "Server-Side Request Forgery (SSRF)",
   "related_cve_id": "",
-  "language": "JS",
+  "language": "os",
   "severity_class": "MEDIUM",
   "aikido_score": 65,
   "changelog": "https://github.com/coder/code-server/releases/tag/v4.99.4",

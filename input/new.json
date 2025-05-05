@@ -1,25 +1,15 @@
 {
-  "package_name": "browser-use",
-  "patch_versions": [
-    "0.1.45"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "0.1.44"
-    ]
-  ],
-  "cwe": [
-    "CWE-863"
-  ],
-  "tldr": "Affected versions of the package are vulnerable to improper input validation, allowing bypass of domain whitelisting in the `browser_use` module. Although the `allowed_domains` list is meant to restrict accessible URLs, an attacker can craft URLs with embedded basic authentication credentials—such as `https://example.com:pass@localhost:8080`—to trick the system into allowing navigation to unauthorized domains. This bypass arises from flawed parsing logic in the `_is_url_allowed()` method, which strips port and user information without verifying the true target domain. As a result, attackers may gain unauthorized access to internal services or perform enumeration on localhost and private networks.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `browser-use` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Incorrect Authorization",
-  "related_cve_id": "CVE-2025-47241",
-  "language": "python",
-  "severity_class": "CRITICAL",
-  "aikido_score": 92,
-  "changelog": "https://github.com/browser-use/browser-use/releases/tag/0.1.45"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

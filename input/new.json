@@ -19,7 +19,7 @@
   "vulnerable_to": "Incorrect Authorization",
   "related_cve_id": "CVE-2025-47241",
   "language": "python",
-  "severity_class": "HIGH",
-  "aikido_score": 89,
+  "severity_class": "CRITICAL",
+  "aikido_score": 92,
   "changelog": "https://github.com/browser-use/browser-use/releases/tag/0.1.45"
 }

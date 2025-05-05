@@ -20,5 +20,5 @@
   "language": "dotnet",
   "severity_class": "LOW",
   "aikido_score": 15,
-  "changelog": "https://github.com/umbraco/Umbraco-CMS/releases/tag/release-15.4.0"
+  "changelog": "https://github.com/umbraco/Umbraco-CMS/commit/cdba470f2d8fa17e7b4f9c9916fe670e99764edc"
 }

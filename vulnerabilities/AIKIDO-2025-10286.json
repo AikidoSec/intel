@@ -1,0 +1,26 @@
+{
+  "package_name": "n8n-nodes-base",
+  "patch_versions": [
+    "1.91.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.1.0",
+      "1.91.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-693"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to sandbox escape in the `Pyodide` module due to improper argument parsing handling. This could allow the bypass of sandbox restrictions and execute arbitrary code. An attacker could exploit this by crafting malicious inputs that escape sanitization, potentially gaining access to system-level operations or sensitive data.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `n8n-nodes-base` library to the patch version.",
+  "vulnerable_to": "Sandbox Bypass",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.91.0",
+  "last_modified": "2025-05-05",
+  "published": "2025-05-05"
+}

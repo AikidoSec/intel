@@ -22,7 +22,7 @@
   "how_to_fix": "Upgrade the `Umbraco.Cms` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Observable Response Discrepancy",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-46736",
   "language": "dotnet",
   "severity_class": "MEDIUM",
   "aikido_score": 51,

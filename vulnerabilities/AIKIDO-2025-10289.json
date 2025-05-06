@@ -1,0 +1,27 @@
+{
+  "package_name": "@automattic/newspack-blocks",
+  "patch_versions": [
+    "4.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.33.1",
+      "4.5.10"
+    ]
+  ],
+  "cwe": [
+    "CWE-521"
+  ],
+  "tldr": "Affected versions of this package do not enforce minimum password length or password complexity requirements when creating an account. This lack of restrictions allows users to create weak, easily guessable passwords, increasing the risk of account compromise through brute force or dictionary attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@automattic/newspack-blocks` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Weak Password Requirements",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/Automattic/newspack-blocks/releases/tag/v4.6.0",
+  "last_modified": "2025-05-06",
+  "published": "2025-05-06"
+}

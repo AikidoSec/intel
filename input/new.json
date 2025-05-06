@@ -1,15 +1,22 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "redox_uefi_std",
+  "patch_versions": ["0.1.14"],
+  "vulnerable_ranges": [
+    [
+      "0.1.8",
+      "0.1.13"
+    ]
+  ],
+  "cwe": [
+    "CWE-122"
+  ],
+  "tldr": "Affected versions of this package contain a vulnerability in the ffi::nstr() function, which fails to validate whether the input buffer is properly null-terminated. Since this function is not marked as unsafe, it may be used incorrectly, leading to undefined behavior when processing unterminated buffers.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `redox_uefi_std` library to the patch version.",
+  "vulnerable_to": "Heap-based Buffer Overflow",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Rust",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0032.html"
 }

@@ -1,0 +1,19 @@
+{
+  "package_name": "tanton_engine",
+  "patch_versions": [],
+  "vulnerable_ranges": "*",
+  "cwe": [
+    "CWE-1104"
+  ],
+  "tldr": "Certain functions in the tanton_engine crate are unsound due to lack of sufficient boundary checks in public API. The tanton_engine crate is no longer maintained, so there are no plans to fix this issue.",
+  "doest_this_affect_me": "You are affected if you are using this package.",
+  "how_to_fix": "Remove any `tanton_engine` package from your application.",
+  "vulnerable_to": "Use of Unmaintained Third Party Components",
+  "related_cve_id": "",
+  "language": "Rust",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0031.html",
+  "last_modified": "2025-05-07",
+  "published": "2025-05-07"
+}

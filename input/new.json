@@ -12,7 +12,7 @@
   "cwe": [
     "CWE-400"
   ],
-  "tldr": "Affected versions of the package are vulnerable to denial of service (DoS) due to unbounded parameter parsing in `Rack::QueryParser`, which can lead to memory exhaustion. Although default limits are set —4096 parameters and a 4MB byte size— these may be insufficient for certain applications. To improve flexibility and mitigate this risk, the limits can be overridden per `QueryParser` instance via its constructor or globally using the environment variables `RACK_QUERY_PARSER_BYTESIZE_LIMIT` and `RACK_QUERY_PARSER_PARAMS_LIMIT`. If limits are exceeded, a `Rack::QueryParser::QueryLimitError` is raised.",
+  "tldr": "Affected versions of the package are vulnerable to denial of service (DoS) due to unbounded parameter parsing in `Rack::QueryParser`, which can result in memory exhaustion. In the patched version, support was added for limiting the parameter using the environment variables `RACK_QUERY_PARSER_PARAMS_LIMIT` and `RACK_QUERY_PARSER_BYTESIZE_LIMIT` (default limits of 4096 parameters and 4MB total byte size), as well as through `QueryParser` constructor options. If either limit is exceeded, a `Rack::QueryParser::QueryLimitError` is raised, with `ParamsTooDeepError` now aliased for compatibility with existing error handling.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `rack` library to the patch version.",
   "reporter": "",

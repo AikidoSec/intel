@@ -1,25 +1,15 @@
 {
-  "package_name": "feed",
-  "patch_versions": [
-    "5.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "4.2.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-20"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to improper input validation at multiple points in the code, such as when formatting the `url` in enclosures or processing XML feeds.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `feed` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Improper Input Validation",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 21,
-  "changelog": "https://github.com/jpmonette/feed/releases/tag/5.0.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

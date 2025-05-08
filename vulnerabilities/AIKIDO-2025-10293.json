@@ -1,0 +1,26 @@
+{
+  "package_name": "@liveblocks/react-ui",
+  "patch_versions": [
+    "2.24.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.24.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-862"
+  ],
+  "tldr": "Affected versions of this package fail to disable or hide UI actions properly (e.g., adding comments, resolving/unresolving threads) for users without the necessary permissions. An attacker can exploit this issue by interacting with seemingly available actions despite lacking proper authorization, potentially leading to manipulating thread states or adding reactions, disrupting discussions, and misusing privileged functions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@liveblocks/react-ui` library to the patch version.",
+  "vulnerable_to": "Missing Authorization",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/liveblocks/liveblocks/releases/tag/v2.24.2",
+  "last_modified": "2025-05-08",
+  "published": "2025-05-08"
+}

@@ -1,0 +1,27 @@
+{
+  "package_name": "maintenance_tasks",
+  "patch_versions": [
+    "2.12.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.11.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to exposure of sensitive information. Some maintenance tasks require sensitive data in their arguments, but this data may be visible in the UI after the task is submitted. The patch addresses this by introducing a new class method that masks sensitive attributes, ensuring they are hidden from the arguments list displayed in the UI.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `maintenance_tasks` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information",
+  "related_cve_id": "",
+  "language": "RUBY",
+  "severity_class": "LOW",
+  "aikido_score": 18,
+  "changelog": "https://github.com/Shopify/maintenance_tasks/releases/tag/v2.12.0",
+  "last_modified": "2025-05-08",
+  "published": "2025-05-08"
+}

@@ -1,25 +1,15 @@
 {
-  "package_name": "rack",
-  "patch_versions": [
-    "3.1.14"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.0.0",
-      "3.1.13"
-    ]
-  ],
-  "cwe": [
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of the package are vulnerable to denial of service (DoS) due to unbounded parameter parsing in `Rack::QueryParser`, which can result in memory exhaustion. In the patched version, support was added for limiting the parameter using the environment variables `RACK_QUERY_PARSER_PARAMS_LIMIT` and `RACK_QUERY_PARSER_BYTESIZE_LIMIT` (default limits of 4096 parameters and 4MB total byte size), as well as through `QueryParser` constructor options. If either limit is exceeded, a `Rack::QueryParser::QueryLimitError` is raised, with `ParamsTooDeepError` now aliased for compatibility with existing error handling.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `rack` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Denial of Service (DoS)",
-  "related_cve_id": "CVE-2025-46727",
-  "language": "RUBY",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://github.com/rack/rack/commit/79ab0b9794a529f26a9a5eba10077f5ee6a097ce"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

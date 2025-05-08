@@ -1,25 +1,15 @@
 {
-  "package_name": "edgee-server",
-  "patch_versions": [
-    "1.2.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.4.3",
-      "1.2.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-20"
-  ],
-  "tldr": "Affected versions of the package do not properly validate payloads. Specifically, requests with an empty fetch destination are not blocked, which could be exploited for malicious purposes or result in unnecessary processing. The patch addresses this by adding `'empty'` to the list of forbidden fetch destinations in the `do_process_payload` function, ensuring such requests are rejected.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `edgee-server` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Improper Input Validation",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "LOW",
-  "aikido_score": 32,
-  "changelog": "https://github.com/edgee-cloud/edgee/releases/tag/v1.2.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

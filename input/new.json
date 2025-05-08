@@ -1,25 +1,15 @@
 {
-  "package_name": "trix",
-  "patch_versions": [
-    "2.1.15"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.9.0",
-      "2.1.14"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS). An attacker could trick users into pasting malicious code into the application, leading to the execution of arbitrary JavaScript in the context of the user's session. This could result in unauthorized actions or the exposure of sensitive information.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `trix` library to a patch version.",
-  "reporter": "",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
-  "related_cve_id": "CVE-2025-46812",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 49,
-  "changelog": "https://github.com/basecamp/trix/releases/tag/v2.1.15"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

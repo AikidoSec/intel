@@ -1,0 +1,28 @@
+{
+  "package_name": "svix",
+  "org_name": "com.svix",
+  "patch_versions": [
+    "1.65.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.61.0",
+      "1.64.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of the package do not properly sanitize URLs configured for operational server webhooks. The `SVIX_OPERATIONAL_WEBHOOK_ADDRESS` value is used without validation or sanitization, allowing potentially unsafe or malformed URLs to be added and used by the server.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `com.svix:svix` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "",
+  "language": "JAVA",
+  "severity_class": "LOW",
+  "aikido_score": 17,
+  "changelog": "https://github.com/svix/svix-webhooks/releases/tag/v1.65.0",
+  "last_modified": "2025-05-08",
+  "published": "2025-05-08"
+}

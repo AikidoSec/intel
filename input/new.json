@@ -14,7 +14,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to allocation of resources without proper limits or throttling. The `computeComplexity` function performs insufficient validation when the `ignoreIntrospection` option—enabled by default—is used. This allows an attacker to bypass query cost restrictions by naming a query or fragment using `__schema`, potentially leading to resource exhaustion.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@escape.tech/graphql-armor` library to the patch version.",
+  "how_to_fix": "Upgrade the `@escape.tech/graphql-armor` library to the patch version or set the `ignoreIntrospection` option to false.",
   "vulnerable_to": "Unlimited Resource Consumption",
   "related_cve_id": "",
   "language": "JS",

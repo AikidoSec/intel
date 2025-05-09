@@ -1,29 +1,15 @@
 {
-  "package_name": "craftcms/cms",
-  "patch_versions": [
-    "4.15.3",
-    "5.7.5"
-    ],
-  "vulnerable_ranges": [
-    [
-      "3.1.1",
-      "4.15.2"
-    ],
-    [
-      "5.0.0",
-      "5.7.4"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to client-side injection attacks due to unsanitized return URLs stored in the user session. An attacker could craft a malicious URL and pass it as the `returnUrl` parameter, which would then be stored in the session and later used for rendering. If the application blindly trusts this URL, it could lead to arbitrary JavaScript execution or trick users into visiting a malicious site.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "php",
-  "severity_class": "MEDIUM",
-  "aikido_score": 41,
-  "changelog": "https://github.com/craftcms/cms/blob/5.x/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

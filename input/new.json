@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@escape.tech/graphql-armor",
+  "patch_versions": [
+    "3.1.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "3.1.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-770"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to allocation of resources without proper limits or throttling. The `computeComplexity` function performs insufficient validation when the `ignoreIntrospection` option—enabled by default—is used. This allows an attacker to bypass query cost restrictions by naming a query or fragment using `__schema`, potentially leading to resource exhaustion.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@escape.tech/graphql-armor` library to the patch version.",
+  "vulnerable_to": "Unlimited Resource Consumption",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
+  "changelog": "https://github.com/Escape-Technologies/graphql-armor/pull/772"
 }

@@ -1,15 +1,30 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "OpenVPN.openvpn",
+  "patch_versions": [
+    "2.5.11",
+    "2.6.12"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.5.0",
+      "2.5.10"
+    ],
+    [
+      "2.6.0",
+      "2.6.11"
+    ]
+  ],
+  "cwe": [
+    "CWE-1287"
+  ],
+  "tldr": "Affected versions of OpenVPN prior to 2.6.11 do not properly sanitize `PUSH_REPLY` messages, allowing a malicious server to inject unexpected and arbitrary data that may be written to client logs.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `OpenVPN.openvpn` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Validation of Specified Type of Input",
+  "related_cve_id": "CVE-2024-5594",
+  "language": "c++",
+  "severity_class": "LOW",
+  "aikido_score": 24,
+  "changelog": "https://github.com/OpenVPN/openvpn/releases/tag/v2.5.11"
 }

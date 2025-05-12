@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "django-cms",
+  "patch_versions": [
+    "5.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.1.2",
+      "4.1.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package fail to properly sanitize user-supplied data when used inside a function that creates a `page_title` attribute for the specified input, leading to a stored Cross-Site Scripting (XSS) vulnerability. An attacker can exploit this by injecting malicious JavaScript or HTML into the title creation input field. This unsafe front-end rendering allows the execution of scripts in a victim's browser, potentially stealing session cookies or handling other client-side exploits.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `django-cms` library to a patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "HIGH",
+  "aikido_score": 77,
+  "changelog": "https://github.com/django-cms/django-cms/releases/tag/5.0.0"
 }

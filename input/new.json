@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "subst",
+  "patch_versions": [
+    "0.3.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.3.2",
+      "0.3.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-758"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a panic caused by an index out-of-bounds error in the `parse` method when the input ends with a `$` character. This can lead to unexpected application crashes when processing malformed or specially crafted input.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges and using template::UriTemplateStr.",
+  "how_to_fix": "Upgrade the `subst` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Undefined Behavior",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/fizyr/subst/blob/main/CHANGELOG"
 }

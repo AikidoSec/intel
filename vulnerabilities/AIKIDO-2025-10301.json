@@ -16,7 +16,7 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `@escape.tech/graphql-armor-cost-limit` library to the patch version or set the `ignoreIntrospection` option to false.",
   "vulnerable_to": "Unlimited Resource Consumption",
-  "related_cve_id": "",
+  "related_cve_id": "GHSA-733v-p3h5-qpq7",
   "language": "JS",
   "severity_class": "MEDIUM",
   "aikido_score": 65,

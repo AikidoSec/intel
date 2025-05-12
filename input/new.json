@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "commons-asic",
+  "org_name": "no.difi.commons",
+  "patch_versions": [
+    "1.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.9.4",
+      "1.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-409"
+  ],
+  "tldr": "Affected versions of this package lack proper ZipBomb protection, failing to enforce size limits on meta-inf files during extraction. An attacker can exploit this vulnerability by crafting a malicious ZIP archive containing excessively large meta-inf files, which, when processed, overwhelms system resources (e.g., disk space or memory) due to uncontrolled extraction.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `no.difi.commons:commons-asic` library to the patch version.",
+  "vulnerable_to": "Improper Handling of Highly Compressed Data (Data Amplification)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Java",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/felleslosninger/efm-asic/blob/main/CHANGELOG.md"
 }

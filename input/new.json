@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "Sentry",
+  "patch_versions": [
+    "5.7.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.12.0",
+      "5.6.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package send HTTP Authorization headers without properly redacting them, which can expose sensitive authentication information or personally identifiable information (PII). If an attacker gains access to the server or intercepts its communications, it could extract this header content and use it to hijack user sessions, escalate privileges, or exfiltrate multiple PII from the users.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Sentry` library to a patch version.",
+  "vulnerable_to": "Information Disclosure",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "dotnet",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/getsentry/sentry-dotnet/releases/tag/5.7.0"
 }

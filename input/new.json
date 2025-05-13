@@ -1,24 +1,15 @@
 {
-  "package_name": "appsignal",
-  "patch_versions": [
-    "2.15.7"
-    ],
-  "vulnerable_ranges": [
-    [
-      "2.5.0",
-      "2.15.6"
-    ]
-  ],
-  "cwe": [
-    "CWE-200"
-  ],
-  "tldr": "Affected versions of this package store the entire return value of Oban jobs in the `result` attribute, which may include sensitive data such as API keys or internal system details. This behavior poses a security risk as the data could be exposed through database leaks, logs, or admin interfaces.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `appsignal` library to the patch version.",
-  "vulnerable_to": "Information Disclosure",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Elixir",
-  "severity_class": "LOW",
-  "aikido_score": 18,
-  "changelog": "https://github.com/appsignal/appsignal-elixir/blob/main/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

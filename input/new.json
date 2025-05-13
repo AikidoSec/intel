@@ -19,5 +19,6 @@
   "related_cve_id": "",
   "language": "Python",
   "severity_class": "HIGH",
-  "aikido_score": 77
+  "aikido_score": 77,
+  "changelog": "https://github.com/django-cms/django-cms/releases/tag/5.0.0"
 }

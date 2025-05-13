@@ -1,11 +1,16 @@
 {
   "package_name": "strapi-plugin-sso",
   "patch_versions": [
+    "0.4.7",
     "1.0.6"
   ],
   "vulnerable_ranges": [
     [
       "0.3.1",
+      "0.4.6"
+    ],
+    [
+      "1.0.0",
       "1.0.5"
     ]
   ],
@@ -14,7 +19,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to Cross-Site Request Forgery (CSRF) due to missing validation of the state parameter in OAuth 2.0 authorization flows. An attacker could exploit a lack of a securely generated state parameter in an OAuth login by tricking a victim into initiating the process and then intercepting the callback. It could allow the attacker to hijack the session or force unintended authentication, enabling the submission of malicious authorization codes or redirect URIs to compromise user accounts.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `strapi-plugin-sso` library to the patch version if you're using Strapi v5.",
+  "how_to_fix": "Upgrade the `strapi-plugin-sso` library to the patch version.",
   "vulnerable_to": "Cross-Site Request Forgery (CSRF)",
   "related_cve_id": "",
   "language": "JS",

@@ -1,0 +1,26 @@
+{
+  "package_name": "froala-editor",
+  "patch_versions": [
+    "4.5.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.2",
+      "4.5.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-1395"
+  ],
+  "tldr": "Affected versions of this package import a deprecated and vulnerable Content Delivery Network (CDN) files, which may expose the application to ReDoS (Regular Expression Denial of Service). Additionally, more fixes were applied directly to minified JS files, making these changes untraceable.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `froala-editor` library to a patch version.",
+  "vulnerable_to": "Dependency on Vulnerable Third-Party Component",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/froala/wysiwyg-editor/releases/tag/v4.5.2",
+  "last_modified": "2025-05-14",
+  "published": "2025-05-14"
+}

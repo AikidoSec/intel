@@ -1,7 +1,7 @@
 {
   "package_name": "canvas",
   "patch_versions": [
-    "3.0.0-rc3"
+    "3.0.0"
   ],
   "vulnerable_ranges": [
     [
@@ -21,7 +21,7 @@
   "language": "JS",
   "severity_class": "LOW",
   "aikido_score": 19,
-  "changelog": "https://github.com/Automattic/node-canvas/releases/tag/v3.0.0-rc3",
+  "changelog": "https://github.com/Automattic/node-canvas/releases/tag/v3.0.0",
   "published": "2024-12-09",
   "last_modified": "2024-12-09"
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "label-studio",
+  "patch_versions": [
+    "1.18.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.11.0",
+      "1.17.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to arbitrary JavaScript execution due to the `getProperty` method's arguments not being sanitized before handling it in a `new Function()` call. It allows an attacker to craft a malicious payload to break out of the intended property lookup and inject executable code. Since `new Function()` evaluates the generated string as live JavaScript, this vulnerability can result in Remote Code Execution (RCE) in environments where input controlled by an attacker reaches this method.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `label-studio` library to a patch version.",
+  "vulnerable_to": "Improper Control of Generation of Code (Code Injection)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "HIGH",
+  "aikido_score": 81,
+  "changelog": "https://github.com/HumanSignal/label-studio/releases/tag/1.18.0"
 }

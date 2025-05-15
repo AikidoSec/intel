@@ -1,0 +1,27 @@
+{
+  "package_name": "micro-eth-signer",
+  "patch_versions": [
+    "0.14.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.1",
+      "0.13.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package may leak private keys due to a vulnerability similar to one recently identified in `elliptic.js`, where private keys could be extracted from signatures. While deterministic signatures remain identical across sessions and can expose sensitive information, hedged signatures introduce randomness in each signing operation, offering stronger protection against such leaks. The `noble-curves` package already supports hedged signatures, providing a more secure alternative and is now the default method in the patched version.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `micro-eth-signer` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/paulmillr/micro-eth-signer/releases/tag/0.14.0",
+  "last_modified": "2025-05-15",
+  "published": "2025-05-15"
+}

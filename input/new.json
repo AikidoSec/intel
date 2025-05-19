@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@react-awesome-query-builder/antd",
+  "patch_versions": [
+    "6.6.15"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.3.0",
+      "6.6.14"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) in the `domUtils.calcTextWidth` method. An attacker could exploit this by injecting malicious content that is interpreted as executable JavaScript when processed by the method, potentially leading to the execution of arbitrary scripts in the context of the user's session. This could result in unauthorized actions, data exposure, or session hijacking.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `@react-awesome-query-builder/antd` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/ukrbublik/react-awesome-query-builder/releases/tag/6.6.15"
 }

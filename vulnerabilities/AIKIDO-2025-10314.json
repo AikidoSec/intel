@@ -1,0 +1,26 @@
+{
+  "package_name": "dt_for_itables",
+  "patch_versions": [
+    "2.3.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.10",
+      "2.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution due to the indirect evaluation of JavascriptCode and JavascriptFunction. It could enable modifications to object prototypes, which, depending on how the application handles the polluted objects, may lead to issues such as denial of service, privilege escalation, or remote code execution. An attacker can exploit a vulnerability by manipulating input to bypass the checks of the indirect evaluation of JavaScript code. By crafting malicious input that evades this check, the attacker can inject arbitrary properties into the prototype chain, resulting in what is known as prototype pollution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `dt_for_itables` library to a patch version.",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 61,
+  "changelog": "https://github.com/mwouts/itables/blob/main/packages/dt_for_itables/CHANGELOG.md",
+  "last_modified": "2025-05-19",
+  "published": "2025-05-19"
+}

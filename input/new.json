@@ -18,7 +18,7 @@
   "vulnerable_to": "Heap Buffer Overflow",
   "related_cve_id": "",
   "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 46,
+  "severity_class": "LOW",
+  "aikido_score": 31,
   "changelog": "https://github.com/numpy/numpy/releases/tag/v2.2.6"
 }

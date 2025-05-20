@@ -1,15 +1,26 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "spring-security-config",
+  "org_name": "org.springframework.security",
+  "patch_versions": [
+    "6.4.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.4.0",
+      "6.4.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-285"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an authorization bypass due to Spring Security Aspects failing to correctly detect method-level security annotations on private methods. This issue occurs when `@EnableMethodSecurity(mode = ASPECTJ)` is used in combination with the `spring-security-aspects` module, and security annotations are applied to private methods. As a result, these methods may be invoked without the intended authorization checks, potentially allowing unauthorized access.",
+  "doest_this_affect_me": "You are affected if using a vulnerable version. You are not affected if you are not using `@EnableMethodSecurity(mode = ASPECTJ)` or the `spring-security-aspects` module, or if your application does not include any private methods annotated with Spring Security annotations.",
+  "how_to_fix": "Upgrade the `org.springframework.security:spring-security-config` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Authorization Bypass",
+  "related_cve_id": "CVE-2025-41232",
+  "language": "JAVA",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://spring.io/security/cve-2025-41232"
 }

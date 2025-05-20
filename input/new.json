@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "jiter",
+  "patch_versions": [
+    "0.10.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.2.0",
+      "0.9.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-758"
+  ],
+  "tldr": "Affected versions of this package contained a soundness issue in functions that allowed skipping UTF-8 validation via an `is_ascii` flag. This could lead to memory safety violations if non-ASCII strings were incorrectly marked as ASCII. An attacker could exploit this vulnerability by supplying a malicious string containing non-ASCII Unicode, triggering undefined behavior that could result in panic, crashes, or memory corruption.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `jiter` library to the patch version.",
+  "vulnerable_to": "Reliance on Undefined, Unspecified, or Implementation-Defined Behavior",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Rust",
+  "severity_class": "MEDIUM",
+  "aikido_score": 44,
+  "changelog": "https://github.com/pydantic/jiter/releases/tag/v0.10.0"
 }

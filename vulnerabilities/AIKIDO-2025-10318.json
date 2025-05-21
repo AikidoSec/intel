@@ -1,0 +1,26 @@
+{
+  "package_name": "swiper",
+  "patch_versions": [
+    "11.2.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "10.0.0",
+      "11.2.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package do not support the `TrustedTypes API`, which is designed to prevent DOM-based injection attacks such as Cross-Site Scripting (XSS). When used in environments enforcing TrustedTypes, Swiper.js fails to wrap dynamic HTML assignments with `innerHTML`. An attacker could exploit this by injecting malicious payloads into Swiper-controlled elements (e.g., slides, pagination, or navigation) if the application passes unsanitized user input to Swiper's initialization or content methods, effectively bypassing protections and enabling XSS attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `swiper` library to a patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 28,
+  "changelog": "https://github.com/nolimits4web/swiper/releases/tag/v11.2.7",
+  "last_modified": "2025-05-21",
+  "published": "2025-05-21"
+}

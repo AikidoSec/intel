@@ -16,7 +16,7 @@
   "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
   "language": "js",
-  "severity_class": MEDIUM
+  "severity_class": "MEDIUM",
   "aikido_score": 56,
   "changelog": "https://github.com/CleverTap/clevertap-web-sdk/releases/tag/v1.15.2"
 }

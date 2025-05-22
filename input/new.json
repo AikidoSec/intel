@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "django-allauth",
+  "patch_versions": [
+    "65.8.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.56.0",
+      "65.8.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-307"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a rate-limiting bypass due to improper handling of failed login attempts. It allows an attacker to reset the rate limit for an IP address by performing a successful login, effectively bypassing brute-force protection. An attacker could exploit this by first making multiple failed login attempts, then using a known or guessed password to log in successfully, clearing the rate limit, and allowing further brute-force attempts.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `django-allauth` library to the patch version.",
+  "vulnerable_to": "Improper Restriction of Excessive Authentication Attempts",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/pennersr/django-allauth/commit/8eb311a0ca75ebcb1a5259909a64fc4172d07e5e"
 }

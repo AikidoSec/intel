@@ -1,18 +1,15 @@
 {
-  "package_name": "surf",
+  "package_name": "",
   "patch_versions": [],
-  "vulnerable_ranges": "*",
-  "cwe": [
-    "CWE-1104"
-  ],
-  "tldr": "The `surf` crate is no longer maintained, as indicated by the developer. Its last release dates back to 2021—over three years ago—making it outdated. It relies on the deprecated `async-std` runtime and an obsolete version of `rustls` for TLS support, both of which introduce risks related to security, performance, and compatibility with modern Rust tooling. Use of this crate is discouraged in favor of actively maintained alternatives.",
-  "doest_this_affect_me": "You are affected if you are using this package.",
-  "how_to_fix": "Remove any GTK3 package from your application. Please take a look at <a href=\"https://crates.io/crates/reqwest\">reqwest</a> or <a href=\"https://crates.io/crates/ureq\">ureq</a> instead.",
-  "reporter": "",
-  "vulnerable_to": "Use of Unmaintained Third Party Components",
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "rust",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
-  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0036.html"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "spree_core",
+  "patch_versions": [
+    "5.0.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "5.0.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-1004"
+  ],
+  "tldr": "Affected versions of the package may expose sensitive cookie information due to the absence of the `HttpOnly` flag in the `create_token_cookie` function. Without this flag, compatible browsers may allow client-side scripts to access the cookie, increasing the risk of data exfiltration in the event of a cross-site scripting (XSS) attack. Setting the `HttpOnly` attribute in the `Set-Cookie` HTTP response header instructs supporting browsers to restrict cookie access from JavaScript, thereby mitigating the risk of client-side attacks attempting to read and leak sensitive authentication tokens or session data.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `spree_core` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Sensitive Cookie Without 'HttpOnly' Flag",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUBY",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/spree/spree/releases/tag/v5.0.4"
 }

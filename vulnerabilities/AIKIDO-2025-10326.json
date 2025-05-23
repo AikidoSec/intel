@@ -1,0 +1,27 @@
+{
+  "package_name": "dagster",
+  "patch_versions": [
+    "1.10.16"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.12.8",
+      "1.10.15"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to local file inclusion (LFI) due to insufficient path validation in the `ExternalNotebookData` gRPC endpoint. The `get_notebook_data` function only checks if the file path ends with `.ipynb`, allowing attackers to use path traversal sequences (e.g., `../`) to access arbitrary files. Although the server binds to `localhost` by default, custom or cloud deployments exposed to external networks may be at risk of unauthorized file access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and your server does not bind to `localhost`.",
+  "how_to_fix": "Upgrade the `dagster` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Local File Inclusion (LFI)",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 68,
+  "changelog": "https://github.com/dagster-io/dagster/blob/master/CHANGES.md",
+  "last_modified": "2025-05-23",
+  "published": "2025-05-23"
+}

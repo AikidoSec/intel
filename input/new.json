@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "mcp",
+  "patch_versions": [
+    "1.9.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.8.0",
+      "1.9.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-453"
+  ],
+  "tldr": "Affected versions of this package do not enforce secure default server settings. When running locally, the server binds to all network interfaces (`0.0.0.0`) instead of restricting access to `localhost` (`127.0.0.1`). This increases the risk of exposure to external access and makes the application more susceptible to DNS rebinding attacks. The patch addresses this by setting `localhost` as the default bind address, thereby reducing the attack surface.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mcp` library to the latest patched version or ensure that the binding addresses are not set to `0.0.0.0`.",
+  "reporter": "",
+  "vulnerable_to": "Insecure Default Variable Initialization",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/modelcontextprotocol/python-sdk/releases/tag/v1.9.1"
 }

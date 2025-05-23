@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@boxyhq/internal-ui",
+  "patch_versions": [
+    "1.45.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.44.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to server-side request forgery (SSRF) due to insufficient validation in the `validateMetadataURL` method, which fails to check whether user-supplied URLs resolve to private or internal IP addresses. This oversight allows attackers to craft URLs targeting internal services or cloud metadata endpoints.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@boxyhq/internal-ui` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Server-side Request Forgery (SSRF)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 62,
+  "changelog": "https://github.com/boxyhq/jackson/releases/tag/v1.45.0"
 }

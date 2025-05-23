@@ -1,0 +1,26 @@
+{
+  "package_name": "clevertap-web-sdk",
+  "patch_versions": [
+    "1.15.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.9.1",
+      "1.15.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) in the `Custom HTML Template` feature due to insufficient validation of the message origin in `postMessage` communications. An attacker could exploit this flaw by hosting a malicious website that sends crafted JavaScript payloads via `postMessage` to the vulnerable application, which would then execute the script in the context of the target domain. Since the application did not verify the sender's origin, any website could send arbitrary scripts, potentially leading to session hijacking, data theft, or unauthorized actions on behalf of the user.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `clevertap-web-sdk` library to the patch version",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 56,
+  "changelog": "https://github.com/CleverTap/clevertap-web-sdk/releases/tag/v1.15.2",
+  "last_modified": "2025-05-23",
+  "published": "2025-05-23"
+}

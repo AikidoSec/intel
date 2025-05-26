@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "joserfc",
+  "patch_versions": [
+    "1.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.0.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-290"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to JWT (JSON Web Token) revocation bypass due to improper handling of non-canonical Base64 encoding in token validation. The revocation mechanism relies on exact string matching in a cache. However, without proper steganography validation, decoding methods may accept multiple encoding iterations of the same data. An attacker can exploit this by altering a revoked JWT's signature in a way that changes its encoding representation while preserving its decoded value, effectively bypassing revocation checks while still passing signature verification.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `joserfc` library to the patch version.",
+  "vulnerable_to": "Authentication Bypass by Spoofing",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/authlib/joserfc/releases/tag/1.1.0"
 }

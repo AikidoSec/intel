@@ -13,7 +13,7 @@
     "CWE-79"
   ],
   "tldr": "Affected versions of this package fail to properly escape HTML and safely serialize JSON in OpenAPI documentation, allowing attackers to inject malicious scripts. An attacker can exploit this vulnerability by crafting a specially crafted payload that, when processed by the OpenAPI documentation interface, executes arbitrary code in the context of the victim's browser, leading to Cross-Site Scripting (XSS) attacks, session hijacking or other client-side exploits.",
-  "doest_this_affect_me": "You are affected if you are using this package.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `@effect/platform` library to the patch version.",
   "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",

@@ -13,7 +13,7 @@
     "CWE-77"
   ],
   "tldr": "Affected versions of this package are vulnerable to AI prompt injection, where an attacker can craft malicious inputs to manipulate the model into revealing sensitive Personally Identifiable Information (PII) or performing unauthorized actions, such as data exfiltration or system compromise, by bypassing intended safeguards through carefully engineered prompts that exploit the model's inability to fully distinguish between legitimate and malicious instructions, potentially leading to severe privacy violations or operational disruptions under the control of the malicious actor.",
-  "doest_this_affect_me": "You are affected if you are using this package.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `agentic-radar` library to the patch version.",
   "vulnerable_to": "AI Prompt Injection",
   "related_cve_id": "",

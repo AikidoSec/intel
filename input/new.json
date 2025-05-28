@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "clevertap-web-sdk",
+  "patch_versions": [
+    "1.15.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.14.2",
+      "1.15.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-942"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a security bypass due to improper origin validation in the `handleMessageEvent` function, which uses `includes()` for loose domain matching (e.g., allowing evil.clevertap.com if the trusted domain was clevertap.com). An attacker who compromises any subdomain can bypass origin validation and conduct malicious postMessage spoofing attempts, potentially leading to Cross-site Scripting (XSS) or click-jacking attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `clevertap-web-sdk` library to the patch version.",
+  "vulnerable_to": "Permissive Cross-domain Policy with Untrusted Domains",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/CleverTap/clevertap-web-sdk/releases/tag/v1.15.3"
 }

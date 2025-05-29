@@ -1,15 +1,29 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "electron",
+  "patch_versions": [
+    "34.5.7",
+    "35.5.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "34.0.0",
+      "34.5.6"
+    ],
+    [
+      "35.0.0",
+      "35.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-274"
+  ],
+  "tldr": "CVE-2025-4609: Incorrect handle provided in unspecified circumstances in Mojo.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `electron` library to the patch version.",
+  "vulnerable_to": "Insufficient policy enforcement",
+  "related_cve_id": "CVE-2025-4609",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/electron/electron/releases"
 }

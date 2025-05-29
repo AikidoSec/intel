@@ -1,0 +1,26 @@
+{
+  "package_name": "slack-ruby-client",
+  "patch_versions": [
+    "2.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.14.0",
+      "2.5.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-208"
+  ],
+  "tldr": "Affected versions of this package use a simple string comparison instead of a constant-time comparison in the `Slack::Event::Request#verify!` method, leaving it vulnerable to timing attacks. This method is used for verifying incoming HTTP requests from Slack. An attacker could exploit this by carefully measuring the response time of signature verification attempts, allowing them to incrementally guess the correct signature and bypass security validations.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `slack-ruby-client` library to the patch version.",
+  "vulnerable_to": "Observable Timing Discrepancy",
+  "related_cve_id": "",
+  "language": "Ruby",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/slack-ruby/slack-ruby-client/blob/master/CHANGELOG.md",
+  "last_modified": "2025-05-29",
+  "published": "2025-05-29"
+}

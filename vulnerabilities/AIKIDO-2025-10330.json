@@ -1,0 +1,26 @@
+{
+  "package_name": "goblin",
+  "patch_versions": [
+    "0.10.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.8.2",
+      "0.9.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an integer overflow in the `pe.tls.tlsdata.parse_with_opts` function due to insufficient bounds checking when parsing Thread Local Storage data. An attacker can exploit this by providing a maliciously crafted PE file with either an excessively large offset or by triggering an integer overflow in the calculation of the Relative Virtual Address, bypassing the offset size checks. It could lead to out-of-bounds memory access, potentially causing a denial-of-service or information disclosure if the application processes unintended memory regions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `goblin` library to the patch version.",
+  "vulnerable_to": "Integer Overflow",
+  "related_cve_id": "",
+  "language": "Rust",
+  "severity_class": "MEDIUM",
+  "aikido_score": 66,
+  "changelog": "https://github.com/m4b/goblin/pull/448/files",
+  "last_modified": "2025-05-29",
+  "published": "2025-05-29"
+}

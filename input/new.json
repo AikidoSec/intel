@@ -1,24 +1,15 @@
 {
-  "package_name": "CleverTap-iOS-SDK",
-  "patch_versions": [
-    "7.2.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.0.1",
-      "7.1.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-326"
-  ],
-  "tldr": "Affected versions of this package are affected by inadequate encryption due to an insecure algorithm that does not meet security best practices. This vulnerability allows attackers to bypass the weak encryption of PII, potentially leading to unauthorized access and data breaches.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `CleverTap-iOS-SDK` library to the patch version",
-  "vulnerable_to": "Inadequate Encryption Strength",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Swift",
-  "severity_class": "LOW",
-  "aikido_score": 25,
-  "changelog": "https://github.com/CleverTap/clevertap-ios-sdk/blob/master/CHANGELOG.md#version-720-may-27-2025"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

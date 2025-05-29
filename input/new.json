@@ -18,7 +18,7 @@
   "vulnerable_to": "Inadequate Encryption Strength",
   "related_cve_id": "",
   "language": "Swift",
-  "severity_class": "MEDIUM",
+  "severity_class": "LOW",
   "aikido_score": 50,
   "changelog": "https://github.com/CleverTap/clevertap-ios-sdk/blob/master/CHANGELOG.md#version-720-may-27-2025"
 }

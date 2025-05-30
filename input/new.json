@@ -12,7 +12,7 @@
   "cwe": [
     "CWE-532"
   ],
-  "tldr": "Affected versions of this package are vulnerable to the exposure of sensitive data in logs due to improper handling of decryption in the Kustomize controller. This issue occurs when a secret resource is initially set to an empty string in the base layer and later updated with actual secret data. As a result, the controller mistakenly decrypts and logs the secret value. An attacker could exploit this vulnerability by monitoring the controller logs, potentially gaining access to sensitive information.",
+  "tldr": "Affected versions of this package are vulnerable to the exposure of sensitive data in logs due to improper handling of decryption in the Kustomize controller. This issue occurs when a secret resource is initially set to an empty string in the base layer and later updated with actual secret data. As a result, the controller mistakenly decrypts and logs the secret value. If the controller publicly logs are exposed or kept in a system with less authorization, an attacker could potentially gain access to sensitive data.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `github.com/fluxcd/kustomize-controller` library to the patch version.",
   "vulnerable_to": "Insertion of Sensitive Information into Log File",

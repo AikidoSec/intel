@@ -1,0 +1,26 @@
+{
+  "package_name": "@keycloak/keycloak-admin-client",
+  "patch_versions": [
+    "26.2.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "12.0.0",
+      "26.2.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-287"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Credential Harvesting via Misconfigured Host/Port Settings, where an attacker with manage-realm permissions can exploit the email server configuration by modifying the host/port to point to a malicious server without needing to re-enter the existing credentials. The attacker can then harvest the stored credentials either by using the test connection feature or by triggering an email-sending workflow (e.g., password reset), causing Keycloak to authenticate with the attacker-controlled server and exposing the credentials.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@keycloak/keycloak-admin-client` library to the patch version.",
+  "vulnerable_to": "Improper Authentication",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/keycloak/keycloak/releases/tag/26.2.5",
+  "last_modified": "2025-05-30",
+  "published": "2025-05-30"
+}

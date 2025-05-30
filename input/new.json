@@ -1,24 +1,15 @@
 {
-  "package_name": "litellm",
-  "patch_versions": [
-    "1.71.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.34.2",
-      "1.71.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-200"
-  ],
-  "tldr": "Affected versions of this package expose sensitive AWS credentials, including `aws_access_key_id` and `aws_secret_access_key`, when Litellm reports data to Langfuse during Bedrock API calls. This poses an unnecessary risk as the secrets are processed in cleartext in Langfuse.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and if you're using AWS Bedrock with this library.",
-  "how_to_fix": "Upgrade the `litellm` library to the patch version.",
-  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Python",
-  "severity_class": "MEDIUM",
-  "aikido_score": 40,
-  "changelog": "https://github.com/BerriAI/litellm/releases/tag/v1.71.2-nightly"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

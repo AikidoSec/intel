@@ -1,0 +1,26 @@
+{
+  "package_name": "llama-index-core",
+  "patch_versions": [
+    "0.12.38"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.8.39",
+      "0.12.37"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package fail to enforce a maximum recursion depth when parsing deeply nested JSON objects, making them vulnerable to a denial-of-service (DoS) attack. The code reads JSON data from a file but lacks a max_depth parameter and proper exception handling, which could lead to excessive recursion, potentially triggering Python's recursion limit and causing the application to crash. An attacker could exploit this by submitting a maliciously crafted JSON file with extreme levels of nesting, causing the system to consume excessive CPU and memory resources or terminate unexpectedly.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `llama-index-core` library to the patch version.",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 44,
+  "changelog": "https://github.com/run-llama/llama_index/releases/tag/v0.12.38",
+  "last_modified": "2025-05-30",
+  "published": "2025-05-30"
+}

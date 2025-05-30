@@ -19,6 +19,6 @@
   "related_cve_id": "",
   "language": "JS",
   "severity_class": "LOW",
-  "aikido_score": 40,
+  "aikido_score": 20,
   "changelog": "https://github.com/keycloak/keycloak/releases/tag/26.2.5"
 }

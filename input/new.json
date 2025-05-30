@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "hwi/oauth-bundle",
+  "patch_versions": [
+    "2.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.2.0",
+      "2.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1204"
+  ],
+  "tldr": "Affected versions of this package contain a security misconfiguration that generates nonces using MD5, relying solely on predictable time-based values without any cryptographic randomness. An attacker could exploit this vulnerability by predicting or brute-forcing these nonces, especially in situations where multiple nonces are generated within short time intervals, which significantly reduces entropy. This predictability could enable replay attacks, token forgery, or session hijacking, allowing an attacker to craft requests with valid-looking nonces.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `hwi/oauth-bundle` library to a patch version.",
+  "vulnerable_to": "Generation of Weak Initialization Vector (IV)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 28,
+  "changelog": "https://github.com/hwi/HWIOAuthBundle/releases/tag/2.4.0"
 }

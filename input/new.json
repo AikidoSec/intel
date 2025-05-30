@@ -18,7 +18,7 @@
   "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
   "related_cve_id": "",
   "language": "Python",
-  "severity_class": "LOW",
+  "severity_class": "MEDIUM",
   "aikido_score": 20,
   "changelog": "https://github.com/BerriAI/litellm/releases/tag/v1.71.2-nightly"
 }

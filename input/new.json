@@ -13,7 +13,7 @@
     "CWE-79"
   ],
   "tldr": "Affected versions of this package fail to properly encode CSS selector expressions, allowing an attacker to inject malicious selectors (e.g., input[type='password']). Since quotes and special characters are not properly escaped, the injected selector breaks JavaScript execution, potentially causing application errors or enabling DOM exfiltration. If user-controlled input is passed directly into the selector, an attacker could execute arbitrary JavaScript in the browser's instance.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range, and allow user input into any selectors.",
   "how_to_fix": "Upgrade the `chrome-php/chrome` library to the patch version.",
   "vulnerable_to": "CSS injection",
   "related_cve_id": "",

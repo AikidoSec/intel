@@ -25,5 +25,5 @@
   "language": "JS",
   "severity_class": "MEDIUM",
   "aikido_score": 50,
-  "changelog": "https://github.com/electron/electron/releases"
+  "changelog": "https://github.com/electron/electron/releases/tag/v35.5.0"
 }

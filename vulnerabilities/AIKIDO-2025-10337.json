@@ -1,0 +1,26 @@
+{
+  "package_name": "python-jose",
+  "patch_versions": [
+    "3.5.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "3.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to sensitive information leakage through JWKError exceptions. When an invalid algorithm is provided, error messages may disclose key data. An attacker can exploit this by submitting malformed key data, forcing exceptions that reveal sensitive information. It could allow the attacker to gather cryptographic material, potentially leading to signature forgery or unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `python-jose` library to a patch version.",
+  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
+  "related_cve_id": "",
+  "language": "Python",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/mpdavis/python-jose/pull/328",
+  "last_modified": "2025-05-30",
+  "published": "2025-05-30"
+}

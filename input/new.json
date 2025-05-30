@@ -19,6 +19,6 @@
   "related_cve_id": "",
   "language": "Python",
   "severity_class": "MEDIUM",
-  "aikido_score": 20,
+  "aikido_score": 40,
   "changelog": "https://github.com/BerriAI/litellm/releases/tag/v1.71.2-nightly"
 }

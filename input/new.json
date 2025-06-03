@@ -18,7 +18,7 @@
   "vulnerable_to": "Client-Side Injection Attacks",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
+  "severity_class": "LOW",
+  "aikido_score": 20,
   "changelog": "https://github.com/MetaMask/core/blob/main/packages/assets-controllers/CHANGELOG.md#6600"
 }

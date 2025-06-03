@@ -1,5 +1,5 @@
 {
-  "package_name": "n8n",
+  "package_name": "n8n-nodes-base",
   "patch_versions": [
     "1.95.0"
   ],
@@ -14,7 +14,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to prototype pollution due to inadequate validation of object keys. Although forbidden keys are validated, this check can be bypassed with a nested object containing those keys. An attacker could exploit this by crafting a JSON payload that pollutes the prototype chain, allowing them to inject properties into all objects in the application, potentially leading to remote code execution or other security issues.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `n8n` library to the patch version.",
+  "how_to_fix": "Upgrade the `n8n-nodes-base` library to the patch version.",
   "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "",
   "language": "JS",

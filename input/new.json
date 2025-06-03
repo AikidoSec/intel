@@ -1,17 +1,15 @@
 {
-  "package_name": "n8n",
-  "patch_versions": ["1.95.0"],
-  "vulnerable_ranges": [["1.55.0", "1.94.1"]],
-  "cwe": [
-    "CWE-1321"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to prototype pollution due to inadequate validation of object keys. Although forbidden keys are validated, this check can be bypassed with a nested object containing those keys. An attacker could exploit this by crafting a JSON payload that pollutes the prototype chain, allowing them to inject properties into all objects in the application, potentially leading to remote code execution or other security issues.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `n8n` library to the patch version.",
-  "vulnerable_to": "Prototype Pollution",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 70,
-  "changelog": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.95.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

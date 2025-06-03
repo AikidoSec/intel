@@ -1,24 +1,15 @@
 {
-  "package_name": "@metamask/assets-controllers",
-  "patch_versions": [
-    "66.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "33.0.0",
-      "65.0.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to phishing and malicious NFT metadata exploits due to insufficient URL validation in the UI layer, allowing attackers to bypass frontend checks and inject harmful links into NFT metadata. An attacker could craft malicious NFTs with embedded unsafe URLs that execute scripts, redirect to phishing sites, or trigger unwanted actions when rendered.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@metamask/assets-controllers` library to the patch version.",
-  "vulnerable_to": "Client-Side Injection Attacks",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 20,
-  "changelog": "https://github.com/MetaMask/core/blob/main/packages/assets-controllers/CHANGELOG.md#6600"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,24 +1,15 @@
 {
-  "package_name": "fast-mcp",
-  "patch_versions": [
-    "1.5.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "1.4.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-362"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a race condition in the `@sse_clients` hash management within RackTransport, occurring when running in multi-threaded environments. This thread-unsafe implementation allows attackers to trigger denial-of-service (DoS) crashes by spamming SSE connections/disconnections, exploiting the error handling when concurrent threads attempt to modify the client registry during iteration. Additionally, the lack of synchronization around client IO streams creates a potential for data corruption if an attacker precisely times writes during stream modifications.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `fast-mcp` library to the patch version.",
-  "vulnerable_to": "Race Condition",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Ruby",
-  "severity_class": "LOW",
-  "aikido_score": 10,
-  "changelog": "https://github.com/yjacquin/fast-mcp/releases/tag/v1.5.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

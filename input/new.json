@@ -1,24 +1,15 @@
 {
-  "package_name": "haystack-ai",
-  "patch_versions": [
-    "2.14.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.9.0",
-      "2.13.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-1333"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Regular Expression Denial-of-service (ReDoS) due to catastrophic backtracking in the `QUOTE_SPANS_RE` regex pattern, which inefficiently handles malicious inputs containing mismatched or excessive quote characters. An attacker can exploit this vulnerability by crafting a specially designed string with unbalanced quotes, causing the regex engine to perform excessive backtracking, leading to prolonged CPU consumption and potentially denying service to legitimate users.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `haystack-ai` library to the patch version.",
-  "vulnerable_to": "Regular Expression Denial-of-service (ReDoS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Python",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
-  "changelog": "https://github.com/deepset-ai/haystack/commit/0f00c1882efbd77739557cfde6b99a4587de51d6"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

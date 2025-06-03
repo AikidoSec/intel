@@ -13,6 +13,7 @@
     "CWE-434"
   ],
   "tldr": "Affected versions of this package are vulnerable to Arbitrary File Upload due to insufficient validation of file extensions in API requests. An attacker can craft a request that bypasses the configured restrictions, allowing the upload of files with disallowed or dangerous extensions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `Umbraco.Cms` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Unrestricted Upload of File with Dangerous Type",

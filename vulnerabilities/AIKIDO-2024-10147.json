@@ -5,7 +5,7 @@
   "cwe": [
     "CWE-506"
   ],
-  "tldr": "Use of `mobisu1-selectr` is commonly linked to the use of `cdn.polyfill[.]io`, which was taken over by attackers and serves harmful code. `polyfill` itself is not included in this library, but integration is possible.",
+  "tldr": "Use of `mobius1-selectr` is commonly linked to the use of `cdn.polyfill[.]io`, which was taken over by attackers and serves harmful code. `polyfill` itself is not included in this library, but integration is possible.",
   "doest_this_affect_me": "You are affected if you use `mobius1-selectr` and you have included `cdn.polyfill[.]io` script resources on any of your web pages.",
   "how_to_fix": "Remove the use of `cdn.polyfill[.]io` across your application.",
   "reporter": "",

@@ -18,9 +18,9 @@
   "vulnerable_to": "Race Condition",
   "related_cve_id": "",
   "language": "PYTHON",
-  "severity_class": "HIGH",
-  "aikido_score": 82,
+  "severity_class": "MEDIUM",
+  "aikido_score": 66,
   "changelog": "https://github.com/agronholm/anyio/releases/tag/4.4.0",
-  "last_modified": "2025-03-20",
+  "last_modified": "2025-06-03",
   "published": "2025-03-20"
 }

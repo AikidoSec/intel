@@ -1,0 +1,26 @@
+{
+  "package_name": "vyper",
+  "patch_versions": [
+    "0.4.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.4.0",
+      "0.4.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-1265"
+  ],
+  "tldr": "Affected versions of this package contain non-reentrant functions that call other non-reentrant functions, leading to race conditions, memory corruption, or undefined behavior when executed in interruptible or concurrent contexts. An attacker could exploit this by forcing re-entry, such as sending a malicious signal while the target function is executing, or by triggering concurrent execution in multi-threaded applications, potentially causing crashes, privilege escalation, or arbitrary code execution due to a corrupted global state.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `vyper` library to the patch version.",
+  "vulnerable_to": "Unintended Reentrant Invocation of Non-reentrant Code Via Nested Calls",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/vyperlang/vyper/releases/tag/v0.4.2rc1",
+  "last_modified": "2025-06-04",
+  "published": "2025-06-04"
+}

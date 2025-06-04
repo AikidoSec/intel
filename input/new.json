@@ -1,15 +1,30 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "python",
+  "patch_versions": [
+    "3.12.9",
+    "3.13.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.12.0",
+      "3.12.8"
+    ],
+    [
+      "3.13.0",
+      "3.13.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-770",
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of Python starting from `3.12.0` introduce a memory exhaustion risk in `asyncio._SelectorSocketTransport.writelines()`. The method does not properly pause writing or signal the Protocol to drain the buffer once the write buffer reaches the high-water mark. As a result, Protocols may fail to periodically drain the write buffer, leading to uncontrolled memory growth.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of `python` on macOS or Linux and rely on the `asyncio` module with protocols while using the `.writelines()` method. This vulnerability likely impacts a limited number of users, as it specifically requires the use of `.writelines()`, which introduced a new zero-copy-on-write behavior in Python 3.12.0. If any of these conditions do not apply to your setup, your usage of Python remains unaffected.",
+  "how_to_fix": "Upgrade the `python` library to the patch version.",
+  "vulnerable_to": "Unlimited Resource Consumption",
+  "related_cve_id": "CVE-2024-12254",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 68,
+  "changelog": "https://github.com/python/cpython/issues/127655"
 }

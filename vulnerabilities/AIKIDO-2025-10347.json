@@ -1,0 +1,26 @@
+{
+  "package_name": "SharpCompress",
+  "patch_versions": [
+    "0.40.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.31.0",
+      "0.39.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-125"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an out-of-bounds write due to insufficient validation of the `nSelectors` value parsed from untrusted input. An attacker can exploit this by crafting a malicious BZip2 file with excessively large nSelectors, causing the loop to write beyond the bounds of the `selectorMtf` array, potentially leading to memory corruption, crashes, or arbitrary code execution depending on runtime conditions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `SharpCompress` library to the patch version.",
+  "vulnerable_to": "Out-of-Bounds Read",
+  "related_cve_id": "",
+  "language": "Dotnet",
+  "severity_class": "HIGH",
+  "aikido_score": 72,
+  "changelog": "https://github.com/adamhathcock/sharpcompress/releases/tag/0.40.0",
+  "last_modified": "2025-06-04",
+  "published": "2025-06-04"
+}

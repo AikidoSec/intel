@@ -1,24 +1,15 @@
 {
-  "package_name": "django-guardian",
-  "patch_versions": [
-    "3.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "2.4.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-285"
-  ],
-  "tldr": "Affected versions of this package fail to properly enforce checks for guardian permissions, making both `GuardedModelAdminMixin` and `GuardedModelAdmin` unsafe. Any user who accesses the paths provided by `GuardedModelAdminMixin` can view, add, change, and delete guardian permissions for any user, regardless of whether the current user has the necessary guardian permissions. This vulnerability allows unauthorized users to manipulate permissions, potentially compromising the security and integrity of the system.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `django-guardian` library to the patch version.",
-  "vulnerable_to": "Improper Authorization",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "python",
-  "severity_class": "HIGH",
-  "aikido_score": 70,
-  "changelog": "https://github.com/django-guardian/django-guardian/releases/tag/3.0.0rc1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

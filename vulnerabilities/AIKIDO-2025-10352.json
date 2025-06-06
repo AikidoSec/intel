@@ -1,0 +1,27 @@
+{
+  "package_name": "Umbraco.Cms",
+  "patch_versions": [
+    "15.4.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "14.0.0",
+      "15.4.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-434"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Arbitrary File Upload due to insufficient validation of file extensions in API requests. An attacker can craft a request that bypasses the configured restrictions, allowing the upload of files with disallowed or dangerous extensions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Umbraco.Cms` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Unrestricted Upload of File with Dangerous Type",
+  "related_cve_id": "CVE-2025-48953",
+  "language": "DOTNET",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/umbraco/Umbraco-CMS/releases/tag/release-15.4.2",
+  "last_modified": "2025-06-06",
+  "published": "2025-06-06"
+}

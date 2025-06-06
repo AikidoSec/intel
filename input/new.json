@@ -1,34 +1,15 @@
 {
-  "package_name": "electron",
-  "patch_versions": [
-    "34.5.8",
-    "35.5.1",
-    "36.4.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "34.0.0",
-      "34.5.7"
-    ],
-    [
-      "35.0.0",
-      "35.5.0"
-    ],
-    [
-      "36.0.0",
-      "36.3.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-125"
-  ],
-  "tldr": "Out-of-bounds read and write vulnerabilities in V8 in Google Chrome prior to version 137.0.7151.68 allow remote attackers to potentially exploit heap corruption by tricking users into opening a specially crafted HTML page. This issue could lead to arbitrary code execution and is rated as High severity by the Chromium security team.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `electron` library to the patch version.",
-  "vulnerable_to": "Out-of-bounds Read",
-  "related_cve_id": "CVE-2025-5419 ",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 88,
-  "changelog": "https://github.com/electron/electron/releases/tag/v36.4.0"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

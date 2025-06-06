@@ -1,26 +1,15 @@
 {
-  "package_name": "spectator-ext-ipcservlet",
-  "org_name": "com.netflix.spectator",
-  "patch_versions": [
-    "1.8.13"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.74.0",
-      "1.8.12"
-    ]
-  ],
-  "cwe": [
-    "CWE-20"
-  ],
-  "tldr": "Affected versions are vulnerable to HTTP header injection due to improper sanitization of carriage return (CR) or line feed (LF) characters in header values. An attacker could exploit this by injecting malicious headers or manipulating the response structure, potentially leading to security issues such as response splitting, cache poisoning, or cross-site scripting in downstream systems.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `com.netflix.spectator:spectator-ext-ipcservlet` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Improper Input Validation",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JAVA",
-  "severity_class": "MEDIUM",
-  "aikido_score": 62,
-  "changelog": "https://github.com/Netflix/spectator/releases/tag/v1.8.13"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

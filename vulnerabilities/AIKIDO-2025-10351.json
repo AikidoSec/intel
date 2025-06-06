@@ -1,0 +1,27 @@
+{
+  "package_name": "@nextcloud/l10n",
+  "patch_versions": [
+    "3.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "3.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution in the `registry::registerAppTranslations` function, allowing attackers to modify object properties and potentially alter application behavior.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `@nextcloud/l10n` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 48,
+  "changelog": "https://github.com/nextcloud-libraries/nextcloud-l10n/releases/tag/v3.2.0",
+  "last_modified": "2025-06-06",
+  "published": "2025-06-06"
+}

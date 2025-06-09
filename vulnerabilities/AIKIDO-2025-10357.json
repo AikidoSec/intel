@@ -1,0 +1,27 @@
+{
+  "package_name": "@cloudflare/workerd-darwin-64",
+  "package_wildcard_contains": "@cloudflare/workerd-",
+  "patch_versions": [
+    "1.20250607.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.20231218.0",
+      "1.20250606.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "Affected versions of this package are affected by a use after free vulnerability in the `sendExceptionToInspector` function. An attacker can exploit this to crash the server or leak arbitrary memory contents.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@cloudflare` library to the patch version.",
+  "vulnerable_to": "Use after free",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 47,
+  "changelog": "https://github.com/cloudflare/workerd/releases/tag/v1.20250607.0",
+  "last_modified": "2025-06-09",
+  "published": "2025-06-09"
+}

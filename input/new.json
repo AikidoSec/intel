@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "viem",
+  "patch_versions": [
+    "2.31.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.30.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-682"
+  ],
+  "tldr": "Affected versions of this package have a security vulnerability in the decodeEventLog function, which incorrectly matches events with potentially wrong signatures. This flaw could allow an attacker to exploit a decentralized application (dApp) by crafting malicious transaction receipts with misleading event logs, tricking the application into misinterpreting contract states, or triggering unintended actions, potentially causing financial loss or unauthorized operations.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `viem` library to the patch version.",
+  "vulnerable_to": "Incorrect Calculation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 52,
+  "changelog": "https://github.com/wevm/viem/releases/tag/viem%402.31.0"
 }

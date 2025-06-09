@@ -1,0 +1,27 @@
+{
+  "package_name": "litellm",
+  "patch_versions": [
+    "1.67.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.40.3",
+      "1.67.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-89"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to SQL injection in `spend_management_endpoints.py`, where user input is not properly sanitized before being used in SQL queries. This flaw may allow attackers to inject malicious SQL statements, potentially resulting in unauthorized data access, modification, or deletion.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `litellm` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "SQL Injection",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 68,
+  "changelog": "https://github.com/BerriAI/litellm/commit/03245c732a5496166af95b8ad48066b1ce8a4656",
+  "last_modified": "2025-06-09",
+  "published": "2025-06-09"
+}

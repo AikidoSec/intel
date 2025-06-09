@@ -1,15 +1,26 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "org.wso2.carbon.identity.user.store.configuration.ui",
+  "org_name": "org.wso2.carbon.identity.framework",
+  "patch_versions": [
+    "7.5.12"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.1.0",
+      "7.5.11"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) due to insufficient output encoding in error messages generated during JDBC user store connection validation. An attacker could exploit this by injecting malicious scripts that may redirect users to malicious sites, manipulate the web page’s UI, steal sensitive information from the browser, or perform other harmful actions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `org.wso2.carbon.identity.framework:org.wso2.carbon.identity.user.store.configuration.ui` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "CVE-2024-8008",
+  "language": "java",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/wso2/carbon-identity-framework/compare/v7.5.11...v7.5.12"
 }

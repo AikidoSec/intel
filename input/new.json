@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "laravel/framework",
+  "patch_versions": [
+    "12.18.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "12.0.0",
+      "12.17.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-497"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to information disclosure due to improper exception handling when handling SSL/TLS certificate validation fails. Instead of gracefully wrapping low-level Guzzle exceptions into Laravel's standardized ConnectionException, the package leaks raw error details through logs, API responses, or debug pages. Attackers can exploit this vulnerability by inducing SSL failures to harvest sensitive system information, including server file paths from certificate references, middleware configurations from stack traces, and environment details from verbose errors.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `laravel/framework` library to the patch version.",
+  "vulnerable_to": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/laravel/framework/releases/tag/v12.18.0"
 }

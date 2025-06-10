@@ -1,0 +1,27 @@
+{
+  "package_name": "drf-standardized-errors",
+  "patch_versions": [
+    "0.15.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.9.0",
+      "0.14.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of the package are throwing error messages that could expose sensitive information. These messages may leak details, increasing the risk of information disclosure and enabling attackers to exploit this information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drf-standardized-errors` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/ghazi-git/drf-standardized-errors/releases/tag/v0.15.0",
+  "last_modified": "2025-06-10",
+  "published": "2025-06-10"
+}

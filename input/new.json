@@ -1,24 +1,15 @@
 {
-  "package_name": "kyon147/laravel-shopify",
-  "patch_versions": [
-    "23.1.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "17.3.3",
-      "23.0.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-284"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to information disclosure due to improper access control in API routes protected by the `VerifyShopify` middleware. Any store can access data belonging to another store by appending a `shop` GET parameter with the target store's domain to an API request, bypassing authorization checks and exposing sensitive data.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `kyon147/laravel-shopify` library to the patch version.",
-  "vulnerable_to": "Information Disclosure",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "HIGH",
-  "aikido_score": 73,
-  "changelog": "https://github.com/Kyon147/laravel-shopify/releases/tag/v23.1.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

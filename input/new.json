@@ -1,15 +1,26 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "ip-num",
+  "patch_versions": [
+    "1.5.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.5.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-248",
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a crash when handling unexpected input in the `Validator.ts:isValidIPv4CidrNotation` function. After splitting the input string on `'/'`, the CIDR portion is stored in the `range` variable. If this string contains a period (`.`), the code attempts to convert it to a `BigInt`, leading to a `SyntaxError: Cannot convert <range> to a BigInt`.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ip-num` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Uncaught Exception",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 18,
+  "changelog": "https://github.com/ip-num/ip-num/releases/tag/v1.5.2"
 }

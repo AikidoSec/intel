@@ -1,26 +1,28 @@
 {
-  "package_name": "barryvdh/laravel-translation-manager",
+  "package_name": "ip-num",
   "patch_versions": [
-    "0.6.8"
+    "1.5.2"
   ],
   "vulnerable_ranges": [
     [
-      "0.1.0",
-      "0.6.7"
+      "0.0.1",
+      "1.5.1"
     ]
   ],
   "cwe": [
-    "CWE-79"
+    "CWE-248",
+    "CWE-400"
   ],
-  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) attacks due to improper sanitization and escaping of group and locale inputs. An attacker could exploit this vulnerability by injecting malicious scripts through a manipulated group or locale parameter, for example, setting `group=<script>alert('xss')</script>`. It would execute when the translation management interface is rendered, potentially compromising user data or session integrity.",
+  "tldr": "Affected versions of this package are vulnerable to a crash when handling unexpected input in the `Validator.ts:isValidIPv4CidrNotation` function. After splitting the input string on `'/'`, the CIDR portion is stored in the `range` variable. If this string contains a period (`.`), the code attempts to convert it to a `BigInt`, leading to a `SyntaxError: Cannot convert <range> to a BigInt`.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `barryvdh/laravel-translation-manager` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "how_to_fix": "Upgrade the `ip-num` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Uncaught Exception",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
-  "changelog": "https://github.com/barryvdh/laravel-translation-manager/releases/tag/v0.6.8",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 18,
+  "changelog": "https://github.com/ip-num/ip-num/releases/tag/v1.5.2",
   "last_modified": "2025-06-10",
   "published": "2025-06-10"
 }

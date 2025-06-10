@@ -1,0 +1,41 @@
+{
+  "package_name": "github.com/cosmwasm/wasmd",
+  "patch_versions": [
+    "0.60.1",
+    "0.55.1",
+    "0.54.1",
+    "0.53.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.60.0",
+      "0.60.0"
+    ],
+    [
+      "0.55.0",
+      "0.55.0"
+    ],
+    [
+      "0.54.0",
+      "0.54.0"
+    ],
+    [
+      "0.51.0",
+      "0.53.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-703"
+  ],
+  "tldr": "Affected versions of this package may exhibit unexpected behavior due to improper error handling, which can result in an IBC channel being opened even when an error occurs, potentially compromising the expected reliability and integrity of the channel establishment process.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/cosmwasm/wasmd` library to the patch version.",
+  "vulnerable_to": "Improper Check or Handling of Exceptional Conditions",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "HIGH",
+  "aikido_score": 81,
+  "changelog": "https://github.com/CosmWasm/wasmd/releases/tag/v0.54.1",
+  "last_modified": "2025-06-10",
+  "published": "2025-06-10"
+}

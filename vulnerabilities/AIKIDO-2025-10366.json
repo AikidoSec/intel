@@ -1,0 +1,27 @@
+{
+  "package_name": "github.com/livekit/protocol",
+  "patch_versions": [
+    "1.39.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.39.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package may expose sensitive information. In the patched version, the `CheckCredentials` function validates whether the room configuration contains sensitive credentials and blocks the response if so, effectively preventing credential leakage to the client.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/livekit/protocol` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/livekit/protocol/commit/299737ae4d42dfcee562b536f1ec201ee77902ec",
+  "last_modified": "2025-06-11",
+  "published": "2025-06-11"
+}

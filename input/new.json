@@ -12,5 +12,5 @@
   "language": "GO",
   "severity_class": "LOW",
   "aikido_score": 25,
-  "changelog": "https://github.com/livekit/protocol/releases/tag/%40livekit/protocol%401.39.1"
+  "changelog": "https://github.com/livekit/protocol/commit/299737ae4d42dfcee562b536f1ec201ee77902ec"
 }

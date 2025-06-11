@@ -1,24 +1,15 @@
 {
-  "package_name": "vllm",
-  "patch_versions": [
-    "0.9.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.8.3",
-      "0.9.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-497"
-  ],
-  "tldr": "Affected versions of this package may inadvertently leak sensitive user data through logging outputs, which could be exploited by an attacker to gain unauthorized access to confidential information. By intercepting or accessing logs transmitted to LLM engine service providers, malicious actors could extract credentials, personal details, or other private data, leading to potential misuse or further attacks.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `vllm` library to the patch version.",
-  "vulnerable_to": "Information Disclosure",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Python",
-  "severity_class": "LOW",
-  "aikido_score": 20,
-  "changelog": "https://github.com/vllm-project/vllm/releases/tag/v0.9.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

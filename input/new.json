@@ -1,24 +1,15 @@
 {
-  "package_name": "box-node-sdk",
-  "patch_versions": [
-    "3.8.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.37.1",
-      "3.8.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-208"
-  ],
-  "tldr": "Affected versions of this package use a non-constant-time string comparison to verify HMAC signatures, allowing attackers to exploit timing differences—by measuring response times—to gradually guess the correct signature byte-by-byte, potentially forging valid requests.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `box-node-sdk` library to the patch version.",
-  "vulnerable_to": "Observable Timing Discrepancy",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 30,
-  "changelog": "https://github.com/box/box-node-sdk/blob/main/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

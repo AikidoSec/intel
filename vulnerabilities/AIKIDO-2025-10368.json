@@ -1,0 +1,26 @@
+{
+  "package_name": "boxcar",
+  "patch_versions": [
+    "0.2.13"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.2.12"
+    ]
+  ],
+  "cwe": [
+    "CWE-758"
+  ],
+  "tldr": "Affected versions of this package are unsound due to a thread-safety violation where `Vec<T>: Sync` incorrectly allows non-Send types `(T)` to be smuggled across threads via `Vec::push`, enabling an attacker to trigger data races, memory corruption, or undefined behavior by manipulating shared vectors with thread-unsafe inputs.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `boxcar` library to the patch version.",
+  "vulnerable_to": "Reliance on Undefined, Unspecified, or Implementation-Defined Behavior",
+  "related_cve_id": "",
+  "language": "Rust",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/ibraheemdev/boxcar/releases/tag/v0.2.13",
+  "last_modified": "2025-06-12",
+  "published": "2025-06-12"
+}

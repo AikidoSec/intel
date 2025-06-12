@@ -1,0 +1,27 @@
+{
+  "package_name": "promptflow-evals",
+  "patch_versions": [
+    "0.3.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.3.0",
+      "0.3.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to Remote Code Execution (RCE). This patch addresses two security issues: it replaces all uses of `eval` with `ast.literal_eval` to prevent arbitrary code execution during tool call parsing, and it fixes a vulnerability where crafted messages could inject unauthorized roles into the chat history.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `promptflow-evals` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/microsoft/promptflow/blob/main/src/promptflow-evals/CHANGELOG.md",
+  "last_modified": "2025-06-12",
+  "published": "2025-06-12"
+}

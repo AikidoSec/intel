@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/bitnami-labs/sealed-secrets",
+  "patch_versions": [
+    "0.30.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.27.0",
+      "0.29.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of the `github.com/bitnami-labs/sealed-secrets` library are vulnerable to sensitive data exposure due to the inclusion of certain `sprig` template functions. Specifically, the `env` and `expandenv` functions could expose controller environment variables containing secrets, while `getHostByName` allowed DNS resolution from within templates, which may be unsafe in certain environments. The patch removes these functions to prevent unintended information disclosure and improve security.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/bitnami-labs/sealed-secrets` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/bitnami-labs/sealed-secrets/releases/tag/v0.30.0"
 }

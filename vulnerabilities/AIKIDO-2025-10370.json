@@ -1,0 +1,26 @@
+{
+  "package_name": "box-typescript-sdk-gen",
+  "patch_versions": [
+    "1.16.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.15.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-208"
+  ],
+  "tldr": "Affected versions of this package use a non-constant-time string comparison to verify HMAC signatures, allowing attackers to exploit timing differences—by measuring response times—to gradually guess the correct signature byte-by-byte, potentially forging valid requests.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `box-typescript-sdk-gen` library to the patch version.",
+  "vulnerable_to": "Observable Timing Discrepancy",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/box/box-typescript-sdk-gen/releases/tag/v1.16.0",
+  "last_modified": "2025-06-13",
+  "published": "2025-06-13"
+}

@@ -1,24 +1,15 @@
 {
-  "package_name": "box-sdk-gen",
-  "patch_versions": [
-    "1.15.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "1.14.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-208"
-  ],
-  "tldr": "Affected versions of this package use a non-constant-time string comparison to verify HMAC signatures, allowing attackers to exploit timing differences—by measuring response times—to gradually guess the correct signature byte-by-byte, potentially forging valid requests.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `box-sdk-gen` library to the patch version.",
-  "vulnerable_to": "Observable Timing Discrepancy",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Python",
-  "severity_class": "LOW",
-  "aikido_score": 30,
-  "changelog": "https://github.com/box/box-python-sdk-gen/releases/tag/v1.15.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

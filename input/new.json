@@ -1,36 +1,15 @@
 {
-  "package_name": "spring-web",
-  "org_name": "org.springframework",
-  "patch_versions": [
-    "6.2.8",
-    "6.1.21",
-    "6.0.28"
-  ],
-  "vulnerable_ranges": [
-    [
-      "6.2.0",
-      "6.2.7"
-    ],
-    [
-      "6.1.0",
-      "6.1.20"
-    ],
-    [
-      "6.0.5",
-      "6.0.27"
-    ]
-  ],
-  "cwe": [
-    "CWE-113"
-  ],
-  "tldr": "Affected versions of Spring Framework (6.0.x ≤ 6.0.5, 6.1.x, and 6.2.x) are vulnerable to a reflected file download (RFD) attack when `Content-Disposition` headers are constructed using `ContentDisposition.Builder#filename(String, Charset)` with unsanitized user input and a non-ASCII charset. The vulnerability allows attackers to craft a response with a malicious filename and injected content that could be executed when downloaded.",
-  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges. Applications are not vulnerable if the header is not set, not built with `ContentDisposition`, uses ASCII-only filename methods, sanitizes input, or does not allow content injection.",
-  "how_to_fix": "Upgrade the `org.springframework:spring-web` library to a patch version.",
-  "reporter": "",
-  "vulnerable_to": "Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Request/Response Splitting')",
-  "related_cve_id": "CVE-2025-41234",
-  "language": "java",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
-  "changelog": "https://spring.io/security/cve-2025-41234"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

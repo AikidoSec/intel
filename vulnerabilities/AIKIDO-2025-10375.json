@@ -1,0 +1,27 @@
+{
+  "package_name": "keycloak-angular",
+  "patch_versions": [
+    "20.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "19.0.0",
+      "19.0.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package are vulnerable due to a flawed implementation of the `customBearerTokenInterceptor`, which may cause bearer tokens to be unintentionally sent to third-party services. This results in inadvertent token exposure, potentially allowing unauthorized access by recipients that should not have access to the token.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and you are using the `customBearerTokenInterceptor` implementation.",
+  "how_to_fix": "Upgrade the `keycloak-angular` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 18,
+  "changelog": "https://github.com/mauriciovigolo/keycloak-angular/releases/tag/v20.0.0",
+  "last_modified": "2025-06-16",
+  "published": "2025-06-16"
+}

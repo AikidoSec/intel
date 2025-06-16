@@ -1,0 +1,27 @@
+{
+  "package_name": "flask-oidc",
+  "patch_versions": [
+    "2.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.3.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-601"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to open redirect attacks due to improper handling of malformed login and logout URLs. An attacker could craft a specially constructed URL that redirects users to an external, potentially malicious site after login or logout. This could be used for phishing, credential theft, or other social engineering attacks by abusing the trust users place in the original application.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `flask-oidc` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Open Redirect",
+  "related_cve_id": "",
+  "language": "Python",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/fedora-infra/flask-oidc/releases/tag/2.4.0",
+  "last_modified": "2025-06-16",
+  "published": "2025-06-16"
+}

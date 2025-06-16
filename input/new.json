@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "promptflow-tools",
+  "patch_versions": [
+    "1.6.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.6.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to remote code execution (RCE) and prompt injection via chat history manipulation due to unsafe use of `eval()` and improper input sanitization. An attacker could exploit this by crafting a malicious tool call to execute arbitrary Python code through eval or injecting fake chat history entries to manipulate AI behavior. The fix replaces eval with ast.literal_eval and validates chat history entries to prevent unauthorized modifications.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `promptflow-tools` library to the patch version.",
+  "vulnerable_to": "Remote Code Execution (RCE)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/microsoft/promptflow/blob/main/src/promptflow-tools/CHANGELOG.md"
 }

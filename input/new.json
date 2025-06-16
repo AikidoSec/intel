@@ -1,15 +1,35 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "wikimedia/parsoid",
+  "patch_versions": [
+    "0.16.5",
+    "0.19.2",
+    "0.20.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.11.0",
+      "0.16.4"
+    ],
+    [
+      "0.17.0",
+      "0.19.1"
+    ],
+    [
+      "0.20.0",
+      "0.20.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) due to improper handling of Unicode normalization in the Action API. This flaw allows attackers to bypass input filters and inject malicious JavaScript, potentially leading to unauthorized script execution in the user's browser.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `wikimedia/parsoid` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "CVE-2025-32699",
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 21,
+  "changelog": "https://www.cve.org/CVERecord?id=CVE-2025-32699"
 }

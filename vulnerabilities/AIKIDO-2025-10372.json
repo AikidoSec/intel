@@ -19,8 +19,8 @@
   "vulnerable_to": "Improper Verification of Cryptographic Signature",
   "related_cve_id": "",
   "language": "RUBY",
-  "severity_class": "HIGH",
-  "aikido_score": 71,
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
   "changelog": "https://github.com/jwt/ruby-jwt/releases/tag/v3.0.0",
   "last_modified": "2025-06-16",
   "published": "2025-06-16"

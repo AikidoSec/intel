@@ -1,0 +1,27 @@
+{
+  "package_name": "n8n",
+  "patch_versions": [
+    "1.99.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.11.0",
+      "1.98.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to Denial of Service (DoS). Malformed binary data IDs such as `filesystem-v2://` or `filesystem:` are not properly rejected, causing the system to perform costly metadata lookups on the binary data root directory. This can be exploited by an attacker to exhaust resources and degrade performance.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `n8n` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.99.0",
+  "last_modified": "2025-06-16",
+  "published": "2025-06-16"
+}

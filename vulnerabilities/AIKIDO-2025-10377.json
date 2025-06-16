@@ -1,0 +1,27 @@
+{
+  "package_name": "rav1e",
+  "patch_versions": [
+    "0.8.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.8.0",
+      "0.8.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a bit overflow when writing headers. In these functions, the call to `bw.write(5, 31)` e.g. attempts to write the signed integer `31` using only 5 bits, which is insufficient due to the sign bit requirement. This can result in incorrect header encoding and potentially unpredictable behavior.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `rav1e` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Integer Overflow",
+  "related_cve_id": "",
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 19,
+  "changelog": "https://github.com/xiph/rav1e/releases/tag/v0.8.1",
+  "last_modified": "2025-06-16",
+  "published": "2025-06-16"
+}

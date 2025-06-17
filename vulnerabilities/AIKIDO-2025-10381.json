@@ -1,0 +1,26 @@
+{
+  "package_name": "@apidevtools/json-schema-ref-parser",
+  "patch_versions": [
+    "14.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "11.4.1",
+      "13.0.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Server-Side Request Forgery (SSRF) due to the default schema resolver can potentially fetch requests from tainted urls without further validation. An attacker could exploit this by submitting a malicious schema with $ref pointing to localhost, internal APIs, or cloud metadata services, potentially bypassing network controls and accessing sensitive data.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@apidevtools/json-schema-ref-parser` library to the patch version.",
+  "vulnerable_to": "Server-Side Request Forgery",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/APIDevTools/json-schema-ref-parser/releases/tag/v14.0.0",
+  "last_modified": "2025-06-17",
+  "published": "2025-06-17"
+}

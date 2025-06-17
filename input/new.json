@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "spdlog",
+  "patch_versions": [
+    "1.15.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.5.0",
+      "1.15.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "A vulnerability classified as problematic was identified in spdlog. The issue affects the `scoped_padder` function in `include/spdlog/pattern_formatter-inl.h`, leading to resource consumption. An attacker could exploit this vulnerability locally. The exploit has been publicly disclosed and may be in active use.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `spdlog` library to the patch version.",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
+  "related_cve_id": "CVE-2025-6140",
+  "language": "c++",
+  "severity_class": "MEDIUM",
+  "aikido_score": 48,
+  "changelog": "https://github.com/gabime/spdlog/releases/tag/v1.15.2"
 }

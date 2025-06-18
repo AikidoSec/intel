@@ -1,0 +1,26 @@
+{
+  "package_name": "create-sitecore-jss",
+  "patch_versions": [
+    "22.7.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "22.0.0",
+      "22.6.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1104"
+  ],
+  "tldr": "Affected versions of this package used the unmaintained `graphql-let` library for GraphQL code generation, potentially exposing applications to several vulnerabilities as it could allow attackers to exploit known security flaws in the deprecated dependency due to the absence of patches.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `create-sitecore-jss` library to the patch version.",
+  "vulnerable_to": "Use of Unmaintained Third-Party Components",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/Sitecore/jss/blob/dev/CHANGELOG.md#2270",
+  "last_modified": "2025-06-18",
+  "published": "2025-06-18"
+}

@@ -1,15 +1,29 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/spiffe/spire",
+  "patch_versions": [
+    "1.11.3",
+    "1.12.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.9.2",
+      "1.11.2"
+    ],
+    [
+      "1.12.0",
+      "1.12.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-613"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper validation in the `WorkloadAPI.ValidateJWTSVID` endpoint, where the expiration claim in `JWT-SVIDs` was not validated as required by the SPIFFE specification. By default, SPIRE does not issue `JWT-SVIDs` without an expiration claim, limiting impact; however, an attacker could exploit this by federating with a misconfigured or non-compliant trust domain to bypass expiration checks, potentially using indefinitely valid tokens for unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/spiffe/spire` library to the patch version.",
+  "vulnerable_to": "Insufficient Session Expiration",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "go",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/spiffe/spire/releases/tag/v1.12.3"
 }

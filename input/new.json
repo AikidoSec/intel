@@ -1,54 +1,15 @@
 {
-  "package_name": "Grafana",
-  "patch_versions": [
-    "10.4.19",
-    "11.2.10",
-    "11.3.8",
-    "11.4.6",
-    "11.5.6",
-    "11.6.3",
-    "12.0.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "10.0.0",
-      "10.4.18"
-    ],
-    [
-      "11.0.0",
-      "11.2.9"
-    ],
-    [
-      "11.3.0",
-      "11.3.7"
-    ],
-    [
-      "11.4.0",
-      "11.4.5"
-    ],
-    [
-      "11.5.0",
-      "11.5.5"
-    ],
-    [
-      "11.6.0",
-      "11.6.2"
-    ],
-    [
-      "12.0.0",
-      "12.0.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-200"
-  ],
-  "tldr": "Affected versions of this package allow unauthorized access to DingDing contact points, potentially exposing configured DingDing alerting URLs to users with Viewer permissions and leaking sensitive data. An attacker with Viewer access can retrieve the DingDing integration URL, including API keys, enabling unauthorized interactions with the DingDing alerting service.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `Grafana` library to the patch version.",
-  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
-  "related_cve_id": "CVE-2025-3415",
-  "language": "os",
-  "severity_class": "MEDIUM",
-  "aikido_score": 43,
-  "changelog": "https://github.com/grafana/grafana/blob/main/CHANGELOG.md"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

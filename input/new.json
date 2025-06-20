@@ -1,15 +1,26 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@langchain/core",
+  "patch_versions": [
+    "0.3.60"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.0",
+      "0.3.59"
+    ]
+  ],
+  "cwe": [
+    "CWE-328",
+    "CWE-453"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cache poisoning due to the use of the SHA-1 hashing algorithm in the default cache key encoder. SHA-1 is not collision-resistant, allowing attackers to craft different inputs that produce the same hash. This may result in incorrect or malicious cache hits. While SHA-1 deprecation is underway, the transition is currently opt-in to preserve backward compatibility. This issue is especially relevant for applications exposed to untrusted input, requiring high cache integrity, or subject to security compliance.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@langchain/core` library to the patch version or you can supply a stronger hash function (such as SHA-256 or SHA-3) for cache key encoding by using the `makeDefaultKeyEncoder()` method on your cache instance.",
+  "reporter": "",
+  "vulnerable_to": "Use of Weak Hash",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%3D%3D0.3.60"
 }

@@ -1,0 +1,27 @@
+{
+  "package_name": "sglang",
+  "patch_versions": [
+    "0.4.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.4.0",
+      "0.4.6.post5"
+    ]
+  ],
+  "cwe": [
+    "CWE-668"
+  ],
+  "tldr": "Affected versions of this package do not restrict the `MessageQueue` component from binding to all available TCP interfaces (e.g., `0.0.0.0`), which exposes the service to external network access by default. This can increase the attack surface, especially if the message queue is intended for internal use only. Without proper binding to a loopback address (e.g., `127.0.0.1`) or explicit configuration, remote attackers may be able to interact with or exploit the message queue service, potentially leading to unauthorized access, data leakage, or further attacks depending on the queue’s capabilities and access controls.",
+  "doest_this_affect_me": "You are affected if you are using a version of this package < 0.4.7.",
+  "how_to_fix": "Upgrade the `sglang` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Resource to Wrong Sphere",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://github.com/sgl-project/sglang/releases/tag/v0.4.7",
+  "last_modified": "2025-06-20",
+  "published": "2025-06-20"
+}

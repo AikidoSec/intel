@@ -1,12 +1,17 @@
 {
   "package_name": "n8n-nodes-base",
   "patch_versions": [
-    "1.98.2"
+    "1.98.2",
+    "1.99.1"
   ],
   "vulnerable_ranges": [
     [
       "0.0.1",
       "1.98.1"
+    ],
+    [
+      "1.90.0",
+      "1.90.0"
     ]
   ],
   "cwe": [

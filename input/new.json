@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@milkdown/transformer",
+  "patch_versions": [
+    "7.13.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "7.5.5",
+      "7.13.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "The affected versions use a polynomial-time regular expression within the `moveSpaces` function, which can lead to performance issues when processing specially crafted input. Specifically, the regular expression exhibits **catastrophic backtracking**, where certain patterns cause the regex engine to perform excessive computations. An attacker could exploit this by supplying input that triggers worst-case performance, leading to high CPU usage and making the application vulnerable to **Regular Expression Denial of Service (ReDoS)** attacks. This type of vulnerability can degrade system performance or make the application temporarily unavailable.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@milkdown/transformer` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 36,
+  "changelog": "https://github.com/Milkdown/milkdown/blob/main/packages/plugins/plugin-emoji/CHANGELOG.md"
 }

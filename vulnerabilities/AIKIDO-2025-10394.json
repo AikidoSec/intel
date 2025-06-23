@@ -1,0 +1,27 @@
+{
+  "package_name": "datamodel-code-generator",
+  "patch_versions": [
+    "0.31.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.17.2",
+      "0.31.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to Code Injection due to improper handling of newline characters during file generation from headers. Malicious input hiding behind newlines can break the intended structure of the generated code and allow attackers to inject arbitrary code.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `datamodel-code-generator` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Code Injection",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 69,
+  "changelog": "https://github.com/koxudaxi/datamodel-code-generator/releases/tag/0.31.2",
+  "last_modified": "2025-06-23",
+  "published": "2025-06-23"
+}

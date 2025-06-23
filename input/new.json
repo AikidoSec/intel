@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "solid_cable",
+  "patch_versions": [
+    "3.0.11"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "3.0.10"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to race conditions and message replay attacks, where a reconnecting client may receive duplicate or outdated messages due to improper tracking of the last processed message ID. An attacker could exploit this by forcing clients to disconnect and reconnect, causing them to reprocess old messages, potentially exposing sensitive system information or exhausting resources.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `solid_cable` library to the patch version.",
+  "vulnerable_to": "Race Condition",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Ruby",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/rails/solid_cable/releases/tag/v3.0.11"
 }

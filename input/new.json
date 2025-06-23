@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "zotonic_stdlib",
+  "patch_versions": [
+    "1.24.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.23.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to XSS attacks when processing HTML comments containing < or > characters. Attackers can exploit this by injecting malicious scripts inside comments (e.g., <!-- <script>alert('XSS')</script> -->), which some editors may execute due to improper sanitization. This allows arbitrary code execution, compromising user data or session integrity.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `zotonic_stdlib` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Elixir",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/zotonic/z_stdlib/releases/tag/1.24.0"
 }

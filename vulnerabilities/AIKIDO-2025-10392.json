@@ -1,0 +1,27 @@
+{
+  "package_name": "go.uber.org/yarpc",
+  "patch_versions": [
+    "1.80.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.79.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to Denial of Service (DoS) due to the lack of a `ReadHeaderTimeout` configuration in the HTTP transport inbound. Without this setting, the server is exposed to slow header attacks, where an attacker sends HTTP headers at a slow rate to tie up resources. The patch introduces support for configuring `ReadHeaderTimeout`, enabling users to set a maximum duration for reading request headers and enhancing the server’s resilience against such attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `go.uber.org/yarpc` library to the patch version and set the `ReadHeaderTimeout` configuration.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/yarpc/yarpc-go/releases/tag/v1.80.0",
+  "last_modified": "2025-06-23",
+  "published": "2025-06-23"
+}

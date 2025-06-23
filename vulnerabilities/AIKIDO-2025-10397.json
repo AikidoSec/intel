@@ -1,0 +1,28 @@
+{
+  "package_name": "Sitecore.Client",
+  "patch_versions": [
+    "10.4.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "9.0.0",
+      "10.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-22",
+    "CWE-94"
+  ],
+  "tldr": "Security researchers discovered a critical vulnerability chain (CVE-2025-34509, CVE-2025-34510, CVE-2025-34511) in Sitecore Experience Platform (XP) that can lead to pre-authenticated remote code execution. The issue stems from the use of a hard-coded password for the default `sitecore\\ServicesAPI` user, which allows attackers to authenticate and interact with exposed administrative endpoints. Once authenticated, an attacker can upload a specially crafted ZIP file to trigger a path traversal vulnerability, ultimately placing a web shell in the server’s webroot. Additionally, a flaw in the Sitecore PowerShell Extensions permits unrestricted file uploads, enabling further code execution. These vulnerabilities affect installations starting from version 10.1, provided the default installer was used. While upgrades from earlier versions may be less exposed, the potential for exploitation remains high. Due to the widespread use of Sitecore in critical sectors like finance and aviation, users are urged to rotate credentials and apply security patches immediately.",
+  "doest_this_affect_me": "You are affected if you are use any vulnerable version of any `Sitecore` package.",
+  "how_to_fix": "Upgrade `Sitecore.Client` to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Zip Slip",
+  "related_cve_id": "CVE-2025-34510",
+  "language": "DOTNET",
+  "severity_class": "CRITICAL",
+  "aikido_score": 100,
+  "changelog": "https://thehackernews.com/2025/06/hard-coded-b-password-in-sitecore-xp.html",
+  "last_modified": "2025-06-23",
+  "published": "2025-06-23"
+}

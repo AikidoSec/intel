@@ -1,25 +1,15 @@
 {
-  "package_name": "urllib3-future",
-  "patch_versions": [
-    "2.13.900"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.0.931",
-      "2.12.922"
-    ]
-  ],
-  "cwe": [
-    "CWE-601"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to an open redirect, addressed via a backported security fix (CVE-2025-50181) from `urllib3` v2.5.0. The `urllib3-future` package is designed for use in Pyodide environments, enabling Python HTTP requests through the JavaScript Fetch API or XMLHttpRequest. Although it offers redirect control via `retries` and `redirect` parameters, these are ineffective in Pyodide, where the runtime governs redirect behavior—potentially allowing malicious redirects if not properly handled.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `urllib3-future` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "URL Redirection to Untrusted Site ('Open Redirect')",
-  "related_cve_id": "CVE-2025-50181",
-  "language": "python",
-  "severity_class": "MEDIUM",
-  "aikido_score": 53,
-  "changelog": "https://github.com/jawah/urllib3.future/releases/tag/2.13.900"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

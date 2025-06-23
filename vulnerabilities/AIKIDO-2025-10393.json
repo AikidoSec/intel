@@ -1,0 +1,27 @@
+{
+  "package_name": "SSZipArchive",
+  "patch_versions": [
+    "2.5.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.5.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to Path Traversal because `SSZipArchive` fails to properly sanitize symlink targets during extraction. While file paths are typically validated to prevent writing outside the destination directory, symlink entries in ZIP archives are not subjected to the same checks. An attacker can exploit this by embedding a symlink as the first file in a ZIP archive, pointing to an arbitrary location. If a subsequent file in the archive shares the same name as the symlink, the library will follow the symlink when calling `fopen()`, causing the file's contents to be written to the symlink’s target path—potentially overwriting sensitive files outside the intended extraction directory.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `SSZipArchive` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "CVE-2022-36943",
+  "language": "SWIFT",
+  "severity_class": "CRITICAL",
+  "aikido_score": 98,
+  "changelog": "https://github.com/ZipArchive/ZipArchive/releases/tag/2.5.4",
+  "last_modified": "2025-06-23",
+  "published": "2025-06-23"
+}

@@ -12,14 +12,14 @@
   "cwe": [
     "CWE-94"
   ],
-  "tldr": "Affected versions of the package are vulnerable to code injection due to improper handling of byte lengths in the PostgreSQL binary protocol. Clients that fail to check the length of bytes before encoding the 4-length bytes allow attackers to send data greater than 2^32, causing an overflow. This overflow enables the smuggling of an additional message, potentially leading to code execution or other malicious behavior.",
+  "tldr": "Affected versions of the package are vulnerable to Code Injection due to improper handling of newline characters during file generation from headers. Malicious input hiding behind newlines can break the intended structure of the generated code and allow attackers to inject arbitrary code.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `datamodel-code-generator` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Code Injection",
   "related_cve_id": "",
   "language": "PYTHON",
-  "severity_class": "HIGH",
-  "aikido_score": 80,
+  "severity_class": "CRITICAL",
+  "aikido_score": 91,
   "changelog": "https://github.com/koxudaxi/datamodel-code-generator/releases/tag/0.31.2"
 }

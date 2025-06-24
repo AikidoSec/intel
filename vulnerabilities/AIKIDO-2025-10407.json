@@ -1,0 +1,27 @@
+{
+  "package_name": "webmproject.libvpx",
+  "patch_versions": [
+    "1.14.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.14.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to integer overflow. Calling `vpx_img_alloc()` with large values for the `d_w`, `d_h`, or `align` parameters can cause overflows in buffer size and offset calculations, leading to invalid fields in the returned `vpx_image_t` struct. Similarly, calling `vpx_img_wrap()` with large values for the `d_w`, `d_h`, or `stride_align` parameters can result in similar overflows and invalid struct fields.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `webmproject.libvpx` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Integer Overflow",
+  "related_cve_id": "CVE-2024-5197",
+  "language": "c++",
+  "severity_class": "MEDIUM",
+  "aikido_score": 59,
+  "changelog": "https://github.com/webmproject/libvpx/blob/main/CHANGELOG",
+  "last_modified": "2025-06-24",
+  "published": "2025-06-24"
+}

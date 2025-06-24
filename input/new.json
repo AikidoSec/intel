@@ -1,25 +1,15 @@
 {
-  "package_name": "jsoup",
-  "org_name": "org.jsoup",
-  "patch_versions": [
-    "1.21.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.12.2",
-      "1.21.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Mutation Cross-site Scripting (XSS) due to improper escaping of `<` and `>` characters in HTML attributes during serialization, allowing attackers to inject malicious scripts when user input is rendered. An attacker could exploit this by crafting a payload inside an attribute, which, if unescaped, could break out of the attribute context and execute arbitrary JavaScript in the victim's browser. This occurs when the browser's HTML parser misinterprets the unescaped characters as markup, leading to DOM mutation and script execution.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `org.jsoup:jsoup` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JAVA",
-  "severity_class": "MEDIUM",
-  "aikido_score": 65,
-  "changelog": "https://github.com/jhy/jsoup/releases/tag/jsoup-1.21.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

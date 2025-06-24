@@ -1,0 +1,27 @@
+{
+  "package_name": "OpenVPN.openvpn",
+  "patch_versions": [
+    "2.6.14"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.6.1",
+      "2.6.13"
+    ]
+  ],
+  "cwe": [
+    "CWE-754"
+  ],
+  "tldr": "Affected versions of OpenVPN between `2.6.1` and `2.6.13` are vulnerable to a denial of service when using `--tls-crypt-v2`. A malicious actor with access to a valid `tls-crypt-v2` client key, or with the ability to observe a handshake using such a key, can trigger an `ASSERT()` failure on the server by sending a crafted combination of authenticated and malformed packets. This causes the server to abort. The vulnerability does not compromise cryptographic integrity, leak data, or allow remote code execution, and it does not affect OpenVPN clients.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `OpenVPN.openvpn` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Check for Unusual or Exceptional Conditions",
+  "related_cve_id": "CVE-2025-2704",
+  "language": "c++",
+  "severity_class": "LOW",
+  "aikido_score": 24,
+  "changelog": "https://github.com/OpenVPN/openvpn/releases/tag/v2.6.14",
+  "last_modified": "2025-06-24",
+  "published": "2025-06-24"
+}

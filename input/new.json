@@ -18,7 +18,7 @@
   "vulnerable_to": "Path Traversal",
   "related_cve_id": "CVE-2024-38449",
   "language": "c++",
-  "severity_class": "LOW",
-  "aikido_score": 30,
+  "severity_class": "HIGH",
+  "aikido_score": 77,
   "changelog": "https://github.com/kasmtech/KasmVNC/releases/tag/v1.3.2"
 }

@@ -1,25 +1,15 @@
 {
-  "package_name": "GNOME.libxslt",
-  "patch_versions": [
-    "1.1.43"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "1.1.42"
-    ]
-  ],
-  "cwe": [
-    "CWE-416"
-  ],
-  "tldr": "In libxslt versions before 1.1.43, a use-after-free vulnerability exists due to improper handling of the XPath context node during nested XPath evaluations. When the context node is modified but not restored, it leads to a use-after-free issue. This affects functions like `xsltNumberFormatGetValue`, `xsltEvalXPathPredicate`, `xsltEvalXPathStringNs`, and `xsltComputeSortResultInternal`.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `GNOME.libxslt` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Use-After-Free",
-  "related_cve_id": "CVE-2025-24855",
-  "language": "c++",
-  "severity_class": "HIGH",
-  "aikido_score": 78,
-  "changelog": "https://github.com/GNOME/libxslt/blob/master/NEWS"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

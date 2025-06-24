@@ -1,27 +1,26 @@
 {
-  "package_name": "jsoup",
-  "org_name": "org.jsoup",
+  "package_name": "jwt",
   "patch_versions": [
-    "1.21.1"
+    "3.1.0"
   ],
   "vulnerable_ranges": [
     [
-      "1.12.2",
-      "1.21.0"
+      "0.0.1",
+      "3.0.0"
     ]
   ],
   "cwe": [
-    "CWE-79"
+    "CWE-345"
   ],
-  "tldr": "Affected versions of this package are vulnerable to Mutation Cross-site Scripting (XSS) due to improper escaping of `<` and `>` characters in HTML attributes during serialization, allowing attackers to inject malicious scripts when user input is rendered. An attacker could exploit this by crafting a payload inside an attribute, which, if unescaped, could break out of the attribute context and execute arbitrary JavaScript in the victim's browser. This occurs when the browser's HTML parser misinterprets the unescaped characters as markup, leading to DOM mutation and script execution.",
+  "tldr": "Affected versions of this package contain a design flaw that can lead to unverified JWT claims, allowing attackers to bypass authentication by tampering with the token payload and presenting malicious JWTs that may be accepted without proper claim validation, potentially leading to unauthorized access or privilege escalation.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `org.jsoup:jsoup` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "how_to_fix": "Upgrade the `jwt` library to the patch version.",
+  "vulnerable_to": "Insufficient Verification of Data Authenticity",
   "related_cve_id": "",
-  "language": "JAVA",
-  "severity_class": "MEDIUM",
-  "aikido_score": 65,
-  "changelog": "https://github.com/jhy/jsoup/releases/tag/jsoup-1.21.1",
+  "language": "Ruby",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/jwt/ruby-jwt/releases/tag/v3.1.0",
   "last_modified": "2025-06-24",
   "published": "2025-06-24"
 }

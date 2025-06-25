@@ -1,0 +1,27 @@
+{
+  "package_name": "github.com/datadog/dd-trace-go/contrib/database/sql/v2",
+  "patch_versions": [
+    "2.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "This patch improves error handling in the `database/sql` contrib package by sanitizing sensitive information in database connection strings before logging or including it in error messages. It ensures that credentials and other confidential details are not exposed in logs or error outputs, aligning with security best practices for protecting connection data.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/datadog/dd-trace-go/contrib/database/sql/v2` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/DataDog/dd-trace-go/releases/tag/v2.0.1",
+  "last_modified": "2025-06-25",
+  "published": "2025-06-25"
+}

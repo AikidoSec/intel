@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/filebrowser/filebrowser/v2",
+  "patch_versions": [
+    "2.33.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "",
+      "2.33.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Remote Code Execution (RCE) due to multiple unresolved flaws in the command execution functionality, which is enabled by default. If an attacker gains access to any user account, they can exploit these vulnerabilities to inject and execute arbitrary system commands. It could lead to a complete system takeover, cryptocurrency mining, or the retrieval of malicious payloads from external domains. Although the maintainers have disabled this feature by default in the patched version, any installations made before the update remain exposed unless manually secured.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range or if you did not explicitly disable the command execution feature with `--disable-exec=true`.",
+  "how_to_fix": "Upgrade the `github.com/filebrowser/filebrowser/v2` library to the patch version.",
+  "vulnerable_to": "Remote Code Execution (RCE)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Go",
+  "severity_class": "CRITICAL",
+  "aikido_score": 91,
+  "changelog": "https://github.com/filebrowser/filebrowser/releases/tag/v2.33.8"
 }

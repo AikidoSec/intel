@@ -1,0 +1,31 @@
+{
+  "package_name": "pocoproject.poco",
+  "patch_versions": [
+    "1.11.8p2",
+    "1.12.5p2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.11.0",
+      "1.11.8p1"
+    ],
+    [
+      "1.12.0",
+      "1.12.5p1"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an integer overflow in UTF-32 encoding methods, where processing a UTF-32 byte sequence with a value `≥ 0x80000000` returns a negative integer due to improper handling of signed integers. An attacker could craft a malicious UTF-32 input that triggers this overflow, potentially leading to incorrect character processing, memory corruption, or crashes in applications relying on these functions for string conversion, possibly enabling denial of service (DoS) or other undefined behavior.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `pocoproject.poco` library to the patch version.",
+  "vulnerable_to": "Integer Overflow",
+  "related_cve_id": "",
+  "language": "c++",
+  "severity_class": "MEDIUM",
+  "aikido_score": 61,
+  "changelog": "https://github.com/pocoproject/poco/releases/tag/poco-1.12.5p2-release",
+  "last_modified": "2025-06-25",
+  "published": "2025-06-25"
+}

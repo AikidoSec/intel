@@ -1,0 +1,27 @@
+{
+  "package_name": "drupal/simple_sitemap",
+  "patch_versions": [
+    "4.2.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "4.2.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) due to insufficient input sanitization in the sitemap administration interface. An attacker with the `administer sitemap settings` permission can inject malicious scripts, potentially leading to XSS attacks. The impact is limited by the requirement for elevated administrative privileges.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/simple_sitemap` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://www.drupal.org/sa-contrib-2025-083",
+  "last_modified": "2025-06-26",
+  "published": "2025-06-26"
+}

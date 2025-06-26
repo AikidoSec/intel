@@ -1,25 +1,15 @@
 {
-  "package_name": "openai-whisper",
-  "patch_versions": [
-    "20250625"
-  ],
-  "vulnerable_ranges": [
-    [
-      "20230117",
-      "20240930"
-    ]
-  ],
-  "cwe": [
-    "CWE-502",
-    "CWE-94"
-  ],
-  "tldr": "Affected versions of this package load models using `torch.load()` without setting the `weights_only` parameter to `True`, thereby enabling full pickle deserialization. Since pickle is inherently insecure, this allows the execution of arbitrary code during model loading. A remote attacker could exploit this behavior by crafting malicious pickle data, potentially leading to serious vulnerabilities such as remote code execution (RCE).",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `openai-whisper` library to the patch version.",
-  "vulnerable_to": "Unsafe Deserialization",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 65,
-  "changelog": "https://github.com/openai/whisper/blob/main/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

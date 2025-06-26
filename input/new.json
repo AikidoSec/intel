@@ -1,25 +1,15 @@
 {
-  "package_name": "pydantic-ai-slim",
-  "patch_versions": [
-    "0.3.4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "0.3.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-212"
-  ],
-  "tldr": "Affected versions of `pydantic-ai-slim` may inadvertently expose sensitive information to observability platforms. This includes user data, proprietary prompts, tool call arguments, and model responses captured in OpenTelemetry events. To address this, patched versions are able prevent sensitive content from being included in telemetry data, enabling secure monitoring of agent behavior and performance without compromising user privacy or proprietary information.",
-  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
-  "how_to_fix": "Upgrade `pydantic-ai-slim` to the patch version and set `include_content=False` or make sure no OpenTelemetry events are sent in your production environment.",
-  "reporter": "",
-  "vulnerable_to": "Improper Removal of Sensitive Information Before Storage or Transfer",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "LOW",
-  "aikido_score": 15,
-  "changelog": "https://github.com/pydantic/pydantic-ai/releases/tag/v0.3.4"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

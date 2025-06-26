@@ -18,7 +18,7 @@
   "vulnerable_to": "Code Injection",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 82,
+  "severity_class": "MEDIUM",
+  "aikido_score": 42,
   "changelog": "https://github.com/prismatic-io/prism/releases/tag/v7.6.1"
 }

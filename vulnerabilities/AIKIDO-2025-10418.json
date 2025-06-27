@@ -1,0 +1,26 @@
+{
+  "package_name": "Kanna",
+  "patch_versions": [
+    "6.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "6.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to memory corruption due to a use-after-free error stemming from the unsafe conversion of Swift strings to temporary C buffers during XML parsing. By passing temporary `cString` pointers to `xmlReadDoc()`, heap memory can be deallocated before finishing parsing. An attacker could exploit this issue by sending multiple large XML/HTML payloads, causing crashes, or through targeted memory grooming to leak sensitive data, like authentication tokens from freed memory.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Kanna` library to the patch version.",
+  "vulnerable_to": "Use-After-Free",
+  "related_cve_id": "",
+  "language": "Swift",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/tid-kijyun/Kanna/releases/tag/6.0.1",
+  "last_modified": "2025-06-27",
+  "published": "2025-06-27"
+}

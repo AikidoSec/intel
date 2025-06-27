@@ -1,24 +1,15 @@
 {
-  "package_name": "ueberdosis/tiptap-php",
-  "patch_versions": [
-    "2.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "1.4.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) in anchor tags due to inadequate validation of the href attribute during link rendering. Attackers can exploit this by injecting malicious JavaScript URIs into the href parameter, which executes arbitrary code when users click the compromised link. It occurs because then `renderHTML()` function merges user-supplied attributes without sanitizing dangerous URL schemes, allowing DOM-based XSS attacks. Successful exploitation could lead to stolen sessions, redirecting users, or performing actions on behalf of authenticated victims.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `ueberdosis/tiptap-php` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 51,
-  "changelog": "https://github.com/ueberdosis/tiptap-php/releases/tag/2.0.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

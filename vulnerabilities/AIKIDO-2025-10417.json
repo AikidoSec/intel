@@ -1,0 +1,26 @@
+{
+  "package_name": "highlightjs-cshtml-razor",
+  "patch_versions": [
+    "2.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.1.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS) via Polynomial Backtracking in Razor syntax highlighting. The vulnerability stemmed from an inefficient regex pattern used to parse `@` directives in Razor code. An attacker could exploit this flaw by injecting a malicious string with excessive consecutive characters, causing catastrophic backtracking that exponentially increases CPU processing time and leads to application hang or denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `highlightjs-cshtml-razor` library to the patch version.",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
+  "changelog": "https://github.com/highlightjs/highlightjs-cshtml-razor/blob/master/CHANGELOG.md",
+  "last_modified": "2025-06-27",
+  "published": "2025-06-27"
+}

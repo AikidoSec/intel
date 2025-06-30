@@ -1,0 +1,27 @@
+{
+  "package_name": "ServiceStack.Text",
+  "patch_versions": [
+    "8.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.0.0",
+      "8.5.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to deserialization of untrusted data in the `ServiceStack.NetFxPclExport.FindType()` method. An attacker can execute arbitrary code by providing a crafted path to a malicious DLL or EXE file, which is not properly validated before being used in file operations. Successful exploitation requires the malicious file to be present on the local filesystem, which typically depends on a separate vulnerability or attacker with elevated privileges.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ServiceStack.Text` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Unsafe Deserialization",
+  "related_cve_id": "CVE-2025-6445",
+  "language": "DOTNET",
+  "severity_class": "CRITICAL",
+  "aikido_score": 91,
+  "changelog": "https://docs.servicestack.net/releases/v8_06#reported-vulnerabilities",
+  "last_modified": "2025-06-30",
+  "published": "2025-06-30"
+}

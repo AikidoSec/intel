@@ -1,24 +1,15 @@
 {
-  "package_name": "repomix",
-  "patch_versions": [
-    "1.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.32",
-      "0.3.9"
-    ]
-  ],
-  "cwe": [
-    "CWE-200"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to sensitive data leakage where secretlint logs could expose private keys and other confidential information during repomix execution, particularly when coding agents transmit terminal output to LLM providers. An attacker could exploit this by intercepting or accessing the logged output to harvest exposed secrets, potentially compromising systems or accounts tied to the leaked credentials.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `repomix` library to the patch version.",
-  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 25,
-  "changelog": "https://github.com/yamadashy/repomix/releases/tag/v1.0.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

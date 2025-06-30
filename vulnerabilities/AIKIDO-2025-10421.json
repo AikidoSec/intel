@@ -1,0 +1,27 @@
+{
+  "package_name": "ServiceStack.Text",
+  "patch_versions": [
+    "8.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.0.0",
+      "8.5.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-73"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to external control of file name or path through the `url` parameter in the `GetErrorResponse` method. An attacker can exploit this by supplying a `file://` URI, potentially causing the application to relay NTLM credentials in the context of the current user. However, the maintainers note that the security impact is limited, as the same behavior exists in the underlying `.NET` `WebRequest.Create(url)` method that this package wraps, and no additional risk is introduced by the wrapper itself.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ServiceStack.Text` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "External Control of File Name or Path",
+  "related_cve_id": "CVE-2025-6444",
+  "language": "DOTNET",
+  "severity_class": "MEDIUM",
+  "aikido_score": 61,
+  "changelog": "https://docs.servicestack.net/releases/v8_06#reported-vulnerabilities",
+  "last_modified": "2025-06-30",
+  "published": "2025-06-30"
+}

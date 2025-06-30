@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/filebrowser/filebrowser/v2",
-  "patch_versions": [
-    "2.34.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.0.0",
-      "2.33.10"
-    ]
-  ],
-  "cwe": [
-    "CWE-497"
-  ],
-  "tldr": "Affected versions of this package expose the root directory path in the browser window title, allowing attackers to infer sensitive server structures. By observing customized directory names, such as `/JohnDoeHome` (in the window title), unauthenticated or low-privileged users can map user accounts, internal naming conventions, or project hierarchies. This type of information facilitates targeted attacks such as path traversal exploits by revealing restricted directory names.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/filebrowser/filebrowser/v2` library to the patch version.",
-  "vulnerable_to": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 15,
-  "changelog": "https://github.com/filebrowser/filebrowser/releases/tag/v2.34.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

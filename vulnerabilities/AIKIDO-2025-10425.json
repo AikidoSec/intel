@@ -1,0 +1,26 @@
+{
+  "package_name": "sonic-rs",
+  "patch_versions": [
+    "0.5.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.3.0",
+      "0.5.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "Affected versions of this package have a Use-After-Free vulnerability in the `into_object_iter` function. If the `ObjectJsonIter` is dropped prematurely, borrowed keys become dangling pointers to freed memory. Accessing these keys can result in undefined behavior, including segmentation faults or data leaks. An attacker can exploit this by using crafted JSON input to retain keys after the iterator is destroyed, potentially causing crashes or enabling remote code execution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `sonic-rs` library to the patch version.",
+  "vulnerable_to": "Use After Free",
+  "related_cve_id": "",
+  "language": "RUST",
+  "severity_class": "HIGH",
+  "aikido_score": 72,
+  "changelog": "https://github.com/cloudwego/sonic-rs/releases/tag/0.5.2",
+  "last_modified": "2025-07-01",
+  "published": "2025-07-01"
+}

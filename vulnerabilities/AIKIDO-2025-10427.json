@@ -1,0 +1,26 @@
+{
+  "package_name": "pimcore/admin-ui-classic-bundle",
+  "patch_versions": [
+    "2.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.0.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to stored Cross-Site Scripting (XSS) due to improper HTML encoding of user-controlled parameters in the email log interface. Attackers can exploit this vulnerability by injecting malicious HTML or JavaScript into email template variables. When administrators view the email log, the malicious payload executes in their session, which can lead to session hijacking, data theft, or compromise of the admin account.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `pimcore/admin-ui-classic-bundle` library to the patch version.",
+  "vulnerable_to": "Cross-Site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 81,
+  "changelog": "https://github.com/pimcore/admin-ui-classic-bundle/releases/tag/v2.1.0",
+  "last_modified": "2025-07-01",
+  "published": "2025-07-01"
+}

@@ -1,0 +1,46 @@
+{
+  "package_name": "@havesource/cordova-plugin-push",
+  "patch_versions": [
+    "5.0.6",
+    "4.0.1",
+    "3.0.2",
+    "2.0.1",
+    "1.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "5.0.5"
+    ],
+    [
+      "4.0.0",
+      "4.0.0"
+    ],
+    [
+      "3.0.0",
+      "3.0.1"
+    ],
+    [
+      "2.0.0",
+      "2.0.0"
+    ],
+    [
+      "1.0.0",
+      "1.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-926"
+  ],
+  "tldr": "Affected versions of this package set the `android:exported` attribute to `true` for certain components in the `AndroidManifest.xml` file. This setting allows those components (such as activities, services, or broadcast receivers) to be invoked by external applications. If not properly restricted, this configuration can increase the risk of unauthorized access, privilege escalation, or unintended data exposure.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@havesource/cordova-plugin-push` library to the patch version.",
+  "vulnerable_to": "Improper Export of Android Application Components",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/havesource/cordova-plugin-push/releases/tag/6.0.0",
+  "last_modified": "2025-07-01",
+  "published": "2025-07-01"
+}

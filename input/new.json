@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "linzer",
+  "patch_versions": [
+    "0.7.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.3.0",
+      "0.7.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-347"
+  ],
+  "tldr": "Affected versions of this package suffer from Incorrect Serialization in HTTP Message Signatures, a vulnerability where HTTP field identifiers with parameters are not correctly serialized during signature generation and verification. This flaw results in signatures that fail to protect all intended message components, undermining message integrity. An attacker could exploit this by altering unprotected parameters in headers without invalidating the signature, potentially enabling unauthorized actions or data tampering.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `linzer` library to the patch version.",
+  "vulnerable_to": "Improper Verification of Cryptographic Signature",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUBY",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/nomadium/linzer/blob/master/CHANGELOG.md"
 }

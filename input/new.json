@@ -1,24 +1,15 @@
 {
-  "package_name": "govuk-prototype-kit",
-  "patch_versions": [
-    "13.17.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "13.1.0",
-      "13.16.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-601"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Open Redirect due to improper sanitization of the `returnURL` query parameter in the login functionality. The vulnerability allows attackers to craft malicious links that redirect authenticated users to arbitrary external domains after login, as demonstrated by accessing a URL like `https://myapp.com/manage-prototype/password?returnURL=%2F%2Fevil.com`. Exploitation occurs when a victim logs in via such a manipulated link, enabling phishing attacks where the attacker can steal credentials or distribute malware by redirecting users to a malicious site under their control.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `govuk-prototype-kit` library to the patch version.",
-  "vulnerable_to": "Open Redirect",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "js",
-  "severity_class": "MEDIUM",
-  "aikido_score": 52,
-  "changelog": "https://github.com/alphagov/govuk-prototype-kit/releases/tag/v13.17.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

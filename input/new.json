@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/cloudwego/hertz",
-  "patch_versions": [
-    "0.10.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.8.0",
-      "0.10.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-40"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to HTTP connections deadlock, leading to resource exhaustion, where the server fails to handle connection state transitions during ambiguous client interactions. It manifests in two exploitable scenarios: (1) when clients connect without sending data and disconnect prematurely, causing the server to maintain idle connections until timeout; and (2) when clients send TLS ClientHello messages to HTTP ports, creating a mutual deadlock, the server waits indefinitely for HTTP request lines while the client waits for TLS negotiation. Attackers exploit both scenarios by flooding servers with either rapid-fire empty connections or deliberate HTTPS-to-HTTP port mismatches, consuming connection slots and worker resources to induce denial-of-service with minimal traffic.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/cloudwego/hertz` library to the patch version.",
-  "vulnerable_to": "Denial of service (DoS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "go",
-  "severity_class": "MEDIUM",
-  "aikido_score": 40,
-  "changelog": "https://github.com/cloudwego/hertz/releases/tag/v0.10.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

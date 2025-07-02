@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/cilium/cilium-cli",
+  "patch_versions": [
+    "0.18.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.18.0",
+      "0.18.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a directory traversal (zip slip) vulnerability in the `extractZip` function due to insufficient sanitization of file paths within ZIP archives. Malicious archive entries containing `../` or absolute paths may cause files to be extracted outside the intended destination directory, potentially overwriting arbitrary files on the file system.",
+  "doest_this_affect_me": "You are affected if you are use a vulnerable version of `github.com/cilium/cilium-cli`.",
+  "how_to_fix": "Upgrade `github.com/cilium/cilium-cli` to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Zip Slip",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/cilium/cilium-cli/releases/tag/v0.18.5"
 }

@@ -1,0 +1,26 @@
+{
+  "package_name": "pdfjs",
+  "patch_versions": [
+    "2.5.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.5.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-835"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an infinite loop when processing a corrupted PDF file containing malformed arrays. The lexer fails to properly handle cases where the array terminator `]` is missing, causing it to loop indefinitely after exceeding the buffer length without triggering an error. An attacker could exploit this vulnerability by crafting a malicious PDF to induce a denial-of-service  (DoS) condition, consuming excessive CPU resources. This exploit occurs because the lexer continues searching for the terminator even after the buffer bounds have been exceeded.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `pdfjs` library to the patch version.",
+  "vulnerable_to": "Infinite Loop",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 47,
+  "changelog": "https://github.com/rkusa/pdfjs/blob/main/CHANGELOG.md",
+  "last_modified": "2025-07-02",
+  "published": "2025-07-02"
+}

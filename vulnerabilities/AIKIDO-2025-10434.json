@@ -1,0 +1,27 @@
+{
+  "package_name": "mariadb",
+  "patch_versions": [
+    "3.4.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "3.4.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-295"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper certificate validation when connecting to a MariaDB server. Specifically, the `servername` parameter is not properly validated during the TLS handshake, resulting in a failure to verify the server's identity. This flaw allows attackers with a valid certificate for a different hostname to impersonate the server, potentially enabling man-in-the-middle (MITM) attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mariadb` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Certificate Validation",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/mariadb-corporation/mariadb-connector-nodejs/releases/tag/3.4.3",
+  "last_modified": "2025-07-03",
+  "published": "2025-07-03"
+}

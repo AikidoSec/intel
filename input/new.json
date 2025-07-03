@@ -1,25 +1,15 @@
 {
-  "package_name": "utopia-php/framework",
-  "patch_versions": [
-    "0.34.7"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.20.0",
-      "0.34.6"
-    ]
-  ],
-  "cwe": [
-    "CWE-94"
-  ],
-  "tldr": "Affected versions of the package are vulnerable to remote code execution (RCE). If a request parameter contains a callable value such as `explode`, `phpinfo`, or any other invocable entity, `utopia-php/framework` may attempt to invoke it during request handling. This can allow attackers to execute arbitrary code by supplying malicious input, due to insufficient validation of request-derived callables.",
-  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges.",
-  "how_to_fix": "Upgrade the `utopia-php/framework` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Remote Code Execution (RCE)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "HIGH",
-  "aikido_score": 88,
-  "changelog": "https://github.com/utopia-php/http/releases/tag/0.34.7"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

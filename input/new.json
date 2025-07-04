@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "Multer",
+  "patch_versions": [
+    "2.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.4.4-lts.1",
+      "2.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-248"
+  ],
+  "tldr": "Multer, a Node.js middleware for handling `multipart/form-data`, contains a vulnerability in versions `1.4.4-lts.1` up to `2.0.0`. An attacker can exploit this flaw to trigger a Denial of Service (DoS) by submitting a file upload request with an empty string as a field name. This results in an unhandled exception, causing the process to crash.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Multer` library to the patch version.",
+  "vulnerable_to": "Uncaught Exception",
+  "related_cve_id": "CVE-2025-48997",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 87,
+  "changelog": "https://github.com/expressjs/multer/releases/tag/v2.0.1"
 }

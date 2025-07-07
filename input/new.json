@@ -1,15 +1,30 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "electron",
+  "patch_versions": ["10.1.2", "9.3.1", "8.5.2"],
+  "vulnerable_ranges": [
+    [
+      "10.0.0",
+      "10.1.1"
+    ],
+    [
+      "9.0.0",
+      "9.3.0"
+    ],
+    [
+      "8.0.0",
+      "8.5.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-668"
+  ],
+  "tldr": "Electron before versions 11.0.0-beta.6, 10.1.2, 9.3.1 or 8.5.2 is vulnerable to a context isolation bypass. This is a context isolation bypass, meaning that code running in the main world context in the renderer can reach into the isolated Electron context and perform privileged actions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and if your app enables both `contextIsolation` and `sandbox: true`, or if it combines `contextIsolation` with `nodeIntegrationInSubFrames: true`..",
+  "how_to_fix": "Upgrade the `electron` library to a patch version.",
+  "vulnerable_to": "Context Isolation Bypass",
+  "related_cve_id": "CVE-2020-15215",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 31,
+  "changelog": "https://www.cve.org/CVERecord?id=CVE-2020-15215"
 }

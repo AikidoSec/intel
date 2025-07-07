@@ -1,0 +1,31 @@
+{
+  "package_name": "logstash-output-tcp",
+  "patch_versions": [
+    "6.2.2",
+    "7.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.0.0",
+      "6.2.1"
+    ],
+    [
+      "7.0.0",
+      "7.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-295"
+  ],
+  "tldr": "Improper certificate validation in Logstash's TCP output could lead to a man-in-the-middle (MitM) attack in “client” mode, as hostname verification in TCP output was not being performed when the ssl_verification_mode => full was set.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `logstash-output-tcp` library to the patch version.",
+  "vulnerable_to": "Improper Certificate Validation",
+  "related_cve_id": "CVE-2025-37730",
+  "language": "Ruby",
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
+  "changelog": "https://github.com/logstash-plugins/logstash-output-tcp/commit/e32bd16a1d96cd0bc821fa4b93149934050f4040",
+  "last_modified": "2025-07-07",
+  "published": "2025-07-07"
+}

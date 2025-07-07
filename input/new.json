@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@orpc/openapi-client",
+  "patch_versions": [
+    "1.6.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.48.0",
+      "1.6.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-789"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Memory Exhaustion via Bracket Notation Array Index due to missing a configurable upper limit for array indices in StandardBracketNotationSerializer, allowing attackers to craft malicious inputs with extremely large array indices (e.g., 1e9) that trigger excessive memory allocation, potentially leading to denial of service (DoS) by exhausting system resources.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@orpc/openapi-client` library to a patch version.",
+  "vulnerable_to": "Memory Allocation with Excessive Size Value",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/unnoq/orpc/releases/tag/v1.6.6"
 }

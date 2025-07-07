@@ -1,15 +1,15 @@
 {
-  "package_name": "cadwyn",
-  "patch_versions": ["5.4.3"],
-  "vulnerable_ranges": [["3.15.0", "5.4.2"]],
-  "cwe": ["CWE-79"],
-  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) due to improper sanitization of the version parameter in both `redoc_dashboard` and `swagger_dashboard` functions. These functions dynamically construct an `openapi_url` by embedding the user-supplied `version` value into the response without proper escaping, allowing an attacker to inject malicious JavaScript code. If an attacker crafts a malicious `version` parameter containing script payloads (e.g.,`?version='><script>alert(1)</script>`), the payload could execute in the victim's browser when the documentation is rendered.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `cadwyn` library to a patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Python",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
-  "changelog": "https://github.com/zmievsa/cadwyn/releases/tag/5.4.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

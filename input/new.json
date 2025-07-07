@@ -19,7 +19,7 @@
     "CWE-668"
   ],
   "tldr": "Electron before versions 11.0.0-beta.6, 10.1.2, 9.3.1 or 8.5.2 is vulnerable to a context isolation bypass. This is a context isolation bypass, meaning that code running in the main world context in the renderer can reach into the isolated Electron context and perform privileged actions.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and if your app enables both `contextIsolation` and `sandbox: true`, or if it combines `contextIsolation` with `nodeIntegrationInSubFrames: true`..",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and if your app enables both `contextIsolation` and `sandbox: true`, or if it combines `contextIsolation` with `nodeIntegrationInSubFrames: true`.",
   "how_to_fix": "Upgrade the `electron` library to a patch version.",
   "vulnerable_to": "Context Isolation Bypass",
   "related_cve_id": "CVE-2020-15215",

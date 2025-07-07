@@ -1,0 +1,26 @@
+{
+  "package_name": "pdf2html",
+  "patch_versions": [
+    "4.3.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.1.0",
+      "4.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to path traversal due to insufficient validation of the `filepath` parameter in the `generateImage` function. An attacker could manipulate `filepath` to escape the intended directory by using relative paths, allowing arbitrary file read/write operations when processing PDFs or generating images, potentially leading to unauthorized access or system compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `pdf2html` library to a patch version.",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 72,
+  "changelog": "https://github.com/shebinleo/pdf2html/releases/tag/v4.3.1",
+  "last_modified": "2025-07-07",
+  "published": "2025-07-07"
+}

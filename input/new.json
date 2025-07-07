@@ -1,24 +1,15 @@
 {
-  "package_name": "pdf2html",
-  "patch_versions": [
-    "4.3.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "4.0.0",
-      "4.3.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) due to improper sanitization of HTML content in the `extractPages` function. The function used to extract `.page` elements returns either raw HTML or text without sanitizing user-supplied input, allowing attackers to inject malicious scripts. An attacker could exploit this vulnerability by crafting a payload within a `.page` element, which would then be rendered unsanitized in the browser, allowing arbitrary JavaScript to execute in the context of the victim's session. It could lead to session hijacking, data theft, or other malicious actions.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `pdf2html` library to a patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 88,
-  "changelog": "https://github.com/shebinleo/pdf2html/releases/tag/v4.3.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

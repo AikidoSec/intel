@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "5.8.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "5.8.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-497"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Information Disclosure due to prematurely exposing sensitive parameters (`announcements`, `baseCpUrl`, `cpTrigger`) before validating request origin. An attacker could exploit this by crafting a malicious request to retrieve internal system details, such as admin panel URLs or trigger paths, potentially facilitating further attacks like CSRF or unauthorized access to the control panel.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to a patch version.",
+  "vulnerable_to": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 13,
+  "changelog": "https://github.com/craftcms/cms/blob/5.x/CHANGELOG.md"
 }

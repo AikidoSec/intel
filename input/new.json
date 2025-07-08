@@ -14,7 +14,7 @@
   ],
   "tldr": "Affected versions of this package enable the Prism server by default in new installations without access restrictions, exposing it to the entire internet. Attackers can exploit these open servers to perform unauthorized actions, such as consuming resources or executing malicious operations. This misuse can lead to significant financial costs for the server owner due to excessive resource consumption or service abuse.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `prism-php/prism` library to a patch version or set `PRISM_SERVER_ENABLED` config to true.",
+  "how_to_fix": "Upgrade the `prism-php/prism` library to a patch version or set `PRISM_SERVER_ENABLED` config to false.",
   "vulnerable_to": "Incorrect Permission Assignment for Critical Resource",
   "related_cve_id": "",
   "language": "PHP",

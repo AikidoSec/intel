@@ -14,7 +14,9 @@
       "4.16.2"
     ]
   ],
-  "cwe": [],
+  "cwe": [
+    "CWE-94"
+  ],
   "tldr": "Affected versions of this package are vulnerable to Remote Code Execution (RCE). The vulnerability arises due to insufficient validation of the `dbBackupPath` parameter, allowing an attacker to bypass the security checks by providing a malicious path. By crafting a request with a manipulated `dbBackupPath` that points to a controlled file outside the intended directory, an attacker can trigger the restoration of a malicious database backup, potentially leading to arbitrary code execution. This exploit requires the attacker to have the permissions to supply crafted input to the `actionRestoreDb` function, such as through a manipulated API request or a compromised account.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `craftcms/cms` library to a patch version.",

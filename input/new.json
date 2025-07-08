@@ -13,7 +13,7 @@
     "CWE-94"
   ],
   "tldr": "Affected versions of this package contain multiple critical security vulnerabilities, including insufficient protection against SQL injection due to improper use of parameterized queries, inadequate validation leading to path traversal, lack of safeguards against server-side request forgery (SSRF), and improper input sanitization that allows command injection. These issues may enable attackers to access or manipulate sensitive data, interact with internal services, or execute arbitrary commands on the host system.",
-  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges and if you are using the `NativeJob` class.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges.",
   "how_to_fix": "Upgrade the `PraisonAI` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Remote Code Execution (RCE)",

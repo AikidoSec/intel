@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "prism-php/prism",
+  "patch_versions": [
+    "0.79.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.78.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-732"
+  ],
+  "tldr": "Affected versions of this package enable the Prism server by default in new installations without access restrictions, exposing it to the entire internet. Attackers can exploit these open servers to perform unauthorized actions, such as consuming resources or executing malicious operations. This misuse can lead to significant financial costs for the server owner due to excessive resource consumption or service abuse.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `prism-php/prism` library to a patch version.",
+  "vulnerable_to": "Incorrect Permission Assignment for Critical Resource",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/prism-php/prism/releases/tag/v0.79.0"
 }

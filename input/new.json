@@ -1,29 +1,15 @@
 {
-  "package_name": "craftcms/cms",
-  "patch_versions": [
-    "5.8.4",
-    "4.16.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "5.0.0",
-      "5.8.3"
-    ],
-    [
-      "3.0.0",
-      "4.16.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-94"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Remote Code Execution (RCE). The vulnerability arises due to insufficient validation of the `dbBackupPath` parameter, allowing an attacker to bypass the security checks by providing a malicious path. By crafting a request with a manipulated `dbBackupPath` that points to a controlled file outside the intended directory, an attacker can trigger the restoration of a malicious database backup, potentially leading to arbitrary code execution. This exploit requires the attacker to have the permissions to supply crafted input to the `actionRestoreDb` function, such as through a manipulated API request or a compromised account.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `craftcms/cms` library to a patch version.",
-  "vulnerable_to": "Remote Code Execution (RCE)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 61,
-  "changelog": "https://github.com/craftcms/cms/blob/5.x/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

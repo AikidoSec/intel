@@ -1,0 +1,26 @@
+{
+  "package_name": "deno",
+  "patch_versions": [
+    "2.4.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.44.0",
+      "2.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-125"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an Out-of-Bounds (OOB) read due to improper handling of Buffer objects in the `HTTP/2` client implementation. When the encoding is set to `buffer`, the code uses `chunk.buffer` without accounting for the byte offset and length of the original `TypedArray/Buffer` view, causing the entire underlying `ArrayBuffer` to be transmitted. An attacker could exploit this by crafting a Buffer slice from a larger memory region containing sensitive data, where the transmission of the entire underlying `ArrayBuffer` via `op_http2_client_send_data()` exposes adjacent memory contents beyond the intended chunk boundaries, leading to information disclosure or crashes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `deno` library to a patch version.",
+  "vulnerable_to": "Out-of-bounds Read",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 41,
+  "changelog": "https://github.com/denoland/deno/releases/tag/v2.4.1",
+  "last_modified": "2025-07-09",
+  "published": "2025-07-09"
+}

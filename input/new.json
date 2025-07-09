@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/grafana/synthetic-monitoring-agent",
-  "patch_versions": [
-    "0.38.4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.25.0",
-      "0.38.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-497"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Sensitive Information Disclosure, where sensitive credentials are recorded in application logs or JSON outputs during logging with zerolog or data serialization. It occurs when the package fails to sanitize password fields before processing, exposing them in cleartext within log entries or API responses. Attackers with access to these logs, via compromised systems, misconfigured storage, or internal threats, can directly harvest passwords, enabling credential theft, account takeover, or lateral movement within the environment without requiring advanced exploitation techniques.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/grafana/synthetic-monitoring-agent` library to a patch version.",
-  "vulnerable_to": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 20,
-  "changelog": "https://github.com/grafana/synthetic-monitoring-agent/releases/tag/v0.38.4"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

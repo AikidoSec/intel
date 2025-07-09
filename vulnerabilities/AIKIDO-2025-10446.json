@@ -1,12 +1,17 @@
 {
   "package_name": "craftcms/cms",
   "patch_versions": [
-    "5.8.4"
+    "5.8.4",
+    "4.16.4"
   ],
   "vulnerable_ranges": [
     [
       "5.0.0",
       "5.8.3"
+    ],
+    [
+      "4.0.0",
+      "4.16.3"
     ]
   ],
   "cwe": [

@@ -1,29 +1,15 @@
 {
-  "package_name": "@havesource/cordova-plugin-push",
-  "patch_versions": [
-    "1.0.1",
-    "2.0.1",
-    "3.0.2",
-    "4.0.1",
-    "5.0.6"
-  ],
-  "vulnerable_ranges": [
-    ["1.0.0", "1.0.0"],
-    ["2.0.0", "2.0.0"],
-    ["3.0.0", "3.0.1"],
-    ["4.0.0", "4.0.0"],
-    ["5.0.0", "5.0.5"]
-  ],
-  "cwe": [
-    "CWE-926"
-  ],
-  "tldr": "Affected versions of this package have a security misconfiguration due to inappropriately exported `Android` components. Before the fix, these components had `android:exported=true`, allowing any malicious application on the same device to interact with them. An attacker could exploit this by crafting and sending malicious intents to trigger unauthorized actions, such as forcing the app to handle manipulated push notifications, intercepting sensitive data, or causing denial-of-service crashes, bypassing standard security boundaries.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@havesource/cordova-plugin-push` library to the patch version.",
-  "vulnerable_to": "Improper Export of Android Application Components",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 15,
-  "changelog": "https://github.com/havesource/cordova-plugin-push/blob/master/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

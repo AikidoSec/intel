@@ -1,0 +1,32 @@
+{
+  "package_name": "drupal/mail_login",
+  "patch_versions": [
+    "3.2.0",
+    "4.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.1.0"
+    ],
+    [
+      "4.0.0",
+      "4.0.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-307"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to brute-force attacks due to incomplete protection mechanisms on the login form. Although the module implements some safeguards, they can be bypassed by an attacker, potentially allowing repeated login attempts and unauthorized account access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/mail_login` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Restriction of Excessive Authentication Attempts",
+  "related_cve_id": "CVE-2025-7393",
+  "language": "PHP",
+  "severity_class": "CRITICAL",
+  "aikido_score": 98,
+  "changelog": "https://www.drupal.org/sa-contrib-2025-088",
+  "last_modified": "2025-07-10",
+  "published": "2025-07-10"
+}

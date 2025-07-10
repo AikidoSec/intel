@@ -1,0 +1,26 @@
+{
+  "package_name": "typeson",
+  "patch_versions": [
+    "9.0.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.11.0",
+      "9.0.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution via the `lib.setAtKeyPath` function. An attacker can craft input containing an `Object.prototype` setter to inject or alter properties on the global prototype chain. This can lead to a denial of service (DoS) at minimum, but the impact can escalate significantly depending on how the library is used within an application. If polluted properties propagate into sensitive Node.js APIs—such as `exec` or `eval`—the vulnerability may enable arbitrary command execution in the application's context, resulting in remote code execution or other injection-based attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `typeson` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 73,
+  "changelog": "https://github.com/dfahlander/typeson/blob/master/CHANGES.md",
+  "last_modified": "2025-07-10",
+  "published": "2025-07-10"
+}

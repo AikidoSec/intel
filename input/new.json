@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "gltf-pipeline",
+  "patch_versions": [
+    "4.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.4",
+      "4.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Local File Inclusion (LFI) via absolute path manipulation in gltf-pipeline, a library used for optimizing and converting glTF/glB 3D models. While the library restricts remote HTTP(s) URI fetching, it fails to validate absolute paths, allowing attackers to embed arbitrary local files into the generated glB output when processing maliciously crafted models. An attacker could exploit this by providing a buffer resource as a file URL, leading to unauthorized file disclosure if the library is used in server-side workflows. This could expose sensitive system files or application data depending on the server's permissions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and if you are using it in a production environment.",
+  "how_to_fix": "Upgrade the `gltf-pipeline` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 77,
+  "changelog": "https://github.com/CesiumGS/gltf-pipeline/blob/main/CHANGES.md"
 }

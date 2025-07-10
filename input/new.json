@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@liveblocks/core",
+  "patch_versions": [
+    "3.1.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.8.0",
+      "3.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) due to improper URL validation in the URL sanitization function. The function only checks for URLs starting with `http://`, `https://`, or `www.`, returning them unmodified or prepending `https://` to `www.` inputs, while returning `undefined` for all other cases. Suppose the calling code falls back to the original unsanitized input when `undefined` is returned. In that case, an attacker can exploit this by supplying a malicious `javascript:` URL (e.g., `javascript:alert(document.cookie)`), which executes arbitrary code in the victim's browser when triggered.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@liveblocks/core` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 63,
+  "changelog": "https://github.com/liveblocks/liveblocks/blob/main/CHANGELOG.md"
 }

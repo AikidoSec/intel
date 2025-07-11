@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "clearml",
+  "patch_versions": [
+    "2.0.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.8.0",
+      "2.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-59"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to path traversal when extracting tar archives containing malicious symlinks, as the `safe_extract` function checks directory traversal for regular files but does not properly validate symbolic links, allowing an attacker to write arbitrary files outside the target directory by including specially crafted symlinks in the archive.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `clearml` library to the patch version.",
+  "vulnerable_to": "Improper Link Resolution Before File Access ('Link Following')",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/clearml/clearml/releases/tag/v2.0.2"
 }

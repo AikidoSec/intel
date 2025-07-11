@@ -1,5 +1,5 @@
 {
-  "package_name": "Electron",
+  "package_name": "electron",
   "patch_versions": [
     "30.0.5"
   ],
@@ -14,7 +14,7 @@
   ],
   "tldr": "Electron is an open source framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. From versions 30.0.0-alpha.1 to before 30.0.5 and 31.0.0-alpha.1 to before 31.0.0-beta.1, Electron is vulnerable to an ASAR Integrity bypass.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and the application must be launched from a writable filesystem on Windows when the `embeddedAsarIntegrityValidation` and `onlyLoadAppFromAsar` fuses are enabled.",
-  "how_to_fix": "Upgrade the `Electron` library to the patch version.",
+  "how_to_fix": "Upgrade the `electron` library to the patch version.",
   "vulnerable_to": "ASAR Integrity Bypass By Just Modifying The Content",
   "related_cve_id": "CVE-2024-46992",
   "language": "JS",

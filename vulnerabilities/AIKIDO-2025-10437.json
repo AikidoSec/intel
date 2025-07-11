@@ -1,5 +1,5 @@
 {
-  "package_name": "Electron",
+  "package_name": "electron",
   "patch_versions": [
     "28.3.2",
     "29.3.3",
@@ -24,7 +24,7 @@
   ],
   "tldr": "Electron is an open source framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. In versions prior to 28.3.2, 29.3.3, and 30.0.3, the nativeImage.createFromPath() and nativeImage.createFromBuffer() functions call a function downstream that is vulnerable to a heap buffer overflow. An Electron program that uses either of the affected functions is vulnerable to a buffer overflow if an attacker is in control of the image's height, width, and contents. ",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `Electron` library to the patch version.",
+  "how_to_fix": "Upgrade the `electron` library to the patch version.",
   "vulnerable_to": "Heap-based Buffer Overflow",
   "related_cve_id": "CVE-2024-46993",
   "language": "JS",

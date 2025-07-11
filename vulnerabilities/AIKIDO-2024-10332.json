@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `kedro` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Remote Code Execution (RCE)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2024-9701",
   "language": "python",
   "severity_class": "CRITICAL",
   "aikido_score": 91,

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@modelcontextprotocol/sdk",
+  "patch_versions": [
+    "1.15.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.6.0",
+      "1.15.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-613"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Token Expiration Bypass due to a logic flaw in `expiresAt` verification. The token validation logic incorrectly bypasses expiration checks when `authInfo.expiresAt` is set to `0`, as the condition `!authInfo.expiresAt` evaluates to false, skipping the expiration validation entirely. This flaw allows tokens with an expiration time of `0`, which should be interpreted as expired or invalid, to be accepted as valid. An attacker could exploit this by crafting or reusing a token with `expiresAt: 0` to bypass intended expiration controls, gaining unauthorized persistent access to protected resources.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@modelcontextprotocol/sdk` library to the patch version.",
+  "vulnerable_to": "Insufficient Session Expiration",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/1.15.1"
 }

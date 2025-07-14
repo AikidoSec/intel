@@ -13,7 +13,7 @@
     "CWE-200"
   ],
   "tldr": "Affected versions of this package are vulnerable to Improper Access Control on Service Connector Secrets, where ZenML stored service connector credentials as standard secrets visible via the API. This allowed unauthorized users to list, retrieve, or modify these secrets, potentially exposing sensitive credentials (e.g., cloud keys) and enabling theft, privilege escalation, or service disruption. Attackers could exploit this by querying the secrets API to access protected resources impersonating the connector, compromising linked infrastructure.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and the application must be launched from a writable filesystem on Windows when the `embeddedAsarIntegrityValidation` and `onlyLoadAppFromAsar` fuses are enabled.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `zenml` library to the patch version.",
   "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
   "related_cve_id": "",

@@ -18,7 +18,7 @@
   "vulnerable_to": "Insufficient Session Expiration",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 70,
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
   "changelog": "https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/1.15.1"
 }

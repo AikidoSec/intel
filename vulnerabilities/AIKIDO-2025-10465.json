@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/athenZ/Athenz",
+  "patch_versions": [
+    "1.12.20"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.12.13",
+      "1.12.19"
+    ]
+  ],
+  "cwe": [
+    "CWE-497"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to sensitive information exposure due to improper logging of CSRF tokens and Okta callback URIs, which could allow an attacker to intercept these values from log files or system outputs and use them to potentially predict CSRF token algorithm logic, or manipulate authentication flows by replaying captured tokens or redirecting to malicious callback URIs.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/athenZ/Athenz` library to the patch version.",
+  "vulnerable_to": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 7,
+  "changelog": "https://github.com/AthenZ/athenz/releases/tag/v1.12.20",
+  "last_modified": "2025-07-15",
+  "published": "2025-07-15"
+}

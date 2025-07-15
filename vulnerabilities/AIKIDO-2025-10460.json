@@ -1,0 +1,26 @@
+{
+  "package_name": "petl",
+  "patch_versions": [
+    "1.7.17"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.7.16"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Arbitrary Code Execution due to unsafe `eval()` usage in `util.base.expr`. The vulnerability occurs when user-controlled inputs `s` are improperly sanitized before being embedded into a lambda expression string that is dynamically evaluated. An attacker can exploit this by injecting malicious Python code within the input string, which breaks out of the intended lambda `rec:context` and executes arbitrary commands with the application's privileges, potentially leading to system compromise or data exfiltration.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `petl` library to the patch version.",
+  "vulnerable_to": "Improper Control of Generation of Code ('Code Injection')",
+  "related_cve_id": "",
+  "language": "Python",
+  "severity_class": "HIGH",
+  "aikido_score": 78,
+  "changelog": "https://github.com/petl-developers/petl/releases/tag/v1.7.17",
+  "last_modified": "2025-07-15",
+  "published": "2025-07-15"
+}

@@ -1,24 +1,15 @@
 {
-  "package_name": "csv-stringify",
-  "patch_versions": [
-    "6.6.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "6.1.0",
-      "6.5.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-1236"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to CSV injection due to insufficient escaping logic in the `escape_formulas` parameter. This feature attempts to neutralize formula-triggering, but fails to cover all dangerous characters or multi-byte Unicode sequences. An attacker could exploit this by crafting payloads starting with unhandled characters (such as line feeds or specially formatted Unicode), which, when imported into spreadsheet applications, execute arbitrary commands, exfiltrate data, or manipulate local files via crafted formulas like `=cmd|'/C calc'!A0` hidden in exported CSV cells.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `csv-stringify` library to the patch version.",
-  "vulnerable_to": "Improper Neutralization of Formula Elements in a CSV File",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 80,
-  "changelog": "https://github.com/adaltas/node-csv/blob/master/packages/csv-stringify/CHANGELOG.md#660-2025-07-10"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,0 +1,26 @@
+{
+  "package_name": "@polkadot/apps-config",
+  "patch_versions": [
+    "0.159.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.42.1",
+      "0.159.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to clickjacking and UI redress attacks due to missing security headers (`X-Frame-Options` and `Content-Security-Policy`) in the app configuration, which fail to disallow frame embedding. An attacker could exploit this by embedding the application within a malicious webpage using an iframe, tricking users into interacting with hidden or disguised elements, potentially leading to unauthorized actions or data theft.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@polkadot/apps-config` library to a patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/polkadot-js/apps/releases/tag/v0.159.1",
+  "last_modified": "2025-07-15",
+  "published": "2025-07-15"
+}

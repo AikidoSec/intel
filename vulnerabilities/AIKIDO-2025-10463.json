@@ -1,0 +1,26 @@
+{
+  "package_name": "@cosmjs/faucet-client",
+  "patch_versions": [
+    "0.34.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.26.8",
+      "0.33.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS) due to inefficient slash-stripping logic in a regular expression. The vulnerability allows attackers to craft malicious inputs containing excessive consecutive slashes, triggering catastrophic backtracking in the regex engine. It causes exponentially increasing processing time, consumes CPU resources indefinitely, and leads to application hang or crash. Successful exploitation results in a denial of service, disrupting service availability without requiring authentication.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@cosmjs/faucet-client` library to the patch version.",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/cosmos/cosmjs/releases/tag/v0.34.0",
+  "last_modified": "2025-07-15",
+  "published": "2025-07-15"
+}

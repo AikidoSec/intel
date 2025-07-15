@@ -1,0 +1,26 @@
+{
+  "package_name": "frappe-js-sdk",
+  "patch_versions": [
+    "1.10.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.2.2",
+      "1.9.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-352"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-Site Request Forgery due to reusing outdated CSRF tokens cached during initial page load rather than dynamically fetching the latest tokens from the `window` object for each request. This flaw allows attackers to capture a token before server-side rotation, then forge malicious requests during the grace period where both old and new tokens remain valid. By tricking an authenticated user into executing these requests, attackers could bypass CSRF protections to perform unauthorized actions like account takeover or data manipulation, leveraging the server's acceptance of stale tokens.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `frappe-js-sdk` library to the patch version.",
+  "vulnerable_to": "Cross-Site Request Forgery (CSRF)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/The-Commit-Company/frappe-js-sdk/releases/tag/v1.10.0",
+  "last_modified": "2025-07-15",
+  "published": "2025-07-15"
+}

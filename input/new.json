@@ -1,25 +1,15 @@
 {
-  "package_name": "github.com/containers/storage",
-  "patch_versions": [
-    "1.59.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "1.58.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-401"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to memory leaks due to pruned lockfiles from overlay staging being retained in the global cache. This results in unused data accumulating over time, potentially degrading performance and exhausting system memory.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/containers/storage` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Memory Leak",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 30,
-  "changelog": "https://github.com/containers/storage/releases/tag/v1.59.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

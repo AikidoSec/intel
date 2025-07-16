@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "codeigniter4/shield",
+  "patch_versions": [
+    "1.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to XSS via unescaped session variables due to improper output sanitization of HTML-injectable session parameters `error` and `message`, where the code directly injects session content without escaping. An attacker can exploit this vulnerability by crafting malicious payloads into these session variables, typically by manipulating error-triggering operations, such as failed logins, which are then rendered and executed in victims' browsers when they view the error page, enabling session hijacking or credential theft.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `codeigniter4/shield` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
+  "changelog": "https://github.com/codeigniter4/shield/releases/tag/v1.2.0"
 }

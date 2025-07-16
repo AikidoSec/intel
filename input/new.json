@@ -1,15 +1,15 @@
 {
-  "package_name": "",
+  "package_name": "slice-ring-buffer",
   "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "vulnerable_ranges": "*",
+  "cwe": ["CWE-1104"],
+  "tldr": "The slice-ring-buffer crate was forked from the unmaintained slice-deque (RUSTSEC-2020-0158) to provide maintenance and security patches. Although it resolved some inherited memory safety issues (RUSTSEC-2021-0047), it retains unresolved vulnerabilities. Four new memory safety bugs causing double-free violations have been discovered, each triggered by distinct safe APIs due to internal unsafe code misuse. These expose unsound behavior. The maintainer currently lacks availability to address them, with no fix timeline. Community contributions to resolve these vulnerabilities are urgently needed.",
+  "doest_this_affect_me": "You are affected if you are using this package.",
+  "how_to_fix": "Remove any `slice-ring-buffer` package from your application.",
+  "vulnerable_to": "Use of Unmaintained Third Party Components",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "rust",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0044.html"
 }

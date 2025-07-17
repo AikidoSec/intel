@@ -1,0 +1,27 @@
+{
+  "package_name": "drupal/eu_cookie_compliance",
+  "patch_versions": [
+    "1.26.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.25.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS). The module fails to properly validate \"disabled JavaScript\" entries, allowing attackers to inject and execute arbitrary JavaScript by submitting invalid or non-existent script references, which the module attempts to process. The vulnerability is mitigated by the requirement that an attacker must have a role with the \"Administer EU Cookie Compliance banner\" permission.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/eu_cookie_compliance` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross Site Scripting (XSS)",
+  "related_cve_id": "CVE-2025-48917",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://www.drupal.org/sa-contrib-2025-072",
+  "last_modified": "2025-07-17",
+  "published": "2025-07-17"
+}

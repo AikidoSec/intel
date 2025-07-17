@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "drupal/toc_js",
+  "patch_versions": [
+    "3.2.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "3.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) due to insufficient sanitization of certain data attributes. The vulnerability is mitigated by the requirement that an attacker must have a role with permission to insert HTML tags containing those specific attributes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/toc_js` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross Site Scripting (XSS)",
+  "related_cve_id": "CVE-2025-48923",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://www.drupal.org/sa-contrib-2025-077"
 }

@@ -1,25 +1,15 @@
 {
-  "package_name": "drupal/single_content_sync",
-  "patch_versions": [
-    "1.4.12"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "1.4.11"
-    ]
-  ],
-  "cwe": [
-    "CWE-862"
-  ],
-  "tldr": "Missing Authorization vulnerability in Drupal Single Content Sync allows Functionality Misuse. While the export feature rightfully bypasses implemented access controls, enabling it to extract all entity data, including private and confidential information, to the mentioned formats, it fails to adequately safeguard the generated output.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `drupal/single_content_sync` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Missing Authorization",
-  "related_cve_id": "CVE-2025-48009",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 53,
-  "changelog": "https://www.drupal.org/sa-contrib-2025-060"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,0 +1,27 @@
+{
+  "package_name": "drupal/paragraphs_table",
+  "patch_versions": [
+    "2.0.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.0.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) due to insufficient sanitization of certain data attributes. The vulnerability is mitigated by the requirement that an attacker must have a role with permission to insert HTML tags containing those specific attributes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/paragraphs_table` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross Site Scripting (XSS)",
+  "related_cve_id": "CVE-2025-6677",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://www.drupal.org/sa-contrib-2025-084",
+  "last_modified": "2025-07-17",
+  "published": "2025-07-17"
+}

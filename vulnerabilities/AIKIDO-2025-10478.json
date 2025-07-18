@@ -1,0 +1,27 @@
+{
+  "package_name": "drupal/colorbox",
+  "patch_versions": [
+    "2.1.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.1.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "The Colorbox module doesn't sufficiently sanitize data attributes before opening modals.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/colorbox` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "CVE-2025-3900",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://www.drupal.org/sa-contrib-2025-041",
+  "last_modified": "2025-07-18",
+  "published": "2025-07-18"
+}

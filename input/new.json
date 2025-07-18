@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "supabase",
+  "patch_versions": [
+    "2.31.15"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.31.14"
+    ]
+  ],
+  "cwe": [
+    "CWE-1391"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to JWT secret brute-force attacks due to insufficient secret length validation, allowing attackers to exploit weak secrets through offline brute-force techniques. Attackers can use tools to rapidly test millions of potential secrets against captured JWTs; successful guesses enable token forgery and authentication bypass. It compromises all JWT-protected endpoints, permitting unauthorized data access, account takeovers, or administrative privilege escalation. The risk intensifies if default/guessable secrets (e.g., `secret123`) remain undetected during deployment.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `supabase` library to the patch version.",
+  "vulnerable_to": "Use of Weak Credentials",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/supabase/cli/releases/tag/v2.31.5"
 }

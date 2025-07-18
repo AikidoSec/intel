@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@google/genai",
+  "patch_versions": [
+    "1.10.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.3.0",
+      "1.9.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to the exposure of API keys through URL query parameters. It occurs when sensitive keys are included in the URL query strings during API requests, which can expose them in web server logs, browser histories, or through network monitoring tools. An attacker could exploit this vulnerability by intercepting web traffic, collecting exposed URLs from public repositories or compromised logging systems, or using browser-side attacks to capture query parameters. It could lead to the theft of valid API keys, allowing unauthorized access to protected resources or impersonating legitimate users.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@google/genai` library to the patch version.",
+  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/googleapis/js-genai/releases/tag/v1.10.0"
 }

@@ -1,0 +1,27 @@
+{
+  "package_name": "drupal/search_api_solr",
+  "patch_versions": [
+    "4.3.9"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "4.3.8"
+    ]
+  ],
+  "cwe": [
+    "CWE-352"
+  ],
+  "tldr": "The module doesn't sufficiently protect certain routes from CSRF attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/search_api_solr` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-Site Request Forgery (CSRF)",
+  "related_cve_id": "CVE-2025-3907",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
+  "changelog": "https://www.drupal.org/sa-contrib-2025-046",
+  "last_modified": "2025-07-18",
+  "published": "2025-07-18"
+}

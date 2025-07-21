@@ -18,7 +18,7 @@
   "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 70,
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
   "changelog": "https://github.com/inertiajs/inertia/releases/tag/v2.0.15"
 }

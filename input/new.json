@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@1password/connect",
+  "patch_versions": [
+    "1.4.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.1",
+      "1.4.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to sensitive information exposure in error logs due to improper exception handling. When the SDK encounters an error communicating with the `1Password Connect` server, it throws an Exception containing the full HTTP request details, including the `Authorization` header bearing the sensitive Connect access token. An attacker with access to these log files can easily extract the exposed access token and use it to gain unauthorized access to the 1Password Connect API, potentially compromising secrets managed by 1Password.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@1password/connect` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/1Password/connect-sdk-js/releases/tag/v1.4.2"
 }

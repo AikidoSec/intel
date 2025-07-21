@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "panel",
+  "patch_versions": [
+    "1.7.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.5.0",
+      "1.7.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-306"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Authentication Bypass via unprotected static file endpoint due to improper access controls when serving static directories via the `--static-dirs` flag. Attackers can exploit this by accessing direct URLs without OAuth authentication, enabling unauthorized file downloads. It occurs because the static file endpoint lacks authentication checks, exposing all files in the designated directory to unauthenticated users.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `panel` library to the patch version.",
+  "vulnerable_to": "Missing Authentication for Critical Function",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/holoviz/panel/releases/tag/v1.7.4"
 }

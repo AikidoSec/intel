@@ -1,0 +1,26 @@
+{
+  "package_name": "@inertiajs/react",
+  "patch_versions": [
+    "2.0.15"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.0.14"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) where server-side rendering fails to escape double quotes within attribute values, resulting in invalid HTML that disrupts the page structure. An attacker could exploit this by injecting double quotes into controlled attribute values to break out of the attribute context and append malicious attributes or event handlers, potentially enabling XSS attacks when browsers parse the corrupted HTML. This could compromise user sessions, steal sensitive data, or perform unauthorized actions in the victim's security context.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@inertiajs/react` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/inertiajs/inertia/releases/tag/v2.0.15",
+  "last_modified": "2025-07-22",
+  "published": "2025-07-22"
+}

@@ -1,24 +1,15 @@
 {
-  "package_name": "panel",
-  "patch_versions": [
-    "1.7.4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.14.0",
-      "1.7.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) in authentication handling. The vulnerability occurs when the `login` endpoint fails to properly sanitize parameters during authentication, allowing `URL-encoded scripts` to execute instead of returning expected errors. An attacker can exploit this by crafting a malicious URL and tricking victims into clicking it, enabling arbitrary JavaScript execution in their browser session to steal credentials or hijack authentication tokens.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `panel` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Python",
-  "severity_class": "MEDIUM",
-  "aikido_score": 40,
-  "changelog": "https://github.com/holoviz/panel/releases/tag/v1.7.4"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

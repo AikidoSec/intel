@@ -1,25 +1,15 @@
 {
-  "package_name": "drupal/stage_file_proxy",
-  "patch_versions": [
-    "3.1.5"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "3.1.4"
-    ]
-  ],
-  "cwe": [
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a Denial of Service (DoS) attack. The module doesn't sufficiently validate the existence of remote files prior to attempting to download and create them. An attacker could send many requests and exhaust disk resources. This vulnerability is mitigated by the fact it only affects sites where the Origin is configured with a trailing slash.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `drupal/stage_file_proxy` library to the patch version. Sites that cannot upgrade immediately can confirm they do not have a trailing slash or remove the trailing slash to mitigate the issue.",
-  "reporter": "",
-  "vulnerable_to": "Denial of Service (DoS)",
-  "related_cve_id": "CVE-2025-3734",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://www.drupal.org/sa-contrib-2025-035"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

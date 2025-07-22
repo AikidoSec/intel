@@ -1,30 +1,15 @@
 {
-  "package_name": "drupal/file_download",
-  "patch_versions": [
-    "1.9.0",
-    "2.0.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "1.8.0"
-    ],
-    [
-      "2.0.0",
-      "2.0.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-269"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to access bypass. The File Download module does not properly validate input when processing file access requests, potentially allowing users to bypass restrictions and access private files that should remain inaccessible.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `drupal/file_download` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Access Bypass",
-  "related_cve_id": "CVE-2025-7717",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
-  "changelog": "https://www.drupal.org/sa-contrib-2025-089"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,0 +1,27 @@
+{
+  "package_name": "ghost",
+  "patch_versions": [
+    "5.130.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "5.130.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-1007"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to homoglyph attacks due to insufficient normalization of email addresses. Specifically, the package does not convert Unicode characters in the domain part of email addresses to their ASCII-compatible equivalents. This oversight allows attackers to craft visually deceptive email addresses using Unicode characters that closely resemble legitimate ones (e.g., replacing \"example.com\" with \"exаmple.com\", where the \"a\" is a Cyrillic character). Such homoglyph attacks can be used in phishing, impersonation, or account spoofing scenarios. The patch addresses this issue by introducing a new email normalization utility that converts the domain portion of email addresses to ASCII using Punycode. This ensures that visually similar but technically distinct domain names are treated consistently and securely, reducing the risk of deception or misuse.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ghost` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insufficient Visual Distinction of Homoglyphs Presented to User",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 17,
+  "changelog": "https://github.com/TryGhost/Ghost/releases/tag/v5.130.2",
+  "last_modified": "2025-07-22",
+  "published": "2025-07-22"
+}

@@ -1,0 +1,27 @@
+{
+  "package_name": "drupal/panels",
+  "patch_versions": [
+    "4.9.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "4.8.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-306"
+  ],
+  "tldr": "The module doesn't sufficiently protect sensitive routes, allowing an attacker to view and modify blocks within variants without requiring appropriate permission.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/panels` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Authentication Bypass",
+  "related_cve_id": "CVE-2025-3474",
+  "language": "PHP",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://www.drupal.org/sa-contrib-2025-033",
+  "last_modified": "2025-07-22",
+  "published": "2025-07-22"
+}

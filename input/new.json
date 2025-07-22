@@ -1,25 +1,15 @@
 {
-  "package_name": "wasmi_core",
-  "patch_versions": [
-    "0.48.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.45.0",
-      "0.47.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-190"
-  ],
-  "tldr": "Affected versions of the package are vulnerable to an integer overflow in the `mod::read` function, which could result in crashes or a Denial of Service (DoS). This flaw occurs when an integer value exceeds its maximum limit, potentially causing unexpected behavior or application instability.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `wasmi_core` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Integer Overflow",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "rust",
-  "severity_class": "LOW",
-  "aikido_score": 15,
-  "changelog": "https://github.com/wasmi-labs/wasmi/releases/tag/v0.48.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

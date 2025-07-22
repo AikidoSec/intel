@@ -1,17 +1,15 @@
 {
-  "package_name": "drupal/google_optimize",
+  "package_name": "",
   "patch_versions": [],
-  "vulnerable_ranges": "*",
-  "cwe": [
-    "CWE-1104"
-  ],
-  "tldr": "There is a known security issue with the project that has not been fixed by the maintainer. This package is marked as unsupported.",
-  "doest_this_affect_me": "You are affected if you are using this package.",
-  "how_to_fix": "Remove any drupal/google_optimize package from your application.",
-  "vulnerable_to": "Use of Unmaintained Third Party Components",
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "HIGH",
-  "aikido_score": 80,
-  "changelog": "https://www.drupal.org/sa-contrib-2025-039"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

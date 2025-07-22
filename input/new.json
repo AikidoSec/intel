@@ -1,15 +1,17 @@
 {
-  "package_name": "",
+  "package_name": "drupal/d8_google_optimize_hide_page",
   "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "vulnerable_ranges": "*",
+  "cwe": [
+    "CWE-1104"
+  ],
+  "tldr": "There is a known security issue with the project that has not been fixed by the maintainer. This package is marked as unsupported.",
+  "doest_this_affect_me": "You are affected if you are using this package.",
+  "how_to_fix": "Remove any drupal/d8_google_optimize_hide_page package from your application.",
+  "vulnerable_to": "Use of Unmaintained Third Party Components",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://www.drupal.org/sa-contrib-2025-040"
 }

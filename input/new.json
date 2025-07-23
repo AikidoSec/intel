@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@babylonjs/gui",
+  "patch_versions": [
+    "8.17.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.1.0",
+      "8.17.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to SVG parsing XSS, where image loader insecurely processes SVG content, failing to sanitize non-SVG elements like `<link>` or `<img>` during parsing. It allows attackers to craft malicious SVG images containing embedded scripts or external resource tags that execute when loaded via Babylon.js `GUI.Image` component. Exploitation occurs when a vulnerable application (without proper Content Security Policies) renders user-supplied SVG files, enabling cross-site scripting (XSS) attacks that hijack user sessions, steal data, or perform malicious actions within the application context.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@babylonjs/gui` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/BabylonJS/Babylon.js/releases/tag/8.17.2"
 }

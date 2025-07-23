@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/traefik/traefik/v2",
-  "patch_versions": [
-    "2.11.28"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.3.0",
-      "2.11.27"
-    ]
-  ],
-  "cwe": [
-    "CWE-22"
-  ],
-  "tldr": "Affected versions of this package contain a Directory Traversal vulnerability in Zip Extraction due to insufficient sanitization of filenames during archive processing. Attackers can exploit this by crafting malicious zip archives containing entries with relative paths that, when extracted, resolve outside the intended destination directory. It allows unauthorized file operations such as overwriting critical system files, exposing sensitive data, or achieving remote code execution by modifying executable files.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/traefik/traefik/v2` library to the patch version.",
-  "vulnerable_to": "Path Traversal",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Go",
-  "severity_class": "MEDIUM",
-  "aikido_score": 48,
-  "changelog": "https://github.com/traefik/traefik/releases/tag/v2.11.28"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

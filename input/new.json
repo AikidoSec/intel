@@ -1,24 +1,15 @@
 {
-  "package_name": "openinference-instrumentation-dspy",
-  "patch_versions": [
-    "0.1.26"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "0.1.25"
-    ]
-  ],
-  "cwe": [
-    "CWE-200"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to sensitive information exposure due to improper masking of span attributes containing LLM API keys. These keys may be inadvertently logged or transmitted in plaintext, making them accessible to unauthorized parties. If exposed, attackers could steal valid API keys, potentially gaining unauthorized access to protected services, consuming resources, or impersonating legitimate users. Proper redaction or masking of sensitive attributes is essential to prevent credential leakage and maintain the integrity and security of API-based systems.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `openinference-instrumentation-dspy` library to the patch version.",
-  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Python",
-  "severity_class": "LOW",
-  "aikido_score": 28,
-  "changelog": "https://github.com/Arize-ai/openinference/releases/tag/python-openinference-instrumentation-dspy-v0.1.26"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,5 +1,5 @@
 {
-  "package_name": "Umbraco.Cms.Api.Management",
+  "package_name": "Umbraco.Cms",
   "patch_versions": [
     "16.1.0"
   ],
@@ -14,7 +14,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to Cross-site scripting (XSS) via unsanitized URL injection in the `history.pushState` function. The vulnerability occurs when `window.location.href` is directly embedded into the HTML template without proper encoding, allowing attackers to craft malicious URLs containing JavaScript payloads. When a victim visits a manipulated link (e.g.,` https://victim.site/?\"></script><script>alert(document.cookie)</script>`), the payload executes within the application context, enabling session hijacking, data theft, or malicious actions.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `Umbraco.Cms.Api.Management` library to the patch version.",
+  "how_to_fix": "Upgrade the `Umbraco.Cms` library to the patch version.",
   "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
   "language": "DOTNET",

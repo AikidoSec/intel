@@ -1,25 +1,15 @@
 {
-  "package_name": "@redocly/respect-core",
-  "patch_versions": [
-    "2.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "1.34.5"
-    ]
-  ],
-  "cwe": [
-    "CWE-532"
-  ],
-  "tldr": "Affected versions of the package may inadvertently log sensitive information in verbose logs. Specifically, secret fields such as `token`, `access_token`, `id_token`, and `password`—when present in the response body but not explicitly marked as secret in the input schema—could be exposed in log output. The fixed version addresses this by automatically masking these fields in verbose logs, even if they are not defined as secret in the schema, reducing the risk of credential leakage or accidental exposure of sensitive data.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade `@redocly/respect-core` to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 16,
-  "changelog": "https://github.com/Redocly/redocly-cli/releases/tag/%40redocly/respect-core%402.0.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

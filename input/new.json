@@ -1,15 +1,34 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "ipx",
+  "patch_versions": [
+    "1.3.2",
+    "2.1.1",
+    "3.1.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.3.1"
+    ],
+    [
+      "2.0.0",
+      "2.1.0"
+    ],
+    [
+      "3.0.0",
+      "3.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Path Traversal via prefix bypass, where insufficient path validation occurs when the base directory is defined, allowing malicious inputs that share an initial substring with the target directory. It happens because the sanitization logic fails to distinguish between the exact base directory and user-supplied paths containing the same prefix, treating them as valid. An attacker can exploit this by crafting paths that combine directory traversal sequences (`../`) with deceptive prefixes matching the start of the base directory name, thereby bypassing security checks to access arbitrary files outside the restricted directory, leading to unauthorized information disclosure or system compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ipx` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 81,
+  "changelog": "https://github.com/unjs/ipx/releases/tag/v3.1.1"
 }

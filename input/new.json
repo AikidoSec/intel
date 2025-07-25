@@ -1,15 +1,26 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "modelscope",
+  "org_name": "org.quartz-scheduler",
+  "patch_versions": [
+    "1.28.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.28.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to arbitrary code execution due to unsafe deserialization of user-controlled input when using plugins. Specifically, the `model_revision` parameter can be exploited to inject and execute arbitrary Python code, posing a significant security risk in environments where untrusted input reaches the `pipeline` function. The issue is addressed in the patched version by introducing the `trust_remote_code` parameter in the `from_pretrained` function, which controls whether remote code execution is allowed. By default, this parameter is set to `False`, preventing unauthorized or untrusted code from being executed.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges.",
+  "how_to_fix": "Upgrade the `modelscope` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Remote Code Execution (RCE)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/modelscope/modelscope/releases/tag/v1.28.1"
 }

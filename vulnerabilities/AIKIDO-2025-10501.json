@@ -1,0 +1,27 @@
+{
+  "package_name": "langchain-text-splitters",
+  "patch_versions": [
+    "0.3.9"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.3.8",
+      "0.3.8"
+    ]
+  ],
+  "cwe": [
+    "CWE-611"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to XML External Entity (XXE) attacks due to insecure handling of XML in the `HTMLSectionSplitter` component. This vulnerability allows attackers to read sensitive local files (such as SSH keys, passwords, or configuration files), perform server-side request forgery (SSRF), and exfiltrate data to external servers. The issue stems from the use of the `xslt_path` parameter and insecure parser configurations. The fix removes the `xslt_path` parameter and hardens the XML/HTML parsers with secure settings.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `langchain-text-splitters` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "XML External Entity (XXE) Attack",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "CRITICAL",
+  "aikido_score": 91,
+  "changelog": "https://github.com/langchain-ai/langchain/releases/tag/langchain-text-splitters%3D%3D0.3.9",
+  "last_modified": "2025-07-25",
+  "published": "2025-07-25"
+}

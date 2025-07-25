@@ -1,0 +1,26 @@
+{
+  "package_name": "Umbraco.Cms",
+  "patch_versions": [
+    "16.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "15.3.0",
+      "16.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-site scripting (XSS) via unsanitized URL injection in the `history.pushState` function. The vulnerability occurs when `window.location.href` is directly embedded into the HTML template without proper encoding, allowing attackers to craft malicious URLs containing JavaScript payloads. When a victim visits a manipulated link (e.g.,` https://victim.site/?\"></script><script>alert(document.cookie)</script>`), the payload executes within the application context, enabling session hijacking, data theft, or malicious actions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Umbraco.Cms` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "DOTNET",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/umbraco/Umbraco-CMS/releases/tag/release-16.1.0",
+  "last_modified": "2025-07-25",
+  "published": "2025-07-25"
+}

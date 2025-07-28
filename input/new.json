@@ -1,24 +1,15 @@
 {
-  "package_name": "autogen",
-  "patch_versions": [
-    "0.9.7"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.3.2",
-      "0.9.6"
-    ]
-  ],
-  "cwe": [
-    "CWE-94"
-  ],
-  "tldr": "Affected versions of this package contain an arbitrary code execution vulnerability in the `_object_to_tool_call` function due to unsafe use of `eval()`. The function attempts to convert string items in a list to dictionaries via `eval(item)` without sanitization, allowing attackers to craft malicious strings that execute arbitrary Python code when processed. For example, an attacker could submit a payload like `__import__('os').system('rm -rf /')` as a item, enabling remote command execution, data deletion, or system compromise if the input originates from untrusted sources.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `autogen` library to the patch version.",
-  "vulnerable_to": "Remote Code Execution (RCE)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Python",
-  "severity_class": "HIGH",
-  "aikido_score": 80,
-  "changelog": "https://github.com/ag2ai/ag2/releases/tag/v0.9.7"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

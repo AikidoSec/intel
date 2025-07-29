@@ -1,0 +1,27 @@
+{
+  "package_name": "react-native-share",
+  "patch_versions": [
+    "12.1.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.2.0",
+      "12.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package may expose sensitive information due to the use of `<root-path path=\".\" />` in `share_download_paths.xml`. This configuration grants access to the app’s entire internal storage directory, potentially exposing files and subdirectories that were intended to remain private. As a result, other apps or users may gain unauthorized access to sensitive data such as configuration files, cached content, or authentication tokens. This constitutes a violation of access boundaries, exposing internal resources to a broader and unintended audience.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `react-native-share` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
+  "changelog": "https://github.com/react-native-share/react-native-share/releases/tag/v12.1.1",
+  "last_modified": "2025-07-29",
+  "published": "2025-07-29"
+}

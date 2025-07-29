@@ -19,8 +19,8 @@
   "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 53,
+  "severity_class": "HIGH",
+  "aikido_score": 78,
   "changelog": "https://github.com/react-native-share/react-native-share/releases/tag/v12.1.1",
   "last_modified": "2025-07-29",
   "published": "2025-07-29"

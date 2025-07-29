@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "linkify-react",
+  "patch_versions": [
+    "4.3.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "4.3.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to several potential prototype pollution vulnerabilities, which could allow attackers to manipulate object properties and impact application behavior.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `linkify-react` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "js",
+  "severity_class": "LOW",
+  "aikido_score": 32,
+  "changelog": "https://github.com/nfrasser/linkifyjs/releases/tag/v4.3.2"
 }

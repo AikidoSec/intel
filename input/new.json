@@ -1,15 +1,30 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.16.8",
+    "5.8.11"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "4.16.7"
+    ],
+    [
+      "5.0.0",
+      "5.8.10"
+    ]
+  ],
+  "cwe": [
+    "CWE-384"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to potential session leakage, as requests might be processed after the user session has been established. This timing issue may allow unauthorized parties to intercept or reuse active sessions under certain conditions, increasing the risk of session hijacking or unauthorized access. Proper session handling should ensure that session establishment and validation occur before any sensitive request processing takes place.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Session Fixation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "php",
+  "severity_class": "MEDIUM",
+  "aikido_score": 61,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.8.11"
 }

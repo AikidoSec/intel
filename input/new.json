@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "webssh",
+  "patch_versions": [
+    "1.6.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.4.5",
+      "1.6.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) due to the `log_status` function logging status messages in raw HTML without proper sanitization. This can allow malicious input to be stored and later executed in contexts where the logs are rendered as HTML, potentially enabling attackers to inject and execute arbitrary scripts.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `webssh` library to a patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://github.com/huashengdun/webssh/releases/tag/v1.6.3"
 }

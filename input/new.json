@@ -18,7 +18,7 @@
   "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 88,
+  "severity_class": "LOW",
+  "aikido_score": 20,
   "changelog": "https://github.com/huashengdun/webssh/releases/tag/v1.6.3"
 }

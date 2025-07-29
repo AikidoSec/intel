@@ -1,25 +1,15 @@
 {
-  "package_name": "PdfPig",
-  "patch_versions": [
-    "0.1.11"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.10",
-      "0.1.10"
-    ]
-  ],
-  "cwe": [
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to uncontrolled resource consumption due to maliciously crafted compressed input. When such input is decompressed, it can trigger excessive memory usage, potentially leading to out-of-memory (OOM) errors and application crashes. This vulnerability may be exploited to cause denial of service or disrupt system availability.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `PdfPig` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Uncontrolled Resource Consumption",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "DOTNET",
-  "severity_class": "LOW",
-  "aikido_score": 25,
-  "changelog": "https://github.com/UglyToad/PdfPig/releases/tag/v0.1.11"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

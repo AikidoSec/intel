@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "sentry-actix",
+  "patch_versions": [
+    "0.42.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.9.0",
+      "0.41.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package may inadvertently expose sensitive information by failing to properly sanitize URLs captured during logging or tracing when using the Actix Web or Axum integrations. In particular, usernames and passwords embedded in these URLs could be logged in plain text, posing a security risk. The issue has been addressed in the patched version by ensuring that such sensitive credentials are consistently filtered out before logging.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `sentry-actix` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 21,
+  "changelog": "https://github.com/getsentry/sentry-rust/releases/tag/0.42.0"
 }

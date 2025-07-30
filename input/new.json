@@ -1,6 +1,5 @@
 {
   "package_name": "modelscope",
-  "org_name": "org.quartz-scheduler",
   "patch_versions": [
     "1.28.1"
   ],

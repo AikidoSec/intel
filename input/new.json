@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "drupal/config_pages",
+  "patch_versions": [
+    "2.18.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.17.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-269"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to access bypass due to insufficient enforcement of access control checks. Specifically, the module fails to properly respect the `hook_ENTITY_TYPE_access()` permissions, allowing unauthorized users to access or manipulate entities they should not have permission to view or modify. This oversight can lead to unintended exposure of data or unauthorized operations.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/config_pages` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Access bypass",
+  "related_cve_id": "CVE-2025-8361",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://www.drupal.org/sa-contrib-2025-093"
 }

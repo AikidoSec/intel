@@ -1,25 +1,15 @@
 {
-  "package_name": "globalpayments/php-sdk",
-  "patch_versions": [
-    "13.3.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "13.3.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-532"
-  ],
-  "tldr": "Affected versions may inadvertently log sensitive information when using certain terminal loggers. This can result in the exposure of confidential data such as credentials, tokens, or personally identifiable information in logs, posing a security and compliance risk, especially in shared or production environments.",
-  "doest_this_affect_me": "You are affected if you use the globalpayments/php-sdk package.",
-  "how_to_fix": "Upgrade `globalpayments/php-sdk` to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "LOW",
-  "aikido_score": 20,
-  "changelog": "https://github.com/globalpayments/php-sdk/blob/master/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

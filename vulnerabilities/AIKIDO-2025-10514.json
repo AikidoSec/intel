@@ -1,0 +1,27 @@
+{
+  "package_name": "pg",
+  "patch_versions": [
+    "1.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.18.0",
+      "1.5.9"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to denial-of-service (DoS) attacks due to unexpected segmentation faults in the `pg_tmbc_fit_to_query` function. These faults occur when encoding an array of composite types fails, potentially causing the application to crash. This vulnerability can be exploited to disrupt service availability and lead to repeated application failures.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `pg` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/ged/ruby-pg/blob/master/CHANGELOG.md",
+  "last_modified": "2025-07-31",
+  "published": "2025-07-31"
+}

@@ -1,24 +1,15 @@
 {
-  "package_name": "shetabit/multipay",
-  "patch_versions": [
-    "2.4.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "2.3.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-294"
-  ],
-  "tldr": "Affected versions are vulnerable to replay attacks and double spending due to missing transaction ID verification in the Saman payment driver's `verify()` method. Without this check, an attacker could potentially reuse a successful payment response or process the same payment multiple times, resulting in financial losses. The issue is resolved by comparing the stored transaction ID with the `ResNum` value returned by the payment gateway and automatically reversing the transaction if they do not match, thereby ensuring that each payment response corresponds to a valid and unique transaction.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `shetabit/multipay` library to the patch version.",
-  "vulnerable_to": "Replay Attacks",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "HIGH",
-  "aikido_score": 85,
-  "changelog": "https://github.com/shetabit/multipay/releases/tag/v2.4.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

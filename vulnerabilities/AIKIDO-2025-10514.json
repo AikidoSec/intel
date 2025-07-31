@@ -18,7 +18,7 @@
   "reporter": "",
   "vulnerable_to": "Denial of Service (DoS)",
   "related_cve_id": "",
-  "language": "python",
+  "language": "ruby",
   "severity_class": "LOW",
   "aikido_score": 20,
   "changelog": "https://github.com/ged/ruby-pg/blob/master/CHANGELOG.md",

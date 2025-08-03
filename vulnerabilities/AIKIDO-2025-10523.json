@@ -1,0 +1,26 @@
+{
+  "package_name": "electron",
+  "patch_versions": [
+    "37.2.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "35.0.0",
+      "37.2.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "Affected versions of this package are affected by use after free in WebRTC in Google Chrome prior to 138.0.7204.157 and allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High).",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `electron` library to a patch version.",
+  "vulnerable_to": "Use After Free",
+  "related_cve_id": "CVE-2025-7657",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://github.com/electron/electron/releases/tag/v37.2.4",
+  "last_modified": "2025-08-03",
+  "published": "2025-08-03"
+}

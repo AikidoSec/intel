@@ -1,25 +1,15 @@
 {
-  "package_name": "cvat-sdk",
-  "patch_versions": [
-    "2.42.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.1.0",
-      "2.41.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-287"
-  ],
-  "tldr": "Email verification was not enforced when using Basic HTTP Authentication. As a result, users could create accounts using fake email addresses and use the product as verified users. Additionally, the missing email verification check leaves the system open to bot signups and further usage.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `cvat-sdk` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Improper Authentication",
-  "related_cve_id": "CVE-2025-54573",
-  "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 43,
-  "changelog": "https://github.com/cvat-ai/cvat/releases/tag/v2.42.0"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

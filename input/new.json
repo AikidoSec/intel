@@ -1,26 +1,15 @@
 {
-  "package_name": "synapse",
-  "patch_versions": [
-    "2.218.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.0.0",
-      "2.217.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-835",
-    "CWE-400"
-  ],
-  "tldr": "A defect in the CPython `tarfile` module affects the `TarFile` extraction and entry enumeration APIs. Specifically, the implementation fails to properly handle tar archives containing entries with negative offsets, allowing maliciously crafted archives to trigger an infinite loop and cause the application to hang or deadlock during parsing. This behavior can lead to denial of service in affected systems. The patched version resolves the issue by introducing safeguards that detect and prevent processing of such invalid tar entries.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `synapse` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Infinite Loop",
-  "related_cve_id": "CVE-2025-8194",
-  "language": "PYTHON",
-  "severity_class": "HIGH",
-  "aikido_score": 75,
-  "changelog": "https://github.com/vertexproject/synapse/releases/tag/v2.218.0"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

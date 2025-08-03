@@ -1,25 +1,15 @@
 {
-  "package_name": "github.com/coreos/go-oidc/v3",
-  "patch_versions": [
-    "3.15.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.0.0",
-      "3.14.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-400"
-  ],
-  "tldr": "Affected versions are vulnerable to Denial of Service (DoS) due to inefficient handling of malicious ID tokens. Specifically, the package attempts to parse claims from the token before validating it, which allows an attacker to supply a specially crafted invalid token that triggers excessive memory allocation. This can lead to resource exhaustion and potential application crashes. The updated logic addresses this by validating the ID token before attempting to parse claims, reducing the risk of exploitation through malicious input.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/coreos/go-oidc/v3` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Denial of Service (DoS)",
-  "related_cve_id": "CVE-2025-27144",
-  "language": "GO",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://github.com/coreos/go-oidc/releases/tag/v3.15.0"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

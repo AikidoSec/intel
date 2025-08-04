@@ -1,25 +1,15 @@
 {
-  "package_name": "python-socks",
-  "patch_versions": [
-    "2.7.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.0.0",
-      "2.7.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-401"
-  ],
-  "tldr": "Affected versions of the package are vulnerable to memory leaks caused by improper socket handling. When attempting to connect through a SOCKS proxy to a non-existent or non-responsive server, the package fails to properly close the socket, resulting in a leaked open connection. Over time, repeated failed connection attempts can exhaust system resources, potentially leading to degraded performance or application crashes.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `python-socks` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Memory Leak",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "LOW",
-  "aikido_score": 30,
-  "changelog": "https://github.com/romis2012/python-socks/releases/tag/v2.7.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,25 +1,15 @@
 {
-  "package_name": "js-toml",
-  "patch_versions": [
-    "1.0.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "1.0.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-1321"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to prototype pollution, which could allow attackers to manipulate object properties and impact application behavior.",
-  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix": "Upgrade the `js-toml` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Prototype Pollution",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "js",
-  "severity_class": "MEDIUM",
-  "aikido_score": 52,
-  "changelog": "https://github.com/sunnyadn/js-toml/releases/tag/v1.0.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

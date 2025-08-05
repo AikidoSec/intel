@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "statsig-node",
+  "patch_versions": [
+    "6.4.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.11.0",
+      "6.4.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to sensitive key exposure via error logging, where the `StatsigInitializeFromNetworkError` method inadvertently writes secret keys to log files. An attacker could exploit this by gaining read access to log storage (via compromised systems, misconfigured cloud permissions, or directory traversal flaws), harvesting exposed keys to impersonate legitimate services, hijacking user sessions, escalating privileges, or compromising dependent systems by reusing stolen credentials.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `statsig-node` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/statsig-io/node-js-server-sdk/releases/tag/6.4.5"
 }

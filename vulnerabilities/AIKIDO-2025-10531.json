@@ -1,0 +1,26 @@
+{
+  "package_name": "@eventcatalog/core",
+  "patch_versions": [
+    "2.54.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.50.0",
+      "2.54.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-23"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Path Traversal via improper path sanitization in `eventcatalog/src/utils/files.ts`, where paths beginning with `../` fail to resolve correctly relative to the project directory due to inadequate normalization of path separators across Windows (``), macOS, and Linux (`/`) systems. This flaw allows attackers to craft malicious relative paths (e.g., `../../../etc/passwd`) that escape the project's root directory when processed by vulnerable file-handling functions. By exploiting this vulnerability, an attacker could read, modify, or exfiltrate sensitive system files by manipulating input to bypass intended access restrictions, potentially leading to information disclosure or system compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@eventcatalog/core` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/event-catalog/eventcatalog/releases/tag/v2.54.5",
+  "last_modified": "2025-08-06",
+  "published": "2025-08-06"
+}

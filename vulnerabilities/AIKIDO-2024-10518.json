@@ -1,11 +1,16 @@
 {
   "package_name": "MessagePack",
   "patch_versions": [
+    "2.5.187",
     "3.0.300"
   ],
   "vulnerable_ranges": [
     [
       "1.0.0",
+      "2.5.172"
+    ],
+    [
+      "2.6.95-alpha",
       "3.0.238-rc.1"
     ]
   ],
@@ -17,7 +22,7 @@
   "how_to_fix": "Upgrade the `MessagePack` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Use of Weak Hash",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2024-48924",
   "language": "dotnet",
   "severity_class": "LOW",
   "aikido_score": 30,

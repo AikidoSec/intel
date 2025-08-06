@@ -1,15 +1,26 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "SharpZipLib",
+  "package_name_alias": "ICSharpCode.SharpZipLib",
+  "patch_versions": [
+    "1.3.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.86.0",
+      "1.3.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Several path traversal vulnerabilities were identified in SharpZipLib (CVE-2021-32840, CVE-2021-32841, CVE-2021-32842), which may allow attackers to write files to arbitrary locations on the file system during archive extraction. These flaws can be exploited to overwrite critical files or place malicious files in sensitive directories, potentially leading to arbitrary code execution.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges.",
+  "how_to_fix": "Upgrade the `SharpZipLib` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "CVE-2021-32840",
+  "language": "DOTNET",
+  "severity_class": "HIGH",
+  "aikido_score": 73,
+  "changelog": "https://securitylab.github.com/advisories/GHSL-2021-125-sharpziplib/"
 }

@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "zenml",
+  "patch_versions": [
+    "0.84.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.84.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to path traversal attacks due to insufficient validation in the `PathMaterializer:load` function. While the implementation checks whether the member name resides within the intended directory before extraction, it fails to properly validate the target paths of symbolic and hard links. This oversight allows attackers to craft archive entries that escape the destination directory, potentially leading to arbitrary file overwrite or unauthorized file access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `zenml` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 82,
+  "changelog": "https://github.com/zenml-io/zenml/blob/main/RELEASE_NOTES.md"
 }

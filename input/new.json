@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "smolagents",
+  "patch_versions": [
+    "1.21.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.20.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions are vulnerable to arbitrary code execution through improper restrictions on the use of dunder (double underscore) methods in the `local_python_executor`. Malicious users could exploit access to unsafe dunder methods (e.g., `__subclasses__`, `__getattribute__`) to bypass sandbox restrictions, perform introspection, or execute unauthorized code. The patch mitigates this by explicitly blocking the use of non-whitelisted dunder methods.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `smolagents` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Remote Code Execution (RCE)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/huggingface/smolagents/releases/tag/v1.21.0"
 }

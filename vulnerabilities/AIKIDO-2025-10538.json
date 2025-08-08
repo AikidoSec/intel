@@ -1,0 +1,26 @@
+{
+  "package_name": "skops",
+  "patch_versions": [
+    "0.13.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.12.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to remote code execution due to the lack of safeguards against unpickling malicious files. Specifically, the package allows arbitrary code execution when processing untrusted pickle data, exposing systems to severe security risks. The issue is resolved in the patched version by introducing an `allow_pickle` flag (disabled by default) which prevents unsafe deserialization and limits unpickling to trusted sources.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `skops` library to the patch version.",
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "",
+  "language": "Python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/skops-dev/skops/releases/tag/v0.13.0",
+  "last_modified": "2025-08-08",
+  "published": "2025-08-08"
+}

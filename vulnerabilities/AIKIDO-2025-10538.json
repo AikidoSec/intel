@@ -18,8 +18,8 @@
   "vulnerable_to": "Remote Code Execution (RCE)",
   "related_cve_id": "CVE-2025-54886",
   "language": "Python",
-  "severity_class": "MEDIUM",
-  "aikido_score": 45,
+  "severity_class": "HIGH",
+  "aikido_score": 75,
   "changelog": "https://github.com/skops-dev/skops/releases/tag/v0.13.0",
   "last_modified": "2025-08-08",
   "published": "2025-08-08"

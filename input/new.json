@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "cloudinary",
+  "patch_versions": [
+    "2.7.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.6.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-141"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to parameter injection in the `api_sign_request` function. The flaw occurs because ampersands (`&`) in parameter values are not properly handled, allowing attackers to inject additional parameters and potentially alter request behavior.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `cloudinary` library to a patch version.",
+  "vulnerable_to": "Improper Neutralization of Parameter/Argument Delimiters",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 33,
+  "changelog": "https://github.com/cloudinary/cloudinary_npm/releases/tag/2.7.0"
 }

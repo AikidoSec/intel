@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "electron",
+  "patch_versions": [
+    "37.2.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "35.0.0",
+      "37.2.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "Use after free in Media Stream in Google Chrome prior to 138.0.7204.183 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `electron` library to a patch version.",
+  "vulnerable_to": "Use After Free",
+  "related_cve_id": "CVE-2025-8292",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://github.com/electron/electron/releases/tag/v37.2.6"
 }

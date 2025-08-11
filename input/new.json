@@ -1,5 +1,5 @@
 {
-  "package_name": "@voltagent/core",
+  "package_name": "@voltagent/internal",
   "patch_versions": [
     "0.1.77"
   ],
@@ -14,7 +14,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) due to the insecure use of `JSON.stringify()`. This function can produce output that, when embedded into HTML without proper escaping, enables attackers to inject and execute malicious scripts in a user's browser. The patched version mitigates this risk by adding an additional layer of output sanitization.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@voltagent/core` library to the patch version.",
+  "how_to_fix": "Upgrade the `@voltagent/internal` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",

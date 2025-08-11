@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@voltagent/supabase",
+  "patch_versions": [
+    "0.1.18"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.1.17"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) due to the insecure use of `JSON.stringify()`. This function can produce output that, when embedded into HTML without proper escaping, enables attackers to inject and execute malicious scripts in a user's browser. The patched version mitigates this risk by adding an additional layer of output sanitization.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@voltagent/supabase` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/VoltAgent/voltagent/releases/tag/%40voltagent/supabase%400.1.18"
 }

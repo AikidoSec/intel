@@ -1,24 +1,15 @@
 {
-  "package_name": "kuzu",
-  "patch_versions": [
-    "0.8.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "0.8.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-532"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Sensitive Information Exposure by caching all executed commands in shell history, including those containing confidential data (e.g., `s3_secret_access_key=...`). Attackers can exploit this by accessing the shell history file (e.g., `~/.bash_history`) through compromised user accounts, privilege escalation, or insecure file permissions. Once retrieved, exposed secrets enable unauthorized access to protected systems, data theft, or lateral movement within environments.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `kuzu` library to the patch version.",
-  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Python",
-  "severity_class": "LOW",
-  "aikido_score": 10,
-  "changelog": "https://github.com/kuzudb/kuzu/releases/tag/v0.8.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

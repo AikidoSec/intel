@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "niquests",
+  "patch_versions": [
+    "3.15.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.14.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-295"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Improper Certificate Signature Validation Leading to MITM Attacks due to the absence of signature verification against the issuer's public key in TLS/SSL certificate processing. This flaw allows attackers to bypass trust validation by presenting forged certificates during handshakes, as the system fails to cryptographically confirm their authenticity against the issuer's key. Without OCSP revocation checks, an attacker could exploit this by positioning themselves between clients and servers (e.g., via compromised networks), intercepting traffic, and impersonating legitimate services using invalid or revoked certificates to decrypt or manipulate data.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `niquests` library to the patch version.",
+  "vulnerable_to": "Improper Certificate Validation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/jawah/niquests/releases/tag/v3.15.0"
 }

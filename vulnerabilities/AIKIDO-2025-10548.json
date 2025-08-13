@@ -1,0 +1,27 @@
+{
+  "package_name": "pypdf",
+  "patch_versions": [
+    "6.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0",
+      "5.9.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "",
+  "doest_this_affect_me": "Affected versions of this package are vulnerable to denial of service due to full decompression of nested `FlateDecode` streams, allowing a small malicious PDF to expand to over 1 PB and exhaust system resources.",
+  "how_to_fix": "Upgrade the `pypdf` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/py-pdf/pypdf/releases/tag/6.0.0",
+  "last_modified": "2025-08-13",
+  "published": "2025-08-13"
+}

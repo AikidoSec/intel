@@ -12,8 +12,8 @@
   "cwe": [
     "CWE-400"
   ],
-  "tldr": "",
-  "doest_this_affect_me": "Affected versions of this package are vulnerable to denial of service due to full decompression of nested `FlateDecode` streams, allowing a small malicious PDF to expand to over 1 PB and exhaust system resources.",
+  "tldr": "Affected versions of this package are vulnerable to denial of service due to full decompression of nested `FlateDecode` streams, allowing a small malicious PDF to expand to over 1 PB and exhaust system resources.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `pypdf` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Denial of Service (DoS)",

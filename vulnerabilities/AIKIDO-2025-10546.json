@@ -1,0 +1,26 @@
+{
+  "package_name": "phpmussel/frontend",
+  "patch_versions": [
+    "3.7.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.6.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Path Traversal via `getAssetPath` due to inadequate sanitization of user-controlled GET parameters passed to `getAssetPath` calls during frontend asset rendering. Attackers can exploit this by manipulating input fields to inject directory traversal sequences, tricking the system into accessing or exposing files outside the intended asset directory. Successful exploitation allows unauthorized reading of sensitive server files, potentially leading to information disclosure, authentication bypass, or server compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `phpmussel/frontend` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "php",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/phpMussel/FrontEnd/releases/tag/v3.7.0",
+  "last_modified": "2025-08-13",
+  "published": "2025-08-13"
+}

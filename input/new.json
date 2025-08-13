@@ -1,44 +1,15 @@
 {
-  "package_name": "phpoffice/phpspreadsheet",
-  "patch_versions": [
-    "1.30.0",
-    "2.1.12",
-    "2.4.0",
-    "3.10.0",
-    "5.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "1.29.12"
-    ],
-    [
-      "2.0.0",
-      "2.1.11"
-    ],
-    [
-      "2.2.0",
-      "2.3.10"
-    ],
-    [
-      "3.0.0",
-      "3.9.3"
-    ],
-    [
-      "4,0,0",
-      "4.5.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-918"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Server-Side Request Forgery (SSRF) via Unrestricted External Image Loading, where the default configuration allowed automatic fetching of external images without explicit user consent. Attackers can exploit this by embedding malicious image URLs in documents, forcing the application to send unauthorized HTTP/HTTPS requests to attacker-controlled domains when processed.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `phpoffice/phpspreadsheet` library to the patch version or if you set `$allowExternalImages` to false.",
-  "vulnerable_to": "Server-Side Request Forgery (SSRF)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "php",
-  "severity_class": "MEDIUM",
-  "aikido_score": 40,
-  "changelog": "https://github.com/PHPOffice/PhpSpreadsheet/releases/tag/3.10.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

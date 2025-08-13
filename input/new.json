@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@browserless.io/browserless",
+  "patch_versions": [
+    "2.34.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.33.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of the package may log sensitive data in plaintext by including token-like query parameters in URL logs. The patched version redacts or omits parameters from logged URLs to prevent credential leakage.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@browserless.io/browserless` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/browserless/browserless/blob/main/CHANGELOG.md"
 }

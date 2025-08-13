@@ -1,25 +1,15 @@
 {
-  "package_name": "fpdf2",
-  "patch_versions": [
-    "2.8.4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.5.0",
-      "2.8.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-1333"
-  ],
-  "tldr": "Affected versions of this package contain an inefficient regular expression in the SVG parsing module, making them susceptible to Regular Expression Denial of Service (ReDoS) attacks. The patched version optimizes the expression, eliminating the risk.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `fpdf2` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "python",
-  "severity_class": "LOW",
-  "aikido_score": 12,
-  "changelog": "https://github.com/py-pdf/fpdf2/blob/master/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

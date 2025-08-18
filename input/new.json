@@ -1,24 +1,15 @@
 {
-  "package_name": "id-map",
-  "patch_versions": [
-    "0.2.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.6",
-      "0.2.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-908"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Uninitialized Memory Drop in `IdMap::from_iter` Constructor. Due to a flaw in `id_map::IdMap::from_iter`, the constructor may create objects where the `values` vector has a length smaller than its capacity, while the `ids` field is initialized using the larger capacity value. When such an `IdMap` is dropped, its destructor erroneously assumes all `values.capacity()` elements are initialized and attempts to iterate over and drop them, dereferencing uninitialized memory. This causes undefined behavior (e.g., segmentation faults or heap corruption). An attacker could exploit this by supplying an iterator that yields fewer items than allocated capacity, then triggering the destructor, potentially leading to denial of service via crash or, in some environments, arbitrary code execution by manipulating uninitialized memory layouts.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `id-map` library to the patch version or note that the maintainer recommends using the following alternatives: <a href=\"https://crates.io/crates/slab\">slab</a> and <a href=\"https://crates.io/crates/slotmap\">slotmap</a>",
-  "vulnerable_to": "Use of Uninitialized Resource",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "HIGH",
-  "aikido_score": 75,
-  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0050.html"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

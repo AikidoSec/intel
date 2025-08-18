@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/ans-group/sdk-go",
+  "patch_versions": [
+    "1.25.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.22.2",
+      "1.25.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-497"
+  ],
+  "tldr": "Affected versions of this package contain an information exposure vulnerability where the InvokeRequest method logs all HTTP request headers when handling arbitrary headers without redaction. An attacker could exploit this vulnerability by accessing these logs to harvest credentials; captured tokens would then enable unauthorized API access, privilege escalation, or session hijacking under the victim's identity.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/ans-group/sdk-go` library to the patch version.",
+  "vulnerable_to": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
+  "related_cve_id": "",
+  "language": "go",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/ans-group/sdk-go/releases/tag/v1.25.1",
+  "last_modified": "2025-08-18",
+  "published": "2025-08-18"
+}

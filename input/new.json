@@ -1,5 +1,6 @@
 {
   "package_name": "github.com/Datadog/dd-trace-go/contrib/google.golang.org/grpc/v2",
+  "package_name_alias": "github.com/datadog/dd-trace-go/contrib/IBM/sarama/v2",
   "patch_versions": [
     "2.2.2"
   ],

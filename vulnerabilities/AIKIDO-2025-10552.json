@@ -1,0 +1,27 @@
+{
+  "package_name": "matrix-synapse",
+  "patch_versions": [
+    "1.135.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.135.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-280"
+  ],
+  "tldr": "Two high-severity protocol vulnerabilities in state resolution will be fixed via an off-cycle Matrix spec update that introduces room v12, with coordinated server releases scheduled for Aug 11, 2025 and embargo lift on Aug 14, 2025 — operators of publicly federated homeservers should prepare to upgrade promptly.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `matrix-synapse` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Handling of Insufficient Permissions or Privileges",
+  "related_cve_id": "CVE-2025-49090",
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/element-hq/synapse/releases/tag/v1.135.2",
+  "last_modified": "2025-08-13",
+  "published": "2025-08-13"
+}

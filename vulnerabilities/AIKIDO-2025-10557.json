@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/argoproj/argo-cd/v3",
+  "patch_versions": [
+    "3.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.0.12"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Path Traversal in UI Asset Handling, where insufficient input sanitization allows remote attackers to access arbitrary files outside the web root by crafting malicious URLs containing directory traversal sequences (e.g.,` ../`). An attacker could exploit this vulnerability by manipulating the `r.URL.Path` parameter to bypass intended directory restrictions, for example, requesting `https://target/%2e%2e/etc/passwd` would traverse outside the UI asset directory.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/argoproj/argo-cd/v3` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/argoproj/argo-cd/releases/tag/v3.1.0",
+  "last_modified": "2025-08-18",
+  "published": "2025-08-18"
+}

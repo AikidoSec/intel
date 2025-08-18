@@ -1,0 +1,26 @@
+{
+  "package_name": "sentencepiece",
+  "patch_versions": [
+    "0.2.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.6",
+      "0.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-122"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Heap Overflow in the PrefixMatcher Constructor due to improper handling of non-null-terminated strings during double-array trie construction. The vulnerability occurs when PrefixMatcher initializes its trie using raw pointers from `absl::string_view` elements without ensuring null termination. An attacker can exploit this vulnerability by crafting input strings that lack null terminators, causing the trie builder to read beyond allocated heap boundaries while scanning for string endings. This heap overflow can corrupt adjacent memory, potentially enabling arbitrary code execution, sensitive data leakage, or application crashes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `sentencepiece` library to the patch version.",
+  "vulnerable_to": "Heap-based Buffer Overflow",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 71,
+  "changelog": "https://github.com/google/sentencepiece/releases/tag/v0.2.1",
+  "last_modified": "2025-08-18",
+  "published": "2025-08-18"
+}

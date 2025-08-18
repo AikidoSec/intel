@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/valyala/fasthttp",
-  "patch_versions": [
-    "1.65.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.32.0",
-      "1.64.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-444"
-  ],
-  "tldr": "Affected versions of this package are vulnerable due to an off-by-one error in Content-Type header validation and insufficient blocking of dangerous headers (e.g., `Set-Cookie` and `X-Forwarded-*`) in HTTP trailers. Attackers could exploit this by injecting malicious trailers to bypass security controls, enabling session hijacking (via forced cookie adoption), redirect attacks (through injected Location headers), or IP spoofing (using `X-Forwarded-For` header) to mask their origin or trigger incorrect access decisions.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/valyala/fasthttp` library to the patch version.",
-  "vulnerable_to": "Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling')",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "MEDIUM",
-  "aikido_score": 40,
-  "changelog": "https://github.com/valyala/fasthttp/releases/tag/v1.65.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,0 +1,27 @@
+{
+  "package_name": "aiogram",
+  "patch_versions": [
+    "3.22.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.21.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-208"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to observable timing discrepancies in signature validation. The `utils.web_app` module compares the calculated HMAC with the provided hash using `==`, which can inadvertently leak timing information and expose the application to timing attacks. While verification still functions correctly, the non-constant-time comparison creates a side channel risk. The patch replaces `==` with `hmac.compare_digest`, ensuring constant-time comparison and mitigating potential timing-based exploits.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `aiogram` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Observable Timing Discrepancy",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/aiogram/aiogram/releases/tag/v3.22.0",
+  "last_modified": "2025-08-18",
+  "published": "2025-08-18"
+}

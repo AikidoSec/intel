@@ -1,24 +1,15 @@
 {
-  "package_name": "@clerk/clerk-js",
-  "patch_versions": [
-    "5.83.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "4.0.0",
-      "5.82.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to client-side attacks due to inadequate sanitization of the `href` attribute in the `Link` component. The code fails to validate or sanitize URLs, allowing dangerous schemes (e.g., `javascript:`, `data:`) in the `href` prop. By supplying a malicious `href` (e.g., through user-controlled inputs), an attacker could execute arbitrary JavaScript when a victim clicks the link, compromising user sessions, stealing sensitive data, or performing unauthorized actions within the application.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@clerk/clerk-js` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "js",
-  "severity_class": "MEDIUM",
-  "aikido_score": 45,
-  "changelog": "https://github.com/clerk/javascript/releases/tag/%40clerk/clerk-js%405.83.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

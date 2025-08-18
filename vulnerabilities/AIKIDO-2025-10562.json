@@ -1,0 +1,38 @@
+{
+  "package_name": "spring-webmvc",
+  "org_name": "org.springframework",
+  "patch_versions": [
+    "5.3.44",
+    "6.1.22",
+    "6.2.10"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "5.3.43"
+    ],
+    [
+      "6.0.0",
+      "6.1.13"
+    ],
+    [
+      "6.2.0",
+      "6.2.09"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of Spring Framework MVC are vulnerable to path traversal when deployed on non-compliant Servlet containers. The issue arises if the application is deployed as a WAR or with an embedded container, the container does not properly reject suspicious path sequences, and the application serves static resources using Spring’s resource handling. While deployments on Apache Tomcat or Eclipse Jetty with default security features enabled are not affected, other containers or configurations may be exploitable, so upgrading to a patched version is strongly recommended.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and you are not deploying on Apache Tomcat or Eclipse Jetty.",
+  "how_to_fix": "Upgrade the `org.springframework:spring-webmvc` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "CVE-2025-41242",
+  "language": "java",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://spring.io/security/cve-2025-41242",
+  "last_modified": "2025-08-18",
+  "published": "2025-08-18"
+}

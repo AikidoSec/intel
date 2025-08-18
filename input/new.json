@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/Datadog/dd-trace-go/contrib/google.golang.org/grpc/v2",
+  "patch_versions": [
+    "2.2.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.2.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of the `github.com/Datadog/dd-trace-go/contrib/google.golang.org/grpc/v2` package may leak sensitive information through log files in multiple parts of the codebase, exposing confidential data to unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade `github.com/Datadog/dd-trace-go/contrib/google.golang.org/grpc/v2` to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "go",
+  "severity_class": "LOW",
+  "aikido_score": 35,
+  "changelog": "https://github.com/DataDog/dd-trace-go/releases/tag/v2.2.2"
 }

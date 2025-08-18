@@ -1,0 +1,26 @@
+{
+  "package_name": "drupal/layout_builder_perms",
+  "patch_versions": [
+    "2.2.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "2.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-862"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Access Bypass due to insufficient permission controls in the section-adding functionality. The module fails to properly restrict users with specific permissions, including `View published content`, `Create/Edit content` for relevant types, `Configure layout overrides`, and `Access Layout Builder page`, from adding unauthorized sections during content editing. An attacker possessing these permissions could exploit this flaw to manipulate page layouts beyond their intended privileges, potentially injecting malicious components or altering page structures.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/layout_builder_perms` library to the patch version.",
+  "vulnerable_to": "Missing Authorization",
+  "related_cve_id": "CVE-2025-8996",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 43,
+  "changelog": "https://www.drupal.org/sa-contrib-2025-097",
+  "last_modified": "2025-08-18",
+  "published": "2025-08-18"
+}

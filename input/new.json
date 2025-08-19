@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "copier",
+  "patch_versions": [
+    "9.9.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "9.6.0",
+      "9.9.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to path traversal due to improper sanitization of user-controlled paths during Jinja template rendering. The vulnerable code exposed raw string paths in the rendering context, allowing directory escape sequences (e.g., `../../`) to be accepted. An attacker could craft malicious input (e.g., setting `answers_relpath` to `../../../etc/passwd`) during template generation. When the application uses this value to resolve file paths, the traversal sequences can redirect operations to unintended file system locations, potentially exposing sensitive data, enabling remote code execution, or compromising the system.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `copier` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/copier-org/copier/blob/master/CHANGELOG.md#v991-2025-08-18"
 }

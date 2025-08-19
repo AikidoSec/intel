@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@aligent/cdk-prerender-fargate",
+  "patch_versions": [
+    "2.14.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.3.5",
+      "2.13.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-757"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Man-in-the-Middle (MitM) attacks due to the use of an implicitly Application Load Balancer (ALB) configuration that accepts the outdated and insecure TLS v1.0 and v1.1 protocols. An attacker positioned to intercept client traffic could potentially force a downgrade to a weaker protocol version, compromising the confidentiality and integrity of the encrypted data exchange between the client and the server.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@aligent/cdk-prerender-fargate` library to the patch version.",
+  "vulnerable_to": "Selection of Less-Secure Algorithm During Negotiation ('Algorithm Downgrade')",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/aligent/cdk-constructs/releases/tag/%40aligent/cdk-prerender-fargate%402.14.0"
 }

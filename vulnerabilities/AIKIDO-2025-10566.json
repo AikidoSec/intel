@@ -1,0 +1,26 @@
+{
+  "package_name": "browserslist",
+  "patch_versions": [
+    "4.25.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.21.0",
+      "4.25.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS) due to an inefficient regex pattern in the `last_years` matcher, which allowed catastrophic backtracking. An attacker could exploit this by crafting malicious input like `'last ' + '1'.repeat(100) + ' years'`, causing exponential backtracking that stalls the event loop and leads to denial of service. This occurs because the original pattern ambiguously splits digits between `d*` and `d+` when no decimal is present, creating excessive computation paths.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `browserslist` library to the patch version.",
+  "vulnerable_to": "Inefficient Regular Expression Complexity",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/browserslist/browserslist/releases/tag/4.25.3",
+  "last_modified": "2025-08-19",
+  "published": "2025-08-19"
+}

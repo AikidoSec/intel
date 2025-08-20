@@ -1,0 +1,27 @@
+{
+  "package_name": "@n8n/n8n-nodes-langchain",
+  "patch_versions": [
+    "1.107.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.24.0",
+      "1.106.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) in the Chat Trigger Node, allowing an attacker to inject and execute malicious scripts in a user's browser.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@n8n/n8n-nodes-langchain` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.107.0",
+  "last_modified": "2025-08-20",
+  "published": "2025-08-20"
+}

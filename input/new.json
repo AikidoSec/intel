@@ -1,6 +1,6 @@
 {
   "package_name": "magento/product-community-edition",
-  "package_name_alias": "magento/community-edition",
+  "package_name_alias": "magento/magento2-base",
   "patch_versions": [
     "2.4.8-p2",
     "2.4.7-p7",

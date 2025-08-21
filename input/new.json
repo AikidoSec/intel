@@ -40,5 +40,6 @@
   "language": "PHP",
   "severity_class": "CRITICAL",
   "aikido_score": 90,
-  "changelog": "https://helpx.adobe.com/security/products/magento/apsb25-71.html"
+  "changelog": "https://helpx.adobe.com/security/products/magento/apsb25-71.html",
+  "version_type_hint": "dpkg"
 }

@@ -1,15 +1,44 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "magento/product-community-edition",
+  "package_name_alias": "magento/community-edition",
+  "patch_versions": [
+    "2.4.8-p2",
+    "2.4.7-p7",
+    "2.4.6-p12",
+    "2.4.5-p14"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.4.8-p1",
+      "2.4.8-p1"
+    ],
+    [
+      "2.4.7-p1",
+      "2.4.7-p6"
+    ],
+    [
+      "2.4.6-p1",
+      "2.4.6-p11"
+    ],
+    [
+      "2.4.5-p1",
+      "2.4.5-p13"
+    ]
+  ],
+  "cwe": [
+    "CWE-863",
+    "CWE-20",
+    "CWE-352",
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to several security risks: successful exploitation of known flaws can result in security feature bypass, privilege escalation, arbitrary file system read, and application denial-of-service (DoS) in Adobe Commerce and Magento Open Source platforms. The issues include improper input validation (CWE-20), CSRF (CWE-352), incorrect authorization (CWE-863), stored cross-site scripting (CWE-79), TOCTOU race conditions (CWE-367), and path traversal (CWE-22).",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade `magento/product-community-edition` to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Incorrect Authorization",
+  "related_cve_id": "CVE-2025-49556",
+  "language": "PHP",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://helpx.adobe.com/security/products/magento/apsb25-71.html"
 }

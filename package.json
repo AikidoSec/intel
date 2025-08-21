@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "overrides": {
+    "browserslist@<=4.25.3": "4.25.3"
   }
 }

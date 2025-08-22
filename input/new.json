@@ -38,8 +38,8 @@
   "vulnerable_to": "Incorrect Authorization",
   "related_cve_id": "CVE-2025-49556",
   "language": "PHP",
-  "severity_class": "CRITICAL",
-  "aikido_score": 90,
+  "severity_class": "HIGH",
+  "aikido_score": 88,
   "changelog": "https://helpx.adobe.com/security/products/magento/apsb25-71.html",
   "allow_patch_part_transformation": true
 }

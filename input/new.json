@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@tdewolff/minify",
+  "patch_versions": [
+    "2.24.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.20.10",
+      "2.23.11"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Denial of Service (DoS) due to improper tracking of expression nesting depth when parsing function declarations. An attacker can exploit this by crafting malicious JavaScript code containing excessively nested expressions within a function body, causing the parser to consume excessive resources (e.g., `stack overflow`), resulting in application crashes or hangs. This occurs because the parser fails to enforce nesting limits during function body parsing, allowing catastrophic backtracking or recursion.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@tdewolff/minify` library to the patch version.",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/tdewolff/minify/releases/tag/v2.24.0"
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "g4f",
+  "patch_versions": [
+    "0.6.0.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.3.9.0",
+      "0.6.0.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-288"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Authentication Bypass due to an improper access control configuration in the WebUI, where the primary `/chat/` endpoint was not protected by the authentication mechanism, while sub-paths like `/chat/test` correctly enforced password checks. An attacker could exploit this vulnerability by directly navigating to the main chat endpoint to gain unauthorized access to the application's interface and functionality without requiring a password.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `g4f` library to the patch version.",
+  "vulnerable_to": "Authentication Bypass Using an Alternate Path or Channel",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "CRITICAL",
+  "aikido_score": 100,
+  "changelog": "https://github.com/xtekky/gpt4free/releases/tag/0.6.0.3"
 }

@@ -1,0 +1,47 @@
+{
+  "package_name": "magento/extension-b2b",
+  "package_name_alias": "magento/magento2-b2b-base",
+  "patch_versions": [
+    "1.5.2-p2",
+    "1.4.2-p7",
+    "1.3.4-p14",
+    "1.3.3-p15"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.5.0",
+      "1.5.2-p1"
+    ],
+    [
+      "1.3.5",
+      "1.4.2-p6"
+    ],
+    [
+      "1.3.4",
+      "1.3.4-p13"
+    ],
+    [
+      "1.0.0",
+      "1.3.3-p14"
+    ]
+  ],
+  "cwe": [
+    "CWE-863",
+    "CWE-20",
+    "CWE-352",
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to several security risks: successful exploitation of known flaws can result in security feature bypass, privilege escalation, arbitrary file system read, and application denial-of-service (DoS) in Adobe Commerce and Magento Open Source platforms. The issues include improper input validation (CWE-20), CSRF (CWE-352), incorrect authorization (CWE-863), stored cross-site scripting (CWE-79), TOCTOU race conditions (CWE-367), and path traversal (CWE-22).",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade `magento/extension-b2b` to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Incorrect Authorization",
+  "related_cve_id": "CVE-2025-49556",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://helpx.adobe.com/security/products/magento/apsb25-71.html",
+  "allow_patch_part_transformation": true,
+  "last_modified": "2025-08-25",
+  "published": "2025-08-25"
+}

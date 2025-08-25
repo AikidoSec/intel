@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "Bybit.Net",
+  "patch_versions": [
+    "5.6.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.8.1",
+      "5.6.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Information Disclosure via Detailed Error Messages due to improperly returning a generic `ServerError` containing the full exception object even for HTTP 401 Unauthorized responses. An attacker can exploit this vulnerability by systematically probing endpoints with invalid credentials, causing the application to leak sensitive internal information, framework details, or database queries within the exception message of the 401 response, which significantly aids in crafting more sophisticated attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Bybit.Net` library to the patch version.",
+  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "dotnet",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/JKorf/Bybit.Net/releases/tag/Bybit.Net.5.6.1"
 }

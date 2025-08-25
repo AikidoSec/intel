@@ -1,0 +1,26 @@
+{
+  "package_name": "tokio-websockets",
+  "patch_versions": [
+    "0.12.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.12.0",
+      "0.12.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-125"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Out-of-bounds Access due to improper bounds checking when handling partial writes in vectored I/O. The vulnerability occurs when processing the first frame in the queue: if `bytes_written` exceeds the header length but is larger than the payload length, the unsafe `get_unchecked` call attempts to create a slice starting beyond the payload buffer boundaries. An attacker could exploit this by sending a large number of messages rapidly, triggering partial writes and causing the `bytes_written` value to corrupt memory or read out-of-bounds data, potentially leading to a denial of service or information disclosure.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `tokio-websockets` library to the patch version.",
+  "vulnerable_to": "Out-of-bounds Read",
+  "related_cve_id": "",
+  "language": "Rust",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/Gelbpunkt/tokio-websockets/blob/main/CHANGELOG.md#0121---2025-08-21",
+  "last_modified": "2025-08-25",
+  "published": "2025-08-25"
+}

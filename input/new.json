@@ -1,25 +1,15 @@
 {
-  "package_name": "@modelcontextprotocol/sdk",
-  "patch_versions": [
-    "1.17.4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "1.17.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS). A malicious authorization server could supply OAuth endpoints with unsafe URL schemes (e.g., `javascript:`, `data:`, or `file:`), which, when processed by OAuth clients, could enable XSS or remote code execution (RCE) attacks.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@modelcontextprotocol/sdk` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 57,
-  "changelog": "https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/1.17.4"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

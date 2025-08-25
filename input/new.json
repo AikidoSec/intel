@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "jupyter-server",
+  "patch_versions": [
+    "2.17.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.16.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-352"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a CORS bypass that can expose sensitive files through the `/files` endpoint even when proper origin restrictions (`allow_origin_pat`) are configured. The issue arises because the XSRF validation logic does not check the request's origin before serving files. As a result, an attacker can exploit a shared-domain XSRF cookie and craft cross-origin requests to bypass CORS protections and access restricted files. The fix adds an explicit origin check in the `check_xsrf_cookie` flow to ensure that only allowed origins can access `/files`.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `jupyter-server` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-Site Request Forgery (CSRF)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 62,
+  "changelog": "https://github.com/jupyter-server/jupyter_server/releases/tag/v2.17.0"
 }

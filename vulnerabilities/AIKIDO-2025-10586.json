@@ -1,0 +1,27 @@
+{
+  "package_name": "github.com/getkin/kin-openapi",
+  "patch_versions": [
+    "0.133.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.90.0",
+      "0.132.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to path traversal in the `ReadFromFile` function due to insufficient input sanitization, allowing attackers to access files outside the intended directory.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/getkin/kin-openapi` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 68,
+  "changelog": "https://github.com/getkin/kin-openapi/releases/tag/v0.133.0",
+  "last_modified": "2025-08-25",
+  "published": "2025-08-25"
+}

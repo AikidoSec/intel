@@ -1,24 +1,15 @@
 {
-  "package_name": "multisafepay/php-sdk",
-  "patch_versions": [
-    "5.17.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "5.1.0",
-      "5.17.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-208"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to timing attacks due to the use of non-constant-time string comparison in `Notification::verifyNotification`, which allows attackers to potentially infer valid values through response time measurements.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `multisafepay/php-sdk` library to the patch version.",
-  "vulnerable_to": "Timing Attacks",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "LOW",
-  "aikido_score": 25,
-  "changelog": "https://github.com/MultiSafepay/php-sdk/releases/tag/5.17.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

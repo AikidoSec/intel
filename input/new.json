@@ -1,15 +1,26 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "alloy-eips",
+  "patch_versions": [
+    "1.0.26"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.0.25"
+    ]
+  ],
+  "cwe": [
+    "CWE-190",
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an integer overflow in the `fake_exponential` function, which is used to calculate blob gas prices per EIP-4844. The vulnerability occurs when `numerator_accum * numerator` exceeds `u128::MAX`, causing the function to panic on arithmetic overflow. This can be triggered by processing blocks with intentionally invalid excess blob gas values near `u64::MAX`, potentially leading to denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and you are using Windows.",
+  "how_to_fix": "Upgrade the `alloy-eips` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Integer Overflow",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/alloy-rs/alloy/releases/tag/v1.0.26"
 }

@@ -1,0 +1,26 @@
+{
+  "package_name": "Altinn.App.Api",
+  "patch_versions": [
+    "8.7.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "7.2.0",
+      "8.7.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper input validation in the handling of malformed `Content-Disposition` filenames. When an invalid or unquoted filename is supplied, the server responds with an internal error (HTTP 500) instead of a client error (HTTP 400). This behavior can inadvertently leak internal details or implementation-specific error messages to an attacker, increasing the risk of information disclosure. The patch fixes this by validating the header properly and returning a 400 Bad Request instead of a 500.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Altinn.App.Api` library to the patch version.",
+  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
+  "related_cve_id": "",
+  "language": "dotnet",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/Altinn/app-lib-dotnet/releases/tag/v8.7.1",
+  "last_modified": "2025-08-27",
+  "published": "2025-08-27"
+}

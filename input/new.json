@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "devalue",
+  "patch_versions": [
+    "5.3.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "5.3.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Prototype Pollution due to improper input validation when parsing objects containing the `__proto__` property. Attackers could exploit this by submitting a crafted object with a `__proto__` key, allowing them to pollute the global object prototype. This could lead to modification of application behavior, privilege escalation, or denial of service by injecting malicious properties inherited by all objects.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `devalue` library to the patch version.",
+  "vulnerable_to": "Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/sveltejs/devalue/releases/tag/v5.3.2"
 }

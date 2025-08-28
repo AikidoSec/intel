@@ -16,7 +16,7 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "If you use the Protected Pages module for Drupal 8.x, upgrade the `drupal/protected_pages` library to the patch version.",
   "vulnerable_to": "Improper Restriction of Excessive Authentication Attempts",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-9551",
   "language": "PHP",
   "severity_class": "MEDIUM",
   "aikido_score": 63,

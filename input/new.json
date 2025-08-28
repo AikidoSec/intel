@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "checkov",
+  "patch_versions": [
+    "3.2.415"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.0",
+      "3.2.414"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "An unsafe deserialization vulnerability in checkov allows an attacker to execute arbitrary code when scanning a malformed Terraform file. This could allow an attacker to achieve elevated privileges where checkov is running, e.g. in the CI/CD pipeline or a developer's machine, allowing an attacker to potentially exfiltrate secrets of the environment.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade checkov to the patch version.",
+  "vulnerable_to": "Unsafe Deserialization",
+  "related_cve_id": "CVE-2025-2180",
+  "language": "python",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://github.com/bridgecrewio/checkov/pull/7116"
 }

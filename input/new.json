@@ -1,15 +1,29 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "drupal/facets",
+  "patch_versions": [
+    "2.0.10",
+    "3.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.0.9"
+    ],
+    [
+      "3.0.0",
+      "3.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) in a module for creating faceted search interfaces due to insufficient input sanitization. An attacker with a role granted the `administer facets` permission could craft malicious text within facet configurations, potentially allowing for session hijacking or malicious actions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/facets` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "CVE-2025-9550",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 48,
+  "changelog": "https://www.drupal.org/sa-contrib-2025-100"
 }

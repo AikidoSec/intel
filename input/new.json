@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@mapbox/mapbox-gl-geocoder",
+  "patch_versions": [
+    "5.1.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "5.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) due to improper sanitization of the `place_name` input in the geocoder suggestion render function. An attacker can exploit this by crafting a malicious payload containing executable JavaScript as part of the location name (e.g., `><img src=x onerror=alert(1)>`), which would execute immediately when rendered in the user's browser, potentially compromising user sessions or stealing sensitive data. It violates the trust boundary between user-supplied content and rendered output, requiring no user interaction beyond triggering the geocoder suggestion dropdown.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@mapbox/mapbox-gl-geocoder` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/mapbox/mapbox-gl-geocoder/releases/tag/v5.1.2"
 }

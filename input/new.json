@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "eventlet",
+  "patch_versions": [
+    "0.40.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.10.0",
+      "0.40.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-444"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to HTTP Request Smuggling due to improper handling of HTTP trailers. The WSGI parser failed to discard trailer sections, allowing attackers to inject malicious requests via crafted trailers. It could enable request smuggling attacks where a single HTTP request is processed as multiple requests by downstream servers, potentially leading to cache poisoning, session hijacking, or unauthorized data access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `eventlet` library to the patch version.",
+  "vulnerable_to": "Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling')",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/eventlet/eventlet/blob/master/NEWS"
 }

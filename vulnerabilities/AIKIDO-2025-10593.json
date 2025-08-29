@@ -1,0 +1,20 @@
+{
+  "package_name": "github.com/aws/aws-sdk-go",
+  "patch_versions": [],
+  "vulnerable_ranges": "*",
+  "cwe": [
+    "CWE-1104"
+  ],
+  "tldr": "The `github.com/aws/aws-sdk-go` package is no longer maintained, as indicated by AWS. Its last commit documents that `github.com/aws/aws-sdk-go` has served its purpose and will no longer receive updates.",
+  "doest_this_affect_me": "You are affected if you are using this package.",
+  "how_to_fix": "Remove any `github.com/aws/aws-sdk-go` package from your application. Please take a look at <a href=\"https://pkg.go.dev/github.com/aws/aws-sdk-go-v2\">github.com/aws/aws-sdk-go-v2</a> instead.",
+  "reporter": "",
+  "vulnerable_to": "Use of Unmaintained Third Party Components",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/aws/aws-sdk-go/releases/tag/v1.55.8",
+  "last_modified": "2025-08-29",
+  "published": "2025-08-29"
+}

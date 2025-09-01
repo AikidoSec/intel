@@ -1,0 +1,26 @@
+{
+  "package_name": "temporal_rs",
+  "patch_versions": [
+    "0.0.13"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.5",
+      "0.0.12"
+    ]
+  ],
+  "cwe": [
+    "CWE-758"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Undefined Behavior in time duration rounding calculations due to improper use of unsafe Rust code. The vulnerability occurs when `unit_length` is zero, which triggers undefined behavior when passed to `NonZeroU128::new_unchecked` without validation. An attacker could exploit this by providing malicious input that results in a zero `unit_length` value, potentially causing application crashes or memory corruption depending on how the undefined behavior manifests in the execution environment.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `temporal_rs` library to the patch version.",
+  "vulnerable_to": "Reliance on Undefined, Unspecified, or Implementation-Defined Behavior",
+  "related_cve_id": "",
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/boa-dev/temporal/releases/tag/v0.0.13",
+  "last_modified": "2025-09-01",
+  "published": "2025-09-01"
+}

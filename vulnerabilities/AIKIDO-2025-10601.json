@@ -1,0 +1,26 @@
+{
+  "package_name": "kovah/laravel-socialite-oidc",
+  "patch_versions": [
+    "0.5.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-294"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to replay attacks because the nonce remains in the session after successful validation, allowing attackers to reuse it to bypass authentication or authorization checks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `kovah/laravel-socialite-oidc` library to the patch version.",
+  "vulnerable_to": "Replay Attacks",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 67,
+  "changelog": "https://github.com/Kovah/laravel-socialite-oidc/releases/tag/v0.5.0",
+  "last_modified": "2025-09-02",
+  "published": "2025-09-02"
+}

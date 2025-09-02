@@ -1,15 +1,30 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "verbb/workflow",
+  "patch_versions": [
+    "3.0.11",
+    "2.0.17"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.0.10"
+    ],
+    [
+      "1.0.0",
+      "2.0.16"
+    ]
+  ],
+  "cwe": [
+    "CWE-280"
+  ],
+  "tldr": "Affected versions of the `verbb/workflow` library allow users without proper permissions to view and modify submission elements, potentially exposing or altering sensitive data.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `verbb/workflow` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Handling of Insufficient Permissions or Privileges",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 64,
+  "changelog": "https://github.com/verbb/workflow/releases/tag/3.0.11"
 }

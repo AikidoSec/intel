@@ -1,0 +1,27 @@
+{
+  "package_name": "xcb",
+  "patch_versions": [
+    "1.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.4.0",
+      "1.5.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-672"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Operation on a Resource after Expiration or Release in the `Connection::connect_with_fd` and `Connection::connect_with_fd_and_extensions` functions. By supplying a crafted `RawFd`, an attacker can trigger unintended closure of file descriptors, potentially leading to use-after-close conditions, resource mismanagement, or denial of service through repeated closure of already-closed descriptors.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `xcb` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Operation on a Resource after Expiration or Release",
+  "related_cve_id": "",
+  "language": "RUST",
+  "severity_class": "MEDIUM",
+  "aikido_score": 63,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0051.html",
+  "last_modified": "2025-09-02",
+  "published": "2025-09-02"
+}

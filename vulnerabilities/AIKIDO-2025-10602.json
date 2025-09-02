@@ -1,0 +1,27 @@
+{
+  "package_name": "pm2",
+  "patch_versions": [
+    "6.0.9"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.12.2",
+      "6.0.8"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package contain an inefficient regular expression that, when processing specially crafted input, can cause excessive CPU consumption, leading to application hangs or denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `pm2` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/Unitech/pm2/releases/tag/v6.0.9",
+  "last_modified": "2025-09-02",
+  "published": "2025-09-02"
+}

@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/ethereum/go-ethereum",
+  "patch_versions": [
+    "1.16.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.9.0",
+      "1.16.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Denial of Service (DoS) via a deeply nested GraphQL query. An attacker could exploit this vulnerability by crafting and sending a malicious query with excessive nesting levels, which would consume disproportionate amounts of CPU and memory resources during parsing and execution. It could lead to service degradation or a complete outage, as the existing timeout mechanism might not trigger quickly enough to prevent resource exhaustion.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/ethereum/go-ethereum` library to the patch version.",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 48,
+  "changelog": "https://github.com/ethereum/go-ethereum/releases/tag/v1.16.3",
+  "last_modified": "2025-09-03",
+  "published": "2025-09-03"
+}

@@ -14,7 +14,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to Authorization Bypass due to an insecure default configuration where the `disable_security` flag was set to `True`, which disables key browser security features like Same-Origin Policy and Content Security Policy (CSP). An attacker could exploit this by tricking a user into visiting a malicious webpage, which could then execute arbitrary commands on the machine by abusing the exposed Chrome DevTools Protocol (CDP) connection, potentially leading to a complete compromise of the system.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `browser-use` library to the patch version.",
+  "how_to_fix": "Upgrade the `browser-use` library to the patch version or explicitly set `disable_security` to `False`.",
   "reporter": "",
   "vulnerable_to": "Authorization Bypass Through User-Controlled Key",
   "related_cve_id": "",

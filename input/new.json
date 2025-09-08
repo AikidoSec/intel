@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "deepdiff",
+  "patch_versions": [
+    "8.6.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.7.1",
+      "8.6.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Code Injection due to insufficient input sanitization in the Delta deserialization process, which allowed an attacker to craft malicious pickle payloads or traverse dangerous attributes (like `__globals__`); by supplying a specially crafted payload, an attacker could potentially execute arbitrary code on the system or manipulate the application's object structure.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `deepdiff` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/seperman/deepdiff/releases/tag/8.6.1"
 }

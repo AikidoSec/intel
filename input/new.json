@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "tf-keras",
+  "patch_versions": [
+    "2.20.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.15.0",
+      "2.20.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Arbitrary Code Execution due to unsafe deserialization via `np.load` with `allow_pickle=True` enabled. Attackers can exploit this by crafting a malicious file containing pickled payloads, which execute arbitrary code during deserialization when the file is processed by the vulnerable class. It could lead to full system compromise if the application processes untrusted files.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `tf-keras` library to the patch version.",
+  "vulnerable_to": "Deserialization of Untrusted Data",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://github.com/keras-team/tf-keras/releases/tag/v2.20.1"
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "text-to-image",
+  "patch_versions": [
+    "8.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "8.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Regular Expression Denial of Service (ReDoS) vulnerability in the line trimming code due to inefficient regex patterns that can cause catastrophic backtracking when processing strings with excessive whitespace. An attacker can exploit this by supplying a maliciously crafted input string containing a very long sequence of space characters without a trailing non-space character (e.g., `''.repeat(100000)`), which causes the regex engine to excessively backtrack when evaluating the trailing space pattern `/ +$/` . This results in high CPU utilization and prolonged processing time, potentially leading to application unresponsiveness or denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `text-to-image` library to the patch version.",
+  "vulnerable_to": "Inefficient Regular Expression Complexity",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/bostrom/text-to-image/releases/tag/v8.0.1"
 }

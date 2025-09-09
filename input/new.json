@@ -1,15 +1,35 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "django",
+  "patch_versions": [
+    "4.2.24",
+    "5.1.12",
+    "5.2.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.2.0",
+      "4.2.23"
+    ],
+    [
+      "5.1.0",
+      "5.1.11"
+    ],
+    [
+      "5.2.0",
+      "5.2.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-89"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to SQL injection in the `FilteredRelation` class when handling specially crafted dictionaries expanded as `**kwargs` in `QuerySet.annotate` or `QuerySet.alias`. An attacker could exploit this by supplying malicious input that is directly incorporated into SQL queries, allowing arbitrary SQL command execution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `django` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "SQL Injection",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "python",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://docs.djangoproject.com/en/dev/releases/security/#september-3-2025-cve-2025-57833"
 }

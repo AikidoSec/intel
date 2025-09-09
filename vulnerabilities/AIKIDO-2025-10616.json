@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/buildkite/agent/v3",
+  "patch_versions": [
+    "3.104.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.41.0",
+      "3.103.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-497"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Information Exposure through the `buildkite-agent oidc request-token` command due to the lack of automatic redaction for OIDC tokens in build logs. Unlike the `secret get` command, which automatically masks sensitive values, the OIDC token command outputs the raw, sensitive token in plaintext. An attacker with access to build logs (e.g., through a compromised account or misconfigured log storage) could harvest these exposed tokens, which may then be used to impersonate the build identity and gain unauthorized access to dependent services and resources.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/buildkite/agent/v3` library to the patch version.",
+  "vulnerable_to": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/buildkite/agent/blob/main/CHANGELOG.md#v31040-2025-09-05",
+  "last_modified": "2025-09-09",
+  "published": "2025-09-09"
+}

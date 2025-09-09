@@ -1,0 +1,26 @@
+{
+  "package_name": "@mastra/mcp-docs-server",
+  "patch_versions": [
+    "0.13.17"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.13.16"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Path Traversal due to improper input sanitization in the `readMdxContent` function. The vulnerability allows attackers to read arbitrary files by manipulating the `docPath` parameter to escape the intended directory (e.g., using `../../` sequences). This occurs because the joined path (`fullPath`) is not validated against the base directory before file system access, enabling unauthorized access to sensitive system files. An attacker could exploit this by crafting malicious paths to exfiltrate confidential data outside the `docsBaseDir`.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@mastra/mcp-docs-server` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
+  "changelog": "https://github.com/mastra-ai/mastra/blob/main/packages/mcp-docs-server/CHANGELOG.md#01317",
+  "last_modified": "2025-09-09",
+  "published": "2025-09-09"
+}

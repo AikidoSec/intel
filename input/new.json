@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/opencontainers/umoci",
+  "patch_versions": [
+    "0.5.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.4.4",
+      "0.5.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Denial-of-Service (DoS) attack because they implicitly allowed the creation of image descriptors with a negative or unknown size. An attacker could exploit this by providing a maliciously crafted image manifest containing such a descriptor, which, when processed, would cause an infinite read loop or excessive resource consumption, ultimately crashing the application. This flaw is due to an overly permissive interpretation of the specification, which has since been clarified to explicitly disallow unknown sizes for most descriptors as they are a classic DoS vector.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/opencontainers/umoci` library to the patch version.",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "go",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/opencontainers/umoci/releases/tag/v0.5.1"
 }

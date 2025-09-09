@@ -1,0 +1,26 @@
+{
+  "package_name": "workerd",
+  "patch_versions": [
+    "1.20250905.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.20250204.0",
+      "1.20250904.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Use-After-Free (UaF) via a Dangling Reference to a Temporary. The vulnerability arises because a constant `kj::HashSet<kj::String>` object `EMPTY_HANDLERS` is not defined as a static within a function scope, causing its destructor to run when the function exits and leaving a global reference pointing to freed memory. An attacker can exploit this by manipulating the program's flow to trigger the use of this dangling reference, potentially leading to information disclosure, a crash, or arbitrary code execution depending on how the corrupted memory is accessed.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `workerd` library to the patch version.",
+  "vulnerable_to": "Use After Free",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/cloudflare/workerd/releases/tag/v1.20250905.0",
+  "last_modified": "2025-09-09",
+  "published": "2025-09-09"
+}

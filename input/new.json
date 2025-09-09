@@ -1,24 +1,15 @@
 {
-  "package_name": "botbuilder-core",
-  "patch_versions": [
-    "4.23.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "4.0.8",
-      "4.23.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-22"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Arbitrary File Write via Archive Extraction (Zip Slip) due to improper validation of the `entry.path` within a zip archive before using it to construct the final extraction path. An attacker could exploit this vulnerability by crafting a malicious archive that contains a file with a relative path sequence (e.g., `../../tmp/evil.exe`), which, when extracted, would traverse outside the intended `outputPath` directory and overwrite arbitrary files on the system, potentially leading to remote code execution.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `botbuilder-core` library to the patch version.",
-  "vulnerable_to": "Path Traversal",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 71,
-  "changelog": "https://github.com/microsoft/botbuilder-js/releases/tag/4.23.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

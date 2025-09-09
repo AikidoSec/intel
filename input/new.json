@@ -1,22 +1,15 @@
 {
-  "package_name": "slatedb",
-  "patch_versions": [
-    "0.8.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.5.0",
-      "0.8.0"
-    ]
-  ],
-  "cwe": ["CWE-190"],
-  "tldr": "Affected versions of this package are vulnerable to a Denial of Service (DoS) via Integer Overflow in SstRowCodecV0 due to improper validation of key/value sizes in `put` methods. Attackers could exploit this by supplying keys larger than `u16::MAX` or values larger than `u32::MAX`, triggering a panic and causing the application to crash.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `slatedb` library to the patch version.",
-  "vulnerable_to": "Integer Overflow",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Rust",
-  "severity_class": "LOW",
-  "aikido_score": 30,
-  "changelog": "https://github.com/slatedb/slatedb/releases/tag/v0.8.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

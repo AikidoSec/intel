@@ -1,0 +1,26 @@
+{
+  "package_name": "toodee",
+  "patch_versions": [
+    "0.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.2.0",
+      "0.5.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-122"
+  ],
+  "tldr": "Affected versions of this package contained an off-by-one error in the `DrainCol::drop` destructor, which caused an unsafe memory copy operation to exceed the bounds of its associated vector; an attacker could exploit this heap buffer overflow by crafting a scenario that triggers the removal of the first column from a `TooDee` object, potentially leading to a crash or arbitrary code execution when the vulnerable destructor runs.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `toodee` library to the patch version.",
+  "vulnerable_to": "Heap-based Buffer Overflow",
+  "related_cve_id": "",
+  "language": "RUST",
+  "severity_class": "MEDIUM",
+  "aikido_score": 62,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0062.html",
+  "last_modified": "2025-09-09",
+  "published": "2025-09-09"
+}

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "pydantic-evals",
+  "patch_versions": [
+    "1.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.47",
+      "1.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-95"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Remote Code Execution via the `Python` evaluator due to the use of the `eval()` function on user-controlled input from the `expression` field. An attacker with the ability to control or maliciously craft this input could supply a malicious Python expression that would be executed within the application's context, potentially allowing them to access sensitive data, modify application state, or perform other destructive actions by leveraging the exposed `ctx` object.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `pydantic-evals` library to the patch version.",
+  "vulnerable_to": "Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://github.com/pydantic/pydantic-ai/releases/tag/v1.0.1"
 }

@@ -1,24 +1,15 @@
 {
-  "package_name": "angular-auth-oidc-client",
-  "patch_versions": [
-    "20.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "11.6.0",
-      "19.0.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-346"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to OpenID Connect Issuer Validation Bypass due to a missing validation of the issuer field in the discovered OpenID Configuration document against the expected authority URL. An attacker could exploit this by poisoning a reverse proxy cache or via a man-in-the-middle attack to redirect discovery requests to a malicious domain, which would then supply a fraudulent configuration document with a matching issuer.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `angular-auth-oidc-client` library to the patch version.",
-  "vulnerable_to": "Origin Validation Error",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 20,
-  "changelog": "https://github.com/damienbod/angular-auth-oidc-client/blob/main/CHANGELOG.md#2025-09-05-2000"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

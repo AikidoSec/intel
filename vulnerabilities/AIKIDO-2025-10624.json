@@ -27,7 +27,7 @@
   "how_to_fix": "Upgrade the `django` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "SQL Injection",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-57833",
   "language": "python",
   "severity_class": "HIGH",
   "aikido_score": 71,

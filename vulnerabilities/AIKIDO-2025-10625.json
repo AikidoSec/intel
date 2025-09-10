@@ -1,0 +1,26 @@
+{
+  "package_name": "Akavache",
+  "patch_versions": [
+    "11.3.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "11.0.1",
+      "11.3.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-73"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Path Traversal due to improper neutralization of user-controlled input used in filesystem path construction. An attacker could supply a malicious filename containing traversal sequences (e.g., `../../../etc/passwd`) to escape the intended directory and access, overwrite, or create arbitrary files on the server filesystem, potentially leading to unauthorized information disclosure or system compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Akavache` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "dotnet",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/reactiveui/Akavache/releases/tag/11.3.3",
+  "last_modified": "2025-09-10",
+  "published": "2025-09-10"
+}

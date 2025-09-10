@@ -20,6 +20,6 @@
   "related_cve_id": "",
   "language": "js",
   "severity_class": "LOW",
-  "aikido_score": 15,
+  "aikido_score": 25,
   "changelog": "https://github.com/node-influx/node-influx/releases/tag/v5.11.0"
 }

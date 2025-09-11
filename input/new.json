@@ -1,41 +1,15 @@
 {
-  "package_name": "spring-cloud-gateway-server",
-  "org_name": "org.springframework.cloud",
-  "patch_versions": [
-    "3.1.11",
-    "4.1.11",
-    "4.2.5",
-    "4.3.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.0.0",
-      "3.1.10"
-    ],
-    [
-      "4.0.0",
-      "4.1.10"
-    ],
-    [
-      "4.2.0",
-      "4.2.4"
-    ],
-    [
-      "4.3.0",
-      "4.3.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-917"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Expression Language (EL) injection in the `GatewayEvaluationContext` method, which allows attackers to modify properties and ultimately achieve remote code execution. This issue only affects WebFlux applications; WebMVC applications are not impacted.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range. Spring Boot actuator is a dependency. And the Spring Cloud Gateway Server Webflux actuator web endpoint is enabled via `management.endpoints.web.exposure.include=gateway`.",
-  "how_to_fix": "Upgrade the `org.springframework.cloud:spring-cloud-gateway-server` library to a patch version.",
-  "reporter": "",
-  "vulnerable_to": "Expression Language Injection",
-  "related_cve_id": "CVE-2025-41243",
-  "language": "java",
-  "severity_class": "CRITICAL",
-  "aikido_score": 95,
-  "changelog": "https://spring.io/security/cve-2025-41243"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

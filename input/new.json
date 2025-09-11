@@ -1,24 +1,15 @@
 {
-  "package_name": "Sparkle",
-  "patch_versions": [
-    "2.7.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.6.0",
-      "2.7.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-284"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to local privilege escalation and access control bypass. Specifically, a flaw in the Downloader XPC Service allows attackers to bypass Transparency, Consent, and Control (TCC) protections and access restricted directories (e.g., `~/Desktop`, `~/Documents`, `~/Downloads`). Additionally, weaknesses in the Installer XPC Service and Autoupdate tool enable attackers to escalate privileges to root by tricking users into installing malicious packages or by exploiting race conditions during update processes. These issues could allow malware running on the system to gain unauthorized access to sensitive files or execute arbitrary code with elevated privileges. The security issue was addressed in version `2.7.2`, but that release introduced a potential crash. Users are advised to upgrade directly to version `2.7.3` for a stable and secure fix.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `Sparkle` library to the patch version.",
-  "vulnerable_to": "Improper Access Control",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "SWIFT",
-  "severity_class": "HIGH",
-  "aikido_score": 73,
-  "changelog": "https://github.com/sparkle-project/Sparkle/discussions/2764"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

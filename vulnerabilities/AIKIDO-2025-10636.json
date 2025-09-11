@@ -1,0 +1,27 @@
+{
+  "package_name": "react-photoswipe-gallery",
+  "patch_versions": [
+    "4.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "3.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) due to insufficient sanitization of the `caption` field, allowing attackers to inject and execute malicious scripts in a user’s browser.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `react-photoswipe-gallery` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 60,
+  "changelog": "https://github.com/dromru/react-photoswipe-gallery/releases/tag/v4.0.0",
+  "last_modified": "2025-09-11",
+  "published": "2025-09-11"
+}

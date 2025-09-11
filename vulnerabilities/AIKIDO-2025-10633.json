@@ -1,0 +1,26 @@
+{
+  "package_name": "rumqttc",
+  "patch_versions": [
+    "0.25.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.24.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-208"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to timing attacks because they rely on non-constant-time password comparisons. The fixed version mitigates this issue by introducing constant-time password comparison in `rumqttd`, preventing attackers from inferring sensitive information through response time analysis.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `rumqttc` library to the patch version.",
+  "vulnerable_to": "Timing Attacks",
+  "related_cve_id": "",
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/bytebeamio/rumqtt/releases/tag/rumqtt-0.25.0",
+  "last_modified": "2025-09-11",
+  "published": "2025-09-11"
+}

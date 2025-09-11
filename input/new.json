@@ -1,25 +1,15 @@
 {
-  "package_name": "zapier-platform-core",
-  "patch_versions": [
-    "17.7.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "17.7.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-200"
-  ],
-  "tldr": "Affected versions of this package may inadvertently expose sensitive information, as the `access_token` value can be included in error responses. This disclosure could allow attackers to obtain authentication credentials and gain unauthorized access.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `zapier-platform-core` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 25,
-  "changelog": "https://github.com/zapier/zapier-platform/blob/main/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

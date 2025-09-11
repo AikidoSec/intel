@@ -1,0 +1,26 @@
+{
+  "package_name": "@zowe/secrets-for-zowe-sdk",
+  "patch_versions": [
+    "8.27.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "8.0.0",
+      "8.26.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Information Exposure through logging. When the log level is set to TRACE for debugging purposes, the extension may inadvertently log Base64-encoded credentials. Although this behavior is documented as a warning, it presents an unexpected risk where sensitive authentication details are written to log files. An attacker with read access to these application log files could easily retrieve and decode the Base64 strings to obtain the cleartext credentials, potentially leading to unauthorized system access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@zowe/secrets-for-zowe-sdk` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/zowe/zowe-cli/releases/tag/v8.27.0",
+  "last_modified": "2025-09-11",
+  "published": "2025-09-11"
+}

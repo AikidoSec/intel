@@ -1,0 +1,26 @@
+{
+  "package_name": "astro",
+  "patch_versions": [
+    "5.13.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.4.14",
+      "5.13.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS) via the `ROUTE_DYNAMIC_SPLIT` regex pattern (`/[(.+?(.+?)|.+?)]/`), which exhibits super-linear time complexity due to nested lazy quantifiers and ambiguous matching paths; an attacker can exploit this by supplying a specially crafted string (e.g., a long sequence of characters followed by mismatched brackets) that forces the regex engine to process an exponential number of backtracking paths, ultimately consuming excessive CPU resources and stalling the application.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `astro` library to the patch version.",
+  "vulnerable_to": "Inefficient Regular Expression Complexity",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/withastro/astro/releases/tag/astro%405.13.6",
+  "last_modified": "2025-09-11",
+  "published": "2025-09-11"
+}

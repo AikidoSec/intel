@@ -1,0 +1,26 @@
+{
+  "package_name": "react-native-exponea-sdk",
+  "patch_versions": [
+    "2.3.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-926"
+  ],
+  "tldr": "Affected versions of this package set the `android:exported` attribute to `true` for certain components in the `AndroidManifest.xml` file. This setting allows those components (such as activities, services, or broadcast receivers) to be invoked by external applications. If not properly restricted, this configuration can increase the risk of unauthorized access, privilege escalation, or unintended data exposure.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `react-native-exponea-sdk` library to the patch version.",
+  "vulnerable_to": "Improper Export of Android Application Components",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/exponea/exponea-react-native-sdk/releases/tag/2.3.0",
+  "last_modified": "2025-09-11",
+  "published": "2025-09-11"
+}

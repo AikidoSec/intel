@@ -1,24 +1,15 @@
 {
-  "package_name": "sirv",
-  "patch_versions": [
-    "3.0.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.2.5",
-      "3.0.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-22"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Directory Traversal due to improper path sanitization. An attacker could exploit this vulnerability by crafting a request containing relative path sequences (e.g., `../`) to escape the intended serving directory. It could allow access to arbitrary files on the server's file system, potentially leading to the disclosure of sensitive information.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `sirv` library to the patch version.",
-  "vulnerable_to": "Path Traversal",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
-  "changelog": "https://github.com/lukeed/sirv/releases/tag/v3.0.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

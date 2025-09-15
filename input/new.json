@@ -1,18 +1,15 @@
 {
-  "package_name": "serde_yml",
+  "package_name": "",
   "patch_versions": [],
-  "vulnerable_ranges": "*",
-  "cwe": [
-    "CWE-1104"
-  ],
-  "tldr": "The `serde_yml` crate is no longer maintained, as indicated by the developer. Its last commit documents that `serde_yml` has served its purpose and will no longer receive updates.",
-  "doest_this_affect_me": "You are affected if you are using this package.",
-  "how_to_fix": "Remove any `serde_yml` package from your application. Please take a look at <a href=\"https://crates.io/crates/serde_norway\">serde_norway</a> instead.",
-  "reporter": "",
-  "vulnerable_to": "Use of Unmaintained Third Party Components",
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "rust",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0068.html"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

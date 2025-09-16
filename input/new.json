@@ -19,7 +19,7 @@
   "vulnerable_to": "Cross Site Scripting (XSS)",
   "related_cve_id": "",
   "language": "PYTHON",
-  "severity_class": "LOW",
-  "aikido_score": 20,
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
   "changelog": "https://github.com/django-wiki/django-wiki/blob/main/docs/release_notes.rst"
 }

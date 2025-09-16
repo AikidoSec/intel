@@ -1,15 +1,36 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "spring-core",
+  "org_name": "org.springframework",
+  "patch_versions": [
+    "5.3.45",
+    "6.1.23",
+    "6.2.11"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "5.3.44"
+    ],
+    [
+      "6.0.0",
+      "6.1.22"
+    ],
+    [
+      "6.2.0",
+      "6.2.10"
+    ]
+  ],
+  "cwe": [
+    "CWE-285"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper annotation resolution in the Spring Framework’s method hierarchy handling. When a parameterized supertype with unbounded generics is involved, annotations may not be correctly detected, which can bypass authorization checks when using Spring Security’s `@EnableMethodSecurity`.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `org.springframework:spring-core` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Autorization",
+  "related_cve_id": "CVE-2025-41249",
+  "language": "JAVA",
+  "severity_class": "MEDIUM",
+  "aikido_score": 44,
+  "changelog": "https://spring.io/security/cve-2025-41249"
 }

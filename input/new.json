@@ -24,7 +24,7 @@
     "CWE-285"
   ],
   "tldr": "Affected versions of this package are vulnerable to improper annotation resolution in the Spring Framework’s method hierarchy handling. When a parameterized supertype with unbounded generics is involved, annotations may not be correctly detected, which can bypass authorization checks when using Spring Security’s `@EnableMethodSecurity`.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "doest_this_affect_me": "You are affected if your application uses a vulnerable version in combination with `@EnableMethodSecurity` and applies security annotations on methods defined in generic superclasses or generic interfaces. Applications that do not use `@EnableMethodSecurity` or do not rely on such annotations are not impacted.",
   "how_to_fix": "Upgrade the `org.springframework:spring-core` library to a patch version.",
   "reporter": "",
   "vulnerable_to": "Improper Autorization",

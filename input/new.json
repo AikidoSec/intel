@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "wiki",
+  "patch_versions": [
+    "0.12.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.12.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) due to improper use of the `safe` tag on the attachments history description field. If the description contains malicious JavaScript, the `safe` tag causes it to be rendered without sanitization, allowing the script to execute when viewing the attachments history.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `wiki` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross Site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/django-wiki/django-wiki/blob/main/docs/release_notes.rst"
 }

@@ -20,6 +20,6 @@
   "related_cve_id": "",
   "language": "PYTHON",
   "severity_class": "MEDIUM",
-  "aikido_score": 60,
+  "aikido_score": 50,
   "changelog": "https://github.com/adriangalilea/streamlit-shortcuts/releases/tag/v1.0.1"
 }

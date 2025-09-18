@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "webpack-dev-server",
+  "patch_versions": [
+    "5.2.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "5.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-346"
+  ],
+  "tldr": "`webpack-dev-server` allows users to use webpack with a development server that provides live reloading. Prior to version `5.2.1`, `webpack-dev-server` users' source code may be stolen when you access a malicious web site with non-Chromium based browser. The Origin header is checked to prevent Cross-site WebSocket hijacking from happening, which was reported by CVE-2018-14732. But `webpack-dev-server` always allows IP address Origin headers. This allows websites that are served on IP addresses to connect WebSocket. An attacker can obtain source code via a method similar to that used to exploit CVE-2018-14732. Version `5.2.1` contains a patch for the issue.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `webpack-dev-server` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Origin Validation Error",
+  "related_cve_id": "CVE-2025-30360",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/webpack/webpack-dev-server/releases/tag/v5.2.1"
 }

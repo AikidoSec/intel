@@ -1,0 +1,27 @@
+{
+  "package_name": "urwid",
+  "patch_versions": [
+    "3.0.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.4.0",
+      "3.0.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-131"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a potential Buffer Overflow in the `get_cols_rows` function when retrieving terminal dimensions (columns and rows). Improper handling of the `ioctl` response may lead to Undefined Behavior or Denial of Service (DoS) if malformed or unexpected data is returned.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `urwid` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Buffer Overflow",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/urwid/urwid/releases/tag/3.0.3",
+  "last_modified": "2025-09-18",
+  "published": "2025-09-18"
+}

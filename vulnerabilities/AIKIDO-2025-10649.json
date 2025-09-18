@@ -21,6 +21,7 @@
   "language": "js",
   "severity_class": "MEDIUM",
   "aikido_score": 45,
+  "ignore_reachability_analysis": true,
   "changelog": "https://github.com/webpack/webpack-dev-server/releases/tag/v5.2.1",
   "last_modified": "2025-09-18",
   "published": "2025-09-18"

@@ -1,0 +1,27 @@
+{
+  "package_name": "jsuites",
+  "patch_versions": [
+    "5.13.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "5.13.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) at several locations in the code, allowing an attacker to inject and execute malicious scripts in a user's browser.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `jsuites` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 51,
+  "changelog": "https://github.com/jsuites/jsuites/releases/tag/v5.13.3",
+  "last_modified": "2025-09-18",
+  "published": "2025-09-18"
+}

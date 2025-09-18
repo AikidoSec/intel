@@ -1,25 +1,15 @@
 {
-  "package_name": "streamlit-shortcuts",
-  "patch_versions": [
-    "1.0.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "1.0.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) via the `add_shortcuts()` function, which injects user-controlled content into dynamically generated JavaScript without proper escaping. An attacker who can influence shortcut labels or related inputs can execute arbitrary scripts in victims’ browsers—enabling session theft, account compromise, or unauthorized actions.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `streamlit-shortcuts` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Cross Site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://github.com/adriangalilea/streamlit-shortcuts/releases/tag/v1.0.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

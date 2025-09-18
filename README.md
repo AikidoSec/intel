@@ -94,7 +94,7 @@ Optional Fields:
 - `only_for_path_ends_with`: If the vulnerability is only for a specific target path, add the path here.
 - `org_name`: In case of a Java package, org_name is required.
 - `version_type_hint`: Version type (`semver` or `dpkg`).
-- `ignore_reachability_analysis`: Package should always be found regardless of not being used in production environment. Set this to `true` if this is the case.
+- `disable_reachability_nalaysis`: Package should always be found regardless of not being used in production environment. Set this to `true` if this is the case.
 
 
 Refer to existing files in the repository for examples.

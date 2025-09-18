@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "mage-ai",
+  "patch_versions": [
+    "0.9.78"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.7.90",
+      "0.9.77"
+    ]
+  ],
+  "cwe": [
+    "CWE-1188"
+  ],
+  "tldr": "Affected versions of this package ship with an insecure default for the `REQUIRE_USER_AUTHENTICATION` setting. An attacker can initiate this remotely; while exploitation is reported to be non-trivial (higher complexity) and considered difficult in practice, a public disclosure exists and may enable real-world abuse.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mage-ai` library to the patch version or set `REQUIRE_USER_AUTHENTICATION` to true.",
+  "reporter": "",
+  "vulnerable_to": "Initialization of a Resource with an Insecure Default",
+  "related_cve_id": "CVE-2025-2129",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 61,
+  "changelog": "https://github.com/mage-ai/mage-ai/releases/tag/0.9.78"
 }

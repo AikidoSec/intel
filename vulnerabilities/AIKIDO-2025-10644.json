@@ -1,0 +1,20 @@
+{
+  "package_name": "daemonize",
+  "patch_versions": [],
+  "vulnerable_ranges": "*",
+  "cwe": [
+    "CWE-1104"
+  ],
+  "tldr": "The `daemonize` crate is no longer maintained. There hasn't been any activity happening for this crate since June 3, 2023. No interactions on pull requests. Issues are disabled for the repo. Efforts to contact the crate owner via email have been unsuccessful.",
+  "doest_this_affect_me": "You are affected if you are using this package.",
+  "how_to_fix": "Remove any `daemonize` package from your application.",
+  "reporter": "",
+  "vulnerable_to": "Use of Unmaintained Third Party Components",
+  "related_cve_id": "",
+  "language": "rust",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0069.html",
+  "last_modified": "2025-09-18",
+  "published": "2025-09-18"
+}

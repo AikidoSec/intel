@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@genkit-ai/firebase",
+  "patch_versions": [
+    "0.9.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.9.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a race condition in the asynchronous user engagement collection. The `appendSpan` and `collectUserEngagement` methods do not correctly await asynchronous calls, leading to improper execution order. This flaw can result in unexpected behavior, data inconsistencies, or incomplete tracking during user engagement processing.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@genkit-ai/firebase` library to the patch version.",
+  "vulnerable_to": "Race Condition",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 54,
+  "changelog": "https://github.com/firebase/genkit/commit/e16810a1724ca416b302cc40066e54589e1f31b8"
 }

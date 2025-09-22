@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "Microsoft.Azure.Cosmos.Direct",
+  "patch_versions": [
+    "3.40.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.13.0",
+      "3.40.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-362",
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a race condition in the Azure Cosmos DB .NET SDK when cross-region hedging is enabled. The issue arises in the `Trace` class, specifically in the `AddOrUpdateDatum` method, where multiple parallel threads attempt to update the same dictionary without proper synchronization. This lack of thread safety can lead to excessive CPU usage or `InvalidOperationException` errors during execution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Microsoft.Azure.Cosmos.Direct` library to the patch version.",
+  "vulnerable_to": "Race Condition",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "DOTNET",
+  "severity_class": "LOW",
+  "aikido_score": 14,
+  "changelog": "https://github.com/Azure/azure-cosmos-dotnet-v3/blob/master/changelog.md"
 }

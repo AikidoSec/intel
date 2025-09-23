@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "zx",
+  "patch_versions": [
+    "8.8.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "8.5.0",
+      "8.8.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-78"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a command injection issue in the kill() function of the zx library on Windows, where the pid parameter is unsafely interpolated into a shell command via child_process.exec() without validation, allowing attackers controlling the input to execute arbitrary commands. An attacker can exploit this by injecting shell metacharacters into the pid argument, as demonstrated in the PoC where supplying '1234 & calc.exe' launches the calculator, proving remote code execution that could lead to full system compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range, and if you are running the package on a Windows environment.",
+  "how_to_fix": "Upgrade the `zx` library to the patch version.",
+  "vulnerable_to": "OS Command Injection",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://github.com/google/zx/releases/tag/8.8.2"
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "monai",
+  "patch_versions": [
+    "1.5.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.5.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a path traversal attack known as Zip Slip, where the `zip_file.extractall` function is used without sanitizing file paths, allowing malicious zip archives to overwrite arbitrary system files when decompressed. This issue is compounded by the project's capability to download zip files from remote links, broadening the attack surface. An attacker can exploit this vulnerability by crafting a zip file that includes paths with directory traversals and distributing it via a link. When the victim's application downloads and extracts the file, it overwrites critical system files, potentially leading to a compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `monai` library to the patch version.",
+  "vulnerable_to": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+  "related_cve_id": "CVE-2025-58755",
+  "language": "Python",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://github.com/Project-MONAI/MONAI/blob/dev/CHANGELOG.md#151---2025-09-22"
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "monai",
+  "patch_versions": [
+    "1.5.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.5.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to remote code execution due to unsafe deserialization in the `pickle_operations` function within `monai/data/utils.py`. This function automatically deserializes dictionary values with specific suffixes using `pickle.loads()` without any security measures. An attacker can exploit this vulnerability by creating a malicious dataset with keys like `preprocessing_transforms` containing a pickled payload. When processed using MONAI's `list_data_collate` function, it can execute malicious code during data loading, potentially allowing the attacker to run arbitrary commands on the system.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `monai` library to the patch version.",
+  "vulnerable_to": "Deserialization of Untrusted Data",
+  "related_cve_id": "CVE-2025-58757",
+  "language": "Python",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://github.com/Project-MONAI/MONAI/blob/dev/CHANGELOG.md#151---2025-09-22"
 }

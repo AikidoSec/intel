@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "parse_datetime",
+  "patch_versions": [
+    "0.12.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.10.0",
+      "0.11.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an integer overflow in the date calculation functions, where the old code performed unchecked multiplication, which could result in a panic on overflow. The patched code introduces a safe check to prevent this. An attacker could exploit this by supplying a huge `multiplier` value that causes an integer overflow, triggering a panic and resulting in a denial-of-service condition.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `parse_datetime` library to the patch version.",
+  "vulnerable_to": "Integer Overflow or Wraparound",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Rust",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/uutils/parse_datetime/releases/tag/v0.12.0"
 }

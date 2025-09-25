@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "inspector-apm/neuron-ai",
+  "patch_versions": [
+    "2.2.10"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.11.4",
+      "2.2.9"
+    ]
+  ],
+  "cwe": [
+    "CWE-89"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to SQL Injection due to improper neutralization of prompt elements in the database query tool. The old code directly concatenated user-supplied input into SQL queries without using parameterized statements when handling the prompt, allowing attackers to execute arbitrary SQL commands on the underlying database. The patched code enforces the use of named placeholders and parameter binding, effectively neutralizing this threat by separating SQL code from data.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `inspector-apm/neuron-ai` library to the patch version.",
+  "vulnerable_to": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/inspector-apm/neuron-ai/releases/tag/2.2.10"
 }

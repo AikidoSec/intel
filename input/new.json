@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "monai",
+  "patch_versions": [
+    "1.5.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.5.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to arbitrary code execution via insecure deserialization. The vulnerability exists because the `CheckpointLoader` and similar mechanisms that load training checkpoints do not use the security restriction `weights_only=True`. It allows the deserialization of arbitrary Python objects. An attacker can exploit this by distributing a malicious checkpoint file that contains a serialized payload designed to execute arbitrary commands when loaded.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `monai` library to the patch version.",
+  "vulnerable_to": "Deserialization of Untrusted Data",
+  "related_cve_id": "CVE-2025-58756",
+  "language": "Python",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://github.com/Project-MONAI/MONAI/blob/dev/CHANGELOG.md#151---2025-09-22"
 }

@@ -1,0 +1,26 @@
+{
+  "package_name": "@lightsparkdev/lightspark-sdk",
+  "patch_versions": [
+    "1.9.12"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.6",
+      "1.9.11"
+    ]
+  ],
+  "cwe": [
+    "CWE-208"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a timing attack in webhook signature verification due to the use of a non-constant-time string comparison function. This vulnerability allows an attacker to exploit the timing differences in the verification process by sending numerous webhook requests with incremental signature changes and measuring the response times. Through statistical analysis, the attacker can gradually deduce the correct signature, potentially leading to unauthorized webhook execution or secret leakage.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@lightsparkdev/lightspark-sdk` library to the patch version.",
+  "vulnerable_to": "Observable Timing Discrepancy",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/lightsparkdev/js-sdk/releases/tag/%40lightsparkdev/lightspark-sdk%401.9.12",
+  "last_modified": "2025-10-02",
+  "published": "2025-10-02"
+}

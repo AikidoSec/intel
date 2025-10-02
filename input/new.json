@@ -19,6 +19,6 @@
   "related_cve_id": "",
   "language": "JS",
   "severity_class": "MEDIUM",
-  "aikido_score": 88,
+  "aikido_score": 50,
   "changelog": "https://github.com/google/zx/releases/tag/8.8.2"
 }

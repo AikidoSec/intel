@@ -1,24 +1,15 @@
 {
-  "package_name": "fuser",
-  "patch_versions": [
-    "0.16.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.5.0",
-      "0.15.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-908"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to uninitialized memory read and leak in the fuser crate, specifically when creating a new libfuse session with `fuser::Session::new`, where the operation list is incorrectly passed as NULL instead of a valid pointer, causing libfuse to read and leak uninitialized memory. An attacker could exploit this by inducing the application to initialize a FUSE session, potentially disclosing sensitive data from heap memory, such as passwords or cryptographic keys, which might facilitate information disclosure or, in combination with other vulnerabilities, lead to code execution.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and if you are using the affected function `fuser::Session::new` when creating a new libfuse session.",
-  "how_to_fix": "Upgrade the `fuser` library to the patch version.",
-  "vulnerable_to": "Use of Uninitialized Resource",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Rust",
-  "severity_class": "MEDIUM",
-  "aikido_score": 41,
-  "changelog": "https://rustsec.org/advisories/RUSTSEC-2021-0154"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

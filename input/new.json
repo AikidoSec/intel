@@ -28,7 +28,7 @@
   "vulnerable_to": "Cross-Site Scripting (XSS)",
   "related_cve_id": "",
   "language": "Rust",
-  "severity_class": "MEDIUM",
+  "severity_class": "LOW",
   "aikido_score": 40,
   "changelog": "https://github.com/rust-ammonia/ammonia/releases/tag/v4.1.2"
 }

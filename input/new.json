@@ -1,34 +1,15 @@
 {
-  "package_name": "ammonia",
-  "patch_versions": [
-    "4.1.2",
-    "4.0.1",
-    "3.3.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "4.1.0",
-      "4.1.1"
-    ],
-    [
-      "4.0.0",
-      "4.0.0"
-    ],
-    [
-      "3.0.0",
-      "3.3.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a mutation cross-site scripting (mXSS), which arises when DOM cleanup operations inadvertently cause namespace changes, potentially reintroducing malicious elements or attributes that bypass sanitization. This vulnerability allows an attacker to exploit it by crafting input that triggers these namespace switches during processing, leading to the execution of arbitrary JavaScript in the user's context.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `ammonia` library to the patch version.",
-  "vulnerable_to": "Cross-Site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Rust",
-  "severity_class": "MEDIUM",
-  "aikido_score": 40,
-  "changelog": "https://github.com/rust-ammonia/ammonia/releases/tag/v4.1.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

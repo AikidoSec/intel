@@ -1,15 +1,19 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "serde_yaml_bw",
+  "patch_versions": [
+    "2.4.0"
+  ],
+  "vulnerable_ranges": [
+    ["1.0.0", "2.3.0"]
+  ],
+  "cwe": ["CWE-770"],
+  "tldr": "serde_yaml_bw did not consider limitation in processing long sequences of user-crafted YAML files. While this does not directly lead to a crash, it may consume excessive memory to process this input. This has the potential of a denial-of-service attack if multiple large sequences are processed at the same time.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade to the patch version of `serde_yaml_bw`.",
+  "vulnerable_to": "Allocation of Resources Without Limits or Throttling",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "rust",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/bourumir-wyngs/serde-yaml-bw/releases/tag/2.4.0"
 }

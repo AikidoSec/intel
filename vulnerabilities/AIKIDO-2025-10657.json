@@ -1,0 +1,26 @@
+{
+  "package_name": "joserfc",
+  "patch_versions": [
+    "1.3.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.2.0",
+      "1.3.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Denial of Service due to insufficient content size validation in JWS and JWE components. The vulnerability allows attackers to send gigantic JWS or JWE payloads that are processed without size checks, consuming excessive memory and CPU resources. An attacker can exploit this by crafting large messages that overwhelm the system during parsing, potentially leading to service unavailability or crashes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `joserfc` library to the patch version.",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
+  "related_cve_id": "",
+  "language": "Python",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/authlib/joserfc/releases/tag/1.3.4",
+  "last_modified": "2025-10-02",
+  "published": "2025-10-02"
+}

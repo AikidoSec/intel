@@ -18,7 +18,7 @@
   "vulnerable_to": "OS Command Injection",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "HIGH",
+  "severity_class": "MEDIUM",
   "aikido_score": 88,
   "changelog": "https://github.com/google/zx/releases/tag/8.8.2"
 }

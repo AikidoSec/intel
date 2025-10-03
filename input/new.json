@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/hashicorp/consul",
+  "patch_versions": [
+    "1.21.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.21.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-732"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Information Exposure via an improper access control flaw in the Consul agent. The vulnerability exists because the system improperly secures the TLS certificate and private key files, allowing read access to the group ID that the Consul agent process runs under. An attacker who has already gained initial access to the underlying host, potentially as a lower-privileged user belonging to that same group, could exploit this by directly reading the sensitive TLS materials from the file system.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/hashicorp/consul` library to the patch version or explicitly set the read/write permissions at `agent/auto-config/persist.go` to `0600`.",
+  "vulnerable_to": "Incorrect Permission Assignment for Critical Resource",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 23,
+  "changelog": "https://github.com/hashicorp/consul/releases/tag/v1.21.5"
 }

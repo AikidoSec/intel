@@ -1,12 +1,12 @@
 {
   "package_name": "@apollo/sandbox",
   "patch_versions": [
-    "2.7.2"
+    "2.7.3"
   ],
   "vulnerable_ranges": [
     [
       "0.1.0",
-      "2.7.1"
+      "2.7.2"
     ]
   ],
   "cwe": [
@@ -20,5 +20,5 @@
   "language": "JS",
   "severity_class": "MEDIUM",
   "aikido_score": 42,
-  "changelog": "https://github.com/apollographql/embeddable-explorer/blob/main/packages/sandbox/CHANGELOG.md#patch-changes-1"
+  "changelog": "https://github.com/apollographql/embeddable-explorer/blob/main/packages/sandbox/CHANGELOG.md#273"
 }

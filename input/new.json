@@ -1,15 +1,17 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "robotframework-browser",
+  "patch_versions": ["19.8.0"],
+  "vulnerable_ranges": [
+    ["0.1.0", "19.7.2"]
+  ],
+  "cwe": ["CWE-843"],
+  "tldr": "Chromium ships with robotframework-browser and is thus a crucial part of its security posture. As robotframework-browser processes untrusted content and code, any issue in Chromium could potentially be exploited. Type confusion in V8 in Google Chrome prior to 140.0.7339.185 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High).",
+  "doest_this_affect_me": "You're affected if you are using a version which is within vulnerability ranges.",
+  "how_to_fix": "Upgrade robotframework-browser to the patch version.",
+  "vulnerable_to": "Access of Resource Using Incompatible Type",
+  "related_cve_id": "CVE-2025-10585",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/MarketSquare/robotframework-browser/releases/tag/v19.8.0"
 }

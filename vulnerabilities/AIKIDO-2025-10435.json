@@ -1,7 +1,7 @@
 {
   "package_name": "multer",
   "patch_versions": [
-    "2.0.0"
+    "2.0.2"
   ],
   "vulnerable_ranges": [
     [

@@ -18,7 +18,7 @@
   "vulnerable_to": "Use After Free",
   "related_cve_id": "",
   "language": "Rust",
-  "severity_class": "HIGH",
+  "severity_class": "MEDIUM",
   "aikido_score": 70,
   "changelog": "https://github.com/foyer-rs/foyer/releases/tag/v0.20.0"
 }

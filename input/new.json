@@ -19,6 +19,6 @@
   "related_cve_id": "",
   "language": "Rust",
   "severity_class": "MEDIUM",
-  "aikido_score": 70,
+  "aikido_score": 50,
   "changelog": "https://github.com/foyer-rs/foyer/releases/tag/v0.20.0"
 }

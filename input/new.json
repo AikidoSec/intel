@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/hashicorp/consul",
-  "patch_versions": [
-    "1.21.5"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.13.0",
-      "1.21.4"
-    ]
-  ],
-  "cwe": [
-    "CWE-208"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a timing attack due to the failure to use constant-time comparisons for sensitive values. This vulnerability occurs when the code compares sensitive data like passwords or tokens in a non-constant time manner, allowing differences in execution time to be measured. An attacker can exploit this by sending numerous requests with guessed values and analyzing the response times to infer correct characters or values incrementally. It could lead to the disclosure of sensitive information and unauthorized access to systems or user accounts.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/hashicorp/consul` library to the patch version.",
-  "vulnerable_to": "Observable Timing Discrepancy",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 20,
-  "changelog": "https://github.com/hashicorp/consul/releases/tag/v1.21.5"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

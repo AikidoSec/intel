@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "DotNetNuke.Web",
+  "patch_versions": [
+    "10.1.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "9.13.8",
+      "10.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-327"
+  ],
+  "tldr": "Affected versions of this package use the flawed SHA-1 algorithm for storing passwords, making them vulnerable. Attackers who gain access to password hashes can leverage modern GPU and cloud resources to speed up offline cracking attempts. This vulnerability may result in large-scale credential theft through brute-force techniques.Affected versions of this package use the flawed SHA-1 algorithm for storing passwords, making them vulnerable. Attackers who gain access to password hashes can leverage modern GPU and cloud resources to speed up offline cracking attempts. This vulnerability may result in large-scale credential theft through brute-force techniques.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `DotNetNuke.Web` library to the patch version.",
+  "vulnerable_to": "Use of a Broken or Risky Cryptographic Algorithm",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "dotnet",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/dnnsoftware/Dnn.Platform/releases/tag/v10.1.1"
 }

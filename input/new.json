@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "alloy-transport-http",
+  "patch_versions": [
+    "1.0.37"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.4.0",
+      "1.0.36"
+    ]
+  ],
+  "cwe": [
+    "CWE-305"
+  ],
+  "tldr": "Affected versions of this package contain a authentication bypass vulnerability due to a logical error in JWT token validation, where the validation logic was inverted, resulting in tokens being created with an incorrect future timestamp. Specifically, the system incorrectly considered old tokens valid while rejecting new ones, and newly issued tokens have an `iat` (issued at) claim set 60 seconds in the future. An attacker could exploit this by using a token that has expired or by manipulating token issuance to create a token that the flawed system would consider perpetually valid, thereby gaining unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `alloy-transport-http` library to the patch version.",
+  "vulnerable_to": "Authentication Bypass by Primary Weakness",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/alloy-rs/alloy/releases/tag/v1.0.37"
 }

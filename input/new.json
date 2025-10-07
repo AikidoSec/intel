@@ -1,24 +1,15 @@
 {
-  "package_name": "pimcore/pimcore",
-  "patch_versions": [
-    "12.2.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "10.6.0",
-      "12.1.5"
-    ]
-  ],
-  "cwe": [
-    "CWE-613"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Insufficient Session Expiration on password update, where the implemented feature did not automatically revoke existing sessions and enforce re-authentication after a password change, allowing an attacker with a previously compromised session to maintain unauthorized access to the user's account and perform malicious actions until the session expires or is manually terminated.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `pimcore/pimcore` library to the patch version.",
-  "vulnerable_to": "Insufficient Session Expiration",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://github.com/pimcore/pimcore/releases/tag/v12.2.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

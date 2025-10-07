@@ -1,15 +1,22 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "ckzg",
+  "patch_versions": ["2.1.5"],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.1.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-326"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Weak Fiat-Shamir implementation due to an incorrect commitment processing bug where the deduplicated commitment count (`num_commitments`) was used with the original, potentially duplicate-containing array (`commitments_bytes`) for challenge computation, instead of the deduplicated array (`unique_commitments`). This mismatch could cause the system to generate a cryptographic challenge based on an incorrect subset of data, for example, using `[commitment_a, commitment_a]` instead of the intended unique set `[commitment_a, commitment_b]`. An attacker could potentially exploit this by strategically submitting duplicate commitments to manipulate the challenge value, which would allow them to influence the protocol's outcome or compromise its security guarantees, although exploitation is considered difficult.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ckzg` library to the patch version.",
+  "vulnerable_to": "Inadequate Encryption Strength",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/ethereum/c-kzg-4844/releases/tag/v2.1.5"
 }

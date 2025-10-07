@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/getsops/sops/v3",
-  "patch_versions": [
-    "3.11.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.0.0",
-      "3.10.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-532"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Sensitive Information Exposure in the `exec-env` command. When processing a YAML file containing a complex value, a failure causes the decrypted content of the failing value to be printed in error logs. An attacker with access to these logs could exploit this vulnerability to recover exposed secrets.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/getsops/sops/v3` library to the patch version.",
-  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 10,
-  "changelog": "https://github.com/getsops/sops/blob/main/CHANGELOG.md#3110"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "react-on-rails",
+  "patch_versions": [
+    "16.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "11.0.8",
+      "16.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) due to insufficient escaping of user input in dynamic DOM selectors and JavaScript contexts, which could allow an attacker to inject malicious scripts through crafted inputs. This vulnerability stems from the lack of proper sanitization in component and store script generation, enabling arbitrary code execution. An attacker might exploit this by manipulating dynamic IDs without `CSS.escape()` or submitting unescaped user data that executes in other users' browsers, potentially leading to session hijacking or data theft.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `react-on-rails` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/shakacode/react_on_rails/blob/master/CHANGELOG.md#1610---2025-09-23"
 }

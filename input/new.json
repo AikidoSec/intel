@@ -1,24 +1,15 @@
 {
-  "package_name": "Smidge.Core",
-  "patch_versions": [
-    "4.6.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "4.0.0",
-      "4.5.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-22"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to arbitrary file creation due to improper handling of the version parameter in HTTP requests for CSS/JS bundles. By manipulating this parameter, an attacker can control the server-side cache directory, enabling username enumeration by testing for folder existence in paths like `C:Users` and depleting disk space by forcing the server to create a unique cache file for each request. These attacks can be performed by unauthenticated users, potentially leading to information disclosure or denial of service by filling the server's storage.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `Smidge.Core` library to the patch version.",
-  "vulnerable_to": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "dotnet",
-  "severity_class": "HIGH",
-  "aikido_score": 75,
-  "changelog": "https://github.com/Shazwazza/Smidge/releases/tag/v4.6.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

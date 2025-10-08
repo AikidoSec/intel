@@ -1,17 +1,15 @@
 {
-  "package_name": "opencv",
-  "patch_versions": ["0.96.0"],
-  "vulnerable_ranges": [
-    ["0.1.0", "0.95.1"]
-  ],
-  "cwe": ["CWE-125"],
-  "tldr": "Affected versions of this package did not mark `cv::MatStep::operator[]` as unsafe, although `MatStep` allows out-of-bound access. If the application did not implement proper bounds checking, this could lead to memory corruption or undefined behavior.",
-  "doest_this_affect_me": "You are affected if you use a version within the vulnerable ranges.",
-  "how_to_fix": "Upgrade the library to the patch version, or implement proper bounds checking for `MatStep`.",
-  "vulnerable_to": "Out-Of-Bounds Read",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "LOW",
-  "aikido_score": 20,
-  "changelog": "https://github.com/twistedfall/opencv-rust/blob/master/CHANGES.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade robotframework-browser to the patch version.",
   "vulnerable_to": "Access of Resource Using Incompatible Type",
   "related_cve_id": "CVE-2025-10585",
-  "language": "JS",
+  "language": "PYTHON",
   "severity_class": "MEDIUM",
   "aikido_score": 50,
   "changelog": "https://github.com/MarketSquare/robotframework-browser/releases/tag/v19.8.0",

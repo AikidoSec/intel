@@ -1,0 +1,26 @@
+{
+  "package_name": "rmcp",
+  "patch_versions": [
+    "0.7.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.6.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-352"
+  ],
+  "tldr": "Affected versions of this callback do not support validating a CSRF token by default for the OAuth 2.0 authorization flow. By requiring this as part of the OAuth 2.0 authorization flow, authorization flows are by default secured against cross-site request forgery. This is a breaking change, as it requires the user to pass a CSRF token.",
+  "doest_this_affect_me": "If you've taken other measues against CSRF during the authorization flow, you may not be affected. Otherwise, you may be affected if you use a vulnerable version.",
+  "how_to_fix": "Upgrade the library to the patch version, and pass your generated CSRF token via the `handle_callback` function (you also need to provide the CSRF token via the `state` param at the start of the authorization flow).",
+  "vulnerable_to": "Cross-Site Request Forgery",
+  "related_cve_id": "",
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/modelcontextprotocol/rust-sdk/releases/tag/rmcp-v0.7.0",
+  "last_modified": "2025-10-08",
+  "published": "2025-10-08"
+}

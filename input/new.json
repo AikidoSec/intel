@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "Authlib",
+  "patch_versions": [
+    "1.6.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.6.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Denial of Service (DoS) via Unbounded JWS Deserialization, where the lack of size limitations on JWS components could allow an attacker to exhaust server resources by submitting malicious tokens with extremely large segments. An attacker could exploit this by crafting JWS tokens with oversized headers, payloads, or signatures, causing excessive memory consumption or CPU usage during decoding.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Authlib` library to the patch version.",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/authlib/authlib/blob/main/docs/changelog.rst#version-165"
 }

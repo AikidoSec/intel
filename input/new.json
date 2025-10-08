@@ -1,24 +1,15 @@
 {
-  "package_name": "DotNetNuke.Instrumentation",
-  "patch_versions": [
-    "10.1.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "5.0.0",
-      "10.1.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-862"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to an unauthenticated file upload issue in CKEditor. This vulnerability allows anonymous users to upload files through CKEditor endpoints, which should be restricted to authenticated users as a security measure. An attacker could exploit this weakness by uploading malicious files, such as scripts or executable content. It could potentially result in remote code execution, site defacement, or unauthorized data manipulation.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `DotNetNuke.Instrumentation` library to the patch version.",
-  "vulnerable_to": "Missing Authorization",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "dotnet",
-  "severity_class": "MEDIUM",
-  "aikido_score": 62,
-  "changelog": "https://github.com/dnnsoftware/Dnn.Platform/releases/tag/v10.1.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

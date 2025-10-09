@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "informed",
+  "patch_versions": [
+    "4.66.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.23.0",
+      "4.66.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution in the `ObjectMap.set()` function, where an attacker could exploit unsanitized property paths by submitting malicious input containing dangerous property names like proto, constructor, or prototype to modify the Object prototype, potentially leading to application behavior manipulation, security control bypass, or denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `informed` library to the patch version.",
+  "vulnerable_to": "Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/teslamotors/informed/blob/master/CHANGELOG.md#4661--january-7th-2025-"
 }

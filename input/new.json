@@ -1,5 +1,5 @@
 {
-  "package_name": "FirebaseSharedSwift",
+  "package_name": "FirebasePerformance",
   "patch_versions": [
     "12.4.0"
   ],
@@ -14,7 +14,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to a Use After Free issue in the `didCompleteRequestWithResponse:error:` method, where `response.MIMEType` is accessed from a deallocated `NSURLResponse` object. This can cause an `EXC_BAD_ACCESS` crash under certain network or SDK conditions due to premature deallocation and thread-safety issues. The fix ensures the MIME type is safely copied before use to prevent accessing freed memory.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `FirebaseSharedSwift` library to the patch version.",
+  "how_to_fix": "Upgrade the `FirebasePerformance` library to the patch version.",
   "vulnerable_to": "Use after free",
   "related_cve_id": "",
   "language": "SWIFT",

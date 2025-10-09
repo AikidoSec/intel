@@ -1,25 +1,15 @@
 {
-  "package_name": "matrix-synapse",
-  "patch_versions": [
-    "1.139.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.120.0",
-      "1.138.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-601"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to open redirect attacks due to insufficient validation of the `idp` parameter in the legacy SSO flow. The vulnerability is mitigated by restricting the `idp` parameter to known values defined in the configuration file and by URL-encoding it to prevent malicious redirection.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `matrix-synapse` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Open Redirect",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 51,
-  "changelog": "https://github.com/element-hq/synapse/releases/tag/v1.139.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

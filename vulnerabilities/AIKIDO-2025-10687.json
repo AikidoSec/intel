@@ -1,0 +1,31 @@
+{
+  "package_name": "elastic-transport",
+  "patch_versions": [
+    "8.4.1",
+    "8.3.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "8.4.0",
+      "8.4.0"
+    ],
+    [
+      "8.0.0",
+      "8.3.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Information Disclosure due to unsanitized user input in URL and host parameters being directly set as OpenTelemetry span attributes. An attacker can exploit this by crafting malicious URLs containing special characters or payloads that, when processed by the monitoring system's telemetry backend, could lead to log injection, misinterpretation of telemetry data, or potential security incidents in downstream systems that consume these spans without proper sanitization.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `elastic-transport` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "Ruby",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/elastic/elastic-transport-ruby/releases/tag/v8.4.1",
+  "last_modified": "2025-10-09",
+  "published": "2025-10-09"
+}

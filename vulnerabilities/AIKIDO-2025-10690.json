@@ -1,0 +1,26 @@
+{
+  "package_name": "docling-core",
+  "patch_versions": [
+    "2.48.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.21.0",
+      "2.48.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Arbitrary Code Execution due to unsafe YAML deserialization. They use `yaml.load()` with `loader=yaml.FullLoader` to process untrusted YAML input. An attacker can exploit this by supplying a maliciously crafted YAML file containing embedded Python commands, which are executed during deserialization and can potentially lead to full system compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `docling-core` library to the patch version.",
+  "vulnerable_to": "Deserialization of Untrusted Data",
+  "related_cve_id": "",
+  "language": "Python",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/docling-project/docling-core/releases/tag/v2.48.4",
+  "last_modified": "2025-10-09",
+  "published": "2025-10-09"
+}

@@ -1,0 +1,27 @@
+{
+  "package_name": "github.com/hashicorp/go-slug",
+  "patch_versions": [
+    "0.16.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.16.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Path Traversal due to insufficient input validation in the `TargetWithinRoot` function of `github.com/hashicorp/go-slug`. An attacker can exploit this weakness by providing crafted file paths containing traversal sequences to escape the intended directory.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/hashicorp/go-slug` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 48,
+  "changelog": "https://github.com/hashicorp/go-slug/releases/tag/v0.16.8",
+  "last_modified": "2025-10-09",
+  "published": "2025-10-09"
+}

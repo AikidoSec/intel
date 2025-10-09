@@ -1,25 +1,15 @@
 {
-  "package_name": "shopware/storefront",
-  "patch_versions": [
-    "6.7.2.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "6.6.10.0",
-      "6.7.2.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) due to insufficient input validation in the `activeRouteParameters` variable at the `/page/cms/*` and `/widget/cms/*` endpoints. An attacker can craft a malicious URL and trick a user into visiting it, enabling the execution of arbitrary JavaScript in the victim’s browser. This can result in the theft of session cookies and administrative tokens, as well as allow the attacker to perform unauthorized actions on behalf of the affected user.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `shopware/storefront` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
-  "changelog": "https://github.com/shopware/shopware/commit/12fb537c5ebe009f2a0f58b9c24dbd2d6b4c508f"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "yajra/laravel-datatables-oracle",
+  "patch_versions": [
+    "12.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.11.7",
+      "12.5.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-95"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Remote Code Execution due to improper handling of Blade templates. The vulnerability occurs because user-controlled template content is processed using the unsafe `eval()` function instead of the secure `Blade::render()` method. An attacker could exploit this by injecting malicious PHP code into a Blade template, which would then be executed with the application's privileges when the template is compiled. It could lead to complete compromise of the application server and underlying system.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `yajra/laravel-datatables-oracle` library to the patch version.",
+  "vulnerable_to": "Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 88,
+  "changelog": "https://github.com/yajra/laravel-datatables/releases/tag/v12.6.0"
 }

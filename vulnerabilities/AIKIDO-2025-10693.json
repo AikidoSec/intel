@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `globalpayments/php-sdk` library to the patch version.",
   "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
   "related_cve_id": "",
-  "language": "Php",
+  "language": "PHP",
   "severity_class": "MEDIUM",
   "aikido_score": 40,
   "changelog": "https://github.com/globalpayments/php-sdk/blob/master/CHANGELOG.md",

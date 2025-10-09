@@ -1,25 +1,15 @@
 {
-  "package_name": "pymatgen",
-  "patch_versions": [
-    "2025.10.7"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "2025.10.6"
-    ]
-  ],
-  "cwe": [
-    "CWE-1333"
-  ],
-  "tldr": "Affected versions of `pymatgen` are vulnerable to an exponential regular-expression denial-of-service (ReDoS) in `GaussianInput.from_string`. An attacker who can supply crafted input to that method can trigger catastrophic backtracking in the library’s regex, causing excessive CPU usage and potentially rendering the process unresponsive.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `pymatgen` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
-  "related_cve_id": "CVE-2022-42964",
-  "language": "PYTHON",
-  "severity_class": "LOW",
-  "aikido_score": 30,
-  "changelog": "https://github.com/materialsproject/pymatgen/releases/tag/v2025.10.7"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,0 +1,26 @@
+{
+  "package_name": "react-on-rails",
+  "patch_versions": [
+    "16.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "16.0.0",
+      "16.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper input validation, specifically in the generator package installation commands, where unsafe string interpolation allowed command injection. An attacker could exploit this by crafting malicious inputs, such as specially crafted package names or arguments, that bypass validation and execute arbitrary commands on the host system, potentially leading to unauthorized access or system compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `react-on-rails` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/shakacode/react_on_rails/blob/master/CHANGELOG.md#1610---2025-09-23",
+  "last_modified": "2025-10-09",
+  "published": "2025-10-09"
+}

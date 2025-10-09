@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "aioftp",
+  "patch_versions": [
+    "0.26.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.26.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-93"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to CRLF Injection in the client, which arises because the aioftp client fails to properly sanitize user input in command arguments, allowing an attacker to inject arbitrary FTP commands by embedding CR (Carriage Return) or LF (Line Feed) characters.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `aioftp` library to the patch version.",
+  "vulnerable_to": "Improper Neutralization of CRLF Sequences ('CRLF Injection')",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/aio-libs/aioftp/commit/49c28ec1f55c9960a09fd5d21a87114e8450c501"
 }

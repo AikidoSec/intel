@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "nixl",
+  "patch_versions": [
+    "0.6.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.6.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Use-After-Free after disconnect due to improper management of the transfer request ownership. An attacker could potentially exploit this vulnerability by triggering an error condition that causes the agent to prematurely free a request object, resulting in the client application using a dangling pointer. This use of a freed resource could result in a crash or data corruption.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `nixl` library to the patch version.",
+  "vulnerable_to": "Use After Free",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/ai-dynamo/nixl/releases/tag/0.6.1"
 }

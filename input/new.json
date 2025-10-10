@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "woocommerce/email-editor",
+  "patch_versions": [
+    "1.8.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.7.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to callback replacement attacks via deserialization in the Personalization_Tag class due to the absence of a preventive method. This flaw allows attackers to craft malicious serialized data that replaces legitimate callbacks with arbitrary code. The exploitation occurs when the application processes untrusted serialized input, enabling attackers to hijack callback functions and execute unauthorized actions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `woocommerce/email-editor` library to the patch version.",
+  "vulnerable_to": "Deserialization of Untrusted Data",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/woocommerce/email-editor/releases/tag/1.8.0"
 }

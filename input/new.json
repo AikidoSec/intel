@@ -1,24 +1,15 @@
 {
-  "package_name": "nodemailer",
-  "patch_versions": [
-    "7.0.7"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.0.0",
-      "7.0.6"
-    ]
-  ],
-  "cwe": [
-    "CWE-436"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Interpretation Conflict due to improper handling of quoted local-parts. The vulnerability occurs because the code attempts to extract email addresses from plain text but fails to properly account for RFC 5321 quoting rules, which allow the @ symbol within quoted local-parts (e.g., `'user@domain'@example.com`). An attacker can exploit this by crafting an email with a quoted local-part containing an @ symbol, which may cause the application to incorrectly extract a spoofed address (e.g., `attacker@example.com'@legitimate.com`) and misroute sensitive data to an attacker-controlled domain.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `nodemailer` library to the patch version.",
-  "vulnerable_to": "Interpretation Conflict",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 56,
-  "changelog": "https://github.com/nodemailer/nodemailer/commit/1150d99fba77280df2cfb1885c43df23109a8626"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

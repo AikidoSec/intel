@@ -92,6 +92,9 @@ Optional Fields:
 - `unaffected_distros`: If there are specific distributions that are not vulnerable, regardles of the version range, add them here.
 - `simplify_version_if_has_patch_part`: If the version has a patch part in format `9.6_p2-r0+deb9u1`, Aikido will only match on the 9.6 part. Set this to `true` if this is the case.
 - `only_for_path_ends_with`: If the vulnerability is only for a specific target path, add the path here.
+- `org_name`: In case of a Java package, org_name is required.
+- `version_type_hint`: Version type (`semver` or `dpkg`).
+- `disable_reachability_analysis`: Package should always be found regardless of not being used in production environment. Set this to `true` if this is the case.
 
 
 Refer to existing files in the repository for examples.

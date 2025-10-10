@@ -1,0 +1,26 @@
+{
+  "package_name": "@unit-finance/unit-node-sdk",
+  "patch_versions": [
+    "1.3.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.8.13",
+      "1.3.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-208"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Timing Attack in the webhook signature verification function due to a non-constant-time string comparison. The vulnerable code used a standard equality operator to compare the expected and provided HMAC digests, which allows an attacker to exploit microscopic timing differences in the comparison operation. By repeatedly submitting forged signatures and measuring the server's response time, an attacker could gradually deduce the correct HMAC value character by character.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@unit-finance/unit-node-sdk` library to the patch version.",
+  "vulnerable_to": "Observable Timing Discrepancy",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/unit-finance/unit-node-sdk/releases/tag/1.3.5",
+  "last_modified": "2025-10-10",
+  "published": "2025-10-10"
+}

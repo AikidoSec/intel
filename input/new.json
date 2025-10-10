@@ -1,24 +1,15 @@
 {
-  "package_name": "marimo",
-  "patch_versions": [
-    "0.16.4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.9.20",
-      "0.16.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-441"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to unauthenticated proxying via the `/mpl/<port>/<route>` endpoint, which is accessible without authentication on default Marimo installations. This endpoint allows attackers to connect to arbitrary local ports and internal services, bypassing firewalls and exposing services intended to be local-only. Depending on the exposed services (e.g., CUPS, phpMyAdmin, RPCMapper), attackers may gain access to sensitive data, perform network reconnaissance, or even achieve remote code execution. Public scans revealed many internet-exposed Marimo instances, including those in sensitive cloud environments, making this a widespread and serious security risk.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and you are exposing marimo to the public internet.",
-  "how_to_fix": "Upgrade the `marimo` library to the patch version.",
-  "vulnerable_to": "Unintended Proxy or Intermediary ('Confused Deputy')",
-  "related_cve_id": "GHSA-xjv7-6w92-42r7",
-  "language": "Python",
-  "severity_class": "MEDIUM",
-  "aikido_score": 69,
-  "changelog": "https://github.com/marimo-team/marimo/releases/tag/0.16.4"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

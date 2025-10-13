@@ -13,6 +13,7 @@
     "CWE-284"
   ],
   "tldr": "Affected versions of this package bind internal services and management endpoints to `0.0.0.0`, possibly exposing Ray’s internal servers, dashboard agent HTTP/GRPC endpoints, and runtime environment agent to remote networks and increasing the risk of unauthorized access or information disclosure. The recent changes restrict bindings to the node IP (and localhost for the dashboard agent HTTP server), preventing remote attackers from reaching those interfaces by default and reducing the attack surface.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `ray` library to the patch version.",
   "vulnerable_to": "Improper Access Control",
   "related_cve_id": "",

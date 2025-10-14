@@ -1,24 +1,15 @@
 {
-  "package_name": "erb",
-  "patch_versions": [
-    "5.1.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "5.1.0",
-      "5.1.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-190"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to an integer overflow in the `Util.html_escape` method. The code stores segment lengths in a 16-bit integer (`uint16_t`), so a long unescaped segment (≥ 65,536 bytes) can wrap the length value, causing incorrect `memcpy()` sizes and a buffer overrun. This may lead to memory corruption and a crash (denial of service), and in the worst case could enable further exploitation.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `erb` library to the patch version.",
-  "vulnerable_to": "Integer Overflow",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUBY",
-  "severity_class": "MEDIUM",
-  "aikido_score": 65,
-  "changelog": "https://github.com/ruby/erb/blob/master/NEWS.md#511"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

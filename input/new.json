@@ -1,24 +1,15 @@
 {
-  "package_name": "jquery.datatables",
-  "patch_versions": [
-    "1.10.22"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "1.10.21"
-    ]
-  ],
-  "cwe": [
-    "CWE-1321"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to prototype pollution in the `_fnSetObjectDataFn(...)` function, where an attacker could exploit unsanitized property paths by submitting malicious input containing dangerous property names like proto, constructor, or prototype to modify the Object prototype, potentially leading to application behavior manipulation, security control bypass, or denial of service.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `jquery.datatables` library to the patch version.",
-  "vulnerable_to": "Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')",
-  "related_cve_id": "CVE-2020-28458",
-  "language": "DOTNET",
-  "severity_class": "HIGH",
-  "aikido_score": 73,
-  "changelog": "https://github.com/advisories/GHSA-m7j4-fhg6-xf5v"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

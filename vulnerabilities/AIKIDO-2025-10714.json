@@ -1,0 +1,27 @@
+{
+  "package_name": "@openc3/vue-common",
+  "patch_versions": [
+    "6.9.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.0.0",
+      "6.8.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of the `@openc3/vue-common` package are vulnerable to cross-site scripting (XSS) because some data attributes are not properly sanitized before rendering. An attacker who can control these attributes can inject malicious HTML or JavaScript.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@openc3/vue-common` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 32,
+  "changelog": "https://github.com/OpenC3/cosmos/releases/tag/v6.9.0",
+  "last_modified": "2025-10-14",
+  "published": "2025-10-14"
+}

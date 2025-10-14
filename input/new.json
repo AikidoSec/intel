@@ -1,24 +1,15 @@
 {
-  "package_name": "ray",
-  "patch_versions": [
-    "2.50.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "2.49.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-284"
-  ],
-  "tldr": "Affected versions of this package bind internal services and management endpoints to `0.0.0.0`, possibly exposing Ray’s internal servers, dashboard agent HTTP/GRPC endpoints, and runtime environment agent to remote networks and increasing the risk of unauthorized access or information disclosure. The recent changes restrict bindings to the node IP (and localhost for the dashboard agent HTTP server), preventing remote attackers from reaching those interfaces by default and reducing the attack surface.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `ray` library to the patch version.",
-  "vulnerable_to": "Improper Access Control",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "LOW",
-  "aikido_score": 40,
-  "changelog": "https://github.com/ray-project/ray/releases/tag/ray-2.50.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

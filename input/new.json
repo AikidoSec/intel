@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "ftrack-python-api",
+  "patch_versions": [
+    "3.0.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "3.0.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-497"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Improper Exposure of System Attributes, where properties intended to be protected by restricted_projection are incorrectly exposed as accessible attributes, such as dynamically generated UUIDs. This flaw allows unauthorized access to sensitive data that should remain hidden. An attacker can exploit this vulnerability by querying the exposed attributes to retrieve confidential information, such as unique identifiers, which could lead to data enumeration, privacy breaches, or further attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ftrack-python-api` library to the patch version.",
+  "vulnerable_to": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "LOW",
+  "aikido_score": 10,
+  "changelog": "https://github.com/ftrackhq/ftrack-python/releases/tag/v3.0.5"
 }

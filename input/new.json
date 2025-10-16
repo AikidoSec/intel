@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/yaronf/httpsign",
+  "patch_versions": [
+    "0.3.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.3.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to denial of service (DoS) due to a flaw in the `sign` function when using `ed25519` with a key that is not 64 bytes. Supplying such an invalid key triggers a panic, causing the application to crash and become unavailable.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade the `github.com/yaronf/httpsign` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "go",
+  "severity_class": "LOW",
+  "aikido_score": 21,
+  "changelog": "https://github.com/yaronf/httpsign/releases/tag/v0.3.3"
 }

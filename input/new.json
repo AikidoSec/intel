@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/vbatts/tar-split",
-  "patch_versions": [
-    "0.12.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "0.12.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-770"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Unbounded Resource Consumption due to improperly handled untrusted archives. An attacker can exploit this vulnerability by providing a specially crafted archive that, when processed, causes the application to allocate excessive system memory or CPU resources, leading to a denial-of-service condition. This fix is a port of the correction from `golang/go@2612dcf`(Copyright 2009 The Go Authors).",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/vbatts/tar-split` library to the patch version.",
-  "vulnerable_to": "Allocation of Resources Without Limits or Throttling",
-  "related_cve_id": "CVE-2025-58183",
-  "language": "GO",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://github.com/vbatts/tar-split/releases/tag/v0.12.2"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

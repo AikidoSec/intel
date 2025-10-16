@@ -1,24 +1,15 @@
 {
-  "package_name": "databricks-sdk",
-  "patch_versions": [
-    "0.68.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.32.0",
-      "0.67.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-532"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Insecure Logging of Bearer Tokens, where full bearer tokens are logged in exceptions during API request failures and response parsing errors, exposing sensitive credentials in logs despite the debug_headers setting being false. An attacker with access to these logs, such as through insufficiently protected log storage or transmission, could extract the bearer tokens and use them to impersonate users, execute unauthorized API calls, or access sensitive data, leading to potential data breaches or privilege escalation.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `databricks-sdk` library to the patch version.",
-  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Python",
-  "severity_class": "LOW",
-  "aikido_score": 20,
-  "changelog": "https://github.com/databricks/databricks-sdk-py/releases/tag/v0.68.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

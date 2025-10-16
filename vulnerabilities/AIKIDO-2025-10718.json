@@ -1,0 +1,26 @@
+{
+  "package_name": "sveltekit-superforms",
+  "patch_versions": [
+    "2.27.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.27.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution when using `dataType: 'json'`. This vulnerability enables an attacker to inject malicious properties into object prototypes by crafting JSON input that includes `__proto__`, potentially leading to security issues, including remote code execution or denial of service. Before the fix, an attacker could exploit this by sending specially designed data that pollutes the prototype chain, potentially altering the behavior of all objects in the application and enabling further attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `sveltekit-superforms` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/ciscoheat/sveltekit-superforms/blob/main/CHANGELOG.md#2274---2025-10-14",
+  "last_modified": "2025-10-16",
+  "published": "2025-10-16"
+}

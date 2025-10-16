@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "strands-agents",
+  "patch_versions": [
+    "1.5.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to directory traversal through Hexo's file reading functionality. An attacker can access arbitrary files by manipulating the file path input, using special characters like \"..\" and \"/\" separators.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `strands-agents` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/strands-agents/sdk-python/releases/tag/v1.5.0"
 }

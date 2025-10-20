@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "koa",
+  "patch_versions": [
+    "3.0.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.16.0",
+      "3.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a security misconfiguration in Content-Type header handling, which can lead to Cross-Site Scripting (XSS) attacks. An attacker could exploit this by uploading or serving malicious HTML or SVG files that are interpreted with an incorrect MIME type, allowing arbitrary script execution in users' browsers when the content is viewed.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `koa` library to the patch version.",
+  "vulnerable_to": "Cross-Site Scripting (XSS)",
+  "related_cve_id": "GHSA-C5VW-J4HF-J526",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/koajs/koa/releases/tag/v3.0.2"
 }

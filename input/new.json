@@ -1,12 +1,17 @@
 {
   "package_name": "ibexa/fieldtype-richtext",
   "patch_versions": [
-    "4.6.25"
+    "4.6.25",
+    "5.0.3"
   ],
   "vulnerable_ranges": [
     [
       "4.0.0",
       "4.6.24"
+    ],
+    [
+      "5.0.0",
+      "5.0.2"
     ]
   ],
   "cwe": [

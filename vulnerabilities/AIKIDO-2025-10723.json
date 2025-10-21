@@ -1,0 +1,31 @@
+{
+  "package_name": "ibexa/fieldtype-richtext",
+  "patch_versions": [
+    "4.6.25",
+    "5.0.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "4.6.24"
+    ],
+    [
+      "5.0.0",
+      "5.0.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) in the custom tags feature due to improper input sanitization when dynamically building HTML elements. The vulnerability occurs because user-supplied data in both the `attribute` (key) and `attributeValue` is directly inserted into the HTML string via template literals without adequate escaping. An attacker can exploit this by crafting malicious payloads in either the key or value parameters that break out of the attribute context or span element, allowing arbitrary JavaScript execution when the resulting HTML is rendered in a victim's browser.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ibexa/fieldtype-richtext` library to the patch version.",
+  "vulnerable_to": "Cross-Site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/ibexa/fieldtype-richtext/releases/tag/v4.6.25",
+  "last_modified": "2025-10-21",
+  "published": "2025-10-21"
+}

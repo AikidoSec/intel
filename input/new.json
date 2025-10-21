@@ -10,12 +10,12 @@
     ]
   ],
   "cwe": [
-    "CWE-497"
+    "CWE-209"
   ],
   "tldr": "Affected versions of this package are vulnerable to Information Exposure via Stack Trace, where the application returns an error object, including stack traces, in JSON responses due to code like `return res.status(finalError.statusCode).json(finalError).end()`. It exposes sensitive details such as file paths, internal IP addresses, or system structure. An attacker can exploit this by sending malicious requests to trigger errors, potentially harvesting this information to aid in further attacks.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `unleash-server` library to the patch version.",
-  "vulnerable_to": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
+  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
   "related_cve_id": "",
   "language": "JS",
   "severity_class": "LOW",

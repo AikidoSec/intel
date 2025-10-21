@@ -13,7 +13,7 @@
     "CWE-190"
   ],
   "tldr": "Affected versions of this package are vulnerable to an Integer Overflow when processing UTF-8 strings longer than 65535 bytes, causing incorrect encoding and potential data leakage between MQTT packet fields. Attackers can exploit this to corrupt packets or inject unexpected data into message bodies.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and you are using Windows.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `github.com/eclipse/paho.mqtt.golang` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Integer Overflow",

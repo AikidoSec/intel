@@ -1,0 +1,32 @@
+{
+  "package_name": "runtimepack.Microsoft.AspNetCore.App.Runtime.linux-arm",
+  "package_wildcard_contains": "runtimepack.Microsoft.AspNetCore.App.",
+  "patch_versions": [
+    "8.0.21",
+    "9.0.10"
+  ],
+  "vulnerable_ranges": [
+    [
+      "8.0.0",
+      "8.0.20"
+    ],
+    [
+      "9.0.0",
+      "9.0.9"
+    ]
+  ],
+  "cwe": [
+    "CWE-444"
+  ],
+  "tldr": "Inconsistent interpretation of http requests ('http request/response smuggling') in ASP.NET Core allows an authorized attacker to bypass a security feature over a network.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Microsoft.AspNetCore.App.Runtime` library to the patch version.",
+  "vulnerable_to": "Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling')",
+  "related_cve_id": "CVE-2025-55315",
+  "language": "DOTNET",
+  "severity_class": "CRITICAL",
+  "aikido_score": 99,
+  "changelog": "https://github.com/advisories/GHSA-5rrx-jjjq-q2r5",
+  "last_modified": "2025-10-22",
+  "published": "2025-10-22"
+}

@@ -14,5 +14,5 @@
   "language": "rust",
   "severity_class": "MEDIUM",
   "aikido_score": 50,
-  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0100.html"
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0098.html"
 }

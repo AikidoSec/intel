@@ -1,0 +1,26 @@
+{
+  "package_name": "django-phone-verify",
+  "patch_versions": [
+    "3.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "3.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-307"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to brute force attacks due to insufficient protection against repeated SMS verification attempts. The patched version introduces comprehensive safeguards, including `MAX_FAILED_ATTEMPTS` (default: 5) to limit failed verification attempts before session lockout, `MIN_TOKEN_LENGTH` (default: 6) to enforce a minimum security code length, and a new `failed_attempts` field in the `SMSVerification` model with a migration for backward compatibility. These enhancements prevent automated attacks and improve the overall security of the verification process.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `django-phone-verify` library to the patch version.",
+  "vulnerable_to": "Improper Restriction of Excessive Authentication Attempts",
+  "related_cve_id": "",
+  "language": "python",
+  "severity_class": "MEDIUM",
+  "aikido_score": 47,
+  "changelog": "https://github.com/CuriousLearner/django-phone-verify/blob/master/CHANGELOG.rst",
+  "last_modified": "2025-10-23",
+  "published": "2025-10-23"
+}

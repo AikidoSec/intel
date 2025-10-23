@@ -1,0 +1,27 @@
+{
+  "package_name": "strands-agents",
+  "patch_versions": [
+    "1.5.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Directory Traversal due to insufficient sanitization of the `session_id` and `agent_id` parameters in the `FileSessionManager._get_session_path()`, `FileSessionManager._get_agent_path()`, `S3SessionManager._get_session_path()`, and `S3SessionManager._get_agent_path()` functions. Attackers can exploit this by providing crafted identifiers that manipulate file paths, potentially bypassing authentication and gaining unauthorized access to files in restricted directories.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `strands-agents` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/strands-agents/sdk-python/releases/tag/v1.5.0",
+  "last_modified": "2025-10-23",
+  "published": "2025-10-23"
+}

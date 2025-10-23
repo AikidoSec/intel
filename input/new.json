@@ -1,29 +1,15 @@
 {
-  "package_name": "@angular/ssr",
-  "patch_versions": [
-    "19.2.18",
-    "20.3.6"
-  ],
-  "vulnerable_ranges": [
-    [
-      "19.0.0",
-      "19.2.17"
-    ],
-    [
-      "20.0.0",
-      "20.3.5"
-    ]
-  ],
-  "cwe": [
-    "CWE-918"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to server-side request forgery (SSRF) because `createRequestUrl` uses `new URL(originalUrl ?? url, base)` and allows schema-relative paths (`//host`) to override the base. An attacker can craft a request path beginning with `//` (e.g. `//attacker.com/path`), causing Angular SSR to treat the request as coming from `http://attacker.com` and perform relative requests against attacker-controlled hosts. This enables SSRF, domain spoofing, and potential content injection.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@angular/ssr` library to the patch version.",
-  "vulnerable_to": "Server-Side Request Forgery (SSRF)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 46,
-  "changelog": "https://github.com/angular/angular-cli/releases/tag/20.3.6"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

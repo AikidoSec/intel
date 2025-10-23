@@ -21,5 +21,5 @@
   "language": "PHP",
   "severity_class": "MEDIUM",
   "aikido_score": 68,
-  "changelog": "https://github.com/googleapis/google-cloud-php/releases/tag/v0.307.0"
+  "changelog": "https://github.com/googleapis/google-cloud-php-storage/releases/tag/v1.48.5"
 }

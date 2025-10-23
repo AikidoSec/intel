@@ -1,18 +1,15 @@
 {
-  "package_name": "unic-bidi",
+  "package_name": "",
   "patch_versions": [],
-  "vulnerable_ranges": "*",
-  "cwe": [
-    "CWE-1104"
-  ],
-  "tldr": "All Unicode crates that are part of https://github.com/open-i18n/rust-unic are unmaintained.",
-  "doest_this_affect_me": "You are affected if you are using this package.",
-  "how_to_fix": "Remove any `unic-bidi` package from your application. Please take a look at <a href=\"https://crates.io/crates/unicode-bidi\">unicode-bidi</a> as an alternative.",
-  "reporter": "",
-  "vulnerable_to": "Use of Unmaintained Third Party Components",
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "rust",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0096.html"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,25 +1,15 @@
 {
-  "package_name": "sitemap",
-  "patch_versions": [
-    "8.0.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "8.0.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Several vulnerabilities were found and fixed in the `sitemap` library. The update introduces comprehensive input validation, centralized security limits, and enhanced XML sanitization to prevent cross-site scripting via malformed attributes. It adds strict URL, numeric, and date validation to mitigate injection and denial-of-service risks, blocks protocol and path traversal attacks, and enforces limits on sitemap size and resource counts. Additional fixes include prevention of command injection in `xmllint`, stricter hostname and namespace validation in streams, and improvements to number and date handling across utilities.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `sitemap` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
-  "changelog": "https://github.com/ekalinin/sitemap.js/releases/tag/8.0.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

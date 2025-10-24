@@ -1,0 +1,26 @@
+{
+  "package_name": "react-on-rails",
+  "patch_versions": [
+    "16.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "11.0.8",
+      "16.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Arbitrary File Read via Path Traversal due to improper validation of the `server_bundle_output_path` that allows an attacker to break out of the intended directory. By exploiting this flaw, an attacker could potentially read sensitive files from anywhere on the filesystem that the application has access to, using directory traversal sequences (e.g., `../../etc/passwd`) in the path configuration, leading to an information disclosure vulnerability or further exploitation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `react-on-rails` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/shakacode/react_on_rails/blob/master/CHANGELOG.md#1610---2025-09-23",
+  "last_modified": "2025-10-09",
+  "published": "2025-10-09"
+}

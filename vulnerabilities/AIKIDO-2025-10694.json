@@ -1,0 +1,28 @@
+{
+  "package_name": "logback-core",
+  "org_name": "ch.qos.logback",
+  "patch_versions": [
+    "1.5.19"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.9.20",
+      "1.5.18"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package do not properly validate the `logback.xml` configuration file when both the Janino library and the Spring Framework are present on the classpath. An attacker can execute arbitrary code by compromising an existing configuration file or injecting a malicious environment variable prior to program execution. This vulnerability is exploitable only if the attacker has write access to a configuration file or the ability to set malicious environment variables.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and both the Janino library and the Spring Framework are present on the classpath.",
+  "how_to_fix": "Upgrade the `ch.qos.logback:logback-core` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "CVE-2025-11226",
+  "language": "java",
+  "severity_class": "MEDIUM",
+  "aikido_score": 59,
+  "changelog": "https://logback.qos.ch/news.html#1.5.19",
+  "last_modified": "2025-10-09",
+  "published": "2025-10-09"
+}

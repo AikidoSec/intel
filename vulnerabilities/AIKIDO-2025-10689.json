@@ -1,0 +1,32 @@
+{
+  "package_name": "devextreme-quill",
+  "patch_versions": [
+    "1.7.6",
+    "1.6.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.7.0",
+      "1.7.5"
+    ],
+    [
+      "0.9.0",
+      "1.6.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package are vulnerable due to insufficient validation of user-uploaded SVG files. Malicious SVGs can include scripts, event handlers, or external references that execute when rendered, leading to cross-site scripting (XSS), data theft, or phishing. Attackers may also craft SVGs to cause excessive resource consumption and denial-of-service (DoS).",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `devextreme-quill` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 77,
+  "changelog": "https://github.com/DevExpress/devextreme-quill/releases/tag/1.7.6",
+  "last_modified": "2025-10-09",
+  "published": "2025-10-09"
+}

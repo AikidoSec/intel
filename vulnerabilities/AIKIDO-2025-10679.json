@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/hashicorp/consul",
+  "patch_versions": [
+    "1.21.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.21.1",
+      "1.21.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-1259"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Information Exposure due to improperly filtering anonymous tokens when setting the `Results-Filtered-By-ACLs` header, which could allow an attacker to exploit this inconsistency by submitting a specially crafted anonymous token in a request to infer the existence of objects or data they should not have access to, based on whether the header indicates the results were filtered or not.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/hashicorp/consul` library to the patch version.",
+  "vulnerable_to": "Improper Restriction of Security Token Assignment",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 23,
+  "changelog": "https://github.com/hashicorp/consul/releases/tag/v1.21.5",
+  "last_modified": "2025-10-08",
+  "published": "2025-10-08"
+}

@@ -1,0 +1,26 @@
+{
+  "package_name": "better-auth",
+  "patch_versions": [
+    "1.3.26"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.2.0",
+      "1.3.25"
+    ]
+  ],
+  "cwe": [
+    "CWE-639"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to authentication bypass due to an improper authorization check. The original code incorrectly set `authRequired` to false when `ctx.body.userId` was present, allowing API requests to potentially skip session validation by providing a user ID in the request body. An attacker could exploit this vulnerability by crafting requests with a malicious `userId` payload, thereby bypassing session checks and potentially gaining unauthorized access to other user accounts or performing privileged actions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `better-auth` library to the patch version.",
+  "vulnerable_to": "Authorization Bypass Through User-Controlled Key",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 82,
+  "changelog": "https://github.com/better-auth/better-auth/releases/tag/v1.3.26",
+  "last_modified": "2025-10-09",
+  "published": "2025-10-09"
+}

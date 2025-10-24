@@ -1,0 +1,27 @@
+{
+  "package_name": "moxcms",
+  "patch_versions": [
+    "0.7.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.7.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-125"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an out-of-bounds read that can trigger a panic. An attacker can exploit this by sending specially crafted requests, resulting in a denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `moxcms` library to the patch version or turn off overflow checking.",
+  "reporter": "",
+  "vulnerable_to": "Out-Of-Bounds Read",
+  "related_cve_id": "",
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/awxkee/moxcms/releases/tag/0.7.7",
+  "last_modified": "2025-10-14",
+  "published": "2025-10-14"
+}

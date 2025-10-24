@@ -1,0 +1,26 @@
+{
+  "package_name": "@apollo/sandbox",
+  "patch_versions": [
+    "2.7.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "2.7.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-352"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Cross-Site Request Forgery (CSRF) that allowed attackers to bypass authenticated cookies via `postMessage` requests due to missing origin validation. An attacker can exploit this vulnerability by tricking a user into visiting a malicious page, which would then send forged postMessage requests that were processed with the user's session, potentially leading to unauthorized actions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@apollo/sandbox` library to the patch version.",
+  "vulnerable_to": "Cross-Site Request Forgery (CSRF)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 42,
+  "changelog": "https://github.com/apollographql/embeddable-explorer/blob/main/packages/sandbox/CHANGELOG.md#273",
+  "last_modified": "2025-10-08",
+  "published": "2025-10-08"
+}

@@ -1,0 +1,26 @@
+{
+  "package_name": "jquery.validation",
+  "patch_versions": [
+    "1.19.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.19.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "An exponential ReDoS (Regular Expression Denial of Service) can be triggered in the `jquery.validation` package, when an attacker is able to supply arbitrary input to the `url2` method.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `jquery.validation` library to the patch version.",
+  "vulnerable_to": "Inefficient Regular Expression Complexity",
+  "related_cve_id": "",
+  "language": "DOTNET",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/jquery-validation/jquery-validation/releases/tag/1.19.5",
+  "last_modified": "2025-10-14",
+  "published": "2025-10-14"
+}

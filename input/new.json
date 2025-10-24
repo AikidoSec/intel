@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@reduxjs/toolkit",
+  "patch_versions": [
+    "2.9.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.9.0",
+      "2.9.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-668"
+  ],
+  "tldr": "Affected versions of this package may expose internal subscription state across multiple Redux store instances due to a shared `InternalMiddlewareState` reference. This bug allows unintended data persistence or leakage of active subscription metadata between stores. The patch ensures that subscription data is correctly scoped per store using a `WeakMap<Dispatch, Thing>`, preventing cross-store data exposure and improving cleanup reliability.",
+  "doest_this_affect_me": "You are affected if you are using a version of this package < 0.4.7.",
+  "how_to_fix": "Upgrade the `@reduxjs/toolkit` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Resource to Wrong Sphere",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 67,
+  "changelog": "https://github.com/reduxjs/redux-toolkit/releases/tag/v2.9.2"
 }

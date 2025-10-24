@@ -1,0 +1,27 @@
+{
+  "package_name": "@babel/traverse",
+  "patch_versions": [
+    "7.23.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "7.0.0",
+      "7.23.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-184"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to remote code execution during compilation when processing maliciously crafted input with plugins that use the internal `path.evaluate()` or `path.evaluateTruthy()` methods. Impacted plugins include `@babel/plugin-transform-runtime`, `@babel/preset-env` with the `useBuiltIns` option, and any polyfill provider plugin based on `@babel/helper-define-polyfill-provider`. Users compiling only trusted code are not affected.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@babel/traverse` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Incomplete List of Disallowed Inputs",
+  "related_cve_id": "CVE-2023-45133",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/babel/babel/security/advisories/GHSA-67hx-6x53-jw92",
+  "last_modified": "2025-10-24",
+  "published": "2025-10-24"
+}

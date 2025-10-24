@@ -1,24 +1,15 @@
 {
-  "package_name": "webpack",
-  "patch_versions": [
-    "5.76.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "5.0.0",
-      "5.75.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-284"
-  ],
-  "tldr": "Webpack 5 before `5.76.0` does not avoid cross-realm object access. `ImportParserPlugin.js` mishandles the magic comment feature. An attacker who controls a property of an untrusted object can obtain access to the real global object.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `webpack` library to the patch version.",
-  "vulnerable_to": "Improper Access Control",
-  "related_cve_id": "CVE-2023-28154",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
-  "changelog": "https://github.com/advisories/GHSA-hc6q-2mpp-qw7j"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -21,6 +21,7 @@
   "language": "JS",
   "severity_class": "MEDIUM",
   "aikido_score": 60,
+  "disable_reachability_analysis": true,
   "changelog": "https://github.com/babel/babel/security/advisories/GHSA-67hx-6x53-jw92",
   "last_modified": "2025-10-24",
   "published": "2025-10-24"

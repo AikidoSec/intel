@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "code.gitea.io/gitea",
+  "patch_versions": [
+    "1.24.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.22.0",
+      "1.24.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "Affected versions of this package allow an attacker to bypass Git LFS authorization or exploit symlinks to access files outside their container or repository path. The patch enforces correct authorization for LFS requests and blocks symlink misresolution that could lead to unintended file access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `code.gitea.io/gitea` library to the patch version.",
+  "vulnerable_to": "Improper Access Control",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 68,
+  "changelog": "https://github.com/go-gitea/gitea/releases/tag/v1.24.7"
 }

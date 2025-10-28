@@ -30,5 +30,5 @@
   "language": "RUBY",
   "severity_class": "LOW",
   "aikido_score": 20,
-  "changelog": "https://github.com/ruby/openssl/releases/tag/v3.2.3"
+  "changelog": "https://github.com/ruby/openssl/releases/tag/v3.3.2"
 }

@@ -1,0 +1,27 @@
+{
+  "package_name": "Sentry",
+  "package_name_alias": "sentry-cocoa",
+  "patch_versions": [
+    "8.57.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "8.31.1",
+      "8.56.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package disable Session Replay by default on iOS 26.0+ when built with Xcode 26.0 or later to prevent potential PII (Personally identifiable information) leaks. This mitigation addresses masking issues introduced by Apple’s new Liquid Glass rendering, which can expose sensitive user data during session recording. Developers can temporarily re-enable Session Replay using `options.experimental.enableSessionReplayInUnreliableEnvironment = true`, but doing so carries privacy risks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Sentry` library to the patch version.",
+  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "related_cve_id": "",
+  "language": "Swift",
+  "severity_class": "MEDIUM",
+  "aikido_score": 48,
+  "changelog": "https://github.com/getsentry/sentry-cocoa/releases/tag/8.57.0",
+  "last_modified": "2025-10-28",
+  "published": "2025-10-28"
+}

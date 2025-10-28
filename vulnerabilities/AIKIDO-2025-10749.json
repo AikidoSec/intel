@@ -1,0 +1,20 @@
+{
+  "package_name": "unic-ucd-normal",
+  "patch_versions": [],
+  "vulnerable_ranges": "*",
+  "cwe": [
+    "CWE-1104"
+  ],
+  "tldr": "All Unicode crates that are part of https://github.com/open-i18n/rust-unic are unmaintained.",
+  "doest_this_affect_me": "You are affected if you are using this package.",
+  "how_to_fix": "Remove any `unic-ucd-normal` package from your application. Please take a look at <a href=\"https://crates.io/crates/icu_normalizer\">icu_normalizer</a> as an alternative.",
+  "reporter": "",
+  "vulnerable_to": "Use of Unmaintained Third Party Components",
+  "related_cve_id": "",
+  "language": "rust",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0078.html",
+  "last_modified": "2025-10-28",
+  "published": "2025-10-28"
+}

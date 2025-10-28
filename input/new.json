@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "markdown-to-jsx",
+  "patch_versions": [
+    "8.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "7.7.17"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to regular expression denial-of-service (ReDoS) attacks due to the use of inefficient regex-based parsing for inline formatting. Crafted markdown input could trigger excessive backtracking, leading to performance degradation or application hangs. The fix replaces the regex-based parser with a custom iterative scanner that runs in linear time and is immune to ReDoS attacks, while also improving handling of nested and escaped formatting.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `markdown-to-jsx` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/quantizor/markdown-to-jsx/releases/tag/v8.0.0"
 }

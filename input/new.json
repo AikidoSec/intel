@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@fastify/multipart",
+  "patch_versions": [
+    "9.3.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.0.0",
+      "9.2.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to denial-of-service (DoS) attacks due to uncaught exceptions triggered by malformed multipart requests received after an asynchronous operation. When `req.file()`, `req.files()`, or `req.parts()` is called following an async operation, parsing may begin prematurely, causing Busboy to emit an error before user error handlers are attached, which crashes the Node.js process. The fix adds an immediate error listener to file streams to catch and handle these early errors safely.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade the `@fastify/multipart` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 21,
+  "changelog": "https://github.com/fastify/fastify-multipart/releases/tag/v9.3.0"
 }

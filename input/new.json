@@ -21,5 +21,5 @@
   "language": "Swift",
   "severity_class": "MEDIUM",
   "aikido_score": 48,
-  "changelog": "https://aikido-dashboard.app.datameister.ai/?component=vuln&prediction_id=871785"
+  "changelog": "https://github.com/getsentry/sentry-cocoa/releases/tag/8.57.0"
 }

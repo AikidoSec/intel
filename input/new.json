@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "cranelift-codegen",
+  "patch_versions": [
+    "0.125.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.88.0",
+      "0.124.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-755"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper handling of exceptional conditions in the implementation of component-model host-to-WASM trampolines. A malicious actor can craft a specially designed component and invoke it in a way that exploits the `setjmp` and `longjmp` functions in C, potentially causing the host to crash through a segmentation fault or assertion failure.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `cranelift-codegen` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Handling of Exceptional Conditions",
+  "related_cve_id": "CVE-2025-62711",
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 21,
+  "changelog": "https://github.com/bytecodealliance/wasmtime/commit/192f2fcdadfec9d0cf6b58548a85a7307450cbf5"
 }

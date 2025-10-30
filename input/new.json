@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@messageformat/runtime",
+  "patch_versions": [
+    "3.0.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "3.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution due to improper validation of nested message keys in the `addMessages` method. When processing message data, the package fails to sanitize special object keys such as `__proto__`, allowing attackers to inject arbitrary properties into `Object.prototype`. This can lead to denial of service (DoS) or unpredictable application behavior.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `@messageformat/runtime` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
+  "changelog": "https://github.com/messageformat/messageformat/blob/main/mf1/packages/runtime/CHANGELOG.md"
 }

@@ -1,0 +1,26 @@
+{
+  "package_name": "comrak",
+  "patch_versions": [
+    "0.46.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.45.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to denial-of-service (DoS) attacks due to a stack overflow during footnote resolution. Deeply nested elements could trigger excessive recursion, leading to application crashes. To mitigate this, footnote resolution has been refactored to avoid recursion, and inline footnotes are now limited to a nesting depth of five.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `comrak` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 22,
+  "changelog": "https://github.com/kivikakk/comrak/releases/tag/v0.46.0",
+  "last_modified": "2025-10-31",
+  "published": "2025-10-31"
+}

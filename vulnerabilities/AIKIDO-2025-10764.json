@@ -1,0 +1,27 @@
+{
+  "package_name": "spatie/laravel-permission",
+  "patch_versions": [
+    "6.22.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "6.21.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-362",
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a race condition in the `loadPermissions()` method of the `PermissionRegistrar` class. The vulnerability occurs due to a Time-of-Check to Time-of-Use (TOCTOU) flaw, where multiple concurrent requests can simultaneously pass the `if ($this->permissions)` check before permissions are loaded. This can result in cache stampedes, redundant database queries, performance degradation, excessive memory usage, and database overload in concurrent environments such as Laravel Octane, Swoole, or RoadRunner.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `spatie/laravel-permission` library to the patch version.",
+  "vulnerable_to": "Race Condition",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/spatie/laravel-permission/releases/tag/6.22.0",
+  "last_modified": "2025-10-31",
+  "published": "2025-10-31"
+}

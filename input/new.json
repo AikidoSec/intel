@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "@auth/core",
+  "patch_versions": [
+    "0.41.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.41.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper email address parsing in the email sign-in flow. Due to a flaw in Nodemailer’s address parser (fixed in Nodemailer v7.0.7), a crafted input such as `\"e@attacker.com\"@victim.com` is misinterpreted, causing authentication emails to be sent to `e@attacker.com` (attacker-controlled) instead of the intended recipient `<e@attacker.com>@victim.com`. This issue allows an attacker to intercept login or verification links, leading to potential account takeover or unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@auth/core` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": " GHSA-5jpx-9hw9-2fx4",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 57,
+  "changelog": "https://github.com/nextauthjs/next-auth/releases/tag/%40auth%2Fcore%400.41.1"
 }

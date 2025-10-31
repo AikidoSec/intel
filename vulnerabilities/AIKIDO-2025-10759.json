@@ -1,0 +1,26 @@
+{
+  "package_name": "@ts-graphviz/ast",
+  "patch_versions": [
+    "3.0.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "3.0.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to denial-of-service (DoS) attacks due to stack overflow vulnerabilities in both the edge chain parser and HTML string parser. Maliciously crafted DOT files with deeply nested edge chains or HTML-like structures could trigger excessive recursion, leading to application crashes or memory exhaustion. The fix introduces configurable depth limits (`maxEdgeChainDepth` and `maxHtmlNestingDepth`) to restrict parsing depth and prevent stack overflow while maintaining backward compatibility for normal use cases.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@ts-graphviz/ast` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 35,
+  "changelog": "https://github.com/ts-graphviz/ts-graphviz/releases/tag/%40ts-graphviz/ast%403.0.4",
+  "last_modified": "2025-10-31",
+  "published": "2025-10-31"
+}

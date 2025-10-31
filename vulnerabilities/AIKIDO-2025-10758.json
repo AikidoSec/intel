@@ -1,0 +1,26 @@
+{
+  "package_name": "code.gitea.io/gitea",
+  "patch_versions": [
+    "1.24.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.12.5",
+      "1.24.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to **information disclosure** due to unsanitized logging of Elasticsearch and Meilisearch connection strings. Because these connection strings can include credentials (e.g., `protocol://username:password@host:port`), sensitive information such as passwords could be exposed in plain text in log files. The fix wraps all instances of `setting.Indexer.RepoConnStr` and `setting.Indexer.IssueConnStr` with the `util.SanitizeCredentialURLs()` function to remove credentials before logging.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `code.gitea.io/gitea` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/go-gitea/gitea/releases/tag/v1.24.7",
+  "last_modified": "2025-10-31",
+  "published": "2025-10-31"
+}

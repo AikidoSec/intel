@@ -1,0 +1,27 @@
+{
+  "package_name": "@flowfuse/flowfuse",
+  "patch_versions": [
+    "2.23.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.20.0",
+      "2.23.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-522"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to insufficiently protected credentials. The application displays user or system passwords in plain text. This exposure allows anyone with access to the interface or captured screenshots to view sensitive credentials, potentially leading to unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@flowfuse/flowfuse` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insufficiently Protected Credentials",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 22,
+  "changelog": "https://github.com/FlowFuse/flowfuse/releases/tag/v2.23.1",
+  "last_modified": "2025-10-31",
+  "published": "2025-10-31"
+}

@@ -1,0 +1,26 @@
+{
+  "package_name": "set-cookie-parser",
+  "patch_versions": [
+    "2.7.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.7.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution when using the `parse` function. This vulnerability enables an attacker to inject malicious properties into object prototypes, potentially leading to security issues, including remote code execution or denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `set-cookie-parser` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 68,
+  "changelog": "https://github.com/nfriedly/set-cookie-parser/blob/master/CHANGELOG.md",
+  "last_modified": "2025-10-31",
+  "published": "2025-10-31"
+}

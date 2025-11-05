@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "mlflow",
+  "patch_versions": [
+    "3.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.22.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to directory traversal due to improper validation of user-supplied model file paths. By providing a specially crafted path, an attacker can perform unauthorized file operations and potentially execute arbitrary code in the context of the service account.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mlflow` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "CVE-2025-11201",
+  "language": "PYTHON",
+  "severity_class": "CRITICAL",
+  "aikido_score": 92,
+  "changelog": "https://github.com/mlflow/mlflow/releases/tag/v3.1.0"
 }

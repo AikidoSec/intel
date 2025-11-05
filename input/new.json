@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "sitemap",
+  "patch_versions": [
+    "9.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "7.1.0",
+      "8.0.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-112"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to XML injection due to incomplete entity escaping, specifically the lack of proper escaping for the `>` character in the `text()` function, and insufficient attribute name validation, which could allow an attacker to exploit this by crafting malicious inputs that bypass escaping mechanisms, leading to CDATA injection or the insertion of invalid attributes, potentially resulting in data manipulation, denial of service, or arbitrary code execution in XML-processing contexts.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `sitemap` library to the patch version.",
+  "vulnerable_to": "Missing XML Validation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 46,
+  "changelog": "https://github.com/ekalinin/sitemap.js/releases/tag/9.0.0"
 }

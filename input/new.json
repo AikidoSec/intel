@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "mlflow",
+  "patch_versions": [
+    "2.22.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.21.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-521"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to weak password enforcement because they allow passwords shorter than 12 characters (only 4). This flaw enables attackers to exploit weak or easily guessable credentials, increasing the risk of unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mlflow` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Weak Password Requirements",
+  "related_cve_id": "CVE-2025-11200",
+  "language": "PYTHON",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://github.com/mlflow/mlflow/releases/tag/v2.22.0"
 }

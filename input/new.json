@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "fork",
+  "patch_versions": [
+    "0.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.5",
+      "0.3.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-912"
+  ],
+  "tldr": "Affected versions of this package contain a critical vulnerability in the daemon() function, where newly opened files could be assigned file descriptors 0, 1, or 2 (stdin, stdout, stderr). It allows any output from println!, eprintln!, or panic macros to write to these files instead of the standard streams, potentially corrupting them. An attacker can exploit this by manipulating the application to open sensitive files (e.g., configuration files, logs, or data files) after daemonization, which may acquire low file descriptors, and then triggering output or panic mechanisms to overwrite or corrupt those files, leading to data loss, denial of service, or other malicious outcomes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `fork` library to the patch version.",
+  "vulnerable_to": "Improper Handling of File Descriptors",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUST",
+  "severity_class": "HIGH",
+  "aikido_score": 82,
+  "changelog": "https://github.com/immortal/fork/blob/main/CHANGELOG.md#040"
 }

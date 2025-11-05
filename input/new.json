@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade `taskcluster` to the patch version.",
   "vulnerable_to": "Zip Slip",
   "related_cve_id": "",
-  "language": "JS",
+  "language": "PYTHON",
   "severity_class": "HIGH",
   "aikido_score": 75,
   "changelog": "https://github.com/taskcluster/taskcluster/releases/tag/v91.1.1"

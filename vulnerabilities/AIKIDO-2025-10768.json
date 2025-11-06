@@ -1,0 +1,26 @@
+{
+  "package_name": "sitemap",
+  "patch_versions": [
+    "9.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "7.0.0",
+      "8.0.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Resource Exhaustion due to inadequate enforcement of input constraints, including limits of URLs per sitemap, images and videos per entry, string length restrictions, URL validation allowing only http/https protocols with up to 2048 characters, and custom namespace validation capped. An attacker could exploit this vulnerability by submitting a malicious sitemap that exceeds these limits, such as flooding the system with excessive URLs to cause a denial-of-service attack, bypassing URL checks to inject harmful links, or exploiting string or namespace limits to trigger buffer overflows or XML injection, potentially compromising application stability and security.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `sitemap` library to the patch version.",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/ekalinin/sitemap.js/releases/tag/9.0.0",
+  "last_modified": "2025-11-06",
+  "published": "2025-11-06"
+}

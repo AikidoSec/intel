@@ -10,7 +10,7 @@
     ]
   ],
   "cwe": [
-    "CWE-912"
+    "CWE-664"
   ],
   "tldr": "Affected versions of this package contain a critical vulnerability in the daemon() function, where newly opened files could be assigned file descriptors 0, 1, or 2 (stdin, stdout, stderr). It allows any output from println!, eprintln!, or panic macros to write to these files instead of the standard streams, potentially corrupting them. An attacker can exploit this by manipulating the application to open sensitive files (e.g., configuration files, logs, or data files) after daemonization, which may acquire low file descriptors, and then triggering output or panic mechanisms to overwrite or corrupt those files, leading to data loss, denial of service, or other malicious outcomes.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",

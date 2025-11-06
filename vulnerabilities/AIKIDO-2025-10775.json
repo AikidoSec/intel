@@ -1,0 +1,26 @@
+{
+  "package_name": "bootstrap",
+  "patch_versions": [
+    "5.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.4.0",
+      "3.4.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS): a flaw in the `data-loading-text` attribute of the Bootstrap button plugin (versions ≥ 1.4.0 to ≤ 3.4.1) allows malicious JavaScript to be injected and executed, for example when the button enters its loading state.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "To fix this vulnerability, upgrade to a later, supported version of Bootstrap, as version 3 is end-of-life and no longer receives security updates.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "CVE-2024-6485",
+  "language": "DOTNET",
+  "severity_class": "MEDIUM",
+  "aikido_score": 62,
+  "changelog": "https://github.com/advisories/GHSA-vxmc-5x29-h64v",
+  "last_modified": "2025-11-06",
+  "published": "2025-11-06"
+}

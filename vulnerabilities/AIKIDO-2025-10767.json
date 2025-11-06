@@ -1,0 +1,26 @@
+{
+  "package_name": "sitemap",
+  "patch_versions": [
+    "9.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "7.0.0",
+      "8.0.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a path traversal attack due to insufficient input validation in `destinationDir` and `publicBasePath` parameters, where the code fails to check for path traversal sequences, block null bytes and malicious characters, and prevent directory escape while allowing absolute paths. This flaw enables attackers to craft malicious inputs that bypass intended restrictions, potentially allowing them to access or modify sensitive files outside the designated directory, leading to information disclosure or system compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `sitemap` library to the patch version.",
+  "vulnerable_to": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
+  "changelog": "https://github.com/ekalinin/sitemap.js/releases/tag/9.0.0",
+  "last_modified": "2025-11-06",
+  "published": "2025-11-06"
+}

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "drupal/email_tfa",
+  "patch_versions": [
+    "2.0.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.0.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-269"
+  ],
+  "tldr": "The Email TFA module adds email-based two-factor authentication (2FA) to Drupal logins. In some cases, the module fails to fully enforce 2FA across all login methods, allowing users to bypass the additional authentication step. This vulnerability is mitigated by the fact that an attacker must already possess valid login credentials (username and password) to exploit it.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/email_tfa` library to the patch version.",
+  "vulnerable_to": "Access bypass",
+  "related_cve_id": "CVE-2025-12760",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://www.drupal.org/sa-contrib-2025-115"
 }

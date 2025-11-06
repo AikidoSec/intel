@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/victoriametrics/victorialogs-datasource",
-  "patch_versions": [
-    "0.21.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.15.0",
-      "0.21.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) attacks due to unsanitized href attributes. This vulnerability arises when user-controlled input is assigned directly to the href property of anchor tags without proper sanitization. An attacker can exploit this by injecting malicious JavaScript URLs (for example, `javascript:alert('XSS')`) into the href field. If unsuspecting users click on the manipulated link, the arbitrary script executes in their browser context, potentially leading to session hijacking or other malicious actions.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/victoriametrics/victorialogs-datasource` library to the patch version.",
-  "vulnerable_to": "Cross-Site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "MEDIUM",
-  "aikido_score": 41,
-  "changelog": "https://github.com/VictoriaMetrics/victorialogs-datasource/releases/tag/v0.21.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

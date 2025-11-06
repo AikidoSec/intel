@@ -1,24 +1,15 @@
 {
-  "package_name": "peewee",
-  "patch_versions": [
-    "3.18.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.13.2",
-      "3.18.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-1333"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a Regular Expression Denial of Service (ReDoS) due to the presence of nested repetition in the FTS5 query validation regex. This regex includes nested quantifiers that can lead to exponential backtracking when processing specific inputs, which can significantly degrade performance. An attacker can exploit this vulnerability by creating and submitting a malicious query string that triggers excessive backtracking in the regex engine. It can result in high CPU consumption and potential service unavailability for other users.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `peewee` library to the patch version.",
-  "vulnerable_to": "Inefficient Regular Expression Complexity",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 61,
-  "changelog": "https://github.com/coleifer/peewee/blob/master/CHANGELOG.md#3183"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@inrupt/solid-client-vc",
+  "patch_versions": [
+    "2.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to denial of service (DoS) due to uncontrolled memory consumption when parsing large JSON response bodies. The patched version introduces a safeguard that limits the maximum JSON size to 10MB by default, configurable via `setMaxJsonSize`, preventing excessive memory use and potential crashes.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges.",
+  "how_to_fix": "Upgrade the `@inrupt/solid-client-vc` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/inrupt/solid-client-vc-js/releases/tag/v2.0.0"
 }

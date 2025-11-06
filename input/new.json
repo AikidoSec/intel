@@ -10,12 +10,12 @@
     ]
   ],
   "cwe": [
-    "CWE-94"
+    "CWE-20"
   ],
   "tldr": "Affected versions of this package are vulnerable to a Protocol Injection Vulnerability due to insufficient URL validation, which fails to prevent the injection of malicious protocols such as `javascript:`, `data:`, `file:`, and `ftp:`. This flaw allows attackers to craft URLs that bypass security measures, potentially leading to arbitrary code execution in the user's browser or unauthorized access to local files when the application processes untrusted input. Exploitation occurs when an attacker submits a manipulated URL that leverages these protocols, exploiting the lack of enforced HTTP/HTTPS restrictions and improper URL format validation to compromise system integrity or steal sensitive data.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `sitemap` library to the patch version.",
-  "vulnerable_to": "Improper Control of Generation of Code ('Code Injection')",
+  "vulnerable_to": "Improper Input Validation",
   "related_cve_id": "",
   "language": "JS",
   "severity_class": "HIGH",

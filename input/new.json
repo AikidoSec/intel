@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "google-cloud-storage",
+  "patch_versions": [
+    "3.5.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.18.0",
+      "3.4.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package may expose sensitive information in OpenTelemetry (OTEL) traces due to insufficient redaction of HTTP request and response data. The update introduces systematic filtering to prevent authentication tokens and secret values from being logged, ensuring compliance with OTEL HTTP semantic conventions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `google-cloud-storage` library to the patch version.",
+  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Python",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/googleapis/python-storage/releases/tag/v3.5.0"
 }

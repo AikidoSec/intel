@@ -1,0 +1,27 @@
+{
+  "package_name": "django-dbbackup",
+  "patch_versions": [
+    "5.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "5.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200",
+    "CWE-16"
+  ],
+  "tldr": "In version `5.0.0`, the package changes its configuration system for backup storage, dropping support for `DBBACKUP_STORAGE` and `DBBACKUP_STORAGE_OPTIONS` in favor of Django’s `STORAGES['dbbackup']` setting. However, if users do not explicitly define `STORAGES['dbbackup']`, the system defaults to using Django’s media directory (`MEDIA_ROOT`) as the backup location. This default behavior introduces a serious security vulnerability, as it can expose database backups — potentially containing sensitive user data — in a publicly accessible directory. The issue highlights the risk of insecure default configurations, where failing to define a new setting silently leads to unsafe behavior instead of triggering an explicit error. The fixed version will raise an error if the `STORAGES['dbbackup']` setting is not defined, preventing the exposure of sensitive data.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and you have not set the new `STORAGES['dbbackup']` setting.",
+  "how_to_fix": "Check if your data is not compromised and make sure `STORAGES['dbbackup']` is set. Upgrading the `django-dbbackup` library to the patch version is not necessary but recommended to ensure that the fix is applied.",
+  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "CRITICAL",
+  "aikido_score": 99,
+  "changelog": "https://github.com/Archmonger/django-dbbackup/releases/tag/5.0.1",
+  "last_modified": "2025-11-07",
+  "published": "2025-11-07"
+}

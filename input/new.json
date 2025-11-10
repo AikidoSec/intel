@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@portkey-ai/gateway",
+  "patch_versions": [
+    "1.14.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.13.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to server-side request forgery (SSRF) due to insufficient validation of the `x-custom-host` header, allowing attackers to redirect requests to arbitrary or internal network hosts. The fix introduces strict host and scheme validation, blocks private IP ranges and unsafe domains, and enforces a trusted host whitelist to prevent unauthorized network access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@portkey-ai/gateway` library to the patch version.",
+  "vulnerable_to": "Server-Side Request Forgery (SSRF)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/Portkey-AI/gateway/releases/tag/v1.14.0"
 }

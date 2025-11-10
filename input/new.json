@@ -1,24 +1,15 @@
 {
-  "package_name": "taskcluster",
-  "patch_versions": [
-    "91.1.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "25.3.0",
-      "91.1.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-22"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a zip slip vulnerability in the `unzip()` function, which allows attackers to write files outside the intended extraction directory by including path traversal sequences (e.g., `../`) in archive entries. This issue occurs because file paths from zip entries are not properly validated before extraction. The fix adds path sanitization and validation to ensure that extracted files remain within the designated destination directory, preventing arbitrary file overwrite and potential remote code execution.",
-  "doest_this_affect_me": "You are affected if you are using a vulnerable version of `taskcluster`.",
-  "how_to_fix": "Upgrade `taskcluster` to the patch version.",
-  "vulnerable_to": "Zip Slip",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "HIGH",
-  "aikido_score": 75,
-  "changelog": "https://github.com/taskcluster/taskcluster/releases/tag/v91.1.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

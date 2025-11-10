@@ -20,5 +20,5 @@
   "language": "JS",
   "severity_class": "LOW",
   "aikido_score": 20,
-  "changelog": "https://github.com/inrupt/solid-client-vc-js/releases/tag/v2.0.0"
+  "changelog": "https://github.com/inrupt/solid-client-vc-js/commit/f9680d1f2979b0938b770e4e7ea5091700f04829"
 }

@@ -1,35 +1,15 @@
 {
-  "package_name": "github.com/victoriametrics/victoriametrics",
-  "patch_versions": [
-    "1.129.1",
-    "1.122.8",
-    "1.110.23"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.123.0",
-      "1.129.0"
-    ],
-    [
-      "1.111.0",
-      "1.122.7"
-    ],
-    [
-      "1.18.3",
-      "1.110.22"
-    ]
-  ],
-  "cwe": [
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to denial-of-service (DoS) attacks. The snappy decoder failed to respect request size limits enforced by VictoriaMetrics components, allowing malformed snappy blocks to trigger excessive memory allocations. This could result in out-of-memory (OOM) errors and service instability. The fix enforces block size validation in ingest endpoints based on the configured `MaxRequest` limits.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/victoriametrics/victoriametrics` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Denial of Service (DoS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 31,
-  "changelog": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.129.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,24 +1,15 @@
 {
-  "package_name": "drupal/simple_oauth",
-  "patch_versions": [
-    "6.0.7"
-  ],
-  "vulnerable_ranges": [
-    [
-      "6.0.0",
-      "6.0.6"
-    ]
-  ],
-  "cwe": [
-    "CWE-288"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to improper authorization due to insufficient scope enforcement in the OAuth 2.0 authorization server module. The module fails to properly respect granted scopes, allowing access tokens to bypass role-based access checks — for example, routes protected by the `_role` requirement can be accessed without proper authorization. This vulnerability is mitigated by the fact that an attacker must possess a valid access token, and the associated user must have the required roles assigned.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `drupal/simple_oauth` library to the patch version.",
-  "vulnerable_to": "Authentication Bypass Using an Alternate Path or Channel",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "CRITICAL",
-  "aikido_score": 90,
-  "changelog": "https://www.drupal.org/sa-contrib-2025-114"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,25 +1,15 @@
 {
-  "package_name": "github.com/hashicorp/consul-template",
-  "patch_versions": [
-    "0.41.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.18.0",
-      "0.41.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to denial of service (DoS) due to a runtime panic in the `ParseTemplateConfig` function when handling malformed inputs like `:` or `:::`. The issue occurs because empty regex matches lead to out-of-range indexing. The fix adds proper handling for empty matches, returning a controlled error instead of panicking.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/hashicorp/consul-template` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Denial of Service (DoS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 28,
-  "changelog": "https://github.com/hashicorp/consul-template/blob/main/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

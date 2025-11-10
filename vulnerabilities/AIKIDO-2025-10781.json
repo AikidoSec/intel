@@ -1,0 +1,27 @@
+{
+  "package_name": "github.com/kserve/kserve",
+  "patch_versions": [
+    "0.16.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.14.0",
+      "0.15.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-522"
+  ],
+  "tldr": "Affected versions of this package may expose sensitive information due to the `HF_TOKEN` being injected into the storage-initializer container in plaintext. This insecure handling of credentials can lead to accidental disclosure or unauthorized access if the token is exposed through logs, environment inspection, or container compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/kserve/kserve` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insufficiently Protected Credentials",
+  "related_cve_id": "",
+  "language": "Go",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/kserve/kserve/releases/tag/v0.16.0",
+  "last_modified": "2025-11-10",
+  "published": "2025-11-10"
+}

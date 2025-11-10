@@ -1,15 +1,17 @@
 {
-  "package_name": "",
+  "package_name": "expr-eval",
   "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "vulnerable_ranges": "*",
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "The `expr-eval` library is a JavaScript expression parser and evaluator intended to safely process mathematical expressions with user-defined variables. However, due to insufficient input validation, attackers can supply a crafted variables object to the `evaluate()` function and achieve arbitrary code execution. Since the library is no longer maintained, users should migrate to the actively maintained fork `expr-eval-fork` version 3.0.0 or later.",
+  "doest_this_affect_me": "You are affected if you are using this package.",
+  "how_to_fix": "Move to the `expr-eval-fork` version 3.0.0 or higher.",
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "CVE-2025-12735",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 86,
+  "changelog": "https://github.com/jorenbroekema/expr-eval/blob/master/CHANGELOG.md"
 }

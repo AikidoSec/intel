@@ -1,0 +1,27 @@
+{
+  "package_name": "snakemake",
+  "patch_versions": [
+    "9.13.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.8.1",
+      "9.13.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package may expose sensitive information because source file paths or URIs containing tokens are logged without proper sanitization, potentially revealing data that should remain confidential.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `snakemake` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 28,
+  "changelog": "https://github.com/snakemake/snakemake/releases/tag/v9.13.5",
+  "last_modified": "2025-11-10",
+  "published": "2025-11-10"
+}

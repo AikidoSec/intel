@@ -16,7 +16,7 @@
   "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
   "how_to_fix": "Upgrade the `@messageformat/runtime` library to the patch version.",
   "vulnerable_to": "Prototype Pollution",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-57353",
   "language": "js",
   "severity_class": "MEDIUM",
   "aikido_score": 65,

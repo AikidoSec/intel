@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "fabric",
+  "patch_versions": [
+    "6.8.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "6.7.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to regular expression denial of service (ReDoS) due to inefficient regular expressions in the code. An attacker can exploit this vulnerability by submitting a specially crafted query string that triggers excessive backtracking in the regex engine, leading to high CPU usage and potential service unavailability for legitimate users.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `fabric` library to the patch version.",
+  "vulnerable_to": "Inefficient Regular Expression Complexity",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/fabricjs/fabric.js/releases/tag/v680"
 }

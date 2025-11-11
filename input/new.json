@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "better-ccflare",
+  "patch_versions": [
+    "2.0.17"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.2.28",
+      "2.0.16"
+    ]
+  ],
+  "cwe": [
+    "CWE-522"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to credential leakage due to improper sanitization of the `Authorization` header. When forwarding client requests to upstream providers, the header was not removed, causing client credentials to be exposed to third-party APIs. The fix ensures that client `Authorization` headers are stripped when provider credentials are present.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `better-ccflare` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insufficiently Protected Credentials",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
+  "changelog": "https://github.com/tombii/better-ccflare/releases/tag/v2.0.17"
 }

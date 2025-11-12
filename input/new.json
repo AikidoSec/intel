@@ -1,25 +1,15 @@
 {
-  "package_name": "letta",
-  "patch_versions": [
-    "0.5.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "0.5.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-22"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to directory traversal due to insufficient sanitization in the file upload functionality. Attackers can exploit this vulnerability by supplying specially crafted file names to upload or overwrite files outside the intended upload directory.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `letta` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Path Traversal",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "HIGH",
-  "aikido_score": 85,
-  "changelog": "https://github.com/letta-ai/letta/releases/tag/0.5.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

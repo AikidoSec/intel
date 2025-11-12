@@ -1,0 +1,27 @@
+{
+  "package_name": "chainlit",
+  "patch_versions": [
+    "2.8.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.8.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-285"
+  ],
+  "tldr": "Affected versions of this package are vulnerable due to a missing authorization check, allowing registered users who know a valid thread ID to access data without proper permission validation. This issue is of low severity, as it requires the attacker to be an authenticated user and possess the target thread ID.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `chainlit` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Authorization",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 38,
+  "changelog": "https://github.com/Chainlit/chainlit/releases/tag/2.8.5",
+  "last_modified": "2025-11-12",
+  "published": "2025-11-12"
+}

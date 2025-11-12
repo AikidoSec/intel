@@ -1,25 +1,15 @@
 {
-  "package_name": "azure-ai-evaluation",
-  "patch_versions": [
-    "1.13.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "1.13.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-532"
-  ],
-  "tldr": "Affected versions of this package may expose sensitive information in log files. This issue occurs because adversarial or unsafe prompt data is not properly redacted before being stored in Application Insights telemetry. The fix adds redaction to agent safety run logs, preventing sensitive input data from being recorded.",
-  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
-  "how_to_fix": "Upgrade `azure-ai-evaluation` to a patch version.",
-  "reporter": "",
-  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "LOW",
-  "aikido_score": 25,
-  "changelog": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-ai-evaluation_1.13.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

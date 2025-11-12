@@ -1,25 +1,15 @@
 {
-  "package_name": "ultralytics",
-  "patch_versions": [
-    "8.3.226"
-  ],
-  "vulnerable_ranges": [
-    [
-      "8.0.141",
-      "8.3.225"
-    ]
-  ],
-  "cwe": [
-    "CWE-94"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to arbitrary code execution due to the unsafe use of `eval()` for parsing user-supplied values. This has been fixed by replacing `eval()` with `ast.literal_eval()` throughout the codebase, ensuring safe and predictable parsing of configuration inputs. The update prevents code injection risks, improves input handling in functions like `smart_value()`, and enhances overall security and reliability.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `ultralytics` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Remote Code Execution (RCE)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "HIGH",
-  "aikido_score": 85,
-  "changelog": "https://github.com/ultralytics/ultralytics/releases/tag/v8.3.226"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

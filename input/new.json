@@ -1,25 +1,15 @@
 {
-  "package_name": "@ts-graphviz/ast",
-  "patch_versions": [
-    "3.0.5"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.0.0",
-      "3.0.4"
-    ]
-  ],
-  "cwe": [
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to denial-of-service (DoS) and potential code-injection risks through its DOT/AST parser. The updates replace vulnerable regex-based parsing and uncontrolled recursion with safer, iterative logic, hardening against crafted input that could cause stack overflows or exploit parsing behavior to execute undesirable actions.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@ts-graphviz/ast` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Denial of Service (DoS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
-  "changelog": "https://github.com/ts-graphviz/ts-graphviz/releases/tag/%40ts-graphviz/ast%403.0.5"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/hashicorp/nomad",
+  "patch_versions": [
+    "1.11.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.10.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-639"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to unauthorized information disclosure due to flawed task naming validation. By naming a task “alloc,” an attacker could exploit filesystem directory naming consistency and gain access to another task’s directory within the same allocation, thereby bypassing isolation. The fix prohibits “alloc” as a task name and rejects job submissions using it.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/hashicorp/nomad` library to the patch version.",
+  "vulnerable_to": "Authorization Bypass Through User-Controlled Key",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 67,
+  "changelog": "https://github.com/hashicorp/nomad/releases/tag/v1.11.0"
 }

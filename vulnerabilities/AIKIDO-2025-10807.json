@@ -1,0 +1,36 @@
+{
+  "package_name": "symfony/http-foundation",
+  "patch_versions": [
+    "5.4.50",
+    "6.4.29",
+    "7.3.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "5.4.49"
+    ],
+    [
+      "6.0.0",
+      "6.4.28"
+    ],
+    [
+      "7.0.0",
+      "7.3.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-285"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an authorization bypass. The `Request` class improperly handles certain `PATH_INFO` values, allowing URLs to be represented without a leading `/`. This behavior can bypass access control mechanisms that rely on the assumption that all paths begin with a `/`.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `symfony/http-foundation` library to a patch version.",
+  "vulnerable_to": "Authorization Bypass",
+  "related_cve_id": "CVE-2025-64500",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 81,
+  "changelog": "https://symfony.com/blog/cve-2025-64500-incorrect-parsing-of-path-info-can-lead-to-limited-authorization-bypass",
+  "last_modified": "2025-11-12",
+  "published": "2025-11-12"
+}

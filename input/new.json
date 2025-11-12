@@ -1,7 +1,7 @@
 {
   "package_name": "github.com/operator-framework/operator-lifecycle-manager",
   "patch_versions": [
-    "0.36.0"
+    "0.37.0"
   ],
   "vulnerable_ranges": [
     [

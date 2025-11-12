@@ -1,0 +1,27 @@
+{
+  "package_name": "github.com/operator-framework/operator-lifecycle-manager",
+  "patch_versions": [
+    "0.37.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.35.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-306"
+  ],
+  "tldr": "Affected versions of this package expose unprotected HTTP metrics endpoints, allowing unauthorized access to possibly sensitive operational data. The issue is resolved by adding TLS and RBAC-based authentication to secure metrics access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/operator-framework/operator-lifecycle-manager` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Authentication Bypass",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 40,
+  "changelog": "https://github.com/operator-framework/operator-lifecycle-manager/releases/tag/v0.36.0",
+  "last_modified": "2025-11-12",
+  "published": "2025-11-12"
+}

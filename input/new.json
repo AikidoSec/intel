@@ -1,25 +1,15 @@
 {
-  "package_name": "Sentry",
-  "package_name_alias": "sentry-cocoa",
-  "patch_versions": [
-    "8.57.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "8.0.0",
-      "8.57.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-200"
-  ],
-  "tldr": "Affected versions of this package suffer from improper masking in SwiftUI.List, where oversized background decoration views cause incorrect clipping and unmasked screen regions. The update fixes these masking issues, improves rendering and layer ordering, and enhances class identification to avoid triggering private UIKit initializations, ensuring more accurate redaction and stable UI behavior.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `Sentry` library to a patch version.",
-  "vulnerable_to": "Information Disclosure",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "SWIFT",
-  "severity_class": "LOW",
-  "aikido_score": 10,
-  "changelog": "https://github.com/getsentry/sentry-cocoa/releases/tag/8.57.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

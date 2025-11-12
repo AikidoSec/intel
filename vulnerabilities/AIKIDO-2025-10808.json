@@ -1,0 +1,26 @@
+{
+  "package_name": "heapless",
+  "patch_versions": [
+    "0.9.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.9.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-244"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper clearing of sensitive data from memory. Incomplete zeroization of vectors allowed sensitive information to persist after use, potentially exposing it through memory dumps. The fix ensures all heapless data structures correctly implement zeroization when the feature is enabled.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `heapless` library to the patch version.",
+  "vulnerable_to": "Heap Inspection",
+  "related_cve_id": "",
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 35,
+  "changelog": "https://github.com/rust-embedded/heapless/blob/main/CHANGELOG.md",
+  "last_modified": "2025-11-12",
+  "published": "2025-11-12"
+}

@@ -1,0 +1,27 @@
+{
+  "package_name": "openc3",
+  "patch_versions": [
+    "6.9.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.10.0",
+      "6.9.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of the package may expose sensitive information in log files by inadvertently logging it during normal operation, potentially allowing unauthorized individuals to gain access to the information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `openc3` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/OpenC3/cosmos/releases/tag/v6.9.2",
+  "last_modified": "2025-11-12",
+  "published": "2025-11-12"
+}

@@ -1,0 +1,26 @@
+{
+  "package_name": "fabric",
+  "patch_versions": [
+    "6.9.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "6.8.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution. The `charWidthCache` object is a plain JavaScript object with keys derived from user-controlled data (such as font family, style, and weight). By setting values like `fontFamily` to `__proto__` or manipulating other font properties, an attacker can modify the global object prototype, potentially leading to unexpected behavior or application instability. Although the injected data is not directly controlled by the attacker, the ability to tamper with `Object.prototype` poses a significant risk. The issue is resolved by replacing the plain object with a `Map`, which prevents prototype pollution and provides a safer, more suitable data structure.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `fabric` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 47,
+  "changelog": "https://github.com/fabricjs/fabric.js/releases/tag/v690",
+  "last_modified": "2025-11-12",
+  "published": "2025-11-12"
+}

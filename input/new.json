@@ -1,15 +1,39 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "drupal/core",
+  "patch_versions": [
+    "10.4.9",
+    "10.5.6",
+    "11.1.9",
+    "11.2.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "8.0.0",
+      "10.4.8"
+    ],
+    [
+      "10.5.0",
+      "10.5.6"
+    ],
+    [
+      "11.0.0",
+      "11.1.87"
+    ],
+    [
+      "11.2.0",
+      "11.2.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Denial of Service (DoS): A rarely used feature in Drupal core, via an underlying library, allows certain HTTP request attributes to be overridden. This can cause Drupal to cache responses it shouldn’t (cache poisoning), resulting in broken rendering, unstyled or malformed pages, and degraded client-side functionality. The underlying library is being changed to mitigate the issue; Drupal core is hardened as an interim protection.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/core` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "CVE-2025-13080",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://www.drupal.org/sa-core-2025-005"
 }

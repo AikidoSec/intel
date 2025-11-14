@@ -1,0 +1,26 @@
+{
+  "package_name": "js-yaml",
+  "patch_versions": [
+    "4.1.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "4.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Prototype Pollution, where the code insufficiently validates properties during merging by checking only own properties with _hasOwnProperty, allowing attackers to craft malicious YAML input that injects keys like `__proto__` or `constructor` into the object prototype. This vulnerability can lead to remote code execution, denial of service, or other security breaches when the polluted objects are handled in the application.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `js-yaml` library to the patch version.",
+  "vulnerable_to": "Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 47,
+  "changelog": "https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md#411---2025-11-12",
+  "last_modified": "2025-11-14",
+  "published": "2025-11-14"
+}

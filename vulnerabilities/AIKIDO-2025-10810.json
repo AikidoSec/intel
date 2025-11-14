@@ -1,0 +1,26 @@
+{
+  "package_name": "unstructured",
+  "patch_versions": [
+    "0.18.18"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.14.5",
+      "0.18.15"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a path traversal issue in email MSG attachment filenames, where malicious filenames containing path traversal sequences could allow files to be written outside the intended directory during processing by `partition_msg` functions. An attacker can exploit this vulnerability by crafting an email with an attachment filename that includes `..` sequences, which may lead to unauthorized file access or manipulation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `unstructured` library to the patch version.",
+  "vulnerable_to": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 72,
+  "changelog": "https://github.com/Unstructured-IO/unstructured/releases/tag/0.18.18",
+  "last_modified": "2025-11-14",
+  "published": "2025-11-14"
+}

@@ -20,6 +20,7 @@
   "language": "JS",
   "severity_class": "LOW",
   "aikido_score": 21,
+  "disable_reachability_analysis": true,
   "changelog": "https://github.com/egoist/tsup/releases/tag/v8.5.1",
   "last_modified": "2025-11-17",
   "published": "2025-11-17"

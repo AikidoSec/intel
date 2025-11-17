@@ -16,9 +16,9 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `tsup` library to the patch version.",
   "vulnerable_to": "Cross-Site Scripting",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2024-53384",
   "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 51,
+  "severity_class": "LOW",
+  "aikido_score": 21,
   "changelog": "https://github.com/egoist/tsup/releases/tag/v8.5.1"
 }

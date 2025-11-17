@@ -1,0 +1,26 @@
+{
+  "package_name": "tsup",
+  "patch_versions": [
+    "8.5.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "8.5.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to DOM Clobbering due to insufficient validation of script tags in the URL resolution logic. The `getImportMetaUrl` function insecurely relies on `document.currentScript` and `document.baseURI` without proper sanitization, allowing attackers to inject malicious HTML elements that override these properties. An attacker could exploit this by clobbering `document.currentScript.src` or `document.baseURI` with controlled values, potentially redirecting script imports to arbitrary malicious URLs and enabling cross-site scripting (XSS) or code execution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `tsup` library to the patch version.",
+  "vulnerable_to": "Cross-Site Scripting",
+  "related_cve_id": "CVE-2024-53384",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 21,
+  "changelog": "https://github.com/egoist/tsup/releases/tag/v8.5.1",
+  "last_modified": "2025-11-17",
+  "published": "2025-11-17"
+}

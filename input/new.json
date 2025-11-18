@@ -1,15 +1,34 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/victoriametrics/victoriametrics",
+  "patch_versions": [
+    "1.130.0",
+    "1.122.9",
+    "1.110.24"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.123.0",
+      "1.129.1"
+    ],
+    [
+      "1.111.0",
+      "1.122.8"
+    ],
+    [
+      "1.18.3",
+      "1.110.23"
+    ]
+  ],
+  "cwe": [
+    "CWE-770"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Improper Memory Limit Enforcement on zstd Encoded Requests, where the `maxDataSize` memory limits are not correctly applied to zstd compressed requests, undermining the protection for ingest endpoints against malicious payloads. An attacker could exploit this by sending a specially crafted zstd encoded request that exceeds memory constraints, potentially leading to resource exhaustion, denial of service, or unauthorized system access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/victoriametrics/victoriametrics` library to the patch version.",
+  "vulnerable_to": "Allocation of Resources Without Limits or Throttling",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.130.0"
 }

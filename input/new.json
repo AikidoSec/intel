@@ -1,24 +1,15 @@
 {
-  "package_name": "Giraffe",
-  "patch_versions": [
-    "8.2.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "5.0.0",
-      "8.1.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-611"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to XML External Entity (XXE) Injection due to insecure XML deserialization in the `Deserialize` function, which uses `XmlSerializer` without disabling external entity processing. It allows the parser to resolve external entities when processing untrusted XML input. An attacker can exploit this by crafting a malicious XML payload that includes references to external entities, leading to unauthorized file access, server-side request forgery, or denial of service attacks by exhausting system resources.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `Giraffe` library to the patch version.",
-  "vulnerable_to": "Improper Restriction of XML External Entity Reference",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "DOTNET",
-  "severity_class": "MEDIUM",
-  "aikido_score": 58,
-  "changelog": "https://github.com/giraffe-fsharp/Giraffe/releases/tag/v8.2.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

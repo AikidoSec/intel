@@ -1,24 +1,15 @@
 {
-  "package_name": "maunium.net/go/mautrix",
-  "patch_versions": [
-    "0.26.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.9.6",
-      "0.25.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-770"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a Denial of Service (DoS) attack due to missing size limits on responses received from servers. An attacker could exploit this vulnerability by posing as a malicious server and sending an excessively large response, potentially leading to resource exhaustion and service unavailability for clients.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `maunium.net/go/mautrix` library to the patch version.",
-  "vulnerable_to": "Allocation of Resources Without Limits or Throttling",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 25,
-  "changelog": "https://github.com/mautrix/go/releases/tag/v0.26.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

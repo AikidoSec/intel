@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
+  "package_name": "@capgo/capacitor-social-login",
+  "patch_versions": [
+    "7.18.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "7.17.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-294"
+  ],
   "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@capgo/capacitor-social-login` library to the patch version.",
+  "vulnerable_to": "Authentication Bypass by Capture-replay",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 68,
+  "changelog": "https://github.com/Cap-go/capacitor-social-login"
 }

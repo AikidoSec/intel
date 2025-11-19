@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "W3 Total Cache",
+  "patch_versions": [
+    "2.8.13"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.8.12"
+    ]
+  ],
+  "cwe": [
+    "CWE-78"
+  ],
+  "tldr": "Affected versions of the W3 Total Cache plugin are vulnerable to command injection in the `_parse_dynamic_mfunc` function, allowing unauthenticated users to execute arbitrary PHP code by submitting a comment containing a crafted malicious payload on a post.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `W3 Total Cache` library to the patch version.",
+  "vulnerable_to": "Command Injection",
+  "related_cve_id": "CVE-2025-9501",
+  "language": "PHP",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://wpscan.com/vulnerability/6697a2c9-63ae-42f0-8931-f2e5d67d45ae/"
 }

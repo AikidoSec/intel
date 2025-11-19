@@ -1,0 +1,20 @@
+{
+  "package_name": "rand_os",
+  "patch_versions": [],
+  "vulnerable_ranges": "*",
+  "cwe": [
+    "CWE-1104"
+  ],
+  "tldr": "The `rand_os` crate is deprecated and no longer actively maintained, as `OsRng` is now part of `rand_core`. Consider upgrading to `rand_core` 0.5.1 or higher.",
+  "doest_this_affect_me": "You are affected if you are using this package.",
+  "how_to_fix": "Remove any `rand_os` package from your application. Please take a look at `rand_core` instead.",
+  "reporter": "",
+  "vulnerable_to": "Use of Unmaintained Third Party Components",
+  "related_cve_id": "",
+  "language": "rust",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0124.html",
+  "last_modified": "2025-11-19",
+  "published": "2025-11-19"
+}

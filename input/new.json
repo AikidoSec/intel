@@ -5,15 +5,15 @@
   ],
   "vulnerable_ranges": [
     [
-      "0.1.0",
+      "0.0.1",
       "7.17.0"
     ]
   ],
   "cwe": [
     "CWE-294"
   ],
-  "tldr": "",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "tldr": "Affected versions of this package are vulnerable to replay attacks due to insufficient nonce implementation in the Google sign-in flow. Without proper nonce validation, an attacker could intercept authentication tokens during transmission and reuse them to impersonate legitimate users. It could allow unauthorized access to user accounts and associated data. The vulnerability exists because the nonce parameter is not properly generated or validated.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and if you using the Google sign-in flow.",
   "how_to_fix": "Upgrade the `@capgo/capacitor-social-login` library to the patch version.",
   "vulnerable_to": "Authentication Bypass by Capture-replay",
   "related_cve_id": "",

@@ -1,0 +1,27 @@
+{
+  "package_name": "astro",
+  "patch_versions": [
+    "5.15.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.12.0",
+      "5.15.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS). The patched version strengthens the security of Server Islands slots by encrypting slot data before it is sent to the browser, aligning it with the security model already used for props. This ensures the integrity of slot content and prevents injection attacks, even when component templates do not explicitly support slots.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `astro` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross Site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/withastro/astro/releases/tag/astro%405.15.8",
+  "last_modified": "2025-11-19",
+  "published": "2025-11-19"
+}

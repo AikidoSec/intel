@@ -1,0 +1,27 @@
+{
+  "package_name": "herb",
+  "patch_versions": [
+    "0.8.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.7.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Denial of Service (DoS) due to a memory leak in the `herb_parse` and `analyze.c` components. An attacker can exploit this flaw by triggering repeated parsing or analysis operations, causing the application’s memory usage to grow over time. This can lead to resource exhaustion, degraded performance, or a complete service crash.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `herb` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "RUBY",
+  "severity_class": "LOW",
+  "aikido_score": 28,
+  "changelog": "https://github.com/marcoroth/herb/releases/tag/v0.8.0",
+  "last_modified": "2025-11-19",
+  "published": "2025-11-19"
+}

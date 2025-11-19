@@ -1,24 +1,15 @@
 {
-  "package_name": "@igniteui/cli-core",
-  "patch_versions": [
-    "14.7.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "5.0.0",
-      "14.6.6"
-    ]
-  ],
-  "cwe": [
-    "CWE-78"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Command Injection due to improper neutralization of user input in concatenated shell commands. An attacker could exploit these weaknesses by supplying a maliciously crafted input containing shell metacharacters to execute arbitrary commands. It would allow the attacker to execute arbitrary shell commands on the host system with the privileges of the application, potentially leading to a system compromise.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@igniteui/cli-core` library to the patch version.",
-  "vulnerable_to": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 77,
-  "changelog": "https://github.com/IgniteUI/igniteui-cli/releases/tag/v14.7.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

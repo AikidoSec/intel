@@ -1,24 +1,15 @@
 {
-  "package_name": "graphql-upload-minimal",
-  "patch_versions": [
-    "1.6.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "1.6.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-1321"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a prototype pollution in the `deepSet` util function, which could allow attackers to manipulate object properties and impact application behavior.",
-  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
-  "how_to_fix": "Upgrade the `graphql-upload-minimal` library to the patch version.",
-  "vulnerable_to": "Prototype Pollution",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "js",
-  "severity_class": "MEDIUM",
-  "aikido_score": 46,
-  "changelog": "https://github.com/flash-oss/graphql-upload-minimal/releases/tag/v1.6.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

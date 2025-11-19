@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/buildkite/agent/v3",
+  "patch_versions": [
+    "3.113.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.112.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-497"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Information Disclosure, where a refactor introduced an unhandled error in the secrets rejection function, allowing pipelines with cleartext secrets, such as passwords or API keys, to be uploaded even when the `--reject-secrets` flag was enabled. An attacker could exploit this vulnerability by deliberately submitting malicious pipeline configurations that contain exposed secrets, thereby bypassing intended safeguards and potentially leading to unauthorized access or data exposure.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/buildkite/agent/v3` library to the patch version.",
+  "vulnerable_to": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/buildkite/agent/releases/tag/v3.113.0",
+  "last_modified": "2025-11-19",
+  "published": "2025-11-19"
+}

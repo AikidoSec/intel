@@ -1,15 +1,36 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "@apollo/composition",
+  "patch_versions": [
+    "2.9.5", "2.10.4", "2.11.5", "2.12.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.9.4"
+    ],
+    [
+      "2.10.0",
+      "2.10.3"
+    ],
+    [
+      "2.11.0",
+      "2.11.4"
+    ],
+    [
+      "2.12.0",
+      "2.12.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-863"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to incorrect authorization in the composition logic, which fails to ensure that referenced fields enforce the same access control requirements as the fields depending on them. An attacker can exploit this by crafting queries that indirectly access protected data through dependencies declared with the `@requires` or `@fromContext` directives, effectively bypassing intended access control checks and exposing sensitive information.\nThis vulnerability affects only users of Apollo Router’s access-control features (`@authenticated`, `@requiresScopes`, or `@policy`) who also use `@requires` or `@fromContext` in combination with field-level authorization.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@apollo/composition` library to the patched version. If you are using Apollo Rover with an unpatched release, or Apollo Studio with Federation 2.8 or earlier, review your schema for sensitive fields that can be accessed indirectly through `@requires` or `@fromContext`. Apply appropriate access-control directives to those fields, or restructure your schema so that protected fields are queried directly rather than through dependency chains.",
+  "vulnerable_to": "Incorrect Authorization",
+  "related_cve_id": "CVE-2025-64172",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/apollographql/federation/releases/tag/%40apollo%2Fcomposition%402.12.1"
 }

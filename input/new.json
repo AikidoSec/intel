@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/gogs/git-module",
+  "patch_versions": [
+    "1.8.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.8.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-88"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Argument Injection due to the absence of the `--end-of-options` flag in repository operations, such as those in repo.go, repo_diff.go, repo_commit.go, and others, which could allow user-supplied input to be misinterpreted as command-line options. An attacker might exploit this by crafting malicious input that injects unauthorized options, potentially leading to arbitrary command execution, data disclosure, or repository manipulation, depending on the context and permissions of the affected commands.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/gogs/git-module` library to the patch version.",
+  "vulnerable_to": "MEDIUM",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "Improper Neutralization of Argument Delimiters in a Command ('Argument Injection')",
+  "aikido_score": 61,
+  "changelog": "https://github.com/gogs/git-module/releases/tag/v1.8.5"
 }

@@ -19,6 +19,6 @@
   "related_cve_id": "",
   "language": "js",
   "severity_class": "MEDIUM",
-  "aikido_score": 46,
+  "aikido_score": 48,
   "changelog": "https://github.com/jsxgraph/jsxgraph/releases/tag/v1.12.1"
 }

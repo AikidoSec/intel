@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "jsxgraph",
+  "patch_versions": [
+    "1.12.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.12.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (xss) because user-supplied input is not properly validated before being assigned to the `innerHTML` property of DOM elements. Several locations in the codebase directly insert untrusted data into HTML content, allowing an attacker to inject and execute arbitrary JavaScript in the victim’s browser.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `jsxgraph` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 46,
+  "changelog": "https://github.com/jsxgraph/jsxgraph/releases/tag/v1.12.1"
 }

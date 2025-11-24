@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "clevertap-web-sdk",
+  "patch_versions": [
+    "2.3.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.3.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package are vulnerable due to insufficient input validation in multiple parts of the codebase, particularly when parsing JSON data for cookies or `localStorage` entries such as `GUID`, `session`, `backups`, or `inbox`. Because these values are processed without proper validation or sanitization, an attacker can supply malformed or malicious JSON that triggers unexpected behavior, potentially leading to data corruption, application errors, or further exploitation depending on how the parsed data is used.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `clevertap-web-sdk` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/CleverTap/clevertap-web-sdk/releases/tag/v2.3.2"
 }

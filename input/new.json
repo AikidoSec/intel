@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "node-redlock",
+  "patch_versions": [
+    "2.3.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.1.0",
+      "2.2.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-338"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Insecure Randomness in Lock Tokens due to the use of `Math.random()` for generating lock tokens, which is not cryptographically secure and produces predictable values. An attacker could exploit this by predicting the lock tokens to bypass authentication mechanisms, potentially leading to unauthorized access, privilege escalation, or data integrity issues.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `node-redlock` library to the patch version.",
+  "vulnerable_to": "Insecure Randomness",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/KunalBurangi/node-redlock/releases/tag/2.3.0"
 }

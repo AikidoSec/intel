@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@kolkov/angular-editor",
+  "patch_versions": [
+    "3.0.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "3.0.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an XSS vulnerability when setting editor value via `writeValue()`, where the `refreshView()` method unsafely sets innerHTML without sanitization, bypassing the `sanitize: true` configuration and allowing XSS payloads to execute; this affects all programmatic value setting methods, including `ngModel binding`, `FormControl setValue/patchValue`, and direct property `assignment`. An attacker can exploit this vulnerability by inserting a malicious payload into the editor and toggling the preview mode, which can trigger the execution of JavaScript code.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@kolkov/angular-editor` library to the patch version.",
+  "vulnerable_to": "Cross-Site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/kolkov/angular-editor/releases/tag/v3.0.3"
 }

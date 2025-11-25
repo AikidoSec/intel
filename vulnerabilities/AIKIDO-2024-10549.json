@@ -27,7 +27,7 @@
   "how_to_fix": "Upgrade the `openssl` library to a patch version.",
   "reporter": "",
   "vulnerable_to": "Buffer Overflow",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-54370 ",
   "language": "Ruby",
   "severity_class": "MEDIUM",
   "aikido_score": 40,

@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/go-gitea/gitea",
-  "patch_versions": [
-    "1.25.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "1.25.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-497"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to information leakage due to login error messages that allow user enumeration by distinguishing between non-existing users and invalid passwords, exposure of release drafts to non-writer users, and API responses that reveal signature email addresses instead of user profile emails. An attacker can exploit this by analyzing error messages to enumerate valid usernames for targeted attacks, accessing sensitive draft release information without authorization, and harvesting email addresses through API calls for phishing or spam campaigns.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/go-gitea/gitea` library to the patch version.",
-  "vulnerable_to": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 15,
-  "changelog": "https://github.com/go-gitea/gitea/releases/tag/v1.25.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

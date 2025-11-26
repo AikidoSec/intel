@@ -1,0 +1,26 @@
+{
+  "package_name": "@marcbachmann/cel-js",
+  "patch_versions": [
+    "5.2.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.4",
+      "5.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Prototype Pollution through unsafe object creation where the code dynamically assigns properties without validating keys, allowing an attacker to exploit this by crafting malicious input that sets the `__proto__`, `constructor`, or `prototype` keys to pollute the base object prototype, potentially leading to denial of service, privilege escalation, or remote code execution by modifying inherited properties across the application.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@marcbachmann/cel-js` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 73,
+  "changelog": "https://github.com/marcbachmann/cel-js/releases/tag/v5.2.1",
+  "last_modified": "2025-11-26",
+  "published": "2025-11-26"
+}

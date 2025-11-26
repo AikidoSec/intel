@@ -1,24 +1,15 @@
 {
-  "package_name": "dereuromark/cakephp-feedback",
-  "patch_versions": [
-    "2.2.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "2.1.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-94"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to arbitrary code execution because they call `unserialize()` on user-supplied files without restricting which classes may be instantiated. This allows attackers to perform PHP object injection and potentially trigger malicious gadget chains. The issue is fixed by invoking `unserialize()` with `allowed_classes => false`, which prevents custom objects from being created while still allowing arrays and `stdClass` values. This preserves backward compatibility with existing serialized array files while effectively blocking RCE via unsafe object deserialization.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `dereuromark/cakephp-feedback` library to the patch version.",
-  "vulnerable_to": "Remote Code Execution (RCE)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "HIGH",
-  "aikido_score": 85,
-  "changelog": "https://github.com/dereuromark/cakephp-feedback/releases/tag/2.2.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

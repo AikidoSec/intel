@@ -1,0 +1,26 @@
+{
+  "package_name": "calamine",
+  "patch_versions": [
+    "0.32.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.13.1",
+      "0.31.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-789"
+  ],
+  "tldr": "Affected versions of the `calamine` crate could be forced to allocate unbounded amounts of memory when parsing certain XLS files, allowing a malicious spreadsheet to crash the application via out-of-memory. This issue has been addressed by adding bounds to memory allocations during XLS parsing, preventing resource exhaustion.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `calamine` library to a patch version.",
+  "vulnerable_to": "Memory Allocation with Excessive Size Value",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 44,
+  "changelog": "https://github.com/tafia/calamine/releases/tag/v0.32.0",
+  "last_modified": "2025-11-26",
+  "published": "2025-11-26"
+}

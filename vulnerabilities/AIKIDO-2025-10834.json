@@ -1,0 +1,26 @@
+{
+  "package_name": "markdown-to-jsx",
+  "patch_versions": [
+    "9.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "7.0.0",
+      "8.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Improper Input Validation, characterized by insufficient URL sanitization against `javascript:`, `vbscript:`, and malicious `data:` URLs, and the default disabling of tagfilter, which escapes dangerous HTML tags in both HTML and React output. An attacker could exploit this by crafting and injecting malicious input that bypasses these protections, leading to cross-site scripting (XSS) attacks or other client-side code-execution vulnerabilities.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `markdown-to-jsx` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/quantizor/markdown-to-jsx/releases/tag/v9.0.0",
+  "last_modified": "2025-11-26",
+  "published": "2025-11-26"
+}

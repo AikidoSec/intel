@@ -1,24 +1,15 @@
 {
-  "package_name": "streamdown",
-  "patch_versions": [
-    "1.6.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "1.5.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-1333"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to regular expression denial of service (ReDoS) due to inefficient patterns in `parse-incomplete-markdown.ts`. These expressions allow crafted input to trigger excessive backtracking and degrade performance. The fix removes the vulnerable regexes and replaces them with safer, deterministic string-based parsing logic for handling incomplete links, images, and other partial markdown constructs, eliminating the risk of ReDoS.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `streamdown` library to the patch version.",
-  "vulnerable_to": "Inefficient Regular Expression Complexity",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 30,
-  "changelog": "https://github.com/vercel/streamdown/blob/main/packages/streamdown/CHANGELOG.md"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

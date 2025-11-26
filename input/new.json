@@ -1,24 +1,15 @@
 {
-  "package_name": "http",
-  "patch_versions": [
-    "1.4.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "1.3.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-703"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a panic in the `HeaderMap::try_reserve` method due to an integer overflow in the `to_raw_capacity` helper function, which violates Rust's convention that `try_*` methods should never panic. It occurs when calculating the raw capacity for a header map, where a sufficiently large input causes a panic instead of returning a `MaxSizeReached` error. An attacker can exploit this by providing crafted input that triggers the overflow panic, leading to a denial of service by crashing the application.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `http` library to the patch version.",
-  "vulnerable_to": "Improper Check or Handling of Exceptional Conditions",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "LOW",
-  "aikido_score": 10,
-  "changelog": "https://github.com/hyperium/http/releases/tag/v1.4.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

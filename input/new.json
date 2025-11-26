@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/launchdarkly/ld-relay/v8",
+  "patch_versions": [
+    "8.16.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "8.0.0",
+      "8.16.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package have a vulnerability that leads to Information Disclosure, allowing Redis credentials to be logged without redaction. If an attacker gains access to these application logs, either through a logging console or a log file, they could easily extract the Redis password. With these credentials, the attacker could gain unauthorized access to the Redis database, which might lead to data theft, modification, or deletion.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/launchdarkly/ld-relay/v8` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/launchdarkly/ld-relay/releases/tag/v8.16.1"
 }

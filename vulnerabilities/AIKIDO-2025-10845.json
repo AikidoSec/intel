@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `calamine` library to a patch version.",
   "vulnerable_to": "Memory Allocation with Excessive Size Value",
   "related_cve_id": "",
-  "language": "JS",
+  "language": "RUST",
   "severity_class": "MEDIUM",
   "aikido_score": 44,
   "changelog": "https://github.com/tafia/calamine/releases/tag/v0.32.0",

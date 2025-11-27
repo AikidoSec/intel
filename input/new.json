@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "kamal",
+  "patch_versions": [
+    "2.9.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.7.0",
+      "2.8.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-78"
+  ],
+  "tldr": "Affected versions of Kamal are vulnerable to command injection attacks in its Passbolt adapter: an unsanitized folder ID (`item[\"id\"]`) was interpolated directly into a shell command. The patched version adds `.to_s.shellescape` to that value before constructing the command, ensuring that any special characters are properly escaped — preventing arbitrary OS command execution when handling untrusted input.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `kamal` library to the patch version.",
+  "vulnerable_to": "Command Injection",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUBY",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://github.com/basecamp/kamal/releases/tag/v2.9.0"
 }

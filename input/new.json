@@ -1,24 +1,15 @@
 {
-  "package_name": "gdcm",
-  "patch_versions": [
-    "3.2.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.2.4",
-      "3.2.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-125"
-  ],
-  "tldr": "An out-of-bounds read vulnerability exists in the Grassroots DICOM library (GDCM), specifically in the `SequenceOfFragments::ReadValue` method. The flaw is triggered when the library parses a malformed DICOM file containing encapsulated `PixelData` fragments (compressed image data stored across multiple fragments). Improper bounds checking allows the parser to read beyond the intended memory region, which may lead to application crashes, information disclosure, or other undefined behavior when handling attacker-controlled DICOM files.",
-  "doest_this_affect_me": "You're affected if you are using a version which is within vulnerability ranges.",
-  "how_to_fix": "Upgrade `gdcm` library to patch version.",
-  "vulnerable_to": "Out-of-bounds Read",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "c++",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
-  "changelog": "https://github.com/malaterre/GDCM/commit/5829c95c8ac3afa9a3a3413675e948959c28a789"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

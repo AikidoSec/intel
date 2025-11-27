@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "league/oauth2-server",
+  "patch_versions": [
+    "9.3.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "9.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to exposure of sensitive data through stack traces. The fix introduces a dedicated “sensitive” parameter to properly mark and filter sensitive values, ensuring they are not included in stack traces and preventing unintended disclosure during error handling.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `league/oauth2-server` library to the patch version.",
+  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/thephpleague/oauth2-server/releases/tag/9.3.0"
 }

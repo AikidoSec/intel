@@ -18,7 +18,7 @@
   "vulnerable_to": "Denial of Service (DoS)",
   "related_cve_id": "GHSA-rcmh-qjqh-p98v",
   "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
+  "severity_class": "LOW",
+  "aikido_score": 30,
   "changelog": "https://github.com/postalsys/postal-mime/releases/tag/v2.6.1"
 }

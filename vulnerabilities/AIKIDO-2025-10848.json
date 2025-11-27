@@ -1,0 +1,27 @@
+{
+  "package_name": "slack-incoming-webhook-plugin",
+  "org_name": "org.rundeck.plugins",
+  "patch_versions": [
+    "1.3.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.3.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-1395"
+  ],
+  "tldr": "Affected versions of this package import the vulnerable `commons-lang` package (CVE-2025-48924), which is vulnerable to Uncontrolled Recursion when processing long or deeply nested inputs. The patch replaces the vulnerable package with `commons-lang3` version 3.18.0.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `org.rundeck.plugins:slack-incoming-webhook-plugin` library to a patch version.",
+  "vulnerable_to": "Dependency on Vulnerable Third-Party Component",
+  "related_cve_id": "CVE-2025-48924",
+  "language": "JAVA",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/rundeck-plugins/slack-incoming-webhook-plugin/releases/tag/v1.3.7",
+  "last_modified": "2025-11-27",
+  "published": "2025-11-27"
+}

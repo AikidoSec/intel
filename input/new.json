@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "nodemailer",
+  "patch_versions": [
+    "7.0.11"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "7.0.10"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Denial of Service (DoS) attack caused by deeply nested address groups in email headers. A malicious header such as `g0: g1: g2: ... gN: user@example.com;` can trigger uncontrolled recursion in the address parser, eventually causing a stack overflow and crashing the application. The fix introduces a recursion-depth limit (`MAX_NESTED_GROUP_DEPTH = 50`), which safely aborts parsing when the structure becomes too deeply nested. This mirrors the mitigation previously applied to the `Nodemailer` address parser.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `nodemailer` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "GHSA-rcmh-qjqh-p98v",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/nodemailer/nodemailer/releases/tag/v7.0.11"
 }

@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/uptrace/bun/driver/pgdriver",
+  "patch_versions": [
+    "1.2.16"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.2.15"
+    ]
+  ],
+  "cwe": [
+    "CWE-89"
+  ],
+  "tldr": "Affected versions of this package could be vulnerable to SQL injection when PostgreSQL’s `standard_conforming_strings` is explicitly set to `off`, a legacy configuration that modern deployments rarely use. Because this setting has defaulted to `on` for over a decade, the practical impact is minimal. The fix enforces `standard_conforming_strings=on` and `client_encoding=UTF8` to ensure safe string-literal handling, though testing these conditions is difficult without legacy or deliberately misconfigured PostgreSQL instances.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and you explicitly set `standard_conforming_strings=off`.",
+  "how_to_fix": "Upgrade the `github.com/uptrace/bun/driver/pgdriver` library to the patch version.",
+  "vulnerable_to": "SQL Injection",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/uptrace/bun/releases/tag/v1.2.16",
+  "last_modified": "2025-11-27",
+  "published": "2025-11-27"
+}

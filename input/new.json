@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "binary-parser",
+  "patch_versions": [
+    "2.3.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.3.3",
+      "2.2.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package suffered from a code-injection vulnerability: attacker-controlled values provided as field names or encoding names could lead to arbitrary code execution within the parser. The patch introduces sanitization logic: it validates field names and encoding names against a safe pattern and rejects invalid ones — preventing injection via malformed names or encoding values.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `binary-parser` library to the patch version.",
+  "vulnerable_to": "Code Injection",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://github.com/keichi/binary-parser/releases/tag/v2.3.0"
 }

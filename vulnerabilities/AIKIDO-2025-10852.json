@@ -1,0 +1,27 @@
+{
+  "package_name": "neuron-core/neuron-ai",
+  "package_name_alias": "inspector-apm/neuron-ai",
+  "patch_versions": [
+    "2.8.12"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.11.4",
+      "2.8.11"
+    ]
+  ],
+  "cwe": [
+    "CWE-89"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to SQL injection. To mitigate unsafe SQL execution, additional restrictions were added to block dangerous statements. `MySQLSelectTool` now forbids the use of `INTO`, `OUTFILE`, `DUMPFILE`, and `LOAD_FILE`, preventing attackers from writing files or reading arbitrary server files. Similarly, `MySQLWriteTool` was updated to disallow high-risk statements such as `DROP`, `CREATE`, `ALTER`, `GRANT`, `TRUNCATE`, `REPLACE`, `MERGE`, `CALL`, `EXECUTE`, and `DELETE`, reducing the risk of destructive or privilege-escalating SQL operations when user-controlled input is present.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `neuron-core/neuron-ai` library to the patch version.",
+  "vulnerable_to": "SQL Injection",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 76,
+  "changelog": "https://github.com/neuron-core/neuron-ai/releases/tag/2.8.12",
+  "last_modified": "2025-11-27",
+  "published": "2025-11-27"
+}

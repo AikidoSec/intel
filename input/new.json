@@ -1,24 +1,15 @@
 {
-  "package_name": "dereuromark/cakephp-feed",
-  "patch_versions": [
-    "3.0.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "3.0.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-22"
-  ],
-  "tldr": "Affected versions of this package are be vulnerable to path traversal due to insufficient validation of file enclosure paths. The fix introduces `realpath` checks to ensure resolved paths remain within `WWW_ROOT`, blocking attempts to access files outside the web root via URLs such as `/../../sensitive/file.txt`.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `dereuromark/cakephp-feed` library to the patch version.",
-  "vulnerable_to": "Path Traversal",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "HIGH",
-  "aikido_score": 72,
-  "changelog": "https://github.com/dereuromark/cakephp-feed/releases/tag/3.0.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

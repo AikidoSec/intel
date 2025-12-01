@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "sqlparse",
+  "patch_versions": [
+    "0.5.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.5.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-770"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Denial of Service (DoS) due to insufficient parsing limits for large lists of tuples in SQL statements, allowing an attacker to craft a malicious, overly complex SQL statement with deeply nested tuples to cause excessive CPU consumption and service unavailability, which is mitigated by the introduction of configurable limits on grouping depth and tokens (`MAX_GROUPING_DEPTH=100`, `MAX_GROUPING_TOKENS=10000`).",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `sqlparse` library to the patch version.",
+  "vulnerable_to": "Allocation of Resources Without Limits or Throttling",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/andialbrecht/sqlparse/blob/master/CHANGELOG"
 }

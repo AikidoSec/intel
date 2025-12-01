@@ -21,7 +21,7 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `js-yaml` library to the patch version.",
   "vulnerable_to": "Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-64718",
   "language": "JS",
   "severity_class": "MEDIUM",
   "aikido_score": 47,

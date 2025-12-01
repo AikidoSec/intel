@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "better-ccflare",
+  "patch_versions": [
+    "3.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.2.28",
+      "3.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-201"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Authorization Header Credential Leakage due to insufficient sanitization of client Authorization headers, which could allow attackers to intercept leaked credentials from upstream providers. This security flaw involves improper management of authentication headers across all provider types, including OAuth, API key, Anthropic-compatible, and OpenAI-compatible providers. An attacker exploiting this vulnerability could gain unauthorized access to client credentials by monitoring or manipulating requests to upstream providers, potentially leading to account takeover or further malicious activities.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `better-ccflare` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information Into Sent Data",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/tombii/better-ccflare/releases/tag/v3.0.1"
 }

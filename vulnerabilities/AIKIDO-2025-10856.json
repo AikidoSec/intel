@@ -1,0 +1,26 @@
+{
+  "package_name": "symfony/security-http",
+  "patch_versions": [
+    "7.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "7.3.0",
+      "7.3.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-305"
+  ],
+  "tldr": "Affected versions are vulnerable to a validation bypass in UserBadge identifier normalization. The issue occurs because the UserBadge constructor validates that the identifier is not empty and does not exceed `MAX_USERNAME_LENGTH`. Still, when using `$identifierNormalizer`, the normalized identifier is computed lazily in `getUserIdentifier()` without validation, allowing normalizers to return invalid values. An attacker can exploit this by supplying a custom normalizer that returns an empty string or other invalid identifiers, bypassing the constructor's validation and potentially leading to authentication flaws.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `symfony/security-http` library to the patch version.",
+  "vulnerable_to": "Authentication Bypass by Primary Weakness",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 72,
+  "changelog": "https://github.com/symfony/symfony/releases/tag/v7.4.0",
+  "last_modified": "2025-12-01",
+  "published": "2025-12-01"
+}

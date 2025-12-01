@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "TrustWalletCore",
+  "patch_versions": [
+    "4.4.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.1.34",
+      "4.4.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-125"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to out-of-bounds memory access due to missing minimum-size checks in the `parseAuthData` function. When handling malformed or truncated authentication data, the parser may read beyond buffer boundaries, potentially leading to crashes, undefined behaviour, or further memory-corruption issues.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `TrustWalletCore` library to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Out-of-bounds Read",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "SWIFT",
+  "severity_class": "LOW",
+  "aikido_score": 38,
+  "changelog": "https://github.com/trustwallet/wallet-core/releases/tag/4.4.3"
 }

@@ -1,11 +1,16 @@
 {
   "package_name": "js-yaml",
   "patch_versions": [
+    "3.14.2",
     "4.1.1"
   ],
   "vulnerable_ranges": [
     [
       "3.0.0",
+      "3.14.1"
+    ],
+    [
+      "4.0.0",
       "4.1.0"
     ]
   ],

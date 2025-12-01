@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "kreuzberg",
+  "patch_versions": [
+    "3.22.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.21.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-625"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to injection attacks due to overly permissive regular expressions within the flag for stripping `<script>` and `<style>` tags. An attacker can exploit this by injecting a malformed tag where the inner, unclosed substring causes the regex to match too much or too little, allowing the malicious JavaScript payload to remain in the output and execute in a victim's browser.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `kreuzberg` library to the patch version.",
+  "vulnerable_to": "Permissive Regular Expression",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/Goldziher/kreuzberg/blob/main/CHANGELOG.md#3220---2025-11-27"
 }

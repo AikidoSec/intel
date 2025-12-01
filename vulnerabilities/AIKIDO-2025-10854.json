@@ -1,0 +1,38 @@
+{
+  "package_name": "@react-native-community/cli",
+  "package_name_alias": "@react-native-community/cli-server-api",
+  "patch_versions": [
+    "17.0.1",
+    "18.0.1",
+    "19.1.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "17.0.0"
+    ],
+    [
+      "18.0.0",
+      "18.0.0"
+    ],
+    [
+      "19.0.0",
+      "19.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-78"
+  ],
+  "tldr": "Affected versions of the React Native Community CLI expose a Metro development server that binds to external interfaces and provides an endpoint vulnerable to OS command injection, allowing unauthenticated remote attackers to issue crafted POST requests that execute arbitrary executables. On Windows, attackers can further run arbitrary shell commands with fully controlled arguments.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@react-native-community/cli` and `@react-native-community/cli-server-api` library to the patch version.",
+  "vulnerable_to": "Command Injection",
+  "related_cve_id": "CVE-2025-11953",
+  "language": "JS",
+  "severity_class": "CRITICAL",
+  "aikido_score": 98,
+  "disable_reachability_analysis": true,
+  "changelog": "https://github.com/react-native-community/cli/pull/2697",
+  "last_modified": "2025-12-01",
+  "published": "2025-12-01"
+}

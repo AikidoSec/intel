@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@logtape/redaction",
+  "patch_versions": [
+    "1.2.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.2.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to sensitive information exposure in logs due to incomplete redaction in the `redactByField()` function. Objects passed via the `{*}` wildcard retained their original references, causing sensitive fields to appear in log messages even when properties were marked for redaction. The issue is fixed by ensuring `redactByField()` properly redacts sensitive values both in the wildcard-passed objects and within the message array itself.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@logtape/redaction` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 35,
+  "changelog": "https://github.com/dahlia/logtape/blob/main/CHANGES.md#version-122"
 }

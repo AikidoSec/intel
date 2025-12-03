@@ -1,25 +1,15 @@
 {
-  "package_name": "SharpCompress",
-  "patch_versions": [
-    "0.42.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "0.41.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to denial-of-service (DoS) because malformed TAR headers in compressed files can be misinterpreted as LongName/LongLink entries with multi-gigabyte sizes, causing excessive memory allocation. The fix adds a 32KB `MAX_LONG_NAME_SIZE` limit and validates sizes before allocation, rejecting invalid headers with an `InvalidFormatException`. A regression test ensures that oversized (e.g., 8GB) fake headers now fail safely instead of exhausting memory.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `SharpCompress` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Denial of Service (DoS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "DOTNET",
-  "severity_class": "LOW",
-  "aikido_score": 21,
-  "changelog": "https://github.com/adamhathcock/sharpcompress/releases/tag/0.42.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

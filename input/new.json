@@ -1,15 +1,34 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "react-server-dom-turbopack",
+  "patch_versions": [
+    "19.0.1",
+    "19.1.2",
+    "19.2.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "19.0.0",
+      "19.0.0"
+    ],
+    [
+      "19.1.0",
+      "19.1.1"
+    ],
+    [
+      "19.2.0",
+      "19.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to unauthenticated remote code execution due to a flaw in how React Server Components decode payloads sent to Server Function endpoints. The issue can be exploited even if no Server Function endpoints are explicitly implemented. Attackers can craft malicious HTTP requests that lead to code execution on the server. Users of affected frameworks such as Next.js, react-router, waku, Parcel RSC, Vite RSC, and Turbopack should upgrade immediately.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `react-server-dom-turbopack` library to the patch version.",
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "CVE-2025-55182",
+  "language": "JS",
+  "severity_class": "CRITICAL",
+  "aikido_score": 100,
+  "changelog": "https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components"
 }

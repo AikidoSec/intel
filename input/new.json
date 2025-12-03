@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "celery",
+  "patch_versions": [
+    "5.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.5.0",
+      "5.5.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package may expose sensitive information in log files. When setting up delayed delivery, Celery logs the full broker URL —including the embedded username and password— directly to the DelayedDelivery consumer output. This results in credential leakage and violates standard security practices that prohibit storing secrets in logs.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade `celery` to a patch version.",
+  "reporter": "",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/celery/celery/releases/tag/v5.6.0"
 }

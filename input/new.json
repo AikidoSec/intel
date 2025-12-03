@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "ulid",
+  "patch_versions": [
+    "3.0.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-330"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to weak random ID generation. Due to incorrect processing of random bytes, the PRNG produces biased output, causing some characters to appear more frequently than others. This reduces entropy, making generated IDs more predictable and enabling partial resource enumeration.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ulid` library to the patch version.",
+  "vulnerable_to": "Use of Insufficiently Random Values",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 18,
+  "changelog": "https://github.com/ulid/javascript/releases/tag/v3.0.2"
 }

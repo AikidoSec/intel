@@ -1,0 +1,26 @@
+{
+  "package_name": "schrammel-codes/magento2-epc-qr-code",
+  "patch_versions": [
+    "2.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.1.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package may expose sensitive data because QR codes could be generated without a valid hash. This allowed attackers to iterate over order IDs, reveal payment amounts, and access increment IDs. The fix introduces a required hash derived from unique order attributes, ensuring that QR codes cannot be created—or guessed—without proper authorization.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `schrammel-codes/magento2-epc-qr-code` library to the patch version.",
+  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 52,
+  "changelog": "https://github.com/schrammel-codes/magento2-epc-qr-code/releases/tag/v2.0.0",
+  "last_modified": "2025-12-03",
+  "published": "2025-12-03"
+}

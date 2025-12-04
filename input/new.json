@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "luracast/restler",
+  "patch_versions": [
+    "6.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "5.0.13"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Insecure Deserialization, where session data was processed using PHP's `serialize()` and `unserialize()` functions without proper validation, allowing attackers to inject malicious objects via crafted serialized strings that, when deserialized, could lead to arbitrary code execution or session manipulation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `luracast/restler` library to the patch version.",
+  "vulnerable_to": "Deserialization of Untrusted Data",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/Luracast/Restler/releases/tag/6.0.0"
 }

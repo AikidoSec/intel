@@ -18,7 +18,7 @@
   "vulnerable_to": "Weak Password Requirements",
   "related_cve_id": "",
   "language": "GO",
-  "severity_class": "LOW",
+  "severity_class": "MEDIUM",
   "aikido_score": 42,
   "changelog": "https://github.com/rancher/webhook/releases/tag/v0.9.0"
 }

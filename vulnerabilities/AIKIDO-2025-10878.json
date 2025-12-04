@@ -1,0 +1,31 @@
+{
+  "package_name": "doctrine/dbal",
+  "patch_versions": [
+    "3.10.4",
+    "4.3.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.10.2",
+      "3.10.3"
+    ],
+    [
+      "4.3.3",
+      "4.3.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to sensitive information exposure. When `PDOConnect::doConnect()` triggers an error during reconnect, it logs the full DSN and password. This patch marks these parameters as sensitive so they are properly hidden in logs.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `doctrine/dbal` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/doctrine/dbal/releases/tag/3.10.4",
+  "last_modified": "2025-12-04",
+  "published": "2025-12-04"
+}

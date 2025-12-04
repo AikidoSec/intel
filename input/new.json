@@ -19,6 +19,6 @@
   "related_cve_id": "",
   "language": "JS",
   "severity_class": "MEDIUM",
-  "aikido_score": 46,
+  "aikido_score": 40,
   "changelog": "https://github.com/flash-oss/graphql-upload-minimal/releases/tag/v1.6.4"
 }

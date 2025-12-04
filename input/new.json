@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/rancher/webhook",
-  "patch_versions": [
-    "0.9.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "0.8.4"
-    ]
-  ],
-  "cwe": [
-    "CWE-521"
-  ],
-  "tldr": "Affected versions of this package allow creating or updating a user password through the User Public API without preventing the password from matching the username. This behavior weakens basic account-security expectations, since a password identical to the username is trivial to guess and significantly increases the risk of unauthorized access. Proper validation should enforce a minimum level of password uniqueness and reject credentials that reuse the username.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/rancher/webhook` library to the patch version.",
-  "vulnerable_to": "Weak Password Requirements",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "MEDIUM",
-  "aikido_score": 42,
-  "changelog": "https://github.com/rancher/webhook/releases/tag/v0.9.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

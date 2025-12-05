@@ -1,0 +1,26 @@
+{
+  "package_name": "parse-server",
+  "patch_versions": [
+    "8.5.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.2.8",
+      "8.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Information Disclosure via Detailed Error Messages, where Parse Server returns excessive information in error responses, revealing internal authentication logic and system details. An attacker can exploit this by analyzing these detailed error messages to infer security mechanisms, potentially facilitating targeted attacks like probing for access key requirements or other access control weaknesses.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `parse-server` library to the patch version.",
+  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/parse-community/parse-server/releases/tag/8.5.0",
+  "last_modified": "2025-12-05",
+  "published": "2025-12-05"
+}

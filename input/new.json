@@ -17,9 +17,9 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `org.mvnpm.at.angular:compiler` library to the patch version.",
   "vulnerable_to": "Cross-Site Scripting (XSS)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-66412",
   "language": "JAVA",
-  "severity_class": "MEDIUM",
-  "aikido_score": 48,
+  "severity_class": "HIGH",
+  "aikido_score": 85,
   "changelog": "https://github.com/angular/angular/releases/tag/21.0.2"
 }

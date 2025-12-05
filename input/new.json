@@ -1,24 +1,15 @@
 {
-  "package_name": "elysia",
-  "patch_versions": [
-    "1.4.17"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.1.0",
-      "1.4.16"
-    ]
-  ],
-  "cwe": [
-    "CWE-1321"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Prototype Pollution because the `skipKeys` validation in the object assignment loop did not block the specially crafted properties `__proto__`, `constructor`, and `prototype`. An attacker could exploit this by providing a malicious `source` object containing these properties, allowing them to pollute the global object prototype and potentially modify the application's behavior, crash the program, or achieve remote code execution.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `elysia` library to the patch version.",
-  "vulnerable_to": "Prototype Pollution",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 71,
-  "changelog": "https://github.com/elysiajs/elysia/releases/tag/1.4.17"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

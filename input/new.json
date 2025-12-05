@@ -1,25 +1,15 @@
 {
-  "package_name": "compiler",
-  "org_name": "org.mvnpm.at.angular",
-  "patch_versions": [
-    "21.0.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "19.0.0",
-      "21.0.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) via SVG animation attributeName and MathML/SVG URLs, where SVG animation elements could be exploited to modify the `href` or `xlink:href` attributes of other elements to malicious `javascript:` URLs, allowing an attacker to execute arbitrary JavaScript code by tricking a user into viewing a crafted SVG document.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `org.mvnpm.at.angular:compiler` library to the patch version.",
-  "vulnerable_to": "Cross-Site Scripting (XSS)",
-  "related_cve_id": "CVE-2025-66412",
-  "language": "JAVA",
-  "severity_class": "HIGH",
-  "aikido_score": 85,
-  "changelog": "https://github.com/angular/angular/releases/tag/21.0.2"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

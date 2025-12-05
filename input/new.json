@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "elysia",
+  "patch_versions": [
+    "1.4.17"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.7.0",
+      "1.4.16"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Arbitrary Code Execution due to improper sanitization of user input when dynamically generating code for cookie signing. The vulnerability exists because the `cookie.secrets` configuration is directly embedded into generated function code using string concatenation without proper escaping, allowing an attacker who can control this value to inject arbitrary JavaScript code.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `elysia` library to the patch version.",
+  "vulnerable_to": "Improper Control of Generation of Code ('Code Injection')",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/elysiajs/elysia/releases/tag/1.4.17"
 }

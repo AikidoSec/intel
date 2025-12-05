@@ -1,0 +1,26 @@
+{
+  "package_name": "@novu/framework",
+  "patch_versions": [
+    "2.9.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.5.2",
+      "2.8.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) via Unsanitized Img Tag Event Handlers, where the HTML sanitizer's previous configuration (allowedAttributes: false) for img elements improperly allowed dangerous event handler attributes like onerror, onload, and onclick. This flaw enables attackers to inject malicious img tags with such event handlers, executing arbitrary JavaScript when triggered, for instance, using onerror to run code upon failed image loading, which can lead to session hijacking, data theft, or other malicious actions in the victim's browser.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@novu/framework` library to the patch version.",
+  "vulnerable_to": "Cross-Site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 43,
+  "changelog": "https://github.com/novuhq/novu/blob/next/packages/framework/CHANGELOG.md#290-2025-12-02",
+  "last_modified": "2025-12-05",
+  "published": "2025-12-05"
+}

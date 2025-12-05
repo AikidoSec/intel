@@ -1,0 +1,26 @@
+{
+  "package_name": "maxminddb",
+  "patch_versions": [
+    "0.27.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.11.0",
+      "0.26.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-119"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Memory Corruption Vulnerability in the `Reader::open_mmap` function, which is unsoundly declared as safe despite the documented requirement from `MmapOptions` that file-backed memory maps must be protected from modification to avoid undefined behavior. This flaw exists because the library performs no file locking or access control, allowing the underlying database file to be altered after mapping. An attacker with write access to the file could exploit this by modifying its contents, potentially causing the application to read corrupted data or execute arbitrary code due to memory safety violations.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `maxminddb` library to the patch version.",
+  "vulnerable_to": "Improper Restriction of Operations within the Bounds of a Memory Buffer",
+  "related_cve_id": "",
+  "language": "RUST",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/oschwald/maxminddb-rust/releases/tag/v0.27.0",
+  "last_modified": "2025-12-05",
+  "published": "2025-12-05"
+}

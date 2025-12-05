@@ -22,7 +22,7 @@
   "cwe": [
     "CWE-79"
   ],
-  "tldr": "affected versions of this package are vulnerable to Cross-site Scripting (XSS): The module doesn’t sufficiently filter LLM responses. This leads to a cross-site scripting (XSS) vulnerability where an attacker can use prompt injections on user-generated content with the LLM as context.",
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS): the module doesn’t sufficiently filter LLM responses. This leads to a cross-site scripting (XSS) vulnerability where an attacker can use prompt injections on user-generated content with the LLM as context.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `drupal/ai` library to the patch version.",
   "vulnerable_to": "Cross-site Scripting (XSS)",

@@ -32,7 +32,7 @@
   "cwe": [
     "CWE-269"
   ],
-  "tldr": "affected versions of this package are vulnerable to access bypass: the module that integrates CKEditor 5 Premium plugins into Drupal exposes a path traversal vulnerability that lets users with only the *view published content* permission access restricted image files. The impact stays limited because only images can be opened.",
+  "tldr": "Affected versions of this package are vulnerable to access bypass: the module that integrates CKEditor 5 Premium plugins into Drupal exposes a path traversal vulnerability that lets users with only the *view published content* permission access restricted image files. The impact stays limited because only images can be opened.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `drupal/ckeditor5_premium_features` library to the patch version.",
   "vulnerable_to": "Access bypass",

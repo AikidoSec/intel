@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "github.com/traefik/traefik/v3",
+  "patch_versions": [
+    "3.6.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.6.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper request routing when using `PathPrefix`, `Path`, or `PathRegex` matchers: if a request path contains an encoded restricted character such as `%2F`, `%00`, `%3B`, `%3F`, or `%23`, an attacker can bypass the intended router and reach a backend exposed by another route without passing through the associated middleware chain. For example, with a route protected by security middleware under `PathPrefix('/admin/')`, a request to `/admin%2F` will be routed to the backend service without invoking the `my-security-middleware`, effectively bypassing the protections configured for the `/admin/` path. This results in a loss of access control and may expose sensitive endpoints.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/traefik/traefik/v3` library to the patch version.",
+  "vulnerable_to": "Improper Access Control",
+  "related_cve_id": "CVE-2025-66490",
+  "language": "GO",
+  "severity_class": "HIGH",
+  "aikido_score": 78,
+  "changelog": "https://github.com/traefik/traefik/releases/tag/v3.6.2"
 }

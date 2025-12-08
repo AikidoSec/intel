@@ -1,15 +1,17 @@
 {
-  "package_name": "",
+  "package_name": "rustls-pemfile",
   "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "vulnerable_ranges": "*",
+  "cwe": [
+    "CWE-1104"
+  ],
+  "tldr": "The rustls-pemfile crate is no longer maintained. The repository has been archived since August 2025, and users are encouraged to depend directly on the underlying PEM parsing code included in rustls-pki-types since 1.9.0. The latest version of rustls-pemfile is in fact a thin wrapper around the same code used in rustls-pki-types, so migrating should be straightforward.",
+  "doest_this_affect_me": "You are affected if you are using this package.",
+  "how_to_fix": "Remove any `rustls-pemfile` package from your application. Please take a look at `rustls_pki_types` instead.",
+  "vulnerable_to": "Use of Unmaintained Third Party Components",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "rust",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0134.html"
 }

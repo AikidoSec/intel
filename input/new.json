@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "spring-grpc-core",
+  "org_name": "org.springframework.grpc",
+  "patch_versions": [
+    "1.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.4.0",
+      "0.12.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-285"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper authorization: the `AuthenticationProcessInterceptor` sets the caller’s authentication in the shared `SecurityContext` but does not reliably clear it afterward, causing authentication information to leak across requests when threads are reused. As a result, a subsequent request may inherit a previous user’s identity and unintentionally pass `@PreAuthorize` checks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `org.springframework.grpc:spring-grpc-core` library to a patch version.",
+  "vulnerable_to": "Authorization Bypass",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "java",
+  "severity_class": "MEDIUM",
+  "aikido_score": 67,
+  "changelog": "https://github.com/spring-projects/spring-grpc/releases/tag/1.0.0"
 }

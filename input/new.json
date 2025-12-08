@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "opensea-js",
+  "patch_versions": [
+    "8.0.10"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.22",
+      "8.0.9"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of this package contain an integer overflow, where the Transaction.value field is typed as number in TypeScript, but JavaScript's Number type cannot safely represent integers above 2^53-1, causing large wei values from API responses to overflow into incorrect or negative numbers during JSON parsing. An attacker can exploit this by crafting orders with sufficiently large values that exceed the safe integer limit, leading to an overflow and a negative parsed value, which may result in underpayment, unintended transaction execution, or financial loss due to misinterpreted values in the fulfillOrder function.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade the `opensea-js` library to the patch version.",
+  "vulnerable_to": "Integer Overflow",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
+  "changelog": "https://github.com/ProjectOpenSea/opensea-js/releases/tag/v8.0.10"
 }

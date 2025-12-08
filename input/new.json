@@ -1,24 +1,15 @@
 {
-  "package_name": "turbo-ignore",
-  "patch_versions": [
-    "2.6.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.10.14",
-      "2.6.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-78"
-  ],
-  "tldr": "Affected versions of this package contain a Command Injection in turbo-ignore Git Ref Validation vulnerability, where the use of `execSync` with shell commands allowed user-supplied git references from environment variables to be interpreted as shell commands. The fix replaces `execSync` with `execFileSync` to ensure inputs are treated as literal arguments. An attacker could exploit this by crafting a malicious git ref value (e.g., containing `; rm -rf /`) within a controlled environment variable, which would then be executed with the application's privileges when the validation script runs.",
-  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
-  "how_to_fix": "Upgrade the `turbo-ignore` library to the patch version.",
-  "vulnerable_to": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 70,
-  "changelog": "https://github.com/vercel/turborepo/releases/tag/v2.6.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

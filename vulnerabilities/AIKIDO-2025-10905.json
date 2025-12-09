@@ -1,0 +1,20 @@
+{
+  "package_name": "rustls-pemfile",
+  "patch_versions": [],
+  "vulnerable_ranges": "*",
+  "cwe": [
+    "CWE-1104"
+  ],
+  "tldr": "The `rustls-pemfile` crate is no longer maintained and has been archived since August 2025. The maintainer recommends using the built-in PEM parsing functionality provided directly by `rustls-pki-types` (available since version 1.9.0). Because the latest `rustls-pemfile` release is already just a thin wrapper around the same parsing code, migrating to `rustls-pki-types` should be straightforward.",
+  "doest_this_affect_me": "You are affected if you are using this package.",
+  "how_to_fix": "Remove any `rustls-pemfile` package from your application. Please take a look at the <a href=\"https://docs.rs/rustls-pki-types/latest/rustls_pki_types/pem/trait.PemObject.html\">PemObject</a> trait, which provides methods for reading a single or multiple PEM objects from a file or byte slice.",
+  "reporter": "",
+  "vulnerable_to": "Use of Unmaintained Third Party Components",
+  "related_cve_id": "",
+  "language": "rust",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0134.html",
+  "last_modified": "2025-12-09",
+  "published": "2025-12-09"
+}

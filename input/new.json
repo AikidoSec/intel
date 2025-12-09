@@ -1,29 +1,15 @@
 {
-  "package_name": "rdme",
-  "patch_versions": [
-    "10.6.0",
-    "9.2.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "9.0.0",
-      "9.2.2"
-    ],
-    [
-      "10.0.0",
-      "10.5.4"
-    ]
-  ],
-  "cwe": [
-    "CWE-94"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Remote Code Execution (RCE) due to its default JavaScript engine configuration in gray-matter. This configuration allows arbitrary JavaScript code execution during front matter parsing, as unsanitized input is processed without proper restrictions. An attacker can exploit this by creating a malicious file with embedded JavaScript in the front matter. If gray-matter parses this file with the JavaScript engine enabled, the code executes in the server context, compromising security.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `rdme` library to the patch version.",
-  "vulnerable_to": "Improper Control of Generation of Code ('Code Injection')",
-  "related_cve_id": "GHSA-f65r-8r74-m6v5",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 82,
-  "changelog": "https://github.com/readmeio/rdme/releases/tag/v10.6.0"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,0 +1,26 @@
+{
+  "package_name": "@boundaries/elements",
+  "patch_versions": [
+    "1.1.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.1.0",
+      "1.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS) in the HANDLEBARS_TEMPLATE_REGEX due to an inefficient regex pattern. Attackers can exploit this by crafting malicious Handlebars templates that cause catastrophic backtracking, leading to excessive CPU consumption and service disruption. This vulnerability allows denial of service attacks by triggering exponential time complexity in regex matching, potentially rendering the application unresponsive.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@boundaries/elements` library to the patch version.",
+  "vulnerable_to": "Inefficient Regular Expression Complexity",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/javierbrea/eslint-plugin-boundaries/blob/master/packages/elements/CHANGELOG.md#112---2025-12-06",
+  "last_modified": "2025-12-09",
+  "published": "2025-12-09"
+}

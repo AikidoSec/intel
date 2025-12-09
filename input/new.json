@@ -1,24 +1,15 @@
 {
-  "package_name": "spryker/session",
-  "patch_versions": [
-    "4.19.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.20.0",
-      "4.19.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-89"
-  ],
-  "tldr": "Affected versions of this package contain a SQL Injection vulnerability in the session deletion function due to improper sanitization of the user-supplied key parameter in the SQL query, where it is embedded using sprintf without escaping or parameterization. An attacker can exploit this by crafting a malicious key value that closes the string literal and appends additional SQL commands, potentially allowing unauthorized deletion or manipulation of session data or other database records.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `spryker/session` library to the patch version.",
-  "vulnerable_to": "SQL Injection",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 48,
-  "changelog": "https://github.com/spryker/session/releases/tag/4.19.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

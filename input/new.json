@@ -1,24 +1,15 @@
 {
-  "package_name": "bamboohr/api",
-  "patch_versions": [
-    "2.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "1.2.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-209"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Information Disclosure due to incomplete redaction in its logging feature. This flaw allows sensitive data, such as API keys and passwords, to be exposed in plaintext within logs. An attacker could exploit this by submitting data in a way that bypasses the redaction filters, potentially leading to credential theft for further attacks.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `bamboohr/api` library to the patch version.",
-  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "LOW",
-  "aikido_score": 30,
-  "changelog": "https://github.com/BambooHR/bhr-api-php/releases/tag/v2.0.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

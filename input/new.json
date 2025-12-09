@@ -1,24 +1,15 @@
 {
-  "package_name": "llama-stack",
-  "patch_versions": [
-    "0.3.4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.3.0",
-      "0.3.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-862"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to access control bypass: the RBAC checks in the inference router and in dynamic model listing are not consistently enforced, which allows an unauthorized user to access or discover models they should not have permission to use. The vulnerability occurs because some code paths skip RBAC filtering entirely, letting restricted models appear in listings or be queried through fallback inference routes.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `llama-stack` library to the patch version.",
-  "vulnerable_to": "Missing Authorization",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "python",
-  "severity_class": "HIGH",
-  "aikido_score": 85,
-  "changelog": "https://github.com/llamastack/llama-stack/releases/tag/v0.3.4"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,15 +1,29 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "5.8.21",
+    "4.16.17"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "5.8.20"
+    ],
+    [
+      "4.0.0",
+      "4.16.16"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an Unauthenticated Database Backup Denial-of-Service (DoS) due to a missing authorization check in the backup controller action. The vulnerability allowed any remote attacker to repeatedly trigger a full database backup operation via a crafted request to the exposed endpoint, as the old code lacked validation for pending migrations or user permissions. An attacker could exploit this by spamming the backup endpoint, causing the system to generate numerous large backup files simultaneously, exhausting disk I/O, consuming significant CPU and disk space, and ultimately rendering the application or server unresponsive.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
+  "vulnerable_to": "GHSA-v64r-7wg9-23pr",
+  "related_cve_id": "Uncontrolled Resource Consumption",
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.8.21"
 }

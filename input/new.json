@@ -1,24 +1,15 @@
 {
-  "package_name": "launchdarkly-server-sdk",
-  "patch_versions": [
-    "8.11.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "6.3.0",
-      "8.11.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-78"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to command injection in the file data source implementation due to the use of IO.read for file access, which interprets filenames as shell commands, allowing attackers to execute arbitrary code by crafting malicious file paths containing shell metacharacters. This vulnerability arises because IO.read invokes the shell, enabling remote code execution if the application processes untrusted input. Replacing IO.read with File.read ensures direct, shell-free file access, mitigating the risk. Attackers could exploit this by injecting commands into filename parameters, potentially compromising the system.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `launchdarkly-server-sdk` library to the patch version.",
-  "vulnerable_to": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUBY",
-  "severity_class": "HIGH",
-  "aikido_score": 88,
-  "changelog": "https://github.com/launchdarkly/ruby-server-sdk/releases/tag/8.11.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

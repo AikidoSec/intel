@@ -18,7 +18,7 @@
   "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 71,
+  "severity_class": "LOW",
+  "aikido_score": 35,
   "changelog": "https://github.com/slopus/happy-cli/releases/tag/v0.12.0"
 }

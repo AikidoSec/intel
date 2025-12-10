@@ -1,12 +1,18 @@
 {
   "package_name": "symfony/security-http",
   "patch_versions": [
-    "7.4.0"
+    "7.4.0",
+    "7.3.8",
+    "8.0.1"
   ],
   "vulnerable_ranges": [
     [
       "7.3.0",
       "7.3.7"
+    ],
+    [
+      "8.0.0",
+      "8.0.0"
     ]
   ],
   "cwe": [

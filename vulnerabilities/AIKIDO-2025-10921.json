@@ -1,0 +1,26 @@
+{
+  "package_name": "dbt-databricks",
+  "patch_versions": [
+    "1.11.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.11.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package have improper input validation. Query tag values were not validated. Special characters like backslashes, commas, and colons remained unescaped. Values longer than 128 characters could be processed without truncation, resulting in invalid query tags. An attacker could inject crafted query tag values using these characters to manipulate query parsing. It might lead to data corruption, security breaches, or system errors.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `dbt-databricks` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/databricks/dbt-databricks/releases/tag/v1.11.3",
+  "last_modified": "2025-12-10",
+  "published": "2025-12-10"
+}

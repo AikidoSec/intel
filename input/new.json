@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "happy-coder",
+  "patch_versions": [
+    "0.12.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.5",
+      "0.11.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Information Disclosure, where Expo push notification device tokens are logged in plaintext to local debug log files stored in `~/.happy/logs/` or `~/.happy-dev/logs/`. These security-sensitive credentials are logged with standard file permissions, making them readable by other processes running as the same user. An attacker who gains user-level access to the machine can read the log files to extract push tokens, enabling unauthorized actions such as sending impersonating push notifications, crafting phishing alerts, tracking specific user devices, or spamming users with denial-of-service attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `happy-coder` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/slopus/happy-cli/releases/tag/v0.12.0"
 }

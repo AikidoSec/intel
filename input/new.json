@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "fastcrud",
+  "patch_versions": [
+    "0.19.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.18.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-923"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper restriction of communication channels to intended endpoints due to flawed handling of the `exclude_fields` parameter in the `_create_modified_schema` function. The function does not enforce immutability on the exclusion list, allowing callers or dependent code to alter shared state and inadvertently reintroduce sensitive fields such as passwords or API keys into generated schemas. An attacker can exploit this through cache-poisoning or list-manipulation techniques to expose sensitive data that should have been omitted from API responses.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `fastcrud` library to the patch version.",
+  "vulnerable_to": "Improper Restriction of Communication Channel to Intended Endpoints",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 70,
+  "changelog": "https://github.com/benavlabs/fastcrud/releases/tag/v0.19.0"
 }

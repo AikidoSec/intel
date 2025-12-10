@@ -1,24 +1,15 @@
 {
-  "package_name": "happy-coder",
-  "patch_versions": [
-    "0.12.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.10.0",
-      "0.11.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-22"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Unrestricted File System Access via RPC Handlers, where handlers such as readFile, writeFile, listDirectory, and getDirectoryTree provide authenticated remote clients with complete file system access without path restrictions or sandboxing, allowing the reading and writing of any file the process can access. An attacker who obtains authentication credentials can exploit this to read sensitive files such as SSH keys, exfiltrate private repository contents via getDirectoryTree and readFile calls, write malicious code to startup files like .bashrc, and access AWS credentials, npm tokens, and other sensitive data stored in the user's home directory.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `happy-coder` library to the patch version.",
-  "vulnerable_to": "Path Traversal",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 71,
-  "changelog": "https://github.com/slopus/happy-cli/releases/tag/v0.12.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

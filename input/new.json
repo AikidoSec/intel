@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "cuequivariance-jax",
+  "patch_versions": [
+    "0.8.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.7.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-787"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Out-of-Bounds Memory Access in `cuet.triangle_attention` due to improper handling of return values in the backward pass of triangle attention operations, where the old code failed to assign and cast outputs from triangle_attention_cuda_bwd, leading to illegal memory access. An attacker could exploit this by crafting malicious inputs that trigger index overflows or out-of-bounds writes during gradient computation, potentially resulting in memory corruption, leaks from GPU memory, or arbitrary code execution. The patched code mitigates this by explicitly assigning return values and ensuring proper data type casting.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `cuequivariance-jax` library to the patch version.",
+  "vulnerable_to": "Out-of-bounds Write",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 52,
+  "changelog": "https://github.com/NVIDIA/cuEquivariance/releases/tag/v0.8.0"
 }

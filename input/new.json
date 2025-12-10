@@ -13,7 +13,7 @@
   ],
   "tldr": "`CVE-2025-10492` is a deserialization of untrusted data vulnerability in JasperReports Library. The JRLoader class can deserialize attacker-controlled objects, which allows arbitrary code execution if a malicious serialized payload is processed. You are safe when your application only uses trusted, prepackaged report templates or when you run a recent commercial/enterprise edition, as those versions include vendor-provided patches. You are also safe when JasperReports runs on Java 17 or later, because modern Java versions block deserialization of arbitrary classes by default, preventing the malicious gadget chain.",
   "doest_this_affect_me": "You are affected when your application loads report templates (`.jrxml` or `.jasper`) from untrusted or user-supplied sources, or when external input can influence what JasperReports deserializes — for example through upload features, dynamic template loading, or accepting serialized report data. You are not affected when your application runs on Java 17 or later.",
-  "how_to_fix": "Mitigation consists of strictly using trusted templates, disabling user uploads or external template loading, segmenting the reporting component on the network, and ensuring that no untrusted serialized data reaches JRLoader.",
+  "how_to_fix": "Mitigation consists of strictly using trusted templates, disabling user uploads or external template loading, segmenting the reporting component on the network, and ensuring that no untrusted serialized data reaches JRLoader. Or upgrade to Java 17 or later.",
   "vulnerable_to": "Deserialization of Untrusted Data",
   "related_cve_id": "CVE-2025-10492",
   "language": "JAVA",

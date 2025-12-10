@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/prometheus-community/elasticsearch_exporter",
+  "patch_versions": [
+    "1.10.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.9.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-497"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Information Disclosure via Unsanitized URL Logging, where error messages include unsanitized URLs when HTTP requests fail, potentially exposing sensitive data such as authentication tokens or API keys. An attacker can exploit this by inducing HTTP failures to log crafted URLs containing secrets or by accessing exposed error logs, leading to credential theft, unauthorized access, or data breaches.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/prometheus-community/elasticsearch_exporter` library to the patch version.",
+  "vulnerable_to": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/prometheus-community/elasticsearch_exporter/releases/tag/v1.10.0"
 }

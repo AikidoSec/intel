@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "github.com/containernetworking/plugins",
+  "patch_versions": [
+    "1.9.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.6.0",
+      "1.8.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a HostPort Traffic Hijack via the CNI portmap plugin's `nftables` backend, where the plugin incorrectly configures rules to forward all network traffic destined for a specific port to a container that requested HostPort mapping, regardless of the destination IP address. It allows a malicious container to intercept sensitive traffic intended for other containers or services on the same node. An attacker could exploit this by deploying a pod that requests a common service port, enabling them to capture, monitor, or manipulate traffic meant for legitimate pods on that host, potentially leading to data theft or service disruption.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/containernetworking/plugins` library to the patch version or configure the `portmap` plugin to use the `iptables` backend.",
+  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "related_cve_id": "CVE-2025-67499",
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 66,
+  "changelog": "https://github.com/containernetworking/plugins/releases/tag/v1.9.0"
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/influxdata/telegraf",
+  "patch_versions": [
+    "1.37.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.36.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-15"
+  ],
+  "tldr": "Affected versions of this package have a vulnerability that allows environment variables to be processed into raw configuration text without strict TOML enforcement. It can lead to unexpected type parsing and configuration manipulation. An attacker can manipulate these variables and inject malicious values, potentially bypassing security controls and altering Telegraf's configuration.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/influxdata/telegraf` library to the patch version.",
+  "vulnerable_to": "External Control of System or Configuration Setting",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 18,
+  "changelog": "https://github.com/influxdata/telegraf/blob/master/CHANGELOG.md#v1370-2025-12-08"
 }

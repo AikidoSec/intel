@@ -1,24 +1,15 @@
 {
-  "package_name": "@jsonquerylang/jsonquery",
-  "patch_versions": [
-    "5.1.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.0.0",
-      "5.0.4"
-    ]
-  ],
-  "cwe": [
-    "CWE-1321"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Prototype Pollution via Unsafe Property Access due to the lack of proper validation when retrieving object properties, allowing an attacker to access unsafe inherited prototype properties such as `constructor` or `__proto__`. It occurs in code paths that directly access user-supplied property names on objects without using proper validation. By manipulating these property accesses, an attacker can potentially obtain references to fundamental object constructors, leading to prototype pollution, remote code execution, or a breach of the sandbox environment by chaining these constructors to execute arbitrary code.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@jsonquerylang/jsonquery` library to the patch version.",
-  "vulnerable_to": "Prototype Pollution",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 62,
-  "changelog": "https://github.com/jsonquerylang/jsonquery/releases/tag/v5.1.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,0 +1,27 @@
+{
+  "package_name": "Flask-Multipass",
+  "patch_versions": [
+    "0.11"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1",
+      "0.10"
+    ]
+  ],
+  "cwe": [
+    "CWE-601"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to open redirect attacks because the validation of `next_url` is insufficient. As a result, crafted values such as `////evil.com` still pass the validation and cause the application to redirect users to an external domain. This enables attackers to construct malicious redirect links that appear legitimate, potentially leading to phishing or credential-harvesting scenarios.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Flask-Multipass` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Open Redirect",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/indico/flask-multipass/releases/tag/v0.11",
+  "last_modified": "2025-12-11",
+  "published": "2025-12-11"
+}

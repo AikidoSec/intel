@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "nuxt-auth-utils",
+  "patch_versions": [
+    "0.5.26"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.5.17",
+      "0.5.25"
+    ]
+  ],
+  "cwe": [
+    "CWE-784"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Insecure Cookie Configuration in OAuth State and PKCE Handling, where OAuth state and PKCE verifier cookies were set without explicit security options such as httpOnly, secure, and sameSite, making them accessible to JavaScript (increasing XSS risk), transmissible over HTTP (allowing man-in-the-middle interception), and lacking CSRF protection. An attacker could exploit this by injecting malicious scripts to steal these cookies via XSS, eavesdropping on unencrypted connections to capture cookies, or leveraging CSRF to manipulate OAuth flows and potentially compromise user authentication.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `nuxt-auth-utils` library to the patch version.",
+  "vulnerable_to": "Reliance on Cookies without Validation and Integrity Checking in a Security Decision",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/atinux/nuxt-auth-utils/releases/tag/v0.5.26"
 }

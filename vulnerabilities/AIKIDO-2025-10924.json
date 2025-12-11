@@ -1,0 +1,26 @@
+{
+  "package_name": "rustler_precompiled",
+  "patch_versions": [
+    "0.8.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.8.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to sensitive data exposure in debug logs due to unredacted credentials in URLs, allowing attackers who gain access to these logs to extract usernames and passwords from userinfo components, potentially leading to unauthorized access to systems or accounts; the patch mitigates this by redacting userinfo with '[REDACTED]' before logging.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `rustler_precompiled` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "ELIXIR",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/philss/rustler_precompiled/blob/main/CHANGELOG.md#084---2025-12-08",
+  "last_modified": "2025-12-11",
+  "published": "2025-12-11"
+}

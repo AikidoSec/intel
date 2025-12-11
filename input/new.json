@@ -1,24 +1,15 @@
 {
-  "package_name": "strands-agents",
-  "patch_versions": [
-    "1.18.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.12.0",
-      "1.17.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-706"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to use of incorrectly resolved names or references through dynamic tool-module registration in `ToolLoader`. The `load_tools_from_file_path` and `load_python_tools` helpers insert tool modules into `sys.modules` using names derived directly from the file’s `base_name` or the provided `tool_name`, without validation or namespacing. An attacker can register a tool whose name matches a standard library or internal module, overwriting that entry in `sys.modules` and hijacking subsequent imports, which can silently modify SDK or application behavior.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `strands-agents` library to the patch version.",
-  "vulnerable_to": "Use of Incorrectly-Resolved Name or Reference",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "HIGH",
-  "aikido_score": 72,
-  "changelog": "https://github.com/strands-agents/sdk-python/releases/tag/v1.18.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

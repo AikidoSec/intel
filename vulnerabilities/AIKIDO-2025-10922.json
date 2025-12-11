@@ -1,0 +1,26 @@
+{
+  "package_name": "n-readlines",
+  "patch_versions": [
+    "2.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-477"
+  ],
+  "tldr": "Affected versions of this package contain a vulnerability titled Use of Deprecated and Insecure Buffer Constructor, where the code utilizes the deprecated `new Buffer()` constructor instead of the safer `Buffer.alloc()`. This deprecated constructor, under certain conditions, can return a Buffer containing uninitialized memory from the heap. An attacker could exploit this by manipulating the application to read chunks of data, potentially leaking sensitive information like encryption keys, session tokens, or other process memory contents into the returned buffer.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `n-readlines` library to the patch version.",
+  "vulnerable_to": "Use of Obsolete Function",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/nacholibre/node-readlines/releases/tag/v2.0.0",
+  "last_modified": "2025-12-11",
+  "published": "2025-12-11"
+}

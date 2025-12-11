@@ -1,0 +1,26 @@
+{
+  "package_name": "akeneo/module-magento2-connector-community",
+  "patch_versions": [
+    "105.1.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "100.1.0",
+      "105.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package contain a Cross-Site Scripting (XSS) vulnerability due to unescaped template output in HTML tags, attributes, and logging methods, which was addressed by adding the `MagentoFrameworkEscaper` library to properly escape HTML. Before this fix, user-supplied input was not effectively sanitized, allowing attackers to inject malicious scripts. An attacker could exploit this by submitting crafted input that, when rendered by the application, executes arbitrary JavaScript in the victim's browser.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `akeneo/module-magento2-connector-community` library to the patch version.",
+  "vulnerable_to": "Cross-Site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
+  "changelog": "https://github.com/akeneo/magento2-connector-community/releases/tag/v105.1.2",
+  "last_modified": "2025-12-11",
+  "published": "2025-12-11"
+}

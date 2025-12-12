@@ -1,15 +1,60 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "next",
+  "patch_versions": [
+    "14.2.34",
+    "15.0.6",
+    "15.1.10",
+    "15.2.7",
+    "15.3.7",
+    "15.4.9",
+    "15.5.8",
+    "16.0.9"
+  ],
+  "vulnerable_ranges": [
+    [
+      "13.3.0",
+      "14.2.33"
+    ],
+    [
+      "15.0.0",
+      "15.0.5"
+    ],
+    [
+      "15.1.1",
+      "15.1.9"
+    ],
+    [
+      "15.2.0",
+      "15.2.6"
+    ],
+    [
+      "15.3.0",
+      "15.3.6"
+    ],
+    [
+      "15.4.0",
+      "15.4.8"
+    ],
+    [
+      "15.5.1",
+      "15.5.7"
+    ],
+    [
+      "16.0.0",
+      "16.0.8"
+    ]
+  ],
+  "cwe": [
+  ],
+  "tldr": "A malicious HTTP request can be crafted and sent to any App Router endpoint that can return the compiled source code of Server Functions. This could reveal business logic, but would not expose secrets unless they were hardcoded directly into Server Function code.",
+  "doest_this_affect_me": "If your application uses the App Router",
+  "how_to_fix": "Upgrade Next to the patch version.",
+  "vulnerable_to": "Source Code Exposure",
+  "related_cve_id": "CVE-2025-55183",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
+  "changelog": "https://nextjs.org/blog/security-update-2025-12-11",
+  "last_modified": "2025-12-11",
+  "published": "2025-12-11"
 }

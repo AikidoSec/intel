@@ -50,8 +50,8 @@
     "CWE-1395"
   ],
   "tldr": "Security researchers have discovered that a malicious HTTP request can be crafted and sent to any Server Functions endpoint that, when deserialized by React, can cause an infinite loop that hangs the server process and consumes CPU. Even if your app does not implement any React Server Function endpoints it may still be vulnerable if your app supports React Server Components.",
-  "doest_this_affect_me": "If your application doesn't use React Server Components with the App Router.",
-  "how_to_fix": "Upgrade the `next` library to the patch version.",
+  "doest_this_affect_me": "If your application uses React Server Components with the App Router.",
+  "how_to_fix": "Upgrade Next library to the patch version.",
   "vulnerable_to": "Denial of Service",
   "related_cve_id": "CVE-2025-55184",
   "language": "JS",

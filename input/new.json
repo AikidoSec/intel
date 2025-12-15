@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@lightdash/common",
+  "patch_versions": [
+    "0.2223.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.2209.0",
+      "0.2222.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Server-Side Request Forgery (SSRF) via IPv6 Compressed Notation Bypass in the GeoJSON proxy functionality, where the `isPrivateHost` validation could be bypassed by using shorthand IPv6 addresses (e.g., `::127.0.0.1`) to target internal systems, allowing an attacker to probe or interact with services on the server's local network. The patched code improves URL parsing and normalization before applying private IP checks, alongside a reduction of the maximum allowed file size to 10MB as a general hardening measure.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@lightdash/common` library to the patch version.",
+  "vulnerable_to": "Server-Side Request Forgery (SSRF)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 43,
+  "changelog": "https://github.com/lightdash/lightdash/releases/tag/0.2223.0"
 }

@@ -1,0 +1,26 @@
+{
+  "package_name": "@executeautomation/playwright-mcp-server",
+  "patch_versions": [
+    "1.0.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.0.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Insecure Default Network Binding Allowing External Access, where the MCP HTTP server was configured to listen on all network interfaces by default, making it accessible from external networks. An attacker could exploit this by remotely connecting to the server if the port is exposed, potentially executing arbitrary Playwright scripts, accessing sensitive data, or compromising the host system, especially in environments where the server is running on a network-accessible machine without proper firewall rules.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@executeautomation/playwright-mcp-server` library to the patch version.",
+  "vulnerable_to": "Improper Access Control",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/executeautomation/mcp-playwright/blob/main/CHANGELOG.md#107---2025-12-07",
+  "last_modified": "2025-12-15",
+  "published": "2025-12-15"
+}

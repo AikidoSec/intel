@@ -1,0 +1,31 @@
+{
+  "package_name": "ibexa/user",
+  "patch_versions": [
+    "4.6.26",
+    "5.0.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.6.0",
+      "4.6.25"
+    ],
+    [
+      "5.0.0",
+      "5.0.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) due to insufficient input filtering in the back-office share dialog, allowing users to inject JavaScript code. There is no indication that the injected content is stored or subsequently rendered to other users, which limits the scope and impact of the vulnerability to the user performing the action.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ibexa/user` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://developers.ibexa.co/security-advisories/ibexa-sa-2025-005-password-change-and-xss-vulnerabilities-in-back-office",
+  "last_modified": "2025-12-15",
+  "published": "2025-12-15"
+}

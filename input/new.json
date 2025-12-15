@@ -1,24 +1,15 @@
 {
-  "package_name": "wp-graphql/wp-graphql-smart-cache",
-  "patch_versions": [
-    "2.0.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "2.0.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-497"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Insecure Caching of Authenticated GraphQL Requests due to incorrectly determining a user's authentication state via `is_user_logged_in()` after the WordPress core had already reset the current user to zero within the same request, which could allow an attacker to exploit this by causing an authenticated user (e.g., an administrator) to execute a specific GraphQL query without a nonce, typically via a direct URL containing a particular query, thereby caching the private response data (like draft posts) and subsequently serving that sensitive data from cache to any unauthenticated visitor.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `wp-graphql/wp-graphql-smart-cache` library to the patch version.",
-  "vulnerable_to": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 47,
-  "changelog": "https://github.com/wp-graphql/wp-graphql-smart-cache/releases/tag/v2.0.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

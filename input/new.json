@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "dereuromark/cakephp-dto",
+  "patch_versions": [
+    "2.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.5.0",
+      "2.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to unsafe deserialization because the `__unserialize()` method processes untrusted serialized data without sufficient validation or filtering. This allows unexpected or malicious fields to be injected during object reconstruction, potentially leading to unintended application behavior or security impact depending on how the object is later used. The issue is addressed in the patched version by enforcing a strict allowlist, ensuring that only known and expected fields are deserialized.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and you are using the `Session.deserialize` function.",
+  "how_to_fix": "Upgrade the `dereuromark/cakephp-dto` library to the patch version.",
+  "vulnerable_to": "Unsafe Deserialization",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/dereuromark/cakephp-dto/releases/tag/2.4.0"
 }

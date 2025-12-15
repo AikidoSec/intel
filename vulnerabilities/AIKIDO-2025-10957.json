@@ -1,0 +1,28 @@
+{
+  "package_name": "opentelemetry-instrumentation-annotations",
+  "org_name": "io.opentelemetry.instrumentation",
+  "patch_versions": [
+    "2.23.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.22.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package may expose sensitive information by logging SQL statements that can include unquoted credentials, such as plaintext passwords, potentially leading to unintended disclosure through application logs.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `io.opentelemetry.instrumentation:opentelemetry-instrumentation-annotations` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "related_cve_id": "",
+  "language": "JAVA",
+  "severity_class": "LOW",
+  "aikido_score": 18,
+  "changelog": "https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/CHANGELOG.md#version-2230-2025-12-13",
+  "last_modified": "2025-12-15",
+  "published": "2025-12-15"
+}

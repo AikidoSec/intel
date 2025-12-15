@@ -18,7 +18,7 @@
   "vulnerable_to": "Auth Bypass",
   "related_cve_id": "",
   "language": "PHP",
-  "severity_class": "HIGH",
-  "aikido_score": 82,
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
   "changelog": "https://github.com/spryker-shop/customer-page/releases/tag/2.72.0"
 }

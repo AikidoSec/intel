@@ -1,25 +1,15 @@
 {
-  "package_name": "shopify_api",
-  "patch_versions": [
-    "16.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "10.0.0",
-      "15.0.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-502",
-    "CWE-94"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to unsafe deserialization because the `Session.deserialize` method uses `Oj.load` without safe mode, allowing instantiation of arbitrary Ruby objects from untrusted serialized data. This may allow an attacker who can influence the serialized session payload to trigger unintended object creation during deserialization. The issue is mitigated by removing the `Session.serialize` and `Session.deserialize` methods, which are no longer necessary since session storage is the responsibility of the application and sessions should be reconstructed explicitly using `Session.new()` with individually stored attributes.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and you are using the `Session.deserialize` function.",
-  "how_to_fix": "Upgrade the `shopify_api` library to the patch version.",
-  "vulnerable_to": "Unsafe Deserialization",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUBY",
-  "severity_class": "MEDIUM",
-  "aikido_score": 66,
-  "changelog": "https://github.com/Shopify/shopify-api-ruby/blob/main/CHANGELOG.md#1600-2025-12-10"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

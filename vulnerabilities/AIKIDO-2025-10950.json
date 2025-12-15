@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/gabriel-vasile/mimetype",
+  "patch_versions": [
+    "1.4.12"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.4.10",
+      "1.4.11"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an integer overflow in offset calculation, where the package searches for a value within input using an offset also derived from input, allowing integer overflow. An attacker can exploit this by supplying malicious input that triggers an overflow, leading to out-of-bounds memory access, which may result in denial of service, information disclosure, or arbitrary code execution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and if you're using a 32-BIT architecture.",
+  "how_to_fix": "Upgrade the `github.com/gabriel-vasile/mimetype` library to the patch version.",
+  "vulnerable_to": "Integer Overflow",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 48,
+  "changelog": "https://github.com/gabriel-vasile/mimetype/releases/tag/v1.4.12",
+  "last_modified": "2025-12-15",
+  "published": "2025-12-15"
+}

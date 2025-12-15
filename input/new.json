@@ -1,24 +1,15 @@
 {
-  "package_name": "@mparticle/web-sdk",
-  "patch_versions": [
-    "2.51.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.10.0",
-      "2.50.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-1321"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Prototype Pollution via the `extend()` helper function due to insufficient validation when merging objects; an attacker could exploit this by passing a malicious object containing properties like `__proto__`, `prototype`, or `constructor` to merge operations, potentially allowing them to modify the Object prototype and inject or alter properties that exist on all objects, leading to unexpected behavior, denial of service, or remote code execution in the worst-case scenario, which was mitigated by adding validation to skip these reserved properties during extension.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@mparticle/web-sdk` library to the patch version.",
-  "vulnerable_to": "Prototype Pollution",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 63,
-  "changelog": "https://github.com/mParticle/mparticle-web-sdk/releases/tag/v2.51.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

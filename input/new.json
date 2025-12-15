@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/labstack/echo/v4",
+  "patch_versions": [
+    "4.14.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "4.13.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-117"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to JSON Log Injection via a Missing Character Escape in the logger middleware, where user-supplied input in HTTP requests is not properly escaped before being written to JSON-formatted logs. An attacker can exploit this by crafting malicious query parameters containing JSON special characters, such as commas and quotes, to inject arbitrary fields into the log output, falsifying log data by overwriting critical fields like `method` and `remote_ip` or by deliberately corrupting the JSON structure to disrupt log processing systems.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/labstack/echo/v4` library to the patch version.",
+  "vulnerable_to": "Improper Output Neutralization for Logs",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 42,
+  "changelog": "https://github.com/labstack/echo/releases/tag/v4.14.0"
 }

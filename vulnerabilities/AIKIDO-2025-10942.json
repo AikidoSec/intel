@@ -1,0 +1,26 @@
+{
+  "package_name": "altcha-org/altcha",
+  "patch_versions": [
+    "1.3.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-141"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a parameter splicing vulnerability in the salt handling logic where the application failed to consistently enforce a delimiter, allowing an attacker to exploit this by injecting a custom delimiter into the `salt` parameter to maliciously splice and control the resulting composite string, thereby enabling authentication bypass or replay attacks where a previously observed hashed value could be fraudulently reused.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `altcha-org/altcha` library to the patch version.",
+  "vulnerable_to": "Improper Neutralization of Parameter/Argument Delimiters",
+  "related_cve_id": "GHSA-6gvq-jcmp-8959",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 56,
+  "changelog": "https://github.com/altcha-org/altcha-lib-php/releases/tag/v1.3.1",
+  "last_modified": "2025-12-15",
+  "published": "2025-12-15"
+}

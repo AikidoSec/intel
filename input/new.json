@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@better-auth/sso",
+  "patch_versions": [
+    "1.4.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.4.0",
+      "1.4.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-347"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to SAML signature validation bypass due to fallback parsing and response patching that accepted unsigned or forged assertions, where attackers could exploit this by crafting malicious SAML responses without valid signatures to gain unauthorized access, as the vulnerability stemmed from regex-based NameID extraction and status `success` patching in callbackSSOSAML and ACS endpoints that bypassed strict signature checks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@better-auth/sso` library to the patch version.",
+  "vulnerable_to": "Improper Verification of Cryptographic Signature",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/better-auth/better-auth/releases/tag/v1.4.7"
 }

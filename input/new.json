@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "pydocket",
+  "patch_versions": [
+    "0.15.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.5.2",
+      "0.15.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "Affected versions of this package contain an insecure configuration where helper functions and test fixtures used `s.bind(('', 0))` to bind to all network interfaces instead of `s.bind(('127.0.0.1', 0))` for localhost only, unnecessarily exposing internal services. It allows attackers to remotely access test services intended for local use, potentially by scanning for open ports on the network and connecting to these exposed interfaces, which could lead to information disclosure or further system compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `pydocket` library to the patch version.",
+  "vulnerable_to": "Improper Access Control",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
+  "changelog": "https://github.com/chrisguidry/docket/releases/tag/0.15.4"
 }

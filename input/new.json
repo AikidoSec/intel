@@ -1,24 +1,15 @@
 {
-  "package_name": "browser-use",
-  "patch_versions": [
-    "0.11.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.7.8",
-      "0.11.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-200"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to sensitive information disclosure due to a missing filtering step for state messages, specifically within the `agent_history_description`. It allows sensitive values (like passwords and API keys) from action results to be included in messages sent to the LLM, as the system failed to replace these actual values with placeholder tags before transmission. An attacker could exploit this by crafting malicious actions or prompts that cause the agent to execute operations returning sensitive data, which would then be leaked into the LLM's context in subsequent messages, potentially enabling the extraction of credentials, secrets, or other protected information through the chat history.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `browser-use` library to the patch version.",
-  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 61,
-  "changelog": "https://github.com/browser-use/browser-use/releases/tag/0.11.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

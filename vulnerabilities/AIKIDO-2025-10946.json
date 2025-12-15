@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/ydb-platform/ydb-go-sdk/v3",
+  "patch_versions": [
+    "3.121.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.121.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Information Disclosure, where the data source name (DSN) with sensitive credentials was included unmasked in error messages, allowing attackers to retrieve credentials from error logs or responses, potentially leading to unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/ydb-platform/ydb-go-sdk/v3` library to the patch version.",
+  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 28,
+  "changelog": "https://github.com/ydb-platform/ydb-go-sdk/releases/tag/v3.121.1",
+  "last_modified": "2025-12-15",
+  "published": "2025-12-15"
+}

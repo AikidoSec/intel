@@ -18,8 +18,8 @@
   "vulnerable_to": "Path Traversal",
   "related_cve_id": "",
   "language": "PYTHON",
-  "severity_class": "HIGH",
-  "aikido_score": 71,
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
   "changelog": "https://github.com/pymupdf/PyMuPDF/blob/main/changes.txt",
   "last_modified": "2025-12-16",
   "published": "2025-12-16"

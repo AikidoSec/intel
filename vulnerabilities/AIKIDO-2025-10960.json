@@ -1,0 +1,27 @@
+{
+  "package_name": "wolfSSL.wolfssl",
+  "patch_versions": [
+    "1.4.21"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.4.20"
+    ]
+  ],
+  "cwe": [
+    "CWE-287"
+  ],
+  "tldr": "A malicious server can bypass the client’s host verification, potentially exposing client credentials. This issue affects client applications using wolfSSH version 1.4.20 and earlier. Client-side users of wolfSSH should update to a fixed version or apply the provided patch, and it is recommended to rotate any credentials that may have been exposed.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `wolfSSL.wolfssl` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Authentication",
+  "related_cve_id": "CVE-2025-11625",
+  "language": "C++",
+  "severity_class": "CRITICAL",
+  "aikido_score": 94,
+  "changelog": "https://github.com/wolfSSL/wolfssh/releases/tag/v1.4.21-stable",
+  "last_modified": "2025-12-16",
+  "published": "2025-12-16"
+}

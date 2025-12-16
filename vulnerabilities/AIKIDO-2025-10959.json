@@ -1,0 +1,26 @@
+{
+  "package_name": "PyMuPDF",
+  "patch_versions": [
+    "1.26.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.23.0",
+      "1.26.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Path Traversal because the `embedded_get` functionality does not properly sanitize the user-controlled path parameter. This allows an attacker to craft a path containing directory traversal sequences, potentially causing files to be written outside the intended working directory or to overwrite existing files. The issue is mitigated by introducing stricter path validation: by default, the command now refuses to write to an existing file or to any location outside the current directory. Writing outside these constraints is only possible when explicitly allowed via the `-output` option or the newly introduced `-unsafe` flag, making the security impact opt-in and explicit.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `PyMuPDF` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/pymupdf/PyMuPDF/blob/main/changes.txt",
+  "last_modified": "2025-12-16",
+  "published": "2025-12-16"
+}

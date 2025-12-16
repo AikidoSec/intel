@@ -12,7 +12,7 @@
   "cwe": [
     "CWE-770"
   ],
-  "tldr": "Affected versions of this package are vulnerable to denial-of-service and memory exhaustion attacks due to unsafe expression parsing in scenarios such as user-settable pre_dispatch expressions. The ast.parse function can crash the Python interpreter with long and complex expressions. Evaluating expressions such as 9**9**9**9 leads to prolonged computation times (DoS), and allocating large strings from concise expressions like ' ' * 10**10 triggers memory exhaustion (OOM). An attacker can exploit these vulnerabilities by submitting malicious expressions to accessible parameters, causing interpreter crashes, service degradation, or system resource depletion.",
+  "tldr": "Affected versions of this package are vulnerable to denial-of-service and memory exhaustion attacks due to unsafe expression parsing in scenarios such as user-settable pre_dispatch expressions. The ast.parse function can crash the Python interpreter with long and complex expressions. Evaluating expressions such as `9**9**9**9` leads to prolonged computation times (DoS), and allocating large strings from concise expressions like `' ' * 10**10` triggers memory exhaustion (OOM). An attacker can exploit these vulnerabilities by submitting malicious expressions to accessible parameters, causing interpreter crashes, service degradation, or system resource depletion.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `joblib` library to the patch version.",
   "vulnerable_to": "Allocation of Resources Without Limits or Throttling",

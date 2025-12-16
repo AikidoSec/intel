@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "sequoia-openpgp",
+  "patch_versions": [
+    "2.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "2.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-195"
+  ],
+  "tldr": "The aes_key_unwrap function would panic if passed a ciphertext that was too short. In a debug build, it would panic due to a subtraction underflow. In a release build, it would use the small negative quantity to allocate a vector. Since the allocator expects an unsigned quantity, the negative value would be interpreted as a huge allocation. The allocator would then fail to allocate the memory and panic. An attacker could trigger this panic by sending a victim an encrypted message whose PKESK or SKESK packet has been specially modified. When the victim decrypts the message, the program would crash.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `sequoia-openpgp` library to the patch version.",
+  "vulnerable_to": "Signed to Unsigned Conversion Error",
+  "related_cve_id": "CVE-2025-67897",
+  "language": "RUST",
+  "severity_class": "MEDIUM",
+  "aikido_score": 43,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0136.html"
 }

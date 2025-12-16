@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "urllib3-future",
+  "patch_versions": [
+    "2.15.900"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.24",
+      "2.14.908"
+    ]
+  ],
+  "cwe": [
+    "CWE-770"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Denial of Service (DoS) due to unbounded chained HTTP content-encoding decompression as defined in RFC 9110, where a malicious server can provide a response with a virtually unlimited number of compression layers (for example, `gzip, zstd`), leading to excessive CPU consumption and massive memory allocation during decompression when applications using older versions make HTTP requests to untrusted sources without explicitly disabling content decoding.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `urllib3-future` library to the patch version.",
+  "vulnerable_to": "Allocation of Resources Without Limits or Throttling",
+  "related_cve_id": "CVE-2025-66418",
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 89,
+  "changelog": "https://github.com/jawah/urllib3.future/releases/tag/2.15.900"
 }

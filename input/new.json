@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "sparkpipelineframework",
+  "patch_versions": [
+    "4.0.22"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.20",
+      "4.0.21"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to sensitive information exposure because the v3 OAuth2 client credentials flow logs full OAuth2 token responses, potentially leaking access tokens into application logs.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `sparkpipelineframework` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/icanbwell/SparkPipelineFramework/releases/tag/4.0.22"
 }

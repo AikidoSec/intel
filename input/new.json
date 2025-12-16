@@ -1,24 +1,15 @@
 {
-  "package_name": "bthome-ble",
-  "patch_versions": [
-    "3.15.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.3.0",
-      "3.15.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-757"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a Downgrade Attack in the BTHome protocol due to insufficient encryption counter validation, where the replay protection mechanism only activates when the received `encryption_counter` is 100 or more, leaving the first 100 button presses and the 100 presses after a 32-bit counter overflow unprotected. An attacker within BLE range can exploit this by capturing a legitimate encrypted advertisement during this vulnerable window and replaying it at any later time, even after the button's internal counter has advanced significantly, thereby forcing the receiver to accept the older, lower counter and trigger the unauthorized action without detection.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `bthome-ble` library to the patch version.",
-  "vulnerable_to": "Selection of Less-Secure Algorithm During Negotiation ('Algorithm Downgrade')",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 40,
-  "changelog": "https://github.com/Bluetooth-Devices/bthome-ble/releases/tag/v3.15.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

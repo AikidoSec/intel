@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `xmas-elf` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Out-of-bounds Read",
-  "related_cve_id": "",
+  "related_cve_id": "GHSA-9cc5-2pq7-hfj8",
   "language": "rust",
   "severity_class": "LOW",
   "aikido_score": 35,

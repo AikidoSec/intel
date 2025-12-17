@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `@wordpress/block-library` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Cross-site Scripting (XSS)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2022-43500",
   "language": "JS",
   "severity_class": "MEDIUM",
   "aikido_score": 61,

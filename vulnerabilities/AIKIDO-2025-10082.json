@@ -17,10 +17,10 @@
   "how_to_fix": "Upgrade `redoc` to a patch version.",
   "reporter": "",
   "vulnerable_to": "Prototype Pollution",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2024-57083",
   "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 20,
+  "severity_class": "HIGH",
+  "aikido_score": 77,
   "changelog": "https://github.com/Redocly/redoc/blob/main/CHANGELOG.md",
   "last_modified": "2025-02-07",
   "published": "2025-02-07"

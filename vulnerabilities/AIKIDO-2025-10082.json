@@ -20,7 +20,7 @@
   "related_cve_id": "CVE-2024-57083",
   "language": "JS",
   "severity_class": "HIGH",
-  "aikido_score": 77,
+  "aikido_score": 20,
   "changelog": "https://github.com/Redocly/redoc/blob/main/CHANGELOG.md",
   "last_modified": "2025-02-07",
   "published": "2025-02-07"

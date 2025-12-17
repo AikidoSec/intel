@@ -32,7 +32,7 @@
   "how_to_fix": "Upgrade the `github.com/cosmwasm/wasmvm` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "NULL Pointer Dereference",
-  "related_cve_id": "",
+  "related_cve_id": "GHSA-23qp-3c2m-xx6w",
   "language": "GO",
   "severity_class": "MEDIUM",
   "aikido_score": 65,

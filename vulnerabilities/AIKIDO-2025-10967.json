@@ -1,0 +1,26 @@
+{
+  "package_name": "webpack",
+  "patch_versions": [
+    "5.104.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.49.0",
+      "5.103.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Server-Side Request Forgery (SSRF) and untrusted content inclusion because the `HttpUriPlugin` did not properly revalidate HTTP redirect targets against the configured `allowedUris` policy, allowed non-http/https protocols (like `file:`), and lacked a redirect limit. An attacker could exploit this by hosting a malicious server that responds with a redirect to an internal service or local file, potentially bypassing URI restrictions and causing the application to fetch and cache sensitive data or execute unintended code from a dangerous location.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `webpack` library to the patch version.",
+  "vulnerable_to": "Server-Side Request Forgery (SSRF)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
+  "changelog": "https://github.com/webpack/webpack/releases/tag/v5.104.0",
+  "last_modified": "2025-12-18",
+  "published": "2025-12-18"
+}

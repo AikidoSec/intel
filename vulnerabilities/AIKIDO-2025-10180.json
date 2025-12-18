@@ -18,7 +18,7 @@
   "how_to_fix": "Upgrade the `github.com/quic-go/quic-go` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Uncaught Exception",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-29785",
   "language": "GO",
   "severity_class": "LOW",
   "aikido_score": 18,

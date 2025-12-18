@@ -18,10 +18,10 @@
   "how_to_fix": "Upgrade the `org.webjars.bowergithub.cure53:dompurify` library to a patch version.",
   "reporter": "",
   "vulnerable_to": "Cross-site Scripting (XSS)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-26791",
   "language": "JAVA",
-  "severity_class": "LOW",
-  "aikido_score": 16,
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
   "changelog": "https://github.com/cure53/DOMPurify/releases/tag/3.2.4",
   "last_modified": "2025-02-05",
   "published": "2025-02-05"

@@ -16,7 +16,7 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `parse-uri` library to the patch version.",
   "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2024-36751",
   "language": "js",
   "severity_class": "MEDIUM",
   "aikido_score": 43,

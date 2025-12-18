@@ -20,7 +20,7 @@
   "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "CVE-2025-26791",
   "language": "JAVA",
-  "severity_class": "LOW",
+  "severity_class": "MEDIUM",
   "aikido_score": 45,
   "changelog": "https://github.com/cure53/DOMPurify/releases/tag/3.2.4",
   "last_modified": "2025-02-05",

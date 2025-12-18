@@ -17,11 +17,11 @@
   "how_to_fix": "Upgrade `php-date-formatter` to a patch version.",
   "reporter": "",
   "vulnerable_to": "Prototype Pollution",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2024-57063",
   "language": "JS",
   "severity_class": "MEDIUM",
   "aikido_score": 40,
   "changelog": "https://github.com/kartik-v/php-date-formatter/releases/tag/v1.3.7",
-  "last_modified": "2025-02-07",
+  "last_modified": "2025-12-17",
   "published": "2025-02-07"
 }

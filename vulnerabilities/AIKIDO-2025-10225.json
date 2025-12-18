@@ -16,11 +16,11 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `tendermint-light-client-verifier` library to the patch version.",
   "vulnerable_to": "Authentication Bypass by Spoofing",
-  "related_cve_id": "",
+  "related_cve_id": "GHSA-6jrf-4jv4-r9mw",
   "language": "RUST",
   "severity_class": "CRITICAL",
   "aikido_score": 91,
   "changelog": "https://github.com/informalsystems/tendermint-rs/blob/v0.40.3/CHANGELOG.md#v0403",
-  "last_modified": "2025-04-09",
+  "last_modified": "2025-12-17",
   "published": "2025-04-09"
 }

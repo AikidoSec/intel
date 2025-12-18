@@ -17,11 +17,11 @@
   "how_to_fix": "Upgrade the `cbor2` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Denial of Service (DoS)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-64076",
   "language": "Python",
-  "severity_class": "LOW",
-  "aikido_score": 28,
+  "severity_class": "HIGH",
+  "aikido_score": 75,
   "changelog": "https://github.com/agronholm/cbor2/releases/tag/5.7.1",
-  "last_modified": "2025-10-31",
+  "last_modified": "2025-12-18",
   "published": "2025-10-31"
 }

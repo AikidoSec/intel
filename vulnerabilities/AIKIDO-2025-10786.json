@@ -27,11 +27,11 @@
   "how_to_fix": "Upgrade the `github.com/victoriametrics/victoriametrics` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Denial of Service (DoS)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-65942",
   "language": "GO",
   "severity_class": "LOW",
   "aikido_score": 31,
   "changelog": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.129.1",
-  "last_modified": "2025-11-10",
+  "last_modified": "2025-11-18",
   "published": "2025-11-10"
 }

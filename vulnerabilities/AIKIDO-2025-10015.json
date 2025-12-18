@@ -16,11 +16,11 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `strawberry-graphql` library to the patch version.",
   "vulnerable_to": "Information Disclosure",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-22151",
   "language": "python",
   "severity_class": "MEDIUM",
-  "aikido_score": 58,
+  "aikido_score": 40,
   "changelog": "https://github.com/strawberry-graphql/strawberry/releases/tag/0.257.0",
-  "last_modified": "2025-01-09",
+  "last_modified": "2025-12-17",
   "published": "2025-01-09"
 }

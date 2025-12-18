@@ -16,11 +16,11 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `clearml` library to the patch version.",
   "vulnerable_to": "Improper Link Resolution Before File Access ('Link Following')",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-8917",
   "language": "Python",
   "severity_class": "MEDIUM",
   "aikido_score": 60,
   "changelog": "https://github.com/clearml/clearml/releases/tag/v2.0.2",
-  "last_modified": "2025-07-11",
+  "last_modified": "2025-12-18",
   "published": "2025-07-11"
 }

@@ -17,11 +17,11 @@
   "how_to_fix": "Upgrade the `github.com/uptrace/bun/driver/pgdriver` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "SQL Injection",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2024-44906",
   "language": "GO",
   "severity_class": "MEDIUM",
   "aikido_score": 65,
   "changelog": "https://github.com/uptrace/bun/releases/tag/v1.2.15",
-  "last_modified": "2025-07-22",
+  "last_modified": "2025-12-18",
   "published": "2025-07-22"
 }

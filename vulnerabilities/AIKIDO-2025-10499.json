@@ -16,11 +16,11 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `github.com/traefik/traefik/v2` library to the patch version.",
   "vulnerable_to": "Path Traversal",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-54386",
   "language": "Go",
-  "severity_class": "MEDIUM",
-  "aikido_score": 48,
+  "severity_class": "HIGH",
+  "aikido_score": 73,
   "changelog": "https://github.com/traefik/traefik/releases/tag/v2.11.28",
-  "last_modified": "2025-07-23",
+  "last_modified": "2025-12-18",
   "published": "2025-07-23"
 }

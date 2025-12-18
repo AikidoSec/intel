@@ -21,11 +21,11 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `electron` library to a patch version.",
   "vulnerable_to": "Type Confusion",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-1920",
   "language": "JS",
   "severity_class": "HIGH",
   "aikido_score": 88,
   "changelog": "https://github.com/electron/electron/releases/tag/v33.4.6",
-  "last_modified": "2025-03-21",
+  "last_modified": "2025-12-17",
   "published": "2025-03-21"
 }

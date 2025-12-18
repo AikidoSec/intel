@@ -16,11 +16,11 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `llama-index-core` library to the patch version.",
   "vulnerable_to": "Uncontrolled Resource Consumption",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-5472",
   "language": "PYTHON",
   "severity_class": "MEDIUM",
-  "aikido_score": 44,
+  "aikido_score": 65,
   "changelog": "https://github.com/run-llama/llama_index/releases/tag/v0.12.38",
-  "last_modified": "2025-05-30",
+  "last_modified": "2025-12-18",
   "published": "2025-05-30"
 }

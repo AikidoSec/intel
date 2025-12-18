@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `pyo3` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Buffer Overflow",
-  "related_cve_id": "",
+  "related_cve_id": "GHSA-pph8-gcv7-4qj5",
   "language": "RUST",
   "severity_class": "LOW",
   "aikido_score": 30,

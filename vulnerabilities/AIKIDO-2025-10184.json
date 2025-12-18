@@ -18,7 +18,7 @@
   "how_to_fix": "Upgrade the `org.webjars.npm:axios` library to a patch version.",
   "reporter": "",
   "vulnerable_to": "Server-side Request Forgery (SSRF)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-27152",
   "language": "JAVA",
   "severity_class": "MEDIUM",
   "aikido_score": 62,

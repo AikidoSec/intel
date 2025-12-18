@@ -17,7 +17,7 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `org.mustangproject:validator` library to the patch version.",
   "vulnerable_to": "XML External Entity (XEE)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-66372",
   "language": "java",
   "severity_class": "MEDIUM",
   "aikido_score": 45,

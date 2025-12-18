@@ -17,11 +17,11 @@
   "how_to_fix": "Upgrade the `github.com/slackhq/nebula` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Improper Certificate Validation",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-62820",
   "language": "GO",
   "severity_class": "MEDIUM",
   "aikido_score": 60,
   "changelog": "https://github.com/slackhq/nebula/releases/tag/v1.9.7",
-  "last_modified": "2025-10-14",
+  "last_modified": "2025-12-18",
   "published": "2025-10-14"
 }

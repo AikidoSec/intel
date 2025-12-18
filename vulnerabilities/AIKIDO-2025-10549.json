@@ -36,11 +36,11 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `phpoffice/phpspreadsheet` library to the patch version or if you set `$allowExternalImages` to false.",
   "vulnerable_to": "Server-Side Request Forgery (SSRF)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-54370",
   "language": "php",
-  "severity_class": "MEDIUM",
-  "aikido_score": 40,
+  "severity_class": "HIGH",
+  "aikido_score": 75,
   "changelog": "https://github.com/PHPOffice/PhpSpreadsheet/releases/tag/3.10.0",
-  "last_modified": "2025-08-13",
+  "last_modified": "2025-12-18",
   "published": "2025-08-13"
 }

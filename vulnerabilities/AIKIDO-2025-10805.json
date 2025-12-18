@@ -16,11 +16,11 @@
   "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
   "how_to_fix": "Upgrade the `astro` library to the patch version.",
   "vulnerable_to": "Improper Input Validation",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-64525",
   "language": "JS",
   "severity_class": "MEDIUM",
   "aikido_score": 60,
   "changelog": "https://github.com/withastro/astro/releases/tag/astro%405.15.5",
-  "last_modified": "2025-11-12",
+  "last_modified": "2025-12-18",
   "published": "2025-11-12"
 }

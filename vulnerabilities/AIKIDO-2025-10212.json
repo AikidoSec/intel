@@ -22,7 +22,7 @@
   "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Remote Code Execution (RCE)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-46731",
   "language": "PHP",
   "severity_class": "HIGH",
   "aikido_score": 88,

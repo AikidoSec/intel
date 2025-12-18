@@ -19,7 +19,7 @@
   "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "CVE-2024-57083",
   "language": "JS",
-  "severity_class": "HIGH",
+  "severity_class": "LOW",
   "aikido_score": 20,
   "changelog": "https://github.com/Redocly/redoc/blob/main/CHANGELOG.md",
   "last_modified": "2025-02-07",

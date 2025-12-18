@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `@quasar/quasar-ui-qmarkdown` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Cross-site Scripting (XSS)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-43954",
   "language": "js",
   "severity_class": "MEDIUM",
   "aikido_score": 45,

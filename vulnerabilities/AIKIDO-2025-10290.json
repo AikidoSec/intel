@@ -9,7 +9,7 @@
   "doest_this_affect_me": "You are affected if you are using this package.",
   "how_to_fix": "Remove any `tanton_engine` package from your application.",
   "vulnerable_to": "Use of Unmaintained Third Party Components",
-  "related_cve_id": "",
+  "related_cve_id": "GHSA-m2xr-2vj4-wh94",
   "language": "Rust",
   "severity_class": "LOW",
   "aikido_score": 30,

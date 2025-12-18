@@ -16,11 +16,11 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `cloudinary` library to a patch version.",
   "vulnerable_to": "Improper Neutralization of Parameter/Argument Delimiters",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-12613",
   "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 33,
+  "severity_class": "HIGH",
+  "aikido_score": 85,
   "changelog": "https://github.com/cloudinary/cloudinary_npm/releases/tag/2.7.0",
-  "last_modified": "2025-08-12",
+  "last_modified": "2025-12-18",
   "published": "2025-08-12"
 }

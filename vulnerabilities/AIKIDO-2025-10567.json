@@ -5,7 +5,7 @@
   ],
   "vulnerable_ranges": [
     [
-      "9.6.0",
+      "7.1.0",
       "9.9.0"
     ]
   ],
@@ -16,11 +16,11 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `copier` library to the patch version.",
   "vulnerable_to": "Path Traversal",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-55214",
   "language": "Python",
   "severity_class": "MEDIUM",
   "aikido_score": 60,
   "changelog": "https://github.com/copier-org/copier/blob/master/CHANGELOG.md#v991-2025-08-18",
-  "last_modified": "2025-08-19",
+  "last_modified": "2025-12-18",
   "published": "2025-08-19"
 }

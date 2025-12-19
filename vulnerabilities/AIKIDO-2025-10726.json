@@ -17,11 +17,11 @@
   "how_to_fix": "Upgrade the `github.com/eclipse/paho.mqtt.golang` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Integer Overflow",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-10543",
   "language": "GO",
   "severity_class": "MEDIUM",
   "aikido_score": 53,
   "changelog": "https://github.com/eclipse-paho/paho.mqtt.golang/releases/tag/v1.5.1",
-  "last_modified": "2025-10-21",
+  "last_modified": "2025-12-19",
   "published": "2025-10-21"
 }

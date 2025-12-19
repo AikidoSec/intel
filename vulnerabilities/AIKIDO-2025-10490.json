@@ -9,11 +9,11 @@
   "doest_this_affect_me": "You are affected if you are using this package.",
   "how_to_fix": "Remove any drupal/panelizer package from your application.",
   "vulnerable_to": "Use of Unmaintained Third Party Components",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-3735",
   "language": "PHP",
   "severity_class": "HIGH",
   "aikido_score": 80,
   "changelog": "https://www.drupal.org/sa-contrib-2025-036",
-  "last_modified": "2025-07-22",
+  "last_modified": "2025-12-19",
   "published": "2025-07-22"
 }

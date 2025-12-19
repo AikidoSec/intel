@@ -17,11 +17,11 @@
   "how_to_fix": "Upgrade the `pm2` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-5891",
   "language": "JS",
   "severity_class": "LOW",
   "aikido_score": 30,
   "changelog": "https://github.com/Unitech/pm2/releases/tag/v6.0.9",
-  "last_modified": "2025-09-02",
+  "last_modified": "2025-12-19",
   "published": "2025-09-02"
 }

@@ -16,11 +16,11 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `sinatra` library to the patch version.",
   "vulnerable_to": "Inefficient Regular Expression Complexity",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-61921",
   "language": "Ruby",
   "severity_class": "LOW",
   "aikido_score": 30,
   "changelog": "https://github.com/sinatra/sinatra/blob/main/CHANGELOG.md#420--2025-10-08",
-  "last_modified": "2025-10-10",
+  "last_modified": "2025-12-19",
   "published": "2025-10-10"
 }

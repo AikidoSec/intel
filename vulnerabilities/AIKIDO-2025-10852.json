@@ -17,11 +17,11 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `neuron-core/neuron-ai` library to the patch version.",
   "vulnerable_to": "SQL Injection",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-67509",
   "language": "PHP",
   "severity_class": "HIGH",
   "aikido_score": 76,
   "changelog": "https://github.com/neuron-core/neuron-ai/releases/tag/2.8.12",
-  "last_modified": "2025-11-27",
+  "last_modified": "2025-12-18",
   "published": "2025-11-27"
 }

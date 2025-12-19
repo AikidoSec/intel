@@ -16,11 +16,11 @@
   "doest_this_affect_me": "You're affected if you are using a version which is within vulnerability ranges.",
   "how_to_fix": "Upgrade `gdcm` library to patch version.",
   "vulnerable_to": "Out-of-bounds Read",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-11266",
   "language": "c++",
   "severity_class": "MEDIUM",
   "aikido_score": 60,
   "changelog": "https://github.com/malaterre/GDCM/commit/5829c95c8ac3afa9a3a3413675e948959c28a789",
-  "last_modified": "2025-11-27",
+  "last_modified": "2025-12-18",
   "published": "2025-11-27"
 }

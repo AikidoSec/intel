@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "mintlify",
+  "package_name_alias": "mint",
+  "patch_versions": [
+    "4.2.211"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "4.2.210"
+    ]
+  ],
+  "cwe": [
+    "CWE-829"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a chain of interrelated security issues, beginning with a critical cross-tenant static asset vulnerability where assets uploaded by one customer were accessible from another's domain, enabling cross-domain XSS via malicious files like SVGs. Furthermore, a path traversal bypass using URL-encoded characters was discovered, which circumvented the initial fix for the asset vulnerability. Additionally, several cross-domain data endpoints (/_mintlify/markdown/, RSS, favicon, MCP) allowed unauthorized data access across subdomains, while a server-side rendering code execution flaw permitted injection of malicious MDX code. Moreover, a downgrade attack allowed access to older, potentially vulnerable site versions, and an Insecure Direct Object Reference (IDOR) in the dashboard exposed details of other customers' documentation history.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mintlify` library to the patch version.",
+  "vulnerable_to": "Inclusion of Functionality from Untrusted Control Sphere",
+  "related_cve_id": "CVE-2025-67842",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 68,
+  "changelog": "https://www.mintlify.com/blog/working-with-security-researchers-november-2025"
 }

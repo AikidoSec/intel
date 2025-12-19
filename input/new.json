@@ -1,25 +1,15 @@
 {
-  "package_name": "mintlify",
-  "package_name_alias": "mint",
-  "patch_versions": [
-    "4.2.211"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "4.2.210"
-    ]
-  ],
-  "cwe": [
-    "CWE-20"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a chain of security flaws including cross-tenant static asset access, a path traversal bypass, insecure cross-domain data endpoints, server-side rendering code execution, a site downgrade attack, and an IDOR in the dashboard. An attacker could exploit these in concert, for instance by uploading a malicious SVG via one vulnerability to execute cross-site scripting (XSS) on another customer's domain, potentially compromising user sessions and data. All issues have been fixed; the maintainer has added a deprecation notice on npm installs for vulnerable versions, and users must upgrade immediately.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `mintlify` library to the patch version.",
-  "vulnerable_to": "Use of third-party component with multiple disclosed vulnerabilities",
-  "related_cve_id": "CVE-2025-67842",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://www.mintlify.com/blog/working-with-security-researchers-november-2025"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

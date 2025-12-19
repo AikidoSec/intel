@@ -16,7 +16,7 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range, and allow user input into any selectors.",
   "how_to_fix": "Upgrade the `chrome-php/chrome` library to the patch version.",
   "vulnerable_to": "CSS injection",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-48883",
   "language": "PHP",
   "severity_class": "LOW",
   "aikido_score": 15,

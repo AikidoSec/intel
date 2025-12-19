@@ -11,15 +11,15 @@
     ]
   ],
   "cwe": [
-    "CWE-829"
+    "CWE-1104"
   ],
-  "tldr": "Affected versions of this package are vulnerable to a chain of interrelated security issues, beginning with a critical cross-tenant static asset vulnerability where assets uploaded by one customer were accessible from another's domain, enabling cross-domain XSS via malicious files like SVGs. Furthermore, a path traversal bypass using URL-encoded characters was discovered, which circumvented the initial fix for the asset vulnerability. Additionally, several cross-domain data endpoints (/_mintlify/markdown/, RSS, favicon, MCP) allowed unauthorized data access across subdomains, while a server-side rendering code execution flaw permitted injection of malicious MDX code. Moreover, a downgrade attack allowed access to older, potentially vulnerable site versions, and an Insecure Direct Object Reference (IDOR) in the dashboard exposed details of other customers' documentation history.",
+  "tldr": "Affected versions of this package before 4.0.423 are vulnerable to a chain of security flaws including cross-tenant static asset access, a path traversal bypass, insecure cross-domain data endpoints, server-side rendering code execution, a site downgrade attack, and an IDOR in the dashboard. An attacker could exploit these in concert, for instance by uploading a malicious SVG via one vulnerability to execute cross-site scripting (XSS) on another customer's domain, potentially compromising user sessions and data. All issues have been fixed in version 4.0.423; the maintainer has added a deprecation notice on npm installs for vulnerable versions, and users must upgrade to 4.0.423 or higher immediately.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `mintlify` library to the patch version.",
   "vulnerable_to": "Inclusion of Functionality from Untrusted Control Sphere",
-  "related_cve_id": "CVE-2025-67842",
+  "related_cve_id": "Use of Unmaintained Third Party Components",
   "language": "JS",
   "severity_class": "MEDIUM",
-  "aikido_score": 68,
+  "aikido_score": 50,
   "changelog": "https://www.mintlify.com/blog/working-with-security-researchers-november-2025"
 }

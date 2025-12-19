@@ -16,11 +16,11 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `Authlib` library to the patch version.",
   "vulnerable_to": "Uncontrolled Resource Consumption",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-62706",
   "language": "Python",
   "severity_class": "LOW",
   "aikido_score": 30,
   "changelog": "https://github.com/authlib/authlib/blob/main/docs/changelog.rst#version-165",
-  "last_modified": "2025-10-09",
+  "last_modified": "2025-12-19",
   "published": "2025-10-09"
 }

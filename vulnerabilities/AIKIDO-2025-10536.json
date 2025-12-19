@@ -17,11 +17,11 @@
   "how_to_fix": "Upgrade the `zenml` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Path Traversal",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-8406",
   "language": "python",
   "severity_class": "HIGH",
   "aikido_score": 82,
   "changelog": "https://github.com/zenml-io/zenml/blob/main/RELEASE_NOTES.md",
-  "last_modified": "2025-08-08",
+  "last_modified": "2025-12-19",
   "published": "2025-08-08"
 }

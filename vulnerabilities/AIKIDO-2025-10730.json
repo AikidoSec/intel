@@ -21,11 +21,11 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `@angular/ssr` library to the patch version.",
   "vulnerable_to": "Server-Side Request Forgery (SSRF)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-62427",
   "language": "JS",
   "severity_class": "MEDIUM",
   "aikido_score": 46,
   "changelog": "https://github.com/angular/angular-cli/releases/tag/20.3.6",
-  "last_modified": "2025-10-23",
+  "last_modified": "2025-12-19",
   "published": "2025-10-23"
 }

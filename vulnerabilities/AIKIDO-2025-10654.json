@@ -16,11 +16,11 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and if you are using the affected function `fuser::Session::new` when creating a new libfuse session.",
   "how_to_fix": "Upgrade the `fuser` library to the patch version.",
   "vulnerable_to": "Use of Uninitialized Resource",
-  "related_cve_id": "",
+  "related_cve_id": "GHSA-cvmj-47v9-35m9",
   "language": "Rust",
   "severity_class": "MEDIUM",
   "aikido_score": 41,
   "changelog": "https://rustsec.org/advisories/RUSTSEC-2021-0154",
-  "last_modified": "2025-10-02",
+  "last_modified": "2025-12-19",
   "published": "2025-10-02"
 }

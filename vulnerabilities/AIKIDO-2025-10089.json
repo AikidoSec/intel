@@ -17,11 +17,11 @@
   "how_to_fix": "Upgrade the `grcov` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Out-of-bounds Write",
-  "related_cve_id": "",
+  "related_cve_id": "GHSA-qm2p-4w45-v2vr",
   "language": "RUST",
   "severity_class": "MEDIUM",
   "aikido_score": 54,
   "changelog": "https://bugzilla.mozilla.org/show_bug.cgi?id=1917475",
-  "last_modified": "2025-02-11",
+  "last_modified": "2025-12-17",
   "published": "2025-02-11"
 }

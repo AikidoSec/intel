@@ -22,11 +22,11 @@
   "how_to_fix": "Upgrade the `axios` library to a patch version.",
   "reporter": "",
   "vulnerable_to": "Server-side Request Forgery (SSRF)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-27152",
   "language": "JS",
   "severity_class": "MEDIUM",
   "aikido_score": 62,
   "changelog": "https://github.com/axios/axios/releases/tag/v1.8.3",
-  "last_modified": "2025-03-27",
+  "last_modified": "2025-12-17",
   "published": "2025-03-26"
 }

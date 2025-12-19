@@ -9,7 +9,7 @@
   "doest_this_affect_me": "You are affected if you are using this package.",
   "how_to_fix": "Remove any arrow2 package from your application. Please take a look at <a href=\"https://crates.io/crates/arrow\">arrow</a> instead.",
   "vulnerable_to": "Use of Unmaintained Third Party Components",
-  "related_cve_id": "",
+  "related_cve_id": "GHSA-wv8j-m3hx-924j",
   "language": "rust",
   "severity_class": "MEDIUM",
   "aikido_score": 50,

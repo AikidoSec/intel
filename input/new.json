@@ -2,12 +2,12 @@
   "package_name": "mintlify",
   "package_name_alias": "mint",
   "patch_versions": [
-    "4.2.211"
+    "4.0.423"
   ],
   "vulnerable_ranges": [
     [
       "0.1.0",
-      "4.2.210"
+      "4.2.422"
     ]
   ],
   "cwe": [

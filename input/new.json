@@ -1,27 +1,15 @@
 {
-  "package_name": "n8n",
-  "patch_versions": [
-    "1.120.4",
-    "1.121.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.211.0",
-      "1.120.3"
-    ],
-    [
-      "1.121.0",
-      "1.121.0"
-    ]
-  ],
-  "cwe": ["CWE-913"],
-  "tldr": "Affected versions of `n8n` are vulnerable to remote code execution due to expression injection in the workflow expression evaluation system, where expressions provided by authenticated users during workflow configuration may be evaluated in an insufficiently isolated execution context, allowing an attacker to execute arbitrary code with the privileges of the `n8n` process and potentially fully compromise the instance, access sensitive data, modify workflows, or perform system-level operations; this issue is fixed in `n8n` v1.122.0, and users should upgrade immediately, while temporary mitigations include restricting workflow creation and editing to fully trusted users and running `n8n` in a hardened environment, noting that these measures do not fully eliminate the risk.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `n8n` library to the patch version.",
-  "vulnerable_to": "Remote Code Execution via Expression Injection",
-  "related_cve_id": "CVE-2025-68613",
-  "language": "JS",
-  "severity_class": "CRITICAL",
-  "aikido_score": 99,
-  "changelog": "https://github.com/n8n-io/n8n/security/advisories/GHSA-v98v-ff95-f3cp"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

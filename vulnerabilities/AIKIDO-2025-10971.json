@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/basecamp/thruster",
+  "patch_versions": [
+    "0.1.17"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.1.16"
+    ]
+  ],
+  "cwe": [
+    "CWE-1255"
+  ],
+  "tldr": "Affected versions of this package before the implementation of BREACH attacks mitigations were vulnerable to compression side-channel attacks; an attacker could exploit this by repeatedly submitting crafted requests containing guessable payloads to an endpoint that reflected user secrets (like a CSRF token) in its compressed response body, and then analyzing the variations in the resulting encrypted response sizes to successfully deduce those secret values character by character.",
+  "doest_this_affect_me": "You're affected if you are using a version which is within vulnerability ranges.",
+  "how_to_fix": "Upgrade `github.com/basecamp/thruster` library to patch version.",
+  "vulnerable_to": "BREACH Attacks",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 41,
+  "changelog": "https://github.com/basecamp/thruster/blob/main/CHANGELOG.md#v0117--2025-12-16",
+  "last_modified": "2025-12-23",
+  "published": "2025-12-23"
+}

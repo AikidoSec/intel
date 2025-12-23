@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@rspack/core",
+  "patch_versions": [
+    "1.6.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.3.12",
+      "1.6.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Server-Side Request Forgery (SSRF) bypass due to insufficient validation of URLs during HTTP redirects, where the `HttpUriPlugin` would follow a redirect to a location without properly re-checking it against the `allowedUris` policy or enforcing protocol and redirect limit constraints, allowing an attacker who controls a redirect response to potentially force the server to make unauthorized requests to internal systems or arbitrary external domains.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@rspack/core` library to the patch version.",
+  "vulnerable_to": "Server-Side Request Forgery (SSRF)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 68,
+  "changelog": "https://github.com/web-infra-dev/rspack/releases/tag/v1.6.8"
 }

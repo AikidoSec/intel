@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/open-policy-agent/opa",
-  "patch_versions": [
-    "1.11.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "1.11.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-789"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Memory Exhaustion via a forged Gzip Header. A crafted HTTP request containing a malicious gzip header sent to any of OPA's HTTP endpoints could cause the service to allocate excessive memory, leading to an out-of-memory (OOM) process exit and denial of service. An attacker can exploit this by sending a direct HTTP request to the OPA server, which is effective before any token-based authentication or authorization checks are applied, making it a potent vector if OPA is directly accessible on a network. The issue was addressed by implementing a proper size check on the decompressed payload during gzip handling.",
-  "doest_this_affect_me": "You're affected if you are using a version which is within vulnerability ranges.",
-  "how_to_fix": "Upgrade `github.com/open-policy-agent/opa` library to patch version.",
-  "vulnerable_to": "Memory Allocation with Excessive Size Value",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 30,
-  "changelog": "https://github.com/open-policy-agent/opa/releases/tag/v1.11.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

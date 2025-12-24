@@ -1,47 +1,15 @@
 {
-  "package_name": "mongodb-org-database",
-  "patch_versions": [
-    "4.4.30",
-    "5.0.32",
-    "6.0.27",
-    "7.0.28",
-    "8.0.17",
-    "8.2.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "4.4.29"
-    ],
-    [
-      "5.0.0",
-      "5.0.31"
-    ],
-    [
-      "6.0.0",
-      "6.0.26"
-    ],
-    [
-      "7.0.0",
-      "7.0.27"
-    ],
-    [
-      "8.0.0",
-      "8.0.16"
-    ],
-    [
-      "8.1.0",
-      "8.2.2"
-    ]
-  ],
-  "cwe": ["CWE-130","CWE-200"],
-  "tldr": "Affected versions of MongoDB Server are vulnerable to an unauthenticated information disclosure (CVE-2025-14847) due to improper handling of zlib-compressed network traffic, where malformed compressed frames can cause MongoDB to include uninitialized heap memory in server responses. An attacker with only network access and no authentication can trigger this behavior when compression is enabled, potentially exposing fragments of previous query results, internal server state, or sensitive values from process memory. The issue affects multiple MongoDB releases up to recent patch levels and is fixed in newer versions; mitigation requires upgrading, restricting network exposure, or disabling zlib compression until patches are applied.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `mongodb-org-database` library to the patch version.",
-  "vulnerable_to": "Improper Handling of Length Parameter Inconsistency",
-  "related_cve_id": "CVE-2025-14847",
-  "language": "os",
-  "severity_class": "HIGH",
-  "aikido_score": 87,
-  "changelog": "https://jira.mongodb.org/browse/SERVER-115508"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

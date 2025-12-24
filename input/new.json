@@ -1,24 +1,15 @@
 {
-  "package_name": "TrustWalletCore",
-  "patch_versions": [
-    "4.4.5"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.0.0",
-      "4.4.4"
-    ]
-  ],
-  "cwe": [
-    "CWE-20"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Insufficient Input Validation due to inadequate error handling and bounds checking in serialization/deserialization logic. The vulnerability in Rust components could allow invalid integer conversions to proceed, while in C++ components, missing buffer length validation could permit reading beyond allocated memory. An attacker could exploit this by crafting malicious input data to trigger integer overflows/underflows in Rust or cause buffer over-reads and potential denial-of-service or information disclosure in C++.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `TrustWalletCore` library to the patch version.",
-  "vulnerable_to": "Improper Input Validation",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "SWIFT",
-  "severity_class": "MEDIUM",
-  "aikido_score": 52,
-  "changelog": "https://github.com/trustwallet/wallet-core/releases/tag/4.4.5"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "wolfSSL.wolfssl",
+  "patch_versions": [
+    "5.8.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.8.0",
+      "5.8.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-385"
+  ],
+  "tldr": "Affected versions of `wolfssl` include Curve25519 blinding support enabled by default in applicable builds, providing additional protection against potential side-channel attacks. While practical private-key extraction via side channels is considered difficult, blinding helps reduce the risk on devices that may be exposed to physical access or side-channel observation, improving overall cryptographic robustness.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `wolfSSL.wolfssl` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Covert Timing Channel",
+  "related_cve_id": "CVE-2025-7396",
+  "language": "C++",
+  "severity_class": "MEDIUM",
+  "aikido_score": 56,
+  "changelog": "https://github.com/wolfSSL/wolfssl/blob/master/ChangeLog.md#wolfssl-release-582-july-17-2025"
 }

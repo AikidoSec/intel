@@ -1,25 +1,15 @@
 {
-  "package_name": "wolfSSL.wolfssl",
-  "patch_versions": [
-    "5.8.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.15.0",
-      "5.8.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-338"
-  ],
-  "tldr": "Affected versions of `wolfssl` are vulnerable to generating weak or predictable random values when applications call `RAND_bytes()` after `fork()` due to unexpected behavior in `RAND_poll()` within the OpenSSL compatibility layer. This issue can result in insufficiently reseeded randomness in child processes, potentially weakening security for applications that rely on `RAND_bytes()` post-fork, though internal TLS operations are not affected. Updating to a fixed version ensures the DRBG is properly reseeded after a fork.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `wolfSSL.wolfssl` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Insecure Randomness",
-  "related_cve_id": "CVE-2025-7394",
-  "language": "C++",
-  "severity_class": "HIGH",
-  "aikido_score": 70,
-  "changelog": "https://github.com/wolfSSL/wolfssl/blob/master/ChangeLog.md#wolfssl-release-582-july-17-2025"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

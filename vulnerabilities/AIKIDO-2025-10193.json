@@ -16,11 +16,11 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `@react-router/express` library to the patch version.",
   "vulnerable_to": "Cross-Site Request Forgery (CSRF)",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2025-31137",
   "language": "JS",
   "severity_class": "HIGH",
   "aikido_score": 77,
   "changelog": "https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v741",
-  "last_modified": "2025-03-31",
+  "last_modified": "2025-12-23",
   "published": "2025-03-31"
 }

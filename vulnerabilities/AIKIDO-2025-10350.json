@@ -26,7 +26,7 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `electron` library to the patch version.",
   "vulnerable_to": "Out-of-bounds Read",
-  "related_cve_id": "CVE-2025-5419 ",
+  "related_cve_id": "CVE-2025-5419",
   "language": "JS",
   "severity_class": "HIGH",
   "aikido_score": 88,

@@ -1,12 +1,27 @@
 {
   "package_name": "sigs.k8s.io/azuredisk-csi-driver",
   "patch_versions": [
-    "1.29.13"
+    "1.32.2",
+    "1.31.6",
+    "1.30.10",
+    "1.29.14"
   ],
   "vulnerable_ranges": [
     [
+      "1.32.0",
+      "1.32.1"
+    ],
+    [
+      "1.31.0",
+      "1.31.5"
+    ],
+    [
+      "1.30.0",
+      "1.30.9"
+    ],
+    [
       "0.3.0",
-      "1.29.12"
+      "1.29.13"
     ]
   ],
   "cwe": [
@@ -22,6 +37,6 @@
   "severity_class": "MEDIUM",
   "aikido_score": 62,
   "changelog": "https://github.com/kubernetes-sigs/azuredisk-csi-driver/releases/tag/v1.29.13",
-  "last_modified": "2025-03-26",
+  "last_modified": "2025-12-23",
   "published": "2025-03-26"
 }

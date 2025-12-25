@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@kolkov/angular-editor",
+  "patch_versions": [
+    "3.0.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.2.0",
+      "3.0.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) via Unsafe Preview Rendering due to improper neutralization of user input during web page generation. The vulnerability exists because user-supplied HTML, including attributes like `onerror`, is rendered without adequate sanitization when switching from code to preview mode. An attacker can exploit this by tricking a user into submitting a malicious payload, which executes arbitrary JavaScript in the victim's browser when the preview is rendered.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@kolkov/angular-editor` library to the patch version.",
+  "vulnerable_to": "Cross-Site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 66,
+  "changelog": "https://github.com/kolkov/angular-editor/releases/tag/v3.0.4"
 }

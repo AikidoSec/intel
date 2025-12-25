@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/kube-vip/kube-vip",
+  "patch_versions": [
+    "1.0.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.0.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "https://app.grammarly.com/ddocs/2188514102",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/kube-vip/kube-vip` library to the patch version.",
+  "vulnerable_to": "Improper Access Control",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "HIGH",
+  "aikido_score": 72,
+  "changelog": "https://github.com/kube-vip/kube-vip/releases/tag/v1.0.3"
 }

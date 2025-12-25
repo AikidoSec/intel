@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "pingencom/pingen2-sdk-php",
+  "patch_versions": [
+    "2.20.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.10.0",
+      "2.19.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-208"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Timing Attack on webhook signature verification due to the use of a non-constant-time string comparison function (like a simple `===` operator) when validating the `Signature` header against the HMAC hash, allowing an attacker to exploit minute timing differences in the comparison operation to iteratively guess the correct HMAC signature and forge malicious webhook requests.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `pingencom/pingen2-sdk-php` library to the patch version.",
+  "vulnerable_to": "Observable Timing Discrepancy",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/pingencom/pingen2-sdk-php/releases/tag/2.20.0"
 }

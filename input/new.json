@@ -1,24 +1,15 @@
 {
-  "package_name": "altair-graphql-core",
-  "patch_versions": [
-    "8.4.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "7.2.0",
-      "8.4.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-1321"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Prototype Pollution vulnerability in the `setByDotNotation` utility function, where the lack of validation for user-controlled dot-notation paths allows an attacker to exploit it by injecting dangerous keys like `__proto__`, `constructor`, or `prototype` to mutate `Object.prototype`, potentially leading to Denial of Service (DoS), logic bypasses, or even Remote Code Execution (RCE).",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `altair-graphql-core` library to the patch version.",
-  "vulnerable_to": "Prototype Pollution",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 70,
-  "changelog": "https://github.com/altair-graphql/altair/releases/tag/v8.4.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

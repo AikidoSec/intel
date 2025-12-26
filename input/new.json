@@ -1,24 +1,15 @@
 {
-  "package_name": "@lightdash/sdk",
-  "patch_versions": [
-    "0.2262.5"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1105.0",
-      "0.2262.4"
-    ]
-  ],
-  "cwe": [
-    "CWE-89"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to SQL Injection due to insufficient sanitization of user input passed into full-text search queries, where the application previously failed to strip PostgreSQL's tsquery operators like `:`, `&`, `|`, `!`, and parentheses, allowing an attacker to craft malicious search input that modifies query logic, such as injecting `'legitimate':* & !'excluded':*` to alter result sets or cause denial-of-service.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@lightdash/sdk` library to the patch version.",
-  "vulnerable_to": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 48,
-  "changelog": "https://github.com/lightdash/lightdash/releases/tag/0.2262.5"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

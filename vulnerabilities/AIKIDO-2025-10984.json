@@ -1,0 +1,26 @@
+{
+  "package_name": "xiph.ogg",
+  "patch_versions": [
+    "1.3.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.1.1",
+      "1.3.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-119"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an integer overflow vulnerability via the `ogg_sync_buffer` function, where a `long` type variable (`newsize`) could exceed the maximum value storable in an `int` (`oy->storage`), causing the internal buffer allocation to succeed. Still, the stored buffer size overflows and wraps to a small value. An attacker could exploit this vulnerability by providing crafted input that triggers the overflow, resulting in a mismatch between the actual allocated buffer size and the recorded storage value. It could then cause subsequent operations to write beyond the allocated buffer's bounds, resulting in a heap-based buffer overflow, application crash, or arbitrary code execution. The patched code mitigates this by adding a check (`if(size>INT_MAX-4096-oy->fill)`) to fail safely before the overflow can occur.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `xiph.ogg` library to the patch version.",
+  "vulnerable_to": "Integer Overflow",
+  "related_cve_id": "",
+  "language": "C++",
+  "severity_class": "LOW",
+  "aikido_score": 28,
+  "changelog": "https://github.com/xiph/ogg/releases/tag/v1.3.5",
+  "last_modified": "2025-12-26",
+  "published": "2025-12-26"
+}

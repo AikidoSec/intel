@@ -1,24 +1,15 @@
 {
-  "package_name": "validator",
-  "patch_versions": [
-    "13.15.26"
-  ],
-  "vulnerable_ranges": [
-    [
-      "5.0.0",
-      "13.15.25"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting due to a URL Validation Bypass using URL Encoding, where the isURL function fails to properly validate URLs containing URL-encoded characters. It allows attackers to craft URLs that evade validation checks, and by tricking users into clicking such links, they can execute arbitrary JavaScript in the victim's browser, leading to cross-site scripting (XSS) attacks and potential compromise of user data or session hijacking.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `validator` library to the patch version.",
-  "vulnerable_to": "Cross-Site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 43,
-  "changelog": "https://github.com/validatorjs/validator.js/releases/tag/13.15.26"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

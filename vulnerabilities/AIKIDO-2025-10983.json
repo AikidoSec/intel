@@ -1,0 +1,26 @@
+{
+  "package_name": "c-ares.c-ares",
+  "patch_versions": [
+    "1.34.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.32.3",
+      "1.34.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "Use after free() in read_answer() when process_answer() may terminate a query such as after maximum attempts. This was causing the connection to be closed, but still possibly additional answers to be processed. This is a missed case from CVE-2025-31498.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `c-ares.c-ares` library to the patch version.",
+  "vulnerable_to": "Use After Free",
+  "related_cve_id": "CVE-2025-62408",
+  "language": "C++",
+  "severity_class": "MEDIUM",
+  "aikido_score": 69,
+  "changelog": "https://github.com/c-ares/c-ares/releases/tag/v1.34.6",
+  "last_modified": "2025-12-26",
+  "published": "2025-12-26"
+}

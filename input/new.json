@@ -12,7 +12,7 @@
   "cwe": [
     "CWE-284"
   ],
-  "tldr": "https://app.grammarly.com/ddocs/2188514102",
+  "tldr": "Affected versions of this package are vulnerable to a Service Port Security Bypass, where the `--onlyAllowTrafficServicePorts` flag and `enable_service_security` setting fail to apply intended port restriction rules, allowing an attacker who can route traffic to a load balancer IP (e.g., via BGP with kube-vip) to access sensitive Kubernetes API ports (like 6443 and 10250) that should be blocked, thereby exposing the cluster's control plane and node endpoints.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `github.com/kube-vip/kube-vip` library to the patch version.",
   "vulnerable_to": "Improper Access Control",

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@elizaos/server",
+  "patch_versions": [
+    "1.7.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.6.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-693"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Inefficient Encryption Logic due to incorrect encryption order, encrypting secrets before environment variables were merged, sensitive data like API keys and credentials from env vars remained unencrypted, enabling attackers with access to secret storage or transmission channels to read plaintext environment variables and potentially compromise systems or steal data.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@elizaos/server` library to the patch version.",
+  "vulnerable_to": "Protection Mechanism Failure",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 68,
+  "changelog": "https://github.com/elizaOS/eliza/releases/tag/v1.7.0"
 }

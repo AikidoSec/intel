@@ -1,15 +1,44 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "eProsima.Fast-DDS",
+  "patch_versions": [
+    "2.6.10",
+    "2.10.7",
+    "2.14.5",
+    "3.0.2",
+    "3.1.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.6.9"
+    ],
+    [
+      "2.7.0",
+      "2.10.6"
+    ],
+    [
+      "2.11.0",
+      "2.14.4"
+    ],
+    [
+      "3.0.0",
+      "3.0.1"
+    ],
+    [
+      "3.1.0",
+      "3.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-345"
+  ],
+  "tldr": "Affected versions of the package verify expired JWT tokens, allowing unauthorized access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `eProsima.Fast-DDS` library to the patch version.",
+  "vulnerable_to": "Insufficient Verification of Data Authenticity",
+  "related_cve_id": "CVE-2025-24807",
+  "language": "c++",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/eProsima/Fast-DDS/releases/tag/v2.14.5"
 }

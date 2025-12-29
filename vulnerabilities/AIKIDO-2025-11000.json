@@ -1,0 +1,26 @@
+{
+  "package_name": "@zereight/mcp-gitlab",
+  "patch_versions": [
+    "2.0.21"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.0.20"
+    ]
+  ],
+  "cwe": [
+    "CWE-1327"
+  ],
+  "tldr": "Affected versions of this package contain a server exposure vulnerability due to the default `HOST` configuration being set to `0.0.0.0`, which binds the service to all network interfaces; in SSE or HTTP mode, this allows any attacker on the same local network to connect to the exposed MCP server and leverage the embedded `GITLAB_TOKEN` permissions, leading to unauthorized access and potential misuse of GitLab credentials from other devices on the internal corporate network.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@zereight/mcp-gitlab` library to the patch version.",
+  "vulnerable_to": "Binding to an Unrestricted IP Address",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 67,
+  "changelog": "https://github.com/zereight/gitlab-mcp/releases/tag/v2.0.21",
+  "last_modified": "2025-12-29",
+  "published": "2025-12-29"
+}

@@ -1,24 +1,15 @@
 {
-  "package_name": "payload",
-  "patch_versions": [
-    "3.69.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.0.0",
-      "3.68.5"
-    ]
-  ],
-  "cwe": [
-    "CWE-434"
-  ],
-  "tldr": "Affected versions of this package contain a file upload vulnerability where attackers could bypass MIME type restrictions by uploading a corrupted PDF with a manipulated content type or an SVG containing malicious scripts, which could lead to arbitrary script execution upon rendering; this was mitigated by implementing additional file extension validation for PDFs and introducing SVG sanitization to remove dangerous elements.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `payload` library to the patch version.",
-  "vulnerable_to": "Unrestricted Upload of File",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 53,
-  "changelog": "https://github.com/payloadcms/payload/releases/tag/v3.69.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "mlflow-tracing",
+  "patch_versions": [
+    "3.8.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.17.2",
+      "3.8.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-78"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Command Injection due to the unsafe construction of a system command that processes dependency specifications from a configuration file, allowing an attacker who controls the input, such as by supplying a crafted model artifact, to inject and execute arbitrary shell commands by including special elements in the dependency list, which would then run with the application's privileges. The issue was fixed by modifying the code to avoid unsafe shell command interpolation and instead process arguments securely.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mlflow-tracing` library to the patch version.",
+  "vulnerable_to": "Command Injection",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 77,
+  "changelog": "https://github.com/mlflow/mlflow/blob/master/CHANGELOG.md#381-2025-12-26"
 }

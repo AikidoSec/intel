@@ -1,24 +1,15 @@
 {
-  "package_name": "axum-extra",
-  "patch_versions": [
-    "0.12.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "0.12.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-191"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to an integer underflow in the `FileStream::try_range_response` function when handling empty files, which may lead to denial of service (DoS); this vulnerability occurs due to improper calculation of range responses for zero-size files, causing an integer underflow that can result in memory corruption or application crash. An attacker can exploit this by sending a malicious range request targeting an empty file, triggering the underflow, and potentially crashing the service, thereby causing a DoS condition.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `axum-extra` library to the patch version.",
-  "vulnerable_to": "Integer Underflow",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "MEDIUM",
-  "aikido_score": 41,
-  "changelog": "https://github.com/tokio-rs/axum/blob/main/axum-extra/CHANGELOG.md#0123"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,24 +1,15 @@
 {
-  "package_name": "mlflow-tracing",
-  "patch_versions": [
-    "3.8.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.14.2",
-      "3.7.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-89"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to SQL Injection due to improper neutralization of special elements in SQL commands, specifically where the `function.full_name` and parameter names (`p.name`) were directly concatenated into SQL statements without proper escaping or quoting, allowing an attacker with control over these values to inject arbitrary SQL code by crafting malicious function or parameter names containing SQL metacharacters, thereby potentially executing unauthorized commands, accessing, modifying, or deleting sensitive data within the database.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `mlflow-tracing` library to the patch version.",
-  "vulnerable_to": "SQL Injection",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "HIGH",
-  "aikido_score": 71,
-  "changelog": "https://github.com/mlflow/mlflow/blob/master/CHANGELOG.md#380-2025-12-19"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -16,10 +16,10 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `rou3` library to the patch version.",
   "vulnerable_to": "Improper Resolution of Path Equivalence",
-  "related_cve_id": "",
+  "related_cve_id": "GHSA-x732-6j76-qmhm",
   "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 63,
+  "severity_class": "HIGH",
+  "aikido_score": 85,
   "changelog": "https://github.com/h3js/rou3/commit/f60b43fa648399534507c9ac7db36d705b8874c3",
   "last_modified": "2025-12-29",
   "published": "2025-12-29"

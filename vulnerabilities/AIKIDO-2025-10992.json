@@ -1,0 +1,26 @@
+{
+  "package_name": "wolfSSL.wolfssl",
+  "patch_versions": [
+    "5.8.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.8.2",
+      "5.8.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-191"
+  ],
+  "tldr": "An integer underflow in XChaCha20-Poly1305 decryption can lead to out-of-bounds memory access. This issue occurs specifically in `wc_XChaCha20Poly1305_Decrypt()` and does not affect TLS connections, as the function is only invoked through direct application calls.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `wolfSSL.wolfssl` library to the patch version.",
+  "vulnerable_to": "Integer Underflow",
+  "related_cve_id": "CVE-2025-11931",
+  "language": "C++",
+  "severity_class": "LOW",
+  "aikido_score": 21,
+  "changelog": "https://github.com/wolfSSL/wolfssl/blob/master/ChangeLog.md#wolfssl-release-584-nov-20-2025",
+  "last_modified": "2025-12-29",
+  "published": "2025-12-29"
+}

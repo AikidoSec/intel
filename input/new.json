@@ -10,12 +10,12 @@
     ]
   ],
   "cwe": [
-    "CWE-190"
+    "CWE-191"
   ],
   "tldr": "Affected versions of this package are vulnerable to an integer underflow in the `FileStream::try_range_response` function when handling empty files, which may lead to denial of service (DoS); this vulnerability occurs due to improper calculation of range responses for zero-size files, causing an integer underflow that can result in memory corruption or application crash. An attacker can exploit this by sending a malicious range request targeting an empty file, triggering the underflow, and potentially crashing the service, thereby causing a DoS condition.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `axum-extra` library to the patch version.",
-  "vulnerable_to": "Integer Overflow",
+  "vulnerable_to": "Integer Underflow",
   "related_cve_id": "",
   "language": "RUST",
   "severity_class": "MEDIUM",

@@ -1,0 +1,27 @@
+{
+  "package_name": "wolfSSL.wolfssh",
+  "patch_versions": [
+    "1.4.21"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.4.20"
+    ]
+  ],
+  "cwe": [
+    "CWE-787"
+  ],
+  "tldr": "A potential stack-based buffer overflow exists when processing a file handle supplied by an SFTP client. After an SFTP connection is established, a malicious client can send crafted read, write, or set-state SFTP packets that cause the server-side SFTP code to write to stack memory.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `wolfSSL.wolfssh` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Out-of-bounds Write",
+  "related_cve_id": "CVE-2025-11624",
+  "language": "C++",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/wolfSSL/wolfssh/releases/tag/v1.4.21-stable",
+  "last_modified": "2025-12-29",
+  "published": "2025-12-29"
+}

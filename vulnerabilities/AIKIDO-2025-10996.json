@@ -1,0 +1,26 @@
+{
+  "package_name": "rou3",
+  "patch_versions": [
+    "0.7.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.6.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-41"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Path Equivalence vulnerability, where the route splitting function inadequately preserves empty segments during path processing, as evidenced by the old code that filters out empty segments using `filter(Boolean)`, allowing attackers to bypass access restrictions and rate limits by crafting requests with multiple slashes in the URL path that are incorrectly normalized and treated as identical routes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `rou3` library to the patch version.",
+  "vulnerable_to": "Improper Resolution of Path Equivalence",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 63,
+  "changelog": "https://github.com/h3js/rou3/commit/f60b43fa648399534507c9ac7db36d705b8874c3",
+  "last_modified": "2025-12-29",
+  "published": "2025-12-29"
+}

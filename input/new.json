@@ -1,24 +1,15 @@
 {
-  "package_name": "wolfSSL.wolfssl",
-  "patch_versions": [
-    "5.8.4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "5.8.2",
-      "5.8.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-203"
-  ],
-  "tldr": "A timing side-channel exists in TLS 1.3 PSK binder verification, where the server previously performed binder validation using a non-constant-time method. This behavior could potentially leak information about the PSK binder through timing differences.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `wolfSSL.wolfssl` library to the patch version.",
-  "vulnerable_to": "Observable Discrepancy",
-  "related_cve_id": "CVE-2025-11932",
-  "language": "C++",
-  "severity_class": "LOW",
-  "aikido_score": 23,
-  "changelog": "https://github.com/wolfSSL/wolfssl/blob/master/ChangeLog.md#wolfssl-release-584-nov-20-2025"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,0 +1,26 @@
+{
+  "package_name": "wolfSSL.wolfssl",
+  "patch_versions": [
+    "5.8.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.8.2",
+      "5.8.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Improper input validation in the TLS 1.3 CertificateVerify signature algorithm negotiation in wolfSSL 5.8.2 and earlier allows a signature algorithm downgrade on multiple platforms. A malicious server can select a weaker algorithm than the one proposed by the client, for example responding with ECDSA P256 when the client offered ECDSA P521, and the connection continues using the downgraded algorithm if the client supports it.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `wolfSSL.wolfssl` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "CVE-2025-11934",
+  "language": "C++",
+  "severity_class": "LOW",
+  "aikido_score": 21,
+  "changelog": "https://github.com/wolfSSL/wolfssl/blob/master/ChangeLog.md#wolfssl-release-584-nov-20-2025",
+  "last_modified": "2025-12-29",
+  "published": "2025-12-29"
+}

@@ -1,0 +1,27 @@
+{
+  "package_name": "better-ccflare",
+  "patch_versions": [
+    "3.0.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.0.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package may expose sensitive information by unintentionally forwarding the client API key to OAuth providers. When both `Authorization` and `x-api-key` headers are present, only the `Authorization` header is removed, allowing the API key to be leaked to upstream services. This change ensures both headers are stripped before provider-specific credentials are applied, preventing unintended disclosure of authentication data.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `better-ccflare` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Exposure of Sensitive Information",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/tombii/better-ccflare/releases/tag/v3.0.4",
+  "last_modified": "2025-12-30",
+  "published": "2025-12-30"
+}

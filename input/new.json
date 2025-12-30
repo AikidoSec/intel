@@ -1,29 +1,15 @@
 {
-  "package_name": "eProsima.Fast-DDS",
-  "patch_versions": [
-    "2.6.11",
-    "3.4.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "2.6.10"
-    ],
-    [
-      "2.7.0",
-      "3.4.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-190"
-  ],
-  "tldr": "Affected versions of the package are vulnerable to CVE-2025-62599, CVE-2025-62600, CVE-2025-62601, CVE-2025-62602, CVE-2025-62603, and CVE-2025-64098 by fully refactoring the built-in deserializers in `CDRMessage`. The update introduces additional safety checks, including protections against arithmetic overflows during length validation, to ensure robust and secure deserialization. Also CVE-2025-62799, CVE-2025-64438 and CVE-2025-65016 were fixed.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `eProsima.Fast-DDS` library to the patch version.",
-  "vulnerable_to": "Integer Overflow",
-  "related_cve_id": "CVE-2025-62599",
-  "language": "c++",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://github.com/eProsima/Fast-DDS/releases/tag/v3.4.1"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/opencost/opencost",
+  "patch_versions": [
+    "1.119.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.118.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-326"
+  ],
+  "tldr": "Affected versions of this package allow the use of insecure TLS 1.0 and TLS 1.1 protocols, exposing communications to man-in-the-middle attacks. This vulnerability compromises the confidentiality and integrity of data by enabling attackers to intercept and manipulate the data being transmitted.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and your configurations allow for TLS 1.0 or TLS 1.1.",
+  "how_to_fix": "Upgrade the `github.com/opencost/opencost` library to the patch version or strengthen TLS configuration to use TLS 1.2 or higher.",
+  "vulnerable_to": "Inadequate Encryption Strength",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/opencost/opencost/releases/tag/v1.119.0",
+  "last_modified": "2025-12-30",
+  "published": "2025-12-30"
+}

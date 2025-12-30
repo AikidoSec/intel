@@ -1,25 +1,15 @@
 {
-  "package_name": "mlflow",
-  "package_name_alias": "mlflow-skinny",
-  "patch_versions": [
-    "3.8.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.17.2",
-      "3.8.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-78"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to command injection via malicious model artifacts. In the affected code, dependency specifications from a model’s `python_env.yaml` file were directly interpolated into a shell command when installing model dependencies. An attacker who can supply a crafted model artifact could include shell metacharacters (e.g., `;`, `|`, backticks) in dependency strings, leading to arbitrary command execution during model deployment with `env_manager=LOCAL`. This PR fixes the issue by replacing vulnerable shell invocation with safe subprocess calls using structured argument lists parsed with `shlex.split()`, preventing injection of unintended commands.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `mlflow` library to the patch version.",
-  "vulnerable_to": "Command Injection",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "HIGH",
-  "aikido_score": 87,
-  "changelog": "https://github.com/mlflow/mlflow/blob/master/CHANGELOG.md#381-2025-12-26"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

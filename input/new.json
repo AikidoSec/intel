@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "drf-simple-apikey",
+  "patch_versions": [
+    "2.3.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.2.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-20",
+    "CWE-208"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to multiple security risks due to inadequate API key authentication handling and insufficient hardening against timing attacks and unvalidated input. Prior to this commit, the authentication backend did not use constant‑time comparisons when verifying API keys, making it susceptible to timing analysis that could allow an attacker to infer valid API key values based on response timing. Additionally, endpoint analytics paths were stored without sanitization, opening the door to malicious or malformed path data being introduced into analytics tracking and potentially causing unexpected behavior or injection risks. The commit adds timing attack protection with constant‑time comparisons and artificial delays, input sanitization for analytics endpoint paths, Fernet key validation, HTTPS enforcement in production, and a suite of new security‑related settings and audit logging to strengthen protection of API key usage.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade the `drf-simple-apikey` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "CRITICAL",
+  "aikido_score": 91,
+  "changelog": "https://github.com/koladev32/drf-simple-apikey/releases/tag/v2.3.0"
 }

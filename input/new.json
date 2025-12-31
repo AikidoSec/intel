@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "github.com/strukturag/libheif",
+  "patch_versions": [
+    "1.21.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.20.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-125"
+  ],
+  "tldr": "A crafted HEIF file that exercises the overlay image item path triggers a heap buffer over-read in `HeifPixelImage::overlay()`. The function calculates a negative row length—likely due to an unclipped overlay rectangle or invalid offsets—which underflows when converted to `size_t` and is then passed to `memcpy`. This results in an excessively large read beyond the bounds of the source plane, leading to a crash.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/strukturag/libheif` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Out-of-bounds Read",
+  "related_cve_id": "CVE-2025-68431 ",
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 63,
+  "changelog": "https://github.com/strukturag/libheif/releases/tag/v1.21.0"
 }

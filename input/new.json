@@ -1,25 +1,15 @@
 {
-  "package_name": "mcp-atlassian",
-  "patch_versions": [
-    "0.12.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "0.11.12"
-    ]
-  ],
-  "cwe": [
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to uncontrolled resource consumption due to missing explicit timeout configuration on HTTP requests in the OAuth flow, which can cause connections to hang indefinitely when Atlassian APIs are slow or unresponsive. The issue impacts OAuth token exchange, token refresh, and cloud ID retrieval requests in `src/mcp_atlassian/utils/oauth.py`. Explicit connection (5 seconds) and read (20 seconds) timeouts mitigate the risk by preventing stalled connections and improving overall reliability.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `mcp-atlassian` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Denial of Service (DoS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "LOW",
-  "aikido_score": 35,
-  "changelog": "https://github.com/sooperset/mcp-atlassian/releases/tag/v0.12.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

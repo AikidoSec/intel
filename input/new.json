@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "trix",
+  "patch_versions": [
+    "2.1.16"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.1.15"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting due to insufficient sanitization of attachment payloads in the Trix editor prior to version 2.1.16. An attacker can inject malicious content into the `data-trix-attachment` attribute, which, when rendered as HTML and interacted with, allows arbitrary JavaScript execution in the context of the user’s session, potentially resulting in unauthorized actions or disclosure of sensitive information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `trix` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Cross Site Scripting (XSS)",
+  "related_cve_id": "GHSA-g9jg-w8vm-g96v",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 46,
+  "changelog": "https://github.com/basecamp/trix/releases/tag/v2.1.16"
 }

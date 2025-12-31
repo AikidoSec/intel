@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `github.com/strukturag/libheif` library to the patch version.",
   "reporter": "",
   "vulnerable_to": "Out-of-bounds Read",
-  "related_cve_id": "CVE-2025-68431 ",
+  "related_cve_id": "CVE-2025-68431",
   "language": "GO",
   "severity_class": "MEDIUM",
   "aikido_score": 63,

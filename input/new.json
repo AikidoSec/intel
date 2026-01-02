@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@uirouter/core",
+  "patch_versions": [
+    "6.1.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.14",
+      "6.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package use inefficient regular expression patterns in the `urlMatcher` functions. These patterns can cause excessive backtracking, making the application vulnerable to regular expression denial of service (redos). An attacker can exploit this by providing specially crafted input that triggers high computational overhead, potentially leading to severe performance degradation, service outages, or denial-of-service conditions.\n",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@uirouter/core` library to the patch version.",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 32,
+  "changelog": "https://github.com/ui-router/core/compare/6.1.1...6.1.2"
 }

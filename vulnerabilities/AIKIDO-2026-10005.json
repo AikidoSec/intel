@@ -1,0 +1,26 @@
+{
+  "package_name": "chainlit",
+  "patch_versions": [
+    "2.9.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.9.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper handling of user-controlled custom thread element updates. By forging update requests with crafted element data, an attacker could inject unauthorized fields (such as file paths or URLs), potentially leading to unintended file access or manipulation of thread elements. The issue stems from insufficient input validation and trust in client-supplied element attributes, which is mitigated by sanitizing custom element data before processing.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `chainlit` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/Chainlit/chainlit/releases/tag/2.9.4",
+  "last_modified": "2026-01-06",
+  "published": "2026-01-06"
+}

@@ -1,24 +1,15 @@
 {
-  "package_name": "jsonschema",
-  "patch_versions": [
-    "0.38.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.29.0",
-      "0.37.4"
-    ]
-  ],
-  "cwe": [
-    "CWE-416"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to use-after-free due to incorrect lifetime handling during asynchronous `$ref` resolution. When multiple `$ref` references point to the same external schema URL but use different fragments, internal state can be freed prematurely and later accessed again. This can result in undefined behavior, including crashes or other memory safety issues, during schema validation.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `jsonschema` library to the patch version.",
-  "vulnerable_to": "Use-After-Free",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "LOW",
-  "aikido_score": 36,
-  "changelog": "https://github.com/Stranger6667/jsonschema/blob/master/CHANGELOG.md#0380---2025-12-24"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

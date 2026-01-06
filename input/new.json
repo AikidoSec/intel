@@ -1,24 +1,15 @@
 {
-  "package_name": "cvat-sdk",
-  "patch_versions": [
-    "2.53.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.8.1",
-      "2.52.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-23"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Path Traversal. An authenticated attacker with an account on a CVAT instance can list the contents of any file system directory accessible to the CVAT server, exposing the names of files and subdirectories. File contents themselves are not disclosed.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `cvat-sdk` library to the patch version.",
-  "vulnerable_to": "Path Traversal",
-  "related_cve_id": "CVE-2025-68430",
-  "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 53,
-  "changelog": "https://github.com/cvat-ai/cvat/releases/tag/v2.53.0"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

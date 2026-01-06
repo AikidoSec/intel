@@ -1,0 +1,26 @@
+{
+  "package_name": "scorm-again",
+  "patch_versions": [
+    "3.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.6.8"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution in the `_commonSetCMIValue` function, which may allow attackers to manipulate object prototypes and potentially alter application behavior or escalate privileges.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges",
+  "how_to_fix": "Upgrade the `scorm-again` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "",
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 42,
+  "changelog": "https://github.com/jcputney/scorm-again/releases/tag/3.0.0",
+  "last_modified": "2026-01-06",
+  "published": "2026-01-06"
+}

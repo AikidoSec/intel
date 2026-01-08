@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "cjs-module-lexer",
+  "patch_versions": [
+    "2.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.4.3",
+      "2.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Arbitrary Code Execution via Insecure Input Deserialization due to the `decode` function using the `eval()` function on potential user-supplied input (`str`) without proper sanitization or validation. An attacker can exploit this by injecting malicious JavaScript code as the `str` argument, which will be directly evaluated and executed within the application's context, potentially leading to system compromise, data theft, or other malicious activities.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `cjs-module-lexer` library to the patch version.",
+  "vulnerable_to": "Improper Control of Generation of Code ('Code Injection')",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 72,
+  "changelog": "https://github.com/nodejs/cjs-module-lexer/releases/tag/2.2.0"
 }

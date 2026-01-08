@@ -1,24 +1,15 @@
 {
-  "package_name": "@better-auth/sso",
-  "patch_versions": [
-    "1.4.10"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.4.0",
-      "1.4.9"
-    ]
-  ],
-  "cwe": [
-    "CWE-770"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Denial of Service (DoS) due to Missing Size Limits in SAML handling. The system did not enforce restrictions on the size of incoming SAML responses or Identity Provider (IdP) metadata, allowing an attacker to submit large payloads to consume server resources, potentially leading to service degradation or complete unavailability.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@better-auth/sso` library to the patch version.",
-  "vulnerable_to": "Allocation of Resources Without Limits or Throttling",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 52,
-  "changelog": "https://github.com/better-auth/better-auth/releases/tag/v1.4.10"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

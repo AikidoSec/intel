@@ -1,15 +1,27 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "n8n",
+  "patch_versions": [
+    "1.121.3
+"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.123.0",
+      "1.121.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-913"
+  ],
+  "tldr": "Affected versions of `n8n` are vulnerable to unauthenticated remote code execution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `n8n` library to the patch version.",
+  "vulnerable_to": "Remote Code Execution via Path Traversal",
+  "related_cve_id": "CVE-2026-21877",
+  "language": "JS",
+  "severity_class": "CRITICAL",
+  "aikido_score": 99,
+  "changelog": "https://github.com/advisories/GHSA-v364-rw7m-3263",
+  "last_modified": "2026-07-01",
+  "published": "2026-07-01"
 }

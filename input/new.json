@@ -19,7 +19,7 @@
   "related_cve_id": "CVE-2026-21877",
   "language": "JS",
   "severity_class": "CRITICAL",
-  "aikido_score": 99,
+  "aikido_score": 100,
   "changelog": "https://github.com/advisories/GHSA-v364-rw7m-3263",
   "last_modified": "2026-07-01",
   "published": "2026-07-01"

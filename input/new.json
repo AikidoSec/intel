@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "hellojs",
+  "patch_versions": [
+    "1.21.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.20.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Prototype Pollution via the `extend` utility function due to insufficient validation of user input when merging objects; an attacker can exploit this by crafting a malicious object containing keys like `'prototype'` (which was initially missing from the blocklist) and supplying it to the function, potentially allowing the modification of the Object prototype and leading to denial of service or remote code execution in specific environments.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `hellojs` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/MrSwitch/hello.js/releases/tag/v1.21.0"
 }

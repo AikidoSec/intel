@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "elysia",
+  "patch_versions": [
+    "1.4.20"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.4.19"
+    ]
+  ],
+  "cwe": [
+    "CWE-208"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to timing attacks in signed cookie verification, where the use of non-constant-time string equality checks during signature validation could allow an attacker to exploit measurable timing differences by submitting forged cookies and analyzing response times, gradually deducing the correct signature to forge authenticated cookies and potentially bypass authentication, a risk mitigated by implementing constant-time comparison to eliminate side-channel leaks while preserving valid cookie behavior.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `elysia` library to the patch version.",
+  "vulnerable_to": "Observable Timing Discrepancy",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/elysiajs/elysia/releases/tag/1.4.20"
 }

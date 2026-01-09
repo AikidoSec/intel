@@ -1,0 +1,26 @@
+{
+  "package_name": "sevenz-rust2",
+  "patch_versions": [
+    "0.20.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.7.0",
+      "0.20.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-693"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Plaintext Archive Header Information Disclosure. When archive header encryption is explicitly enabled `set_encrypt_header(true)`, a size optimization check in the code incorrectly bypasses encryption for small entries; because the check compares raw header size against compressed size plus a constant without accounting for AES encryption padding, it often writes the header (containing filenames, directory structure, and timestamps) in plain text. An attacker could exploit this by analyzing the archive's raw bytes to extract sensitive metadata from supposedly encrypted archives, compromising confidentiality.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and if you explicitly enabled `set_encrypt_header(true)`.",
+  "how_to_fix": "Upgrade the `sevenz-rust2` library to the patch version.",
+  "vulnerable_to": "Protection Mechanism Failure",
+  "related_cve_id": "",
+  "language": "RUST",
+  "severity_class": "MEDIUM",
+  "aikido_score": 46,
+  "changelog": "https://github.com/hasenbanck/sevenz-rust2/blob/main/CHANGELOG.md#0201---2026-01-01",
+  "last_modified": "2026-01-09",
+  "published": "2026-01-09"
+}

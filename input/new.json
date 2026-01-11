@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@google/gemini-cli-core",
+  "patch_versions": [
+    "0.23.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.15.0",
+      "0.22.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-78"
+  ],
+  "tldr": "Affected versions of this package contain a command injection vulnerability in the hooks system where unsanitized expansion of the `$GEMINI_PROJECT_DIR` and `$CLAUDE_PROJECT_DIR` variables occurred immediately before shell execution, allowing an attacker who controls a malicious directory path name to inject arbitrary commands by crafting environment variables or pathnames containing shell metacharacters, leading to arbitrary code execution with the privileges of the application.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@google/gemini-cli-core` library to the patch version.",
+  "vulnerable_to": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 52,
+  "changelog": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.23.0"
 }

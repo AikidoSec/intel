@@ -12,7 +12,7 @@
   "cwe": [
     "CWE-601"
   ],
-  "tldr": "Affected versions of this package are vulnerable to Open Redirection, where the router does not properly validate or sanitize URL path segments before processing redirects. An attacker can exploit this by crafting a malformed URL containing injected carriage returns and external domains, such as `http://localhost:3000/%0d/google.com/`, which causes the application to redirect users to an arbitrary, attacker-controlled site. This rogue redirect can be used for phishing attacks, malware distribution, or to leverage trust in the application's domain.",
+  "tldr": "Affected versions of this package are vulnerable to Open Redirection, where the router does not properly validate or sanitize URL path segments before processing redirects. An attacker can exploit this by crafting a malformed URL containing injected carriage returns and external domains, such as `http://localhost:3000/%0d/evil.com/`, which causes the application to redirect users to an arbitrary, attacker-controlled site. This rogue redirect can be used for phishing attacks, malware distribution, or to leverage trust in the application's domain.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `@tanstack/router-core` library to the patch version.",
   "vulnerable_to": "Open Redirect",

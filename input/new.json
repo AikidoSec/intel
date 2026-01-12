@@ -18,7 +18,7 @@
   "vulnerable_to": "Improper Control of Generation of Code ('Code Injection')",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 72,
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
   "changelog": "https://github.com/nodejs/cjs-module-lexer/releases/tag/2.2.0"
 }

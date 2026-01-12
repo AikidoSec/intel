@@ -1,24 +1,15 @@
 {
-  "package_name": "@rudderstack/rudder-sdk-node",
-  "patch_versions": [
-    "3.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.0.0",
-      "2.1.11"
-    ]
-  ],
-  "cwe": [
-    "CWE-502"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Remote Code Execution via Insecure Deserialization, where an attacker with write access to the Redis persistence queue could inject malicious JavaScript code into a job's `eventData`; this code would then be executed on the server during deserialization using the unsafe `eval()` function when the job was processed, allowing for system compromise, which was fixed in v3.0.0 by replacing `eval()` with safe `JSON.parse()`.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@rudderstack/rudder-sdk-node` library to the patch version.",
-  "vulnerable_to": "Deserialization of Untrusted Data leading to Remote Code Execution",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 88,
-  "changelog": "https://github.com/rudderlabs/rudder-sdk-node/releases/tag/v3.0.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

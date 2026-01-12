@@ -1,0 +1,26 @@
+{
+  "package_name": "undici",
+  "patch_versions": [
+    "7.18.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "7.0.0",
+      "7.18.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-770"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Content-Encoding Chain Resource Exhaustion attack, where a malicious server can send an HTTP response with thousands of layered `Content-Encoding` headers, forcing the client to undergo excessive recursive decompression that consumes high CPU and memory resources, potentially leading to a denial-of-service. It was mitigated by limiting the permissible chain to 5 encodings.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `undici` library to the patch version.",
+  "vulnerable_to": "Allocation of Resources Without Limits or Throttling",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/nodejs/undici/releases/tag/v7.18.2",
+  "last_modified": "2026-01-12",
+  "published": "2026-01-12"
+}

@@ -19,7 +19,7 @@
   "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
   "language": "JAVA",
-  "severity_class": "MEDIUM",
-  "aikido_score": 42,
+  "severity_class": "LOW",
+  "aikido_score": 30,
   "changelog": "https://github.com/discord-jda/JDA/releases/tag/v6.2.1"
 }

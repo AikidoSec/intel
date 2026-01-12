@@ -1,5 +1,6 @@
 {
   "package_name": "bcrypt",
+  "package_name_alias": "bcrypt-ruby",
   "patch_versions": [
     "3.1.21"
   ],

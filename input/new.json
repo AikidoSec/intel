@@ -1,25 +1,15 @@
 {
-  "package_name": "pymongo",
-  "patch_versions": [
-    "4.16.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "4.11",
-      "4.15.5"
-    ]
-  ],
-  "cwe": [
-    "CWE-532"
-  ],
-  "tldr": "Affected versions of the package may expose sensitive information in log files because invalid documents are included directly in `bson.errors.InvalidDocument` error messages. This behavior can leak user-provided or sensitive data when errors are logged, rather than safely storing the invalid document separately on the exception object.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `pymongo` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "LOW",
-  "aikido_score": 25,
-  "changelog": "https://github.com/mongodb/mongo-python-driver/blob/master/doc/changelog.rst#changes-in-version-4160-20260107"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

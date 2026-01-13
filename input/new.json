@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "kreait/firebase-php",
+  "patch_versions": [
+    "8.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "7.24.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package may expose sensitive information because parameters such as passwords, tokens, and private keys are not marked as sensitive, allowing them to appear in stack traces and error logs.",
+  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
+  "how_to_fix": "Upgrade `kreait/firebase-php` to a patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 21,
+  "changelog": "https://github.com/kreait/firebase-php/releases/tag/8.0.0"
 }

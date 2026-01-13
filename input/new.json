@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/milvus-io/milvus/pkg/v2",
+  "patch_versions": [
+    "2.6.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.6.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to incorrect RBAC authorization behavior where etcd prefix queries can match entries with similar prefixes, potentially causing roles or grants to be resolved for the wrong user or entity. For example, when querying roles for user \"admin\", it could mistakenly return roles belonging to \"admin2\".",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/milvus-io/milvus/pkg/v2` library to the patch version.",
+  "vulnerable_to": "Information Disclosure",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/milvus-io/milvus/releases/tag/v2.6.8"
 }

@@ -1,8 +1,5 @@
 {
-  "package_name": "opencode",
-  "package_wildcard_contains": "opencode-darwin",
-  "package_wildcard_starts_with": "opencode-linux",
-  "package_wildcard_ends_in": "opencode-windows-x64",
+  "package_name": "opencode-ai",
   "patch_versions": [
     "1.1.10"
   ],
@@ -16,7 +13,7 @@
     "CWE-94",
     "CWE-79"
   ],
-  "tldr": "Affected versions of this package are vulnerable to cross-site scripting on the OpenCode localhost web UI due to unsanitized HTML rendering and a server URL override feature. An attacker can leverage JavaScript execution on `http://localhost:4096` to access the `/pty/` API endpoints and spawn arbitrary processes, resulting in local code execution.\n",
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting on the OpenCode localhost web UI due to unsanitized HTML rendering and a server URL override feature. An attacker can leverage JavaScript execution on `http://localhost:4096` to access the `/pty/` API endpoints and spawn arbitrary processes, resulting in local code execution.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `opencode` library to the patch version.",
   "vulnerable_to": "Remote Code Execution (RCE)",

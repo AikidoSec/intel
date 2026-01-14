@@ -1,15 +1,29 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.16.18",
+    "5.8.22"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "4.16.17"
+    ],
+    [
+      "5.0.0",
+      "5.8.21"
+    ]
+  ],
+  "cwe": [
+    "CWE-89"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to SQL injection because user-controlled query criteria could be passed into the internal query builder without sufficient validation, allowing untrusted input to influence the structure of generated SQL queries. In Craft CMS, this meant that parameters such as filtering or ordering options could be merged into SQL fragments rather than being strictly constrained or safely parameterized, enabling an attacker to inject crafted SQL and alter query behavior. The referenced commit fixes this by disallowing unsafe criteria and ensuring only explicitly permitted parameters are used when building database queries, preventing SQL manipulation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
+  "vulnerable_to": "SQL Injection",
+  "related_cve_id": "GHSA-2453-mppf-46cj",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.8.22"
 }

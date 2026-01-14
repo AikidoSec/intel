@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "ntpclient",
+  "patch_versions": [
+    "1.14.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.14.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to regular expression injection due to the use of a user-controlled directory value when dynamically constructing a `RegExp` without proper escaping. By embedding the raw `dirToFlatten` value directly into a regular expression, an attacker can inject arbitrary regex fragments and influence matching behavior. Properly escaping all regex metacharacters before building `dirToFlattenRegex` preserves the intended semantics while preventing regex injection.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ntpclient` library to the patch version.",
+  "reporter": "",
+  "vulnerable_to": "Improper Input Validation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 26,
+  "changelog": "https://github.com/ffflorian/node-packages/blob/main/packages/ntpclient/CHANGELOG.md#1141-2026-01-09"
 }

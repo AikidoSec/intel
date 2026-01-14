@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "vm2",
+  "patch_versions": [
+    "3.10.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.10.0",
+      "3.10.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of `vm2` are vulnerable to a sandbox escape via promise callback sanitization bypass because the library did not correctly sanitize promise `then`/`catch` callback arguments, allowing untrusted code inside the sandbox to access host-level constructors (e.g., `Function`) and potentially escape the sandbox protections. PR #547 sanitizes these promise callback arguments so that values from untrusted code cannot leak host objects into the sandbox context, preventing this escape vector.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `vm2` library to the patch version.",
+  "vulnerable_to": "Code Injection",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "CRITICAL",
+  "aikido_score": 91,
+  "changelog": "https://github.com/patriksimek/vm2/releases/tag/v3.10.1"
 }

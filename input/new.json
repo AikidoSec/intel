@@ -1,15 +1,40 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "node",
+  "package_name_alias": "nodejs",
+  "patch_versions": [
+    "25.3.0",
+    "24.13.0",
+    "22.22.0",
+    "20.20.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "25.0.0",
+      "25.2.0"
+    ],
+    [
+      "23.0.0",
+      "24.12.0"
+    ],
+    [
+      "21.0.0",
+      "22.21.1"
+    ],
+    [
+      "0.0.1",
+      "20.19.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "Affected versions of the package allow improper enforcement of file system permissions in the Node.js permission model, where `futimes()` can be used to modify file access and modification timestamps even when the process has only read permissions. Unlike `utimes()`, `futimes()` does not apply the expected write-permission checks, enabling metadata changes in read-only directories and potentially allowing attackers to obscure activity and undermine the reliability of logs.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `node` library to a patch version.",
+  "vulnerable_to": "Improper Access Control",
+  "related_cve_id": "CVE-2025-55132",
+  "language": "OS",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases#fsfutimes-bypasses-read-only-permission-model-cve-2025-55132---low"
 }

@@ -1,0 +1,42 @@
+{
+  "package_name": "node",
+  "package_name_alias": "nodejs",
+  "patch_versions": [
+    "25.3.0",
+    "24.13.0",
+    "22.22.0",
+    "20.20.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "25.0.0",
+      "25.2.0"
+    ],
+    [
+      "23.0.0",
+      "24.12.0"
+    ],
+    [
+      "21.0.0",
+      "22.21.1"
+    ],
+    [
+      "0.0.1",
+      "20.19.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of the package allow a permissions bypass in the Node.js Permissions model, where crafted relative symlink paths can circumvent `--allow-fs-read` and `--allow-fs-write` restrictions. By chaining directories and symlinks, a script limited to the current directory can escape the permitted path and perform arbitrary file read or write operations, breaking isolation guarantees and potentially leading to system compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `node` library to a patch version.",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "CVE-2025-55130",
+  "language": "OS",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases#bypass-file-system-permissions-using-crafted-symlinks-cve-2025-55130---high",
+  "last_modified": "2026-01-14",
+  "published": "2026-01-14"
+}

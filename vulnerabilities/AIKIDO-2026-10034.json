@@ -1,0 +1,42 @@
+{
+  "package_name": "node",
+  "package_name_alias": "nodejs",
+  "patch_versions": [
+    "25.3.0",
+    "24.13.0",
+    "22.22.0",
+    "20.20.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "25.0.0",
+      "25.2.0"
+    ],
+    [
+      "23.0.0",
+      "24.12.0"
+    ],
+    [
+      "21.0.0",
+      "22.21.1"
+    ],
+    [
+      "0.0.1",
+      "20.19.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to denial-of-service conditions due to improper TLS error handling when `pskCallback` or `ALPNCallback` are used. Synchronous exceptions thrown during these callbacks bypass standard TLS error handling paths (`tlsClientError` and `error`), resulting in either immediate process termination or silent file descriptor leaks that can exhaust resources over time. Because these callbacks process attacker-controlled input during the TLS handshake, a remote client can repeatedly trigger the issue.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `node` library to a patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "CVE-2026-21637",
+  "language": "OS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases#tls-pskalpn-callback-exceptions-bypass-error-handlers-causing-dos-and-fd-leak-cve-2026-21637---medium",
+  "last_modified": "2026-01-14",
+  "published": "2026-01-14"
+}

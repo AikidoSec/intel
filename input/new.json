@@ -1,24 +1,15 @@
 {
-  "package_name": "@salesforce/design-system-react",
-  "patch_versions": [
-    "0.10.65"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.9.15",
-      "0.10.64"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to cross-site scripting when custom SVGs are provided via path properties in the Illustration component, allowing malicious scripts to be injected and executed due to insufficient input validation.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@salesforce/design-system-react` library to the patch version.",
-  "vulnerable_to": "Cross Site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 42,
-  "changelog": "https://github.com/salesforce/design-system-react/releases/tag/v0.10.65"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

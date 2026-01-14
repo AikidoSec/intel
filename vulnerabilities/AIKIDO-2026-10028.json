@@ -1,0 +1,41 @@
+{
+  "package_name": "nodejs",
+  "patch_versions": [
+    "25.3.0",
+    "24.13.0",
+    "22.22.0",
+    "20.20.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "25.0.0",
+      "25.2.0"
+    ],
+    [
+      "23.0.0",
+      "24.12.0"
+    ],
+    [
+      "21.0.0",
+      "22.21.1"
+    ],
+    [
+      "0.0.1",
+      "20.19.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-908"
+  ],
+  "tldr": "Affected versions of the package may expose uninitialized memory due to a flaw in Node.js buffer allocation when allocations are interrupted while using the `vm` module with the `timeout` option. Under specific timing conditions, buffers created via `Buffer.alloc` or TypedArray instances such as `Uint8Array` may contain residual data from previous operations, potentially leaking in-process secrets like tokens or passwords or causing data corruption.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `node` library to a patch version.",
+  "vulnerable_to": "Use of Uninitialized Resource",
+  "related_cve_id": "CVE-2025-55131",
+  "language": "OS",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases#timeout-based-race-conditions-make-uint8arraybufferalloc-non-zerofilled-cve-2025-55131---high",
+  "last_modified": "2026-01-14",
+  "published": "2026-01-14"
+}

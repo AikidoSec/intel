@@ -1,0 +1,42 @@
+{
+  "package_name": "node",
+  "package_name_alias": "nodejs",
+  "patch_versions": [
+    "25.3.0",
+    "24.13.0",
+    "22.22.0",
+    "20.20.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "25.0.0",
+      "25.2.0"
+    ],
+    [
+      "23.0.0",
+      "24.12.0"
+    ],
+    [
+      "21.0.0",
+      "22.21.1"
+    ],
+    [
+      "0.0.1",
+      "20.19.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to a crash due to improper handling of malformed HTTP/2 HEADERS frames containing oversized or invalid HPACK data. Such input can trigger an unhandled `TLSSocket` `ECONNRESET` error, causing the Node.js process to terminate instead of safely closing the connection, enabling a remote denial-of-service condition, particularly in applications without explicit secure socket error handlers.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `node` library to a patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "CVE-2025-59465",
+  "language": "OS",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases#nodejs-http2-server-crashes-with-unhandled-error-when-receiving-malformed-headers-frame-cve-2025-59465---high",
+  "last_modified": "2026-01-14",
+  "published": "2026-01-14"
+}

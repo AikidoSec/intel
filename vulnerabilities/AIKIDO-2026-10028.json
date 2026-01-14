@@ -1,5 +1,6 @@
 {
-  "package_name": "nodejs",
+  "package_name": "node",
+  "package_name_alias": "nodejs",
   "patch_versions": [
     "25.3.0",
     "24.13.0",

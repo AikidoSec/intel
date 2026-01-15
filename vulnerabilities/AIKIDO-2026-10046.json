@@ -1,0 +1,26 @@
+{
+  "package_name": "pino",
+  "patch_versions": [
+    "10.1.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "7.2.0",
+      "10.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to prototype pollution issues in the transport loading mechanism due to unsafe access to `globalThis.__bundlerPathsOverrides`. The use of the `in` operator and a default `{}` object allows prototype chain manipulation, which can influence transport resolution logic. This can be abused by an attacker to alter application behavior. The fix hardens the implementation by using `Object.prototype.hasOwnProperty.call()` and a prototype-less fallback object to prevent prototype chain pollution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `pino` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 46,
+  "changelog": "https://github.com/pinojs/pino/releases/tag/v10.1.1",
+  "last_modified": "2026-01-15",
+  "published": "2026-01-15"
+}

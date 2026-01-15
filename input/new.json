@@ -15,7 +15,6 @@
   "tldr": "Affected versions of the package are vulnerable to denial-of-service conditions due to unbounded list growth during query string decoding. When decoding crafted inputs with excessive parameters, lists can grow without limit, leading to excessive memory consumption. The fix introduces controlled overflow handling by converting oversized lists into a bounded overflow structure, ensuring memory safety and preventing resource exhaustion during parsing.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `qs-codec` library to the patch version.",
-  "reporter": "",
   "vulnerable_to": "Denial of Service (DoS)",
   "related_cve_id": "",
   "language": "PYTHON",

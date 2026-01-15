@@ -1,0 +1,31 @@
+{
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.16.18",
+    "5.8.22"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.5.0",
+      "4.16.17"
+    ],
+    [
+      "5.0.0",
+      "5.8.21"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to **cross-site scripting** because user-controlled values could be rendered into HTML output without proper encoding, allowing injected markup or script content to execute in a victim’s browser. In Craft CMS, this meant that crafted input could be reflected or stored and then executed when affected templates or views were rendered. The referenced commit fixes the issue by ensuring that untrusted data is correctly escaped before being included in HTML output, preventing script execution in the user’s browser.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "GHSA-9f5h-mmq6-2x78",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.8.22",
+  "last_modified": "2026-01-15",
+  "published": "2026-01-15"
+}

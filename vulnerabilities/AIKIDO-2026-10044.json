@@ -1,0 +1,27 @@
+{
+  "package_name": "questdb",
+  "org_name": "org.questdb",
+  "patch_versions": [
+    "9.3.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "9.2.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting, allowing foreign code to be executed within the web console due to insufficient input sanitization.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `org.questdb:questdb` library to a patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JAVA",
+  "severity_class": "MEDIUM",
+  "aikido_score": 46,
+  "changelog": "https://github.com/questdb/questdb/releases/tag/9.3.0",
+  "last_modified": "2026-01-15",
+  "published": "2026-01-15"
+}

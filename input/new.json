@@ -1,24 +1,15 @@
 {
-  "package_name": "Microsoft.Identity.Client",
-  "patch_versions": [
-    "4.81.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "4.13.0",
-      "4.80.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-532"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Information Exposure via Logs due to the `MsalServiceException.ToString()` method, including sensitive HTTP response headers (such as authentication tokens or API keys) in its string representation. This flaw could allow an attacker with access to application logs, error messages, or debug outputs to retrieve these exposed credentials. By scraping logs or triggering errors, an attacker could capture tokens and use them to impersonate users or gain unauthorized access to protected resources and APIs. The fix removes headers from the `ToString()` output while keeping the `Headers` property accessible programmatically to prevent accidental exposure without introducing breaking changes.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `Microsoft.Identity.Client` library to the patch version.",
-  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "DOTNET",
-  "severity_class": "LOW",
-  "aikido_score": 25,
-  "changelog": "https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/releases/tag/4.81.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

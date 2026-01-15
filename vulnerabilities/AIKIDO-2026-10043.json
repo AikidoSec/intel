@@ -1,0 +1,26 @@
+{
+  "package_name": "mcp",
+  "patch_versions": [
+    "0.5.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS) via JSON-RPC Request ID Reflection due to missing validation on string-based request IDs in the underlying `json_rpc_handler` dependency; this vulnerability occurs because user-supplied input within the `id` field is directly reflected in HTTP responses, allowing an attacker to craft malicious requests containing HTML or JavaScript payloads in the ID, which are then executed in a victim's browser if the response is rendered without proper output encoding or Content-Type hardening.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mcp` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "RUBY",
+  "severity_class": "MEDIUM",
+  "aikido_score": 42,
+  "changelog": "https://github.com/modelcontextprotocol/ruby-sdk/blob/main/CHANGELOG.md#050---2026-01-11",
+  "last_modified": "2026-01-15",
+  "published": "2026-01-15"
+}

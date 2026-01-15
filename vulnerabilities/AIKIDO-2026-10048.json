@@ -1,0 +1,31 @@
+{
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.16.18",
+    "5.8.22"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "4.16.17"
+    ],
+    [
+      "5.0.0",
+      "5.8.21"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to **server-side request forgery (SSRF)** because the GraphQL asset upload resolver made unvalidated HTTP requests to user-controlled URLs, allowing an attacker to force the server to fetch arbitrary external resources. In the referenced commit, the implementation was hardened by disabling automatic redirects and tightening how the HTTP client is constructed for asset fetches, preventing attackers from leveraging open redirects or crafted URLs to coerce the server into contacting internal or arbitrary endpoints.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
+  "vulnerable_to": "Server-Side Request Forgery (SSRF)",
+  "related_cve_id": "GHSA-8jr8-7hr4-vhfx",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.8.22",
+  "last_modified": "2026-01-15",
+  "published": "2026-01-15"
+}

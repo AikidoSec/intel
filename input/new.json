@@ -1,25 +1,15 @@
 {
-  "package_name": "github.com/pion/webrtc/v4",
-  "patch_versions": [
-    "4.2.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "4.0.0",
-      "4.2.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-20"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to crashes and panics caused by improper input validation in the OGG and IVF readers, where malformed or untrusted media inputs can trigger divide-by-zero errors and other panic conditions.",
-  "doest_this_affect_me": "You are affected if you are using a version of this package < `4.2.2`.",
-  "how_to_fix": "Upgrade the `github.com/pion/webrtc/v4` library to the patch version.",
-  "reporter": "",
-  "vulnerable_to": "Improper Input Validation",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 35,
-  "changelog": "https://github.com/pion/webrtc/releases/tag/v4.2.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

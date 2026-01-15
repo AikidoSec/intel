@@ -1,29 +1,15 @@
 {
-  "package_name": "craftcms/cms",
-  "patch_versions": [
-    "4.16.18",
-    "5.8.22"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.5.0",
-      "4.16.17"
-    ],
-    [
-      "5.0.0",
-      "5.8.21"
-    ]
-  ],
-  "cwe": [
-    "CWE-285"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to **permission escalation** because certain GraphQL asset mutation logic did not enforce correct ownership checks, allowing a user with privileges to save or create assets to potentially act on volumes they shouldn’t have access to. The referenced commit adds explicit checks to ensure the asset’s volume ID matches the expected volume and requires the appropriate schema action for unauthorized attempts, preventing attackers from exploiting the mutation to escalate privileges or modify resources outside their permitted scope.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
-  "vulnerable_to": "Improper Authorization",
-  "related_cve_id": "GHSA-fxp3-g6gw-4r4v",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 50,
-  "changelog": "https://github.com/craftcms/cms/releases/tag/5.8.22"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

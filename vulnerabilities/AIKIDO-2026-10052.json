@@ -1,0 +1,26 @@
+{
+  "package_name": "@cedarjs/auth-dbauth-setup",
+  "patch_versions": [
+    "2.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "2.3.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-342"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Predictable User ID Sequence vulnerability due to the use of sequential integers for user IDs, which makes it easy to guess valid IDs and estimate system user count. An attacker can exploit this by brute-forcing or iterating through possible IDs to enumerate user accounts, potentially leading to unauthorized access or data exposure. While UUIDs are now the default for dbAuth to mitigate this, developers can still switch to auto-incrementing integers, maintaining the risk if not properly configured.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@cedarjs/auth-dbauth-setup` library to a patch version.",
+  "vulnerable_to": "Predictable Exact Value from Previous Values",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 51,
+  "changelog": "https://github.com/cedarjs/cedar/releases/tag/v2.4.0",
+  "last_modified": "2026-01-16",
+  "published": "2026-01-16"
+}

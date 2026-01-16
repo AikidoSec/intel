@@ -1,0 +1,26 @@
+{
+  "package_name": "qs_dart",
+  "patch_versions": [
+    "1.6.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.6.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to denial-of-service conditions due to insufficient enforcement of array limits during query string decoding. Crafted inputs can cause arrays to grow beyond the configured `listLimit`, leading to excessive memory consumption. The updated decoding logic introduces explicit overflow tracking and converts oversized arrays into map-based representations when limits are exceeded, aligning behavior with Node.js `qs` semantics and preventing unbounded memory growth.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `qs_dart` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "DART",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/techouse/qs/releases/tag/v1.6.1",
+  "last_modified": "2026-01-16",
+  "published": "2026-01-16"
+}

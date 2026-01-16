@@ -1,24 +1,15 @@
 {
-  "package_name": "qs-codec",
-  "patch_versions": [
-    "1.3.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "1.3.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of the package are vulnerable to denial-of-service conditions due to unbounded list growth during query string decoding. When decoding crafted inputs with excessive parameters, lists can grow without limit, leading to excessive memory consumption. The fix introduces controlled overflow handling by converting oversized lists into a bounded overflow structure, ensuring memory safety and preventing resource exhaustion during parsing.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `qs-codec` library to the patch version.",
-  "vulnerable_to": "Denial of Service (DoS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "LOW",
-  "aikido_score": 25,
-  "changelog": "https://github.com/techouse/qs_codec/releases/tag/v1.3.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "Sitecore Experience Commerce",
+  "package_name_alias": "Sitecore.Kernel",
+  "patch_versions": [
+    "9.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "9.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Affected versions of certain Sitecore products may be exposed to a critical configuration vulnerability that can lead to remote code execution and unauthorized access to sensitive information. The issue arises from insecure configuration practices in specific deployment scenarios, particularly in multi-instance environments or when using default or customer-managed static machine keys. If successfully exploited, an attacker could execute arbitrary code remotely or gain access to protected data. This vulnerability potentially impacts Sitecore Experience Manager (XM), Experience Platform (XP), Experience Commerce (XC), and certain Managed Cloud deployments, depending on topology, version, and configuration choices. Products such as SitecoreAI, Content Hub, CDP and Personalize, OrderCloud, and others are not affected. Customers using older sample keys, multi-instance deployments, or customer-managed keys are at higher risk and should apply the recommended patches and configuration guidance without delay. Sitecore advises customers and partners to review their environments carefully, ensure they are running security-supported versions, and promptly apply all available security fixes. Additional updates may be provided as further details emerge, and customers are encouraged to monitor future security bulletins for the latest information and guidance from Sitecore.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range. YOu can find a test to verify if you are vulnerable on this <a href=\"https://github.com/rxerium/CVE-2025-53690\">Github repo</a>.",
+  "how_to_fix": "Upgrade the `Sitecore Experience Commerce` packages to the patch version.",
+  "vulnerable_to": "Deserialization of Untrusted Data",
+  "related_cve_id": "CVE-2025-53690",
+  "language": "dotnet",
+  "severity_class": "CRITICAL",
+  "aikido_score": 91,
+  "changelog": "https://support.sitecore.com/kb?id=kb_article_view&sysparm_article=KB1003865"
 }

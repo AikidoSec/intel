@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "ethereum_ssz_derive",
+  "patch_versions": [
+    "0.10.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.5.0",
+      "0.10.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-162"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an SSZ deserialization flaw in the `Option<T>` type due to improper validation of trailing bytes. When decoding an `Option<T>` with the 'None' selector (0x00), the implementation correctly returns `None` but fails to enforce that the remaining payload must be zero-length. It allows arbitrary extra 'dirty' bytes to be present and ignored during deserialization. An attacker could craft multiple different byte sequences that all decode to the same logical `None` value, leading to critical hash mismatches where two semantically identical objects have different Merkle tree roots, potentially disrupting network consensus and causing chain splits.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ethereum_ssz_derive` library to a patch version.",
+  "vulnerable_to": "Improper Neutralization of Trailing Special Elements",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUST",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/sigp/ethereum_ssz/releases/tag/v0.10.1"
 }

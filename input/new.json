@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "jsonrepair",
+  "patch_versions": [
+    "3.13.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.9.0",
+      "3.13.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Regular Expression Injection via a crafted payload beginning with a forward slash (`/`), where the mechanism that wraps regex-like strings in double quotes fails to escape existing internal quotes. An attacker can exploit this by supplying an input like `/foo\"; console.log(-1); \"/`, where the unescaped quote (`\"`) after `foo` breaks out of the generated string literal, allowing arbitrary JavaScript code execution within contexts like `eval` or inline `<script>` tags, as the repaired output becomes is valid, executable code.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `jsonrepair` library to a patch version.",
+  "vulnerable_to": "Improper Input Validation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 43,
+  "changelog": "https://github.com/josdejong/jsonrepair/blob/main/CHANGELOG.md#3132-2026-01-14"
 }

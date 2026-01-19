@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@openai/codex",
+  "patch_versions": [
+    "0.81.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.80.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-732"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Sandbox Escape due to Improper Mount Restrictions. The vulnerability occurs because the Landlock sandbox fails to apply read-only mounts for sensitive paths, such as `.git/`, before enabling Landlock rules, leaving these paths writable if the repository root is accessible. An attacker could exploit this by writing malicious configuration or hooks into the `.git` directory from within the sandbox, potentially leading to code execution or repository compromise when those hooks are triggered. It bypasses the intended isolation because the sandbox's mount restrictions are applied too late in the initialization sequence.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and if you are running the package in a UNIX environment.",
+  "how_to_fix": "Upgrade the `@openai/codex` library to a patch version.",
+  "vulnerable_to": "Incorrect Permission Assignment for Critical Resource",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 62,
+  "changelog": "https://github.com/openai/codex/releases/tag/rust-v0.81.0"
 }

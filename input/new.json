@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "jboss-logmanager",
+  "org-name": "org.jboss.logmanager",
+  "patch_versions": [
+    "3.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.3",
+      "3.1.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-674"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a reentrancy issue in asynchronous logging methods that could lead to a stack overflow. This vulnerability arises when asynchronous logging methods lack proper locking checks, allowing reentrant calls that can recursively exhaust the call stack. An attacker might exploit this by crafting log events that trigger recursive logging, causing a stack overflow and resulting in a denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `org.jboss.logmanager:jboss-logmanager` library to a patch version.",
+  "vulnerable_to": "Uncontrolled Recursion",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JAVA",
+  "severity_class": "MEDIUM",
+  "aikido_score": 43,
+  "changelog": "https://github.com/jboss-logging/jboss-logmanager/releases/tag/v3.2.0.Final"
 }

@@ -18,7 +18,7 @@
   "vulnerable_to": "Open Redirect",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "",
-  "aikido_score": 0,
+  "severity_class": "MEDIUM",
+  "aikido_score": 61,
   "changelog": "https://github.com/supertokens/supertokens-auth-react/releases/tag/v0.51.1"
 }

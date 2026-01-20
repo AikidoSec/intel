@@ -1,24 +1,15 @@
 {
-  "package_name": "supertokens-auth-react",
-  "patch_versions": [
-    "0.51.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.38.0",
-      "0.51.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-601"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to an Open Redirect via the `redirectToPath` query parameter, where setting a schemaless URL, such as `//evil.com`, would cause a redirection to an external malicious domain due to improper validation. An attacker could exploit this by crafting a phishing link that appears to originate from the trusted site to steal user credentials or deliver malware, which the patched code now mitigates by detecting and blocking schemaless URLs that begin with `//`.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `supertokens-auth-react` library to a patch version.",
-  "vulnerable_to": "Open Redirect",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 61,
-  "changelog": "https://github.com/supertokens/supertokens-auth-react/releases/tag/v0.51.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

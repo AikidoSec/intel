@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "grammy",
+  "patch_versions": [
+    "1.39.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.9.0",
+      "1.39.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-208"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to timing attacks due to non-constant-time string comparison when validating secret tokens, which can allow an attacker to infer secret token information through timing differences; the issue is fixed by replacing the vulnerable logic with a constant-time, byte-by-byte comparison that always iterates `tokenBytes.length` times, prevents timing-based information leakage, and correctly handles undefined and edge cases.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `grammy` library to the patch version.",
+  "vulnerable_to": "Timing Attacks",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/grammyjs/grammY/releases/tag/v1.39.3"
 }

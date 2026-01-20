@@ -1,6 +1,6 @@
 {
   "package_name": "jboss-logmanager",
-  "org-name": "org.jboss.logmanager",
+  "org_name": "org.jboss.logmanager",
   "patch_versions": [
     "3.2.0"
   ],

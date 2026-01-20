@@ -1,24 +1,15 @@
 {
-  "package_name": "@strapi/core",
-  "patch_versions": [
-    "5.33.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "5.33.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-613"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to insufficient session expiration because active sessions or refresh tokens remain valid after a user changes or resets their password, allowing previously compromised sessions to continue being used. In Strapi, this behavior could enable an attacker with access to a stolen session to maintain unauthorized access even after credentials are updated. The patch fixes this by revoking existing sessions and tokens upon password changes and resets, ensuring continued access requires reauthentication.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@strapi/core` library to the patch version.",
-  "vulnerable_to": "Insufficient Session Expiration",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 25,
-  "changelog": "https://github.com/strapi/strapi/releases/tag/v5.33.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

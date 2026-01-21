@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@elizaos/cli",
+  "package_name_alias": "@elizaos/core",
+  "patch_versions": [
+    "1.7.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.7.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-522"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to unintended exposure of shell environment variables into agent secrets due to lack of filtering of environment input in the CLI, which can result in leakage of sensitive data like API keys or credentials; this patch adds filtering and validation to prevent shell-only environment variables from being included in agent secrets, mitigating the leakage risk.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `elizaos` library to the patch version.",
+  "vulnerable_to": "Insufficiently Protected Credentials",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 29,
+  "changelog": "https://github.com/elizaOS/eliza/releases/tag/v1.7.2"
 }

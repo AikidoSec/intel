@@ -18,7 +18,7 @@
   "vulnerable_to": "Incorrect Permission Assignment for Critical Resource",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 62,
+  "severity_class": "LOW",
+  "aikido_score": 17,
   "changelog": "https://github.com/openai/codex/releases/tag/rust-v0.81.0"
 }

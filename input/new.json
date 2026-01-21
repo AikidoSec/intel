@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@yaireo/tagify",
+  "patch_versions": [
+    "4.36.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "4.35.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an XSS issue in tag content rendering, because HTML entities in tag text, title, and value are not properly escaped before insertion into the DOM. An attacker could craft tag values containing `<`, `>`, or `\"` to inject and execute arbitrary HTML/JavaScript when the tag is rendered. The commit fixes this by escaping those characters in the tag text, title, and value properties before rendering to prevent malicious HTML injection.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@yaireo/tagify` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 41,
+  "changelog": "https://github.com/yairEO/tagify/releases/tag/v4.36.0"
 }

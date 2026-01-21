@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "feast",
+  "patch_versions": [
+    "0.59.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.58.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper access control when no permissions are defined, because the system does not reliably deny access to all resources by default. This could result in unintended permission grants or inconsistent enforcement of authorization policies when a permission list is empty. The pull request fixes this by enforcing a `default deny-all` behavior for resources with no permissions configured, ensuring that unauthorized access is not permitted in the absence of explicit allow rules.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `feast` library to a patch version.",
+  "vulnerable_to": "Improper Access Control",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 66,
+  "changelog": "https://github.com/feast-dev/feast/releases/tag/v0.59.0"
 }

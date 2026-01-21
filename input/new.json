@@ -1,24 +1,15 @@
 {
-  "package_name": "pydash",
-  "patch_versions": [
-    "8.0.6"
-  ],
-  "vulnerable_ranges": [
-    [
-      "6.0.0",
-      "8.0.5"
-    ]
-  ],
-  "cwe": [
-    "CWE-470"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Unsafe Reflection via `invoke()` Validation Bypass, where the `invoke()` function skips the validation logic intended to restrict access to internal attributes such as `__globals__` or `__builtins__`, allowing for unsafe reflection. An attacker could exploit this by crafting malicious inputs to invoke() to access these internals, potentially leading to information disclosure or remote code execution.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `pydash` library to a patch version.",
-  "vulnerable_to": "Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 66,
-  "changelog": "https://github.com/dgilland/pydash/blob/develop/CHANGELOG.rst#v806-2026-01-17"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

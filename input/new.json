@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "borgmatic",
+  "patch_versions": [
+    "2.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.0.13"
+    ]
+  ],
+  "cwe": [
+    "CWE-78"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to shell injection via constant interpolation in command hooks because unescaped constant values could be executed in the shell when used in hook commands. This could allow an attacker controlling configuration constants to inject and run arbitrary shell commands. The issue is fixed by requiring proper interpolation escaping in these contexts.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `borgmatic` library to the patch version.",
+  "vulnerable_to": "Command Injection",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 77,
+  "changelog": "https://github.com/borgmatic-collective/borgmatic/releases/tag/2.1.0"
 }

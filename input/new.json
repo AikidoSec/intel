@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "openmetadata-service",
+  "org_name": "org.open-metadata",
+  "patch_versions": [
+    "1.11.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.11.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-1336"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper neutralization of special elements in a template engine through the `getTemplate` function. An attacker authenticated with administrative privileges can exploit the email template editing API to inject malicious FreeMarker templates, leading to arbitrary code execution on the server. This issue is only exploitable by users with admin-level access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `org.open-metadata:openmetadata-service` library to the patch version.",
+  "vulnerable_to": "Improper Neutralization of Special Elements Used in a Template Engine",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JAVA",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://github.com/open-metadata/OpenMetadata/releases/tag/1.11.4-release"
 }

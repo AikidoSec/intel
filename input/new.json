@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "camel-ai",
+  "patch_versions": [
+    "0.2.83"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.2.73",
+      "0.2.82"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to accepting unsafe remote WebSocket links in the `hybrid_browser_toolkit` WebSocket server, which could be abused to connect to arbitrary remote hosts; this patch tightens validation of the base URL in the WebSocket server to only allow `localhost` or `127.0.0.1`, preventing remote links and mitigating potential server-side request forgery or unauthorized access via manipulated WebSocket connections.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `camel-ai` library to the patch version.",
+  "vulnerable_to": "Server-Side Request Forgery",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 68,
+  "changelog": "https://github.com/camel-ai/camel/releases/tag/v0.2.83"
 }

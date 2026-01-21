@@ -1,15 +1,29 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "rkyv",
+  "patch_versions": [
+    "0.7.46",
+    "0.8.13"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.7.45"
+    ],
+    [
+      "0.8.0",
+      "0.8.13"
+    ]
+  ],
+  "cwe": [
+    "CWE-476"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a null pointer dereference caused by improper handling of null values returned by the allocator in the `SharedPointer::alloc` process. An attacker can trigger an out-of-memory condition during shared pointer allocation, leading to dereferencing a null pointer through safe deserialization APIs and resulting in a crash or potentially arbitrary code execution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `rkyv` library to the patch version.",
+  "vulnerable_to": "NULL Pointer Dereference",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUST",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2026-0001"
 }

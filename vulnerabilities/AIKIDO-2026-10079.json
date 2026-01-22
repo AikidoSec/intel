@@ -1,0 +1,26 @@
+{
+  "package_name": "signalk-server",
+  "patch_versions": [
+    "2.20.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.27.0",
+      "2.19.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution via the `applicationData` API, where unvalidated, user-controlled paths passed to `_.set()` and JSON Patch operations could include dangerous segments like `__proto__`, `constructor`, or `prototype`, allowing an attacker to manipulate the object prototype and potentially alter application behaviour or gain unauthorized access; the issue is fixed by adding validation to block such prototype pollution paths and returning a 400 response when they are detected, preventing exploitation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `signalk-server` library to a patch version.",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/SignalK/signalk-server/releases/tag/v2.20.0",
+  "last_modified": "2026-01-22",
+  "published": "2026-01-22"
+}

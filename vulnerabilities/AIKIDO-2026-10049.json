@@ -17,7 +17,7 @@
   "cwe": [
     "CWE-79"
   ],
-  "tldr": "Affected versions of this package are vulnerable to **cross-site scripting** because user-controlled values could be rendered into HTML output without proper encoding, allowing injected markup or script content to execute in a victim’s browser. In Craft CMS, this meant that crafted input could be reflected or stored and then executed when affected templates or views were rendered. The referenced commit fixes the issue by ensuring that untrusted data is correctly escaped before being included in HTML output, preventing script execution in the user’s browser.",
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting because user-controlled values could be rendered into HTML output without proper encoding, allowing injected markup or script content to execute in a victim’s browser. In Craft CMS, this meant that crafted input could be reflected or stored and then executed when affected templates or views were rendered. The referenced commit fixes the issue by ensuring that untrusted data is correctly escaped before being included in HTML output, preventing script execution in the user’s browser.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
   "vulnerable_to": "Cross-site Scripting (XSS)",

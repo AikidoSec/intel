@@ -17,7 +17,7 @@
   "cwe": [
     "CWE-94"
   ],
-  "tldr": "Affected versions of this package are vulnerable to **remote code execution** because a flaw in how certain user-controllable configuration or input is processed allows unsanitized data to alter executable logic or code paths, potentially letting an attacker inject and run arbitrary code within the application context. In Craft CMS, this means that crafted input could exploit the underlying vulnerability in the framework/application integration to bypass intended controls and execute unintended operations. The referenced commit remedies this by tightening validation and sanitization of the affected inputs and eliminating the unsafe code path, preventing attackers from triggering code execution through malicious payloads.",
+  "tldr": "Affected versions of this package are vulnerable to remote code execution because a flaw in how certain user-controllable configuration or input is processed allows unsanitized data to alter executable logic or code paths, potentially letting an attacker inject and run arbitrary code within the application context. In Craft CMS, this means that crafted input could exploit the underlying vulnerability in the framework/application integration to bypass intended controls and execute unintended operations. The referenced commit remedies this by tightening validation and sanitization of the affected inputs and eliminating the unsafe code path, preventing attackers from triggering code execution through malicious payloads.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
   "vulnerable_to": "Remote Code Execution (RCE)",

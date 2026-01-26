@@ -12,7 +12,7 @@
   "cwe": [
     "CWE-863"
   ],
-  "tldr": "Affected versions of this package are vulnerable to incorrect authorization because `_check_proxy_admin_viewer_access` fails to enforce role boundaries. As a result, users granted the **PROXY_ADMIN_VIEW_ONLY** role—who should have read-only access—can perform privileged actions (for example, `POST /key/generate` or `POST /key/update`) by sending crafted requests, allowing them to modify credentials and other sensitive data.",
+  "tldr": "Affected versions of this package are vulnerable to incorrect authorization because `_check_proxy_admin_viewer_access` fails to enforce role boundaries. As a result, users granted the PROXY_ADMIN_VIEW_ONLY role—who should have read-only access—can perform privileged actions (for example, `POST /key/generate` or `POST /key/update`) by sending crafted requests, allowing them to modify credentials and other sensitive data.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `litellm` library to the patch version.",
   "reporter": "",

@@ -12,7 +12,7 @@
   "cwe": [
     "CWE-532"
   ],
-  "tldr": "Affected versions of this package are vulnerable to **information disclosure** due to unsanitized logging of Elasticsearch and Meilisearch connection strings. Because these connection strings can include credentials (e.g., `protocol://username:password@host:port`), sensitive information such as passwords could be exposed in plain text in log files. The fix wraps all instances of `setting.Indexer.RepoConnStr` and `setting.Indexer.IssueConnStr` with the `util.SanitizeCredentialURLs()` function to remove credentials before logging.",
+  "tldr": "Affected versions of this package are vulnerable to information disclosure due to unsanitized logging of Elasticsearch and Meilisearch connection strings. Because these connection strings can include credentials (e.g., `protocol://username:password@host:port`), sensitive information such as passwords could be exposed in plain text in log files. The fix wraps all instances of `setting.Indexer.RepoConnStr` and `setting.Indexer.IssueConnStr` with the `util.SanitizeCredentialURLs()` function to remove credentials before logging.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `code.gitea.io/gitea` library to the patch version.",
   "vulnerable_to": "Insertion of Sensitive Information into Log File",

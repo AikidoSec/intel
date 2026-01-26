@@ -17,7 +17,7 @@
   "cwe": [
     "CWE-285"
   ],
-  "tldr": "Affected versions of this package are vulnerable to **permission escalation** because certain GraphQL asset mutation logic did not enforce correct ownership checks, allowing a user with privileges to save or create assets to potentially act on volumes they shouldn’t have access to. The referenced commit adds explicit checks to ensure the asset’s volume ID matches the expected volume and requires the appropriate schema action for unauthorized attempts, preventing attackers from exploiting the mutation to escalate privileges or modify resources outside their permitted scope.",
+  "tldr": "Affected versions of this package are vulnerable to permission escalation because certain GraphQL asset mutation logic did not enforce correct ownership checks, allowing a user with privileges to save or create assets to potentially act on volumes they shouldn’t have access to. The referenced commit adds explicit checks to ensure the asset’s volume ID matches the expected volume and requires the appropriate schema action for unauthorized attempts, preventing attackers from exploiting the mutation to escalate privileges or modify resources outside their permitted scope.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
   "vulnerable_to": "Improper Authorization",

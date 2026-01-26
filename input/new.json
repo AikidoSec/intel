@@ -23,7 +23,7 @@
   "vulnerable_to": "NULL Pointer Dereference",
   "related_cve_id": "",
   "language": "RUST",
-  "severity_class": "HIGH",
-  "aikido_score": 85,
+  "severity_class": "MEDIUM",
+  "aikido_score": 68,
   "changelog": "https://rustsec.org/advisories/RUSTSEC-2026-0001"
 }

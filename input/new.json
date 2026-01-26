@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@nuxt/ui",
+  "patch_versions": [
+    "4.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "4.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a cross-site scripting (XSS) attack via the id prop in the Banner component, where the code unsafely interpolated user-controlled id values into a localStorage getter string without sanitization, allowing an attacker to inject malicious JavaScript by crafting an id that breaks out of the string literal and executes arbitrary code. An attacker could exploit this by supplying a malicious id payload, which would run in the victim's browser upon component rendering, potentially leading to data theft or session compromise. The patched code prevents this by using JSON.stringify to properly encode the id value, ensuring it is treated as a safe string literal.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@nuxt/ui` library to a patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 46,
+  "changelog": "https://github.com/nuxt/ui/releases/tag/v4.4.0"
 }

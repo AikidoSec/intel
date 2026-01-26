@@ -1,0 +1,31 @@
+{
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.16.19",
+    "5.8.23"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.5.0",
+      "4.16.18"
+    ],
+    [
+      "5.0.0",
+      "5.8.22"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to multiple server-side request forgery (SSRF) issues. In the GQL plugin, specially crafted requests can trigger unintended outbound network requests. The patched version introduces stricter IP validation, preventing crafted requests from initiating unintended network connections.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
+  "vulnerable_to": "Server-Side Request Forgery (SSRF)",
+  "related_cve_id": "GHSA-gp2f-7wcm-5fhx",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.8.23",
+  "last_modified": "2026-01-26",
+  "published": "2026-01-26"
+}

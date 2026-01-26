@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "github.com/opentofu/opentofu",
+  "patch_versions": [
+    "1.11.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.11.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to denial of service via malicious .zip archives in OpenTofu's tofu init, where high CPU usage occurs when processing crafted archives from attacker-controlled sources during module or provider installation, leading to failed or delayed dependency installation and system performance degradation. An attacker can exploit this by serving such archives from a controlled source and coercing an OpenTofu operator to install dependencies from that source, though the vulnerability does not permit arbitrary code execution or data disclosure.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/opentofu/opentofu` library to a patch version.",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
+  "related_cve_id": "GHSA-r92c-9c7f-3pj8",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/opentofu/opentofu/releases/tag/v1.11.4"
 }

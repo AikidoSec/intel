@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "oneshot",
+  "patch_versions": [
+    "0.1.12"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.1.11"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Race Condition in `oneshot::Receiver` Leading to Use-After-Free, where a race condition occurs if a `oneshot::Receiver` is polled but then dropped before completion, such as when canceled via a timeout future: upon polling, the Receiver writes a waker to the channel and sets it to `RECEIVING` state, but upon dropping, it swaps the state to `DISCONNECTED` and reads the waker from heap memory; if the Sender observes the `DISCONNECTED` state and deallocates the channel first, the Receiver reads from freed memory. An attacker could exploit this vulnerability by precisely timing future cancellations to trigger the use-after-free condition, potentially leading to memory corruption, information disclosure, or arbitrary code execution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `oneshot` library to a patch version.",
+  "vulnerable_to": "Use After Free",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUST",
+  "severity_class": "MEDIUM",
+  "aikido_score": 43,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2026-0005.html"
 }

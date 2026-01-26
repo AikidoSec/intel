@@ -1,15 +1,18 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@strapi/core",
+  "patch_versions": ["5.33.2", "4.26.1"],
+  "vulnerable_ranges": [
+    ["5.0.0", "5.33.1"],
+    ["4.0.0", "4.26.0"]
+  ],
+  "cwe": ["CWE-284"],
+  "tldr": "Affected versions of this package expose write APIs outside of development mode, allowing unintended write operations in non-development environments and increasing the risk of unauthorized data modification.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@strapi/core` library to a patch version.",
+  "vulnerable_to": "Improper Access Control",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/strapi/strapi/releases/tag/v5.33.2"
 }

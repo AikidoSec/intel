@@ -16,7 +16,7 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `eclipse-threadx.netxduo` library to the patch version.",
   "vulnerable_to": "Denial of Service (DoS)",
-  "related_cve_id": "CVE-2025-55102",
+  "related_cve_id": "GHSA-f3rx-xrwm-q2rf",
   "language": "C++",
   "severity_class": "MEDIUM",
   "aikido_score": 65,

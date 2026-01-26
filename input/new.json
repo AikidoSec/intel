@@ -1,24 +1,15 @@
 {
-  "package_name": "hackney",
-  "patch_versions": [
-    "2.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "1.25.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-93"
-  ],
-  "tldr": "Affected versions of this package do not sanitize HTTP header values, allowing carriage return and line feed characters in headers that could enable HTTP header injection. The patched version strips CR and LF from header values to prevent HTTP header injection attacks.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `hackney` library to the patch version.",
-  "vulnerable_to": "Improper Neutralization of CRLF Sequences ('CRLF Injection')",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "Elixir",
-  "severity_class": "MEDIUM",
-  "aikido_score": 55,
-  "changelog": "https://github.com/benoitc/hackney/blob/master/NEWS.md#200---2026-01-20"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

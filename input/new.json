@@ -1,29 +1,15 @@
 {
-  "package_name": "craftcms/cms",
-  "patch_versions": [
-    "4.16.19",
-    "5.8.23"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.1.0",
-      "4.16.18"
-    ],
-    [
-      "5.0.0",
-      "5.8.22"
-    ]
-  ],
-  "cwe": [
-    "CWE-367"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a time-of-check to time-of-use (TOCTOU) issue in token handling that could allow a race condition during token validation and usage, leading to unexpected behavior in token-based operations. The patched version ensures exclusive access when checking and using tokens to prevent this race condition.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
-  "vulnerable_to": "Time-of-check Time-of-use (TOCTOU) Race Condition",
-  "related_cve_id": "GHSA-6fx5-5cw5-4897",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 55,
-  "changelog": "https://github.com/craftcms/cms/releases/tag/5.8.23"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

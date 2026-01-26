@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "dwave-cloud-client",
+  "patch_versions": [
+    "0.14.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.14.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to sensitive information exposure, as secrets could be written to logs.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `dwave-cloud-client` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/dwavesystems/dwave-cloud-client/releases/tag/0.14.4"
 }

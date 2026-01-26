@@ -1,24 +1,15 @@
 {
-  "package_name": "eclipse-threadx.netxduo",
-  "patch_versions": [
-    "6.4.5"
-  ],
-  "vulnerable_ranges": [
-    [
-      "6.0.0",
-      "6.4.4"
-    ]
-  ],
-  "cwe": [
-    "CWE-400"
-  ],
-  "tldr": "Affected versions of Eclipse ThreadX NetX Duo contain a denial-of-service (DoS) weakness in how ICMPv6 PACKET_TOO_BIG events are handled: when processing a message, the stack may not correctly trigger necessary neighbor discovery (ND) resend logic, which can lead to improper handling of network conditions and cause the system to become unresponsive under certain malformed or high-load IPv6 traffic patterns. The patch fixes this by ensuring that when a new ND cache entry is created during PACKET_TOO_BIG processing, an ND request is sent and retry state is initialized so that the protocol doesn’t stall, mitigating the DoS condition.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `eclipse-threadx.netxduo` library to the patch version.",
-  "vulnerable_to": "Denial of Service (DoS)",
-  "related_cve_id": "GHSA-f3rx-xrwm-q2rf",
-  "language": "C++",
-  "severity_class": "MEDIUM",
-  "aikido_score": 65,
-  "changelog": "https://github.com/eclipse-threadx/netxduo/releases/tag/v6.4.5.202504_rel"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

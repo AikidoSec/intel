@@ -1,24 +1,15 @@
 {
-  "package_name": "shipperhq/module-address-autocomplete",
-  "patch_versions": [
-    "21.0.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "21.0.0",
-      "21.0.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package have unescaped output in a template file (`autocomplete.phtml`), which could lead to cross-site scripting (XSS) or other unintended rendering behavior when config data is displayed. The patched version fixes the unescaped output to ensure data is properly encoded before rendering.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `shipperhq/module-address-autocomplete` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 45,
-  "changelog": "https://github.com/shipperhq/module-address-autocomplete/releases/tag/21.0.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

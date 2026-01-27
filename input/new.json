@@ -1,15 +1,33 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "react-server-dom-parcel",
+  "patch_versions": [
+    "19.0.4",
+    "19.1.5",
+    "19.2.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "19.0.0",
+      "19.0.3"
+    ],
+    [
+      "19.1.0",
+      "19.1.4"
+    ],
+    [
+      "19.2.0",
+      "19.2.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of the `react-server-dom-webpack`, `react-server-dom-parcel`, and `react-server-dom-turbopack` packages are vulnerable to multiple denial of service (DoS) issues in React Server Components. The previously applied DoS mitigations were incomplete, allowing specially crafted HTTP requests to Server Function endpoints to trigger server crashes, out-of-memory conditions, or excessive CPU usage, depending on the code path and application configuration. These issues are fixed in versions 19.0.4, 19.1.5, and 19.2.4. Applications that do not use React Server Components or server-side React functionality are not affected.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `react-server-dom-parcel` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "CVE-2026-23864 ",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 75
 }

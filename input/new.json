@@ -1,15 +1,69 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "next",
+  "patch_versions": [
+    "16.2.0-canary.9",
+    "16.1.5",
+    "16.0.11",
+    "15.6.0-canary.61",
+    "15.5.10",
+    "15.4.11",
+    "15.3.9",
+    "15.2.9",
+    "15.1.1",
+    "15.0.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "16.2.0-canary.1",
+      "16.2.0-canary.8"
+    ],
+    [
+      "16.1.0",
+      "16.1.5"
+    ],
+    [
+      "16.0.0",
+      "16.0.11"
+    ],
+    [
+      "15.6.0-canary.1",
+      "15.6.0-canary.60"
+    ],
+    [
+      "15.5.0",
+      "15.5.10"
+    ],
+    [
+      "15.4.0",
+      "15.4.11"
+    ],
+    [
+      "15.3.0",
+      "15.3.9"
+    ],
+    [
+      "15.2.0",
+      "15.2.9"
+    ],
+    [
+      "15.1.0",
+      "15.1.1"
+    ],
+    [
+      "13.0.0",
+      "15.0.8"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of the `react-server-dom-webpack`, `react-server-dom-parcel`, and `react-server-dom-turbopack` packages and frameworks that use the affected packages, including `Next.js` 13.x, 14.x, 15.x, and 16.x using the App Router are vulnerable to multiple denial of service (DoS) issues. The previously applied DoS mitigations were incomplete, allowing specially crafted HTTP requests to Server Function endpoints to trigger server crashes, out-of-memory conditions, or excessive CPU usage, depending on the code path and application configuration. Applications that do not use React Server Components or server-side React functionality are not affected.",
+  "doest_this_affect_me": "You are affected only if you are using a version within the vulnerable range and your application uses React Server Components. Applications that do not run React code on the server, or that do not use a framework, bundler, or bundler plugin supporting React Server Components, are not affected.",
+  "how_to_fix": "Upgrade the `next` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "CVE-2026-23864",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://vercel.com/changelog/summary-of-cve-2026-23864"
 }

@@ -29,5 +29,6 @@
   "related_cve_id": "CVE-2026-23864 ",
   "language": "JS",
   "severity_class": "HIGH",
-  "aikido_score": 75
+  "aikido_score": 75,
+  "changelog": "https://github.com/facebook/react/security/advisories/GHSA-83fc-fqcc-2hmg"
 }

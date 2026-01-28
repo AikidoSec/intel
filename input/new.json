@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "prefect",
+  "patch_versions": [
+    "3.6.13"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "3.6.12"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of the package are throwing error messages that could expose sensitive GitHub access tokens, increasing the risk of information disclosure and enabling attackers to exploit this information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `prefect` library to the patch version.",
+  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/PrefectHQ/prefect/releases/tag/3.6.13"
 }

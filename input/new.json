@@ -1,25 +1,15 @@
 {
-  "package_name": "spring-boot-admin-server",
-  "org_name": "de.codecentric",
-  "patch_versions": [
-    "3.5.7"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "3.5.6"
-    ]
-  ],
-  "cwe": [
-    "CWE-94"
-  ],
-  "tldr": "Affected versions of this package contain a server expression language (SpEL) injection issue in the `FeiShuNotifier` component, where a user-controlled notification message template is parsed and evaluated with an overly permissive evaluation context. An attacker who can modify the Admin Server’s external configuration (for example via config files, environment variables, or a remote config server) can inject arbitrary SpEL expressions that are later evaluated at runtime, leading to remote code execution, full access to process memory and secrets, and potential denial of service on the Spring Boot Admin Server. Updating to a version that applies the fix (where `FeiShuNotifier` uses a safer expression evaluation mechanism) is recommended.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `de.codecentric:spring-boot-admin-server` library to the patch version.",
-  "vulnerable_to": "Remote Code Execution (RCE)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JAVA",
-  "severity_class": "HIGH",
-  "aikido_score": 75,
-  "changelog": "https://github.com/codecentric/spring-boot-admin/releases/tag/3.5.7"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

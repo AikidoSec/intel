@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "tempy",
+  "patch_versions": [
+    "3.1.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "3.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to path traversal via the `getPath` and `writeStream` functions due to insufficient input sanitization. By injecting directory traversal sequences, an attacker can access or expose files outside the intended asset directory. Although these functions are not intended to be used with user-controlled input, misuse is possible; users who pass untrusted input to these functions should update to a patched version.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `tempy` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 33,
+  "changelog": "https://github.com/sindresorhus/tempy/releases/tag/v3.1.2"
 }

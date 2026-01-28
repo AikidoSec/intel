@@ -1,24 +1,15 @@
 {
-  "package_name": "ueberauth_microsoft",
-  "patch_versions": [
-    "0.25.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "0.24.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-345"
-  ],
-  "tldr": "Affected versions of this package assume that the `email` field returned by the Microsoft OAuth provider is a verified email address, which can be unsafe because that attribute can be modified in Azure without actual verification, potentially allowing authentication as an arbitrary user. The patch updates the strategy to rely on a more trustworthy identifier (`userPrincipalName`) rather than unverified `email`, preventing this class of authentication spoofing.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `ueberauth_microsoft` library to the patch version.",
-  "vulnerable_to": "Insufficient Verification of Data Authenticity",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "ELIXIR",
-  "severity_class": "MEDIUM",
-  "aikido_score": 45,
-  "changelog": "https://github.com/swelham/ueberauth_microsoft/blob/master/CHANGELOG.md#0250---2026-01-23"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

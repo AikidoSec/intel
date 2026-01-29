@@ -1,24 +1,15 @@
 {
-  "package_name": "netresearch/rte-ckeditor-image",
-  "patch_versions": [
-    "13.4.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "13.3.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) via unsanitized SVG data URIs, because `data:image/svg+xml` sources could contain embedded JavaScript (such as `<script>` tags, event handlers, or `javascript:` hrefs) that bypass normal upload validation. The patched version adds runtime sanitization of SVG data URIs using the TYPO3 core `SvgSanitizer`, ensuring that malicious content is removed before rendering. This mitigation prevents XSS attacks via inline SVG payloads in image sources.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `netresearch/rte-ckeditor-image` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 56,
-  "changelog": "https://github.com/netresearch/t3x-rte_ckeditor_image/releases/tag/v13.4.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

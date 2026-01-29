@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "robyn",
+  "patch_versions": [
+    "0.76.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.75.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-285"
+  ],
+  "tldr": "Affected versions of this package have inconsistent request path normalization in the routing system, allowing trailing-slash variations (e.g., `/auth/` vs `/auth`) to bypass authentication and cause routing logic bugs. The patched version normalizes endpoint paths (trimming trailing slashes and standardizing lookup behavior) when constructing the request and registering routes or middleware, preventing these bypasses and making routing and authentication handling consistent.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `robyn` library to the patch version.",
+  "vulnerable_to": "Authorization Bypass",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "CRITICAL",
+  "aikido_score": 98,
+  "changelog": "https://github.com/sparckles/Robyn/releases/tag/v0.76.0"
 }

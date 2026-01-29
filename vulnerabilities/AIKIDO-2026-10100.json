@@ -1,0 +1,26 @@
+{
+  "package_name": "codex",
+  "patch_versions": [
+    "1.9.9"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.9.8"
+    ]
+  ],
+  "cwe": [
+    "CWE-732"
+  ],
+  "tldr": "Affected versions of this package contain an access control bypass vulnerability that allows users to view comics in included groups they are not part of, due to inadequate permission checks during content retrieval. An attacker could exploit this by manipulating request parameters, such as comic or group IDs, to access restricted comics without proper authorization, leading to unauthorized disclosure of sensitive content.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and if you are running the package in a UNIX environment.",
+  "how_to_fix": "Upgrade the `codex` library to a patch version.",
+  "vulnerable_to": "Broken Access Control",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 46,
+  "changelog": "https://github.com/ajslater/codex/blob/main/NEWS.md#v199",
+  "last_modified": "2026-01-29",
+  "published": "2026-01-29"
+}

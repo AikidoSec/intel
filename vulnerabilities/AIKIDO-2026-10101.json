@@ -1,0 +1,31 @@
+{
+  "package_name": "github.com/milvus-io/milvus/pkg/v2",
+  "patch_versions": [
+    "2.6.9",
+    "2.5.26"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.6.0",
+      "2.6.8"
+    ],
+    [
+      "2.5.0",
+      "2.5.25"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Remote Expression Execution via the Internal Expression Evaluation Endpoint, where the internal HTTP server's `/expr` endpoint, which compiles and executes user-supplied Go expressions from the `code` parameter, can be exploited if the server is inadvertently exposed or if the low-entropy default authentication secret (`by-dev`) is guessed or leaked, allowing an attacker to execute arbitrary logic within the server's context, such as calling exposed functions like `param.Get()` or `param.Save()` to read or manipulate configuration, leading to information disclosure, system compromise, or denial-of-service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/milvus-io/milvus/pkg/v2` library to a patch version.",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "CVE-2025-15453",
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/milvus-io/milvus/releases/tag/v2.6.9",
+  "last_modified": "2026-01-29",
+  "published": "2026-01-29"
+}

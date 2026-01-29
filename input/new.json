@@ -1,24 +1,15 @@
 {
-  "package_name": "deepface",
-  "patch_versions": [
-    "0.0.98"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "0.0.97"
-    ]
-  ],
-  "cwe": [
-    "CWE-502"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to unsafe deserialization when loading pickle files, allowing malicious pickle data to execute arbitrary code during operations like `find()`. The patched version introduces support for digitally signing and verifying pickle files before creation and loading, preventing untrusted pickle data from being deserialized and mitigating this attack vector.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `deepface` library to the patch version.",
-  "vulnerable_to": "Unsafe Deserialization",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "HIGH",
-  "aikido_score": 76,
-  "changelog": "https://github.com/serengil/deepface/releases/tag/v0.0.98"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

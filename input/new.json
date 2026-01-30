@@ -1,24 +1,15 @@
 {
-  "package_name": "@aws-amplify/cli",
-  "patch_versions": [
-    "14.2.5"
-  ],
-  "vulnerable_ranges": [
-    [
-      "4.33.0",
-      "14.2.4"
-    ]
-  ],
-  "cwe": [
-    "CWE-78"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Arbitrary Code Execution via a command injection vulnerability in the APNS certificate P12 decoder, where a maliciously crafted P12 filename could be executed as shell code due to unsafe passing of user-provided strings to `execSync`. The fix replaced `execSync` with `spawnSync` to ensure strings are always treated as parameters, not executable code, and added validation to confirm the PEM file exists before access. An attacker could exploit this by providing a specially crafted filename containing shell metacharacters or commands, which would be executed in the context of the application's process when the decoder was invoked.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@aws-amplify/cli` library to the patch version.",
-  "vulnerable_to": "OS Command Injection",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 53,
-  "changelog": "https://github.com/aws-amplify/amplify-cli/releases/tag/v14.2.5"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

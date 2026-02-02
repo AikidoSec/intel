@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "plexus-xml",
+  "org_name": "org.codehaus.plexus",
+  "patch_versions": [
+    "4.1.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "4.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package use a polynomial-time regular expression in the XML encoding detection logic (`ENCODING_PATTERN`) that is susceptible to catastrophic backtracking on crafted XML input, leading to excessive CPU usage (a regular expression denial of service). The patched version changes the pattern to use non-greedy matching.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `org.codehaus.plexus:plexus-xml` library to the patch version.",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JAVA",
+  "severity_class": "LOW",
+  "aikido_score": 28,
+  "changelog": "https://github.com/codehaus-plexus/plexus-xml/releases/tag/plexus-xml-4.1.1"
 }

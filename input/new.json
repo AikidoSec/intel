@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "tkms",
+  "package_name_alias": "node-tkms",
+  "patch_versions": [
+    "0.12.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.11.0",
+      "0.12.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package contain a deadlock condition in the key management service logic that can cause the program to stall indefinitely under certain synchronization patterns, leading to application unavailability or degraded performance. The patched version resolves the deadlock by correcting the synchronization flow and ensuring that internal locks and channels cannot enter a permanent wait state, improving stability and preventing potential denial of service due to thread starvation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `tkms` library to the patch version.",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 42,
+  "changelog": "https://github.com/zama-ai/kms/releases/tag/v0.12.8"
 }

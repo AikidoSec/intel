@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/kyverno/kyverno",
+  "patch_versions": [
+    "1.15.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.15.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-923"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a Cross-Namespace Access Bypass in `apiCall` due to insufficient enforcement of namespace isolation in namespaced Policies, allowing authenticated users to bypass namespace boundaries and read or mutate resources in other namespaces or at the cluster level. An attacker could exploit this by crafting malicious `apiCall` requests to gain unauthorized access or perform unauthorized actions across namespaces.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/kyverno/kyverno` library to the patch version.",
+  "vulnerable_to": "Improper Restriction of Communication Channel to Intended Endpoints",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 66,
+  "changelog": "https://github.com/kyverno/kyverno/releases/tag/v1.15.3"
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@taquito/taquito",
+  "patch_versions": [
+    "24.0.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "24.0.0",
+      "24.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package contain a Cross-Site Scripting (XSS) vulnerability in the search results rendering function due to unsafely setting `innerHTML` with user-controlled data from `r.item.title` or `r.item.excerpt`. An attacker could exploit this by crafting a malicious search entry where the title or excerpt contains a script payload. When the results are displayed, this payload would be injected into the DOM and executed in the victim's browser, potentially compromising their session.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@taquito/taquito` library to the patch version.",
+  "vulnerable_to": "Cross-Site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 74,
+  "changelog": "https://github.com/ecadlabs/taquito/releases/tag/24.0.2"
 }

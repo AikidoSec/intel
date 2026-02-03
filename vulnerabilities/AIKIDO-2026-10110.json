@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/apache/arrow-go/v18",
+  "patch_versions": [
+    "18.5.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "18.0.0",
+      "18.5.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-248"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to multiple panic conditions, which can be triggered by malformed or specially crafted input and may result in unexpected application crashes.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges.",
+  "how_to_fix": "Upgrade the `github.com/apache/arrow-go/v18` library to the patch version.",
+  "vulnerable_to": "Uncaught Exception",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/apache/arrow-go/releases/tag/v18.5.1",
+  "last_modified": "2026-02-03",
+  "published": "2026-02-03"
+}

@@ -1,0 +1,26 @@
+{
+  "package_name": "tensordict",
+  "patch_versions": [
+    "0.11.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.10.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of this package perform in-place modification of input tensors in the `functional_masked_fill!` implementation, which could lead to silent data corruption or unexpected behavior when functions that are intended to be non-destructive modify shared underlying memory. The patched version changes `functional_masked_fill!` to avoid modifying the original input tensor in place, preventing unintended side effects that could be exploited in complex tensor pipelines.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `tensordict` library to the patch version.",
+  "vulnerable_to": "Race Condition",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 16,
+  "changelog": "https://github.com/pytorch/tensordict/releases/tag/v0.11.0",
+  "last_modified": "2026-02-03",
+  "published": "2026-02-03"
+}

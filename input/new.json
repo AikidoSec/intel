@@ -1,24 +1,15 @@
 {
-  "package_name": "@qwen-code/qwen-code",
-  "patch_versions": [
-    "0.8.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "0.7.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-78"
-  ],
-  "tldr": "Affected versions of this package treated `awk` and `sed` commands as read-only even though they support side-effects like `system()` execution, file writes, and shell pipelines. This could allow crafted `awk` or `sed` input to execute arbitrary commands or perform file operations without user confirmation. The patched version adds comprehensive pattern-based detection for dangerous constructs in `awk` and `sed`, rejecting commands with side-effects and preventing unintended command execution.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range. Requires user interaction / untrusted input in CLI context.",
-  "how_to_fix": "Upgrade the `@qwen-code/qwen-code` library to the patch version.",
-  "vulnerable_to": "Command Injection",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 44,
-  "changelog": "https://github.com/QwenLM/qwen-code/releases/tag/v0.8.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

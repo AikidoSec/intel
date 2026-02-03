@@ -1,24 +1,15 @@
 {
-  "package_name": "@remotion/studio-server",
-  "patch_versions": [
-    "4.0.410"
-  ],
-  "vulnerable_ranges": [
-    [
-      "4.0.364",
-      "4.0.409"
-    ]
-  ],
-  "cwe": [
-    "CWE-284"
-  ],
-  "tldr": "Affected versions of this package expose server endpoints (such as those handling `/api/add-asset` and filesystem explorer actions) with insufficient origin and input validation, which could be abused by a malicious web client to interact with the host filesystem without proper access control. The patched version introduces origin host checks, file path restrictions, and randomized API prefixes to better restrict access to these filesystem operations and reduce the risk of unauthorized filesystem interaction.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@remotion/studio-server` library to the patch version.",
-  "vulnerable_to": "Improper Access Control",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 41,
-  "changelog": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.410"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

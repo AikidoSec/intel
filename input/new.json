@@ -1,24 +1,15 @@
 {
-  "package_name": "sigstat-grpc",
-  "patch_versions": [
-    "0.15.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "0.14.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-532"
-  ],
-  "tldr": "Affected versions of this package may expose secret API keys in log output during network errors because errors include unmasked keys. The patched version sanitizes secret keys at the source of log formatting so that any instance of a secret key is masked (e.g., replacing characters after `secret-`) before it is logged, preventing accidental leakage of sensitive credentials in logs.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `sigstat-grpc` library to the patch version.",
-  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "LOW",
-  "aikido_score": 24,
-  "changelog": "https://github.com/statsig-io/statsig-server-core/releases/tag/0.15.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

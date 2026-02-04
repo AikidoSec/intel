@@ -1,15 +1,29 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.17.0",
+    "5.9.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.5.0",
+      "4.16.19"
+    ],
+    [
+      "5.0.0",
+      "5.8.23"
+    ]
+  ],
+  "cwe": [
+    "CWE-284"
+  ],
+  "tldr": "Affected versions of this package had insufficient access control on several user-related controller actions in `UsersController`, allowing certain user management operations (such as impersonation, sending activation or password reset emails, enabling/disabling accounts, etc.) to be invoked without enforcing the appropriate permission and context checks. The patched version centralizes and strengthens these checks (`userActionChecks`), requiring proper post requests, control-panel context, edition, and `editUsers` permission before performing sensitive user actions, preventing unauthorized access and privilege escalation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
+  "vulnerable_to": "Improper Access Control",
+  "related_cve_id": "GHSA-234q-vvw3-mrfq",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.9.0"
 }

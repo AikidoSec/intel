@@ -1,15 +1,29 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.17.0",
+    "5.9.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.5.0",
+      "4.16.19"
+    ],
+    [
+      "5.0.0",
+      "5.8.23"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package contain multiple low-severity cross-site scripting (XSS) issues in control-panel UI output that did not consistently escape untrusted labels and templates. The patch fixes these by escaping label values and other UI text in templates and JavaScript.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "GHSA-4mgv-366x-qxvx",
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 35,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.9.0"
 }

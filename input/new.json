@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "rulesync",
+  "patch_versions": [
+    "6.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.68.0",
+      "6.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to path traversal when processing nested rule files, due to insufficient validation of relative file paths. An attacker could craft paths containing traversal sequences to access files outside the intended directory. The patched version adds explicit path traversal checks after path resolution, ensuring that rule files remain within the expected root directory and preventing unauthorized file access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `rulesync` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 44,
+  "changelog": "https://github.com/dyoshikawa/rulesync/releases/tag/v6.1.0"
 }

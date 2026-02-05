@@ -1,23 +1,15 @@
 {
-  "package_name": "lz4",
-  "org_name": "net.jpountz.lz4",
-  "patch_versions": ["1.10.1"],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "1.10.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-1104"
-  ],
-  "tldr": "This package is vulnerable to an information leakage issue as described in CVE-2025-66566. In addition, it is no longer maintained (latest update was 1.8.1), meaning security fixes and updates are unlikely to be provided. Users are encouraged to migrate to the actively maintained `at.yawk.lz4:lz4-java` package to reduce long-term security and maintenance risks.",
-  "doest_this_affect_me": "You are affected if you are using this package.",
-  "how_to_fix": "Replace `net.jpountz.lz4:lz4` by `at.yawk.lz4:lz4-java` version 1.10.1 or higher.",
-  "vulnerable_to": "Use of Unmaintained Third Party Components",
-  "related_cve_id": "CVE-2025-66566",
-  "language": "JAVA",
-  "severity_class": "HIGH",
-  "aikido_score": 85,
-  "changelog": "https://github.com/advisories/GHSA-cmp6-m4wj-q63q"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

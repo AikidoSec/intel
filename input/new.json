@@ -1,6 +1,6 @@
 {
   "package_name": "lz4",
-  "package_name_alias": "net.jpountz.lz4",
+  "org_name": "net.jpountz.lz4",
   "patch_versions": [],
   "vulnerable_ranges": "*",
   "cwe": [

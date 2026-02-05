@@ -1,0 +1,31 @@
+{
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.17.0",
+    "5.9.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.5.0",
+      "4.16.19"
+    ],
+    [
+      "5.0.0",
+      "5.8.23"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Affected versions of this package contain multiple undisclosed server-side request forgery (SSRF) and server-side template injection (SSTI) vulnerabilities. These issues may allow attackers to influence server-side request handling or template rendering logic in unexpected ways, potentially leading to unauthorized network access, information disclosure, or further impact depending on application configuration.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
+  "vulnerable_to": "Server-Side Request Forgery (SSRF)",
+  "related_cve_id": "GHSA-5fvc-7894-ghp4",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.9.0",
+  "last_modified": "2026-02-05",
+  "published": "2026-02-05"
+}

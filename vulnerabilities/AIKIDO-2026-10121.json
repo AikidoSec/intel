@@ -1,0 +1,28 @@
+{
+  "package_name": "snowflake-jdbc",
+  "org_name": "net.snowflake",
+  "package_wildcard_contains": "snowflake-jdbc",
+  "patch_versions": [
+    "4.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "3.28.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of the package may expose sensitive information, such as secrets or credentials, in log files, especially in case of exceptions or error handling. This can lead to unauthorized access if the logs are read by unintended parties or stored in insecure locations.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `net.snowflake:snowflake-jdbc` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "JAVA",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/snowflakedb/snowflake-jdbc/blob/master/CHANGELOG.md",
+  "last_modified": "2026-02-05",
+  "published": "2026-02-05"
+}

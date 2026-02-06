@@ -1,24 +1,15 @@
 {
-  "package_name": "mailparser",
-  "patch_versions": [
-    "3.9.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.4.2",
-      "3.9.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) when converting plain text to HTML, because URLs and link text were inserted into anchor tags without proper escaping. Specially crafted URLs containing quotes or HTML content could break out of the attribute context and inject malicious code. The patched version escapes URL attributes and encodes link text before rendering, preventing XSS attacks.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `mailparser` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 77,
-  "changelog": "https://github.com/nodemailer/mailparser/releases/tag/v3.9.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

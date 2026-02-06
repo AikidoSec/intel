@@ -1,24 +1,15 @@
 {
-  "package_name": "@modern-js/runtime",
-  "patch_versions": [
-    "2.70.4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.68.0",
-      "2.70.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of the package may be vulnerable to cross-site scripting because streamed RSC data is embedded directly into `<script>` tags without properly escaping script content. This behavior can allow injected sequences such as closing script tags or HTML comments to break out of the script context and execute arbitrary code in the browser, rather than being safely escaped before insertion.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@modern-js/runtime` library to a patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 52,
-  "changelog": "https://github.com/web-infra-dev/modern.js/releases/tag/v2.70.4"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

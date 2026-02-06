@@ -1,0 +1,26 @@
+{
+  "package_name": "sync-message-port",
+  "patch_versions": [
+    "1.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.1.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package contain a race condition in the synchronous message-port implementation that can lead to counter underflow and inconsistent message state, resulting in unexpected crashes. This issue can be triggered to cause a denial of service by repeatedly hitting the faulty code path.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `sync-message-port` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 22,
+  "changelog": "https://github.com/sass/sync-message-port/blob/main/CHANGELOG.md#120",
+  "last_modified": "2026-02-06",
+  "published": "2026-02-06"
+}

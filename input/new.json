@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "go.mongodb.org/mongo-driver/v2",
+  "patch_versions": [
+    "2.5.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.4.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-125"
+  ],
+  "tldr": "Affected versions of the package may be vulnerable to buffer over-reads in GSSAPI authentication functions due to incorrect memory allocation and copy lengths. This behavior can read past the end of source buffers when constructing error descriptions or usernames, potentially exposing unintended memory contents instead of safely copying only the valid buffer data.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `go.mongodb.org/mongo-driver/v2` library to the patch version.",
+  "vulnerable_to": "Out-of-bounds Read",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 70,
+  "changelog": "https://github.com/mongodb/mongo-go-driver/releases/tag/v2.5.0"
 }

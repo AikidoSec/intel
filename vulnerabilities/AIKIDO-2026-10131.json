@@ -19,7 +19,7 @@
   "related_cve_id": "",
   "language": "GO",
   "severity_class": "MEDIUM",
-  "aikido_score": 70,
+  "aikido_score": 69,
   "changelog": "https://github.com/mongodb/mongo-go-driver/releases/tag/v2.5.0",
   "last_modified": "2026-02-06",
   "published": "2026-02-06"

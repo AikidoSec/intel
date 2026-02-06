@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/sgnl-ai/adapter-framework",
+  "patch_versions": [
+    "0.23.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.20.0",
+      "0.22.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of the package may expose sensitive information in log files because request cursor values are logged directly. These cursors can contain secrets such as URLs, usernames, group names, or identifiers, which may be written to logs during normal operation instead of being redacted or omitted.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/sgnl-ai/adapter-framework` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/SGNL-ai/adapter-framework/releases/tag/v0.23.0",
+  "last_modified": "2026-02-06",
+  "published": "2026-02-06"
+}

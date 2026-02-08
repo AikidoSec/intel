@@ -16,9 +16,9 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `protobuf` library to the patch version.",
   "vulnerable_to": "Uncontrolled Recursion",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2026-0994",
   "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 51,
+  "severity_class": "HIGH",
+  "aikido_score": 82,
   "changelog": "https://github.com/protocolbuffers/protobuf/releases/tag/v33.5"
 }

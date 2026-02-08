@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@evershop/evershop",
+  "patch_versions": [
+    "2.1.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "2.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package improperly decoded HTML entities (`&lt;`, `&gt;`) and parsed user-controlled JSON without sanitization, enabling stored or reflected XSS. By injecting malicious HTML/JS into `description` or `raw` blocks, an attacker could have entities decoded into executable markup and rendered by the client, leading to script execution, session theft, or UI manipulation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@evershop/evershop` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
+  "changelog": "https://github.com/evershopcommerce/evershop/blob/dev/changelog.md#v211-2026-01-12"
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "keras",
+  "patch_versions": [
+    "3.13.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.13.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-674"
+  ],
+  "tldr": "Affected versions of this package allow loading of malicious `.keras` files containing crafted HDF5 metadata with extreme or overflowing tensor shapes, leading to unbounded memory allocation and potential remote denial of service. An attacker could exploit this by supplying a shape bomb that triggers recursive path handling issues or forces NumPy to allocate multi-gigabyte tensors during model loading, exhausting memory or crashing the process before validation occurs.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `keras` library to the patch version.",
+  "vulnerable_to": "Uncontrolled Recursion",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 58,
+  "changelog": "https://github.com/keras-team/keras/releases/tag/v3.13.2"
 }

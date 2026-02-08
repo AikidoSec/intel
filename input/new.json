@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "passbolt-browser-extension",
+  "patch_versions": [
+    "5.9.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.0",
+      "5.8.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1021"
+  ],
+  "tldr": "Affected versions of this package allow the in-form menu to be rendered without proper application context validation, enabling it to appear even when overlaid by other components. This could result in unintended UI exposure and interaction outside the intended application boundary. An attacker might exploit this by triggering the in-form menu in an overlaid or foreign application context to confuse users, intercept interactions, or facilitate phishing-like attacks by presenting trusted UI elements in an untrusted overlay.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `passbolt-browser-extension` library to the patch version.",
+  "vulnerable_to": "Improper Restriction of Rendered UI Layers or Frames",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 64,
+  "changelog": "https://github.com/passbolt/passbolt_browser_extension/releases/tag/v5.9.0"
 }

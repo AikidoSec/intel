@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "protobuf",
+  "patch_versions": [
+    "6.33.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.0.0",
+      "6.33.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-674"
+  ],
+  "tldr": "Affected versions of this package contain a flaw where nested google.protobuf.Any messages can bypass the configured max_recursion_depth, allowing uncontrolled recursion. An attacker can exploit this by crafting deeply nested Any payloads that trigger recursive calls via _ConvertAnyMessage() and methodcaller(), bypassing depth tracking. It can exhaust the call stack during message parsing, resulting in a denial-of-service attack through stack overflow and process crash.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `protobuf` library to the patch version.",
+  "vulnerable_to": "Uncontrolled Recursion",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 51,
+  "changelog": "https://github.com/protocolbuffers/protobuf/releases/tag/v33.5"
 }

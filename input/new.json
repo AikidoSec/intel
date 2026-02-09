@@ -1,24 +1,15 @@
 {
-  "package_name": "keras",
-  "patch_versions": [
-    "3.13.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.0.0",
-      "3.13.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-502"
-  ],
-  "tldr": "Affected versions of this package allow TFSMLayer to load external TensorFlow SavedModels during deserialization without honoring `safe_mode`, enabling attacker-controlled graphs to be registered and later executed during normal inference. An attacker could exploit this by supplying a malicious SavedModel (e.g., via a crafted config or model artifact) that bypasses `safe_mode=True`, causing unintended graph execution when the model is invoked, effectively violating Keras' safe deserialization guarantees and enabling execution of untrusted computation without explicit user opt-in.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `keras` library to the patch version.",
-  "vulnerable_to": "Deserialization of Untrusted Data",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "HIGH",
-  "aikido_score": 78,
-  "changelog": "https://github.com/keras-team/keras/releases/tag/v3.13.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

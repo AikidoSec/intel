@@ -1,0 +1,26 @@
+{
+  "package_name": "@evershop/evershop",
+  "patch_versions": [
+    "2.1.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "2.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package allow insecure URL rewrite handling where `url_key` validation was overly permissive and SQL queries were built via string interpolation, enabling malicious input to influence database operations. An attacker could craft specially formatted `url_key` values (including unexpected characters or long strings) to manipulate `request_path` replacements and, in the worst case, perform SQL injection during update or delete flows. By injecting controlled values into `currentPath.request_path` or `path`, an attacker could corrupt URL mappings, overwrite routes of other entities, or disrupt application routing integrity. The fix enforces strict URL key constraints and uses parameterized queries to eliminate injection vectors.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@evershop/evershop` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 78,
+  "changelog": "https://github.com/evershopcommerce/evershop/blob/dev/changelog.md#v211-2026-01-12",
+  "last_modified": "2026-02-09",
+  "published": "2026-02-09"
+}

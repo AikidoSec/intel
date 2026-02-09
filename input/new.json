@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "HtmlSanitizer",
+  "patch_versions": [
+    "9.0.892"
+  ],
+  "vulnerable_ranges": [
+    [
+      "9.0.0",
+      "9.0.891"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package do not properly sanitize the contents of HTML `<template>` tags, allowing malicious markup inside `template.content` to bypass sanitization. An attacker could craft a payload where dangerous elements or attributes are embedded within a template fragment and later instantiated into the DOM, leading to DOM-based XSS or script execution when the template is rendered or cloned.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `HtmlSanitizer` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "DOTNET",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/mganss/HtmlSanitizer/releases/tag/v9.0.892"
 }

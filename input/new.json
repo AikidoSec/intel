@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "github.com/inspektor-gadget/inspektor-gadget",
+  "patch_versions": [
+    "0.49.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.48.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-77"
+  ],
+  "tldr": "Affected versions of this package allow command injection during image build because user-controlled fields from the gadget manifest are interpolated into `Makefile.build` targets without proper escaping; specifically, parameters like `CFLAGS`, source paths, and other build options are passed directly to `make`. An attacker who can influence `build.yml` (e.g., in CI/CD pipelines building untrusted gadgets) can inject shell metacharacters to execute arbitrary commands during the build, resulting in code execution on the local host when `--local` is used, or inside the build container otherwise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/inspektor-gadget/inspektor-gadget` library to the patch version.",
+  "vulnerable_to": "Command Injection",
+  "related_cve_id": "CVE-2026-24905",
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 66,
+  "changelog": "https://github.com/inspektor-gadget/inspektor-gadget/releases/tag/v0.49.0"
 }

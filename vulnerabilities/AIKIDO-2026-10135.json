@@ -1,0 +1,26 @@
+{
+  "package_name": "@notionhq/client",
+  "patch_versions": [
+    "5.9.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.1.0",
+      "5.8.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-23"
+  ],
+  "tldr": "Affected versions of this package fail to properly validate path parameters (such as block_id, page_id, or database_id), allowing path traversal sequences like `..` and URL-encoded variants (`%2e%2e`, mixed-case, or fully encoded paths) to be processed, which could alter the resolved API endpoint. An attacker could exploit this vulnerability by crafting malicious requests with encoded traversal payloads in path parameters to access unintended routes, bypass authorization checks, or interact with internal endpoints that should not be exposed.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@notionhq/client` library to the patch version.",
+  "vulnerable_to": "Directory Traversal",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/makenotion/notion-sdk-js/releases/tag/v5.9.0",
+  "last_modified": "2026-02-09",
+  "published": "2026-02-09"
+}

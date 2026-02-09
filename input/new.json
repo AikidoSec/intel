@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/onflow/flow-go",
+  "patch_versions": [
+    "0.45.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.44.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an EVM gas accounting overflow when processing batched transactions, allowing the total computed gas to wrap around and be underestimated. By crafting a batch with carefully sized offsets/lengths and large individual EVM calls, an attacker can trigger index or arithmetic overflows during decoding or gas aggregation, causing the system to accept and execute high-gas transactions while charging little or no gas. This enables effectively “free” execution, leading to resource exhaustion, denial of service, or economic abuse until proper bounds checks and overflow protections are enforced.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/onflow/flow-go` library to the patch version.",
+  "vulnerable_to": "Integer Overflow or Wraparound",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 57,
+  "changelog": "https://github.com/onflow/flow-go/releases/tag/v0.45.0"
 }

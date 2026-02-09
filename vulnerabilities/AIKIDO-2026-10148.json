@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/labstack/echo/v5",
+  "patch_versions": [
+    "5.0.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "5.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-548"
+  ],
+  "tldr": "Affected versions of this package allow unintended directory disclosure when `StaticWithConfig` is used with `Browse: true` and no index file exists: directory listings are generated from the filesystem root instead of being constrained to `StaticConfig.Root`. An attacker can exploit this by requesting a browsable path (e.g., `/`) to enumerate files and directories outside the intended public directory, potentially discovering sensitive filenames, structure, and metadata such as sizes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and you set `config.Browse=true`.",
+  "how_to_fix": "Upgrade the `github.com/labstack/echo/v5` library to the patch version.",
+  "vulnerable_to": "Exposure of Information Through Directory Listing",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "HIGH",
+  "aikido_score": 81,
+  "changelog": "https://github.com/labstack/echo/releases/tag/v5.0.2",
+  "last_modified": "2026-02-09",
+  "published": "2026-02-09"
+}

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "PushwooshXCFramework",
+  "patch_versions": [
+    "7.0.21"
+  ],
+  "vulnerable_ranges": [
+    [
+      "7.0.0",
+      "7.0.20"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package allowed the `set_base_url` remote command to accept arbitrary URL schemes without proper validation, enabling unsafe protocol handling. An attacker could supply a crafted URL using non-HTTP(S) schemes (e.g., `file://`, `ftp://`, or custom handlers) to coerce the application into accessing local resources, internal services, or unexpected endpoints. This may lead to local file disclosure, SSRF-like behavior, or abuse of protocol handlers depending on how the base URL is consumed. The issue is mitigated by restricting accepted schemes to `http://` and `https://` only.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `PushwooshXCFramework` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "SWIFT",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/Pushwoosh/pushwoosh-ios-sdk/releases/tag/7.0.21"
 }

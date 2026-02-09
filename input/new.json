@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/pulumi/pulumi-kubernetes-operator/v2",
+  "patch_versions": [
+    "2.4.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-366"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to race-condition-driven finalizer handling issues where client-side updates to Kubernetes Update objects can conflict on resourceVersion, causing finalizers to remain orphaned and deletion to hang indefinitely. An attacker (or misbehaving controller) could exploit this by triggering rapid, concurrent `Update` and `Delete` operations, e.g., forcing TTL expirations or bulk deletes, so that finalizers are never removed, leading to persistent orphaned resources and a denial-of-service condition via resource exhaustion or stuck reconciliation loops.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/pulumi/pulumi-kubernetes-operator/v2` library to the patch version.",
+  "vulnerable_to": "Race Condition",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 44,
+  "changelog": "https://github.com/pulumi/pulumi-kubernetes-operator/releases/tag/v2.4.1"
 }

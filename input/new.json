@@ -1,24 +1,15 @@
 {
-  "package_name": "waterhole/core",
-  "patch_versions": [
-    "0.6.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "0.5.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-200"
-  ],
-  "tldr": "Affected versions of this package exposed sensitive user information through a JSON:API endpoint due to insufficient access control and inadequate handling of deleted resources. An attacker could exploit this by querying the API to enumerate or retrieve data from soft-deleted posts or restricted records before masking and locking were enforced. By abusing predictable identifiers or filters, unauthorized users could access confidential fields that should have been hidden or protected by proper authorization checks.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `waterhole/core` library to the patch version.",
-  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "LOW",
-  "aikido_score": 21,
-  "changelog": "https://github.com/waterholeforum/core/releases/tag/v0.6.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

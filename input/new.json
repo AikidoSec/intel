@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/cedar-policy/cedar-go",
-  "patch_versions": [
-    "1.4.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.3.2",
-      "1.4.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-863"
-  ],
-  "tldr": "Affected versions of this package contain a critical datetime parsing flaw where UTC offsets are interpreted with inverted semantics, causing timestamps to be shifted in the wrong direction; this can lead to incorrect authorization decisions in time-based policies, especially with the newly supported RFC 110 expanded year format. An attacker could exploit this by crafting datetimes with specific positive or negative UTC offsets so that policy checks (e.g., expiry, validity windows, or access-after/before constraints) are evaluated incorrectly, potentially granting access earlier or for longer than intended or bypassing temporal restrictions altogether.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/cedar-policy/cedar-go` library to the patch version.",
-  "vulnerable_to": "Incorrect Authorization",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "MEDIUM",
-  "aikido_score": 58,
-  "changelog": "https://github.com/cedar-policy/cedar-go/releases/tag/v1.4.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

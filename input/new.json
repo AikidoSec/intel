@@ -1,24 +1,15 @@
 {
-  "package_name": "globalpayments/php-sdk",
-  "patch_versions": [
-    "14.1.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "2.2.13",
-      "14.1.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) due to improper handling of dynamic params in the example code snippets, where values obtained from HTTP headers and request metadata are embedded into application-generated URLs and markup without sufficient context-aware encoding. Because these values can influence attributes, anchors, or other HTML and JavaScript contexts, an attacker may craft a malicious request that injects an executable script into the rendered page, leading to arbitrary script execution in the victim’s browser, session compromise, data exfiltration, or unauthorized actions within the application context.",
-  "doest_this_affect_me": "You are affected if you are using a version within the vulnerable range and have used the maintainer's example code templates.",
-  "how_to_fix": "Upgrade the `globalpayments/php-sdk` library to the patch version or fix the code that was built using the example snippets.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "LOW",
-  "aikido_score": 30,
-  "changelog": "https://github.com/globalpayments/php-sdk/blob/master/CHANGELOG.md#latest-version-v1411-012926"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

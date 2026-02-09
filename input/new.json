@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@google/clasp",
+  "patch_versions": [
+    "3.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.1.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package allow a path traversal vulnerability in the `fetchRemote` method, where unvalidated remote filenames could escape the intended project directory and write arbitrary files on the local filesystem. An attacker controlling a remote Apps Script project could craft filenames containing traversal sequences (e.g., `../../`) so that, during a `clasp pull` or `clasp clone`, malicious files are written outside the project boundary, potentially overwriting sensitive files or planting executable code, leading to local arbitrary file write and a viable Remote Code Execution (RCE) vector.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@google/clasp` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 62,
+  "changelog": "https://github.com/google/clasp/releases/tag/v3.2.0"
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@testomatio/reporter",
+  "patch_versions": [
+    "2.6.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.6.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package improperly masked Testomatio API tokens in logs, allowing sensitive values (e.g., `tstmt_...`) to be partially exposed due to insufficient pattern handling and type safety. An attacker could exploit this by accessing application logs (via log aggregation systems, support dumps, CI logs, or compromised observability tooling) to harvest valid API tokens and impersonate the service, perform unauthorized API actions, exfiltrate test data, or pivot to other systems that trust those credentials.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@testomatio/reporter` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/testomatio/reporter/releases/tag/2.6.1"
 }

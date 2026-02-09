@@ -14,7 +14,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to Cross-Site Scripting (XSS) due to improper handling of dynamic params in the example code snippets, where values obtained from HTTP headers and request metadata are embedded into application-generated URLs and markup without sufficient context-aware encoding. Because these values can influence attributes, anchors, or other HTML and JavaScript contexts, an attacker may craft a malicious request that injects an executable script into the rendered page, leading to arbitrary script execution in the victim’s browser, session compromise, data exfiltration, or unauthorized actions within the application context.",
   "doest_this_affect_me": "You are affected if you are using a version within the vulnerable range and have used the maintainer's example code templates.",
-  "how_to_fix": "Upgrade the `globalpayments/php-sdk` library to the patch version or patch your code that was built using the example code snippets.",
+  "how_to_fix": "Upgrade the `globalpayments/php-sdk` library to the patch version or fix the code that was built using the example snippets.",
   "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
   "language": "PHP",

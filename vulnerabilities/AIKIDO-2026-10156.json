@@ -1,0 +1,20 @@
+{
+  "package_name": "sha-rust",
+  "patch_versions": [],
+  "vulnerable_ranges": "*",
+  "cwe": [
+    "CWE-506"
+  ],
+  "tldr": "The `sha-rust` crate was removed from crates.io for malicious code.",
+  "doest_this_affect_me": "You are affected if you are using this package.",
+  "how_to_fix": "Remove any `sha-rust` package from your application.",
+  "reporter": "",
+  "vulnerable_to": "Embedded Malicious Code",
+  "related_cve_id": "",
+  "language": "rust",
+  "severity_class": "CRITICAL",
+  "aikido_score": 100,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0146.html",
+  "last_modified": "2026-02-10",
+  "published": "2026-02-10"
+}

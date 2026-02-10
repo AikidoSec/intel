@@ -12,7 +12,7 @@
   "cwe": [
     "CWE-78"
   ],
-  "tldr": "Affected versions of this package allow newline-separated command injection where only the first line is validated. An attacker can place a multi-line instruction containing a benign read-only command followed by a malicious one, bypassing safety checks because the parser did not treat `\n`/`\r\n` as command separators. As a result, validation approves the first command while subsequent arbitrary commands execute silently without user confirmation.",
+  "tldr": "Affected versions of this package allow newline-separated command injection where only the first line is validated. An attacker can place a multi-line instruction containing a benign read-only command followed by a malicious one, bypassing safety checks because the parser did not treat `\\n`/`\\r\\n` as command separators. As a result, validation approves the first command while subsequent arbitrary commands execute silently without user confirmation.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range. Requires user interaction / untrusted input in CLI context.",
   "how_to_fix": "Upgrade the `@qwen-code/qwen-code` library to the patch version.",
   "vulnerable_to": "Command Injection",

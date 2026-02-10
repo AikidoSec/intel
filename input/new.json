@@ -1,18 +1,15 @@
 {
-  "package_name": "finch-rust",
+  "package_name": "",
   "patch_versions": [],
-  "vulnerable_ranges": "*",
-  "cwe": [
-    "CWE-506"
-  ],
-  "tldr": "The `finch-rust` crate was removed from crates.io for malicious code.",
-  "doest_this_affect_me": "You are affected if you are using this package.",
-  "how_to_fix": "Remove any `finch-rust` package from your application.",
-  "reporter": "",
-  "vulnerable_to": "Embedded Malicious Code",
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "rust",
-  "severity_class": "CRITICAL",
-  "aikido_score": 100,
-  "changelog": "https://rustsec.org/advisories/RUSTSEC-2025-0148.html"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,0 +1,26 @@
+{
+  "package_name": "@feathersjs/authentication-oauth",
+  "patch_versions": [
+    "5.0.40"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "5.0.39"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package were vulnerable to improper URL and origin validation, enabling a generic OAuth redirection abuse issue. An attacker could manipulate unvalidated or weakly validated redirect/origin values to force the application to redirect sensitive OAuth responses (such as access tokens) to attacker-controlled endpoints, including look-alike or crafted URLs that bypass origin checks, resulting in token leakage and unauthorized account access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@feathersjs/authentication-oauth` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 72,
+  "changelog": "https://github.com/feathersjs/feathers/releases/tag/v5.0.40",
+  "last_modified": "2026-02-10",
+  "published": "2026-02-10"
+}

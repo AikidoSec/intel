@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "asgiref",
+  "patch_versions": [
+    "3.11.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.11.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-407"
+  ],
+  "tldr": "Affected versions of this package allowed a potential Denial of Service (DoS) via the `asgiref.wsgi.WsgiToAsgi` adapter, where malicious requests containing an excessive number of duplicated HTTP headers could trigger resource exhaustion during WSGI environment construction. An attacker could exploit this by sending crafted requests with thousands of repeated header fields, causing high CPU and memory usage and degrading or crashing the service. The issue is mitigated by a more efficient algorithm and an optional `duplicate_header_limit` (default: 100) that rejects malformed requests exceeding the limit, unless explicitly disabled.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `asgiref` library to the patch version.",
+  "vulnerable_to": "Inefficient Algorithmic Complexity",
+  "related_cve_id": "CVE-2025-14550",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 46,
+  "changelog": "https://github.com/django/asgiref/blob/main/CHANGELOG.txt"
 }

@@ -1,24 +1,15 @@
 {
-  "package_name": "@qwen-code/qwen-code",
-  "patch_versions": [
-    "0.9.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "0.8.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-78"
-  ],
-  "tldr": "Affected versions of this package allow newline-separated command injection where only the first line is validated. An attacker can place a multi-line instruction containing a benign read-only command followed by a malicious one, bypassing safety checks because the parser did not treat `\n`/`\r\n` as command separators. As a result, validation approves the first command while subsequent arbitrary commands execute silently without user confirmation.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range. Requires user interaction / untrusted input in CLI context.",
-  "how_to_fix": "Upgrade the `@qwen-code/qwen-code` library to the patch version.",
-  "vulnerable_to": "Command Injection",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 55,
-  "changelog": "https://github.com/QwenLM/qwen-code/releases/tag/v0.9.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,0 +1,26 @@
+{
+  "package_name": "spryker/quote-request",
+  "patch_versions": [
+    "2.8.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "2.7.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-497"
+  ],
+  "tldr": "Affected versions of this package persisted quote request versions containing sensitive customer data, including passwords, in the database. An attacker who gains unauthorized read access to the database (via SQL injection, misconfigured backups, or compromised credentials) could extract stored credentials and reuse them for account takeover or lateral movement. This exposure increases the blast radius of a single breach by turning passive data access into credential compromise.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `spryker/quote-request` library to the patch version.",
+  "vulnerable_to": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/spryker/quote-request/releases/tag/2.8.0",
+  "last_modified": "2026-02-10",
+  "published": "2026-02-10"
+}

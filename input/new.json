@@ -1,24 +1,15 @@
 {
-  "package_name": "beautiful-mermaid",
-  "patch_versions": [
-    "0.1.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "0.1.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-79"
-  ],
-  "tldr": "Affected versions of this package allow crafted Mermaid diagrams to inject arbitrary SVG attributes and elements because user-controlled values from `style` and `classDef` directives are interpolated into SVG attributes without proper escaping, enabling XSS and element injection. An attacker can exploit this by supplying malicious values that prematurely close SVG tags and inject new elements such as `<svg onload>` to execute JavaScript on render, or `<image>` tags to load external resources for data exfiltration.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `beautiful-mermaid` library to the patch version.",
-  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 61,
-  "changelog": "https://github.com/lukilabs/beautiful-mermaid/releases/tag/v0.1.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

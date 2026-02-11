@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/external-secrets/external-secrets",
+  "patch_versions": [
+    "1.3.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.3.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of this package may expose secret values through error messages. When `json.Unmarshal` fails, the raw error—including parts of the secret data—is propagated to Kubernetes status conditions, allowing users with read access to view sensitive information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/external-secrets/external-secrets` library to a patch version.",
+  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/external-secrets/external-secrets/releases/tag/v1.3.2"
 }

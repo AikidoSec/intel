@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@nx/workspace",
+  "patch_versions": [
+    "22.4.5"
+  ],
+  "vulnerable_ranges": [
+    [
+      "16.0.0",
+      "22.4.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-78"
+  ],
+  "tldr": "Affected versions of this package allow OS command injection because user-controlled input flows unsanitized into `execSync` via string interpolation when resolving npm package versions. An attacker can supply a crafted `--preset` value containing shell metacharacters to execute arbitrary commands on the host during `create-nx-workspace`. It can lead to full compromise of the developer machine or CI runner (RCE), including data exfiltration or malware installation. The issue arises from using shell command concatenation instead of validating input and invoking commands with argument arrays.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@nx/workspace` library to the patch version.",
+  "vulnerable_to": "Command Injection",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 79,
+  "changelog": "https://github.com/nrwl/nx/releases/tag/22.4.5"
 }

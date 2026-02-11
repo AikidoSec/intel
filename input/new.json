@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "strapi-plugin-comments",
+  "patch_versions": [
+    "3.2.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "3.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) in user comments. Comment content is stored and rendered without proper sanitization, allowing attackers to inject malicious scripts that execute in users’ browsers.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `strapi-plugin-comments` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 74,
+  "changelog": "https://github.com/VirtusLab-Open-Source/strapi-plugin-comments/releases/tag/v3.2.1"
 }

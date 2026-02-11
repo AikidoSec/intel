@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "taskiq-redis",
+  "patch_versions": [
+    "1.2.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.9",
+      "1.2.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to denial of service due to an infinite lock in the Redis stream broker. If a worker crashes or is terminated while holding the autoclaim lock, the lock is never released, preventing further message processing and causing the queue to stall.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `taskiq-redis` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 24,
+  "changelog": "https://github.com/taskiq-python/taskiq-redis/releases/tag/1.2.2"
 }

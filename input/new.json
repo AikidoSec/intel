@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "litellm",
+  "patch_versions": [
+    "1.80.15"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.80.14"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package expose the full plaintext virtual key in error responses when an expired key is used, constituting a secrecy violation even though the key is no longer valid. An attacker can exploit this by capturing expired keys from logs, API responses, or monitoring systems and later abusing them if an administrator reactivates the key via the update endpoint, or by leveraging the leaked secret for audit evasion, access pattern reconstruction, or targeted social-engineering attacks, all of which violate standard secret-handling and compliance requirements.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `litellm` library to the patch version.",
+  "vulnerable_to": "Information Disclosure",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 41,
+  "changelog": "https://github.com/BerriAI/litellm/issues/18731"
 }

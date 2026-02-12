@@ -1,24 +1,15 @@
 {
-  "package_name": "openhands-sdk",
-  "patch_versions": [
-    "1.11.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "1.10.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-200"
-  ],
-  "tldr": "Affected versions of this package may expose authentication tokens and other sensitive headers in trajectory export files. Insufficient secret-detection patterns allow headers such as tokens, cookies, credentials, or passwords to be serialized in plain text, which can lead to information leakage.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `openhands-sdk` library to the patch version.",
-  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 47,
-  "changelog": "https://github.com/OpenHands/software-agent-sdk/releases/tag/v1.11.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

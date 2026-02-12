@@ -1,24 +1,15 @@
 {
-  "package_name": "eclipse-threadx.threadx",
-  "patch_versions": [
-    "6.4.5"
-  ],
-  "vulnerable_ranges": [
-    [
-      "6.1.7",
-      "6.4.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-253"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to denial of service and memory corruption due to incorrect error handling in the `CreateCounter()` function. When the counter pool is exhausted, the code misinterprets the error value returned by `osek_get_counter()`, casts it to a pointer, and writes to an invalid memory address, which can lead to crashes or unauthorized memory access.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `eclipse-threadx.threadx` library to the patch version.",
-  "vulnerable_to": "Incorrect Check of Function Return Value",
-  "related_cve_id": "CVE-2026-0648",
-  "language": "C++",
-  "severity_class": "HIGH",
-  "aikido_score": 79,
-  "changelog": "https://github.com/eclipse-threadx/threadx/releases/tag/v6.4.5.202504_rel"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

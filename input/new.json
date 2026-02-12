@@ -1,24 +1,15 @@
 {
-  "package_name": "sigs.k8s.io/azurefile-csi-driver",
-  "patch_versions": [
-    "1.35.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "1.34.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-1395"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to multiple CVEs (CVE-2025-52881, CVE-2025-47914, CVE-2025-58181, CVE-2025-13281, CVE-2025-47912, CVE-2025-61727) that may not be detected by standard software composition analysis (SCA) scanners, potentially leaving known vulnerabilities unnoticed.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `sigs.k8s.io/azurefile-csi-driver` library to a patch version.",
-  "vulnerable_to": "Dependency on Vulnerable Third-Party Component",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "HIGH",
-  "aikido_score": 75,
-  "changelog": "https://github.com/kubernetes-sigs/azurefile-csi-driver/releases/tag/v1.35.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

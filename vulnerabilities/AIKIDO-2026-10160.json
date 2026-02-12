@@ -1,0 +1,26 @@
+{
+  "package_name": "urllib3-future",
+  "patch_versions": [
+    "2.15.902"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.2.0",
+      "2.15.901"
+    ]
+  ],
+  "cwe": [
+    "CWE-409"
+  ],
+  "tldr": "Affected versions of this package may decompress entire HTTP redirect response bodies even when using the streaming API with `preload_content=False`, ignoring read limits. It can lead to excessive CPU and memory usage. An attacker can exploit this by hosting a redirect response containing a compressed decompression bomb, causing the client to automatically decompress massive data before any reads occur, resulting in denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `urllib3-future` library to the patch version or disable redirects for requests to untrusted sources by setting `redirect=False`.",
+  "vulnerable_to": "Decompression-bomb",
+  "related_cve_id": "CVE-2026-21441",
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 89,
+  "changelog": "https://github.com/jawah/urllib3.future/releases/tag/2.15.902",
+  "last_modified": "2026-02-12",
+  "published": "2026-02-12"
+}

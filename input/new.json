@@ -1,25 +1,15 @@
 {
-  "package_name": "directorytree/imapengine",
-  "package_name_alias": "mint",
-  "patch_versions": [
-    "1.22.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.0.0",
-      "1.22.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-78"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to command injection in the IMAP `ID` command. User-supplied values are inserted into the command without proper escaping, allowing specially crafted input to break out of the expected format and inject additional IMAP commands.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `directorytree/imapengine` library to the patch version.",
-  "vulnerable_to": "Command injection",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "HIGH",
-  "aikido_score": 73,
-  "changelog": "https://github.com/DirectoryTree/ImapEngine/releases/tag/v1.22.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

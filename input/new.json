@@ -1,24 +1,15 @@
 {
-  "package_name": "spring",
-  "patch_versions": [
-    "4.4.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "4.2.0", 
-      "4.4.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-488"
-  ],
-  "tldr": "Affected versions of this package allowed Spring to leak environment variables across client invocations due to inconsistent handling of spawn_on_env, causing forked applications to inherit server-side ENV values even when clients did not request them. It could silently boot applications with unintended configuration while masking the issue by cleaning the ENV only after attachment. An attacker with the ability to influence the Spring server’s environment (or execute a prior trusted command) could persist sensitive or security-relevant variables across subsequent runs, potentially enabling configuration manipulation, secret exposure, or bypassing environment-based security controls.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `spring` library to the patch version.",
-  "vulnerable_to": "Exposure of Data Element to Wrong Session",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUBY",
-  "severity_class": "LOW",
-  "aikido_score": 21,
-  "changelog": "https://github.com/rails/spring/releases/tag/v4.4.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

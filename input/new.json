@@ -1,24 +1,15 @@
 {
-  "package_name": "@enspirit/elo",
-  "patch_versions": [
-    "0.9.7"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "0.9.6"
-    ]
-  ],
-  "cwe": [
-    "CWE-94"
-  ],
-  "tldr": "Affected versions of this package have a code injection vulnerability in the literal emitters for date, datetime, and duration constructs: the compiler interpolated unescaped values directly into generated code or SQL, allowing crafted input via the programmatic AST API to break out of string literals and inject arbitrary code. The patched version ensures proper escaping (using `JSON.stringify` for JS/Ruby and doubled single quotes for SQL) and adds security regression tests to prevent this class of injection.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@enspirit/elo` library to the patch version.",
-  "vulnerable_to": "Code Injection",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "CRITICAL",
-  "aikido_score": 93,
-  "changelog": "https://github.com/enspirit/elo/blob/main/CHANGELOG.md#097---2026-01-27"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

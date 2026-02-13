@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/teslamotors/vehicle-command",
+  "patch_versions": [
+    "0.4.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-250"
+  ],
+  "tldr": "Affected versions of this package allow containers to run without the `no-new-privileges:true` security control, which may enable privilege escalation within the container environment. An attacker who gains code execution inside the container could exploit setuid/setgid binaries or misconfigured capabilities to obtain elevated privileges, potentially accessing sensitive resources or affecting the host system depending on container isolation and runtime configuration. This security hardening prevents processes from gaining additional privileges beyond their initial execution context.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/teslamotors/vehicle-command` library to the patch version.",
+  "vulnerable_to": "Execution with Unnecessary Privileges",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/teslamotors/vehicle-command/releases/tag/v0.4.1",
+  "last_modified": "2026-02-13",
+  "published": "2026-02-13"
+}

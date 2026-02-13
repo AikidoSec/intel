@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/sgnl-ai/adapters",
+  "patch_versions": [
+    "1.68.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.57.0",
+      "1.67.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-90"
+  ],
+  "tldr": "Affected versions of this package fail to properly escape Distinguished Names (DNs) containing special characters such as parentheses, asterisks, or backslashes before inserting them into LDAP filter queries, which can break filter syntax and trigger invalid LDAP filter errors. An attacker may exploit this by supplying a crafted DN with malicious special characters to manipulate or disrupt LDAP query processing, potentially causing denial of service or unintended query behavior; this is mitigated by using `ldap_v3.EscapeFilter()` to safely escape DN values before query construction.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/sgnl-ai/adapters` library to the patch version.",
+  "vulnerable_to": "Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection')",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
+  "changelog": "https://github.com/SGNL-ai/adapters/releases/tag/v1.68.0"
 }

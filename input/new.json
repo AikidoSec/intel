@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "hisamu/php-xbase",
+  "patch_versions": [
+    "2.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.3.0",
+      "2.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-770"
+  ],
+  "tldr": "Affected versions of this package do not properly validate memo field lengths when processing corrupted FPT files, allowing the parser to attempt excessive memory allocation that may lead to fatal errors or denial of service. An attacker could exploit this by supplying a specially crafted or malformed FPT file with an abnormally large memo length value, causing the application to allocate massive memory and crash or exhaust system resources during file processing.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `hisamu/php-xbase` library to the patch version.",
+  "vulnerable_to": "Allocation of Resources Without Limits or Throttling",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 42,
+  "changelog": "https://github.com/luads/php-xbase/releases/tag/2.4.0"
 }

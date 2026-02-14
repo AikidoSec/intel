@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "rulesync",
+  "patch_versions": [
+    "6.5.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "6.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package lack sufficient validation and sanitization when handling file paths, repository inputs, and remote fetch operations, allowing improper path handling, weak hostname validation, and unsafe API parameter usage. An attacker could exploit these weaknesses by supplying crafted repository URLs, malicious output paths, or manipulated file references to trigger path traversal, overwrite arbitrary files, bypass trusted domain checks, or force the system to fetch malicious or oversized files, potentially leading to unauthorized file access, data tampering, or denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `rulesync` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/dyoshikawa/rulesync/releases/tag/v6.5.0"
 }

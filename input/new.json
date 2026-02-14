@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/hashicorp/copywrite",
+  "patch_versions": [
+    "0.24.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.23.0",
+      "0.24.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-1336"
+  ],
+  "tldr": "Affected versions of this package improperly parsed `.hbs` (Handlebars) templates by treating indented lines containing the keyword “copyright” as copyright headers, causing unintended modification of embedded JavaScript code and potential code corruption. An attacker could exploit this behavior by injecting specially crafted template content or configuration data containing the keyword in controlled inputs, triggering logic that alters application code or template behavior, potentially leading to integrity issues, unexpected execution paths, or denial of service during template processing or build pipelines.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/hashicorp/copywrite` library to the patch version.",
+  "vulnerable_to": "Improper Neutralization of Special Elements Used in a Template Engine",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/hashicorp/copywrite/releases/tag/v0.24.2"
 }

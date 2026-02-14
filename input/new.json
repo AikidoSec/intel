@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "parse-server",
+  "patch_versions": [
+    "9.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "6.0.0",
+      "9.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of this package improperly handle MongoDB timeout errors, resulting in uncaught exceptions that may crash the application and expose internal error details to clients. This behavior can lead to information disclosure and service instability due to unsanitized database connectivity failures. An attacker could intentionally trigger database connection exhaustion or force timeout conditions (e.g., sending excessive requests or manipulating inputs that increase query latency) to cause repeated crashes or retrieve internal system information from verbose error responses, enabling denial of service or reconnaissance of backend infrastructure.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `parse-server` library to the patch version.",
+  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 21,
+  "changelog": "https://github.com/parse-community/parse-server/releases/tag/9.2.0"
 }

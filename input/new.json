@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@adonisjs/bodyparser",
+  "patch_versions": [
+    "10.1.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "9.0.0",
+      "10.1.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package improperly sanitize multipart form field names, allowing specially crafted keys (e.g., `__proto__` or `constructor.prototype`) to modify object prototypes during form parsing, leading to prototype pollution. An attacker can exploit this by submitting a malicious multipart request with crafted field names that inject properties into `Object.prototype`, potentially altering application logic, bypassing security controls, or causing denial of service depending on how polluted objects are used.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@adonisjs/bodyparser` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 66,
+  "changelog": "https://github.com/adonisjs/bodyparser/releases/tag/v10.1.3"
 }

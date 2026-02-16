@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/cyberark/secretless-broker",
+  "patch_versions": [
+    "1.7.32"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.7.31"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package do not enforce message length limits in the PostgreSQL protocol handler, allowing excessively large startup or authentication messages that can trigger uncontrolled memory allocation and lead to denial-of-service conditions. An attacker could exploit this by sending specially crafted oversized packets to the server, exhausting memory resources and causing performance degradation or service unavailability.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/cyberark/secretless-broker` library to the patch version.",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/cyberark/secretless-broker/releases/tag/v1.7.32",
+  "last_modified": "2026-02-16",
+  "published": "2026-02-16"
+}

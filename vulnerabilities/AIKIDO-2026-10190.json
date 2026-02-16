@@ -1,0 +1,26 @@
+{
+  "package_name": "vm2",
+  "patch_versions": [
+    "3.10.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.9.6",
+      "3.10.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package allow sandbox escape due to multiple isolation bypasses involving Promise static method stealing, `Reflect.construct` species manipulation, and sensitive object exposure via `util.inspect`. These flaws break execution boundaries and may expose internal references or privileged contexts. An attacker could exploit this by executing crafted code inside the sandbox that manipulates Promise behavior, abuses proxy handlers, or leverages inspection mechanisms to access objects outside the restricted environment, ultimately achieving arbitrary code execution or privilege escalation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `vm2` library to the patch version.",
+  "vulnerable_to": "Improper Control of Generation of Code ('Code Injection')",
+  "related_cve_id": "CVE-2026-22709",
+  "language": "JS",
+  "severity_class": "CRITICAL",
+  "aikido_score": 98,
+  "changelog": "https://github.com/patriksimek/vm2/releases/tag/v3.10.4",
+  "last_modified": "2026-02-16",
+  "published": "2026-02-16"
+}

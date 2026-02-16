@@ -1,25 +1,15 @@
 {
-  "package_name": "onnxruntime",
-  "org_name": "com.microsoft.onnxruntime",
-  "patch_versions": [
-    "1.24.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.21.0",
-      "1.24.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-22"
-  ],
-  "tldr": "Affected versions of this package allow external data references in TensorProto to point to arbitrary file locations without enforcing that the data resides under the model directory, enabling unsafe path resolution. An attacker could craft a malicious model containing absolute paths or path traversal sequences (e.g., `../`) to force the system to load unintended files from the host filesystem. This may result in unauthorized file access, sensitive data disclosure, or unintended behavior depending on the execution environment. Exploitation typically requires supplying a specially crafted model that bypasses directory validation during external data loading.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `com.microsoft.onnxruntime:onnxruntime` library to the patch version.",
-  "vulnerable_to": "Path Traversal",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "DOTNET",
-  "severity_class": "MEDIUM",
-  "aikido_score": 58,
-  "changelog": "https://github.com/microsoft/onnxruntime/releases/tag/v1.24.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

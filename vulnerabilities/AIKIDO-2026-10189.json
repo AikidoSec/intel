@@ -1,0 +1,26 @@
+{
+  "package_name": "keras-hub",
+  "patch_versions": [
+    "0.26.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.9.0",
+      "0.25.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package contain a safe mode bypass in tokenizer implementations (BytePairTokenizer, WordPieceTokenizer, and SentencePieceTokenizer) that allows arbitrary file reads even when `safe_mode=True`. An attacker able to control tokenizer configuration, model artifacts, or input paths could exploit this flaw by forcing the tokenizer to load vocabulary or proto files from unintended external locations, resulting in unauthorized access to sensitive files (e.g., credentials, system configuration, or secrets). This can enable credential exfiltration or data leakage, particularly in AI supply chain or model loading workflows where untrusted artifacts are processed.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `keras-hub` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/keras-team/keras-hub/releases/tag/v0.26.0",
+  "last_modified": "2026-02-16",
+  "published": "2026-02-16"
+}

@@ -1,24 +1,15 @@
 {
-  "package_name": "html-dom-parser",
-  "patch_versions": [
-    "5.1.8"
-  ],
-  "vulnerable_ranges": [
-    [
-      "5.0.0",
-      "5.1.7"
-    ]
-  ],
-  "cwe": [
-    "CWE-1333"
-  ],
-  "tldr": "Affected versions of this package contain a polynomial-time regular expression that processes uncontrolled input when parsing `<head>` and `<body>` tags, which may lead to Regular Expression Denial of Service (ReDoS) due to catastrophic backtracking. The vulnerable pattern (`[^]*`) matches arbitrary characters until a closing `>` is found, allowing excessive processing time on crafted inputs. An attacker could exploit this by submitting specially crafted HTML strings with repeated `<head` or `<body` sequences and malformed attributes, causing high CPU consumption and degrading or blocking application availability.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `html-dom-parser` library to the patch version.",
-  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 25,
-  "changelog": "https://github.com/remarkablemark/html-dom-parser/releases/tag/v5.1.8"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

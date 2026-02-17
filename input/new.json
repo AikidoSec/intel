@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "yara-x",
+  "patch_versions": [
+    "1.13.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.12.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-416"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a use-after-free condition in the block scanner. A logic error in the `finish` method could trigger a call to `search_for_patterns` after the associated memory block had already been deallocated, leading to access of freed memory and potential crashes or memory corruption.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `yara-x` library to the patch version.",
+  "vulnerable_to": "Use after free",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 47,
+  "changelog": "https://github.com/VirusTotal/yara-x/releases/tag/v1.13.0"
 }

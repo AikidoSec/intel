@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "mysql-replication",
+  "patch_versions": [
+    "1.0.15"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "1.0.14"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to information exposure through logging. The `BinLogStreamReader` enables logging by default and prints connection settings, including the database username and password, to standard output. This behavior may leak sensitive credentials in logs or monitoring systems.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mysql-replication` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/julien-duponchelle/python-mysql-replication/releases/tag/1.0.15"
 }

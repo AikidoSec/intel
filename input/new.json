@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `@feathersjs/authentication-oauth` library to the patch version.",
   "vulnerable_to": "Open Redirect",
   "related_cve_id": "",
-  "language": "PYTHON",
+  "language": "JS",
   "severity_class": "MEDIUM",
   "aikido_score": 55,
   "changelog": "https://github.com/feathersjs/feathers/releases/tag/v4.5.19"

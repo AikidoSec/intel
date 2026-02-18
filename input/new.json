@@ -18,7 +18,7 @@
   "vulnerable_to": "Path Traversal",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 65,
+  "severity_class": "HIGH",
+  "aikido_score": 76,
   "changelog": "https://github.com/steveyegge/beads/releases/tag/v0.49.5"
 }

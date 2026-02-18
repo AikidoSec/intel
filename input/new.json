@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "oh-my-opencode",
+  "patch_versions": [
+    "3.4.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.14.1",
+      "3.3.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-285"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper authorization that can lead to unintended command execution. In Prometheus (plan-builder) mode, the permission configuration for `bash` commands is bypassed, allowing commands to execute without the expected user confirmation. Since this mode is intended to be read-only, this behavior can allow unauthorized command execution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `oh-my-opencode` library to the patch version.",
+  "vulnerable_to": "Improper Authorization",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 38,
+  "changelog": "https://github.com/code-yeongyu/oh-my-opencode/releases/tag/v3.4.0"
 }

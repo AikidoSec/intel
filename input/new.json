@@ -1,15 +1,29 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "craftcms/commerce",
+  "patch_versions": [
+    "4.10.2",
+    "5.5.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "4.10.1"
+    ],
+    [
+      "5.0.0",
+      "5.5.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-89"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to SQL injection. In the `actionUserOrdersTable` function, the `sort` field is not properly sanitized before being used in a database query. This allows attackers to inject malicious SQL statements, which can lead to unauthorized data access, modification, or deletion.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/commerce` library to the patch version.",
+  "vulnerable_to": "SQL Injection",
+  "related_cve_id": "GHSA-j3x5-mghf-xvfw",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 87,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/4.17.3"
 }

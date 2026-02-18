@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "spatie/browsershot",
+  "patch_versions": [
+    "5.2.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "5.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to local file read. Insufficient validation of URLs in HTML content allows attackers to bypass protections using UNC paths or protocol-relative URLs pointing to local addresses (for example `\\\\localhost` or `//127.0.0.1`). This can allow unauthorized access to local files when rendering content.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `spatie/browsershot` library to the patch version.",
+  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 47,
+  "changelog": "https://github.com/spatie/browsershot/releases/tag/5.2.1"
 }

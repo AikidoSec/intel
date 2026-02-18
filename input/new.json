@@ -18,7 +18,7 @@
   "vulnerable_to": "Improper Authorization",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 38,
+  "severity_class": "HIGH",
+  "aikido_score": 72,
   "changelog": "https://github.com/code-yeongyu/oh-my-opencode/releases/tag/v3.4.0"
 }

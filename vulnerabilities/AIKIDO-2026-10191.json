@@ -1,0 +1,26 @@
+{
+  "package_name": "@sveltejs/adapter-vercel",
+  "patch_versions": [
+    "6.3.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "6.3.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-349"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cache poisoning. An internal query parameter intended for Incremental Static Regeneration (ISR) is exposed on all routes and can be manipulated by attackers to alter caching behavior, allowing user-specific or sensitive responses to be cached and subsequently served to other users. Successful exploitation requires an authenticated victim to visit an attacker-controlled link.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@sveltejs/adapter-vercel` library to a patch version.",
+  "vulnerable_to": "Acceptance of Extraneous Untrusted Data With Trusted Data",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 59,
+  "changelog": "https://www.aikido.dev/blog/sveltespill-cache-deception-sveltekit-vercel",
+  "last_modified": "2026-02-19",
+  "published": "2026-02-19"
+}

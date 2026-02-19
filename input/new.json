@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "mysql2",
+  "patch_versions": [
+    "3.17.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "3.16.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-89"
+  ],
+  "tldr": "Affected versions of this package contain an SQL injection vulnerability due to inconsistent escape behavior based on parameter value types. The library’s escape functions (`connection.escape()`, `mysql.escape()`, `pool.escape()`) handle different types (e.g., strings, numbers, objects) differently, and when non-string types such as `Object` are passed into parameterized queries, the resulting SQL can be altered in unexpected ways that allow an attacker to inject SQL logic and bypass intended controls. This can lead to authentication bypass and other injection impacts even in code that appears to use proper escaping. The root cause is the escape logic’s type-dependent behavior, and mitigation requires enforcing strict type handling or configuration (such as enabling `stringifyObjects`) before executing queries to ensure safe escaping of all input types.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `mysql2` library to the patch version.",
+  "vulnerable_to": "SQL Injection",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/sidorares/node-mysql2/releases/tag/v3.17.0"
 }

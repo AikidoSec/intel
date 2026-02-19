@@ -18,8 +18,8 @@
   "vulnerable_to": "Acceptance of Extraneous Untrusted Data With Trusted Data",
   "related_cve_id": "CVE-2026-27118",
   "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 59,
+  "severity_class": "HIGH",
+  "aikido_score": 75,
   "changelog": "https://www.aikido.dev/blog/sveltespill-cache-deception-sveltekit-vercel",
   "last_modified": "2026-02-19",
   "published": "2026-02-19"

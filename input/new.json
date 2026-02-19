@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "markdown-it",
+  "patch_versions": [
+    "14.1.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "14.0.0",
+      "14.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of `markdown-it` contained a performance regression in the `linkify` inline rule that could be triggered by certain malformed or pathological input patterns, leading to excessive CPU use and an effective denial-of-service condition. The issue was fixed by replacing a costly regular expression with a manual back-search approach in the `linkify-it` wrapper to avoid inefficient pattern matching and restore predictable performance.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `markdown-it` library to the patch version.",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/markdown-it/markdown-it/blob/master/CHANGELOG.md#1411---2026-01-11"
 }

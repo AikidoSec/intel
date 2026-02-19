@@ -1,15 +1,29 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "drupal/quickedit",
+  "patch_versions": [
+    "1.0.5",
+    "2.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.0.4"
+    ],
+    [
+      "2.0.0",
+      "2.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this module are vulnerable to cross-site scripting (xss) due to insufficient sanitization of certain image-related values during in-place content editing. Malicious input can be stored and later rendered in the browser, resulting in persistent script execution. Exploitation requires that the attacker has permission to create or edit the affected field, which limits the scope of the vulnerability.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/quickedit` library to the patch version.",
+  "vulnerable_to": "Cross-Site Scripting",
+  "related_cve_id": "CVE-2026-2348",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://www.drupal.org/sa-contrib-2026-009"
 }

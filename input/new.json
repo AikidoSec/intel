@@ -1,5 +1,5 @@
 {
-  "package_name": "",
+  "package_name": "craftcms/cms",
   "patch_versions": [
     "4.17.4",
     "5.9.9"

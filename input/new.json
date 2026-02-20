@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "pyo3",
+  "patch_versions": [
+    "0.28.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.28.0",
+      "0.28.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-758"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to memory corruption when extending native Python types (e.g., `#[pyclass(extends=PyList)]`) on Python 3.12+ with the `abi3` feature enabled. Subclasses incorrectly use their own type when accessing base class data, leading to improper memory access. The issue is fixed by ensuring the correct base type is used during data access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `pyo3` library to the patch version.",
+  "vulnerable_to": "Undefined Behavior",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2026-0013.html"
 }

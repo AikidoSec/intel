@@ -1,35 +1,15 @@
 {
-  "package_name": "tomcat-embed-core",
-  "org_name": "org.apache.tomcat.embed",
-  "patch_versions": [
-    "11.0.1",
-    "10.1.30",
-    "9.0.96"
-  ],
-  "vulnerable_ranges": [
-    [
-      "11.0.0",
-      "11.0.0"
-    ],
-    [
-      "10.1.0",
-      "10.1.29"
-    ],
-    [
-      "8.5.0",
-      "9.0.95"
-    ]
-  ],
-  "cwe": [
-    "CWE-754"
-  ],
-  "tldr": "Apache Tomcat contains an unchecked error condition vulnerability in certain Jakarta Authentication (formerly JASPIC) configurations. If Tomcat uses a custom `ServerAuthContext` implementation that throws an exception during authentication without explicitly setting an HTTP error status, the authentication process may not fail as intended. As a result, a user could potentially bypass authentication. No known Jakarta Authentication components are currently known to exhibit this behavior.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade `Tomcat` to any of the patched versions.",
-  "vulnerable_to": "Improper Check for Unusual or Exceptional Conditions",
-  "related_cve_id": "CVE-2024-52316",
-  "language": "JAVA",
-  "severity_class": "CRITICAL",
-  "aikido_score": 98,
-  "changelog": "https://github.com/advisories/GHSA-xcpr-7mr4-h4xq"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

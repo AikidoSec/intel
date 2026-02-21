@@ -1,24 +1,15 @@
 {
-  "package_name": "zip-lib",
-  "patch_versions": [
-    "1.2.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "1.1.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-22"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to directory traversal when extracting ZIP archives. The extraction logic does not properly validate entry paths, allowing specially crafted archive filenames containing path traversal sequences to write files outside the intended destination directory. An attacker able to supply a malicious ZIP archive could overwrite arbitrary files on the filesystem.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `zip-lib` library to the patch version.",
-  "vulnerable_to": "Path Traversal",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 65,
-  "changelog": "https://github.com/fpsqdb/zip-lib/releases/tag/v1.2.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

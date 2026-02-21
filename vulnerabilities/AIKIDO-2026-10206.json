@@ -1,0 +1,26 @@
+{
+  "package_name": "Glances",
+  "patch_versions": [
+    "4.5.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.4.0",
+      "4.4.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS). A Jinja2 environment is configured without `autoescape` enabled, which allows untrusted data to be rendered directly into templates without proper escaping. This can allow attackers to inject malicious HTML or script content into generated output.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `Glances` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 51,
+  "changelog": "https://github.com/nicolargo/glances/blob/develop/NEWS.rst#version-450",
+  "last_modified": "2026-02-21",
+  "published": "2026-02-21"
+}

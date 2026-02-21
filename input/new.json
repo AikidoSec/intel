@@ -1,24 +1,15 @@
 {
-  "package_name": "janus-gateway",
-  "patch_versions": [
-    "1.4.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "1.3.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-416"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a use-after-free condition in SIP session helper handling. Improper cleanup of helper and master session references can leave dangling pointers, which may lead to crashes or potentially allow memory corruption when the freed objects are accessed.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `janus-gateway` library to the patch version.",
-  "vulnerable_to": "Use after free",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 47,
-  "changelog": "https://github.com/meetecho/janus-gateway/blob/master/CHANGELOG.md#v140---2026-02-06"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

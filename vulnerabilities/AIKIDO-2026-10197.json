@@ -1,0 +1,26 @@
+{
+  "package_name": "megatron-core",
+  "patch_versions": [
+    "0.15.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.14.0",
+      "0.15.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to arbitrary code execution through unsafe YAML deserialization. The configuration loader uses `yaml.FullLoader` to parse YAML files, which may construct arbitrary Python objects when processing untrusted input. An attacker able to supply or modify the YAML configuration could exploit this behavior to execute malicious code during deserialization.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `megatron-core` library to the patch version.",
+  "vulnerable_to": "Unsafe Deserialization",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 59,
+  "changelog": "https://github.com/NVIDIA/Megatron-LM/releases/tag/v0.15.3",
+  "last_modified": "2026-02-21",
+  "published": "2026-02-21"
+}

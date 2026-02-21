@@ -1,24 +1,15 @@
 {
-  "package_name": "django-allauth",
-  "patch_versions": [
-    "65.14.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.58.0",
-      "65.14.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-601"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to open redirect when SAML IdP-initiated single sign-on is enabled (default disabled). The application uses the `RelayState` parameter without proper validation, allowing an attacker to supply a crafted URL that redirects authenticated users to an external, attacker-controlled site after login.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range and SAML IdP-initiated single sign-on is enabled.",
-  "how_to_fix": "Upgrade the `django-allauth` library to the patch version.",
-  "vulnerable_to": "Open Redirect",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 51,
-  "changelog": "https://github.com/pennersr/django-allauth/blob/main/ChangeLog.rst#65141-2026-02-07"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

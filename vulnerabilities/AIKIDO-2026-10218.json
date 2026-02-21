@@ -1,0 +1,26 @@
+{
+  "package_name": "tinymce/tinymce",
+  "patch_versions": [
+    "7.9.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "7.9.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of the package are vulnerable to insufficient content sanitization in certain parsing scenarios. HTML-like content embedded in comments and legacy patterns may not be sanitized strictly enough when processed, potentially allowing cross-site scripting (xss) if malicious markup is rendered. The issue is mitigated by updating dependency versions and strengthening parsing logic to enforce stricter sanitization when `xss_sanitization` is enabled (default). Additionally, a new `allow_html_in_comments` configuration option provides explicit control over whether HTML-like syntax in comment nodes is permitted, reducing the risk of unintended script execution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `tinymce/tinymce` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 66,
+  "changelog": "https://github.com/tinymce/tinymce-dist/blob/master/CHANGELOG.md#792---2026-02-11",
+  "last_modified": "2026-02-21",
+  "published": "2026-02-21"
+}

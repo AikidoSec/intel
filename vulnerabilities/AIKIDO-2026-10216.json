@@ -1,0 +1,26 @@
+{
+  "package_name": "opencode-antigravity-auth",
+  "patch_versions": [
+    "1.5.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.1.0",
+      "1.4.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-276"
+  ],
+  "tldr": "Affected versions of `opencode-antigravity-auth` store credential files with overly permissive file system permissions, allowing other local users or processes on the same system to read or modify sensitive authentication data. This could result in unauthorized access to stored tokens and credentials used for OAuth authentication against Antigravity. The issue is fixed by explicitly setting secure file permissions (`0600`) for credential storage to ensure only the owning user can read or write these files, reducing the risk of local credential disclosure.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `opencode-antigravity-auth` library to the patch version.",
+  "vulnerable_to": "Incorrect Default Permissions",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 29,
+  "changelog": "https://github.com/NoeFabris/opencode-antigravity-auth/releases/tag/v1.5.0",
+  "last_modified": "2026-02-21",
+  "published": "2026-02-21"
+}

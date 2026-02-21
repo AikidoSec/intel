@@ -1,0 +1,26 @@
+{
+  "package_name": "pymodbus",
+  "patch_versions": [
+    "3.12.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.4.0",
+      "3.11.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a denial-of-service (DoS) condition. Improper handling of incoming requests in the server component can allow a malicious client to trigger excessive resource consumption, causing the service to become unresponsive.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `pymodbus` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 28,
+  "changelog": "https://github.com/pymodbus-dev/pymodbus/releases/tag/v3.12.0",
+  "last_modified": "2026-02-21",
+  "published": "2026-02-21"
+}

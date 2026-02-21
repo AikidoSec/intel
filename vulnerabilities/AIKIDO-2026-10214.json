@@ -1,0 +1,31 @@
+{
+  "package_name": "craftcms/commerce",
+  "patch_versions": [
+    "4.10.2",
+    "5.5.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "4.10.1"
+    ],
+    [
+      "5.0.0",
+      "5.5.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) in the `Order` element. In the `getMetadata()` method of the `src/elements/Order.php` class, several metadata fields such as `reference`, `couponCode`, `order site`, `shipping method`, and `origin` are included in the output without proper HTML encoding. This allows attackers to inject malicious HTML or script content that executes in the user’s browser when the metadata is rendered.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/commerce` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "GHSA-mj32-r678-7mvp",
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 36,
+  "changelog": "https://github.com/craftcms/commerce/releases/tag/4.10.2",
+  "last_modified": "2026-02-21",
+  "published": "2026-02-21"
+}

@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/envoyproxy/gateway",
+  "patch_versions": [
+    "1.7.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.6.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-401"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a resource exhaustion issue due to a memory leak in status map handling. Certain `watchable.Map` instances are not properly closed during provider shutdown, leaving associated goroutines running and blocked on channels. Repeated use may cause unbounded goroutine growth, leading to increased memory usage and potential denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/envoyproxy/gateway` library to the patch version.",
+  "vulnerable_to": "Memory Leak",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/envoyproxy/gateway/releases/tag/v1.7.0",
+  "last_modified": "2026-02-21",
+  "published": "2026-02-21"
+}

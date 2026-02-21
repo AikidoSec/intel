@@ -1,0 +1,26 @@
+{
+  "package_name": "calamine",
+  "patch_versions": [
+    "0.33.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.32.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to denial of service when processing malicious ODS files. Specially crafted files can declare extremely large numbers of repeated rows or columns, causing excessive memory allocation and potential service crashes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `calamine` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 28,
+  "changelog": "https://github.com/tafia/calamine/releases/tag/v0.33.0",
+  "last_modified": "2026-02-21",
+  "published": "2026-02-21"
+}

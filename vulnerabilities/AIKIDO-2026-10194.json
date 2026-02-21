@@ -1,0 +1,26 @@
+{
+  "package_name": "@vnedyalk0v/react19-simple-maps",
+  "patch_versions": [
+    "2.0.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.5",
+      "2.0.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) through script-breakout in JSON-LD metadata. The `MapMetadata` component embeds JSON-LD inside a `<script>` tag without properly escaping special characters such as `<`, `>`, `&`, and certain Unicode separators, allowing attacker-controlled data to terminate the script context and inject arbitrary HTML or JavaScript.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@vnedyalk0v/react19-simple-maps` library to a patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/vnedyalk0v/react19-simple-maps/releases/tag/v2.0.2",
+  "last_modified": "2026-02-21",
+  "published": "2026-02-21"
+}

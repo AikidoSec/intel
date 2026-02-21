@@ -1,0 +1,26 @@
+{
+  "package_name": "gnutls.gnutls",
+  "patch_versions": [
+    "3.8.12"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "3.8.11"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "A TLS 1.3 resumption attempt with an invalid PSK binder value in ClientHello could lead to a denial of service attack via crashing the server.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `gnutls.gnutls` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "CVE-2026-1584",
+  "language": "C++",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/gnutls/gnutls/blob/master/NEWS",
+  "last_modified": "2026-02-21",
+  "published": "2026-02-21"
+}

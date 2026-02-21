@@ -1,0 +1,26 @@
+{
+  "package_name": "robyn",
+  "patch_versions": [
+    "0.77.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.76.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-287"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an authentication bypass due to improper validation of request headers. The framework incorrectly trusts certain header values when determining the authenticated user, allowing an attacker to craft requests that bypass authentication checks and gain unauthorized access to protected resources.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `robyn` library to the patch version.",
+  "vulnerable_to": "Authentication Bypass",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "CRITICAL",
+  "aikido_score": 90,
+  "changelog": "https://github.com/sparckles/Robyn/releases/tag/v0.77.0",
+  "last_modified": "2026-02-21",
+  "published": "2026-02-21"
+}

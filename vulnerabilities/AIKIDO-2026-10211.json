@@ -1,0 +1,31 @@
+{
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.17.3",
+    "5.9.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.5.0",
+      "4.17.2"
+    ],
+    [
+      "5.0.0",
+      "5.9.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS). The `returnUrl` value in the `setReturnUrl` function is not properly validated, allowing URLs with unsafe schemes to be supplied and later used in redirects. This can allow attackers to inject malicious content or execute script code in the user’s browser.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "GHSA-fvwq-45qv-xvhv",
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 35,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/4.17.3",
+  "last_modified": "2026-02-21",
+  "published": "2026-02-21"
+}

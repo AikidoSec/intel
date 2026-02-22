@@ -1,24 +1,15 @@
 {
-  "package_name": "@salesforce/core",
-  "patch_versions": [
-    "8.26.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "8.25.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-532"
-  ],
-  "tldr": "Affected versions of this package expose sensitive authentication tokens in application logs because the logging filters fail to redact certain JWT patterns. As a result, the application may write valid credentials to log files in cleartext, increasing the risk of unauthorized access if an attacker obtains log data. The issue is fixed by extending the logging redaction logic to detect and properly mask JWT tokens before they are written to logs.",
-  "doest_this_affect_me": "You are affected if you are using a vulnerable version of the package.",
-  "how_to_fix": "Upgrade `@salesforce/core` to a patch version.",
-  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "js",
-  "severity_class": "LOW",
-  "aikido_score": 18,
-  "changelog": "https://github.com/forcedotcom/sfdx-core/releases/tag/8.26.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

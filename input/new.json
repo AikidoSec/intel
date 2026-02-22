@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/netbirdio/netbird",
-  "patch_versions": [
-    "0.64.6"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "0.64.5"
-    ]
-  ],
-  "cwe": [
-    "CWE-639"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to account impersonation due to insufficient validation of the `?account=` query parameter in the management server’s authentication middleware. An authenticated user could provide an arbitrary account ID when accessing the `/api/peers/<peer_id>/accessible-peers` endpoint and potentially access accounts they are not authorized to control. The issue is fixed by adding explicit validation with `IsValidChildAccount()`, ensuring account switching is only allowed for legitimate child accounts.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/netbirdio/netbird` library to the patch version.",
-  "vulnerable_to": "Authorization Bypass Through User-Controlled Key",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "HIGH",
-  "aikido_score": 82,
-  "changelog": "https://github.com/netbirdio/netbird/releases/tag/v0.64.6"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

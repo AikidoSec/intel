@@ -1,0 +1,26 @@
+{
+  "package_name": "x402",
+  "patch_versions": [
+    "2.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "2.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-294"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to duplicate transaction attacks in Solana payment flows because identical transaction payloads can be generated under concurrent conditions. Since Solana rejects byte-identical transactions within the same blockhash window, attackers or high-throughput scenarios could trigger transaction collisions, leading to dropped or delayed payments. The issue is fixed by adding a unique memo with a random nonce to each transaction, ensuring every payment is distinct and preventing duplicate transaction conflicts.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `x402` library to the patch version.",
+  "vulnerable_to": "Replay Attacks",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 47,
+  "changelog": "https://github.com/coinbase/x402/blob/main/python/x402/CHANGELOG.md#210---2026-02-11",
+  "last_modified": "2026-02-22",
+  "published": "2026-02-22"
+}

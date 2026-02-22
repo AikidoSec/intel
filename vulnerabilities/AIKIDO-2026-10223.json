@@ -1,0 +1,31 @@
+{
+  "package_name": "abseil.abseil-cpp",
+  "patch_versions": [
+    "20250127.2",
+    "20240722.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "20250127.0",
+      "20250127.1"
+    ],
+    [
+      "20200225",
+      "20240722.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-190"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to heap buffer overflow due to integer overflow in hash container resizing logic. The sized constructors, `reserve()`, and `rehash()` methods of `absl::{flat,node}_hash_{set,map}` did not impose an upper bound on their size argument. A very large size value could cause an integer overflow when computing the container’s backing store size, leading to out-of-bounds memory writes and subsequent potential out-of-bounds memory access during container operations. This could be abused to corrupt memory and cause crashes or other unpredictable behavior. The issue is fixed by adding proper bounds checking on size arguments in the affected methods.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `abseil.abseil-cpp` library to the patch version.",
+  "vulnerable_to": "Integer Overflow",
+  "related_cve_id": "",
+  "language": "c++",
+  "severity_class": "LOW",
+  "aikido_score": 29,
+  "changelog": "https://github.com/abseil/abseil-cpp/releases/tag/20250127.2",
+  "last_modified": "2026-02-22",
+  "published": "2026-02-22"
+}

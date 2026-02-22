@@ -1,0 +1,26 @@
+{
+  "package_name": "payload",
+  "patch_versions": [
+    "3.76.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "3.76.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cross-site scripting (XSS) via malicious SVG uploads because uploaded SVG files could be served without restrictive content security headers, allowing embedded scripts to execute in contexts such as the admin panel. The issue is mitigated by adding `Content-Security-Policy` (CSP) headers to all SVG uploads in core and storage adapters, which prevents execution of inline scripts in SVG content by default and reduces the risk of “SVG smuggling”-style attacks. This defensive layer complements existing SVG validation and gives developers additional assurance that untrusted SVGs won’t execute script in browsers.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `payload` library to the patch version.",
+  "vulnerable_to": "Cross-Site Scripting",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/payloadcms/payload/releases/tag/v3.76.1",
+  "last_modified": "2026-02-22",
+  "published": "2026-02-22"
+}

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "rulesync",
+  "patch_versions": [
+    "7.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "6.8.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-78"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to command injection in its workflows. The workflows previously passed untrusted inputs (like prompt or comment body) directly into shell contexts without isolating them from the executed commands. This could allow specially crafted inputs containing shell metacharacters to be interpreted by bash, leading to arbitrary command execution. The fix ensures that user-controlled values are passed via environment variables instead of direct shell interpolation, preventing command injection in GitHub Actions workflows.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `rulesync` library to the patch version.",
+  "vulnerable_to": "Command Injection",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
+  "changelog": "https://github.com/dyoshikawa/rulesync/releases/tag/v7.0.0"
 }

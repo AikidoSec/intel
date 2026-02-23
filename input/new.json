@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "matrix-synapse",
+  "patch_versions": [
+    "1.147.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.147.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-347"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper validation of server signing keys in federation requests. Synapse may accept events and federation requests signed with banned or otherwise insecure server signing keys, allowing a malicious or compromised server to authenticate requests that should be rejected. This could enable unauthorized federation interactions or the injection of untrusted events. The issue is fixed by rejecting requests and events authenticated with banned signing keys.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `matrix-synapse` library to the patch version.",
+  "vulnerable_to": "Improper Verification of Cryptographic Signature",
+  "related_cve_id": "CVE-2026-24044",
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 78,
+  "changelog": "https://github.com/element-hq/synapse/releases/tag/v1.147.1"
 }

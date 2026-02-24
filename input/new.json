@@ -1,15 +1,29 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "stephane.libmodbus",
+  "patch_versions": [
+    "3.0.8",
+    "3.1.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "3.0.7"
+    ],
+    [
+      "3.1.0",
+      "3.1.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-125"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an out-of-bounds read due to improper validation of Modbus write request parameters. When handling `WRITE_MULTIPLE_COILS` or `WRITE_MULTIPLE_REGISTERS` requests, the implementation validates the number of requested values but fails to verify that the supplied byte count contains sufficient data for those values. An attacker can send a crafted Modbus request with inconsistent length fields, causing the application to read beyond the bounds of the request buffer, resulting in a denial of service or potential information disclosure. The issue is fixed by validating that the provided byte count matches the declared number of values before processing the request.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `stephane.libmodbus` library to the patch version.",
+  "vulnerable_to": "Out-of-bounds Read",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "C++",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/stephane/libmodbus/releases/tag/v3.1.6"
 }

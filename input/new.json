@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "django-allauth",
+  "patch_versions": [
+    "65.14.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "65.14.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-345"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to rate-limit bypass due to improper client IP address validation. The default implementation trusts the `X-Forwarded-For` HTTP header to determine the client IP address, which can be spoofed by an attacker to evade authentication and signup rate-limiting protections. This allows malicious users to bypass security controls such as login or registration throttling. The issue is fixed by distrusting the `X-Forwarded-For` header by default and requiring explicit proxy configuration or custom client IP resolution.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `django-allauth` library to the patch version. You must either configure `ALLAUTH_TRUSTED_PROXY_COUNT`, rely on `ALLAUTH_TRUSTED_CLIENT_IP_HEADER`, or override `get_client_ip()`.",
+  "vulnerable_to": "Insufficient Verification of Data Authenticity",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
+  "changelog": "https://github.com/pennersr/django-allauth/blob/main/ChangeLog.rst#65142-2026-02-13"
 }

@@ -1,0 +1,26 @@
+{
+  "package_name": "craftcms/webhooks",
+  "patch_versions": [
+    "3.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "3.1.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package render webhook payload, header, URL, and debounce key templates using Twig without sandbox enforcement, allowing untrusted template input to execute on the server. Because `renderString()` processes attacker-controlled template content (e.g., from a compromised admin panel or stored configuration), malicious Twig expressions can invoke arbitrary PHP methods or access sensitive objects. An attacker could inject crafted Twig payloads into the webhook template fields to achieve Remote Code Execution (RCE), exfiltrate secrets, or pivot within the hosting environment. The issue was mitigated by enabling `TwigSandbox`, which isolates template execution and restricts access to dangerous functions and objects.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/webhooks` library to the patch version.",
+  "vulnerable_to": "Remoto Code Execution (RCE)",
+  "related_cve_id": "GHSA-8wg7-wm29-2rvg",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 80,
+  "changelog": "https://github.com/craftcms/webhooks/releases/tag/3.2.0",
+  "last_modified": "2026-02-24",
+  "published": "2026-02-24"
+}

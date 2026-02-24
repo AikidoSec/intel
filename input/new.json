@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "llm-sandbox",
+  "patch_versions": [
+    "0.3.35"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.3.34"
+    ]
+  ],
+  "cwe": [
+    "CWE-78",
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to command injection and path traversal due to insufficient validation and sanitization of user-controlled file paths and command arguments. File paths passed to container runtime operations are incorporated into shell commands without proper quoting, allowing an attacker to inject arbitrary commands. Additionally, destination paths used when copying files into containers are not validated, allowing traversal sequences such as `..` to escape intended sandbox directories. Successful exploitation may result in arbitrary command execution within the container or access to unintended filesystem locations. The issue is fixed by properly quoting command arguments and validating container paths to prevent traversal sequences.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `llm-sandbox` library to the patch version.",
+  "vulnerable_to": "Command Injection",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/vndee/llm-sandbox/releases/tag/0.3.35"
 }

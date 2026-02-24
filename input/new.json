@@ -1,24 +1,15 @@
 {
-  "package_name": "suppaftp",
-  "patch_versions": [
-    "8.0.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "5.0.0",
-      "8.0.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-416"
-  ],
-  "tldr": "Affected versions of this package contain an unsafe memory management vulnerability in the `tcp_stream` function, where a raw pointer is incorrectly treated as an independently heap-allocated `TcpStream` when it actually lives inline within a wrapper struct, leading to undefined behavior via double-free or heap corruption upon deallocation. An attacker who can influence the timing or frequency of TCP connection handling could potentially exploit this by triggering repeated connection teardowns, causing heap metadata corruption that may lead to denial of service or, in advanced scenarios, controlled memory overwrites that could be leveraged for arbitrary code execution.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `suppaftp` library to the patch version.",
-  "vulnerable_to": "Use After Free",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "MEDIUM",
-  "aikido_score": 44,
-  "changelog": "https://github.com/veeso/suppaftp/releases/tag/v8.0.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "swagger-typescript-api",
+  "patch_versions": [
+    "13.2.18"
+  ],
+  "vulnerable_ranges": [
+    [
+      "11.0.0",
+      "13.2.17"
+    ]
+  ],
+  "cwe": [
+    "CWE-116"
+  ],
+  "tldr": "Affected versions of this package allow untrusted OpenAPI fields (e.g., descriptions, examples, patterns) containing `*/` to prematurely terminate JSDoc comments in generated TypeScript, resulting in malformed code and potential comment injection. An attacker controlling or influencing the OpenAPI specification could craft malicious values that break code generation, inject unintended content into source files, or disrupt build pipelines and downstream tooling. This may enable denial of service in CI/CD processes or facilitate further code manipulation if generated artifacts are trusted or executed without validation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `swagger-typescript-api` library to the patch version.",
+  "vulnerable_to": "Improper Encoding or Escaping of Output",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 41,
+  "changelog": "https://github.com/acacode/swagger-typescript-api/releases/tag/v13.2.18"
 }

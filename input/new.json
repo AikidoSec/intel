@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "r2luna/brain",
+  "patch_versions": [
+    "2.2.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package do not properly support the `#[Sensitive]` attribute to mark and redact confidential payload properties, causing sensitive values (e.g., keys, tokens, or secrets) to be exposed in logs, JSON serialization, debug output, and event payloads; an attacker with access to application logs, monitoring systems, or serialized task data could exploit this by harvesting leaked secrets to gain unauthorized access, escalate privileges, or perform lateral movement within the environment.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `r2luna/brain` library to the patch version.",
+  "vulnerable_to": "Information Disclosure",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/r2luna/brain/releases/tag/2.2.0"
 }

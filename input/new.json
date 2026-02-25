@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "notion-client",
+  "patch_versions": [
+    "3.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.5.0",
+      "2.7.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package did not properly validate path parameters (e.g., block_id, page_id, database_id) against path traversal sequences such as `..` and URL-encoded variants like `%2e%2e`, allowing crafted inputs to manipulate the constructed API endpoint. Without strict normalization and validation, an attacker could supply traversal payloads (including double-encoded forms) to alter the resolved request path, potentially accessing unintended resources or bypassing client-side routing constraints. By embedding traversal sequences into path parameters, a malicious user could force the SDK to target different API routes than intended, undermining endpoint integrity and enabling unauthorized data access depending on server-side enforcement.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `notion-client` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
+  "changelog": "https://github.com/ramnes/notion-sdk-py/releases/tag/3.0.0"
 }

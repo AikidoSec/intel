@@ -1,0 +1,26 @@
+{
+  "package_name": "erusev/parsedown",
+  "patch_versions": [
+    "1.8.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.7.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a regular expression denial of service (ReDoS) vulnerability caused by inefficient regex patterns used during Markdown parsing. Specially crafted input containing malformed emphasis markers or similar adversarial sequences can trigger catastrophic backtracking, leading to excessive CPU or memory consumption and potentially causing the application to hang or become unavailable. The issue is fixed by updating regex patterns throughout the parser to use possessive quantifiers, preventing backtracking and eliminating the denial-of-service condition.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `erusev/parsedown` library to the patch version.",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 25,
+  "changelog": "https://github.com/erusev/parsedown/releases/tag/1.8.0",
+  "last_modified": "2026-02-25",
+  "published": "2026-02-25"
+}

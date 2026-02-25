@@ -1,0 +1,26 @@
+{
+  "package_name": "petname",
+  "patch_versions": [
+    "2.9"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1",
+      "2.8"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a denial of service (DoS) vulnerability caused by insufficient input validation in the pet name generation functions. When a user supplies a `letters` value smaller than the shortest available word, the affected functions may enter an infinite loop, resulting in excessive CPU consumption and application unavailability. This issue can be exploited through crafted input parameters passed via the library or CLI interface. The vulnerability is fixed by introducing minimum length validation and additional input checks to prevent infinite loop conditions and resource exhaustion.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `petname` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/dustinkirkland/python-petname/releases/tag/2.9",
+  "last_modified": "2026-02-25",
+  "published": "2026-02-25"
+}

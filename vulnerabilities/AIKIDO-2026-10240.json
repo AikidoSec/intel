@@ -1,0 +1,27 @@
+{
+  "package_name": "github.com/google/osv-scalibr",
+  "patch_versions": [
+    "0.4.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.4.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-119",
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this software are vulnerable to a memory overflow that can lead to remote code execution. Improper bounds checking when processing specially crafted requests allows an attacker to corrupt memory and execute arbitrary code on the affected system.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/google/osv-scalibr` library to the patch version.",
+  "vulnerable_to": "Improper Restriction of Operations within the Bounds of a Memory Buffer",
+  "related_cve_id": "CVE-2025-7775",
+  "language": "GO",
+  "severity_class": "CRITICAL",
+  "aikido_score": 91,
+  "changelog": "https://github.com/google/osv-scalibr/releases/tag/v0.4.3",
+  "last_modified": "2026-02-25",
+  "published": "2026-02-25"
+}

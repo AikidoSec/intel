@@ -1,24 +1,15 @@
 {
-  "package_name": "napi",
-  "patch_versions": [
-    "3.8.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.0.0",
-      "3.8.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-416"
-  ],
-  "tldr": "Affected versions of this package are affected by a use-after-free vulnerability in the async generator implementation. The issue occurs because the originating instance can be garbage collected while an async iterator is still in use, causing the iterator to reference freed memory and potentially leading to crashes. This happens when no persistent reference is maintained between the generated iterator and its underlying instance during `for await...of` iteration. The vulnerability is fixed by keeping the instance alive through a hidden internal reference attached to the iterator object, which is properly released once the iterator is garbage collected.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `napi` library to the patch version.",
-  "vulnerable_to": "Use After Free",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "MEDIUM",
-  "aikido_score": 55,
-  "changelog": "https://github.com/napi-rs/napi-rs/blob/main/crates/napi/CHANGELOG.md#383---2026-02-14"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

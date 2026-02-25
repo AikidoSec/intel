@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@malloydata/malloy",
+  "package_wildcard_contains": "@malloydata/malloy-db",
+  "patch_versions": [
+    "0.0.338"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.0.337"
+    ]
+  ],
+  "cwe": [
+    "CWE-328"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to sensitive information exposure due to the use of a weak hashing algorithm when generating connection digests. The `makeDigest()` function relies on MD5 to hash values that may contain database connection strings, including embedded credentials such as passwords. Because MD5 is not considered cryptographically secure, attackers may be able to recover or infer sensitive information from generated digests. The issue is fixed by replacing MD5 with the stronger SHA-256 hashing algorithm, ensuring credentials included in connection digests are protected using a secure cryptographic hash.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@malloydata/malloy` library to the patch version.",
+  "vulnerable_to": "Use of Weak Hash",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 72,
+  "changelog": "https://github.com/malloydata/malloy/releases/tag/v0.0.338"
 }

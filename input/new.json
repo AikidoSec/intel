@@ -19,6 +19,6 @@
   "related_cve_id": "",
   "language": "JS",
   "severity_class": "LOW",
-  "aikido_score": 30,
+  "aikido_score": 10,
   "changelog": "https://github.com/lightdash/lightdash/releases/tag/0.2469.1"
 }

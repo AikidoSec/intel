@@ -1,24 +1,15 @@
 {
-  "package_name": "@convex-dev/polar",
-  "patch_versions": [
-    "0.8.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.6.3",
-      "0.8.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-532"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to sensitive information exposure due to improper error handling that may leak confidential data through application logs. When SDK operations fail, raw error or response objects containing authentication tokens and other sensitive information can be propagated or logged without sanitization. This can allow attackers with access to logs to obtain credentials or internal data. The issue is fixed by ensuring sensitive values from SDK responses are no longer exposed during error handling.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@convex-dev/polar` library to the patch version.",
-  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 10,
-  "changelog": "https://github.com/get-convex/polar/blob/main/CHANGELOG.md#081"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

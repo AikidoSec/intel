@@ -1,0 +1,31 @@
+{
+  "package_name": "verbb/formie",
+  "patch_versions": [
+    "2.2.12",
+    "3.1.13"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.2.11"
+    ],
+    [
+      "3.0.0",
+      "3.1.12"
+    ]
+  ],
+  "cwe": [
+    "CWE-22"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to path traversal due to insufficient sanitization of user-supplied filenames in file upload handling. Uploaded file names and dynamically generated filename formats may contain path components such as `../`, allowing an attacker to manipulate file paths during upload or asset creation. This could result in files being written outside the intended directory or overwriting unintended files. The issue is fixed by sanitizing uploaded filenames and stripping path components before generating or saving asset names.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `verbb/formie` library to the patch version.",
+  "vulnerable_to": "Path Traversal",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/verbb/formie/releases/tag/3.1.13",
+  "last_modified": "2026-02-25",
+  "published": "2026-02-25"
+}

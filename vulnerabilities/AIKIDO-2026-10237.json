@@ -1,0 +1,26 @@
+{
+  "package_name": "ai-rulez",
+  "patch_versions": [
+    "3.7.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.7.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-668"
+  ],
+  "tldr": "Affected versions of this package did not properly enforce frontmatter target restrictions when rendering Claude preset skills, causing rules and contextual content from unrelated `.claude/skills/*/SKILL.md` files to be embedded outside their intended scope. This could lead to unintended context leakage across skills, violating isolation boundaries and potentially exposing sensitive instructions or internal logic. An attacker with the ability to influence skill configuration or trigger cross-skill rendering could craft or reference malicious frontmatter targets to force inclusion of unrelated rule sets, thereby exfiltrating confidential prompts, bypassing guardrails, or manipulating downstream model behavior.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ai-rulez` library to the patch version.",
+  "vulnerable_to": "Resource Leakage",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 43,
+  "changelog": "https://github.com/Goldziher/ai-rulez/releases/tag/v3.7.2",
+  "last_modified": "2026-02-25",
+  "published": "2026-02-25"
+}

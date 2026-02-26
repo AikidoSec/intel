@@ -17,8 +17,8 @@
   "how_to_fix": "Upgrade the `github.com/celestiaorg/celestia-core` library to the patch version.",
   "vulnerable_to": "Denial of Service (DoS) via Resource Exhaustion",
   "related_cve_id": "",
-  "language": "LOW",
-  "severity_class": "GO",
+  "language": "GO",
+  "severity_class": "LOW",
   "aikido_score": 30,
   "changelog": "https://github.com/celestiaorg/celestia-core/releases/tag/v0.39.25"
 }

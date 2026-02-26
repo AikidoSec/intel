@@ -19,7 +19,7 @@
   "vulnerable_to": "Use of Weak Hash",
   "related_cve_id": "",
   "language": "JS",
-  "severity_class": "HIGH",
-  "aikido_score": 72,
+  "severity_class": "MEDIUM",
+  "aikido_score": 68,
   "changelog": "https://github.com/malloydata/malloy/releases/tag/v0.0.338"
 }

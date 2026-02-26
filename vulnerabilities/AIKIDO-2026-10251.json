@@ -1,0 +1,26 @@
+{
+  "package_name": "sherpa_onnx",
+  "patch_versions": [
+    "1.12.24"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.12.23"
+    ]
+  ],
+  "cwe": [
+    "CWE-78"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to command injection. In `cmake/cmake_extension.py`, build commands are constructed using user-controlled arguments and executed via `os.system()`, allowing shell metacharacters to be interpreted. This can allow attackers to execute arbitrary commands during the build process. The issue is fixed by switching to `subprocess.run()` with argument lists and `shell=False`, preventing command injection.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `sherpa_onnx` library to the patch version.",
+  "vulnerable_to": "Command Injection",
+  "related_cve_id": "",
+  "language": "DART",
+  "severity_class": "MEDIUM",
+  "aikido_score": 43,
+  "changelog": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/v1.12.24",
+  "last_modified": "2026-02-26",
+  "published": "2026-02-26"
+}

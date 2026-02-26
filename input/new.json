@@ -10,7 +10,7 @@
     ]
   ],
   "cwe": [
-    "CWE-269"
+    "CWE-79"
   ],
   "tldr": "The module does not properly sanitize user-supplied input before embedding it into JavaScript template strings within the Tagify widget, allowing arbitrary JavaScript execution in the browser when a user creates or edits content.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",

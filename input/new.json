@@ -1,11 +1,16 @@
 {
   "package_name": "github.com/kumahq/kuma/v2",
   "patch_versions": [
+    "2.12.6",
     "2.13.1"
   ],
   "vulnerable_ranges": [
     [
       "2.0.0",
+      "2.12.5"
+    ],
+    [
+      "2.13.0",
       "2.13.0"
     ]
   ],

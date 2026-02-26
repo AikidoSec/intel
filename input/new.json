@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `git2` library to the patch version.",
   "vulnerable_to": "NULL Pointer Dereference",
   "related_cve_id": "GHSA-j39j-6gw9-jw6h",
-  "language": "GO",
+  "language": "RUST",
   "severity_class": "LOW",
   "aikido_score": 27,
   "changelog": "https://github.com/advisories/GHSA-j39j-6gw9-jw6h"

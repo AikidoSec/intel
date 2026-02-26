@@ -18,7 +18,7 @@
   "vulnerable_to": "Command Injection",
   "related_cve_id": "",
   "language": "DART",
-  "severity_class": "HIGH",
-  "aikido_score": 71,
+  "severity_class": "MEDIUM",
+  "aikido_score": 43,
   "changelog": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/v1.12.24"
 }

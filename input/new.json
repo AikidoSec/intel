@@ -1,29 +1,15 @@
 {
-  "package_name": "drupal/captcha",
-  "patch_versions": [
-    "1.17.0",
-    "2.0.10"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "1.16.0"
-    ],
-    [
-      "2.0.0",
-      "2.0.9"
-    ]
-  ],
-  "cwe": [
-    "CWE-269"
-  ],
-  "tldr": "The module does not properly invalidate previously used security tokens in certain scenarios, allowing the CAPTCHA mechanism to be bypassed on subsequent submissions. Exploitation requires an attacker to first solve at least one CAPTCHA manually in order to obtain valid tokens.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `drupal/captcha` library to the patch version.",
-  "vulnerable_to": "Access bypass",
-  "related_cve_id": "CVE-2026-3214",
-  "language": "PHP",
-  "severity_class": "MEDIUM",
-  "aikido_score": 60,
-  "changelog": "https://www.drupal.org/sa-contrib-2026-015"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

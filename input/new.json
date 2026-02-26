@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "drupal/cleantalk",
+  "patch_versions": [
+    "9.7.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "9.6.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-269"
+  ],
+  "tldr": "The module does not sufficiently sanitize user input, resulting in a reflected cross-site scripting (XSS) vulnerability. Exploitation is limited because the affected functionality is only exposed to users who are challenged or blocked by the firewall.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/cleantalk` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
+  "related_cve_id": "CVE-2026-3213",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://www.drupal.org/sa-contrib-2026-013"
 }

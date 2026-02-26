@@ -10,7 +10,7 @@
     ]
   ],
   "cwe": [
-    "CWE-269"
+    "CWE-79"
   ],
   "tldr": "The module does not sufficiently sanitize user input, resulting in a reflected cross-site scripting (XSS) vulnerability. Exploitation is limited because the affected functionality is only exposed to users who are challenged or blocked by the firewall.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",

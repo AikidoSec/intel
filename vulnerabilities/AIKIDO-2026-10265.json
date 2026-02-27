@@ -1,0 +1,26 @@
+{
+  "package_name": "django-request-token",
+  "patch_versions": [
+    "3.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.10.0",
+      "2.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-287"
+  ],
+  "tldr": "Affected versions of this package allowed `@use_request_token(scope=\"...\")` to be applied without explicitly setting `required`, which previously defaulted to `False` and silently allowed token-less requests to pass through, creating a misleading access-control footgun. An attacker could exploit this by calling endpoints decorated with `@use_request_token(...)` without providing any token, bypassing the intended token-gated protection and reaching privileged handlers to read sensitive data or trigger unauthorized state-changing actions, depending on what those routes expose.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range or if you didn't explicitly set `required=True` on endpoints or views that rely on token validation.",
+  "how_to_fix": "Upgrade the `django-request-token` library to the patch version or set `required=True`.",
+  "vulnerable_to": "Improper Authentication",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 56,
+  "changelog": "https://github.com/yunojuno/django-request-token/blob/master/CHANGELOG",
+  "last_modified": "2026-02-27",
+  "published": "2026-02-27"
+}

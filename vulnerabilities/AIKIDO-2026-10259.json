@@ -1,0 +1,31 @@
+{
+  "package_name": "smile/elasticsuite",
+  "patch_versions": [
+    "2.11.17.1",
+    "2.10.32.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.11.0.0",
+      "2.11.17.0"
+    ],
+    [
+      "2.0.0.0",
+      "2.10.32.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package contain a Cross-Site Scripting (XSS) vulnerability in the layered navigation filter search, where user-supplied input is rendered without proper escaping, allowing arbitrary JavaScript execution in the browser. An attacker can exploit this by injecting malicious script payloads into the filter search field, leading to execution of attacker-controlled code in victims’ sessions. This may enable session hijacking, credential theft, or unauthorized actions performed on behalf of the user. The issue is caused by unsanitized rendering of search input, which was later fixed by properly escaping user input before display.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `smile/elasticsuite` library to the patch version.",
+  "vulnerable_to": "Cross-Site Scripting (XSS)",
+  "related_cve_id": "",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/Smile-SA/elasticsuite/releases/tag/2.11.17.1",
+  "last_modified": "2026-02-27",
+  "published": "2026-02-27"
+}

@@ -1,0 +1,26 @@
+{
+  "package_name": "@nuxtjs/plausible",
+  "patch_versions": [
+    "3.0.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.0",
+      "3.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-345"
+  ],
+  "tldr": "Affected versions of this package improperly trust or fail to sanitize `cf-connecting-ip` and `x-real-ip` headers, allowing client-controlled IP spoofing through proxy header sniffing. An attacker may inject crafted headers to impersonate arbitrary IP addresses, bypass IP-based access controls, rate limiting, logging, or security policies. This can enable unauthorized access, evade detection mechanisms, or manipulate audit trails if the application relies on these headers for client identity validation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@nuxtjs/plausible` library to the patch version.",
+  "vulnerable_to": "Insufficient Verification of Data Authenticity",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
+  "changelog": "https://github.com/nuxt-modules/plausible/releases/tag/v3.0.1",
+  "last_modified": "2026-02-27",
+  "published": "2026-02-27"
+}

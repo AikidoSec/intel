@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "docling",
+  "patch_versions": [
+    "2.74.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.13.0",
+      "2.73.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-611"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to XML external entity (XXE) and related injection attacks when parsing certain XML-based document formats. Without proper safeguards, crafted XML input may include external entity references that can cause the parser to disclose local files, perform SSRF lookups, or otherwise expose unintended data during document processing. This can lead to sensitive information exposure or application instability if untrusted documents are processed. The issue is fixed by hardening the XML parsing logic to disable unsafe entity resolution and sanitize XML input, preventing external entity expansion and related attack vectors.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `docling` library to a patch version.",
+  "vulnerable_to": "XML External Entity (XXE) Attack",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/docling-project/docling/releases/tag/v2.74.0"
 }

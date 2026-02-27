@@ -16,7 +16,7 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `craftcms/azure-blob` library to the patch version.",
   "vulnerable_to": "Information Disclosure",
-  "related_cve_id": "",
+  "related_cve_id": "GHSA-q6fm-p73f-x862",
   "language": "PYTHON",
   "severity_class": "CRITICAL",
   "aikido_score": 91,

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "espressif.esp-idf",
+  "patch_versions": [
+    "5.5.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "5.5.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-125"
+  ],
+  "tldr": "Affected versions of this package contain an out-of-bounds read in Digest authentication due to the use of `memcmp()` with a fixed length to compare the `algorithm` field, which could read past the intended buffer if the input is shorter or improperly terminated. An attacker controlling or influencing the `algorithm` value (e.g., via a malicious server response or crafted authentication header) could trigger memory disclosure or application instability by causing unintended memory access. The patch replaces `memcmp()` with `strcasecmp()` to ensure safe, null-terminated string comparison and prevent buffer over-reads.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `espressif.esp-idf` library to the patch version.",
+  "vulnerable_to": "Out-of-bounds read",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "C++",
+  "severity_class": "MEDIUM",
+  "aikido_score": 62,
+  "changelog": "https://github.com/espressif/esp-idf/releases/tag/v5.5.3"
 }

@@ -1,0 +1,26 @@
+{
+  "package_name": "wayflowcore",
+  "patch_versions": [
+    "26.1.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "25.4.1",
+      "26.0.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1336"
+  ],
+  "tldr": "Affected versions of this package allow insecure Jinja template rendering due to insufficient sandbox restrictions, which may permit unintended access to object attributes and sensitive runtime data. This can lead to unauthorized data exposure or server-side template injection (SSTI) when untrusted input is processed within templates. An attacker might exploit this by injecting crafted template expressions that access internal objects, bypass intended data boundaries, or manipulate application logic during template rendering. Upgrading to the stricter SandboxedEnvironment limits access to key-based structures only, reducing the attack surface and preventing unauthorized attribute access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `wayflowcore` library to the patch version.",
+  "vulnerable_to": "Server-side Template Injection",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 42,
+  "changelog": "https://github.com/oracle/wayflow/blob/main/docs/wayflowcore/source/core/changelog.rst#wayflow-2610",
+  "last_modified": "2026-02-27",
+  "published": "2026-02-27"
+}

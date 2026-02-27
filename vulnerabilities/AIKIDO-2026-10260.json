@@ -1,0 +1,26 @@
+{
+  "package_name": "@zereight/mcp-gitlab",
+  "patch_versions": [
+    "2.0.28"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.0.27"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package allow user-controlled regular expression patterns to be processed with insufficient safeguards against catastrophic backtracking, potentially enabling Regular Expression Denial of Service (ReDoS). Although checks attempt to reject overly long patterns and certain nested quantifiers, incomplete validation may still permit crafted patterns that bypass detection. An attacker could supply specially designed regex input that triggers excessive CPU consumption during evaluation, causing application slowdown or service disruption when the pattern is executed against large or complex input.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@zereight/mcp-gitlab` library to the patch version.",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/zereight/gitlab-mcp/releases/tag/v2.0.28",
+  "last_modified": "2026-02-27",
+  "published": "2026-02-27"
+}

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "graphiti-core",
+  "patch_versions": [
+    "0.28.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.27.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to sensitive information exposure through application log output. Certain debug or operational log statements may include personally identifiable information (PII) or other confidential internal data, which could be accessed by unauthorized parties with log access. This creates a risk of unintended disclosure of sensitive information.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `graphiti-core` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 24,
+  "changelog": "https://github.com/getzep/graphiti/releases/tag/v0.28.0"
 }

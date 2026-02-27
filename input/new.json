@@ -1,5 +1,5 @@
 {
-  "package_name": "@nestjs/platform-fastify,",
+  "package_name": "@nestjs/platform-fastify",
   "patch_versions": [
     "11.1.14"
   ],

@@ -1,24 +1,15 @@
 {
-  "package_name": "vm2",
-  "patch_versions": [
-    "3.10.5"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.9.6",
-      "3.10.4"
-    ]
-  ],
-  "cwe": [
-    "CWE-693"
-  ],
-  "tldr": "Affected versions of this package allow sandbox escape via WebAssembly.JSTag, where wasm exception handling can catch JavaScript exceptions and bypass transformer catch instrumentation that only wraps JS catch clauses. An attacker can craft a malicious wasm module that imports JSTag, triggers a host TypeError, captures the exception as an externref, and leverage the host error’s constructor chain to escape the sandbox. This enables unauthorized access to host objects and breaks isolation guarantees.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `vm2` library to the patch version.",
-  "vulnerable_to": "Protection Mechanism Failure",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 30,
-  "changelog": "https://github.com/patriksimek/vm2/releases/tag/v3.10.5"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

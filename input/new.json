@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "ai",
+  "patch_versions": [
+    "6.0.84"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "6.0.83"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an unbounded download denial-of-service (DoS) issue where large or uncontrolled downloads can exhaust resources and potentially crash or hang applications. The underlying problem occurs when the SDK does not properly limit the size of downloads, allowing adversarial or unexpectedly large content to be fetched without safeguards. This can result in excessive memory or CPU usage and degraded availability for applications using the AI toolkit. The vulnerability is fixed by introducing bounds and safeguards on download operations to prevent unbounded resource consumption during file retrieval and processing.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ai` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/vercel/ai/blob/main/packages/ai/CHANGELOG.md#6084"
 }

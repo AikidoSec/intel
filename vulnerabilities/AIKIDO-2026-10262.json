@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/celestiaorg/celestia-core",
+  "patch_versions": [
+    "0.39.25"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.39.0",
+      "0.39.24"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package allow malicious peers to send `Txs` protobuf messages containing excessive or zero-length transactions, which are not properly validated. An attacker can exploit this by flooding nodes with messages packed with thousands of empty entries, triggering repeated SHA256 hashing, memory allocations, map operations, and `CheckTx` calls, leading to uncontrolled CPU and memory consumption. This resource exhaustion can degrade performance or cause out-of-memory crashes, effectively resulting in a denial-of-service condition for honest nodes.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/celestiaorg/celestia-core` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS) via Resource Exhaustion",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/celestiaorg/celestia-core/releases/tag/v0.39.25",
+  "last_modified": "2026-02-27",
+  "published": "2026-02-27"
+}

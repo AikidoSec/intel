@@ -1,15 +1,29 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.17.5",
+    "5.9.11"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.5.0",
+      "4.17.4"
+    ],
+    [
+      "5.0.0",
+      "5.9.10"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a remote code execution (RCE) vulnerability stemming from unsafe processing of serialized condition configuration data, which could allow untrusted input to be interpreted in a way that executes arbitrary server-side code. This unsafe handling creates a critical risk where specially crafted requests targeting the element indexes/conditions controller may be leveraged to inject executable configuration, potentially leading to full compromise of the affected Craft CMS application. The issue is fixed by cleansing and validating condition config data before use, removing dangerous configuration keys and ensuring arbitrary code execution vectors are mitigated.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "GHSA-4484-8v2f-5748",
+  "language": "PHP",
+  "severity_class": "MEDIUM",
+  "aikido_score": 68,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.9.11"
 }

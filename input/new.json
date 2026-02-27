@@ -14,7 +14,7 @@
   ],
   "tldr": "Affected versions of this package contain a Fastify middleware bypass due to inconsistent URL normalization and sanitization before route matching and security checks. Improper handling of duplicate slashes, trailing slashes, case sensitivity, and URI decoding may allow crafted requests to be interpreted differently by middleware and the router. An attacker could exploit this by sending specially crafted paths (e.g., using `//`, mixed casing, encoded characters, or trailing slashes) to bypass authentication or authorization middleware and access protected endpoints. The issue stems from mismatched canonicalization logic that enables path confusion and access control evasion.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@nestjs/platform-fastify,` library to the patch version.",
+  "how_to_fix": "Upgrade the `@nestjs/platform-fastify` library to the patch version.",
   "vulnerable_to": "URL normalization bypass",
   "related_cve_id": "CVE-2026-2293",
   "language": "JS",

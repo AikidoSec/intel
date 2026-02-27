@@ -1,24 +1,15 @@
 {
-  "package_name": "elm-watch",
-  "patch_versions": [
-    "1.2.5"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.2.1",
-      "1.2.4"
-    ]
-  ],
-  "cwe": [
-    "CWE-287"
-  ],
-  "tldr": "Affected versions of this package allow WebSocket connections even when an invalid or missing secret token is provided, failing to properly enforce authentication and enabling unauthorized clients to establish a limited session. An attacker could exploit this by initiating unauthorized WebSocket connections from a malicious website and triggering the `PressedOpenEditor` command, potentially executing the victim’s configured editor command. While no sensitive data is exposed and most commands are ignored, this could lead to command execution risks if the editor command is insecure or cause disruptive behavior. The issue is fixed by rejecting invalid tokens with a 401 response and preventing connection establishment.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `elm-watch` library to the patch version.",
-  "vulnerable_to": "Improper Authentication",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 42,
-  "changelog": "https://github.com/lydell/elm-watch/releases/tag/v1.2.5"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

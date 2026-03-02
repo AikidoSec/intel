@@ -1,0 +1,36 @@
+{
+  "package_name": "kibana",
+  "patch_versions": [
+    "8.19.12",
+    "9.2.6",
+    "9.3.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "8.18.0",
+      "8.19.11"
+    ],
+    [
+      "9.0.0",
+      "9.2.5"
+    ],
+    [
+      "9.3.0",
+      "9.3.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-1284"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to Denial of Service (DoS). An authenticated attacker with view-only privileges can send a specially crafted malformed payload that causes excessive resource consumption, making Kibana unresponsive or causing it to crash.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `kibana` library to the patch version.",
+  "vulnerable_to": "Improper Validation of Specified Quantity in Input",
+  "related_cve_id": "CVE-2026-26934",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 65,
+  "changelog": "https://discuss.elastic.co/t/kibana-8-19-12-9-2-6-9-3-1-security-update-esa-2026-12/385248",
+  "last_modified": "2026-03-02",
+  "published": "2026-03-02"
+}

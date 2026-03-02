@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "modern-tar",
+  "patch_versions": [
+    "0.7.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.4.0",
+      "0.7.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to prototype pollution during tar header parsing. Crafted archive metadata can inject unexpected properties onto internal objects, potentially corrupting application state. While the impact is limited, exploitation may result in a denial-of-service condition by triggering runtime errors such as `TypeError: mapping is not iterable`, causing the process to crash.",
+  "doest_this_affect_me": "You are affected if you are using a version which is within vulnerability ranges.",
+  "how_to_fix": "Upgrade the `modern-tar` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/ayuhito/modern-tar/releases/tag/v0.7.4"
 }

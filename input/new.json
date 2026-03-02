@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "numo-narray-alt",
+  "patch_versions": [
+    "0.10.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.10.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-125"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to an out-of-bounds memory access during array indexing operations. When certain multi-dimensional indexing patterns are used, the parser could read past the end of internal stride/index tables, potentially causing undefined behavior, crashes, or denial-of-service conditions. The issue is fixed by adding proper boundary checks before accessing internal index data, ensuring that invalid dimension indexes do not lead to unsafe memory reads.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `numo-narray-alt` library to the patch version.",
+  "vulnerable_to": "Out-of-bounds Read",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "Rust",
+  "severity_class": "MEDIUM",
+  "aikido_score": 57,
+  "changelog": "https://github.com/yoshoku/numo-narray-alt/blob/main/CHANGELOG.md#0103---2026-02-18"
 }

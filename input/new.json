@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "coreshop/core-shop",
+  "patch_versions": [
+    "4.1.10"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "4.1.9"
+    ]
+  ],
+  "cwe": [
+    "CWE-209"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to sensitive information exposure through error responses in the `OrderInvoiceController` and `OrderShipmentController`. In the event of a server error, detailed exception messages and full stack traces were previously returned directly to clients, potentially revealing internal implementation details such as class names, file paths, or control flow. This can aid attackers in reconnoitering the application and crafting further attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `coreshop/core-shop` library to a patch version.",
+  "vulnerable_to": "Generation of Error Message Containing Sensitive Information",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 19,
+  "changelog": "https://github.com/coreshop/CoreShop/releases/tag/4.1.10"
 }

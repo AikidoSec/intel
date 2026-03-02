@@ -1,15 +1,40 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "storybook",
+  "patch_versions": [
+    "10.2.10",
+    "9.1.19",
+    "8.6.17",
+    "7.6.23"
+  ],
+  "vulnerable_ranges": [
+    [
+      "10.0.0",
+      "10.2.9"
+    ],
+    [
+      "9.0.0",
+      "9.1.18"
+    ],
+    [
+      "8.0.0",
+      "8.6.16"
+    ],
+    [
+      "0.0.1",
+      "7.6.22"
+    ]
+  ],
+  "cwe": [
+    "CWE-94"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to arbitrary code injection due to improper validation of WebSocket messages used for creating and saving stories. Specifically, user-controlled input in the `componentFilePath` parameter is not sufficiently sanitized, allowing an attacker to craft malicious WebSocket payloads that can write or overwrite files within the local development environment. This may lead to persistent code execution or the insertion of unauthorized scripts into the project. Exploitation requires the developer’s local development server to be running and either exposed to untrusted networks or accessed indirectly by visiting a malicious website.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `storybook` library to the patch version.",
+  "vulnerable_to": "Remote Code Execution (RCE)",
+  "related_cve_id": "CVE-2026-27148",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "disable_reachability_analysis": true,
+  "aikido_score": 89,
+  "changelog": "https://github.com/storybookjs/storybook/releases/tag/v10.2.10"
 }

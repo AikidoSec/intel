@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `numo-narray-alt` library to the patch version.",
   "vulnerable_to": "Out-of-bounds Read",
   "related_cve_id": "",
-  "language": "Rust",
+  "language": "RUBY",
   "severity_class": "MEDIUM",
   "aikido_score": 57,
   "changelog": "https://github.com/yoshoku/numo-narray-alt/blob/main/CHANGELOG.md#0103---2026-02-18",

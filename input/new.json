@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "gradio",
+  "patch_versions": [
+    "6.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.41.0",
+      "6.5.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Affected versions of this package allowed insufficient validation of `proxy_url` host values, enabling potential Server-Side Request Forgery (SSRF) through malicious proxy configurations. An attacker could supply a crafted proxy URL pointing to internal or unauthorized external services, causing the server to issue unintended requests and potentially expose sensitive data or internal network resources. The patch enforces strict host validation by only allowing URLs ending in `.hf.space`, mitigating unauthorized request forwarding.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `gradio` library to the patch version.",
+  "vulnerable_to": "Server-Side Request Forgery (SSRF)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/gradio-app/gradio/blob/main/CHANGELOG.md#660"
 }

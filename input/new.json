@@ -1,6 +1,5 @@
 {
-  "package_name": "@elastic/elasticsearch",
-  "package_name_alias": "kibana",
+  "package_name": "kibana",
   "patch_versions": [
     "8.19.12",
     "9.2.6",
@@ -25,7 +24,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to Denial of Service (DoS). An authenticated attacker with view-only privileges can send a specially crafted malformed payload that causes excessive resource consumption, making Kibana unresponsive or causing it to crash.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@elastic/elasticsearch` library to the patch version.",
+  "how_to_fix": "Upgrade the `kibana` library to the patch version.",
   "vulnerable_to": "Improper Validation of Specified Quantity in Input",
   "related_cve_id": "CVE-2026-26934",
   "language": "JS",

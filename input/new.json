@@ -1,15 +1,29 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.17.6",
+    "5.9.12"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "4.17.5"
+    ],
+    [
+      "5.0.0",
+      "5.9.11"
+    ]
+  ],
+  "cwe": [
+    "CWE-285"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a privilege escalation vulnerability stemming from improper token validation. Previously, the `requireToken()` method in `craft\\web\\Controller` only verified that a valid token was present in the request, but it failed to enforce that the token was actually generated for the specific requested route. Consequently, an attacker who obtains a valid token for a low-privileged or benign action (such as viewing a preview or draft) could reuse that token to bypass authorization checks on other, highly-sensitive controller actions protected by tokens. The fix resolves this by tracking remaining token usages and ensuring that the token's assigned route strictly matches the requested route before granting access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
+  "vulnerable_to": "Privilege Escalation",
+  "related_cve_id": "GHSA-cc7p-2j3x-x7xf",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/craftcms/cms/blob/5.x/CHANGELOG.md"
 }

@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/getsynq/dwhsupport",
-  "patch_versions": [
-    "0.9.1"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "0.9.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-20"
-  ],
-  "tldr": "Affected versions of this package fail to properly handle invalid UTF-8 sequences returned by external warehouses (e.g., Redshift), causing `protojson.Marshal` to error when `google.protobuf.Value.string_value` receives corrupted input. Because metadata helpers (StringValue, StringPtrValue, TrimmedStringPtrValue, StringListValue) did not sanitize malformed bytes, a truncated sequence (e.g., `\\xa0` without leading `\\xc2`) can trigger job failures and processing deadlocks. An attacker controlling upstream data or error messages could intentionally inject malformed UTF-8 to induce repeated serialization failures, resulting in denial-of-service conditions or pipeline disruption.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/getsynq/dwhsupport` library to a patch version.",
-  "vulnerable_to": "Improper Input Validation",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "MEDIUM",
-  "aikido_score": 42,
-  "changelog": "https://github.com/getsynq/dwhsupport/releases/tag/v0.9.1"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

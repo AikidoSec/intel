@@ -1,0 +1,31 @@
+{
+  "package_name": "craftcms/cms",
+  "patch_versions": [
+    "4.17.6",
+    "5.9.12"
+  ],
+  "vulnerable_ranges": [
+    [
+      "4.0.0",
+      "4.17.5"
+    ],
+    [
+      "5.0.0",
+      "5.9.11"
+    ]
+  ],
+  "cwe": [
+    "CWE-285"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a privilege escalation vulnerability stemming from improper token validation. An attacker who obtains a valid token for a low-privileged or benign action could reuse that token to bypass authorization checks. The fix resolves this issue by tracking remaining token usages and ensuring that a token's assigned route strictly matches the requested route before granting access.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
+  "vulnerable_to": "Privilege Escalation",
+  "related_cve_id": "GHSA-cc7p-2j3x-x7xf",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 85,
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.9.12",
+  "last_modified": "2026-03-03",
+  "published": "2026-03-03"
+}

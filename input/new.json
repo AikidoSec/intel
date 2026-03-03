@@ -25,5 +25,5 @@
   "language": "PHP",
   "severity_class": "HIGH",
   "aikido_score": 85,
-  "changelog": "https://github.com/craftcms/cms/blob/5.x/CHANGELOG.md"
+  "changelog": "https://github.com/craftcms/cms/releases/tag/5.9.12"
 }

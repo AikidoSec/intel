@@ -17,7 +17,7 @@
   "cwe": [
     "CWE-285"
   ],
-  "tldr": "Affected versions of this package are vulnerable to a privilege escalation vulnerability stemming from improper token validation. Previously, the `requireToken()` method in `craft\\web\\Controller` only verified that a valid token was present in the request, but it failed to enforce that the token was actually generated for the specific requested route. Consequently, an attacker who obtains a valid token for a low-privileged or benign action (such as viewing a preview or draft) could reuse that token to bypass authorization checks on other, highly-sensitive controller actions protected by tokens. The fix resolves this by tracking remaining token usages and ensuring that the token's assigned route strictly matches the requested route before granting access.",
+  "tldr": "Affected versions of this package are vulnerable to a privilege escalation vulnerability stemming from improper token validation. An attacker who obtains a valid token for a low-privileged or benign action could reuse that token to bypass authorization checks. The fix resolves this issue by tracking remaining token usages and ensuring that a token's assigned route strictly matches the requested route before granting access.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `craftcms/cms` library to the patch version.",
   "vulnerable_to": "Privilege Escalation",

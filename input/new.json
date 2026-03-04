@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "OpenEXR",
+  "patch_versions": [
+    "3.3.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "3.3.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-122"
+  ],
+  "tldr": "Affected versions of this package contain a flaw in `istream_nonparallel_read` where incorrect bounds handling during stream reads can lead to improper size adjustment when `nread + sz` exceeds the stream size, potentially producing a negative or incorrect length. An attacker controlling a crafted file or input stream could manipulate the offset and requested size so the resulting calculation underflows or bypasses expected bounds, leading to out-of-bounds reads or memory corruption. By supplying a maliciously structured OpenEXR file or stream that triggers the faulty size logic, the attacker may cause the application to read invalid memory regions, potentially resulting in denial of service or further memory-safety exploitation depending on downstream usage of the buffer.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `OpenEXR` library to a patch version.",
+  "vulnerable_to": "Heap-based buffer overflow",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "MEDIUM",
+  "aikido_score": 66,
+  "changelog": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.3.7"
 }

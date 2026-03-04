@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/hashicorp/consul",
-  "patch_versions": [
-    "1.22.5"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "1.22.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-770"
-  ],
-  "tldr": "Affected versions of this package do not enforce strict HTTP server timeout controls, allowing connections to remain open indefinitely and increasing exposure to Slowloris-style denial-of-service attacks. Without properly configured read, header, write, and idle timeouts, an attacker can open numerous concurrent connections and deliberately send partial or slow HTTP requests, exhausting server threads or file descriptors and degrading availability. This can be exploited by maintaining many half-open or slow-drip connections against the agent or connect proxy (including pprof endpoints), ultimately causing resource starvation and service disruption.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/hashicorp/consul` library to a patch version.",
-  "vulnerable_to": "Denial of Service (DoS)",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 26,
-  "changelog": "https://github.com/hashicorp/consul/releases/tag/v1.22.4"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

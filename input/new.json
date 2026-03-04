@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/netbirdio/netbird",
+  "patch_versions": [
+    "0.65.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.33.0",
+      "0.65.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a privilege escalation issue caused by a race condition in the user role validation logic. During role updates, concurrent requests could temporarily rely on stale role data, allowing permission checks to succeed even though the user’s role was being downgraded. Under specific timing conditions—such as when an administrator was being demoted while simultaneously performing account ownership operations—this race window could allow actions requiring elevated privileges to proceed. In coordinated scenarios involving multiple administrator accounts, this could potentially result in unauthorized role changes or ownership transfers. The issue is fixed by ensuring role validation is performed against consistent and up-to-date role data during role updates, eliminating the race condition and preventing privilege escalation.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/netbirdio/netbird` library to the patch version.",
+  "vulnerable_to": "Race Condition",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/netbirdio/netbird/releases/tag/v0.65.3"
 }

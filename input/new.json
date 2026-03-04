@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "laravel/boost",
+  "patch_versions": [
+    "2.1.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "2.1.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-863"
+  ],
+  "tldr": "Affected versions of this package improperly enforce a read-only guard for SQL statements using Common Table Expressions (CTEs), allowing queries such as `WITH x AS (SELECT 1) DELETE FROM users` to bypass validation because the regex only checks for the presence of `SELECT` after `WITH`. An attacker could exploit this weakness by crafting a malicious CTE that includes a valid `SELECT` in the CTE body while executing a destructive statement (e.g., `DELETE`, `UPDATE`, or `INSERT`) afterward, effectively performing unauthorized write operations in contexts that are expected to permit only read-only queries.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `laravel/boost` library to the patch version.",
+  "vulnerable_to": "Incorrect Authorization",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/laravel/boost/releases/tag/v2.1.8"
 }

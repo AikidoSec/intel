@@ -1,24 +1,15 @@
 {
-  "package_name": "filelock",
-  "patch_versions": [
-    "3.24.3"
-  ],
-  "vulnerable_ranges": [
-    [
-      "3.21.0",
-      "3.24.2"
-    ]
-  ],
-  "cwe": [
-    "CWE-362"
-  ],
-  "tldr": "Affected versions of this package are vulnerable to a race condition during lock acquisition on certain filesystems. On network-mounted or user-space filesystems such as FUSE or NFS where os.open(O_CREAT) is not atomic, a competing process's removal of a lock file between the lookup and create steps can trigger a FileNotFoundError and cause lock acquisition to fail unexpectedly. This condition can lead to denial-of-service or other contention failures in applications relying on file locking across distributed nodes. The issue is fixed by catching transient FileNotFoundError errors during lock creation and retrying gracefully, ensuring reliable lock acquisition under concurrent contention on affected filesystems.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `filelock` library to the patch version.",
-  "vulnerable_to": "Race Condition",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "LOW",
-  "aikido_score": 33,
-  "changelog": "https://github.com/tox-dev/filelock/releases/tag/3.24.3"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/sigstore/rekor-tiles/v2",
+  "patch_versions": [
+    "2.2.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "2.0.0",
+      "2.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a denial of service due to insufficient limits when processing DSSE requests. The server does not enforce reasonable limits on DSSE envelope processing and signature verification, which may allow an attacker to submit crafted requests that consume excessive computational resources. This issue is addressed by introducing size and verification limits for DSSE requests.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/sigstore/rekor-tiles/v2` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/sigstore/rekor-tiles/releases/tag/v2.2.1"
 }

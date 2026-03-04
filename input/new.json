@@ -1,24 +1,15 @@
 {
-  "package_name": "corvus",
-  "patch_versions": [
-    "0.1.4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.0",
-      "0.1.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-276"
-  ],
-  "tldr": "Affected versions of this package did not consistently enforce restrictive permissions on configuration files, allowing them to be created or saved with overly permissive access rights. On multi-user Unix systems, this could expose sensitive data stored in configuration files—such as API keys, tokens, or credentials—to other local users. An attacker with local access could read these improperly protected files and extract secrets to gain unauthorized access to services or escalate privileges within the environment.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `corvus` library to a patch version.",
-  "vulnerable_to": "Incorrect Default Permissions",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "RUST",
-  "severity_class": "LOW",
-  "aikido_score": 28,
-  "changelog": "https://github.com/dallay/corvus/releases/tag/v0.1.4"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

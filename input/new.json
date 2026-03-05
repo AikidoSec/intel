@@ -2,12 +2,12 @@
   "package_name": "keycloak-services",
   "org_name": "org.keycloak",
   "patch_versions": [
-    "26.5.3"
+    "26.5.4"
   ],
   "vulnerable_ranges": [
     [
       "0.0.1",
-      "26.5.2"
+      "26.5.3"
     ]
   ],
   "cwe": [

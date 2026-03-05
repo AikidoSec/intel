@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "jsrsasign",
+  "patch_versions": [
+    "11.1.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "11.1.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-347"
+  ],
+  "tldr": "Affected versions of `jsrsasign` are vulnerable to improper validation of cryptographic parameters during signature processing. The library does not sufficiently validate certain parameters when handling DSA/ECDSA operations, which could allow specially crafted inputs to bypass expected verification checks. This may enable an attacker to forge or incorrectly validate signatures under specific conditions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `jsrsasign` library to the patch version.",
+  "vulnerable_to": "Improper Verification of Cryptographic Signature",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 82,
+  "changelog": "https://github.com/kjur/jsrsasign/compare/58bb241..e2b136e"
 }

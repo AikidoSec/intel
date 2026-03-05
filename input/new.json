@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "homeassistant",
+  "patch_versions": [
+    "2026.2.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2026.2.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-918"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to a server-side request forgery (SSRF) bypass due to insufficient validation of HTTP redirects in the internal HTTP client. When Home Assistant performs outbound HTTP requests, a malicious server could return a redirect pointing to localhost or other loopback addresses, causing the client to follow the redirect and access internal services that should not be reachable. An attacker controlling the remote endpoint could exploit this behavior to force requests to internal network resources, potentially exposing sensitive services or data. The issue is addressed by blocking redirects that resolve to loopback or unspecified addresses such as localhost.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `homeassistant` library to the patch version.",
+  "vulnerable_to": "Server-Side Request Forgery (SSRF)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 72,
+  "changelog": "https://github.com/home-assistant/core/releases/tag/2026.2.3"
 }

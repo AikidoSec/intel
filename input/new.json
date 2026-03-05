@@ -16,7 +16,7 @@
   "tldr": "Affected versions of this package are vulnerable to improper enforcement of administrative controls in the Docker v2 authentication endpoint. When a Docker registry client is administratively disabled, the endpoint continues to issue authentication tokens for that client. This allows previously valid credentials to still obtain tokens despite the client being marked as disabled, potentially allowing unintended access to container registry resources.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `org.keycloak:keycloak-services` library to a patch version.",
-  "vulnerable_to": " Improper Authorization",
+  "vulnerable_to": "Improper Authorization",
   "related_cve_id": "CVE-2026-2733",
   "language": "java",
   "severity_class": "LOW",

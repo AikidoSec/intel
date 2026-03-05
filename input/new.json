@@ -1,24 +1,15 @@
 {
-  "package_name": "onnxruntime-node",
-  "patch_versions": [
-    "1.24.2"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.1.4",
-      "1.24.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-125"
-  ],
-  "tldr": "Affected versions of this package contain an out-of-bounds read vulnerability in ONNX Runtime’s `ArrayFeatureExtractor` operator due to missing validation for negative index values. The implementation checks only the upper bound (`<= stride`) but fails to ensure the index is non-negative, allowing crafted inputs such as `y_data = [-10]` to access memory outside the intended array. An attacker able to supply or influence model inputs could exploit this flaw to read unintended heap memory regions during inference, potentially leaking sensitive data from the process memory.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `onnxruntime-node` library to a patch version.",
-  "vulnerable_to": "Out-of-bound read",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 53,
-  "changelog": "https://github.com/microsoft/onnxruntime/releases/tag/v1.24.2"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

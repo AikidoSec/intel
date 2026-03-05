@@ -1,0 +1,19 @@
+{
+  "package_name": "libxmljs",
+  "patch_versions": [],
+  "vulnerable_ranges": "*",
+  "cwe": [
+    "CWE-843"
+  ],
+  "tldr": "Affected versions of this package contain a type confusion vulnerability when parsing specially crafted XML and invoking the `namespaces()` function on a grand-child node that references an entity. The underlying `_wrap__xmlNode_nsDef_get()` call may incorrectly interpret memory structures, leading to memory corruption. An attacker could provide a malicious XML payload that triggers this condition during parsing, potentially causing denial of service or remote code execution if memory corruption is exploited. Notably, this issue has remained open for years and the package appears to be unmaintained or no longer actively updated, which increases the risk of continued exposure.",
+  "doest_this_affect_me": "You are affected if you are using this package.",
+  "how_to_fix": "Remove any `libxmljs` package from your application. Please take a look at `libxml2-wasm` instead.",
+  "vulnerable_to": "Type Confusion",
+  "related_cve_id": "GHSA-mg49-jqgw-gcj6",
+  "language": "JS",
+  "severity_class": "CRITICAL",
+  "aikido_score": 93,
+  "changelog": "https://github.com/libxmljs/libxmljs/issues/646",
+  "last_modified": "2026-03-05",
+  "published": "2026-03-05"
+}

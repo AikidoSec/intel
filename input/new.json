@@ -17,7 +17,7 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `org.keycloak:keycloak-services` library to a patch version.",
   "vulnerable_to": "Missing XML Validation",
-  "related_cve_id": "CVE-2026-11902",
+  "related_cve_id": "CVE-2026-1190",
   "language": "java",
   "severity_class": "LOW",
   "aikido_score": 31,

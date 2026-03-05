@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "unstructured",
+  "patch_versions": [
+    "0.20.8"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.20.7"
+    ]
+  ],
+  "cwe": [
+    "CWE-770"
+  ],
+  "tldr": "Affected versions of this package allow decompression of base64+gzipped elements JSON without a strict size cap, enabling a maliciously crafted payload to inflate into extremely large data in memory or on disk. An attacker could exploit this by submitting a compressed payload that expands to hundreds of megabytes or more, triggering excessive memory allocation, filesystem consumption, or process crashes. It can lead to denial-of-service conditions during document ingestion or processing pipelines that deserialize these compressed element payloads.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `unstructured` library to a patch version.",
+  "vulnerable_to": "Allocation of Resources Without Limits or Throttling",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 30,
+  "changelog": "https://github.com/Unstructured-IO/unstructured/releases/tag/0.20.8"
 }

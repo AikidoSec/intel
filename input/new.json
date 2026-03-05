@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "keycloak-services",
+  "org_name": "org.keycloak",
+  "patch_versions": [
+    "26.5.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "26.5.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-112"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper validation of SAML assertions. When configured as a client in a Security Assertion Markup Language (SAML) setup, the application does not validate the `NotOnOrAfter` timestamp within the `SubjectConfirmationData` element. This allows an attacker to reuse or delay the expiration of SAML responses, potentially extending the period during which a response is considered valid and leading to unintended session durations or resource consumption.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `org.keycloak:keycloak-services` library to a patch version.",
+  "vulnerable_to": "Missing XML Validation",
+  "related_cve_id": "CVE-2026-11902",
+  "language": "java",
+  "severity_class": "LOW",
+  "aikido_score": 31,
+  "changelog": "https://github.com/keycloak/keycloak/releases/tag/26.5.4"
 }

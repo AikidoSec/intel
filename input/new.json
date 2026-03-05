@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "keycloak-services",
+  "org_name": "org.keycloak",
+  "patch_versions": [
+    "26.5.4"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "26.5.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-285"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to improper enforcement of administrative controls in the Docker v2 authentication endpoint. When a Docker registry client is administratively disabled, the endpoint continues to issue authentication tokens for that client. This allows previously valid credentials to still obtain tokens despite the client being marked as disabled, potentially allowing unintended access to container registry resources.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `org.keycloak:keycloak-services` library to a patch version.",
+  "vulnerable_to": " Improper Authorization",
+  "related_cve_id": "CVE-2026-2733",
+  "language": "java",
+  "severity_class": "LOW",
+  "aikido_score": 38,
+  "changelog": "https://github.com/keycloak/keycloak/releases/tag/26.5.4"
 }

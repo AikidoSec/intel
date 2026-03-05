@@ -1,15 +1,25 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "aiorwlock",
+  "patch_versions": [
+    "1.5.1"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.5.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-362",
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of `aiorwlock` are vulnerable to a deadlock condition in the lock acquisition logic. Due to improper handling of waiting tasks during certain lock state transitions, a task may remain indefinitely blocked while holding or waiting for a lock. An attacker or user capable of triggering this condition could cause the application to hang or stop processing further tasks, resulting in a denial of service.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `aiorwlock` library to the patch version.",
+  "vulnerable_to": "Race Condition",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 19,
+  "changelog": "https://github.com/aio-libs/aiorwlock/releases/tag/v1.5.1"
 }

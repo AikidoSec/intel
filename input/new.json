@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "pingora-cache",
+  "patch_versions": [
+    "0.8.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.7.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-444"
+  ],
+  "tldr": "Affected versions of this package are vulnerable to cache poisoning. The default cache key implementation generates cache keys using only the URI path and does not include other important request attributes such as the `Host` header. This allows an attacker to poison shared cache entries and cause cross-origin responses to be served to users. In multi-tenant deployments, this may lead to cross-tenant data leakage or the delivery of malicious content to legitimate users. The issue is addressed by removing the insecure default cache key implementation and requiring users to explicitly define their own cache key logic.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `pingora-cache` library to the patch version.",
+  "vulnerable_to": "Cache Poisoning",
+  "related_cve_id": "CVE-2026-2836",
+  "language": "RUST",
+  "severity_class": "HIGH",
+  "aikido_score": 84,
+  "changelog": "https://rustsec.org/advisories/RUSTSEC-2026-0035.html"
 }

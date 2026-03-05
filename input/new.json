@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "fluentd",
+  "patch_versions": [
+    "1.19.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.6.0",
+      "1.19.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of `fluentd` are vulnerable to a Denial of Service (DoS) in the HTTP server helper used by plugins. Due to the request body not being properly closed for certain POST requests, sockets may remain open and accumulate over time. An attacker capable of sending a large number of crafted requests could exploit this behavior to **exhaust available file descriptors or sockets**, potentially leading to a denial of service. This issue is addressed by ensuring the request body is explicitly closed after processing.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `fluentd` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUBY",
+  "severity_class": "LOW",
+  "aikido_score": 33,
+  "changelog": "https://github.com/fluent/fluentd/releases/tag/v1.19.2"
 }

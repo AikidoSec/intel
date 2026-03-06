@@ -1,12 +1,12 @@
 {
   "package_name": "PyMuPDF",
   "patch_versions": [
-    "1.26.12"
+    "1.27.2"
   ],
   "vulnerable_ranges": [
     [
       "0.0.1",
-      "1.26.11"
+      "1.27.1"
     ]
   ],
   "cwe": [

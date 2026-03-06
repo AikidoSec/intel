@@ -15,15 +15,15 @@
     ]
   ],
   "cwe": [
-    "CWE-20"
+    "CWE-79"
   ],
-  "tldr": "Affected versions of this package improperly rendered user-controlled content directly into the DOM using mechanisms such as `v-html`, `innerHTML`, and unsanitized HTML returned by `marked`, enabling the injection of arbitrary HTML or JavaScript. Without proper sanitization or escaping, attacker-supplied input could be interpreted as executable markup instead of plain text. An attacker could exploit this by injecting malicious payloads (e.g., `<script>` tags, event handlers, or crafted HTML) into fields rendered by these components, leading to **Cross-Site Scripting (XSS)** that executes in the victim's browser, allowing session theft, credential harvesting, or arbitrary actions on behalf of the user.",
+  "tldr": "Affected versions of this package improperly rendered user-controlled content directly into the DOM using mechanisms such as `v-html`, `innerHTML`, and unsanitized HTML returned by `marked`, enabling the injection of arbitrary HTML or JavaScript. Without proper sanitization or escaping, attacker-supplied input could be interpreted as executable markup instead of plain text. An attacker could exploit this by injecting malicious payloads (e.g., `<script>` tags, event handlers, or crafted HTML) into fields rendered by these components, leading to Cross-Site Scripting (XSS) that executes in the victim's browser, allowing session theft, credential harvesting, or arbitrary actions on behalf of the user.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `statamic/cms` library to the patch version.",
-  "vulnerable_to": "Improper Input Validation",
+  "vulnerable_to": "Cross-Site Scripting (XSS)",
   "related_cve_id": "",
   "language": "PHP",
-  "severity_class": "HIGH",
-  "aikido_score": 74,
+  "severity_class": "MEDIUM",
+  "aikido_score": 68,
   "changelog": "https://github.com/statamic/cms/releases/tag/v6.3.3"
 }

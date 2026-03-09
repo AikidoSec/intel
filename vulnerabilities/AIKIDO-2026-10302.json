@@ -21,7 +21,7 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `OpenEXR` library to a patch version.",
   "vulnerable_to": "Heap-based buffer overflow",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2026-26981",
   "language": "PYTHON",
   "severity_class": "MEDIUM",
   "aikido_score": 66,

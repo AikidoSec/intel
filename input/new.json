@@ -1,5 +1,5 @@
 {
-  "package_name": "yara-x",
+  "package_name": "github.com/virustotal/yara-x/go",
   "patch_versions": [
     "1.13.0"
   ],
@@ -14,7 +14,7 @@
   ],
   "tldr": "Affected versions of this package contain a use-after-free vulnerability in the block scanning API. The `finish()` method can trigger a lazy call to `search_for_patterns()`, which accesses memory referenced by `ScanState::ScanningBlock` after it has already been deallocated. This causes crashes or undefined behavior when scanning blocks in a loop, as each block's data is dropped before `finish()` is called. The patch fixes this by resetting the scan state to `Idle` after each block scan and managing the `pattern_search_done` flag explicitly in the host context.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `yara-x` library to the patch version.",
+  "how_to_fix": "Upgrade the `github.com/virustotal/yara-x/go` library to the patch version.",
   "vulnerable_to": "Use After Free",
   "related_cve_id": "",
   "language": "RUST",

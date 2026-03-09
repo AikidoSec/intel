@@ -1,24 +1,15 @@
 {
-  "package_name": "isomorphic-dompurify",
-  "patch_versions": [
-    "3.0.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "2.36.0"
-    ]
-  ],
-  "cwe": [
-    "CWE-693"
-  ],
-  "tldr": "Affected versions of `isomorphic-dompurify` expose the DOMPurify instance through the global `DOMPurify` object. Because this global can be defined or modified before the library initializes, malicious code running in the same process could override the sanitizer implementation. This may allow attackers to tamper with or disable HTML sanitization, potentially leading to the processing of unsafe content and increasing the risk of cross-site scripting (xss) in applications relying on the sanitizer. The issue is addressed by removing the global `DOMPurify` singleton and relying on module-scoped instances instead.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `isomorphic-dompurify` library to a patch version.",
-  "vulnerable_to": "Protection Mechanism Failure",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 66,
-  "changelog": "https://github.com/kkomelin/isomorphic-dompurify/releases/tag/3.0.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

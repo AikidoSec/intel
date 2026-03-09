@@ -17,7 +17,7 @@
   "how_to_fix": "Upgrade the `github.com/virustotal/yara-x/go` library to the patch version.",
   "vulnerable_to": "Use After Free",
   "related_cve_id": "",
-  "language": "RUST",
+  "language": "GO",
   "severity_class": "MEDIUM",
   "aikido_score": 55,
   "changelog": "https://github.com/VirusTotal/yara-x/releases/tag/v1.13.0"

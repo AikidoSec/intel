@@ -1,0 +1,26 @@
+{
+  "package_name": "nautilus_trader",
+  "patch_versions": [
+    "1.223.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.222.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-532"
+  ],
+  "tldr": "Affected versions of the software are vulnerable to insertion of sensitive information into log files due to insufficient sanitization of data written to trace and execution logs. Under certain conditions, credentials, authentication headers, and service keys may be recorded in logs in plaintext. An attacker with access to these logs could retrieve sensitive information and potentially use it to access protected services or accounts. The issue is addressed by masking sensitive values in logs and improving the handling of credentials in logging and database interactions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `nautilus_trader` library to the patch version.",
+  "vulnerable_to": "Insertion of Sensitive Information into Log File",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "LOW",
+  "aikido_score": 12,
+  "changelog": "https://github.com/nautechsystems/nautilus_trader/releases/tag/v1.223.0",
+  "last_modified": "2026-03-09",
+  "published": "2026-03-09"
+}

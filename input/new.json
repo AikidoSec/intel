@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "corvus",
+  "patch_versions": [
+    "0.1.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.1.0",
+      "0.1.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of `corvus` contain a race condition in the handling of the application’s secret key. Due to improper synchronization during initialization and access of the secret value, concurrent operations may access the key before the expected protections are fully applied. An attacker capable of triggering concurrent requests could exploit this behavior to read the secret key, potentially compromising authentication or other security mechanisms that rely on it. The issue is addressed by correcting the initialization and access logic to ensure the secret key cannot be exposed during concurrent operations.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `corvus` library to the patch version.",
+  "vulnerable_to": "Race Condition",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUST",
+  "severity_class": "MEDIUM",
+  "aikido_score": 40,
+  "changelog": "https://github.com/dallay/corvus/releases/tag/v0.1.6"
 }

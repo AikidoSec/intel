@@ -18,7 +18,7 @@
   "vulnerable_to": "Improper Validation of Array Index",
   "related_cve_id": "CVE-2024-21493",
   "language": "GO",
-  "severity_class": "LOW",
-  "aikido_score": 25,
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
   "changelog": "https://github.com/greenpau/caddy-security/releases/tag/v1.1.32"
 }

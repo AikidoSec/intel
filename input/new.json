@@ -1,15 +1,17 @@
 {
-  "package_name": "",
+  "package_name": "ldapjs",
   "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "vulnerable_ranges": "*",
+  "cwe": [
+    "CWE-843"
+  ],
+  "tldr": "The `ldapjs` package is no longer maintained, as indicated by the developer. Its last commit documents that `ldapjs` has served its purpose and will no longer receive updates.",
+  "doest_this_affect_me": "You are affected if you are using this package.",
+  "how_to_fix": "Remove any `ldapjs` package from your application. Please take a look at `ldapts` instead.",
+  "vulnerable_to": "Use of Unmaintained Third Party Components",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/libxmljs/libxmljs/issues/646"
 }

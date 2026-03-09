@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "bootstrap5-toggle",
+  "patch_versions": [
+    "5.3.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "5.2.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of `bootstrap5-toggle` are vulnerable to cross-site scripting (xss) due to insufficient sanitization of HTML used in toggle labels. The component allows HTML content to be provided for the on/off labels, which was previously inserted into the DOM without proper filtering. An attacker who can control these label values could inject malicious HTML or JavaScript that executes in the context of the application. The issue is addressed by introducing HTML sanitization with an allow-list, ensuring that only safe markup is rendered in toggle labels.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `bootstrap5-toggle` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "js",
+  "severity_class": "MEDIUM",
+  "aikido_score": 44,
+  "changelog": "https://github.com/palcarazm/bootstrap5-toggle/releases/tag/v5.3.0"
 }

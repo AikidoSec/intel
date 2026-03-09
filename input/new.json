@@ -13,5 +13,5 @@
   "language": "js",
   "severity_class": "MEDIUM",
   "aikido_score": 50,
-  "changelog": "https://github.com/libxmljs/libxmljs/issues/646"
+  "changelog": "https://github.com/ldapjs/node-ldapjs/blob/8ffd0bc9c149088a10ec4c1ec6a18450f76ad05d/README.md"
 }

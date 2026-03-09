@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@lingo.dev/compiler",
+  "patch_versions": [
+    "0.3.10"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.3.9"
+    ]
+  ],
+  "cwe": [
+    "CWE-200"
+  ],
+  "tldr": "Affected versions of this package transmitted raw user email addresses to PostHog as the `distinct_id`, exposing personally identifiable information (PII) through analytics telemetry. An attacker with access to analytics dashboards, logs, or compromised telemetry pipelines could collect and correlate these email addresses to identify users across sessions and environments. This leakage could facilitate user profiling, targeted phishing, or correlation with other breached datasets. The fix hashes emails using SHA-256 before transmission, preserving analytics correlation while preventing exposure of raw PII.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@lingo.dev/compiler` library to the patch version.",
+  "vulnerable_to": "Information Disclosure",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 15,
+  "changelog": "https://github.com/lingodotdev/lingo.dev/releases/tag/%40lingo.dev%2Fcompiler%400.3.10"
 }

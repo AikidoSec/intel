@@ -1,0 +1,26 @@
+{
+  "package_name": "@fedify/fedify",
+  "patch_versions": [
+    "2.0.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.10.3"
+    ]
+  ],
+  "cwe": [
+    "CWE-770"
+  ],
+  "tldr": "Affected versions of this package consume unbounded memory when activity delivery fails with large HTTP error responses. The `sendActivity()` function reads the entire response body via `response.text()` without any size limit and stores it in both the error message and log output. Under production conditions with many unreachable inboxes returning large HTML error pages (50–100 KB each), this leads to significant memory pressure and V8 OOM crashes. The patch limits the `SendActivityError.responseBody` property to 1 KiB.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@fedify/fedify` library to the patch version.",
+  "vulnerable_to": "Uncontrolled Resource Consumption",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/fedify-dev/fedify/releases/tag/2.0.0",
+  "last_modified": "2026-03-10",
+  "published": "2026-03-10"
+}

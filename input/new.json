@@ -1,24 +1,15 @@
 {
-  "package_name": "@argonprotocol/mainchain",
-  "patch_versions": [
-    "1.4.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.2",
-      "1.3.27"
-    ]
-  ],
-  "cwe": [
-    "CWE-362"
-  ],
-  "tldr": "Affected versions of this package contain a consensus weakness in the block seal process where notaries could strategically delay revealing notebook secrets, enabling a hold-back manipulation that creates a stronger alternate fork near finalization depth. An attacker controlling or colluding with a notary could withhold the secret reveal and release it at a precise moment to influence fork choice, potentially triggering a chain reorganization and rewriting recent history. This timing attack exploits the lack of enforced secret maturity, allowing adversaries to manipulate block validity conditions during sealing. The fix introduces versioned parent-secret maturity delays and stricter audit validation to ensure seal key material derives from sufficiently mature history.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@argonprotocol/mainchain` library to the patch version.",
-  "vulnerable_to": "Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "MEDIUM",
-  "aikido_score": 59,
-  "changelog": "https://github.com/argonprotocol/mainchain/releases/tag/v1.4.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

@@ -1,24 +1,15 @@
 {
-  "package_name": "@argonprotocol/mainchain",
-  "patch_versions": [
-    "1.4.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.2",
-      "1.3.27"
-    ]
-  ],
-  "cwe": [
-    "CWE-770"
-  ],
-  "tldr": "Affected versions of this package have a non-configurable RPC rate limit in the notary component, which can allow excessive or uncontrolled request handling under certain deployments. If the rate limit is disabled, improperly configured, or set too high, an attacker could repeatedly send large volumes of RPC requests to the notary service, thereby exhausting CPU, memory, or network resources. This behavior may lead to service degradation or denial of service (DoS), potentially preventing legitimate clients from interacting with the notary infrastructure. Configurable rate limiting helps enforce request throttling and mitigate abuse of the RPC interface.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `@argonprotocol/mainchain` library to the patch version.",
-  "vulnerable_to": "Allocation of Resources Without Limits or Throttling",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "JS",
-  "severity_class": "LOW",
-  "aikido_score": 20,
-  "changelog": "https://github.com/argonprotocol/mainchain/releases/tag/v1.4.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

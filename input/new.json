@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@cognigy/chat-components",
+  "patch_versions": [
+    "0.68.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.67.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package do not sanitize the inner content of `iframe` `srcdoc` attributes. DOMPurify sanitizes the outer HTML but treats `srcdoc` as a plain string, so an attacker can inject markup such as `<iframe srcdoc=\"<script>...</script>\"></iframe>` to execute JavaScript in the page context or mount phishing content in the Transcript Editor. The patch adds a post-processing step that sanitizes each `srcdoc` value with DOMPurify and introduces iterative sanitization until output stabilizes to reduce nested-tag bypasses.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@cognigy/chat-components` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 65,
+  "changelog": "https://github.com/Cognigy/chat-components/releases/tag/v0.68.0"
 }

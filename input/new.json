@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "hono",
+  "patch_versions": [
+    "4.12.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "4.12.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package allow `__proto__` path segments in `parseBody({ dot: true })`. Specially crafted form field names such as `__proto__.x` can produce parsed objects that contain a `__proto__` property. If that result is later merged into plain objects with unsafe merge patterns, it can lead to prototype pollution. The patch ignores keys matching a `__proto__.` path segment so they are not merged into the nested form object.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `hono` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
+  "related_cve_id": "GHSA-v8w9-8mx6-g223",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 48,
+  "changelog": "https://github.com/honojs/hono/releases/tag/v4.12.7"
 }

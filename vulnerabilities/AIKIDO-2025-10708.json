@@ -14,7 +14,7 @@
   ],
   "tldr": "This package is vulnerable to prototype pollution in the `_fnSetObjectDataFn(...)` function, where an attacker could exploit unsanitized property paths by submitting malicious input containing dangerous property names like proto, constructor, or prototype to modify the Object prototype, potentially leading to application behavior manipulation, security control bypass, or denial of service. `jquery.datatables` is unmaintained and no longer receiving security updates, so it it is recommended to migrate to the `datatables.net` library version 1.10.23 or later.",
   "doest_this_affect_me": "You are affected if you are using the `jquery.datatables` package.",
-  "how_to_fix": "Upgrade to the `datatables.net` library version 1.10.23 or later.",
+  "how_to_fix": "Migrate to the `datatables.net` library version 1.10.23 or later.",
   "vulnerable_to": "Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')",
   "related_cve_id": "CVE-2020-28458",
   "language": "DOTNET",

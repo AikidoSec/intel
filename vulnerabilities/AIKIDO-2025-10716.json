@@ -14,7 +14,7 @@
   ],
   "tldr": "Affected versions of this package are vulnerable to Cross-site Scripting (XSS). If an array is passed to the HTML escape entities function it would not have its contents escaped. `jquery.datatables` is unmaintained and no longer receiving security updates, so it it is recommended to migrate to the `datatables.net` library version 1.11.3 or later.",
   "doest_this_affect_me": "You are affected if you are using the `jquery.datatables` package.",
-  "how_to_fix": "Upgrade to the `datatables.net` library version 1.11.3 or later.",
+  "how_to_fix": "Migrate to the `datatables.net` library version 1.11.3 or later.",
   "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "CVE-2021-23445",
   "language": "DOTNET",

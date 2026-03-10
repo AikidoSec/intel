@@ -3,7 +3,7 @@
   "patch_versions": [],
   "vulnerable_ranges": "*",
   "cwe": [
-    "CWE-843"
+    "CWE-1104"
   ],
   "tldr": "The `activedirectory2` package is no longer maintained, as indicated by the developer. Its last commit documents that `activedirectory2` has served its purpose and will no longer receive updates.",
   "doest_this_affect_me": "You are affected if you are using this package.",

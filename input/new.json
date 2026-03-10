@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/greenpau/caddy-security",
-  "patch_versions": [
-    "1.1.32"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.0.1",
-      "1.1.31"
-    ]
-  ],
-  "cwe": [
-    "CWE-129"
-  ],
-  "tldr": "Affected versions of this package contain multiple Caddyfile parsing functions that do not validate whether input values are nil before accessing elements, causing an index out of range panic. A crafted Caddyfile targeting the `credentials`, `sso provider`, or `messaging` directive parsers can crash the server during configuration loading. The patch adds length checks on the return value of `RemainingArgs()` before indexing into the slice.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/greenpau/caddy-security` library to the patch version.",
-  "vulnerable_to": "Improper Validation of Array Index",
-  "related_cve_id": "CVE-2024-21493",
-  "language": "GO",
-  "severity_class": "MEDIUM",
-  "aikido_score": 53,
-  "changelog": "https://github.com/greenpau/caddy-security/releases/tag/v1.1.32"
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
+  "related_cve_id": "",
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

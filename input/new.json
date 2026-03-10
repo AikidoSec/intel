@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/caioricciuti/ch-ui",
-  "patch_versions": [
-    "1.6.4"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.5.10",
-      "1.6.3"
-    ]
-  ],
-  "cwe": [
-    "CWE-200"
-  ],
-  "tldr": "Affected versions of this package expose application environment variables to the client-side through injected scripts, causing sensitive configuration values (e.g., service URLs, usernames, and potentially credentials) to be visible in the browser console. This leakage can allow attackers to enumerate internal infrastructure details and obtain credentials or tokens that should remain server-side. An attacker could simply access the web application, inspect the browser console or bundled JavaScript, and retrieve the exposed variables to connect directly to backend services (e.g., ClickHouse), pivot into internal systems, or abuse privileged API access.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/caioricciuti/ch-ui` library to the patch version.",
-  "vulnerable_to": "Exposure of Sensitive Information to an Unauthorized Actor",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "MEDIUM",
-  "aikido_score": 47,
-  "changelog": "https://github.com/caioricciuti/ch-ui/releases/tag/v1.6.4"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

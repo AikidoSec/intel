@@ -1,0 +1,26 @@
+{
+  "package_name": "corvus",
+  "patch_versions": [
+    "0.1.7"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "0.1.6"
+    ]
+  ],
+  "cwe": [
+    "CWE-367"
+  ],
+  "tldr": "Affected versions of this package create the secret key file and then restrict its permissions in a separate step, introducing a TOCTOU race condition. A local attacker could potentially read the secret key during the brief window between file creation and permission restriction. The patch uses `OpenOptions` with `mode(0o600)` on Unix to atomically create the file with restrictive permissions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `corvus` library to the patch version.",
+  "vulnerable_to": "Time-of-check Time-of-use (TOCTOU) Race Condition",
+  "related_cve_id": "",
+  "language": "RUST",
+  "severity_class": "LOW",
+  "aikido_score": 20,
+  "changelog": "https://github.com/dallay/corvus/releases/tag/v0.1.7",
+  "last_modified": "2026-03-10",
+  "published": "2026-03-10"
+}

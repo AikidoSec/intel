@@ -1,18 +1,18 @@
 {
   "package_name": "simple-git",
   "patch_versions": [
-    "3.32.0"
+    "3.32.2"
   ],
   "vulnerable_ranges": [
     [
       "0.0.1",
-      "3.31.1"
+      "3.32.1"
     ]
   ],
   "cwe": [
     "CWE-94"
   ],
-  "tldr": "Affected versions of this package are vulnerable to Remote Code Execution (RCE) via the `clone()` method due to an incomplete fix for CVE-2022-25860. The `unsafe` plugin blocked the `-u` switch (which maps to `--upload-pack` in `git clone`) using a simple regex, but an attacker could bypass this protection by disguising the `-u` flag alongside other single-character git clone options (e.g., `-vu`, `-su`, `-nu`). By crafting a combined option string containing `u`, an attacker could smuggle the upload-pack switch past the safety check and achieve arbitrary command execution on the host system. The patch replaces the naive regex with a comprehensive parser that detects the `u` character within any combination of valid clone short options, including those prefixed with null bytes or other characters.",
+  "tldr": "Affected versions of this package are vulnerable to Remote Code Execution (RCE) via the `clone()` method due to an incomplete fix for CVE-2022-25860. The vulnerability stems from the unsafe plugin's insufficient detection of the `-u` (`--upload-pack`) switch when it is disguised within combined single-character Git clone options. The patch replaces the regex approach with a two-step parser that strips null bytes and leading dashes before validating the remaining token against the set of valid clone short options.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `simple-git` library to to the patch version.",
   "vulnerable_to": "Remote Code Execution (RCE)",
@@ -20,7 +20,7 @@
   "language": "JS",
   "severity_class": "HIGH",
   "aikido_score": 80,
-  "changelog": "https://github.com/steveukx/git-js/releases/tag/simple-git%403.32.0",
+  "changelog": "https://github.com/steveukx/git-js/releases/tag/simple-git%403.32.2",
   "last_modified": "2026-03-10",
   "published": "2026-03-10"
 }

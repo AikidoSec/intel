@@ -1,15 +1,15 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@discoveryjs/json-ext",
+  "patch_versions": ["1.0.0"],
+  "vulnerable_ranges": [["0.5.0", "0.6.3"]],
+  "cwe": ["CWE-400"],
+  "tldr": "Affected versions of @discoveryjs/json-ext use a chunked JSON parser that can run out of memory when parsing very long arrays (millions of elements) and can crash or misbehave on malformed input such as leading closing brackets or extra tokens after a complete root value. A remote attacker can trigger DoS by supplying crafted chunked JSON (e.g. via a stream or fetch). The patch batches array construction to avoid OOM and adds validation so malformed top-level tokens and extra content after a complete value are rejected with a parse error instead of causing a crash.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@discoveryjs/json-ext` library to the patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 53,
+  "changelog": "https://github.com/discoveryjs/json-ext/releases/tag/v1.0.0"
 }

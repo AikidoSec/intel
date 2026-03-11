@@ -1,0 +1,26 @@
+{
+  "package_name": "node-opcua-certificate-manager",
+  "patch_versions": [
+    "2.164.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.164.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of this package use a single CertificateManager that can be shared by many concurrent clients. When multiple clients concurrently call trustCertificate() for the same previously untrusted server certificate, they race on fs.rename: the first call moves the file from rejected to trusted, and subsequent callers get ENOENT because the source file is already moved. That can leave callers with an error or inconsistent trust state. The patch wraps trustCertificate in a try-catch; on ENOENT it re-checks getTrustStatus and returns Good if the certificate was already trusted by another caller.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `node-opcua-certificate-manager` library to the patch version.",
+  "vulnerable_to": "Race condition",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 31,
+  "changelog": "https://github.com/node-opcua/node-opcua/releases/tag/v2.164.2",
+  "last_modified": "2026-03-11",
+  "published": "2026-03-11"
+}

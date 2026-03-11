@@ -1,0 +1,26 @@
+{
+  "package_name": "node-opcua-secure-channel",
+  "patch_versions": [
+    "2.164.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.164.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-362"
+  ],
+  "tldr": "Affected versions of this package use asynchronous transport disconnection during connection setup in ClientSecureChannelLayer. Under connection break or teardown, that allowed a race where _backoff_completion was invoked with undefined instead of the cancellation error, leading to false successful connection paths and internal assertion errors. The application could believe the channel was still valid when the transport was already disconnected. The patch reverts to synchronous disposal (abortConnection then dispose) and corrects _backoff_completion to propagate the cancellation error so connection state stays consistent.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `node-opcua-secure-channel` library to the patch version.",
+  "vulnerable_to": "Race condition",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "LOW",
+  "aikido_score": 31,
+  "changelog": "https://github.com/node-opcua/node-opcua/releases/tag/v2.164.2",
+  "last_modified": "2026-03-11",
+  "published": "2026-03-11"
+}

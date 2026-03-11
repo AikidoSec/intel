@@ -1,0 +1,26 @@
+{
+  "package_name": "hono",
+  "patch_versions": [
+    "4.12.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "4.12.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-1333"
+  ],
+  "tldr": "Affected versions of this package use a regular expression to split accept headers (e.g. Accept-Language) in the accept parsing utilities. A crafted header with many segments can trigger catastrophic backtracking and cause exponential CPU time, leading to denial of service. In proxy setups without header size limits, an attacker can send a malicious Accept-Language value that ties up the process for minutes. The patch replaces the regex-based split with a non-regex implementation to remove the ReDoS behavior.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `hono` library to the patch version.",
+  "vulnerable_to": "Regular Expression Denial of Service (ReDoS)",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/honojs/hono/releases/tag/v4.12.6",
+  "last_modified": "2026-03-11",
+  "published": "2026-03-11"
+}

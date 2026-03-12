@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/ethereum-optimism/op-geth",
+  "patch_versions": [
+    "1.101609.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "1.101609.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-670"
+  ],
+  "tldr": "A flaw in the transaction pool handling of `op-geth` allows interop transactions to persist after a blockchain reorganization. Because these transactions may rely on state derived from an orphaned chain, they could be replayed or executed under inconsistent conditions on the new canonical chain. The issue is addressed by removing interop transactions from the txpool during reorg events.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/ethereum-optimism/op-geth` library to the patch version.",
+  "vulnerable_to": "Always-Incorrect Control Flow Implementation",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/ethereum-optimism/op-geth/releases/tag/v1.101609.2",
+  "last_modified": "2026-03-12",
+  "published": "2026-03-12"
+}

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "libarchive.libarchive",
+  "patch_versions": [
+    "3.8.6"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.3.0",
+      "3.8.5"
+    ]
+  ],
+  "cwe": [
+    "CWE-476"
+  ],
+  "tldr": "Affected versions of this package contain a flaw in `archive_entry_acl_from_text_w` where malformed ACL input may trigger a segmentation fault instead of returning `ARCHIVE_WARN` as specified by the API contract. The function fails to properly validate certain malformed ACL strings, leading to a null pointer dereference during parsing. An attacker able to supply crafted ACL metadata—such as through a malicious archive file processed by software relying on libarchive—could trigger a crash, resulting in a denial-of-service condition when the archive is parsed.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `libarchive.libarchive` library to the patch version.",
+  "vulnerable_to": "NULL Pointer Dereference",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "C++",
+  "severity_class": "MEDIUM",
+  "aikido_score": 55,
+  "changelog": "https://github.com/libarchive/libarchive/releases/tag/v3.8.6"
 }

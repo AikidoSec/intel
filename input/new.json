@@ -1,24 +1,15 @@
 {
-  "package_name": "james-heinrich/getid3",
-  "patch_versions": [
-    "1.9.25"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.9.22",
-      "1.9.24"
-    ]
-  ],
-  "cwe": [
-    "CWE-611"
-  ],
-  "tldr": "Affected versions of this package enabled the LIBXML_NOENT flag when parsing XML, which instructs libxml to substitute external entities during processing. If untrusted XML input is parsed with this configuration, an attacker could exploit XML External Entity (XXE) behavior to trigger entity expansion and access sensitive local files, perform SSRF against internal services, or cause resource exhaustion through malicious entity definitions.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `james-heinrich/getid3` library to the patch version.",
-  "vulnerable_to": "XML External Entity (XXE) Attack",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PHP",
-  "severity_class": "LOW",
-  "aikido_score": 30,
-  "changelog": "https://github.com/JamesHeinrich/getID3/releases/tag/v1.9.25"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

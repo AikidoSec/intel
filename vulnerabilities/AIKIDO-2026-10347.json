@@ -1,0 +1,26 @@
+{
+  "package_name": "github.com/axllent/mailpit",
+  "patch_versions": [
+    "1.29.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.29.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-400"
+  ],
+  "tldr": "Affected versions of this package are affected by a denial-of-service (DoS) vulnerability due to insufficient limits when processing large or specially crafted email content. An attacker able to send a crafted email to a Mailpit instance could cause excessive memory consumption during message processing or rendering in the web interface, potentially leading to out-of-memory (OOM) conditions and crashing the application. This could allow a remote attacker to disrupt the availability of the service. The issue is addressed by introducing improved bounds checking and safeguards to prevent excessive memory usage when handling message data.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/axllent/mailpit` library to a patch version.",
+  "vulnerable_to": "Denial of Service (DoS)",
+  "related_cve_id": "",
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 59,
+  "changelog": "https://github.com/axllent/mailpit/releases/tag/v1.29.3",
+  "last_modified": "2026-03-12",
+  "published": "2026-03-12"
+}

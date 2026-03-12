@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "unhead",
+  "patch_versions": [
+    "2.1.12"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.1.11"
+    ]
+  ],
+  "cwe": [
+    "CWE-1321"
+  ],
+  "tldr": "Affected versions of this package are affected by a prototype pollution vulnerability in `unhead`. Insufficient validation when merging user-controlled objects into internal configuration structures allows specially crafted property names such as `__proto__` to modify the prototype of JavaScript objects. This could allow an attacker to inject arbitrary properties into the global object prototype, potentially influencing application behavior and enabling further attacks depending on how polluted properties are later used. The issue is addressed by adding safeguards to prevent prototype keys from being merged into internal objects.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `unhead` library to the patch version.",
+  "vulnerable_to": "Prototype Pollution",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 67,
+  "changelog": "https://github.com/unjs/unhead/releases/tag/v2.1.12"
 }

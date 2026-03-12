@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "laravel/pulse",
+  "patch_versions": [
+    "1.7.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.6.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Affected versions of this package unserialize data retrieved from Redis without restricting allowed classes, which may enable PHP Object Injection if the Redis instance is compromised or attacker-controlled. Because `unserialize()` can instantiate arbitrary PHP objects, malicious serialized payloads could trigger gadget chains through magic methods such as `__wakeup()` or `__destruct()`. An attacker who gains write access to Redis could inject crafted serialized objects into stored entries that are later deserialized by the application. It could lead to arbitrary code execution, file manipulation, or privilege escalation depending on available gadget chains in the application or its dependencies.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `laravel/pulse` library to the patch version.",
+  "vulnerable_to": "Deserialization of Untrusted Data",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/laravel/pulse/releases/tag/v1.7.0"
 }

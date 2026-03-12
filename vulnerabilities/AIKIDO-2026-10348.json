@@ -1,0 +1,26 @@
+{
+  "package_name": "unhead",
+  "patch_versions": [
+    "2.1.11"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "2.1.10"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are affected by a cross-site scripting (XSS) vulnerability in the `useHeadSafe()` functionality. The implementation allows arbitrary `data-*` attribute names to pass validation without properly sanitizing the attribute key. Because attribute keys are later interpolated directly into server-side rendered HTML, an attacker can inject spaces into the attribute name to break out of the intended attribute and introduce additional HTML attributes such as event handlers. When a Nuxt application renders these tags in the `<head>`, malicious attributes (e.g., `onload`) may execute in the victim’s browser. This could allow an attacker to inject and execute arbitrary JavaScript when user-controlled metadata is processed using `useHeadSafe()`.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `unhead` library to the patch version.",
+  "vulnerable_to": "Cross-Site Scripting",
+  "related_cve_id": "CVE-2026-31860",
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/unjs/unhead/releases/tag/v2.1.11",
+  "last_modified": "2026-03-12",
+  "published": "2026-03-12"
+}

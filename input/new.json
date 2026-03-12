@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "roots/wordpress",
+  "patch_versions": [
+    "6.9.2"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.0.1",
+      "6.9.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-20"
+  ],
+  "tldr": "Affected versions of this package include releases that incorporated WordPress components prior to the upstream security fixes, exposing multiple vulnerabilities including Blind SSRF, stored XSS, regex-based DoS, authorization bypasses, path traversal in PclZip, and an XXE flaw in the bundled getID3 library. An attacker could exploit these issues by injecting malicious payloads into menus or directives to achieve stored XSS, crafting requests to trigger SSRF or bypass authorization checks, abusing vulnerable regex parsing to cause resource exhaustion, or leveraging path traversal/XXE to access sensitive files or internal services. Successful exploitation may allow data exfiltration, privilege escalation, remote content injection, or disruption of service depending on the affected component and deployment configuration. Immediate upgrade is recommended as these fixes were ported from upstream WordPress security patches addressing multiple independent vulnerabilities.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `roots/wordpress` library to the patch version.",
+  "vulnerable_to": "Improper Input Validation",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 75,
+  "changelog": "https://github.com/roots/wordpress/releases/tag/6.9.2"
 }

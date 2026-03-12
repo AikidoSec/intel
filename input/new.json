@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "github.com/axllent/mailpit",
+  "patch_versions": [
+    "1.29.3"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.29.2"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are affected by a **cross-site scripting (XSS)** vulnerability in the Mailpit web interface. Insufficient sanitization of user-controlled data rendered in the UI allows HTML or JavaScript content contained in email messages to be improperly handled and executed in a user’s browser when viewing messages. An attacker able to send a crafted email to a Mailpit instance could inject malicious script content that executes in the context of the Mailpit web interface, potentially allowing session manipulation or other client-side attacks against users viewing the message. The issue is addressed by improving sanitization and handling of rendered message content in the web UI.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/axllent/mailpit` library to a patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "GO",
+  "severity_class": "MEDIUM",
+  "aikido_score": 54,
+  "changelog": "https://github.com/axllent/mailpit/releases/tag/v1.29.3"
 }

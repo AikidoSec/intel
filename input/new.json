@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "github.com/adguardteam/adguardhome",
+  "patch_versions": [
+    "0.107.73"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.107.65",
+      "0.107.72"
+    ]
+  ],
+  "cwe": [
+    "CWE-287"
+  ],
+  "tldr": "Affected versions of this package contain an authentication bypass in AdGuardHome where an unauthenticated remote attacker can send an HTTP/1.1 request that upgrades the connection to HTTP/2 cleartext (h2c), causing the connection to be handled by an internal mux that lacks authentication middleware. Because the authentication wrapper only protects the outer HTTP handler, the upgrade process bypasses it entirely, and all subsequent HTTP/2 requests on the hijacked connection are treated as fully authenticated. An attacker can exploit this by issuing a crafted h2c upgrade request to a public endpoint (e.g., `/control/login`) and then sending arbitrary administrative API requests over the established HTTP/2 connection, effectively gaining full access to privileged endpoints without providing valid credentials.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `github.com/adguardteam/adguardhome` library to the patch version.",
+  "vulnerable_to": "Authentication Bypass",
+  "related_cve_id": "CVE-2026-32136",
+  "language": "GO",
+  "severity_class": "CRITICAL",
+  "aikido_score": 98,
+  "changelog": "https://github.com/AdguardTeam/AdGuardHome/releases/tag/v0.107.73"
 }

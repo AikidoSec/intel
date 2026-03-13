@@ -1,24 +1,15 @@
 {
-  "package_name": "go.k6.io/xk6",
-  "patch_versions": [
-    "1.3.6"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.20.0",
-      "1.3.5"
-    ]
-  ],
-  "cwe": [
-    "CWE-22"
-  ],
-  "tldr": "Affected versions of this package used path handling based on `filepath.Walk(dir, ...)`, which could allow file operations to escape the intended customization directory if untrusted paths, symlinks, or traversal primitives were present. An attacker able to influence repository contents or filesystem layout might exploit this to make the process read, modify, or overwrite files outside the target directory, potentially impacting sensitive files on the host.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `go.k6.io/xk6` library to the patch version.",
-  "vulnerable_to": "Path Traversal",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "MEDIUM",
-  "aikido_score": 67,
-  "changelog": "https://github.com/grafana/xk6/releases/tag/v1.3.6"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

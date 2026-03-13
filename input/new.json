@@ -1,15 +1,15 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@sentry/sveltekit",
+  "patch_versions": ["10.43.0"],
+  "vulnerable_ranges": [["7.51.0", "10.42.0"]],
+  "cwe": ["CWE-367"],
+  "tldr": "Affected versions of `@sentry/sveltekit` use an `existsSync(mapFile)` check before reading and writing source map files during the SvelteKit build (in `closeBundle`). Between the time-of-check and time-of-use, the file system can change (e.g. file removed or replaced), causing a time-of-check-time-of-use (TOCTOU) race. A local attacker with control over the build environment could exploit this to influence which file is read or written, potentially leaking build artifacts or corrupting outputs. The patch removes the `existsSync` guard and wraps the read and write in a try/catch so that missing or changed files are handled without relying on a prior check.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@sentry/sveltekit` library to the patch version.",
+  "vulnerable_to": "Race Condition (TOCTOU)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 50,
+  "changelog": "https://github.com/getsentry/sentry-javascript/releases/tag/10.43.0"
 }

@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "@cometchat/chat-uikit-react",
+  "patch_versions": [
+    "6.3.13"
+  ],
+  "vulnerable_ranges": [
+    [
+      "5.0.0",
+      "6.3.12"
+    ]
+  ],
+  "cwe": [
+    "CWE-79"
+  ],
+  "tldr": "Affected versions of this package are affected by a cross-site scripting (XSS) vulnerability in the CometChat React UI Kit. Insufficient sanitization of user-controlled message or UI content allows crafted input to be rendered as HTML in the application interface. An attacker able to send specially crafted content through the chat system could inject malicious script code that executes in the browser of users viewing the message or affected component. This could allow session manipulation or other client-side attacks.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@cometchat/chat-uikit-react` library to the patch version.",
+  "vulnerable_to": "Cross-site Scripting (XSS)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "JS",
+  "severity_class": "HIGH",
+  "aikido_score": 71,
+  "changelog": "https://github.com/cometchat/cometchat-uikit-react/releases/tag/v6.3.13"
 }

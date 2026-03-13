@@ -1,0 +1,26 @@
+{
+  "package_name": "@strapi/core",
+  "patch_versions": [
+    "5.39.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "5.38.1"
+    ]
+  ],
+  "cwe": [
+    "CWE-693"
+  ],
+  "tldr": "Affected versions of this package could allow inconsistent or overly permissive MIME validation during file uploads, causing the system to trust incorrect declared or stored content types, mishandle allow/deny rules, and persist misleading metadata such as `application/octet-stream` instead of the validated type. An attacker might exploit this by disguising a malicious file as an allowed format, abusing weak validation order or allow-list enforcement to upload content that is later served with an unsafe or misleading `Content-Type`, potentially increasing the risk of dangerous file delivery, content spoofing, or bypass of upload restrictions.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `@strapi/core` library to the patch version.",
+  "vulnerable_to": "Protection Mechanism Failure",
+  "related_cve_id": "",
+  "language": "JS",
+  "severity_class": "MEDIUM",
+  "aikido_score": 45,
+  "changelog": "https://github.com/strapi/strapi/releases/tag/v5.39.0",
+  "last_modified": "2026-03-13",
+  "published": "2026-03-13"
+}

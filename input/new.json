@@ -1,15 +1,15 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "deno",
+  "patch_versions": ["2.7.5"],
+  "vulnerable_ranges": [["2.0.0", "2.7.4"]],
+  "cwe": ["CWE-327"],
+  "tldr": "Deno's `node:crypto` DH and ECDH implementations contain multiple crypto bugs. DH group key generation misinterprets modulus endianness (`BigUint::from_slice`), producing wrong shared secrets; key derivation can panic; PKCS#8/SPKI parsing and export mis-handle DER INTEGERs. ECDH's `op_node_ecdh_compute_public_key` uses a 33-byte buffer where 65 bytes are expected, causing a panic; `setPrivateKey()` and `getPublicKey()` mishandle encoding and hybrid format. The patch fixes endianness, modular exponentiation, DER encoding, and ECDH buffer/key handling.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `deno` library to the patch version.",
+  "vulnerable_to": "Broken Cryptographic Algorithm",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "RUST",
+  "severity_class": "HIGH",
+  "aikido_score": 72,
+  "changelog": "https://github.com/denoland/deno/releases/tag/v2.7.5"
 }

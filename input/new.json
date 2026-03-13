@@ -1,15 +1,24 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "drupal/openid_connect",
+  "patch_versions": [
+    "1.5.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "1.0.0",
+      "1.4.0"
+    ]
+  ],
+  "cwe": [
+    "CWE-269"
+  ],
+  "tldr": "Affected versions of this package are affected by an access control bypass vulnerability in the authentication flow with external Identity Providers. If a user successfully authenticates with the Identity Provider but is subsequently denied access to the application due to custom code or a server error, the session at the Identity Provider may remain active. As a result, subsequent authentication attempts from the same environment may automatically succeed without requiring the user to reauthenticate, potentially leading to unintended access in shared computing environments.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `drupal/openid_connect` library to the patch version.",
+  "vulnerable_to": "Access bypass",
+  "related_cve_id": "CVE-2026-3531",
+  "language": "PHP",
+  "severity_class": "LOW",
+  "aikido_score": 35,
+  "changelog": "https://www.drupal.org/sa-contrib-2026-026"
 }

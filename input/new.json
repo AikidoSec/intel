@@ -1,15 +1,15 @@
 {
-  "package_name": "better-auth",
-  "patch_versions": ["1.5.5"],
-  "vulnerable_ranges": [["1.0.0", "1.5.4"]],
-  "cwe": ["CWE-601"],
-  "tldr": "The password reset request endpoint (`requestPasswordReset`) did not validate the `redirectTo` parameter against trusted origins. A client could send a `redirectTo` pointing to an untrusted or malicious URL; after the user completed the reset flow they could be redirected there, enabling open redirect and phishing. Before the fix, no origin check middleware was applied to this route, so `redirectTo` was not validated. The patch adds `originCheck((ctx) => ctx.body.redirectTo)` to the request handler so untrusted `redirectTo` values are rejected with 403 and `Invalid redirectURL`.",
+  "package_name": "music-metadata",
+  "patch_versions": ["11.12.2"],
+  "vulnerable_ranges": [["0.6.3", "11.12.1"]],
+  "cwe": ["CWE-835"],
+  "tldr": "The ASF (WMA) parser in `lib/asf/AsfParser.ts` uses a loop in `parseObjectHeader` that reads object headers and advances by `remaining` bytes. When a file supplies an invalid header object size, `remaining` can become negative; the code did not validate it and the loop could run indefinitely, causing denial of service. The patch adds an explicit check for `remaining < 0` and throws `AsfContentParseError`, and removes the try/catch that previously swallowed parsing errors, so invalid input is rejected instead of hanging.",
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `better-auth` library to the patch version.",
-  "vulnerable_to": "Open Redirect",
+  "how_to_fix": "Upgrade the `music-metadata` library to the patch version.",
+  "vulnerable_to": "Denial of Service (Infinite Loop)",
   "related_cve_id": "",
   "language": "JS",
   "severity_class": "MEDIUM",
-  "aikido_score": 47,
-  "changelog": "https://github.com/better-auth/better-auth/releases/tag/v1.5.5"
+  "aikido_score": 53,
+  "changelog": "https://github.com/Borewit/music-metadata/releases/tag/v11.12.2"
 }

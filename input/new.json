@@ -1,15 +1,29 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
-  "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "package_name": "craftcms/commerce",
+  "patch_versions": [
+    "4.11.0",
+    "5.6.0"
+  ],
+  "vulnerable_ranges": [
+    [
+      "3.0.0",
+      "4.10.2"
+    ],
+    [
+      "5.0.0",
+      "5.5.4"
+    ]
+  ],
+  "cwe": [
+    "CWE-89"
+  ],
+  "tldr": "Affected versions of this package are affected by a SQL injection vulnerability in the control panel’s revenue statistics functionality. Insufficient validation of the `type` parameter used when constructing SQL expressions allows user-controlled values to influence the column used in a query. Because this value is interpolated into the SQL expression, a crafted request could manipulate the query executed by the application. This could allow an authenticated attacker with access to the control panel to execute unintended SQL queries.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `craftcms/commerce` library to the patch version.",
+  "vulnerable_to": "SQL Injection",
+  "related_cve_id": "GHSA-875v-7m49-8x88",
+  "language": "PHP",
+  "severity_class": "HIGH",
+  "aikido_score": 87,
+  "changelog": "https://github.com/craftcms/commerce/releases/tag/5.6.0"
 }

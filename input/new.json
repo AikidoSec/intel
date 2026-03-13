@@ -1,15 +1,15 @@
 {
-  "package_name": "",
-  "patch_versions": [],
-  "vulnerable_ranges": [],
-  "cwe": [],
-  "tldr": "",
-  "doest_this_affect_me": "",
-  "how_to_fix": "",
-  "vulnerable_to": "",
+  "package_name": "ujson",
+  "patch_versions": ["5.12.0"],
+  "vulnerable_ranges": [["5.2.0", "5.11.0"]],
+  "cwe": ["CWE-787", "CWE-190"],
+  "tldr": "The encoder in `ultrajsonenc.c` reserves output buffer space using `enc->indent * (enc->level + 1)` with an `int` type. When `indent` or nesting is large enough, the product overflows and the reserved size is underestimated, so subsequent writes cause a heap buffer overflow. Separately, a negative `indent` value leads to `size_t` underflow in the same arithmetic; the buffer up-sizer can then enter an infinite loop. Both are reachable via `ujson.dumps(obj, indent=...)` or equivalent. The fix switches indent arithmetic to `ptrdiff_t`, caps positive indent at 1000 (raising `ValueError` above that), and clips negative indent to -1 while skipping indentation code paths so underflow and the infinite loop are avoided.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `ujson` library to the patch version.",
+  "vulnerable_to": "Buffer Overflow (heap based)",
   "related_cve_id": "",
-  "language": "",
-  "severity_class": "",
-  "aikido_score": 0,
-  "changelog": ""
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 82,
+  "changelog": "https://github.com/ultrajson/ultrajson/releases/tag/5.12.0"
 }

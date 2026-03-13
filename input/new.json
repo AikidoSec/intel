@@ -1,24 +1,15 @@
 {
-  "package_name": "github.com/zalando/skipper",
-  "patch_versions": [
-    "0.24.48"
-  ],
-  "vulnerable_ranges": [
-    [
-      "0.11.70",
-      "0.24.47"
-    ]
-  ],
-  "cwe": [
-    "CWE-362"
-  ],
-  "tldr": "Affected versions of this package contain a race condition in the internal request tracing logic where `httptrace` callbacks may access a shared `statebag` concurrently without proper synchronization, leading to a runtime panic. Because the `statebag` was used to propagate `time.Time` values across tracing hooks, concurrent access could corrupt state and crash the application. An attacker could exploit this condition by triggering multiple concurrent requests that invoke `httptrace` callbacks simultaneously, causing repeated panics and resulting in a denial-of-service condition by crashing or destabilizing the service handling those requests.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `github.com/zalando/skipper` library to the patch version.",
-  "vulnerable_to": "Race Condition",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "GO",
-  "severity_class": "MEDIUM",
-  "aikido_score": 41,
-  "changelog": "https://github.com/zalando/skipper/releases/tag/v0.24.48"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

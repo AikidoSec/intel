@@ -1,15 +1,15 @@
 {
-  "package_name": "pythainlp",
-  "patch_versions": ["5.3.0"],
-  "vulnerable_ranges": [["3.0.7", "5.2.0"]],
-  "cwe": ["CWE-22"],
-  "tldr": "Affected versions extract corpus tar and zip archives using `tarfile.extractall()` and `zipfile.extractall()` without validating member paths or symlink targets. A malicious or tampered archive (e.g. from a compromised or MITM corpus source) can contain members with path traversal sequences (e.g. ..) or symlinks pointing outside the extraction directory, leading to files being written or overwritten outside the intended data directory. The patch adds `_is_within_directory()`, `_safe_extract_tar()`, and `_safe_extract_zip()` to validate all member paths and symlink targets before extraction and uses them in the corpus download flow.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `pythainlp` library to the patch version.",
-  "vulnerable_to": "Path Traversal",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "PYTHON",
-  "severity_class": "MEDIUM",
-  "aikido_score": 65,
-  "changelog": "https://github.com/PyThaiNLP/pythainlp/releases/tag/v5.3.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

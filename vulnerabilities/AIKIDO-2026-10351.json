@@ -1,0 +1,26 @@
+{
+  "package_name": "llama-index-core",
+  "patch_versions": [
+    "0.14.16"
+  ],
+  "vulnerable_ranges": [
+    [
+      "0.9.8",
+      "0.14.15"
+    ]
+  ],
+  "cwe": [
+    "CWE-502"
+  ],
+  "tldr": "Affected versions of this package insecurely deserialize data in `SimpleObjectNodeMapping.from_persist_dir()` using unrestricted `pickle.load()`, which may lead to arbitrary code execution. Because the persist directory path is configurable and the filename `object_node_mapping.pickle` is predictable, an attacker who can write to this directory can place a malicious pickle payload. When the application later loads the mapping, the crafted object is deserialized and its embedded code executes with the privileges of the running process. It can occur through vectors such as path traversal vulnerabilities, shared writable filesystems, or compromised data ingestion pipelines.",
+  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
+  "how_to_fix": "Upgrade the `llama-index-core` library to the patch version.",
+  "vulnerable_to": "Deserialization of Untrusted Data",
+  "related_cve_id": "",
+  "language": "PYTHON",
+  "severity_class": "HIGH",
+  "aikido_score": 70,
+  "changelog": "https://github.com/run-llama/llama_index/releases/tag/v0.14.16",
+  "last_modified": "2026-03-13",
+  "published": "2026-03-13"
+}

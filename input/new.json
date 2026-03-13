@@ -1,24 +1,15 @@
 {
-  "package_name": "harfbuzz.harfbuzz",
-  "patch_versions": [
-    "13.1.0"
-  ],
-  "vulnerable_ranges": [
-    [
-      "1.1.0",
-      "13.0.1"
-    ]
-  ],
-  "cwe": [
-    "CWE-190"
-  ],
-  "tldr": "Affected versions of this package contain an integer overflow in the `stch` feature handling for malicious fonts, where unchecked multiplication and addition involving repeated glyph expansion can cause the glyph count to wrap, leading to incorrect buffer size calculations. It can allow an attacker to supply a crafted font that causes undersized allocation followed by out-of-bounds writes during shaping, potentially resulting in memory corruption, process crashes, or, in some environments, code execution. An attacker might exploit this by convincing a target application to load or render a specially crafted font file, then triggering text shaping on attacker-controlled content so the malformed glyph expansion path is reached.",
-  "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
-  "how_to_fix": "Upgrade the `harfbuzz.harfbuzz` library to the patch version.",
-  "vulnerable_to": "Integer Overflow",
+  "package_name": "",
+  "patch_versions": [],
+  "vulnerable_ranges": [],
+  "cwe": [],
+  "tldr": "",
+  "doest_this_affect_me": "",
+  "how_to_fix": "",
+  "vulnerable_to": "",
   "related_cve_id": "",
-  "language": "C++",
-  "severity_class": "MEDIUM",
-  "aikido_score": 37,
-  "changelog": "https://github.com/harfbuzz/harfbuzz/releases/tag/13.1.0"
+  "language": "",
+  "severity_class": "",
+  "aikido_score": 0,
+  "changelog": ""
 }

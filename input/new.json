@@ -16,7 +16,7 @@
   "doest_this_affect_me": "You are affected if you are using a version that falls within the vulnerable range.",
   "how_to_fix": "Upgrade the `drupal/openid_connect` library to the patch version and check existing accounts affected by this issue.",
   "vulnerable_to": "Access bypass",
-  "related_cve_id": "",
+  "related_cve_id": "CVE-2026-3532",
   "language": "PHP",
   "severity_class": "LOW",
   "aikido_score": 35,

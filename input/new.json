@@ -18,7 +18,7 @@
   "vulnerable_to": "Access bypass",
   "related_cve_id": "CVE-2026-3531",
   "language": "PHP",
-  "severity_class": "LOW",
-  "aikido_score": 35,
+  "severity_class": "MEDIUM",
+  "aikido_score": 60,
   "changelog": "https://www.drupal.org/sa-contrib-2026-026"
 }

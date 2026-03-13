@@ -18,7 +18,7 @@
   "vulnerable_to": "Integer Overflow",
   "related_cve_id": "",
   "language": "C++",
-  "severity_class": "MEDIUM",
+  "severity_class": "LOW",
   "aikido_score": 37,
   "changelog": "https://github.com/harfbuzz/harfbuzz/releases/tag/13.1.0",
   "last_modified": "2026-03-13",
